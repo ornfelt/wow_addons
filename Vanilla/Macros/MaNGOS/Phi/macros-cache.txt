@@ -1,0 +1,13 @@
+MACRO 16777217 "consumables" Spell_ChargePositive
+.additem 7080 2
+.additem 11145
+.additem 14343 4
+.additem 7082
+.additem 13467
+.additem 12808 6
+.additem 12803 6
+.additem 16207
+.additem 14344 6
+.additem 7078 2
+.additem 11177 8
+END

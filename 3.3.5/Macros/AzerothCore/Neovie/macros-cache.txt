@@ -1,0 +1,90 @@
+MACRO 16777222 ".addhdruiditems1" Ability_Druid_Nourish
+.additem 50423
+.additem 46017
+.additem 51300
+.additem 51301
+.additem 51302
+.additem 51303
+.additem 51304
+.additem 54573
+END
+MACRO 16777223 ".addhdruiditems2" Ability_Druid_Nourish
+.additem 50454
+.additem 50424
+.additem 50009
+.additem 53486
+.additem 49975
+.additem 54583
+.additem 50613
+.additem 50986
+.additem 45292
+END
+MACRO 16777224 ".addtankitems1" Ability_Warrior_DefensiveStance
+.additem 50023
+.additem 51221
+.additem 51224
+.additem 50466
+.additem 51220
+.additem 50611
+.additem 51222
+.additem 50729
+.additem 50760
+END
+MACRO 16777225 ".addtankitems2" Ability_Warrior_DefensiveStance
+.additem 50691
+.additem 51223
+.additem 54579
+.additem 49489
+.additem 47955
+.additem 54591
+.additem 50344
+.additem 50364
+.additem 50444
+END
+MACRO 16777221 "a" INV_Misc_QuestionMark
+#showtooltip avenging wrath
+/cast avenging wrath
+/use Potion of Speed
+END
+MACRO 16777226 "botf" Spell_Misc_EmotionHappy
+.npcbot command follow
+END
+MACRO 16777227 "bots" Spell_Misc_EmotionSad
+.npcbot command stopfully
+END
+MACRO 16777220 "consumables" Spell_Arcane_Arcane01
+.additem 42999 40
+.additem 46377 40
+.additem 40211 200
+END
+MACRO 16777218 "enchants" Spell_Arcane_Arcane01
+.additem 44879
+.additem 44871
+.additem 44457
+.additem 44815
+.additem 44465
+.additem 41611
+.additem 38374
+.additem 38986
+.additem 38953
+.additem 44463
+.additem 38981
+.additem 41167
+END
+MACRO 16777219 "gems" Spell_Arcane_Arcane01
+.additem 41398
+.additem 49110
+.additem 40129 2
+.additem 40125 4
+.additem 40111 14
+.additem 40143 3
+.additem 54590
+END
+MACRO 16777217 "glyphs" Ability_Mount_Charger
+.additem 41092
+.additem 41099
+.additem 43869
+.additem 43368
+.additem 43367
+.additem 43340
+END

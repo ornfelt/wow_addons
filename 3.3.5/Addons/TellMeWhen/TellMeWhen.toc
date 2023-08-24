@@ -1,0 +1,17 @@
+# Originally by Nephthys of Hyjal
+# Rewritten by Kader
+## Interface: 30300
+## Title: TellMeWhen
+## Author: Kader (|cff808080bkader#5341|r)
+## Notes: Notifications about cooldowns, buffs, etc.
+## SavedVariablesPerCharacter: TellMeWhen_Settings
+## X-Date: 2022-03-02 @ 11:01 PM |cff808080UTC|r
+## X-Credits: Nephthys
+## X-Category: Combat
+## X-Email: bkader@mail.com
+## X-Website: https://github.com/bkader/TellMeWhen_3.3.5
+## X-Discord: https://discord.gg/a8z5CyS3eW
+
+Libs\Embeds.xml
+Locales\Locales.xml
+TellMeWhen.lua

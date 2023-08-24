@@ -1,0 +1,69 @@
+MACRO 16777224 ".addhdruiditems1" Ability_Druid_Nourish
+.additem 50423
+.additem 46017
+.additem 51300
+.additem 51301
+.additem 51302
+.additem 51303
+.additem 51304
+.additem 54573
+END
+MACRO 16777225 ".addhdruiditems2" Ability_Druid_Nourish
+.additem 50454
+.additem 50424
+.additem 50009
+.additem 53486
+.additem 49975
+.additem 54583
+.additem 50613
+.additem 50986
+.additem 45292
+END
+MACRO 16777222 ".addtankitems1" Ability_Warrior_DefensiveStance
+.additem 50023
+.additem 51221
+.additem 51224
+.additem 50466
+.additem 51220
+.additem 50611
+.additem 51222
+.additem 50729
+.additem 50760
+END
+MACRO 16777223 ".addtankitems2" Ability_Warrior_DefensiveStance
+.additem 50691
+.additem 51223
+.additem 54579
+.additem 49489
+.additem 47955
+.additem 54591
+.additem 50344
+.additem 50364
+.additem 50444
+END
+MACRO 16777217 "botf" Spell_Misc_EmotionHappy
+.npcbot command follow
+END
+MACRO 16777220 "botgroup" Spell_Arcane_TeleportOrgrimmar
+.npcbot spawn 70005
+.npcbot spawn 70062
+.npcbot spawn 70401
+.npcbot spawn 70307
+END
+MACRO 16777221 "botgroupdel" Spell_Arcane_PortalTheramore
+.npcbot delete id 70005
+.npcbot delete id 70062
+.npcbot delete id 70401
+.npcbot delete id 70307
+END
+MACRO 16777218 "bots" Spell_Misc_EmotionSad
+.npcbot command stopfully
+END
+MACRO 16777226 "glyphs" Spell_Nature_EarthShock
+.additem 41524
+.additem 45776
+.additem 41536
+.additem 44923
+.additem 43386
+.additem 43725
+END

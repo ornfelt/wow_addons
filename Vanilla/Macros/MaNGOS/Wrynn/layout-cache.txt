@@ -1,0 +1,14 @@
+Frame: ChatFrame2
+FrameLevel: 4
+X: 32
+Y: -511
+W: 430
+H: 120
+Frame: QuestieOptionsForm
+FrameLevel: 0
+X: 893
+Y: -119
+Frame: DPSMate_MiniMap
+FrameLevel: 5
+X: 1327
+Y: -149

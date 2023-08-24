@@ -1,0 +1,139 @@
+MACRO 16777224 ".addhdruiditems1" Ability_Druid_Nourish
+.additem 50423
+.additem 46017
+.additem 51300
+.additem 51301
+.additem 51302
+.additem 51303
+.additem 51304
+.additem 54573
+END
+MACRO 16777225 ".addhdruiditems2" Ability_Druid_Nourish
+.additem 50454
+.additem 50424
+.additem 50009
+.additem 53486
+.additem 49975
+.additem 54583
+.additem 50613
+.additem 50986
+.additem 45292
+END
+MACRO 16777222 ".addtankitems1" Ability_Warrior_DefensiveStance
+.additem 50023
+.additem 51221
+.additem 51224
+.additem 50466
+.additem 51220
+.additem 50611
+.additem 51222
+.additem 50729
+.additem 50760
+END
+MACRO 16777223 ".addtankitems2" Ability_Warrior_DefensiveStance
+.additem 50691
+.additem 51223
+.additem 54579
+.additem 49489
+.additem 47955
+.additem 54591
+.additem 50344
+.additem 50364
+.additem 50444
+END
+MACRO 16777227 "a1" INV_Misc_QuestionMark
+#showtooltip conjure water
+/cast [target=arena1] counterspell
+END
+MACRO 16777217 "botf" Spell_Misc_EmotionHappy
+.npcbot command follow
+END
+MACRO 16777220 "botgroup" Spell_Arcane_TeleportOrgrimmar
+.npcbot spawn 70017
+.npcbot spawn 70320
+.npcbot spawn 70260
+.npcbot spawn 70225
+END
+MACRO 16777221 "botgroupdel" Spell_Arcane_PortalTheramore
+.npcbot delete id 70017
+.npcbot delete id 70320
+.npcbot delete id 70260
+.npcbot delete id 70225
+END
+MACRO 16777233 "c" INV_Misc_QuestionMark
+#showtooltip combustion
+/cast combustion
+/use Potion of Speed
+END
+MACRO 16777230 "c" INV_Misc_QuestionMark
+#showtooltip counterspell
+/cast [nomod] counterspell
+/cast [mod:shift, target=focus] counterspell
+/cast [mod:ctrl, target=mouseover] counterspell
+END
+MACRO 16777234 "consumables" Spell_Arcane_Arcane01
+.additem 40211 200
+.additem 46376 40
+.additem 34755 40
+.additem 22463
+.additem 22450 12
+.additem 22449 20
+.additem 22446 16
+.additem 22824 3
+.additem 22445 40
+.additem 44164
+.additem 45802
+.additem 44175
+.additem 44177
+END
+MACRO 16777228 "enchants" Spell_Arcane_Arcane01
+.additem 38979
+.additem 44470
+.additem 41611
+.additem 41604
+.additem 38986
+.additem 44465
+.additem 39003
+.additem 44877
+.additem 44874
+.additem 45056
+END
+MACRO 16777229 "gems" Spell_Arcane_Arcane01
+.additem 40125 2
+.additem 40134 7
+.additem 40113 8
+.additem 40132 2
+.additem 40155
+.additem 40153
+.additem 41285
+END
+MACRO 16777218 "m" INV_Misc_QuestionMark
+#showtooltip magic rooster
+/cancelform
+/stopcasting
+/cancelaura ice block
+/cancelaura levitate
+/cast magic rooster
+/petfollow
+END
+MACRO 16777226 "p" INV_Misc_QuestionMark
+#showtooltip
+/cast [nopet][target=pet, dead] Summon Water Elemental; Freeze
+END
+MACRO 16777231 "po" INV_Misc_QuestionMark
+#showtooltip polymorph
+/cast [nomod] polymorph
+/cast [mod:shift, target=focus] polymorph
+/cast [mod:ctrl, target=mouseover] polymorph
+END
+MACRO 16777232 "s" INV_Misc_QuestionMark
+#showtooltip spellsteal
+/cast [nomod] spellsteal
+/cast [mod:shift, target=focus] spellsteal
+/cast [mod:ctrl, target=mouseover] spellsteal
+END
+MACRO 16777235 "s" INV_Misc_QuestionMark
+#showtooltip slow fall
+/cast [nomod] slow fall
+/cancelaura [mod:shift] slow fall
+END

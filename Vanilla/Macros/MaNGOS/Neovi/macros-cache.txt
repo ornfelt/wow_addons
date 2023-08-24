@@ -1,0 +1,25 @@
+MACRO 16777217 ".additempala1" Spell_Holy_RighteousFury
+.additem 17966
+.additem 17966
+.additem 17966
+.additem 17966
+.additem 21387
+.additem 23053
+.additem 21391
+.additem 23045
+.additem 21389
+.additem 23041
+END
+MACRO 16777218 ".additempala2" Spell_Holy_RighteousFury
+.additem 22936
+.additem 21581
+.additem 23219
+.additem 21390
+.additem 21388
+.additem 19432
+.additem 23038
+.additem 11815
+.additem 17182
+.additem 22798
+.additem 23203
+END

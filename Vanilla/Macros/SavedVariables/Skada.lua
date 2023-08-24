@@ -1,0 +1,2 @@
+
+SkadaDB = nil

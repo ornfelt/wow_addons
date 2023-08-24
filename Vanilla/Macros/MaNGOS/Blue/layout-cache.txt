@@ -1,0 +1,10 @@
+Frame: ChatFrame2
+FrameLevel: 4
+X: 32
+Y: -636
+W: 430
+H: 120
+Frame: DPSMate_MiniMap
+FrameLevel: 10
+X: 1335
+Y: -72

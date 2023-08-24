@@ -1,0 +1,16 @@
+TellMeWhen: enabled
+TellMeWhen_Options: enabled
+MapCoords: enabled
+DBM-GUI: disabled
+DBM-ChamberOfAspects: disabled
+DBM-Coliseum: disabled
+DBM-EyeOfEternity: disabled
+DBM-Icecrown: disabled
+DBM-Onyxia: disabled
+DBM-Naxx: disabled
+DBM-PvP: disabled
+DBM-Ulduar: disabled
+DBM-VoA: disabled
+DBM-WorldEvents: disabled
+DBM-Party-WotLK: disabled
+DBM-Core: disabled

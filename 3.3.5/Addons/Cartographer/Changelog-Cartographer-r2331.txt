@@ -1,0 +1,21 @@
+------------------------------------------------------------------------
+r2331 | stijnh | 2009-12-15 16:45:09 +0000 (Tue, 15 Dec 2009) | 1 line
+Changed paths:
+   M /trunk/Cartographer_LookNFeel/LookNFeel.lua
+
+Added Scale changing to LookNFeel to make it work with the 3.3 Quest Tracker
+------------------------------------------------------------------------
+r2330 | Zidomo | 2009-12-06 05:00:37 +0000 (Sun, 06 Dec 2009) | 1 line
+Changed paths:
+   M /trunk/Cartographer_LookNFeel/Cartographer_LookNFeel.toc
+   M /trunk/Cartographer_Notes/Cartographer_Notes.toc
+
+Remove LOD from LookNFeel (to fix ticket #203) & Notes (to fix issue with Cartographer_Icons used with Cartographer_Icons_SmallBoxPack. See: http://www.wowace.com/addons/cartographer_icons_small-box-pac/?comment=2)
+------------------------------------------------------------------------
+r2329 | speeddymon | 2009-08-07 16:51:39 +0000 (Fri, 07 Aug 2009) | 1 line
+Changed paths:
+   M /trunk/Cartographer.toc
+   M /trunk/embeds.xml
+
+Remove unused reference to LibBabble-Class-3.0 from TOC and embeds.xml. It's not used in the code anywhere.
+------------------------------------------------------------------------

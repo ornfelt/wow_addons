@@ -1,0 +1,3 @@
+TellMeWhen: enabled
+TellMeWhen_Options: enabled
+MapCoords: enabled

@@ -1,0 +1,21 @@
+MACRO 16777217 ".adhdruiditems1" Ability_Druid_Nourish
+.additem 50423
+.additem 46017
+.additem 51300
+.additem 51301
+.additem 51302
+.additem 51303
+.additem 51304
+.additem 54573
+.additem 50454
+.additem 50424
+.additem 50009
+.additem 53486
+.additem 49975
+.additem 54583
+END
+MACRO 16777218 ".adhdruiditems2" Ability_Druid_Nourish
+.additem 50613
+.additem 50986
+.additem 45292
+END

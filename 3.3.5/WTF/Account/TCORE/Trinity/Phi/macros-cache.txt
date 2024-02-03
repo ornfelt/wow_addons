@@ -1,0 +1,118 @@
+MACRO 16777240 "1" INV_Misc_QuestionMark
+#showtooltip hemorrhage
+/cast [nomod] hemorrhage
+/cast [mod:alt, target=arena1] blind
+END
+MACRO 16777239 "2" INV_Misc_QuestionMark
+#showtooltip sinister strike
+/cast [nomod] sinister strike
+/cast [mod:alt, target=arena2] blind
+END
+MACRO 16777241 "3" INV_Misc_QuestionMark
+#showtooltip cheap shot
+/cast [nomod] cheap shot
+/cast [mod:alt, target=arena3] blind
+END
+MACRO 16777227 "a1" INV_Misc_QuestionMark
+#showtooltip kick
+/cast [target=arena1] shadowstep
+/cast [target=arena1] kick
+END
+MACRO 16777238 "a2" INV_Misc_QuestionMark
+#showtooltip feint
+/cast [nomod] feint
+/cast [mod:alt, target=arena1] shadowstep
+/cast [mod:alt, target=arena1] kick
+END
+MACRO 16777237 "a3" INV_Misc_QuestionMark
+#showtooltip kick
+/cast [target=arena3] shadowstep
+/cast [target=arena3] kick
+END
+MACRO 16777231 "b" INV_Misc_QuestionMark
+#showtooltip blind
+/cast [nomod] blind
+/cast [mod:shift, target=focus] blind
+/cast [mod:ctrl, target=mouseover] blind
+END
+MACRO 16777235 "consumables" Spell_Arcane_Arcane01
+.additem 40211 200
+.additem 22463
+.additem 22450 12
+.additem 22449 20
+.additem 22446 16
+.additem 22824 3
+.additem 22445 80
+.additem 44164
+.additem 45802
+.additem 44175
+.additem 44177
+END
+MACRO 16777217 "d" INV_Misc_QuestionMark
+#showtooltip shadow dance
+/cast shadow dance
+/ use Potion of Speed
+END
+MACRO 16777228 "enchants" Spell_Arcane_Arcane01
+.additem 44879
+.additem 44871
+.additem 44457
+.additem 44815
+.additem 44465
+.additem 41611
+.additem 38374
+.additem 38986
+.additem 38953
+.additem 44463
+.additem 38981
+.additem 41167
+END
+MACRO 16777234 "fs" INV_Misc_QuestionMark
+#showtooltip shadowstep
+/cast [target=focus] shadowstep
+/cast [target=focus] kick
+END
+MACRO 16777226 "g" INV_Misc_QuestionMark
+#showtooltip gouge
+/cast [nomod] gouge
+/cast [mod:shift, target=focus] gouge
+/cast [mod:ctrl, target=mouseover] gouge
+END
+MACRO 16777229 "gems" Spell_Arcane_Arcane01
+.additem 41398
+.additem 49110
+.additem 40118 3
+.additem 40125 9
+.additem 40112 9
+.additem 40136 2
+.learn 57978
+.learn 27186
+.additem 43464 100
+.additem 42994 200
+.additem 46377 40
+.additem 52021 2000
+END
+MACRO 16777230 "k" INV_Misc_QuestionMark
+#showtooltip kick
+/cast [nomod] kick
+/cast [mod:shift, target=focus] kick
+/cast [mod:ctrl, target=mouseover] kick
+END
+MACRO 16777233 "ms" INV_Misc_QuestionMark
+#showtooltip shadowstep
+/cast [target=mouseover] shadowstep
+END
+MACRO 16777236 "s" INV_Misc_QuestionMark
+#showtooltip sap
+/cast sap
+END
+MACRO 16777232 "s" INV_Misc_QuestionMark
+#showtooltip sap
+/cast [nomod] sap
+/cast [mod:shift, target=focus] sap
+/cast [mod:ctrl, target=mouseover] sap
+END
+MACRO 16777218 "wp" INV_Misc_QuestionMark
+.npcb list spawned
+/hnnew
+END

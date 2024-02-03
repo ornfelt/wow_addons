@@ -1,0 +1,16 @@
+MACRO 16777221 "hm" Ability_Hunter_SniperShot
+/script PetAttack(target)
+/cast hunter's mark
+END
+MACRO 16777222 "m" Ability_Mount_BlackDireWolf
+/script PetFollow("Arch"); UseContainerItem(4, 2, 1)
+END
+MACRO 16777217 "pet" Ability_Druid_CatForm
+/script PetAttack(target)
+END
+MACRO 16777219 "peta" Ability_Druid_Cower
+.additem 8952 20
+END
+MACRO 16777220 "pets" Ability_Druid_Dash
+/script CastPetAction(3);
+END

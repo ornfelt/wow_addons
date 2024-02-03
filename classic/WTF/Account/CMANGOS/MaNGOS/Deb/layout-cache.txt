@@ -1,0 +1,10 @@
+Frame: DPSMate_MiniMap
+FrameLevel: 1
+X: 1365
+Y: -146
+Frame: DPSMate_DPSMate
+FrameLevel: 1
+X: 1221
+Y: -596
+W: 282
+H: 154

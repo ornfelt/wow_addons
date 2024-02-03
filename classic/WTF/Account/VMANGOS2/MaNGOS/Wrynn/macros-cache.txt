@@ -1,0 +1,27 @@
+MACRO 16777217 ".additemwar1" Ability_Parry
+.additem 17966
+.additem 17966
+.additem 17966
+.additem 17966
+.additem 12640
+.additem 23053
+.additem 21330
+.additem 23045
+.additem 23000
+.additem 22936
+END
+MACRO 16777218 ".additemwar2" Ability_Parry
+.additem 23219
+.additem 23068
+.additem 19387
+.additem 19325
+.additem 19406
+.additem 20130
+.additem 23041
+.additem 22954
+.additem 23054
+.additem 23577
+.additem 22798
+.additem 22811
+.additem 17182
+END

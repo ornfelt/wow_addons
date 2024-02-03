@@ -1,0 +1,3 @@
+MACRO 16777217 "clone" Spell_Shadow_UnholyFrenzy
+.partybot clone
+END

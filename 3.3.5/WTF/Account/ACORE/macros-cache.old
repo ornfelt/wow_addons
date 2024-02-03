@@ -1,0 +1,328 @@
+MACRO 25 ".item1hunter" Ability_GolemStormBolt
+.additem 51809
+.additem 51809
+.additem 51809
+.additem 51286
+.additem 51288
+.additem 51289
+.additem 51285
+.additem 50645
+.additem 50633
+.additem 50764
+.additem 50655
+.additem 50688
+.learn 6991
+.additem 44607 100
+END
+MACRO 24 ".item1mage" Spell_Arcane_Blink
+.additem 51582
+.learn 62948
+.additem 51809
+.additem 51809
+.additem 51809
+.additem 51809
+.additem 42739
+.additem 45737
+.additem 50008
+.additem 50182
+END
+MACRO 26 ".item2hunter" Ability_GolemStormBolt
+.additem 54577
+.additem 50803
+.additem 50618
+.additem 50363
+.additem 54590
+.additem 50735
+.additem 50776
+.additem 42912
+.additem 42914
+.additem 42909
+.additem 41165 200
+.additem 52021 800
+END
+MACRO 23 ".item2mage" Spell_Arcane_Blink
+.additem 51158
+.additem 51159
+.additem 51157
+.additem 51156
+.additem 51155
+.additem 50613
+.additem 54583
+.additem 53486
+.additem 49977
+.additem 50062
+.additem 50398
+.additem 50173
+.additem 50360
+.additem 54572
+.additem 50427
+.additem 50033
+.additem 42751
+END
+MACRO 36 ".itemdruid1" Ability_Druid_ManaTree
+.additem 51809
+.additem 51809
+.additem 51809
+.additem 51809
+.additem 51290
+.additem 50724
+.additem 51292
+.additem 54583
+.additem 50699
+.additem 50694
+.additem 50613
+END
+MACRO 37 ".itemdruid2" Ability_Druid_ManaTree
+.additem 54582
+.additem 51291
+.additem 51294
+.additem 51381
+.additem 50714
+.additem 50398
+.additem 54588
+.additem 50365
+.additem 50734
+.additem 50719
+END
+MACRO 34 ".itempala1" Spell_Holy_GreaterBlessingofKings
+.additem 51809
+.additem 51809
+.additem 51809
+.additem 51809
+.additem 51277
+.additem 50647
+.additem 51279
+.additem 50677
+.additem 51275
+END
+MACRO 35 ".itempala2" Spell_Holy_GreaterBlessingofKings
+.additem 50659
+.additem 51832
+.additem 49999
+.additem 50620
+.additem 50690
+.additem 50639
+.additem 50693
+.additem 47464
+.additem 50706
+.additem 50730
+.additem 49623
+END
+MACRO 27 ".itempri1" Spell_Holy_PowerWordShield
+.additem 51809
+.additem 51809
+.additem 51809
+.additem 51809
+.additem 51261
+.additem 50719
+.additem 50724
+.additem 51264
+.additem 54583
+.additem 51263
+END
+MACRO 28 ".itempri2" Spell_Holy_PowerWordShield
+.additem 54582
+.additem 50722
+.additem 50702
+.additem 51262
+.additem 50699
+.additem 54585
+.additem 50644
+.additem 50366
+.additem 54589
+.additem 50631
+.additem 50734
+END
+MACRO 29 ".itemrogue1" Ability_BackStab
+.additem 51809
+.additem 51809
+.additem 51809
+.additem 51809
+.additem 51252
+.additem 51494
+.additem 51492
+.additem 51493
+.additem 51495
+.additem 51496
+END
+MACRO 30 ".itemrogue2" Ability_BackStab
+.additem 51788
+.additem 51011
+.additem 51384
+.additem 51800
+.additem 51803
+.additem 32837
+.additem 32838
+END
+MACRO 31 ".itemrogue3" Ability_BackStab
+.additem 50713
+.additem 50633
+.additem 50646
+.additem 50653
+.additem 50656
+.additem 54580
+.additem 51251
+.additem 50707
+END
+MACRO 32 ".itemrogue4" Ability_BackStab
+.additem 51253
+.additem 50607
+.additem 50402
+.additem 54576
+.additem 54590
+.additem 50706
+.additem 50736
+.additem 50621
+.additem 50733
+END
+MACRO 21 "a1" INV_Misc_QuestionMark
+#showtooltip Runic Mana Potion
+/focus [target=arena1]
+END
+MACRO 20 "a2" INV_Misc_QuestionMark
+#showtooltip curse toxins
+/cast cure toxins
+/focus [mod:alt] [target=arena2]
+END
+MACRO 22 "a3" INV_Misc_QuestionMark
+#showtooltip runic healing potion
+/focus [target=arena3]
+END
+MACRO 7 "add" Spell_Magic_GreaterBlessingofKings
+.npcbot add
+END
+MACRO 11 "allybots" Ability_Ambush
+.npcbot spawn 70415
+.npcbot spawn 70416
+.npcbot spawn 70418
+.npcbot spawn 70035
+.npcbot spawn 70074
+.npcbot spawn 70071
+.npcbot spawn 70138
+.npcbot spawn 70139
+.npcbot spawn 70176
+.npcbot spawn 70230
+END
+MACRO 12 "allybotsdel" Ability_Ambush
+.npcbot delete id 70415
+.npcbot delete id 70416
+.npcbot delete id 70418
+.npcbot delete id 70035
+.npcbot delete id 70074
+.npcbot delete id 70071
+.npcbot delete id 70138
+.npcbot delete id 70139
+.npcbot delete id 70176
+.npcbot delete id 70230
+END
+MACRO 1 "botgroup" Spell_Arcane_TeleportSilvermoon
+.npcbot lookup 1
+.npcbot spawn 70417
+.npcbot spawn 70072
+.npcbot spawn 70073
+.npcbot spawn 70336
+END
+MACRO 16 "botgroup2" Spell_Arcane_TeleportStonard
+.npcbot lookup 11
+.npcbot spawn 70402
+.npcbot spawn 70324
+.npcbot spawn 70257
+.npcbot spawn 70226
+.npcbot spawn 70112
+END
+MACRO 18 "botgroupdel1" Spell_Arcane_TeleportSilvermoon
+.npcbot delete id 70417
+.npcbot delete id 70072
+.npcbot delete id 70073
+.npcbot delete id 70336
+END
+MACRO 17 "botgroupdel2" Spell_Arcane_TeleportStonard
+.npcbot delete id 70402
+.npcbot delete id 70324
+.npcbot delete id 70257
+.npcbot delete id 70226
+.npcbot delete id 70112
+END
+MACRO 8 "fa" Ability_Ambush
+.npcbot set faction alliance
+END
+MACRO 9 "fh" Ability_Creature_Cursed_02
+.npcbot set faction horde
+END
+MACRO 15 "fhostile" Spell_Misc_EmotionAngry
+.npcbot set faction m
+END
+MACRO 19 "focus" INV_Misc_QuestionMark
+/focus [target=mouseover]
+END
+MACRO 13 "hordebots" Ability_Creature_Cursed_02
+.npcbot spawn 70111
+.npcbot spawn 70110
+.npcbot spawn 70062
+.npcbot spawn 70018
+.npcbot spawn 70363
+.npcbot spawn 70365
+.npcbot spawn 70454
+.npcbot spawn 70457
+.npcbot spawn 70235
+.npcbot spawn 70236
+END
+MACRO 14 "hordebotsdel" Ability_Creature_Cursed_02
+.npcbot delete id 70111
+.npcbot delete id 70110
+.npcbot delete id 70062
+.npcbot delete id 70018
+.npcbot delete id 70363
+.npcbot delete id 70365
+.npcbot delete id 70454
+.npcbot delete id 70457
+.npcbot delete id 70235
+.npcbot delete id 70236
+END
+MACRO 6 "item1" Spell_Nature_ChainLightning
+.additem 51382
+.additem 45308
+.additem 52252
+.additem 51809
+.additem 51809
+.additem 51809
+.additem 51809
+.additem 51513
+END
+MACRO 5 "item2" Spell_Nature_ChainLightning
+.additem 51798
+.additem 50809
+.additem 50986
+.additem 51381
+.additem 50339
+.additem 51006
+END
+MACRO 4 "learn1" Ability_Creature_Cursed_05
+.mod money 100000000
+.learn 33388
+.learn 33389
+END
+MACRO 3 "learn2" Ability_Creature_Cursed_05
+.additem 49290
+.additem 45801
+.learn 34090
+.learn 34091
+.learn 54197
+END
+MACRO 2 "t10sham" Spell_Nature_ChainLightning
+.additem 50843
+.additem 51757
+.additem 51758
+.additem 51760
+.additem 51761
+.additem 51791
+.additem 50774
+.additem 50784
+END
+MACRO 33 "xx" Ability_Creature_Cursed_05
+.character level jonas 80
+.maxskill
+.learn my quests
+.learn my trainer
+.additem 50818
+END

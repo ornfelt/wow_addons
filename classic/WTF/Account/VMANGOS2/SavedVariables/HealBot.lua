@@ -1,0 +1,78 @@
+
+HealBot_Config = {
+	["ActionHeight"] = 45,
+	["ActionAlpha"] = 1,
+	["AlertSeconds"] = 15,
+	["ActionLocked"] = 0,
+	["EmergencyLevel"] = 0.5,
+	["KeyCombo"] = {
+		["Warrior"] = {
+		},
+		["Paladin"] = {
+			["ShiftLeft"] = "Flash of Light",
+			["CtrlLeft"] = "Holy Light",
+		},
+		["Shaman"] = {
+			["ShiftLeft"] = "Lesser Healing Wave",
+		},
+		["Rogue"] = {
+		},
+		["Mage"] = {
+		},
+		["Druid"] = {
+			["ShiftLeft"] = "Rejuvenation",
+			["CtrlLeft"] = "Regrowth",
+		},
+		["Priest"] = {
+			["ShiftLeft"] = "Flash Heal",
+			["CtrlLeft"] = "Power Word: Shield",
+		},
+		["Hunter"] = {
+		},
+		["Warlock"] = {
+		},
+	},
+	["TargetHeals"] = 1,
+	["IntegratePMF"] = 1,
+	["EmergencySort"] = 1,
+	["ActionVisible"] = 0,
+	["ProtectPvP"] = 1,
+	["AlertLevel"] = 0.9,
+	["ToggleAltUse"] = 0,
+	["ManaReserve"] = 0.5,
+	["IntegrateCTRA"] = 0,
+	["CastNotify"] = 3,
+	["HealthPct"] = 0.9,
+	["GroupHeals"] = 1,
+	["EnableHealthy"] = 0,
+	["HideOptions"] = 0,
+	["EmergencyHeals"] = 1,
+	["AutoShow"] = 1,
+	["ConserveMana"] = 0,
+	["GrowUpwards"] = 0,
+	["TankHeals"] = 1,
+	["TargetWhisper"] = 1,
+	["Version"] = "v0.26",
+	["UseHealing"] = {
+		["Healing Touch"] = 1,
+		["Holy Light"] = 1,
+		["Regrowth"] = 1,
+		["Mend Pet"] = 1,
+		["Lesser Healing Wave"] = 1,
+		["Healing Potions"] = 1,
+		["Bandages"] = 1,
+		["Greater Heal"] = 1,
+		["Flash Heal"] = 1,
+		["Healthstones"] = 1,
+		["Lesser Heal"] = 1,
+		["Heal"] = 1,
+		["Power Word: Shield"] = 0,
+		["Flash of Light"] = 1,
+		["Rejuvenation"] = 1,
+		["Renew"] = 1,
+		["Healing Wave"] = 1,
+	},
+	["HealingUsage"] = 0.5,
+	["PanelSounds"] = 1,
+	["ShowTooltip"] = 1,
+}

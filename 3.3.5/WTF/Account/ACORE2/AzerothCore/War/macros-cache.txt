@@ -1,0 +1,18 @@
+MACRO 16777217 ".additemwar1" Ability_Warrior_Sunder
+.additem 50730
+.additem 51225
+.additem 51226
+.additem 51229
+.additem 51228
+.additem 51227
+.additem 47545
+.additem 54581
+.additem 54580
+.additem 50620
+.additem 54578
+.additem 50618
+.additem 54590
+.additem 50363
+.additem 51855
+.additem 50776
+END

@@ -1,0 +1,15 @@
+Version: 1
+Frame: WorldMapFrame
+FrameLevel: 87
+Anchor: CENTER
+X: 0
+Y: 0
+W: 1024
+H: 768
+Frame: DBMMinimapButton
+FrameLevel: 3
+Anchor: TOPRIGHT
+X: -136
+Y: -115
+W: 32
+H: 32

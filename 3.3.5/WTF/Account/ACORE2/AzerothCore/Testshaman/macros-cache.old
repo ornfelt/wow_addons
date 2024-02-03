@@ -1,0 +1,28 @@
+MACRO 16777218 "addtankitems" Ability_Warrior_ShieldReflection
+.additem 50023
+.additem 51221
+.additem 51224
+.additem 50466
+.additem 51220
+.additem 50611
+.additem 51222
+.additem 50729
+.additem 50760
+END
+MACRO 16777219 "addtankitems2" Ability_Warrior_ShieldReflection
+.additem 50691
+.additem 51223
+.additem 54579
+.additem 49489
+.additem 47955
+.additem 54591
+.additem 50344
+.additem 50364
+.additem 50444
+END
+MACRO 16777217 "allypvpbots" Ability_Ambush
+.npcbot spawn 70031
+.npcbot spawn 70333
+.npcbot spawn 70074
+.npcbot spawn 70224
+END

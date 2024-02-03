@@ -1,0 +1,593 @@
+----------------------------------------------------------------------------------
+Names:
+Blue - shaman
+Arch - hunter
+Jonas - mage
+Shield - priest
+Phi - rogue
+Neovi - paladin
+tux - druid
+wrynn / grom - warrior
+deb - X
+
+----------------------------------------------------------------------------------
+Shaman:
+T10 (Icecrown):
+
+.additem 51809
+.additem 51809
+.additem 51809
+.additem 51809
+.additem 51798
+.additem 50809
+.additem 50986
+.additem 51381
+.additem 50339
+.additem 51006
+
+.additem 50843
+.additem 51757
+.additem 51758
+.additem 51760
+.additem 51761
+.additem 51791
+.additem 50774
+.additem 50784
+
+------------------------------
+Shaman:
+https://forum.warmane.com/showthread.php?t=239610
+.additem 51809
+.additem 51809
+.additem 51809
+.additem 51809
+
+.additem 
+.additem 
+.additem 
+
+------------------------------
+Hunter:
+https://forum.warmane.com/showthread.php?t=327458
+
+.additem 51809
+.additem 51809
+.additem 51809
+.additem 51286
+.additem 51288
+.additem 51289
+.additem 51285
+.additem 50645
+.additem 50633
+.additem 47545
+.additem 50655
+.additem 50688
+
+.additem 54577
+.additem 50402
+.additem 50618
+.additem 50363
+.additem 54590
+.additem 50735
+.additem 50776
+.additem 42912
+.additem 42914
+.additem 42909
+
+.additem 41165 200
+.additem 52021 800
+
+Go to below to learn polearm skill:
+https://wotlk.evowow.com/?npc=11870
+
+------------------------------
+Mage:
+http://forum.warmane.com/showthread.php?t=210328
+
+.learn 62948
+.additem 51809
+.additem 51809
+.additem 51809
+.additem 51809
+.additem 51582
+.additem 42739
+.additem 45737
+.additem 50008
+.additem 50182
+
+.additem 51158
+.additem 51159
+.additem 51157
+.additem 51156
+.additem 51155
+.additem 50613
+.additem 54583
+.additem 53486
+.additem 49977
+.additem 50062
+.additem 50398
+.additem 50173
+.additem 50360
+.additem 54572
+.additem 50427
+.additem 50033
+.additem 42751
+
+Frost mage guide:
+https://forum.warmane.com/showthread.php?t=189465
+
+------------------------------
+Rogue:
+
+.additem 51809
+.additem 51809
+.additem 51809
+.additem 51809
+.additem 51252
+.additem 51494
+.additem 51492
+.additem 51493
+.additem 51495
+.additem 51496
+
+.additem 51788
+.additem 51011
+.additem 51384
+.additem 51800
+.additem 51803
+.additem 32837
+.additem 32838
+
+https://forum.warmane.com/showthread.php?t=360782
+
+.additem 50713
+.additem 50633
+.additem 50646
+.additem 50653
+.additem 50656
+.additem 54580
+.additem 51251
+.additem 50707
+
+.additem 51253
+.additem 50607
+.additem 50402
+.additem 54576
+.additem 54590
+.additem 50706
+.additem 50736
+.additem 50621
+.additem 50733
+
+------------------------------
+Druid:
+https://forum.warmane.com/showthread.php?t=66055
+
+.additem 51809
+.additem 51809
+.additem 51809
+.additem 51809
+.additem 51290
+.additem 50724
+.additem 51292
+.additem 54583
+.additem 50699
+.additem 50694
+.additem 50613
+
+.additem 54582
+.additem 51291
+.additem 51294
+.additem 51381
+.additem 50714
+.additem 50398
+.additem 54588
+.additem 50365
+.additem 50734
+.additem 50719
+
+------------------------------
+Druid healer:
+.additem 50423
+.additem 46017
+.additem 51300
+.additem 51301
+.additem 51302
+.additem 51303
+.additem 51304
+.additem 54573
+
+.additem 50454
+.additem 50424
+.additem 50009
+.additem 53486
+.additem 49975
+.additem 54583
+.additem 50613
+.additem 50986
+.additem 45292
+
+------------------------------
+Priest:
+https://forum.warmane.com/showthread.php?t=346233
+
+.additem 51809
+.additem 51809
+.additem 51809
+.additem 51809
+.additem 51261
+.additem 50719
+.additem 50724
+.additem 51264
+.additem 54583
+.additem 51263
+
+.additem 54582
+.additem 50722
+.additem 50702
+.additem 51262
+.additem 50699
+.additem 54585
+.additem 50644
+.additem 50366
+.additem 54589
+.additem 50631
+.additem 50734
+
+------------------------------
+Paladin:
+https://forum.warmane.com/showthread.php?t=325565
+
+.additem 51809
+.additem 51809
+.additem 51809
+.additem 51809
+.additem 51277
+.additem 50647
+.additem 51279
+.additem 50677
+.additem 51275
+
+.additem 50659
+.additem 51832
+.additem 49999
+.additem 50620
+.additem 50690
+.additem 50639
+.additem 50693
+.additem 47464
+.additem 50706
+.additem 50730
+.additem 49623
+
+------------------------------
+Warrior:
+https://forum.warmane.com/showthread.php?t=211093
+
+.additem 51809
+.additem 51809
+.additem 51809
+.additem 51809
+.additem 51212
+.additem 53132
+.additem 51210
+.additem 54569
+.additem 50186
+.additem 50639
+
+.additem 51211
+.additem 50187
+.additem 51225
+.additem 50362
+.additem 49919
+.additem 50730
+.additem 49981
+
+.additem 50079
+.additem 51024
+.additem 51563
+.additem 45675
+.additem 45318
+
+------------------------------
+Warrior tank:
+.additem 50729
+.additem 50760
+.additem 50023
+.additem 51221
+.additem 51224
+.additem 50466
+.additem 51220
+.additem 50611
+.additem 51222
+
+.additem 50691
+.additem 51223
+.additem 54579
+.additem 49489
+.additem 47955
+.additem 54591
+.additem 50344
+.additem 50364
+.additem 50444
+
+enchants (wotlk):
+.additem 44470
+.additem 38979
+.additem 41611
+.additem 41604
+.additem 38986
+.additem 44465
+.additem 39003
+.additem 44877
+.additem 44874
+.additem 44467
+.additem 44455
+Staff:
+.additem 45056
+
+----------------------------------------------------------------------------------
+Classic gear:
+
+Legendaries:
+Thunderfury!
+.additem 19019
+
+Sulfuras:
+.additem 17182
+
+Atiesh (mage, there are others as well):
+.additem 22589
+
+Andonisus, Reaper of Souls:
+.additem 22736
+
+Learn:
+.learn 33388
+.learn 33391
+.learn all_myclass
+.learn all_myspells
+
+.maxskill
+
+------------------------------
+Classic shaman gear:
+https://www.icy-veins.com/wow-classic/elemental-shaman-dps-pve-gear-best-in-slot
+
+.additem 17966
+.additem 17966
+.additem 17966
+.additem 17966
+.additem 19375
+.additem 23199
+.additem 23057
+.additem 23664
+.additem 21376
+.additem 23050
+.additem 19682
+.additem 21374
+
+.additem 23021
+.additem 21585
+.additem 22730
+.additem 21375
+.additem 23665
+.additem 21373
+.additem 23031
+.additem 23025
+.additem 19379
+.additem 23046
+.additem 22799
+.additem 22988
+.additem 23049
+
+Ele build:
+https://www.icy-veins.com/wow-classic/elemental-shaman-dps-pve-spec-builds-talents
+
+------------------------------
+Classic hunter gear:
+https://www.icy-veins.com/wow-classic/hunter-dps-pve-gear-best-in-slot
+
+.additem 17966
+.additem 17966
+.additem 17966
+.additem 22438
+.additem 19377
+.additem 22439
+.additem 21710
+.additem 22436
+.additem 22443
+.additem 16463
+
+.additem 22442
+.additem 22437
+.additem 22440
+.additem 23067
+.additem 22961
+.additem 13965
+.additem 23041
+.additem 22802
+.additem 23014
+.additem 22812
+.additem 18714
+.additem 18713
+
+------------------------------
+Classic mage gear:
+https://www.icy-veins.com/wow-classic/mage-dps-pve-gear-best-in-slot
+
+.additem 17966
+.additem 17966
+.additem 17966
+.additem 17966
+.additem 22799
+.additem 22498
+.additem 22983
+.additem 23057
+.additem 16444
+.additem 16917
+.additem 23050
+
+.additem 22496
+.additem 23021
+.additem 22501
+.additem 19400
+.additem 16915
+.additem 22500
+.additem 23062
+.additem 23237
+.additem 23046
+.additem 19950
+.additem 18849
+.additem 22589
+.additem 18842
+
+Frost pvp build:
+https://www.icy-veins.com/wow-classic/classic-mage-pvp-guide
+
+------------------------------
+Classic rogue gear:
+https://www.icy-veins.com/wow-classic/rogue-dps-pve-gear-best-in-slot
+
+.additem 17966
+.additem 17966
+.additem 17966
+.additem 17966
+.additem 19346
+.additem 19019
+.additem 22478
+.additem 19377
+.additem 22479
+.additem 23045
+.additem 22476
+.additem 22483
+.additem 22481
+.additem 21586
+.additem 22477
+
+.additem 22480
+.additem 23060
+.additem 23038
+.additem 23041
+.additem 22954
+.additem 23054
+.additem 23577
+.additem 22802
+.additem 21126
+.additem 22812
+
+Pvp sub/assassin build:
+https://www.icy-veins.com/wow-classic/classic-rogue-pvp-guide
+
+------------------------------
+Classic druid gear:
+https://www.icy-veins.com/wow-classic/balance-druid-ranged-dps-pve-gear-best-in-slot
+
+.additem 17966
+.additem 17966
+.additem 17966
+.additem 17966
+.additem 23035
+.additem 21608
+.additem 22983
+.additem 23050
+.additem 21838
+
+.additem 21186
+.additem 21585
+.additem 22730
+.additem 23070
+.additem 21600
+.additem 21709
+.additem 23031
+.additem 23207
+.additem 23046
+.additem 22800
+.additem 23197
+
+Balance build:
+https://www.icy-veins.com/wow-classic/balance-druid-ranged-dps-pve-spec-builds-talents
+
+------------------------------
+Classic priest gear:
+https://www.icy-veins.com/wow-classic/priest-healer-pve-gear-best-in-slot
+
+.additem 17966
+.additem 17966
+.additem 17966
+.additem 17966
+.additem 22514
+.additem 23036
+.additem 22515
+.additem 22960
+.additem 22512
+.additem 22519
+.additem 22517
+
+.additem 22513
+.additem 21582
+.additem 22518
+.additem 22516
+.additem 23061
+.additem 22939
+.additem 23027
+.additem 23047
+.additem 23048
+.additem 23056
+.additem 22801
+.additem 23009
+
+------------------------------
+Classic paladin gear:
+https://www.icy-veins.com/wow-classic/retribution-paladin-dps-pve-gear-best-in-slot
+
+.additem 17966
+.additem 17966
+.additem 17966
+.additem 17966
+.additem 21387
+.additem 23053
+.additem 21391
+.additem 23045
+.additem 21389
+
+.additem 22936
+.additem 21581
+.additem 23219
+.additem 21390
+.additem 21388
+.additem 19432
+.additem 23038
+.additem 11815
+.additem 17182
+.additem 22798
+.additem 23203
+
+------------------------------
+Classic warrior gear:
+https://www.icy-veins.com/wow-classic/warrior-dps-pve-gear-best-in-slot
+
+.additem 17966
+.additem 17966
+.additem 17966
+.additem 17966
+.additem 12640
+.additem 23053
+.additem 21330
+.additem 23045
+.additem 23000
+.additem 22936
+
+.additem 23219
+.additem 23068
+.additem 19387
+.additem 19325
+.additem 19406
+.additem 20130
+.additem 23041
+.additem 22954
+.additem 23054
+.additem 23577
+.additem 22798
+.additem 22811
+.additem 17182

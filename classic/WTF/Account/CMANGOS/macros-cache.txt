@@ -1,0 +1,11 @@
+MACRO 3 "addbotsally" Ability_Ambush
+.bot add lockboy
+.bot add warriorboy
+.bot add cool
+END
+MACRO 1 "addbotshorde" Ability_Ambush
+.bot add hunterboy
+.bot add Deb
+END
+MACRO 2 "mounts" Ability_Creature_Cursed_01
+END

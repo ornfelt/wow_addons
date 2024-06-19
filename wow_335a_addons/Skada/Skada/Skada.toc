@@ -1,0 +1,37 @@
+## Interface: 30300
+## Title: Skada
+## Notes: Modular damage meter.
+## Notes-deDE: Ein Damage-Meter.
+## Notes-esES: Un medidor de daño.
+## Notes-esMX: Un medidor de daño.
+## Notes-frFR: Un damage meter.
+## Notes-koKR: 데미지 미터 모듈입니다.
+## Notes-ruRU: Измеритель урона.
+## Notes-zhCN: 模块化伤害统计。
+## Notes-zhTW: 模組化的傷害統計。
+## OptionalDeps: Ace3, LibSharedMedia-3.0, LibWindow-1.1, LibDBIcon-1.0, AceGUI-3.0-SharedMediaWidgets, LibBossIDs-1.0, LibFail-1.0
+## LoadOnDemand: 0
+## SavedVariables: SkadaDB
+## SavedVariablesPerCharacter: SkadaCharDB
+## DefaultState: enabled
+## Author: Kader (|cff808080bkader#6361|r)
+## Version: 1.8.69
+## X-Date: 2021-09-16 @ 11:31 AM |cff808080UTC|r
+## X-Credits: Zarnivoop, WoTLK Community
+## X-Category: Combat
+## X-License: MIT/X
+## X-Email: |cff20ff20bkader@mail.com|r
+## X-Website: https://github.com/bkader/Skada-WoTLK
+## X-Discord: |cff20ff20https://bit.ly/skada-rev|r
+## X-Localizations: meatgaga (CN), Ícar & Septimun (ES), Kader (FR), NGL (RU)
+## X-Donate: |cff0079c1PayPal|r or |cff246a96Paysera|r at |cff20ff20bkader@mail.com|r
+
+Embeds.xml
+Locales.xml
+Skada.lua
+Menus.lua
+Options.lua
+BarDisplay.lua
+InlineDisplay.lua
+BrokerDisplay.lua
+Modules.xml

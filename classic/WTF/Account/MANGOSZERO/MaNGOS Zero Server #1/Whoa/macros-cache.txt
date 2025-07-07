@@ -1,0 +1,38 @@
+MACRO 16777221 "altweps" Ability_Repair
+.additem 22808
+.additem 19351
+.additem 22798
+.additem 18822
+.additem 19334
+.additem 22815
+.additem 17076
+.additem 17182
+END
+MACRO 16777217 "mount" Ability_Mount_PinkTiger
+/s Adding mount
+/script local f=UnitFactionGroup("player") if f=="Alliance" then SendChatMessage(".additem 18767", "SAY") else SendChatMessage(".additem 18798", "SAY") end
+END
+MACRO 16777218 "test" Ability_Ambush
+/script local f=UnitFactionGroup("player") if f=="Alliance" then SendChatMessage("Hello from the Alliance!", "SAY") else SendChatMessage("Horde here!", "SAY") end
+END
+MACRO 16777219 "war" Ability_Rogue_Ambush
+.additem 12640
+.additem 23053
+.additem 21330
+.additem 23045
+.additem 23000
+.additem 22936
+.additem 21581
+.additem 23054
+.additem 23577
+.additem 22812
+END
+MACRO 16777220 "war2" Ability_Rogue_Ambush
+.additem 23219
+.additem 23068
+.additem 19387
+.additem 18821
+.additem 23038
+.additem 23041
+.additem 22954
+END

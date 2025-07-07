@@ -1,0 +1,3 @@
+MACRO 16777217 "go" Ability_Hunter_BeastCall
+.go creature Zachariah Post
+END

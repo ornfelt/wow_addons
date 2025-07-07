@@ -1,0 +1,13 @@
+MACRO 16777219 "go" Ability_Hunter_BeastCall
+.go creature Milli Featherwhistle
+END
+MACRO 16777220 "go_train" Ability_Hunter_BeastTraining
+.go creature juli stormkettle
+END
+MACRO 16777217 "mount" Ability_Mount_PinkTiger
+/s Adding mount
+/script local f=UnitFactionGroup("player") if f=="Alliance" then SendChatMessage(".additem 18767", "SAY") else SendChatMessage(".additem 18798", "SAY") end
+END
+MACRO 16777218 "test" Ability_Ambush
+/script local f=UnitFactionGroup("player") if f=="Alliance" then SendChatMessage("Hello from the Alliance!", "SAY") else SendChatMessage("Horde here!", "SAY") end
+END

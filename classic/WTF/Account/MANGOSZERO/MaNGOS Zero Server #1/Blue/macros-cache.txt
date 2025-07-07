@@ -1,0 +1,9 @@
+MACRO 16777218 "go" Ability_Hunter_BeastCall
+.go creature Ogunaro Wolfrunner
+END
+MACRO 16777219 "go_train" Ability_Hunter_BeastTraining
+.go creature Kardris Dreamseeker
+END
+MACRO 16777217 "test" Ability_Ambush
+/script local f=UnitFactionGroup("player") if f=="Alliance" then SendChatMessage("Hello from the Alliance!", "SAY") else SendChatMessage("Horde here!", "SAY") end
+END

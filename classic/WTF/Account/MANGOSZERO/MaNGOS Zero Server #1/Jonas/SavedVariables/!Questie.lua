@@ -35,8 +35,8 @@ QuestieConfig = {
 QuestieTrackerVariables = {
 	["position"] = {
 		["relativeTo"] = "UIParent",
-		["point"] = "CENTER",
-		["relativePoint"] = "CENTER",
+		["point"] = "TOPLEFT",
+		["relativePoint"] = "TOPLEFT",
 		["yOfs"] = 0,
 		["xOfs"] = 0,
 	},

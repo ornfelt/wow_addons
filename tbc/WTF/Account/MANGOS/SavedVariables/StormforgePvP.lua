@@ -1,0 +1,6 @@
+
+StormforgePvPSaved = {
+	["minimap"] = {
+		["hide"] = false,
+	},
+}

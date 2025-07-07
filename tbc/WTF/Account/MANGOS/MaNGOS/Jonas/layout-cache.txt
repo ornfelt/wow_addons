@@ -1,0 +1,8 @@
+Version: 1
+Frame: TutorialFrame
+FrameLevel: 1
+Anchor: CENTER
+X: -4
+Y: 12
+W: 230
+H: 128

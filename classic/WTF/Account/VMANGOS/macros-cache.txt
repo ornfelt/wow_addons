@@ -110,10 +110,6 @@ MACRO 15 ".additemrog2" Ability_Stealth
 .additem 22812
 END
 MACRO 8 ".additemsham1" Spell_Nature_Lightning
-.additem 17966
-.additem 17966
-.additem 17966
-.additem 17966
 .additem 19375
 .additem 23199
 .additem 23057
@@ -158,16 +154,16 @@ MACRO 3 "learn" Ability_Creature_Cursed_05
 .learn 33388
 .learn 33391
 .additem 18767
-.learn all_myspells
+.additem 17966
+.additem 17966
+.additem 17966
+.additem 17966
+#.learn all_myspells
 .mod money 100000000
 .max
 /s Don't forget to use max again after learning new weapons...
 END
 MACRO 1 "mageitems" Spell_Frost_ChillingArmor
-.additem 17966
-.additem 17966
-.additem 17966
-.additem 17966
 .additem 22799
 .additem 22498
 .additem 23057

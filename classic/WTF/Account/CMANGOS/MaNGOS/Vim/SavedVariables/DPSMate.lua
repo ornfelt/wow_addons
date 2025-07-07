@@ -12,10 +12,13 @@ DPSMateUser = {
 	["Squirrel"] = {
 		[1] = 9,
 	},
+	["Saranesta"] = {
+		[1] = 10,
+	},
 	["Vim"] = {
 		[1] = 1,
 		[2] = "mage",
-		[8] = 1,
+		[8] = 60,
 	},
 	["Fytleno"] = {
 		[1] = 4,
@@ -28,6 +31,9 @@ DPSMateUser = {
 	},
 	["Unknown"] = {
 		[1] = 3,
+	},
+	["Horikleyn"] = {
+		[1] = 11,
 	},
 	["Environment"] = {
 		[1] = 8,
@@ -46,15 +52,20 @@ DPSMateAbility = {
 	["Mage Armor"] = {
 		[1] = 6,
 	},
+	["Blessing of Wisdom"] = {
+		[1] = 13,
+	},
 	["Falling"] = {
 		[1] = 7,
 	},
-	["Fire Ward"] = {
-		[1] = 11,
+	["15 Mana from Saranesta 's Blessing of Wisdom"] = {
+		[1] = 12,
 	},
-	["Arcane Explosion"] = {
-		[1] = 8,
-		[3] = "arcane",
+	["Frost Armor"] = {
+		[1] = 3,
+	},
+	["Shadow Protection"] = {
+		[1] = 10,
 	},
 	["Power Word: Fortitude"] = {
 		[1] = 9,
@@ -62,11 +73,12 @@ DPSMateAbility = {
 	["Stealth"] = {
 		[1] = 4,
 	},
-	["Shadow Protection"] = {
-		[1] = 10,
+	["Fire Ward"] = {
+		[1] = 11,
 	},
-	["Frost Armor"] = {
-		[1] = 3,
+	["Arcane Explosion"] = {
+		[1] = 8,
+		[3] = "arcane",
 	},
 }
 DPSMateDamageDone = {
@@ -319,14 +331,6 @@ DPSMateAbsorbs = {
 	[1] = {
 		[1] = {
 			[3] = {
-				["i"] = {
-				},
-				[11] = {
-					[1] = {
-						["i"] = {
-						},
-					},
-				},
 				[10] = {
 					[1] = {
 						["i"] = {
@@ -336,6 +340,14 @@ DPSMateAbsorbs = {
 							[4] = 0,
 						},
 					},
+				},
+				[11] = {
+					[1] = {
+						["i"] = {
+						},
+					},
+				},
+				["i"] = {
 				},
 			},
 		},
@@ -343,14 +355,6 @@ DPSMateAbsorbs = {
 	[2] = {
 		[1] = {
 			[3] = {
-				["i"] = {
-				},
-				[11] = {
-					[1] = {
-						["i"] = {
-						},
-					},
-				},
 				[10] = {
 					[1] = {
 						["i"] = {
@@ -360,6 +364,14 @@ DPSMateAbsorbs = {
 							[4] = 0,
 						},
 					},
+				},
+				[11] = {
+					[1] = {
+						["i"] = {
+						},
+					},
+				},
+				["i"] = {
 				},
 			},
 		},
@@ -511,6 +523,36 @@ DPSMateAurasGained = {
 				[6] = 0,
 			},
 		},
+		[10] = {
+			[12] = {
+				[1] = {
+					[1] = 0.8281000146478414,
+				},
+				[2] = {
+				},
+				[3] = {
+					[3] = 1,
+				},
+				[4] = false,
+				[5] = 1,
+				[6] = 0,
+			},
+		},
+		[11] = {
+			[13] = {
+				[1] = {
+					[1] = 0.8281000146478414,
+				},
+				[2] = {
+				},
+				[3] = {
+					[3] = 1,
+				},
+				[4] = false,
+				[5] = 1,
+				[6] = 0,
+			},
+		},
 	},
 	[2] = {
 		[1] = {
@@ -555,6 +597,36 @@ DPSMateAurasGained = {
 				[6] = 1,
 			},
 		},
+		[10] = {
+			[12] = {
+				[1] = {
+					[1] = 0.1251000055879354,
+				},
+				[2] = {
+				},
+				[3] = {
+					[3] = 1,
+				},
+				[4] = false,
+				[5] = 1,
+				[6] = 0,
+			},
+		},
+		[11] = {
+			[13] = {
+				[1] = {
+					[1] = 0.1251000055879354,
+				},
+				[2] = {
+				},
+				[3] = {
+					[3] = 1,
+				},
+				[4] = false,
+				[5] = 1,
+				[6] = 0,
+			},
+		},
 	},
 }
 DPSMateCombatTime = {
@@ -578,11 +650,11 @@ DPSMateHistory = {
 	},
 	["OHealing"] = {
 	},
-	["names"] = {
+	["EHealingTaken"] = {
 	},
 	["EHealing"] = {
 	},
-	["EDTaken"] = {
+	["OHealingTaken"] = {
 	},
 	["CCBreaker"] = {
 	},
@@ -592,23 +664,23 @@ DPSMateHistory = {
 	},
 	["THealingTaken"] = {
 	},
-	["EHealingTaken"] = {
+	["Interrupts"] = {
 	},
-	["Auras"] = {
+	["EDTaken"] = {
 	},
 	["THealing"] = {
 	},
-	["OHealingTaken"] = {
-	},
-	["Absorbs"] = {
+	["DMGTaken"] = {
 	},
 	["Deaths"] = {
 	},
-	["DMGTaken"] = {
+	["Absorbs"] = {
+	},
+	["names"] = {
 	},
 	["DMGDone"] = {
 	},
-	["Interrupts"] = {
+	["Auras"] = {
 	},
 }
 DPSMateFails = {

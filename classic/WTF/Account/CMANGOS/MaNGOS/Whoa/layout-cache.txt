@@ -1,0 +1,6 @@
+Frame: ChatFrame2
+FrameLevel: 4
+X: 32
+Y: -596
+W: 430
+H: 120

@@ -8,3 +8,9 @@ Frame: TutorialFrame
 FrameLevel: 4
 X: 398
 Y: -256
+Frame: DPSMate_DPSMate
+FrameLevel: 1
+X: 1147
+Y: -581
+W: 235
+H: 152

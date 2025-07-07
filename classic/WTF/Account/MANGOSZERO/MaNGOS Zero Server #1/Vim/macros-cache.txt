@@ -1,8 +1,10 @@
 MACRO 16777219 "go" Ability_Hunter_BeastCall
-.go creature Katie Hunter
+#.go creature Katie Hunter
+.go xyz -9455.37 -1385.32 47.20 0
 END
 MACRO 16777220 "go_train" Ability_Hunter_BeastTraining
-.go creature elsharin
+#.go creature elsharin
+.go xyz -9006.11 885.37 29.70 0
 END
 MACRO 16777218 "mount" Ability_Mount_BlackPanther
 /s Adding mount

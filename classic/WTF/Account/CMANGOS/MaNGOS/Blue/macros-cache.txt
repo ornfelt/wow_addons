@@ -1,3 +1,15 @@
-MACRO 16777217 "test" Ability_Ambush
+MACRO 16777218 "go" Ability_Hunter_BeastCall
+#.go creature Ogunaro Wolfrunner
+.go xyz 2159.36 -4653.74 49.74 1
+END
+MACRO 16777219 "go_train" Ability_Hunter_BeastTraining
+#.go creature Kardris Dreamseeker
+.go xyz 1933.68 -4224.85 42.17 1
+END
+MACRO 16777220 "mount" Ability_Mount_BlackDireWolf
+/s Adding mount
+/script local f=UnitFactionGroup("player") if f=="Alliance" then SendChatMessage(".additem 18767", "SAY") else SendChatMessage(".additem 18798", "SAY") end
+END
+MACRO 16777221 "test" Ability_Ambush
 /script local f=UnitFactionGroup("player") if f=="Alliance" then SendChatMessage("Hello from the Alliance!", "SAY") else SendChatMessage("Horde here!", "SAY") end
 END

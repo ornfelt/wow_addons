@@ -1,0 +1,8 @@
+Version: 1
+Frame: WorldMapFrame
+FrameLevel: 87
+Anchor: TOPLEFT
+X: 0
+Y: 0
+W: 1437
+H: 808

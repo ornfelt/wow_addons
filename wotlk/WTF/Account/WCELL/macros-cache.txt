@@ -1,0 +1,303 @@
+MACRO 25 ".item1hunter" Ability_GolemStormBolt
+.item add 51286
+.item add 51288
+.item add 51289
+.item add 51285
+.item add 50645
+.item add 50633
+.item add 51933
+.item add 50655
+.item add 50688
+.spell add 6991
+.item add 44607 100
+END
+MACRO 24 ".item1mage" Spell_Arcane_Blink
+.item add 51828
+.spell add 62948
+.item add 42739
+.item add 45737
+.item add 50664
+.item add 50724
+END
+MACRO 26 ".item2hunter" Ability_GolemStormBolt
+.item add 54577
+.item add 51900
+.item add 50618
+.item add 50363
+.item add 54590
+.item add 50735
+.item add 51927
+.item add 42912
+.item add 42914
+.item add 42909
+.item add 18714
+.item add 50343
+.item add 41165 200
+.item add 52021 800
+END
+MACRO 23 ".item2mage" Spell_Arcane_Blink
+.item add 51281
+.item add 51280
+.item add 51282
+.item add 51283
+.item add 51284
+.item add 50613
+.item add 54583
+.item add 54582
+.item add 50614
+.item add 50699
+.item add 50398
+.item add 50719
+.item add 50365
+.item add 54588
+.item add 50732
+.item add 50684
+END
+MACRO 36 ".itemdruid1" Ability_Druid_ManaTree
+.item add 51290
+.item add 50724
+.item add 51292
+.item add 54583
+.item add 50699
+.item add 50694
+.item add 50613
+.item add 50457
+END
+MACRO 37 ".itemdruid2" Ability_Druid_ManaTree
+.item add 54582
+.item add 51291
+.item add 51294
+.item add 51849
+.item add 50714
+.item add 50398
+.item add 54588
+.item add 50365
+.item add 50734
+.item add 50719
+END
+MACRO 34 ".itempala1" Spell_Holy_GreaterBlessingofKings
+.item add 51277
+.item add 50647
+.item add 51279
+.item add 50677
+.item add 51275
+END
+MACRO 35 ".itempala2" Spell_Holy_GreaterBlessingofKings
+.item add 51278
+.item add 51832
+.item add 50657
+.item add 50620
+.item add 50690
+.item add 50639
+.item add 50693
+.item add 47464
+.item add 50706
+.item add 50730
+.item add 49623
+.item add 50455
+END
+MACRO 27 ".itempri1" Spell_Holy_PowerWordShield
+.item add 51261
+.item add 50719
+.item add 50724
+.item add 51264
+.item add 54583
+.item add 51263
+END
+MACRO 28 ".itempri2" Spell_Holy_PowerWordShield
+.item add 54582
+.item add 50722
+.item add 50702
+.item add 51262
+.item add 50699
+.item add 54585
+.item add 50644
+.item add 50366
+.item add 54589
+.item add 50631
+.item add 50734
+END
+MACRO 29 ".itemrogue1" Ability_BackStab
+.item add 51252
+.item add 50633
+.item add 50646
+.item add 51900
+END
+MACRO 30 ".itemrogue2" Ability_BackStab
+.item add 51253
+.item add 50607
+.item add 50402
+.item add 54576
+.item add 54590
+.item add 50706
+.item add 50736
+.item add 50621
+.item add 50733
+.item add 50656
+.item add 54580
+.item add 51251
+.item add 50707
+.item add 50653
+END
+MACRO 21 "a1" INV_Misc_QuestionMark
+#showtooltip flametongue weapon
+/cast [target=arena1] wind shear;
+END
+MACRO 20 "a2" INV_Misc_QuestionMark
+#showtooltip earth shield
+/cast [nomod] earth shield;
+/cast [mod:alt, target=arena2] wind shear;
+END
+MACRO 22 "a3" INV_Misc_QuestionMark
+#showtooltip frostbrand weapon
+/cast [target=arena3] wind shear;
+END
+MACRO 7 "add" Spell_Magic_GreaterBlessingofKings
+.npcbot add
+END
+MACRO 11 "allybots" Ability_Ambush
+.npcbot spawn 70415
+.npcbot spawn 70416
+.npcbot spawn 70418
+.npcbot spawn 70035
+.npcbot spawn 70074
+.npcbot spawn 70071
+.npcbot spawn 70138
+.npcbot spawn 70139
+.npcbot spawn 70176
+.npcbot spawn 70230
+END
+MACRO 12 "allybotsdel" Ability_Ambush
+.npcbot delete id 70415
+.npcbot delete id 70416
+.npcbot delete id 70418
+.npcbot delete id 70035
+.npcbot delete id 70074
+.npcbot delete id 70071
+.npcbot delete id 70138
+.npcbot delete id 70139
+.npcbot delete id 70176
+.npcbot delete id 70230
+END
+MACRO 39 "botfollow" Spell_Misc_EmotionHappy
+.npcbot command follow
+END
+MACRO 1 "botgroup" Spell_Arcane_TeleportSilvermoon
+.npcbot lookup 1
+.npcbot spawn 70214
+.npcbot spawn 70072
+.npcbot spawn 70025
+.npcbot spawn 70336
+END
+MACRO 16 "botgroup2" Spell_Arcane_TeleportStonard
+.npcbot lookup 11
+.npcbot spawn 70324
+.npcbot spawn 70226
+.npcbot spawn 70160
+.npcbot spawn 70026
+END
+MACRO 18 "botgroupdel1" Spell_Arcane_TeleportSilvermoon
+.npcbot delete id 70214
+.npcbot delete id 70072
+.npcbot delete id 70025
+.npcbot delete id 70336
+END
+MACRO 17 "botgroupdel2" Spell_Arcane_TeleportStonard
+.npcbot delete id 70324
+.npcbot delete id 70226
+.npcbot delete id 70160
+.npcbot delete id 70026
+END
+MACRO 40 "botlist" Spell_Magic_LesserInvisibilty
+.npcbot list spawned
+END
+MACRO 38 "botstay" Spell_Misc_EmotionSad
+.npcbot command stopfully
+END
+MACRO 8 "fa" Ability_Ambush
+.npcbot set faction alliance
+END
+MACRO 9 "fh" Ability_Creature_Cursed_02
+.npcbot set faction horde
+END
+MACRO 19 "focus" INV_Misc_QuestionMark
+/focus [target=mouseover]
+END
+MACRO 13 "hordebots" Ability_Creature_Cursed_02
+.npcbot spawn 70111
+.npcbot spawn 70110
+.npcbot spawn 70062
+.npcbot spawn 70018
+.npcbot spawn 70363
+.npcbot spawn 70365
+.npcbot spawn 70454
+.npcbot spawn 70457
+.npcbot spawn 70235
+.npcbot spawn 70236
+END
+MACRO 14 "hordebotsdel" Ability_Creature_Cursed_02
+.npcbot delete id 70111
+.npcbot delete id 70110
+.npcbot delete id 70062
+.npcbot delete id 70018
+.npcbot delete id 70363
+.npcbot delete id 70365
+.npcbot delete id 70454
+.npcbot delete id 70457
+.npcbot delete id 70235
+.npcbot delete id 70236
+END
+MACRO 6 "item1" Spell_Nature_ChainLightning
+.item add 51848
+.item add 54588
+.item add 52252
+.item add 50458
+.item add 51944
+.item add 51894
+.item add 51884
+.item add 51849
+.item add 50346
+.item add 51873
+END
+MACRO 5 "item2" Spell_Nature_ChainLightning
+.item add 51237
+.item add 51239
+.item add 51238
+.item add 51236
+.item add 51235
+.item add 51812
+.item add 51929
+.item add 51919
+END
+MACRO 4 "learn1" Ability_Creature_Cursed_05
+.mod money 100000000
+.spell add 33388
+.spell add 33389
+.item add 51809
+.item add 51809
+.item add 51809
+.item add 51809
+END
+MACRO 3 "learn2" Ability_Creature_Cursed_05
+.item add 49290
+.item add 45801
+.item add 43962
+.spell add 34090
+.spell add 34091
+.spell add 54197
+END
+MACRO 41 "m" INV_Misc_QuestionMark
+#showtooltip white polar bear
+/cancelform
+/stopcasting
+/cancelaura ice block
+/cancelaura levitate
+/cancelaura deterrence
+/cast white polar bear
+/petfollow
+END
+MACRO 33 "xx" Ability_Creature_Cursed_05
+.level 80
+.max
+.item add 50818
+END

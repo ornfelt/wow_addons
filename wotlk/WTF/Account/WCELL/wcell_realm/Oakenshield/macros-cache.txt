@@ -1,0 +1,119 @@
+MACRO 16777217 "a" Ability_Warrior_ShieldWall
+.additem 17966
+.additem 17966
+.additem 17966
+.additem 17966
+.additem 12640
+.additem 23053
+.additem 21330
+.additem 23045
+.additem 23000
+.additem 22936
+.additem 21581
+.additem 1168
+.additem 23059
+.additem 23038
+END
+MACRO 16777218 "b" Ability_Warrior_ShieldWall
+.additem 23219
+.additem 23068
+.additem 19387
+.additem 19325
+.additem 19406
+.additem 20130
+.additem 23041
+.additem 22954
+.additem 23054
+.additem 23577
+.additem 22798
+.additem 22811
+.additem 17182
+END
+MACRO 16777220 "enchant" Ability_Mage_ConjureFoodRank12
+.additem 11145
+.additem 7080
+.additem 14343 4
+.additem 13467
+.additem 7082
+END
+MACRO 16777219 "m" INV_Misc_QuestionMark
+#showtooltip winterspring frostsaber
+/cancelform
+/stopcasting
+/cancelaura ice block
+/cancelaura levitate
+/cast winterspring frostsaber
+/petfollow
+END
+MACRO 16777225 "mage" Spell_Frost_FrostBlast
+.additem 22799
+.additem 22498
+.additem 22983
+.additem 23057
+.additem 16444
+.additem 16917
+.additem 23050
+END
+MACRO 16777226 "mage2" Spell_Frost_FrostBlast
+.additem 22496
+.additem 23021
+.additem 22501
+.additem 19400
+.additem 16915
+.additem 22500
+.additem 23062
+.additem 23237
+.additem 23046
+.additem 19950
+.additem 18849
+.additem 22589
+.additem 18842
+END
+MACRO 16777221 "pri" Spell_Holy_Penance
+.additem 22514
+.additem 23036
+.additem 22515
+.additem 22960
+.additem 22512
+.additem 22519
+.additem 22517
+END
+MACRO 16777222 "pri2" Spell_Holy_Penance
+.additem 22513
+.additem 21582
+.additem 22518
+.additem 22516
+.additem 23061
+.additem 22939
+.additem 23027
+.additem 23047
+.additem 23048
+.additem 23056
+.additem 22801
+.additem 23009
+END
+MACRO 16777223 "sham" Spell_Nature_ChainLightning
+.additem 19375
+.additem 23199
+.additem 23057
+.additem 23664
+.additem 21376
+.additem 23050
+.additem 19682
+.additem 21374
+END
+MACRO 16777224 "sham2" Spell_Nature_ChainLightning
+.additem 23021
+.additem 21585
+.additem 22730
+.additem 21375
+.additem 23665
+.additem 21373
+.additem 23031
+.additem 23025
+.additem 19379
+.additem 23046
+.additem 22799
+.additem 22988
+.additem 23049
+END

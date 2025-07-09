@@ -1,0 +1,25 @@
+MACRO 16777217 ".additemsham1" Spell_Nature_EarthShock
+.additem 19375
+.additem 23199
+.additem 23057
+.additem 23664
+.additem 21376
+.additem 23050
+.additem 19682
+.additem 21374
+END
+MACRO 16777218 ".additemssham2" Spell_Nature_EarthShock
+.additem 23021
+.additem 21585
+.additem 22730
+.additem 21375
+.additem 23665
+.additem 21373
+.additem 23031
+.additem 23025
+.additem 19379
+.additem 23046
+.additem 22799
+.additem 22988
+.additem 23049
+END

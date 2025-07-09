@@ -1,0 +1,18 @@
+MACRO 16777217 ".wardpsitems" Ability_Warrior_Rampage
+.additem 50733
+.additem 50730 2
+.additem 49623
+.additem 51227
+.additem 54581
+.additem 51229
+.additem 47545
+.additem 51225
+.additem 54580
+.additem 51226
+.additem 50620
+.additem 51228
+.additem 54578
+.additem 54590
+.additem 50363
+.additem 50618
+END

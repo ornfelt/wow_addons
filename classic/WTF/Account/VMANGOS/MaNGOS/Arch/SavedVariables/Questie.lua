@@ -1,2 +1,0 @@
-
-QuestieConfigCharacter = nil

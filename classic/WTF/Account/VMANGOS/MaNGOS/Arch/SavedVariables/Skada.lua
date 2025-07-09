@@ -1,2 +1,0 @@
-
-SkadaPerCharDB = nil

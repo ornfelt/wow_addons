@@ -1,0 +1,18 @@
+MACRO 16777217 "go" Ability_Hunter_BeastCall
+#.go creature Zachariah Post
+.go xyz 2250.37 328.10 35.27 0
+END
+MACRO 16777221 "go_bg" Ability_DualWield
+.go creature 4765
+END
+MACRO 16777218 "go_train" Ability_Hunter_BeastTraining
+#.go creature Anastasia Hartwell
+.go xyz 1813.73 56.41 -47.30 0
+END
+MACRO 16777219 "mount" Ability_Mount_BlackDireWolf
+/s Adding mount
+/script local f=UnitFactionGroup("player") if f=="Alliance" then SendChatMessage(".additem 18767", "SAY") else SendChatMessage(".additem 18798", "SAY") end
+END
+MACRO 16777220 "test" Ability_Ambush
+/script local f=UnitFactionGroup("player") if f=="Alliance" then SendChatMessage("Hello from the Alliance!", "SAY") else SendChatMessage("Horde here!", "SAY") end
+END

@@ -3,7 +3,7 @@ DPSMateUser = {
 	["Phi"] = {
 		[1] = 1,
 		[2] = "rogue",
-		[8] = 0,
+		[8] = 60,
 	},
 	["Male Human Captive"] = {
 		[1] = 2,
@@ -11,8 +11,8 @@ DPSMateUser = {
 	["Captive Abomination"] = {
 		[1] = 7,
 	},
-	["Edward"] = {
-		[1] = 3,
+	["Unknown"] = {
+		[1] = 9,
 	},
 	["Captive Ghoul"] = {
 		[1] = 6,
@@ -20,8 +20,8 @@ DPSMateUser = {
 	["Captive Zombie"] = {
 		[1] = 8,
 	},
-	["Unknown"] = {
-		[1] = 9,
+	["Edward"] = {
+		[1] = 3,
 	},
 	["Tyler"] = {
 		[1] = 5,
@@ -2141,11 +2141,11 @@ DPSMateHistory = {
 	},
 	["OHealing"] = {
 	},
-	["names"] = {
+	["EHealingTaken"] = {
 	},
 	["EHealing"] = {
 	},
-	["EDTaken"] = {
+	["OHealingTaken"] = {
 	},
 	["CCBreaker"] = {
 	},
@@ -2155,23 +2155,23 @@ DPSMateHistory = {
 	},
 	["THealingTaken"] = {
 	},
-	["EHealingTaken"] = {
+	["Interrupts"] = {
 	},
-	["Auras"] = {
+	["EDTaken"] = {
 	},
 	["THealing"] = {
 	},
-	["OHealingTaken"] = {
-	},
-	["Absorbs"] = {
+	["DMGTaken"] = {
 	},
 	["Deaths"] = {
 	},
-	["DMGTaken"] = {
+	["Absorbs"] = {
+	},
+	["names"] = {
 	},
 	["DMGDone"] = {
 	},
-	["Interrupts"] = {
+	["Auras"] = {
 	},
 }
 DPSMateFails = {

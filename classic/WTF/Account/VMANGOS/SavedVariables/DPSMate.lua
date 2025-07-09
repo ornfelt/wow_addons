@@ -15,7 +15,10 @@ DPSMateSettings = {
 		[4] = false,
 	},
 	["datasegments"] = 8,
-	["hidewhensolo"] = false,
+	["columnsdecurses"] = {
+		[1] = true,
+		[2] = true,
+	},
 	["columnsfriendlyfiretaken"] = {
 		[1] = true,
 		[2] = false,
@@ -24,9 +27,9 @@ DPSMateSettings = {
 	},
 	["hideincombat"] = false,
 	["hideinpvp"] = false,
-	["columnsoverhealing"] = {
-		[1] = true,
-		[2] = false,
+	["columnsdtps"] = {
+		[1] = false,
+		[2] = true,
 		[3] = true,
 		[4] = false,
 	},
@@ -152,12 +155,7 @@ DPSMateSettings = {
 		[2] = true,
 	},
 	["showtotals"] = true,
-	["columnsehps"] = {
-		[1] = false,
-		[2] = true,
-		[3] = true,
-		[4] = false,
-	},
+	["mergepets"] = true,
 	["enable"] = true,
 	["hideonlogin"] = false,
 	["broadcasting"] = false,
@@ -178,9 +176,11 @@ DPSMateSettings = {
 		[3] = true,
 		[4] = false,
 	},
-	["columnsinterrupts"] = {
-		[1] = true,
+	["columnsehps"] = {
+		[1] = false,
 		[2] = true,
+		[3] = true,
+		[4] = false,
 	},
 	["columnsabsorbs"] = {
 		[1] = true,
@@ -195,7 +195,12 @@ DPSMateSettings = {
 		[4] = false,
 	},
 	["bccd"] = false,
-	["dataresetspartyamount"] = 2,
+	["columnsoverhealing"] = {
+		[1] = true,
+		[2] = false,
+		[3] = true,
+		[4] = false,
+	},
 	["windows"] = {
 		[1] = {
 			["barheight"] = 17,
@@ -259,23 +264,23 @@ DPSMateSettings = {
 			["titlebaropacity"] = 1,
 			["filterpeople"] = "",
 			["opacity"] = 1,
-			["titlebarfontsize"] = 12,
 			["barfontcolor"] = {
 				[1] = 1,
 				[2] = 1,
 				[3] = 1,
 			},
+			["titlebarreport"] = true,
 			["titlebartexture"] = "Minimalist",
 			["bartexture"] = "Minimalist",
 			["savsize"] = {
-				[1] = 293.1037604706847,
-				[2] = 173.1926075308986,
+				[1] = 263.0815478849845,
+				[2] = 173.9556034144655,
 			},
 			["barspacing"] = 1,
 			["CurMode"] = "damage",
 			["grouponly"] = true,
 			["titlebar"] = true,
-			["titlebarreport"] = true,
+			["titlebarfontsize"] = 12,
 			["contentbgtexture"] = "UI-Tooltip-Background",
 			["filterclasses"] = {
 				["warrior"] = true,
@@ -298,10 +303,7 @@ DPSMateSettings = {
 			["barfontflag"] = "Outline",
 		},
 	},
-	["columnsprocs"] = {
-		[1] = true,
-		[2] = true,
-	},
+	["hidewhensolo"] = false,
 	["tooltipanchor"] = 5,
 	["reportdelay"] = false,
 	["columnsdiseasereceived"] = {
@@ -309,7 +311,7 @@ DPSMateSettings = {
 		[2] = true,
 	},
 	["disablewhilehidden"] = false,
-	["columnsdecurses"] = {
+	["columnsprocs"] = {
 		[1] = true,
 		[2] = true,
 	},
@@ -317,19 +319,17 @@ DPSMateSettings = {
 		[1] = true,
 		[2] = true,
 	},
-	["columnsdtps"] = {
-		[1] = false,
-		[2] = true,
-		[3] = true,
-		[4] = false,
-	},
+	["dataresetspartyamount"] = 2,
 	["columnsmagicreceived"] = {
 		[1] = true,
 		[2] = true,
 	},
 	["sync"] = true,
 	["bcrw"] = false,
-	["mergepets"] = true,
+	["columnsinterrupts"] = {
+		[1] = true,
+		[2] = true,
+	},
 	["columnshab"] = {
 		[1] = true,
 		[2] = false,

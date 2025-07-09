@@ -1,8 +1,4 @@
 MACRO 16 ".additemdru1" Ability_Druid_TravelForm
-.additem 17966
-.additem 17966
-.additem 17966
-.additem 17966
 .additem 23035
 .additem 21608
 .additem 22983
@@ -24,9 +20,6 @@ MACRO 17 ".additemdru2" Ability_Druid_TravelForm
 .additem 18795
 END
 MACRO 10 ".additemhunt1" Ability_Hunter_BeastTaming
-.additem 17966
-.additem 17966
-.additem 17966
 .additem 22438
 .additem 19377
 .additem 22439
@@ -81,10 +74,6 @@ MACRO 13 ".additempri2" Spell_Holy_Heal
 .additem 23009
 END
 MACRO 14 ".additemrog1" Ability_Stealth
-.additem 17966
-.additem 17966
-.additem 17966
-.additem 17966
 .additem 19346
 .additem 19019
 .additem 22478
@@ -153,7 +142,6 @@ END
 MACRO 3 "learn" Ability_Creature_Cursed_05
 .learn 33388
 .learn 33391
-.additem 18767
 .additem 17966
 .additem 17966
 .additem 17966
@@ -170,6 +158,7 @@ MACRO 1 "mageitems" Spell_Frost_ChillingArmor
 .additem 16444
 .additem 16917
 .additem 23050
+.additem 22820
 END
 MACRO 2 "mageitems2" Spell_Frost_ChillingArmor
 .additem 22496

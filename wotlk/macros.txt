@@ -1,0 +1,15 @@
+----------------------------------------------------------------------------------
+# wotlk macros
+
+Macro: Detect race and class, then print
+
+/script local _,class = UnitClass("player") local race = UnitRace("player") print("You are a "..race.." "..class) 
+
+Just race:
+/script print("Race: "..UnitRace("player"))
+
+Just class:
+/script local _,c = UnitClass("player") print("Class: "..c)
+
+----------------------------------------------------------------------------------
+

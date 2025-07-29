@@ -1,9 +1,9 @@
 Version: 1
 Frame: LootFrame
 FrameLevel: 9
-Anchor: TOP
-X: 223
-Y: -134
+Anchor: RIGHT
+X: -304
+Y: 72
 W: 256
 H: 256
 Frame: WorldMapFrame
@@ -23,8 +23,8 @@ H: 1
 Frame: HealBot_Action
 FrameLevel: 12
 Anchor: CENTER
-X: -270
-Y: -16
+X: -307
+Y: 13
 W: 136
 H: 34
 Frame: TellMeWhen_Group1

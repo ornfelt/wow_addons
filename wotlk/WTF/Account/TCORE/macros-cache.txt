@@ -13,11 +13,9 @@ MACRO 25 ".item1hunter" Ability_GolemStormBolt
 END
 MACRO 24 ".item1mage" Spell_Arcane_Blink
 .additem 51828
-.learn 62948
-.additem 42739
-.additem 45737
 .additem 50664
 .additem 50724
+/script local _,c=UnitClass("player") if c=="MAGE" then SendChatMessage(".additem 42739", "SAY") SendChatMessage(".additem 45737", "SAY") SendChatMessage(".additem 42751", "SAY") else print("c: "..c) end
 END
 MACRO 26 ".item2hunter" Ability_GolemStormBolt
 .additem 54577
@@ -52,7 +50,6 @@ MACRO 23 ".item2mage" Spell_Arcane_Blink
 .additem 54588
 .additem 50732
 .additem 50684
-.additem 42751
 END
 MACRO 36 ".itemdruid1" Ability_Druid_ManaTree
 .additem 51290
@@ -293,6 +290,7 @@ MACRO 41 "m" INV_Misc_QuestionMark
 /stopcasting
 /cancelaura ice block
 /cancelaura levitate
+/cancelaura Sentry totem
 /cast white polar bear
 /petfollow
 END

@@ -48,31 +48,19 @@ END
 MACRO 16777217 "botf" Spell_Misc_EmotionHappy
 .npcbot command follow
 END
-MACRO 16777220 "botgroup" Spell_Arcane_TeleportOrgrimmar
-.npcbot spawn 70017
-.npcbot spawn 70320
-.npcbot spawn 70260
-.npcbot spawn 70225
-END
-MACRO 16777221 "botgroupdel" Spell_Arcane_PortalTheramore
-.npcbot delete id 70017
-.npcbot delete id 70320
-.npcbot delete id 70260
-.npcbot delete id 70225
-END
 MACRO 16777218 "bots" Spell_Misc_EmotionSad
 .npcbot command stopfully
+END
+MACRO 16777233 "c" INV_Misc_QuestionMark
+#showtooltip combustion
+/cast combustion
+/use Potion of Speed
 END
 MACRO 16777230 "c" INV_Misc_QuestionMark
 #showtooltip counterspell
 /cast [nomod] counterspell
 /cast [mod:shift, target=focus] counterspell
 /cast [mod:ctrl, target=mouseover] counterspell
-END
-MACRO 16777233 "c" INV_Misc_QuestionMark
-#showtooltip combustion
-/cast combustion
-/use Potion of Speed
 END
 MACRO 16777234 "consumables" Spell_Arcane_Arcane01
 .additem 40211 200
@@ -102,7 +90,7 @@ MACRO 16777228 "enchants" Spell_Arcane_Arcane01
 .additem 45056
 END
 MACRO 16777229 "gems" Spell_Arcane_Arcane01
-.additem 40125 2
+.additem 40125 4
 .additem 40134 7
 .additem 40113 8
 .additem 40132 2
@@ -120,14 +108,33 @@ MACRO 16777231 "po" INV_Misc_QuestionMark
 /cast [mod:shift, target=focus] polymorph
 /cast [mod:ctrl, target=mouseover] polymorph
 END
-MACRO 16777235 "s" INV_Misc_QuestionMark
-#showtooltip slow fall
-/cast [nomod] slow fall
-/cancelaura [mod:shift] slow fall
+MACRO 16777236 "pvp_items" Ability_Mage_DeepFreeze
+.additem 51465
+.additem 51333
+.additem 51467
+.additem 51463
+.additem 51365
+.additem 50694
+.additem 51338
+.additem 51339
+.additem 51464
+.additem 45740
+.additem 42750
+.additem 42752
 END
 MACRO 16777232 "s" INV_Misc_QuestionMark
 #showtooltip spellsteal
 /cast [nomod] spellsteal
 /cast [mod:shift, target=focus] spellsteal
 /cast [mod:ctrl, target=mouseover] spellsteal
+END
+MACRO 16777235 "s" INV_Misc_QuestionMark
+#showtooltip slow fall
+/cast [nomod] slow fall
+/cancelaura [mod:shift] slow fall
+END
+MACRO 16777237 "v" INV_Misc_QuestionMark
+#showtooltip icy veins
+/cast icy veins
+/use Potion of Speed
 END

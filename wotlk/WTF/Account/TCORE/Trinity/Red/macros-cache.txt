@@ -60,19 +60,16 @@ MACRO 16777221 "botgroupdel" Spell_Arcane_PortalTheramore
 .npcbot delete id 70260
 .npcbot delete id 70225
 END
-MACRO 16777218 "bots" Spell_Misc_EmotionSad
-.npcbot command stopfully
+MACRO 16777233 "c" INV_Misc_QuestionMark
+#showtooltip combustion
+/cast combustion
+/use Potion of Speed
 END
 MACRO 16777230 "c" INV_Misc_QuestionMark
 #showtooltip counterspell
 /cast [nomod] counterspell
 /cast [mod:shift, target=focus] counterspell
 /cast [mod:ctrl, target=mouseover] counterspell
-END
-MACRO 16777233 "c" INV_Misc_QuestionMark
-#showtooltip combustion
-/cast combustion
-/use Potion of Speed
 END
 MACRO 16777234 "consumables" Spell_Arcane_Arcane01
 .additem 40211 200
@@ -110,6 +107,15 @@ MACRO 16777229 "gems" Spell_Arcane_Arcane01
 .additem 40153
 .additem 41285
 END
+MACRO 16777218 "m" INV_Misc_QuestionMark
+#showtooltip magic rooster
+/cancelform
+/stopcasting
+/cancelaura ice block
+/cancelaura levitate
+/cast magic rooster
+/petfollow
+END
 MACRO 16777226 "p" INV_Misc_QuestionMark
 #showtooltip
 /cast [nopet][target=pet, dead] Summon Water Elemental; Freeze
@@ -120,14 +126,14 @@ MACRO 16777231 "po" INV_Misc_QuestionMark
 /cast [mod:shift, target=focus] polymorph
 /cast [mod:ctrl, target=mouseover] polymorph
 END
-MACRO 16777235 "s" INV_Misc_QuestionMark
-#showtooltip slow fall
-/cast [nomod] slow fall
-/cancelaura [mod:shift] slow fall
-END
 MACRO 16777232 "s" INV_Misc_QuestionMark
 #showtooltip spellsteal
 /cast [nomod] spellsteal
 /cast [mod:shift, target=focus] spellsteal
 /cast [mod:ctrl, target=mouseover] spellsteal
+END
+MACRO 16777235 "s" INV_Misc_QuestionMark
+#showtooltip slow fall
+/cast [nomod] slow fall
+/cancelaura [mod:shift] slow fall
 END

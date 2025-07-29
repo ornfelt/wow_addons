@@ -1,4088 +1,5096 @@
 
 SkadaCharDB = {
 	{
-		["eoverkill"] = 173,
-		["totaldamaged"] = 57856,
-		["damaged"] = 52650,
-		["dispel"] = 17,
-		["overkill"] = 3676,
-		["heal"] = 32572,
-		["name"] = "Arathi Basin",
-		["death"] = 4,
-		["edamage"] = 56468,
-		["energy"] = 85,
-		["edamaged"] = 48722,
-		["mana"] = 1775,
-		["totaldamage"] = 50497,
-		["time"] = 216,
-		["cctaken"] = 4,
-		["etotaldamage"] = 61674,
-		["damage"] = 48722,
-		["rage"] = 123,
-		["type"] = "pvp",
-		["mobname"] = "Arathi Basin",
-		["interrupt"] = 5,
+		["edamaged"] = 156584,
+		["totaldamaged"] = 16637,
+		["damaged"] = 15022,
+		["dispel"] = 7,
+		["time"] = 87,
+		["etotaldamage"] = 18097,
+		["damage"] = 156584,
+		["overheal"] = 7944,
+		["absorb"] = 1615,
+		["sunder"] = 11,
+		["mana"] = 477,
+		["interrupt"] = 11,
+		["type"] = "party",
+		["starttime"] = 1681558368,
+		["overkill"] = 5647,
+		["ccdone"] = 41,
+		["heal"] = 16231,
+		["name"] = "Laughing Skull Rogue (2)",
+		["mobname"] = "Laughing Skull Rogue",
 		["actors"] = {
-			["Mirket"] = {
-				["damagespells"] = {
-					["-11713.32"] = {
-						["total"] = 1308,
-						["targets"] = {
-							["Sandahl"] = {
-								["total"] = 1308,
-								["amount"] = 0,
-							},
-						},
-						["amount"] = 0,
-					},
-				},
-				["totaldamage"] = 1308,
-				["damage"] = 0,
-				["id"] = "0xF130017A4C00005F",
-				["class"] = "MONSTER",
-				["enemy"] = true,
-			},
-			["Golhine"] = {
-				["last"] = 79629.492,
-				["damagedspells"] = {
-					["988.2"] = {
-						["mis_n"] = 1,
-						["sources"] = {
-							["Belestra"] = {
-								["amount"] = 0,
-							},
-						},
-						["count"] = 1,
-						["amount"] = 0,
-					},
-					["-27218.32"] = {
-						["sources"] = {
-							["Richard"] = {
-								["amount"] = 230,
-							},
-						},
-						["count"] = 1,
-						["amount"] = 230,
-						["n_min"] = 230,
-						["n_amt"] = 230,
-						["n_num"] = 1,
-						["n_max"] = 230,
-					},
-					["30413.32"] = {
-						["c_amt"] = 1165,
-						["sources"] = {
-							["Richard"] = {
-								["amount"] = 1165,
-							},
-						},
-						["count"] = 1,
-						["amount"] = 1165,
-						["c_min"] = 1165,
-						["c_max"] = 1165,
-						["c_num"] = 1,
-					},
-				},
-				["class"] = "DRUID",
-				["damaged"] = 1395,
-				["auras"] = {
-					["16870.8"] = {
-						["u"] = 153,
-						["n"] = 4,
-					},
-					["24858.1"] = {
-						["u"] = 216,
-						["n"] = 6,
-					},
-					["48421.8"] = {
-						["u"] = 216,
-						["n"] = 6,
-					},
-					["17329.8"] = {
-						["u"] = 106,
-						["n"] = 1,
-					},
-					["783.1"] = {
-						["u"] = 3,
-						["n"] = 1,
-					},
-					["9885.8"] = {
-						["u"] = 215,
-						["n"] = 1,
-					},
-					["26981.8"] = {
-						["u"] = 19,
-						["n"] = 1,
-					},
-					["24907.8"] = {
-						["u"] = 216,
-						["n"] = 6,
-					},
-					["-60433.64"] = {
-						["u"] = 1,
-						["t"] = {
-							["Belestra"] = {
-								["u"] = 1,
-								["n"] = 1,
-							},
-						},
-						["n"] = 1,
-					},
-					["-770.8"] = {
-						["u"] = 12,
-						["t"] = {
-							["Richard"] = {
-								["u"] = 12,
-								["n"] = 1,
-							},
-						},
-						["n"] = 1,
-					},
-					["48391.1"] = {
-						["u"] = 10,
-						["n"] = 1,
-					},
-				},
-				["role"] = "NONE",
-				["time"] = 7.82,
-				["damage"] = 1807,
-				["overheal"] = 9602,
-				["id"] = "0xF130017A4300001C",
-				["healspells"] = {
-					["-9858.8"] = {
-						["n_min"] = 58,
-						["targets"] = {
-							["Keryn"] = {
-								["o_amt"] = 2472,
-								["amount"] = 1128,
-							},
-						},
-						["count"] = 16,
-						["amount"] = 1128,
-						["o_amt"] = 2472,
-						["n_amt"] = 1128,
-						["n_num"] = 16,
-						["n_max"] = 225,
-					},
-					["-26981.8"] = {
-						["n_min"] = 177,
-						["targets"] = {
-							["Keryn"] = {
-								["o_amt"] = 2328,
-								["amount"] = 3288,
-							},
-							["Sandahl"] = {
-								["o_amt"] = 2774,
-								["amount"] = 682,
-							},
-							["Golhine"] = {
-								["o_amt"] = 1904,
-								["amount"] = 1723,
-							},
-						},
-						["count"] = 30,
-						["amount"] = 5693,
-						["o_amt"] = 7006,
-						["n_amt"] = 5693,
-						["n_num"] = 30,
-						["n_max"] = 432,
-					},
-					["9858.8"] = {
-						["targets"] = {
-							["Keryn"] = {
-								["o_amt"] = 124,
-								["amount"] = 1174,
-							},
-						},
-						["n_min"] = 1174,
-						["count"] = 1,
-						["amount"] = 1174,
-						["o_amt"] = 124,
-						["n_amt"] = 1174,
-						["n_num"] = 1,
-						["n_max"] = 1174,
-					},
-				},
-				["heal"] = 7995,
-				["manaspells"] = {
-					["-48391.1"] = 155,
-				},
-				["damagespells"] = {
-					["26984.8"] = {
-						["targets"] = {
-							["Belestra"] = {
-								["amount"] = 1482,
-							},
-						},
-						["count"] = 2,
-						["amount"] = 1482,
-						["n_min"] = 727,
-						["n_amt"] = 1482,
-						["n_num"] = 2,
-						["n_max"] = 755,
-					},
-					["26987.64"] = {
-						["targets"] = {
-							["Belestra"] = {
-								["amount"] = 325,
-							},
-						},
-						["count"] = 1,
-						["amount"] = 325,
-						["n_min"] = 325,
-						["n_amt"] = 325,
-						["n_num"] = 1,
-						["n_max"] = 325,
-					},
-				},
-				["mana"] = 155,
-				["timespent"] = {
-					["Belestra"] = 7.82,
-				},
-			},
-			["Treant"] = {
+			["Hellfire Imp"] = {
 				["damagespells"] = {
 					["6603.1"] = {
-						["o_amt"] = 52,
-						["total"] = 4119,
 						["targets"] = {
-							["Solm"] = {
-								["amount"] = 704,
-							},
-							["Bilban"] = {
-								["amount"] = 882,
-							},
-							["Lariia"] = {
-								["total"] = 958,
-								["amount"] = 0,
+							["Toldren"] = {
+								["amount"] = 524,
 							},
 							["Oakenshield"] = {
-								["o_amt"] = 52,
-								["amount"] = 1575,
+								["amount"] = 1486,
 							},
 						},
-						["amount"] = 3161,
+						["amount"] = 2010,
+					},
+					["15242.4"] = {
+						["targets"] = {
+							["Oakenshield"] = {
+								["amount"] = 673,
+							},
+						},
+						["amount"] = 673,
 					},
 				},
-				["id"] = "0xF1300113910000CB",
-				["class"] = "PET",
-				["damaged"] = 7004,
-				["enemy"] = true,
-				["totaldamage"] = 4119,
-				["overkill"] = 52,
+				["damage"] = 2683,
 				["damagedspells"] = {
-					["12809.1"] = {
+					["15208.8"] = {
+						["o_amt"] = 600,
 						["sources"] = {
-							["Bilban"] = {
-								["amount"] = 378,
+							["Umbrua"] = {
+								["o_amt"] = 600,
+								["amount"] = 1221,
 							},
 						},
-						["amount"] = 378,
+						["amount"] = 1221,
 					},
-					["34428.1"] = {
-						["o_amt"] = 110,
+					["11581.1"] = {
 						["sources"] = {
-							["Bilban"] = {
-								["o_amt"] = 110,
-								["amount"] = 448,
+							["Oakenshield"] = {
+								["amount"] = 1996,
 							},
 						},
-						["amount"] = 448,
-					},
-					["27189.8"] = {
-						["sources"] = {
-							["Solm"] = {
-								["amount"] = 400,
-							},
-						},
-						["amount"] = 400,
+						["amount"] = 1996,
 					},
 					["30016.1"] = {
 						["sources"] = {
-							["Bilban"] = {
-								["amount"] = 867,
+							["Oakenshield"] = {
+								["amount"] = 340,
 							},
 						},
-						["amount"] = 867,
+						["amount"] = 340,
 					},
-					["6603.1"] = {
+					["10207.4"] = {
 						["o_amt"] = 170,
 						["sources"] = {
-							["Solm"] = {
+							["Bink"] = {
 								["o_amt"] = 170,
-								["amount"] = 1552,
-							},
-							["Bilban"] = {
-								["amount"] = 1109,
+								["amount"] = 533,
 							},
 						},
-						["amount"] = 2661,
+						["amount"] = 533,
 					},
-					["17348.1"] = {
+					["6603.1"] = {
+						["o_amt"] = 219,
 						["sources"] = {
-							["Solm"] = {
-								["amount"] = 354,
+							["Oakenshield"] = {
+								["o_amt"] = 219,
+								["amount"] = 346,
+							},
+							["Umbrua"] = {
+								["amount"] = 1222,
 							},
 						},
-						["amount"] = 354,
+						["amount"] = 1568,
 					},
-					["23925.1"] = {
+					["46968.1"] = {
 						["sources"] = {
-							["Bilban"] = {
-								["amount"] = 1586,
+							["Oakenshield"] = {
+								["amount"] = 1092,
 							},
 						},
-						["amount"] = 1586,
+						["amount"] = 1092,
+					},
+					["33041.4"] = {
+						["sources"] = {
+							["Bink"] = {
+								["amount"] = 656,
+							},
+						},
+						["amount"] = 656,
+					},
+					["10161.16"] = {
+						["sources"] = {
+							["Bink"] = {
+								["amount"] = 1939,
+							},
+						},
+						["amount"] = 1939,
+					},
+					["10230.16"] = {
+						["sources"] = {
+							["Bink"] = {
+								["amount"] = 117,
+							},
+						},
+						["amount"] = 117,
+					},
+					["10605.8"] = {
+						["sources"] = {
+							["Javad"] = {
+								["amount"] = 1228,
+							},
+						},
+						["amount"] = 1228,
+					},
+					["29228.4"] = {
+						["sources"] = {
+							["Javad"] = {
+								["amount"] = 1482,
+							},
+							["Umbrua"] = {
+								["amount"] = 922,
+							},
+						},
+						["amount"] = 2404,
 					},
 					["59653.1"] = {
 						["sources"] = {
-							["Bilban"] = {
-								["amount"] = 166,
-							},
 							["Oakenshield"] = {
-								["amount"] = 144,
+								["amount"] = 273,
 							},
 						},
-						["amount"] = 310,
+						["amount"] = 273,
 					},
 				},
-				["damage"] = 3161,
-			},
-			["Belestra"] = {
-				["damagespells"] = {
-					["5019.1"] = {
-						["targets"] = {
-							["Succubus <Sandahl>"] = {
-								["amount"] = 405,
-							},
-						},
-						["amount"] = 405,
-					},
-					["63675.32"] = {
-						["targets"] = {
-							["Keryn"] = {
-								["amount"] = 607,
-							},
-						},
-						["amount"] = 607,
-					},
-					["-10894.32"] = {
-						["targets"] = {
-							["Succubus <Sandahl>"] = {
-								["amount"] = 1168,
-							},
-						},
-						["amount"] = 1168,
-					},
-					["19280.32"] = {
-						["targets"] = {
-							["Keryn"] = {
-								["amount"] = 690,
-							},
-						},
-						["amount"] = 690,
-					},
-					["-34916.32"] = {
-						["total"] = 3592,
-						["targets"] = {
-							["Keryn"] = {
-								["total"] = 1690,
-								["amount"] = 1589,
-							},
-							["Succubus <Sandahl>"] = {
-								["amount"] = 1902,
-							},
-						},
-						["amount"] = 3491,
-					},
-					["6603.1"] = {
-						["targets"] = {
-							["Succubus <Sandahl>"] = {
-								["amount"] = 343,
-							},
-						},
-						["amount"] = 343,
-					},
-				},
-				["id"] = "0xF130017A4F000062",
+				["id"] = "0xF130004445000016",
 				["class"] = "MONSTER",
-				["damaged"] = 7685,
+				["damaged"] = 13367,
 				["enemy"] = true,
-				["totaldamage"] = 6805,
-				["totaldamaged"] = 9160,
-				["damagedspells"] = {
-					["25307.32"] = {
-						["o_amt"] = 1321,
-						["total"] = 2658,
-						["sources"] = {
-							["Sandahl"] = {
-								["o_amt"] = 1321,
-								["total"] = 2658,
-								["amount"] = 1399,
-							},
-						},
-						["amount"] = 1399,
-					},
-					["-11290.1"] = {
-						["sources"] = {
-							["Keryn"] = {
-								["total"] = 578,
-								["amount"] = 534,
-							},
-						},
-						["total"] = 578,
-						["amount"] = 534,
-					},
-					["26984.8"] = {
-						["sources"] = {
-							["Golhine"] = {
-								["amount"] = 1482,
-							},
-						},
-						["amount"] = 1482,
-					},
-					["11780.32"] = {
-						["sources"] = {
-							["Sandahl"] = {
-								["amount"] = 163,
-							},
-						},
-						["amount"] = 163,
-					},
-					["6603.1"] = {
-						["sources"] = {
-							["Sandahl"] = {
-								["total"] = 1806,
-								["amount"] = 1634,
-							},
-							["Keryn"] = {
-								["amount"] = 602,
-							},
-						},
-						["total"] = 2408,
-						["amount"] = 2236,
-					},
-					["26987.64"] = {
-						["sources"] = {
-							["Golhine"] = {
-								["amount"] = 325,
-							},
-						},
-						["amount"] = 325,
-					},
-					["17926.32"] = {
-						["sources"] = {
-							["Sandahl"] = {
-								["amount"] = 587,
-							},
-						},
-						["amount"] = 587,
-					},
-					["11294.1"] = {
-						["sources"] = {
-							["Keryn"] = {
-								["amount"] = 959,
-							},
-						},
-						["amount"] = 959,
-					},
-				},
-				["damage"] = 6704,
 			},
-			["Richard"] = {
+			["Shadowmoon Adept"] = {
 				["damagespells"] = {
-					["25307.32"] = {
-						["total"] = 3518,
-						["targets"] = {
-							["Keryn"] = {
-								["total"] = 3518,
-								["amount"] = 3163,
-							},
-						},
-						["amount"] = 3163,
-					},
-					["-27218.32"] = {
-						["targets"] = {
-							["Keryn"] = {
-								["amount"] = 1143,
-							},
-							["Golhine"] = {
-								["amount"] = 230,
-							},
-						},
-						["amount"] = 1373,
-					},
 					["6603.1"] = {
+						["total"] = 7250,
 						["targets"] = {
-							["Keryn"] = {
-								["amount"] = 486,
+							["Oakenshield"] = {
+								["total"] = 7250,
+								["amount"] = 6690,
 							},
 						},
-						["amount"] = 486,
+						["amount"] = 6690,
 					},
-					["5019.1"] = {
+					["3391.1.6603"] = {
 						["targets"] = {
-							["Keryn"] = {
-								["amount"] = 344,
+							["Oakenshield"] = {
+								["amount"] = 3210,
 							},
 						},
-						["amount"] = 344,
+						["amount"] = 3210,
 					},
-					["30413.32"] = {
+					["11978.1"] = {
 						["targets"] = {
-							["Golhine"] = {
-								["amount"] = 1165,
-							},
-						},
-						["amount"] = 1165,
-					},
-				},
-				["id"] = "0xF130017A51000064",
-				["class"] = "MONSTER",
-				["damaged"] = 3878,
-				["enemy"] = true,
-				["totaldamage"] = 6886,
-				["totaldamaged"] = 4136,
-				["damagedspells"] = {
-					["51677.1"] = {
-						["sources"] = {
-							["Keryn"] = {
-								["amount"] = 276,
-							},
-						},
-						["amount"] = 276,
-					},
-					["13224.8"] = {
-						["sources"] = {
-							["Keryn"] = {
-								["amount"] = 186,
-							},
-						},
-						["amount"] = 186,
-					},
-					["6603.1"] = {
-						["o_amt"] = 446,
-						["sources"] = {
-							["Keryn"] = {
-								["o_amt"] = 446,
-								["amount"] = 2175,
-							},
-						},
-						["amount"] = 2175,
-					},
-					["-11713.32"] = {
-						["total"] = 815,
-						["sources"] = {
-							["Sandahl"] = {
-								["total"] = 815,
-								["amount"] = 557,
-							},
-						},
-						["amount"] = 557,
-					},
-					["11294.1"] = {
-						["sources"] = {
-							["Keryn"] = {
-								["amount"] = 684,
-							},
-						},
-						["amount"] = 684,
-					},
-				},
-				["damage"] = 6531,
-			},
-			["Anastasia"] = {
-				["damagespells"] = {
-					["-12654.4"] = {
-						["o_amt"] = 121,
-						["targets"] = {
-							["Bilban"] = {
-								["o_amt"] = 121,
-								["amount"] = 1132,
-							},
-						},
-						["amount"] = 1132,
-					},
-					["44461.4"] = {
-						["targets"] = {
-							["Lariia"] = {
-								["amount"] = 975,
-							},
-						},
-						["amount"] = 975,
-					},
-					["-27132.4"] = {
-						["targets"] = {
-							["Bilban"] = {
+							["Oakenshield"] = {
 								["amount"] = 90,
 							},
 						},
 						["amount"] = 90,
 					},
-					["27088.16"] = {
-						["targets"] = {
-							["Bilban"] = {
-								["amount"] = 407,
-							},
-						},
-						["amount"] = 407,
-					},
-					["27132.4"] = {
-						["targets"] = {
-							["Bilban"] = {
-								["amount"] = 2830,
-							},
-						},
-						["amount"] = 2830,
-					},
 				},
-				["id"] = "0xF130017A50000063",
-				["class"] = "MONSTER",
-				["damaged"] = 11819,
+				["totaldamage"] = 10550,
 				["enemy"] = true,
-				["overkill"] = 121,
+				["id"] = "0xF1300043F5000015",
 				["damagedspells"] = {
+					["45294.8"] = {
+						["o_amt"] = 967,
+						["sources"] = {
+							["Javad"] = {
+								["o_amt"] = 967,
+								["amount"] = 1000,
+							},
+						},
+						["amount"] = 1000,
+					},
 					["11581.1"] = {
 						["sources"] = {
-							["Bilban"] = {
-								["amount"] = 313,
+							["Oakenshield"] = {
+								["amount"] = 5807,
 							},
 						},
-						["amount"] = 313,
+						["amount"] = 5807,
 					},
-					["20569.1"] = {
+					["10199.4"] = {
+						["o_amt"] = 414,
 						["sources"] = {
-							["Bilban"] = {
-								["amount"] = 415,
+							["Bink"] = {
+								["o_amt"] = 414,
+								["amount"] = 770,
 							},
 						},
-						["amount"] = 415,
+						["amount"] = 770,
 					},
-					["20253.1"] = {
+					["-12654.4"] = {
 						["sources"] = {
-							["Bilban"] = {
-								["amount"] = 344,
+							["Bink"] = {
+								["amount"] = 320,
 							},
 						},
-						["amount"] = 344,
+						["amount"] = 320,
 					},
-					["23925.1"] = {
+					["10161.16"] = {
 						["sources"] = {
-							["Bilban"] = {
-								["amount"] = 611,
+							["Bink"] = {
+								["amount"] = 2436,
 							},
 						},
-						["amount"] = 611,
-					},
-					["46968.1"] = {
-						["o_amt"] = 1439,
-						["sources"] = {
-							["Bilban"] = {
-								["o_amt"] = 1439,
-								["amount"] = 1610,
-							},
-						},
-						["amount"] = 1610,
-					},
-					["11337.8"] = {
-						["sources"] = {
-							["Solm"] = {
-								["amount"] = 280,
-							},
-						},
-						["amount"] = 280,
-					},
-					["694.1"] = {
-						["sources"] = {
-							["Bilban"] = {
-								["amount"] = 810,
-							},
-						},
-						["amount"] = 810,
+						["amount"] = 2436,
 					},
 					["6603.1"] = {
 						["sources"] = {
-							["Solm"] = {
-								["amount"] = 4869,
-							},
-							["Bilban"] = {
-								["amount"] = 1414,
+							["Oakenshield"] = {
+								["amount"] = 3314,
 							},
 						},
-						["amount"] = 6283,
+						["amount"] = 3314,
 					},
-					["27189.8"] = {
+					["23925.1"] = {
 						["sources"] = {
-							["Solm"] = {
-								["amount"] = 553,
+							["Oakenshield"] = {
+								["amount"] = 3366,
 							},
 						},
-						["amount"] = 553,
-					},
-					["-26839.1"] = {
-						["sources"] = {
-							["Solm"] = {
-								["amount"] = 532,
-							},
-						},
-						["amount"] = 532,
+						["amount"] = 3366,
 					},
 					["59653.1"] = {
 						["sources"] = {
-							["Bilban"] = {
-								["amount"] = 68,
-							},
-						},
-						["amount"] = 68,
-					},
-				},
-				["damage"] = 5434,
-			},
-			["Lyria"] = {
-				["last"] = 79644.09700000001,
-				["id"] = "0xF130017A4200001B",
-				["class"] = "WARRIOR",
-				["role"] = "NONE",
-			},
-			["Rupert"] = {
-				["damagespells"] = {
-					["25307.32"] = {
-						["total"] = 12701,
-						["targets"] = {
-							["Solm"] = {
-								["amount"] = 1406,
-							},
 							["Oakenshield"] = {
-								["amount"] = 2233,
-							},
-							["Lariia"] = {
-								["total"] = 4883,
-								["amount"] = 4429,
-							},
-							["Bilban"] = {
-								["amount"] = 4179,
+								["amount"] = 1975,
 							},
 						},
-						["amount"] = 12247,
+						["amount"] = 1975,
 					},
-					["-27218.32"] = {
-						["targets"] = {
-							["Lariia"] = {
-								["amount"] = 1860,
-							},
-						},
-						["amount"] = 1860,
-					},
-					["48181.32"] = {
-						["total"] = 2765,
-						["targets"] = {
-							["Lariia"] = {
-								["total"] = 1450,
-								["amount"] = 1375,
-							},
-							["Oakenshield"] = {
-								["amount"] = 1315,
-							},
-						},
-						["amount"] = 2690,
-					},
-					["-30404.32"] = {
-						["targets"] = {
-							["Oakenshield"] = {
-								["amount"] = 594,
-							},
-						},
-						["amount"] = 594,
-					},
-					["5019.1"] = {
-						["targets"] = {
-							["Lariia"] = {
-								["amount"] = 430,
-							},
-						},
-						["amount"] = 430,
-					},
-					["42226.4"] = {
-						["targets"] = {
-							["Solm"] = {
-								["amount"] = 1086,
-							},
-							["Bilban"] = {
-								["amount"] = 1770,
-							},
-						},
-						["amount"] = 2856,
-					},
-					["27223.32"] = {
-						["targets"] = {
-							["Bilban"] = {
-								["amount"] = 312,
-							},
-						},
-						["amount"] = 312,
-					},
-				},
-				["id"] = "0xF130017A54000067",
-				["class"] = "MONSTER",
-				["damaged"] = 11309,
-				["enemy"] = true,
-				["totaldamage"] = 21518,
-				["damagedspells"] = {
-					["11581.1"] = {
+					["15208.8"] = {
+						["o_amt"] = 990,
 						["sources"] = {
-							["Bilban"] = {
-								["amount"] = 702,
+							["Javad"] = {
+								["o_amt"] = 990,
+								["amount"] = 7677,
+							},
+							["Umbrua"] = {
+								["amount"] = 5823,
 							},
 						},
-						["amount"] = 702,
+						["amount"] = 13500,
 					},
-					["17348.1"] = {
+					["18809.4"] = {
 						["sources"] = {
-							["Solm"] = {
-								["amount"] = 722,
+							["Bink"] = {
+								["amount"] = 3066,
 							},
 						},
-						["amount"] = 722,
-					},
-					["20569.1"] = {
-						["sources"] = {
-							["Bilban"] = {
-								["amount"] = 382,
-							},
-						},
-						["amount"] = 382,
+						["amount"] = 3066,
 					},
 					["46968.1"] = {
 						["sources"] = {
-							["Bilban"] = {
-								["amount"] = 1654,
+							["Oakenshield"] = {
+								["amount"] = 5487,
 							},
 						},
-						["amount"] = 1654,
+						["amount"] = 5487,
 					},
-					["20253.1"] = {
+					["25288.1"] = {
+						["o_amt"] = 306,
 						["sources"] = {
-							["Bilban"] = {
-								["amount"] = 132,
+							["Oakenshield"] = {
+								["o_amt"] = 306,
+								["amount"] = 4948,
 							},
 						},
-						["amount"] = 132,
+						["amount"] = 4948,
 					},
 					["30016.1"] = {
 						["sources"] = {
-							["Bilban"] = {
-								["amount"] = 1220,
+							["Oakenshield"] = {
+								["amount"] = 3391,
 							},
 						},
-						["amount"] = 1220,
+						["amount"] = 3391,
+					},
+					["10605.8"] = {
+						["sources"] = {
+							["Javad"] = {
+								["amount"] = 8042,
+							},
+							["Umbrua"] = {
+								["amount"] = 2508,
+							},
+						},
+						["amount"] = 10550,
+					},
+					["29228.4"] = {
+						["o_amt"] = 195,
+						["sources"] = {
+							["Javad"] = {
+								["o_amt"] = 195,
+								["amount"] = 5888,
+							},
+							["Umbrua"] = {
+								["amount"] = 3084,
+							},
+						},
+						["amount"] = 8972,
+					},
+					["10207.4"] = {
+						["sources"] = {
+							["Bink"] = {
+								["amount"] = 2811,
+							},
+						},
+						["amount"] = 2811,
+					},
+					["-29228.4"] = {
+						["o_amt"] = 87,
+						["sources"] = {
+							["Javad"] = {
+								["o_amt"] = 87,
+								["amount"] = 2526,
+							},
+							["Umbrua"] = {
+								["amount"] = 516,
+							},
+						},
+						["amount"] = 3042,
+					},
+				},
+				["class"] = "MONSTER",
+				["damaged"] = 74755,
+				["damage"] = 9990,
+			},
+			["Laughing Skull Rogue"] = {
+				["damagespells"] = {
+					["6603.1"] = {
+						["targets"] = {
+							["Javad"] = {
+								["amount"] = 936,
+							},
+							["Oakenshield"] = {
+								["amount"] = 2649,
+							},
+						},
+						["amount"] = 3585,
+					},
+				},
+				["enemy"] = true,
+				["id"] = "0xF130004453000012",
+				["damagedspells"] = {
+					["45300.8"] = {
+						["sources"] = {
+							["Javad"] = {
+								["amount"] = 1596,
+							},
+						},
+						["amount"] = 1596,
+					},
+					["-12654.4"] = {
+						["sources"] = {
+							["Bink"] = {
+								["amount"] = 158,
+							},
+						},
+						["amount"] = 158,
+					},
+					["26363.8"] = {
+						["sources"] = {
+							["Javad"] = {
+								["amount"] = 397,
+							},
+							["Umbrua"] = {
+								["amount"] = 472,
+							},
+						},
+						["amount"] = 869,
 					},
 					["6603.1"] = {
-						["o_amt"] = 190,
 						["sources"] = {
-							["Solm"] = {
-								["o_amt"] = 190,
-								["amount"] = 2597,
-							},
-							["Bilban"] = {
-								["amount"] = 984,
+							["Oakenshield"] = {
+								["amount"] = 1665,
 							},
 						},
-						["amount"] = 3581,
-					},
-					["26679.1"] = {
-						["sources"] = {
-							["Solm"] = {
-								["amount"] = 944,
-							},
-						},
-						["amount"] = 944,
+						["amount"] = 1665,
 					},
 					["23925.1"] = {
 						["sources"] = {
-							["Bilban"] = {
-								["amount"] = 1472,
+							["Oakenshield"] = {
+								["amount"] = 1731,
 							},
 						},
-						["amount"] = 1472,
+						["amount"] = 1731,
 					},
-					["27189.8"] = {
+					["59653.1"] = {
 						["sources"] = {
-							["Solm"] = {
-								["amount"] = 500,
+							["Oakenshield"] = {
+								["amount"] = 511,
 							},
 						},
-						["amount"] = 500,
+						["amount"] = 511,
+					},
+					["15208.8"] = {
+						["sources"] = {
+							["Javad"] = {
+								["amount"] = 1097,
+							},
+							["Umbrua"] = {
+								["amount"] = 1044,
+							},
+						},
+						["amount"] = 2141,
+					},
+					["25306.4"] = {
+						["o_amt"] = 819,
+						["sources"] = {
+							["Bink"] = {
+								["o_amt"] = 819,
+								["amount"] = 2010,
+							},
+						},
+						["amount"] = 2010,
+					},
+					["11581.1"] = {
+						["sources"] = {
+							["Oakenshield"] = {
+								["amount"] = 1996,
+							},
+						},
+						["amount"] = 1996,
+					},
+					["29228.4"] = {
+						["sources"] = {
+							["Javad"] = {
+								["amount"] = 1578,
+							},
+							["Umbrua"] = {
+								["amount"] = 1464,
+							},
+						},
+						["amount"] = 3042,
+					},
+					["46968.1"] = {
+						["sources"] = {
+							["Oakenshield"] = {
+								["amount"] = 1638,
+							},
+						},
+						["amount"] = 1638,
+					},
+					["10605.8"] = {
+						["o_amt"] = 271,
+						["sources"] = {
+							["Javad"] = {
+								["o_amt"] = 271,
+								["amount"] = 5058,
+							},
+							["Umbrua"] = {
+								["amount"] = 2208,
+							},
+						},
+						["amount"] = 7266,
+					},
+					["30016.1"] = {
+						["sources"] = {
+							["Oakenshield"] = {
+								["amount"] = 290,
+							},
+						},
+						["amount"] = 290,
+					},
+					["10230.16"] = {
+						["sources"] = {
+							["Bink"] = {
+								["amount"] = 101,
+							},
+						},
+						["amount"] = 101,
+					},
+					["-29228.4"] = {
+						["o_amt"] = 36,
+						["sources"] = {
+							["Javad"] = {
+								["o_amt"] = 36,
+								["amount"] = 423,
+							},
+							["Umbrua"] = {
+								["amount"] = 320,
+							},
+						},
+						["amount"] = 743,
+					},
+					["10207.4"] = {
+						["sources"] = {
+							["Bink"] = {
+								["amount"] = 1257,
+							},
+						},
+						["amount"] = 1257,
+					},
+					["10161.16"] = {
+						["sources"] = {
+							["Bink"] = {
+								["amount"] = 485,
+							},
+						},
+						["amount"] = 485,
 					},
 				},
-				["damage"] = 20989,
+				["class"] = "MONSTER",
+				["damaged"] = 27499,
+				["damage"] = 3585,
 			},
-			["Lariia"] = {
+			["Toldren"] = {
 				["ccdonespells"] = {
+					["-64044.32"] = {
+						["t"] = {
+							["Laughing Skull Enforcer"] = 1,
+						},
+						["n"] = 1,
+					},
+					["-15487.32"] = {
+						["t"] = {
+							["Hellfire Imp"] = 1,
+						},
+						["n"] = 1,
+					},
 					["-10890.32"] = {
 						["t"] = {
-							["Treant"] = 3,
+							["Hellfire Imp"] = 1,
+							["Laughing Skull Rogue"] = 1,
+							["Shadowmoon Adept"] = 3,
 						},
-						["n"] = 3,
+						["n"] = 5,
 					},
 				},
-				["last"] = 79697.486,
-				["damagedspells"] = {
-					["25307.32"] = {
-						["c_amt"] = 2403,
-						["total"] = 4883,
-						["c_max"] = 2403,
-						["c_num"] = 1,
-						["n_max"] = 1178,
-						["sources"] = {
-							["Rupert"] = {
-								["total"] = 4883,
-								["amount"] = 4429,
-							},
-						},
-						["c_min"] = 2403,
-						["amount"] = 4429,
-						["n_min"] = 848,
-						["n_amt"] = 2026,
-						["n_num"] = 2,
-						["count"] = 3,
-					},
-					["-27218.32"] = {
-						["sources"] = {
-							["Rupert"] = {
-								["amount"] = 1860,
-							},
-						},
-						["count"] = 12,
-						["amount"] = 1860,
-						["n_min"] = 77,
-						["n_amt"] = 1860,
-						["n_num"] = 12,
-						["n_max"] = 233,
-					},
-					["27050.1"] = {
-						["sources"] = {
-							["Serpent"] = {
-								["amount"] = 165,
-							},
-						},
-						["count"] = 1,
-						["amount"] = 165,
-						["n_min"] = 165,
-						["n_amt"] = 165,
-						["n_num"] = 1,
-						["n_max"] = 165,
-					},
-					["48181.32"] = {
-						["total"] = 1450,
-						["sources"] = {
-							["Rupert"] = {
-								["total"] = 1450,
-								["amount"] = 1375,
-							},
-						},
-						["count"] = 2,
-						["amount"] = 1375,
-						["n_min"] = 637,
-						["n_amt"] = 1375,
-						["n_num"] = 2,
-						["n_max"] = 738,
-					},
-					["6603.1"] = {
-						["c_amt"] = 650,
-						["total"] = 1608,
-						["c_max"] = 650,
-						["c_num"] = 1,
-						["sources"] = {
-							["Serpent"] = {
-								["amount"] = 650,
-							},
-							["Treant"] = {
-								["total"] = 958,
-								["amount"] = 0,
-							},
-						},
-						["c_min"] = 650,
-						["amount"] = 650,
-						["abs_n"] = 2,
-						["count"] = 3,
-					},
-					["50288.64"] = {
-						["total"] = 1322,
-						["n_max"] = 242,
-						["sources"] = {
-							["Kym"] = {
-								["total"] = 1322,
-								["amount"] = 242,
-							},
-						},
-						["count"] = 4,
-						["amount"] = 242,
-						["n_min"] = 242,
-						["abs_n"] = 3,
-						["n_num"] = 1,
-						["n_amt"] = 242,
-					},
-					["5019.1"] = {
-						["c_amt"] = 430,
-						["sources"] = {
-							["Rupert"] = {
-								["amount"] = 430,
-							},
-						},
-						["count"] = 1,
-						["amount"] = 430,
-						["c_min"] = 430,
-						["c_max"] = 430,
-						["c_num"] = 1,
-					},
-					["44461.4"] = {
-						["c_amt"] = 975,
-						["sources"] = {
-							["Anastasia"] = {
-								["amount"] = 975,
-							},
-						},
-						["count"] = 1,
-						["amount"] = 975,
-						["c_min"] = 975,
-						["c_max"] = 975,
-						["c_num"] = 1,
-					},
-				},
+				["absorb"] = 1615,
+				["id"] = "0xF13001124E000188",
 				["class"] = "PRIEST",
-				["damaged"] = 10126,
+				["healspells"] = {
+					["-25315.2"] = {
+						["n_max"] = 626,
+						["targets"] = {
+							["Javad"] = {
+								["o_amt"] = 1419,
+								["amount"] = 936,
+							},
+							["Oakenshield"] = {
+								["o_amt"] = 3886,
+								["amount"] = 6829,
+							},
+						},
+						["count"] = 25,
+						["amount"] = 7765,
+						["o_amt"] = 5305,
+						["n_min"] = 103,
+						["n_num"] = 25,
+						["n_amt"] = 7765,
+					},
+					["10917.2"] = {
+						["c_amt"] = 1021,
+						["c_max"] = 1021,
+						["c_num"] = 1,
+						["n_max"] = 1653,
+						["targets"] = {
+							["Oakenshield"] = {
+								["o_amt"] = 2606,
+								["amount"] = 7745,
+							},
+						},
+						["c_min"] = 1021,
+						["count"] = 6,
+						["amount"] = 7745,
+						["o_amt"] = 2606,
+						["n_amt"] = 6724,
+						["n_num"] = 5,
+						["n_min"] = 864,
+					},
+					["56160.2"] = {
+						["c_amt"] = 421,
+						["c_max"] = 421,
+						["c_num"] = 1,
+						["n_max"] = 300,
+						["targets"] = {
+							["Toldren"] = {
+								["amount"] = 300,
+							},
+							["Oakenshield"] = {
+								["amount"] = 421,
+							},
+						},
+						["c_min"] = 421,
+						["amount"] = 721,
+						["n_min"] = 300,
+						["n_amt"] = 300,
+						["n_num"] = 1,
+						["count"] = 2,
+					},
+				},
 				["auras"] = {
-					["25315.2"] = {
-						["u"] = 15,
-						["n"] = 1,
-					},
-					["28866.1"] = {
-						["u"] = 15,
-						["n"] = 1,
-					},
-					["10958.32"] = {
-						["u"] = 202,
+					["-6788.2"] = {
+						["u"] = 92,
+						["t"] = {
+							["Toldren"] = {
+								["u"] = 15,
+								["n"] = 1,
+							},
+							["Oakenshield"] = {
+								["u"] = 15,
+								["n"] = 1,
+							},
+						},
 						["n"] = 2,
 					},
-					["59891.2"] = {
-						["u"] = 4,
+					["10958.32"] = {
+						["u"] = 87,
 						["n"] = 1,
 					},
-					["10060.2"] = {
-						["u"] = 15,
+					["10938.2"] = {
+						["u"] = 87,
+						["n"] = 1,
+					},
+					["-64044.32"] = {
+						["u"] = 3,
+						["t"] = {
+							["Laughing Skull Enforcer"] = {
+								["u"] = 3,
+								["n"] = 1,
+							},
+						},
+						["n"] = 1,
+					},
+					["10952.2"] = {
+						["u"] = 87,
+						["n"] = 1,
+					},
+					["10157.64"] = {
+						["u"] = 87,
 						["n"] = 1,
 					},
 					["-10890.32"] = {
 						["u"] = 8,
 						["t"] = {
-							["Treant"] = {
+							["Hellfire Imp"] = {
+								["u"] = 8,
+								["n"] = 1,
+							},
+							["Laughing Skull Rogue"] = {
+								["u"] = 8,
+								["n"] = 1,
+							},
+							["Shadowmoon Adept"] = {
 								["u"] = 8,
 								["n"] = 3,
 							},
 						},
-						["n"] = 3,
+						["n"] = 5,
 					},
-					["9885.8"] = {
-						["u"] = 44,
-						["n"] = 1,
-					},
-					["-6788.2"] = {
-						["u"] = 15,
+					["-15487.32"] = {
+						["u"] = 5,
 						["t"] = {
-							["Lariia"] = {
-								["u"] = 15,
+							["Hellfire Imp"] = {
+								["u"] = 5,
 								["n"] = 1,
 							},
 						},
 						["n"] = 1,
 					},
 					["27841.2"] = {
-						["u"] = 152,
+						["u"] = 87,
 						["n"] = 1,
 					},
-					["-15261.2"] = {
-						["u"] = 7,
+					["-64058.1"] = {
+						["u"] = 10,
 						["t"] = {
-							["Kym"] = {
-								["u"] = 7,
-								["n"] = 1,
-							},
-						},
-						["n"] = 1,
-					},
-					["10938.2"] = {
-						["u"] = 203,
-						["n"] = 2,
-					},
-					["47930.2"] = {
-						["r"] = 5,
-						["u"] = 187,
-						["n"] = 3,
-					},
-					["6346.2"] = {
-						["u"] = 42,
-						["n"] = 1,
-					},
-					["10952.2"] = {
-						["u"] = 205,
-						["n"] = 2,
-					},
-					["10901.2"] = {
-						["u"] = 5,
-						["n"] = 1,
-					},
-					["63944.2"] = {
-						["u"] = 60,
-						["n"] = 1,
-					},
-					["47753.2"] = {
-						["u"] = 86,
-						["n"] = 4,
-					},
-				},
-				["dispel"] = 15,
-				["role"] = "NONE",
-				["time"] = 20.81,
-				["cctaken"] = 2,
-				["cctakenspells"] = {
-					["-6215.32"] = {
-						["sources"] = {
-							["Rupert"] = 2,
-						},
-						["n"] = 2,
-					},
-				},
-				["ccdone"] = 3,
-				["damage"] = 962,
-				["damagespells"] = {
-					["988.2"] = {
-						["targets"] = {
-							["Anastasia"] = {
-								["amount"] = 0,
-							},
-						},
-						["mis_n"] = 1,
-						["count"] = 1,
-						["amount"] = 0,
-					},
-					["-15261.2"] = {
-						["targets"] = {
-							["Kym"] = {
-								["amount"] = 185,
-							},
-						},
-						["r_amt"] = 4,
-						["count"] = 7,
-						["amount"] = 185,
-						["n_min"] = 25,
-						["n_amt"] = 185,
-						["n_num"] = 7,
-						["n_max"] = 27,
-					},
-					["15261.2"] = {
-						["mis_n"] = 1,
-						["targets"] = {
-							["Rupert"] = {
-								["amount"] = 0,
-							},
-							["Kym"] = {
-								["amount"] = 777,
-							},
-						},
-						["count"] = 2,
-						["amount"] = 777,
-						["n_min"] = 777,
-						["n_amt"] = 777,
-						["n_num"] = 1,
-						["n_max"] = 777,
-					},
-					["10947.32"] = {
-						["targets"] = {
-							["Rupert"] = {
-								["amount"] = 0,
-							},
-							["Anastasia"] = {
-								["amount"] = 0,
-							},
-						},
-						["mis_n"] = 2,
-						["count"] = 2,
-						["amount"] = 0,
-					},
-					["5019.1"] = {
-						["targets"] = {
-							["Rupert"] = {
-								["amount"] = 0,
-							},
-						},
-						["mis_n"] = 1,
-						["count"] = 1,
-						["amount"] = 0,
-					},
-				},
-				["absorb"] = 3442,
-				["overheal"] = 6891,
-				["deathlog"] = {
-					{
-						["log"] = {
-							{
-								["cri"] = 1,
-								["src"] = "Rupert",
-								["time"] = 79624.364,
-								["amt"] = -2403,
-								["id"] = "25307.32",
-								["hp"] = 2955,
-							}, -- [1]
-							{
-								["src"] = "Anastasia",
-								["time"] = 79623.366,
-								["id"] = "-12654.4",
-								["hp"] = 2955,
-								["aur"] = 1,
-							}, -- [2]
-							{
-								["src"] = "Serpent",
-								["time"] = 79623.167,
-								["amt"] = -165,
-								["id"] = "27050.1",
-								["hp"] = 3734,
-							}, -- [3]
-							{
-								["src"] = "Anastasia",
-								["time"] = 79623.16800000001,
-								["id"] = "-22959.4",
-								["hp"] = 3899,
-								["aur"] = 1,
-							}, -- [4]
-							{
-								["cri"] = 1,
-								["src"] = "Serpent",
-								["time"] = 79622.66900000001,
-								["amt"] = -650,
-								["id"] = "6603.1",
-								["hp"] = 5618,
-							}, -- [5]
-							{
-								["src"] = "Xor'juul",
-								["time"] = 79622.67,
-								["id"] = "-14325.64",
-								["hp"] = 5618,
-								["aur"] = 1,
-							}, -- [6]
-							{
-								["src"] = "Xor'juul",
-								["time"] = 79621.772,
-								["id"] = "-14325.64",
-								["rem"] = 1,
-								["hp"] = 5618,
-								["aur"] = 1,
-							}, -- [7]
-							{
-								["src"] = "Xor'juul",
-								["time"] = 79620.974,
-								["id"] = "-14325.64",
-								["hp"] = 5618,
-								["aur"] = 1,
-							}, -- [8]
-						},
-						["time"] = 79631.32400000001,
-						["id"] = "25307.32",
-						["timeod"] = 1690480309,
-						["hpm"] = 5618,
-						["src"] = "Rupert",
-					}, -- [1]
-				},
-				["id"] = "0xF130017A47000020",
-				["healspells"] = {
-					["-25315.2"] = {
-						["n_min"] = 77,
-						["targets"] = {
-							["Lariia"] = {
-								["o_amt"] = 1166,
-								["amount"] = 889,
-							},
-						},
-						["count"] = 5,
-						["amount"] = 889,
-						["o_amt"] = 1166,
-						["n_amt"] = 889,
-						["n_num"] = 5,
-						["n_max"] = 425,
-					},
-					["10917.2"] = {
-						["c_amt"] = 1043,
-						["c_max"] = 1043,
-						["count"] = 1,
-						["amount"] = 1043,
-						["o_amt"] = 814,
-						["c_min"] = 1043,
-						["targets"] = {
-							["Lariia"] = {
-								["o_amt"] = 814,
-								["amount"] = 1043,
-							},
-						},
-						["c_num"] = 1,
-					},
-					["56160.2"] = {
-						["c_amt"] = 594,
-						["count"] = 1,
-						["amount"] = 594,
-						["c_max"] = 594,
-						["c_min"] = 594,
-						["targets"] = {
-							["Lariia"] = {
-								["amount"] = 594,
-							},
-						},
-						["c_num"] = 1,
-					},
-					["56131.2"] = {
-						["c_amt"] = 253,
-						["c_max"] = 253,
-						["c_num"] = 1,
-						["n_max"] = 169,
-						["targets"] = {
-							["Lariia"] = {
-								["o_amt"] = 174,
-								["amount"] = 1267,
-							},
-						},
-						["c_min"] = 253,
-						["count"] = 8,
-						["amount"] = 1267,
-						["o_amt"] = 174,
-						["n_amt"] = 1014,
-						["n_num"] = 7,
-						["n_min"] = 0,
-					},
-					["47750.2"] = {
-						["c_amt"] = 4281,
-						["c_max"] = 1551,
-						["c_num"] = 3,
-						["n_max"] = 1043,
-						["targets"] = {
-							["Lariia"] = {
-								["o_amt"] = 3296,
-								["amount"] = 4028,
-							},
-							["Bilban"] = {
-								["amount"] = 3916,
-							},
-						},
-						["c_min"] = 1362,
-						["count"] = 10,
-						["amount"] = 7944,
-						["o_amt"] = 3296,
-						["n_amt"] = 3663,
-						["n_num"] = 7,
-						["n_min"] = 77,
-					},
-					["25314.2"] = {
-						["c_amt"] = 3030,
-						["c_max"] = 3030,
-						["c_num"] = 1,
-						["n_max"] = 3191,
-						["targets"] = {
-							["Solm"] = {
-								["o_amt"] = 1441,
-								["amount"] = 3030,
-							},
-							["Bilban"] = {
-								["amount"] = 3191,
-							},
-						},
-						["n_min"] = 3191,
-						["c_min"] = 3030,
-						["amount"] = 6221,
-						["o_amt"] = 1441,
-						["n_amt"] = 3191,
-						["n_num"] = 1,
-						["count"] = 2,
-					},
-				},
-				["mana"] = 290,
-				["absorbspells"] = {
-					["47753.2"] = {
-						["c_amt"] = 408,
-						["c_max"] = 408,
-						["c_num"] = 1,
-						["n_max"] = 408,
-						["targets"] = {
-							["Lariia"] = 691,
-							["Bilban"] = 875,
-						},
-						["count"] = 4,
-						["amount"] = 1566,
-						["c_min"] = 408,
-						["n_amt"] = 691,
-						["n_num"] = 3,
-						["n_min"] = 75,
-					},
-					["10901.2"] = {
-						["targets"] = {
-							["Lariia"] = 1876,
-						},
-						["count"] = 6,
-						["amount"] = 1876,
-						["n_min"] = 46,
-						["n_amt"] = 1876,
-						["n_num"] = 6,
-						["n_max"] = 640,
-					},
-				},
-				["heal"] = 17958,
-				["manaspells"] = {
-					["63654.2"] = 129,
-					["47755.2"] = 161,
-				},
-				["death"] = 1,
-				["totaldamaged"] = 12693,
-				["dispelspells"] = {
-					["988.2"] = {
-						["spells"] = {
-							["17800.32"] = 2,
-							["12654.4"] = 1,
-							["14325.64"] = 1,
-							["60947.32"] = 1,
-							["17329.8"] = 1,
-							["10157.64"] = 1,
-							["48181.32"] = 2,
-							["44457.4"] = 1,
-							["32391.32"] = 3,
-							["9885.8"] = 1,
-							["25299.8"] = 1,
-						},
-						["count"] = 15,
-						["targets"] = {
-							["Lariia"] = 11,
-							["Kym"] = 4,
-						},
-					},
-				},
-				["timespent"] = {
-					["Kym"] = 6.68,
-					["Lariia"] = 10.63,
-					["Bilban"] = 3.5,
-				},
-			},
-			["Keryn"] = {
-				["ccdonespells"] = {
-					["-8643.1"] = {
-						["t"] = {
-							["Richard"] = 1,
-						},
-						["n"] = 1,
-					},
-				},
-				["last"] = 79688.677,
-				["damagedspells"] = {
-					["25307.32"] = {
-						["c_amt"] = 2334,
-						["total"] = 3518,
-						["c_max"] = 2334,
-						["c_num"] = 1,
-						["n_max"] = 829,
-						["sources"] = {
-							["Richard"] = {
-								["total"] = 3518,
-								["amount"] = 3163,
-							},
-						},
-						["count"] = 2,
-						["amount"] = 3163,
-						["c_min"] = 2334,
-						["n_amt"] = 829,
-						["n_num"] = 1,
-						["n_min"] = 829,
-					},
-					["-27218.32"] = {
-						["sources"] = {
-							["Richard"] = {
-								["amount"] = 1143,
-							},
-						},
-						["count"] = 5,
-						["amount"] = 1143,
-						["n_min"] = 163,
-						["n_amt"] = 1143,
-						["n_num"] = 5,
-						["n_max"] = 245,
-					},
-					["63675.32"] = {
-						["sources"] = {
-							["Belestra"] = {
-								["amount"] = 607,
-							},
-						},
-						["count"] = 1,
-						["amount"] = 607,
-						["n_min"] = 607,
-						["n_amt"] = 607,
-						["n_num"] = 1,
-						["n_max"] = 607,
-					},
-					["6603.1"] = {
-						["c_amt"] = 332,
-						["c_max"] = 332,
-						["c_num"] = 1,
-						["n_max"] = 154,
-						["dod_n"] = 1,
-						["sources"] = {
-							["Richard"] = {
-								["amount"] = 486,
-							},
-						},
-						["count"] = 3,
-						["amount"] = 486,
-						["c_min"] = 332,
-						["n_amt"] = 154,
-						["n_num"] = 1,
-						["n_min"] = 154,
-					},
-					["19280.32"] = {
-						["sources"] = {
-							["Belestra"] = {
-								["amount"] = 690,
-							},
-						},
-						["count"] = 3,
-						["amount"] = 690,
-						["n_min"] = 230,
-						["n_amt"] = 690,
-						["n_num"] = 3,
-						["n_max"] = 230,
-					},
-					["-34916.32"] = {
-						["sources"] = {
-							["Belestra"] = {
-								["total"] = 1690,
-								["amount"] = 1589,
-							},
-						},
-						["total"] = 1690,
-						["count"] = 5,
-						["amount"] = 1589,
-						["n_min"] = 237,
-						["n_amt"] = 1589,
-						["n_num"] = 5,
-						["n_max"] = 338,
-					},
-					["5019.1"] = {
-						["sources"] = {
-							["Richard"] = {
-								["amount"] = 344,
-							},
-						},
-						["count"] = 1,
-						["amount"] = 344,
-						["n_min"] = 344,
-						["n_amt"] = 344,
-						["n_num"] = 1,
-						["n_max"] = 344,
-					},
-				},
-				["totaldamaged"] = 8478,
-				["damaged"] = 8022,
-				["auras"] = {
-					["11305.1"] = {
-						["u"] = 15,
-						["n"] = 1,
-					},
-					["26981.8"] = {
-						["u"] = 100,
-						["n"] = 2,
-					},
-					["14149.1"] = {
-						["u"] = 20,
-						["n"] = 1,
-					},
-					["6774.1"] = {
-						["u"] = 18,
-						["n"] = 1,
-					},
-					["-8643.1"] = {
-						["u"] = 1,
-						["t"] = {
-							["Richard"] = {
-								["u"] = 1,
-								["n"] = 1,
-							},
-						},
-						["n"] = 1,
-					},
-					["-18425.1"] = {
-						["u"] = 118,
-						["t"] = {
-							["Richard"] = {
-								["u"] = 15,
-								["n"] = 2,
-							},
-							["Belestra"] = {
-								["u"] = 1,
-								["n"] = 1,
-							},
-						},
-						["n"] = 3,
-					},
-					["9858.8"] = {
-						["u"] = 198,
-						["n"] = 2,
-					},
-				},
-				["energyspells"] = {
-					["9512.1"] = 60,
-				},
-				["role"] = "DAMAGER",
-				["time"] = 29.65,
-				["id"] = "0xF130017A3F000018",
-				["energy"] = 60,
-				["damage"] = 5416,
-				["damagespells"] = {
-					["51677.1"] = {
-						["c_amt"] = 276,
-						["count"] = 1,
-						["amount"] = 276,
-						["c_max"] = 276,
-						["c_min"] = 276,
-						["targets"] = {
-							["Richard"] = {
-								["amount"] = 276,
-							},
-						},
-						["c_num"] = 1,
-					},
-					["-11290.1"] = {
-						["targets"] = {
-							["Belestra"] = {
-								["total"] = 578,
-								["amount"] = 534,
-							},
-						},
-						["total"] = 578,
-						["count"] = 4,
-						["amount"] = 534,
-						["n_min"] = 112,
-						["n_amt"] = 534,
-						["n_num"] = 4,
-						["n_max"] = 156,
-					},
-					["11294.1"] = {
-						["c_amt"] = 1220,
-						["c_max"] = 684,
-						["c_num"] = 2,
-						["n_max"] = 220,
-						["targets"] = {
-							["Richard"] = {
-								["amount"] = 684,
-							},
-							["Belestra"] = {
-								["amount"] = 959,
-							},
-						},
-						["c_min"] = 536,
-						["amount"] = 1643,
-						["n_min"] = 203,
-						["n_amt"] = 423,
-						["n_num"] = 2,
-						["count"] = 4,
-					},
-					["6603.1"] = {
-						["c_amt"] = 1981,
-						["c_max"] = 580,
-						["c_num"] = 5,
-						["n_max"] = 289,
-						["targets"] = {
-							["Richard"] = {
-								["o_amt"] = 446,
-								["amount"] = 2175,
-							},
-							["Belestra"] = {
-								["amount"] = 602,
-							},
-						},
-						["c_min"] = 295,
-						["mis_n"] = 1,
-						["count"] = 11,
-						["amount"] = 2777,
-						["o_amt"] = 446,
-						["n_amt"] = 796,
-						["n_num"] = 5,
-						["n_min"] = 96,
-					},
-					["13224.8"] = {
-						["c_amt"] = 134,
-						["c_max"] = 134,
-						["c_num"] = 1,
-						["n_max"] = 52,
-						["targets"] = {
-							["Richard"] = {
-								["amount"] = 186,
-							},
-							["Belestra"] = {
-								["amount"] = 0,
-							},
-						},
-						["res_n"] = 1,
-						["n_min"] = 52,
-						["count"] = 4,
-						["amount"] = 186,
-						["mis_n"] = 1,
-						["n_amt"] = 52,
-						["n_num"] = 1,
-						["c_min"] = 134,
-					},
-				},
-				["interrupt"] = 2,
-				["overkill"] = 446,
-				["ccdone"] = 1,
-				["class"] = "ROGUE",
-				["totaldamage"] = 5460,
-				["interruptspells"] = {
-					["1766.1"] = {
-						["spells"] = {
-							["6215.32"] = 1,
-							["10947.32"] = 1,
-						},
-						["count"] = 2,
-						["targets"] = {
-							["Richard"] = 1,
-							["Belestra"] = 1,
-						},
-					},
-				},
-				["timespent"] = {
-					["Richard"] = 13.15,
-					["Belestra"] = 16.5,
-				},
-			},
-			["Kym"] = {
-				["damagespells"] = {
-					["26984.8"] = {
-						["total"] = 4923,
-						["targets"] = {
-							["Bilban"] = {
-								["total"] = 4255,
-								["amount"] = 3380,
-							},
-							["Oakenshield"] = {
-								["amount"] = 668,
-							},
-						},
-						["amount"] = 4048,
-					},
-					["9835.64"] = {
-						["targets"] = {
-							["Bilban"] = {
-								["amount"] = 682,
-							},
-							["Oakenshield"] = {
-								["amount"] = 289,
-							},
-						},
-						["amount"] = 971,
-					},
-					["6603.1"] = {
-						["targets"] = {
-							["Solm"] = {
-								["amount"] = 1774,
-							},
-							["Bilban"] = {
-								["amount"] = 472,
-							},
-						},
-						["amount"] = 2246,
-					},
-					["50288.64"] = {
-						["total"] = 5441,
-						["targets"] = {
-							["Solm"] = {
-								["amount"] = 1774,
-							},
-							["Lariia"] = {
-								["total"] = 1322,
-								["amount"] = 242,
-							},
-							["Bilban"] = {
-								["amount"] = 2345,
-							},
-						},
-						["amount"] = 4361,
-					},
-					["-9835.64"] = {
-						["targets"] = {
-							["Bilban"] = {
-								["amount"] = 905,
-							},
-						},
-						["amount"] = 905,
-					},
-					["50294.64"] = {
-						["targets"] = {
-							["Solm"] = {
-								["amount"] = 60,
-							},
-							["Bilban"] = {
-								["amount"] = 153,
-							},
-						},
-						["amount"] = 213,
-					},
-				},
-				["id"] = "0xF130017A53000066",
-				["class"] = "MONSTER",
-				["damaged"] = 6698,
-				["enemy"] = true,
-				["totaldamage"] = 14699,
-				["totaldamaged"] = 6740,
-				["damagedspells"] = {
-					["15261.2"] = {
-						["sources"] = {
-							["Lariia"] = {
-								["amount"] = 777,
-							},
-						},
-						["amount"] = 777,
-					},
-					["27189.8"] = {
-						["sources"] = {
-							["Solm"] = {
-								["amount"] = 510,
-							},
-						},
-						["amount"] = 510,
-					},
-					["26861.1"] = {
-						["sources"] = {
-							["Solm"] = {
-								["amount"] = 799,
-							},
-						},
-						["amount"] = 799,
-					},
-					["-15261.2"] = {
-						["sources"] = {
-							["Lariia"] = {
-								["amount"] = 185,
-							},
-						},
-						["amount"] = 185,
-					},
-					["6603.1"] = {
-						["sources"] = {
-							["Solm"] = {
-								["total"] = 3076,
-								["amount"] = 3034,
-							},
-						},
-						["total"] = 3076,
-						["amount"] = 3034,
-					},
-					["17348.1"] = {
-						["sources"] = {
-							["Solm"] = {
-								["amount"] = 484,
-							},
-						},
-						["amount"] = 484,
-					},
-					["20569.1"] = {
-						["sources"] = {
-							["Bilban"] = {
-								["amount"] = 846,
-							},
-						},
-						["amount"] = 846,
-					},
-					["59653.1"] = {
-						["sources"] = {
-							["Bilban"] = {
-								["amount"] = 63,
-							},
-						},
-						["amount"] = 63,
-					},
-				},
-				["damage"] = 12744,
-			},
-			["Serpent"] = {
-				["damagespells"] = {
-					["6603.1"] = {
-						["targets"] = {
-							["Lariia"] = {
-								["amount"] = 650,
-							},
-						},
-						["amount"] = 650,
-					},
-					["-55556.8"] = {
-						["targets"] = {
-							["Solm"] = {
-								["amount"] = 90,
-							},
-						},
-						["amount"] = 90,
-					},
-					["27050.1"] = {
-						["targets"] = {
-							["Lariia"] = {
-								["amount"] = 165,
-							},
-						},
-						["amount"] = 165,
-					},
-				},
-				["damagedspells"] = {
-					["6603.1"] = {
-						["sources"] = {
-							["Solm"] = {
-								["amount"] = 329,
-							},
-						},
-						["amount"] = 329,
-					},
-				},
-				["damage"] = 905,
-				["id"] = "0xF13001136B0000C5",
-				["class"] = "NEUTRAL",
-				["damaged"] = 329,
-				["enemy"] = true,
-			},
-			["Oakenshield"] = {
-				["damagespells"] = {
-					["59653.1"] = {
-						["targets"] = {
-							["Treant"] = {
-								["amount"] = 144,
-							},
-						},
-						["count"] = 8,
-						["amount"] = 144,
-						["n_min"] = 18,
-						["n_amt"] = 144,
-						["n_num"] = 8,
-						["n_max"] = 18,
-					},
-				},
-				["last"] = 79657.90300000001,
-				["deathlog"] = {
-					{
-						["log"] = {
-							{
-								["src"] = "Kym",
-								["time"] = 79657.909,
-								["id"] = "-60433.64",
-								["rem"] = 1,
-								["hp"] = 338,
-								["aur"] = 1,
-							}, -- [1]
-							{
-								["src"] = "Rupert",
-								["time"] = 79657.909,
-								["id"] = "-48181.32",
-								["rem"] = 1,
-								["hp"] = 338,
-								["aur"] = 1,
-							}, -- [2]
-							{
-								["src"] = "Rupert",
-								["time"] = 79657.91,
-								["id"] = "-32391.32",
-								["rem"] = 1,
-								["hp"] = 338,
-								["aur"] = 1,
-							}, -- [3]
-							{
-								["src"] = "Rupert",
-								["time"] = 79657.91100000001,
-								["id"] = "-30404.32",
-								["rem"] = 1,
-								["hp"] = 338,
-								["aur"] = 1,
-							}, -- [4]
-							{
-								["src"] = "Rupert",
-								["time"] = 79657.91100000001,
-								["id"] = "-18223.32",
-								["rem"] = 1,
-								["hp"] = 338,
-								["aur"] = 1,
-							}, -- [5]
-							{
-								["src"] = "Rupert",
-								["time"] = 79657.91099999999,
-								["id"] = "-17800.32",
-								["rem"] = 1,
-								["hp"] = 338,
-								["aur"] = 1,
-							}, -- [6]
-							{
-								["src"] = "Kym",
-								["time"] = 79657.912,
-								["id"] = "-9835.64",
-								["rem"] = 1,
-								["hp"] = 338,
-								["aur"] = 1,
-							}, -- [7]
-							{
-								["src"] = "Kym",
-								["time"] = 79657.912,
-								["id"] = "-770.8",
-								["rem"] = 1,
-								["hp"] = 338,
-								["aur"] = 1,
-							}, -- [8]
-							{
-								["src"] = "Treant",
-								["time"] = 79657.913,
-								["amt"] = -191,
-								["id"] = "6603.1",
-								["hp"] = 338,
-								["ovk"] = 52,
-							}, -- [9]
-							{
-								["src"] = "Treant",
-								["time"] = 79657.913,
-								["amt"] = -199,
-								["id"] = "6603.1",
-								["hp"] = 338,
-							}, -- [10]
-							{
-								["src"] = "Kym",
-								["time"] = 79656.931,
-								["id"] = "-60433.64",
-								["hp"] = 338,
-								["aur"] = 1,
-							}, -- [11]
-							{
-								["src"] = "Kym",
-								["time"] = 79656.932,
-								["amt"] = -668,
-								["id"] = "26984.8",
-								["hp"] = 338,
-							}, -- [12]
-							{
-								["src"] = "Rupert",
-								["time"] = 79656.383,
-								["amt"] = -304,
-								["id"] = "-30404.32",
-								["hp"] = 1006,
-							}, -- [13]
-							{
-								["src"] = "Rupert",
-								["time"] = 79656.035,
-								["id"] = "-17800.32",
-								["hp"] = 1310,
-								["aur"] = 1,
-							}, -- [14]
-						},
-						["time"] = 79657.91100000001,
-						["id"] = "6603.1",
-						["timeod"] = 1690480336,
-						["hpm"] = 6622,
-						["src"] = "Treant",
-					}, -- [1]
-				},
-				["damagedspells"] = {
-					["25307.32"] = {
-						["c_amt"] = 2233,
-						["sources"] = {
-							["Rupert"] = {
-								["amount"] = 2233,
-							},
-						},
-						["count"] = 1,
-						["amount"] = 2233,
-						["c_min"] = 2233,
-						["c_max"] = 2233,
-						["c_num"] = 1,
-					},
-					["-30404.32"] = {
-						["sources"] = {
-							["Rupert"] = {
-								["amount"] = 594,
-							},
-						},
-						["count"] = 2,
-						["amount"] = 594,
-						["n_min"] = 290,
-						["n_amt"] = 594,
-						["n_num"] = 2,
-						["n_max"] = 304,
-					},
-					["26984.8"] = {
-						["sources"] = {
-							["Kym"] = {
-								["amount"] = 668,
-							},
-						},
-						["count"] = 1,
-						["amount"] = 668,
-						["n_min"] = 668,
-						["n_amt"] = 668,
-						["n_num"] = 1,
-						["n_max"] = 668,
-					},
-					["48181.32"] = {
-						["c_amt"] = 1315,
-						["sources"] = {
-							["Rupert"] = {
-								["amount"] = 1315,
-							},
-						},
-						["count"] = 1,
-						["amount"] = 1315,
-						["c_min"] = 1315,
-						["c_max"] = 1315,
-						["c_num"] = 1,
-					},
-					["6603.1"] = {
-						["n_max"] = 199,
-						["mis_n"] = 2,
-						["sources"] = {
-							["Treant"] = {
-								["o_amt"] = 52,
-								["amount"] = 1575,
-							},
-						},
-						["count"] = 11,
-						["amount"] = 1575,
-						["o_amt"] = 52,
-						["n_amt"] = 1575,
-						["n_num"] = 9,
-						["n_min"] = 162,
-					},
-					["9835.64"] = {
-						["sources"] = {
-							["Kym"] = {
-								["amount"] = 289,
-							},
-						},
-						["count"] = 1,
-						["amount"] = 289,
-						["n_min"] = 289,
-						["n_amt"] = 289,
-						["n_num"] = 1,
-						["n_max"] = 289,
-					},
-				},
-				["class"] = "WARRIOR",
-				["damaged"] = 6674,
-				["auras"] = {
-					["9885.8"] = {
-						["u"] = 51,
-						["n"] = 1,
-					},
-					["10938.2"] = {
-						["u"] = 51,
-						["n"] = 1,
-					},
-					["25289.1"] = {
-						["u"] = 51,
-						["n"] = 1,
-					},
-					["24907.8"] = {
-						["u"] = 12,
-						["n"] = 3,
-					},
-					["20217.2"] = {
-						["u"] = 51,
-						["n"] = 1,
-					},
-				},
-				["role"] = "TANK",
-				["time"] = 9.5,
-				["death"] = 1,
-				["id"] = "0x0000000000000013",
-				["spec"] = 73,
-				["damage"] = 144,
-				["timespent"] = {
-					["Treant"] = 9.5,
-				},
-			},
-			["Solm"] = {
-				["ccdonespells"] = {
-					["-8643.1"] = {
-						["t"] = {
-							["Kym"] = 1,
-						},
-						["n"] = 1,
-					},
-					["-2094.1"] = {
-						["t"] = {
-							["Kym"] = 1,
-						},
-						["n"] = 1,
-					},
-					["-1330.1"] = {
-						["t"] = {
-							["Anastasia"] = 1,
-						},
-						["n"] = 1,
-					},
-					["-51722.1"] = {
-						["t"] = {
-							["Anastasia"] = 1,
-						},
-						["n"] = 1,
-					},
-				},
-				["last"] = 79695.488,
-				["damagedspells"] = {
-					["25307.32"] = {
-						["sources"] = {
-							["Rupert"] = {
-								["amount"] = 1406,
-							},
-						},
-						["count"] = 1,
-						["amount"] = 1406,
-						["n_min"] = 1406,
-						["n_amt"] = 1406,
-						["n_num"] = 1,
-						["n_max"] = 1406,
-					},
-					["42226.4"] = {
-						["sources"] = {
-							["Rupert"] = {
-								["amount"] = 1086,
-							},
-						},
-						["count"] = 3,
-						["amount"] = 1086,
-						["n_min"] = 362,
-						["n_amt"] = 1086,
-						["n_num"] = 3,
-						["n_max"] = 362,
-					},
-					["27050.1"] = {
-						["sources"] = {
-							["Serpent"] = {
-								["amount"] = 0,
-							},
-						},
-						["dod_n"] = 1,
-						["count"] = 1,
-						["amount"] = 0,
-					},
-					["20549.1"] = {
-						["mis_n"] = 1,
-						["sources"] = {
-							["Kym"] = {
-								["amount"] = 0,
-							},
-						},
-						["count"] = 1,
-						["amount"] = 0,
-					},
-					["6603.1"] = {
-						["c_amt"] = 1002,
-						["c_max"] = 1002,
-						["c_num"] = 1,
-						["dod_n"] = 2,
-						["mis_n"] = 2,
-						["c_min"] = 1002,
-						["sources"] = {
-							["Treant"] = {
-								["amount"] = 704,
-							},
-							["Kym"] = {
-								["amount"] = 1774,
-							},
-							["Serpent"] = {
-								["amount"] = 0,
-							},
-						},
-						["count"] = 9,
-						["amount"] = 2478,
-						["n_min"] = 332,
-						["n_amt"] = 1476,
-						["n_num"] = 4,
-						["n_max"] = 388,
-					},
-					["50294.64"] = {
-						["sources"] = {
-							["Kym"] = {
-								["amount"] = 60,
-							},
-						},
-						["count"] = 1,
-						["amount"] = 60,
-						["n_min"] = 60,
-						["n_amt"] = 60,
-						["n_num"] = 1,
-						["n_max"] = 60,
-					},
-					["-55556.8"] = {
-						["sources"] = {
-							["Serpent"] = {
-								["amount"] = 90,
-							},
-						},
-						["count"] = 1,
-						["amount"] = 90,
-						["n_min"] = 90,
-						["n_amt"] = 90,
-						["n_num"] = 1,
-						["n_max"] = 90,
-					},
-					["50288.64"] = {
-						["c_amt"] = 1531,
-						["r_amt"] = 259,
-						["c_max"] = 587,
-						["c_num"] = 3,
-						["n_max"] = 243,
-						["mis_n"] = 2,
-						["sources"] = {
-							["Kym"] = {
-								["amount"] = 1774,
-							},
-						},
-						["count"] = 6,
-						["amount"] = 1774,
-						["c_min"] = 459,
-						["n_amt"] = 243,
-						["n_num"] = 1,
-						["n_min"] = 243,
-					},
-				},
-				["class"] = "ROGUE",
-				["damaged"] = 6894,
-				["auras"] = {
-					["-26679.1"] = {
-						["u"] = 5,
-						["t"] = {
-							["Rupert"] = {
-								["u"] = 5,
-								["n"] = 1,
-							},
-						},
-						["n"] = 1,
-					},
-					["-1330.1"] = {
-						["u"] = 3,
-						["t"] = {
-							["Anastasia"] = {
-								["u"] = 3,
-								["n"] = 1,
-							},
-						},
-						["n"] = 1,
-					},
-					["-8643.1"] = {
-						["u"] = 1,
-						["t"] = {
-							["Kym"] = {
-								["u"] = 1,
-								["n"] = 1,
-							},
-						},
-						["n"] = 1,
-					},
-					["-51722.1"] = {
-						["u"] = 5,
-						["t"] = {
-							["Anastasia"] = {
-								["u"] = 5,
-								["n"] = 1,
-							},
-						},
-						["n"] = 1,
-					},
-					["31771.2"] = {
-						["u"] = 20,
-						["n"] = 1,
-					},
-					["65116.1"] = {
-						["u"] = 3,
-						["n"] = 1,
-					},
-					["14183.1"] = {
-						["u"] = 1,
-						["n"] = 1,
-					},
-					["6774.1"] = {
-						["u"] = 22,
-						["n"] = 1,
-					},
-					["26669.1"] = {
-						["u"] = 4,
-						["n"] = 1,
-					},
-					["47930.2"] = {
-						["u"] = 11,
-						["n"] = 1,
-					},
-					["47753.2"] = {
-						["u"] = 12,
-						["n"] = 1,
-					},
-					["11305.1"] = {
-						["u"] = 15,
-						["n"] = 1,
-					},
-					["-17348.1"] = {
-						["u"] = 52,
-						["t"] = {
-							["Treant"] = {
-								["u"] = 2,
-								["n"] = 1,
-							},
-							["Kym"] = {
-								["u"] = 8,
-								["n"] = 1,
-							},
-							["Rupert"] = {
+							["Laughing Skull Enforcer"] = {
 								["u"] = 10,
 								["n"] = 1,
 							},
 						},
-						["n"] = 3,
-					},
-					["-2094.1"] = {
-						["u"] = 1,
-						["t"] = {
-							["Kym"] = {
-								["u"] = 1,
-								["n"] = 1,
-							},
-						},
-						["n"] = 1,
-					},
-					["36563.1"] = {
-						["u"] = 44,
-						["n"] = 2,
-					},
-					["14149.1"] = {
-						["u"] = 38,
-						["n"] = 2,
-					},
-					["36554.1"] = {
-						["u"] = 30,
-						["n"] = 2,
-					},
-					["-27189.8"] = {
-						["r"] = 7,
-						["u"] = 77,
-						["t"] = {
-							["Treant"] = {
-								["r"] = 1,
-								["u"] = 2,
-								["n"] = 1,
-							},
-							["Kym"] = {
-								["r"] = 3,
-								["u"] = 19,
-								["n"] = 1,
-							},
-							["Rupert"] = {
-								["r"] = 1,
-								["u"] = 7,
-								["n"] = 1,
-							},
-							["Anastasia"] = {
-								["r"] = 2,
-								["u"] = 6,
-								["n"] = 1,
-							},
-						},
-						["n"] = 4,
-					},
-					["51713.1"] = {
-						["u"] = 5,
-						["n"] = 1,
-					},
-					["-26839.1"] = {
-						["u"] = 7,
-						["t"] = {
-							["Anastasia"] = {
-								["u"] = 7,
-								["n"] = 1,
-							},
-						},
-						["n"] = 1,
-					},
-				},
-				["energyspells"] = {
-					["14181.1"] = 25,
-				},
-				["role"] = "DAMAGER",
-				["time"] = 41.77,
-				["energy"] = 25,
-				["damage"] = 18459,
-				["damagespells"] = {
-					["26679.1"] = {
-						["c_amt"] = 944,
-						["count"] = 1,
-						["amount"] = 944,
-						["c_max"] = 944,
-						["c_min"] = 944,
-						["targets"] = {
-							["Rupert"] = {
-								["amount"] = 944,
-							},
-						},
-						["c_num"] = 1,
-					},
-					["26861.1"] = {
-						["c_amt"] = 462,
-						["c_max"] = 462,
-						["c_num"] = 1,
-						["n_max"] = 337,
-						["targets"] = {
-							["Kym"] = {
-								["amount"] = 799,
-							},
-						},
-						["c_min"] = 462,
-						["amount"] = 799,
-						["n_min"] = 337,
-						["n_amt"] = 337,
-						["n_num"] = 1,
-						["count"] = 2,
-					},
-					["11337.8"] = {
-						["c_amt"] = 280,
-						["count"] = 1,
-						["amount"] = 280,
-						["c_max"] = 280,
-						["c_min"] = 280,
-						["targets"] = {
-							["Anastasia"] = {
-								["amount"] = 280,
-							},
-						},
-						["c_num"] = 1,
-					},
-					["26865.1"] = {
-						["targets"] = {
-							["Anastasia"] = {
-								["amount"] = 0,
-							},
-						},
-						["dod_n"] = 1,
-						["count"] = 1,
-						["amount"] = 0,
-					},
-					["6603.1"] = {
-						["c_amt"] = 4290,
-						["total"] = 12423,
-						["c_max"] = 1332,
-						["c_num"] = 6,
-						["n_max"] = 683,
-						["targets"] = {
-							["Kym"] = {
-								["total"] = 3076,
-								["amount"] = 3034,
-							},
-							["Treant"] = {
-								["o_amt"] = 170,
-								["amount"] = 1552,
-							},
-							["Rupert"] = {
-								["o_amt"] = 190,
-								["amount"] = 2597,
-							},
-							["Serpent"] = {
-								["amount"] = 329,
-							},
-							["Anastasia"] = {
-								["amount"] = 4869,
-							},
-						},
-						["n_min"] = 162,
-						["mis_n"] = 1,
-						["c_min"] = 242,
-						["amount"] = 12381,
-						["o_amt"] = 360,
-						["n_amt"] = 8091,
-						["n_num"] = 21,
-						["count"] = 28,
-					},
-					["17348.1"] = {
-						["c_amt"] = 484,
-						["c_max"] = 484,
-						["c_num"] = 1,
-						["dod_n"] = 1,
-						["targets"] = {
-							["Treant"] = {
-								["amount"] = 354,
-							},
-							["Kym"] = {
-								["amount"] = 484,
-							},
-							["Rupert"] = {
-								["amount"] = 722,
-							},
-							["Anastasia"] = {
-								["amount"] = 0,
-							},
-						},
-						["n_min"] = 354,
-						["count"] = 4,
-						["amount"] = 1560,
-						["n_max"] = 722,
-						["n_amt"] = 1076,
-						["n_num"] = 2,
-						["c_min"] = 484,
-					},
-					["-26839.1"] = {
-						["targets"] = {
-							["Anastasia"] = {
-								["amount"] = 532,
-							},
-						},
-						["count"] = 2,
-						["amount"] = 532,
-						["n_min"] = 266,
-						["n_amt"] = 532,
-						["n_num"] = 2,
-						["n_max"] = 266,
-					},
-					["27189.8"] = {
-						["c_amt"] = 1115,
-						["c_max"] = 262,
-						["c_num"] = 5,
-						["n_max"] = 160,
-						["targets"] = {
-							["Treant"] = {
-								["amount"] = 400,
-							},
-							["Kym"] = {
-								["amount"] = 510,
-							},
-							["Rupert"] = {
-								["amount"] = 500,
-							},
-							["Anastasia"] = {
-								["amount"] = 553,
-							},
-						},
-						["res_n"] = 1,
-						["count"] = 13,
-						["amount"] = 1963,
-						["c_min"] = 180,
-						["n_amt"] = 848,
-						["n_num"] = 7,
-						["n_min"] = 105,
-					},
-				},
-				["totaldamage"] = 18501,
-				["deathlog"] = {
-					{
-						["log"] = {
-							{
-								["src"] = "Rupert",
-								["time"] = 79620.76700000001,
-								["rem"] = 1,
-								["id"] = "-32391.32",
-								["hp"] = 1172,
-								["aur"] = 1,
-							}, -- [1]
-							{
-								["src"] = "Anastasia",
-								["time"] = 79620.768,
-								["rem"] = 1,
-								["id"] = "-27087.16",
-								["hp"] = 1172,
-								["aur"] = 1,
-							}, -- [2]
-							{
-								["rem"] = 1,
-								["time"] = 79620.769,
-								["id"] = "26669.1",
-								["hp"] = 1172,
-								["aur"] = 1,
-							}, -- [3]
-							{
-								["src"] = "Rupert",
-								["time"] = 79620.77,
-								["id"] = "-17800.32",
-								["rem"] = 1,
-								["hp"] = 1172,
-								["aur"] = 1,
-							}, -- [4]
-							{
-								["src"] = "Xor'juul",
-								["time"] = 79620.77100000001,
-								["id"] = "-14325.64",
-								["rem"] = 1,
-								["hp"] = 1172,
-								["aur"] = 1,
-							}, -- [5]
-							{
-								["src"] = "Anastasia",
-								["time"] = 79620.772,
-								["id"] = "-7321.16",
-								["rem"] = 1,
-								["hp"] = 1172,
-								["aur"] = 1,
-							}, -- [6]
-							{
-								["src"] = "Rupert",
-								["time"] = 79618.974,
-								["id"] = "-17800.32",
-								["hp"] = 3461,
-								["aur"] = 1,
-							}, -- [7]
-							{
-								["src"] = "Rupert",
-								["time"] = 79618.97500000001,
-								["id"] = "-32391.32",
-								["hp"] = 3461,
-								["aur"] = 1,
-							}, -- [8]
-							{
-								["src"] = "Rupert",
-								["time"] = 79618.87700000001,
-								["amt"] = -1406,
-								["id"] = "25307.32",
-								["hp"] = 4089,
-							}, -- [9]
-							{
-								["src"] = "Serpent",
-								["time"] = 79618.279,
-								["id"] = "-55556.8",
-								["rem"] = 1,
-								["hp"] = 5495,
-								["aur"] = 1,
-							}, -- [10]
-							{
-								["src"] = "Serpent",
-								["time"] = 79618.28,
-								["id"] = "-55556.8",
-								["hp"] = 5495,
-								["aur"] = 1,
-							}, -- [11]
-							{
-								["src"] = "Serpent",
-								["time"] = 79618.28,
-								["amt"] = -90,
-								["id"] = "-55556.8",
-								["hp"] = 5495,
-							}, -- [12]
-							{
-								["time"] = 79617.48100000001,
-								["id"] = "26669.1",
-								["hp"] = 7453,
-								["aur"] = 1,
-							}, -- [13]
-							{
-								["src"] = "Anastasia",
-								["time"] = 79616.98299999999,
-								["id"] = "-7321.16",
-								["hp"] = 7453,
-								["aur"] = 1,
-							}, -- [14]
-						},
-						["time"] = 79620.76700000001,
-						["id"] = "25307.32",
-						["timeod"] = 1690480299,
-						["hpm"] = 7881,
-						["src"] = "Rupert",
-					}, -- [1]
-				},
-				["interrupt"] = 2,
-				["healspells"] = {
-					["28495.1"] = {
-						["targets"] = {
-							["Solm"] = {
-								["amount"] = 2368,
-							},
-						},
-						["count"] = 1,
-						["amount"] = 2368,
-						["n_min"] = 2368,
-						["n_amt"] = 2368,
-						["n_num"] = 1,
-						["n_max"] = 2368,
-					},
-				},
-				["overkill"] = 360,
-				["potionspells"] = {
-					["43569"] = 1,
-				},
-				["heal"] = 2368,
-				["potion"] = 1,
-				["death"] = 1,
-				["ccdone"] = 4,
-				["id"] = "0xF130017A40000019",
-				["interruptspells"] = {
-					["1766.1"] = {
-						["spells"] = {
-							["27073.4"] = 1,
-							["9858.8"] = 1,
-						},
-						["count"] = 2,
-						["targets"] = {
-							["Kym"] = 1,
-							["Anastasia"] = 1,
-						},
-					},
-				},
-				["timespent"] = {
-					["Kym"] = 13.52,
-					["Treant"] = 4.510000000000001,
-					["Rupert"] = 11.13,
-					["Serpent"] = 3.1,
-					["Anastasia"] = 9.509999999999998,
-				},
-			},
-			["Sandahl"] = {
-				["ccdonespells"] = {
-					["-17926.32"] = {
-						["t"] = {
-							["Belestra"] = 1,
-						},
-						["n"] = 1,
-					},
-				},
-				["last"] = 79687.74400000001,
-				["damagedspells"] = {
-					["-11713.32"] = {
-						["total"] = 1308,
-						["count"] = 12,
-						["amount"] = 0,
-						["abs_n"] = 12,
-						["sources"] = {
-							["Mirket"] = {
-								["total"] = 1308,
-								["amount"] = 0,
-							},
-						},
-					},
-				},
-				["mana"] = 1330,
-				["damaged"] = 0,
-				["auras"] = {
-					["28610.32"] = {
-						["u"] = 32,
-						["n"] = 1,
-					},
-					["23161.1"] = {
-						["u"] = 61,
-						["n"] = 1,
-					},
-					["-17800.32"] = {
-						["u"] = 1,
-						["t"] = {
-							["Belestra"] = {
-								["u"] = 1,
-								["n"] = 1,
-							},
-						},
-						["n"] = 1,
-					},
-					["9885.8"] = {
-						["u"] = 215,
-						["n"] = 1,
-					},
-					["63321.4"] = {
-						["u"] = 107,
-						["n"] = 1,
-					},
-					["26981.8"] = {
-						["u"] = 19,
-						["n"] = 1,
-					},
-					["31771.2"] = {
-						["u"] = 17,
-						["n"] = 1,
-					},
-					["-11719.32"] = {
-						["u"] = 215,
-						["t"] = {
-							["Mirket"] = {
-								["u"] = 31,
-								["n"] = 1,
-							},
-							["Belestra"] = {
-								["u"] = 215,
-								["n"] = 1,
-							},
-						},
-						["n"] = 2,
-					},
-					["-17926.32"] = {
-						["u"] = 196,
-						["t"] = {
-							["Belestra"] = {
-								["u"] = 196,
-								["n"] = 1,
-							},
-						},
-						["n"] = 1,
-					},
-					["28176.32"] = {
-						["u"] = 215,
-						["n"] = 1,
-					},
-					["-32391.32"] = {
-						["u"] = 1,
-						["t"] = {
-							["Belestra"] = {
-								["u"] = 1,
-								["n"] = 1,
-							},
-						},
 						["n"] = 1,
 					},
 				},
 				["absorbspells"] = {
-					["28610.32"] = {
+					["10901.2"] = {
+						["c_amt"] = 560,
+						["c_max"] = 560,
+						["c_num"] = 1,
+						["n_max"] = 376,
 						["targets"] = {
-							["Sandahl"] = 1144,
+							["Oakenshield"] = 1615,
 						},
-						["count"] = 11,
-						["amount"] = 1144,
-						["n_min"] = 43,
-						["n_amt"] = 1023,
-						["n_num"] = 11,
-						["n_max"] = 164,
-					},
-				},
-				["role"] = "DAMAGER",
-				["time"] = 16.51,
-				["damage"] = 4340,
-				["damagespells"] = {
-					["25307.32"] = {
-						["total"] = 2658,
-						["n_max"] = 1399,
-						["targets"] = {
-							["Belestra"] = {
-								["o_amt"] = 1321,
-								["total"] = 2658,
-								["amount"] = 1399,
-							},
-						},
-						["n_min"] = 1399,
-						["count"] = 2,
-						["amount"] = 1399,
-						["o_amt"] = 1321,
-						["abs_n"] = 1,
-						["n_num"] = 1,
-						["n_amt"] = 1399,
-					},
-					["11780.32.Succubus"] = {
-						["targets"] = {
-							["Belestra"] = {
-								["amount"] = 163,
-							},
-						},
-						["r_amt"] = 54,
-						["count"] = 2,
-						["amount"] = 163,
-						["n_min"] = 75,
-						["n_amt"] = 163,
-						["n_num"] = 2,
-						["n_max"] = 88,
-					},
-					["6603.1.Succubus"] = {
-						["c_amt"] = 596,
-						["total"] = 1806,
-						["c_max"] = 312,
-						["c_num"] = 2,
-						["n_max"] = 143,
-						["targets"] = {
-							["Belestra"] = {
-								["total"] = 1806,
-								["amount"] = 1634,
-							},
-						},
-						["c_min"] = 284,
-						["count"] = 11,
-						["amount"] = 1634,
-						["abs_n"] = 1,
-						["n_amt"] = 1038,
-						["n_num"] = 8,
-						["n_min"] = 113,
-					},
-					["-11713.32"] = {
-						["total"] = 815,
-						["n_max"] = 179,
-						["targets"] = {
-							["Richard"] = {
-								["total"] = 815,
-								["amount"] = 557,
-							},
-						},
-						["r_amt"] = 66,
-						["count"] = 7,
-						["amount"] = 557,
-						["n_min"] = 85,
-						["abs_n"] = 3,
+						["count"] = 5,
+						["amount"] = 1615,
+						["c_min"] = 560,
+						["n_amt"] = 1055,
 						["n_num"] = 4,
-						["n_amt"] = 557,
-					},
-					["11785.32.Succubus"] = {
-						["res_n"] = 1,
-						["targets"] = {
-							["Belestra"] = {
-								["amount"] = 0,
-							},
-						},
-						["count"] = 1,
-						["amount"] = 0,
-					},
-					["17926.32"] = {
-						["targets"] = {
-							["Belestra"] = {
-								["amount"] = 587,
-							},
-						},
-						["count"] = 1,
-						["amount"] = 587,
-						["n_min"] = 587,
-						["n_amt"] = 587,
-						["n_num"] = 1,
-						["n_max"] = 587,
+						["n_min"] = 50,
 					},
 				},
-				["absorb"] = 1144,
-				["class"] = "WARLOCK",
-				["id"] = "0xF130017A4500001E",
-				["totaldamage"] = 6029,
-				["healspells"] = {
-					["17926.32"] = {
-						["targets"] = {
-							["Sandahl"] = {
-								["o_amt"] = 2289,
-								["amount"] = 0,
-							},
-						},
-						["n_min"] = 0,
-						["count"] = 1,
-						["amount"] = 0,
-						["o_amt"] = 2289,
-						["n_amt"] = 0,
-						["n_num"] = 1,
-						["n_max"] = 0,
-					},
-					["54181.2.Succubus"] = {
-						["n_min"] = 88,
-						["targets"] = {
-							["Succubus <Sandahl>"] = {
-								["o_amt"] = 12,
-								["amount"] = 88,
-							},
-						},
-						["count"] = 2,
-						["amount"] = 88,
-						["o_amt"] = 12,
-						["n_amt"] = 88,
-						["n_num"] = 2,
-						["n_max"] = 88,
-					},
-					["-28176.32"] = {
-						["targets"] = {
-							["Sandahl"] = {
-								["o_amt"] = 4640,
-								["amount"] = 145,
-							},
-						},
-						["n_min"] = 0,
-						["count"] = 33,
-						["amount"] = 145,
-						["o_amt"] = 4640,
-						["n_amt"] = 145,
-						["n_num"] = 33,
-						["n_max"] = 145,
-					},
-				},
-				["overkill"] = 1321,
-				["pettotaldamage"] = 1969,
-				["heal"] = 233,
-				["manaspells"] = {
-					["31818.32"] = 1330,
-				},
-				["petdamage"] = 1797,
-				["totaldamaged"] = 1308,
-				["overheal"] = 6941,
-				["ccdone"] = 1,
+				["role"] = "NONE",
+				["time"] = 12.61,
+				["ccdone"] = 7,
+				["overheal"] = 7911,
+				["last"] = 119265.855,
+				["heal"] = 16231,
 				["timespent"] = {
-					["Richard"] = 9.510000000000002,
-					["Belestra"] = 7,
+					["Oakenshield"] = 12.61,
 				},
 			},
-			["Bilban"] = {
-				["last"] = 79694.58900000001,
-				["class"] = "WARRIOR",
-				["damaged"] = 19539,
-				["auras"] = {
-					["-11581.1"] = {
-						["u"] = 30,
+			["Oakenshield"] = {
+				["ccdonespells"] = {
+					["-7922.1"] = {
 						["t"] = {
-							["Rupert"] = {
-								["u"] = 30,
-								["n"] = 1,
+							["Shadowmoon Warlock"] = 1,
+							["Laughing Skull Enforcer"] = 1,
+						},
+						["n"] = 2,
+					},
+					["-46968.1"] = {
+						["t"] = {
+							["Laughing Skull Rogue"] = 2,
+							["Hellfire Imp"] = 1,
+							["Shadowmoon Adept"] = 6,
+						},
+						["n"] = 9,
+					},
+				},
+				["last"] = 119309.935,
+				["damagedspells"] = {
+					["15655.1"] = {
+						["total"] = 50,
+						["count"] = 2,
+						["amount"] = 0,
+						["abs_n"] = 1,
+						["mis_n"] = 1,
+						["sources"] = {
+							["Laughing Skull Enforcer"] = {
+								["total"] = 50,
+								["amount"] = 0,
 							},
 						},
-						["n"] = 1,
 					},
-					["28866.1"] = {
-						["u"] = 4,
-						["n"] = 1,
+					["3391.1.6603"] = {
+						["c_amt"] = 572,
+						["c_max"] = 572,
+						["c_num"] = 1,
+						["n_max"] = 321,
+						["sources"] = {
+							["Shadowmoon Adept"] = {
+								["amount"] = 3210,
+							},
+						},
+						["c_min"] = 572,
+						["amount"] = 3210,
+						["n_min"] = 224,
+						["n_amt"] = 2638,
+						["n_num"] = 10,
+						["count"] = 11,
+					},
+					["14516.1"] = {
+						["total"] = 376,
+						["count"] = 1,
+						["amount"] = 0,
+						["abs_n"] = 1,
+						["sources"] = {
+							["Laughing Skull Enforcer"] = {
+								["total"] = 376,
+								["amount"] = 0,
+							},
+						},
+					},
+					["6603.1"] = {
+						["c_amt"] = 1030,
+						["b_amt"] = 2918,
+						["blo_n"] = 11,
+						["sources"] = {
+							["Hellfire Imp"] = {
+								["amount"] = 1486,
+							},
+							["Shadowmoon Adept"] = {
+								["total"] = 7250,
+								["amount"] = 6690,
+							},
+							["Laughing Skull Rogue"] = {
+								["amount"] = 2649,
+							},
+							["Shadowmoon Warlock"] = {
+								["amount"] = 224,
+							},
+							["Laughing Skull Enforcer"] = {
+								["total"] = 629,
+								["amount"] = 0,
+							},
+						},
+						["par_n"] = 2,
+						["amount"] = 11049,
+						["n_min"] = 4,
+						["total"] = 12238,
+						["c_max"] = 520,
+						["c_num"] = 3,
+						["dod_n"] = 10,
+						["mis_n"] = 4,
+						["count"] = 72,
+						["c_min"] = 28,
+						["n_max"] = 327,
+						["n_amt"] = 10019,
+						["n_num"] = 40,
+						["abs_n"] = 2,
+					},
+					["15242.4"] = {
+						["sources"] = {
+							["Hellfire Imp"] = {
+								["amount"] = 673,
+							},
+						},
+						["r_amt"] = 74,
+						["count"] = 1,
+						["amount"] = 673,
+						["n_min"] = 673,
+						["n_amt"] = 673,
+						["n_num"] = 1,
+						["n_max"] = 673,
+					},
+					["11978.1"] = {
+						["dod_n"] = 1,
+						["sources"] = {
+							["Shadowmoon Adept"] = {
+								["amount"] = 90,
+							},
+						},
+						["count"] = 7,
+						["amount"] = 90,
+						["n_min"] = 15,
+						["n_amt"] = 90,
+						["n_num"] = 6,
+						["n_max"] = 15,
+					},
+					["30832.1"] = {
+						["sources"] = {
+							["Laughing Skull Rogue"] = {
+								["amount"] = 0,
+							},
+						},
+						["count"] = 2,
+						["amount"] = 0,
+						["dod_n"] = 1,
+						["mis_n"] = 1,
+					},
+				},
+				["class"] = "WARRIOR",
+				["damaged"] = 15022,
+				["auras"] = {
+					["-11581.1"] = {
+						["u"] = 109,
+						["t"] = {
+							["Hellfire Imp"] = {
+								["u"] = 44,
+								["r"] = 5,
+								["n"] = 2,
+							},
+							["Shadowmoon Adept"] = {
+								["u"] = 45,
+								["r"] = 12,
+								["n"] = 6,
+							},
+							["Laughing Skull Rogue"] = {
+								["u"] = 73,
+								["r"] = 3,
+								["n"] = 3,
+							},
+							["Shadowmoon Warlock"] = {
+								["u"] = 3,
+								["n"] = 1,
+							},
+							["Laughing Skull Enforcer"] = {
+								["u"] = 14,
+								["n"] = 2,
+							},
+						},
+						["r"] = 20,
+						["n"] = 14,
+					},
+					["-46968.1"] = {
+						["u"] = 28,
+						["t"] = {
+							["Laughing Skull Rogue"] = {
+								["u"] = 28,
+								["n"] = 2,
+							},
+							["Hellfire Imp"] = {
+								["u"] = 4,
+								["n"] = 1,
+							},
+							["Shadowmoon Adept"] = {
+								["u"] = 28,
+								["n"] = 6,
+							},
+						},
+						["n"] = 9,
 					},
 					["-58567.1"] = {
-						["u"] = 46,
+						["u"] = 94,
 						["t"] = {
-							["Treant"] = {
+							["Laughing Skull Rogue"] = {
+								["u"] = 1,
+								["n"] = 1,
+							},
+							["Laughing Skull Enforcer"] = {
+								["u"] = 16,
+								["r"] = 1,
+								["n"] = 2,
+							},
+							["Shadowmoon Adept"] = {
+								["u"] = 42,
+								["n"] = 7,
+							},
+						},
+						["r"] = 1,
+						["n"] = 10,
+					},
+					["57516.1"] = {
+						["u"] = 84,
+						["r"] = 25,
+						["n"] = 1,
+					},
+					["-20005.16"] = {
+						["u"] = 78,
+						["t"] = {
+							["Shadowmoon Adept"] = {
 								["u"] = 19,
 								["n"] = 2,
 							},
-							["Rupert"] = {
-								["u"] = 1,
+							["Laughing Skull Enforcer"] = {
+								["u"] = 5,
 								["n"] = 1,
 							},
 						},
 						["n"] = 3,
+					},
+					["6346.2"] = {
+						["u"] = 87,
+						["n"] = 1,
+					},
+					["-355.1"] = {
+						["u"] = 15,
+						["t"] = {
+							["Laughing Skull Enforcer"] = {
+								["u"] = 3,
+								["n"] = 1,
+							},
+							["Laughing Skull Rogue"] = {
+								["u"] = 3,
+								["n"] = 1,
+							},
+						},
+						["n"] = 2,
+					},
+					["50227.1"] = {
+						["u"] = 116,
+						["n"] = 4,
+					},
+					["10901.2"] = {
+						["u"] = 27,
+						["n"] = 1,
+					},
+					["2565.1"] = {
+						["u"] = 10,
+						["n"] = 1,
 					},
 					["-7922.1"] = {
-						["u"] = 1,
+						["u"] = 25,
 						["t"] = {
-							["Anastasia"] = {
+							["Shadowmoon Warlock"] = {
+								["u"] = 2,
+								["n"] = 1,
+							},
+							["Laughing Skull Enforcer"] = {
 								["u"] = 1,
 								["n"] = 1,
 							},
 						},
-						["n"] = 1,
+						["n"] = 2,
 					},
-					["58374.1"] = {
-						["r"] = 4,
-						["u"] = 39,
-						["n"] = 1,
+					["25315.2"] = {
+						["u"] = 202,
+						["n"] = 4,
 					},
-					["2458.1"] = {
-						["u"] = 131,
+					["-11556.1"] = {
+						["u"] = 59,
+						["t"] = {
+							["Hellfire Imp"] = {
+								["u"] = 43,
+								["r"] = 1,
+								["n"] = 1,
+							},
+							["Shadowmoon Adept"] = {
+								["u"] = 44,
+								["r"] = 1,
+								["n"] = 6,
+							},
+							["Laughing Skull Enforcer"] = {
+								["u"] = 4,
+								["n"] = 1,
+							},
+							["Shadowmoon Warlock"] = {
+								["u"] = 2,
+								["n"] = 1,
+							},
+							["Laughing Skull Rogue"] = {
+								["u"] = 12,
+								["n"] = 1,
+							},
+						},
+						["r"] = 2,
+						["n"] = 10,
+					},
+				},
+				["role"] = "TANK",
+				["time"] = 79.93000000000002,
+				["damage"] = 45776,
+				["rage"] = 160,
+				["overheal"] = 33,
+				["id"] = "0x0000000000000013",
+				["spec"] = 73,
+				["healspells"] = {
+					["18817.32"] = {
+						["n_max"] = 0,
+						["targets"] = {
+							["Oakenshield"] = {
+								["o_amt"] = 33,
+								["amount"] = 0,
+							},
+						},
+						["count"] = 1,
+						["amount"] = 0,
+						["o_amt"] = 33,
+						["n_min"] = 0,
+						["n_num"] = 1,
+						["n_amt"] = 0,
+					},
+				},
+				["overkill"] = 525,
+				["heal"] = 0,
+				["ragespells"] = {
+					["34846.1"] = 30,
+					["23602.1"] = 130,
+				},
+				["sundertargets"] = {
+					["Laughing Skull Rogue"] = 1,
+					["Laughing Skull Enforcer"] = 3,
+					["Shadowmoon Adept"] = 7,
+				},
+				["ccdone"] = 11,
+				["totaldamaged"] = 16637,
+				["damagespells"] = {
+					["18817.32"] = {
+						["n_max"] = 33,
+						["count"] = 1,
+						["amount"] = 33,
+						["targets"] = {
+							["Laughing Skull Enforcer"] = {
+								["amount"] = 33,
+							},
+						},
+						["n_min"] = 33,
+						["n_num"] = 1,
+						["n_amt"] = 33,
+					},
+					["46968.1"] = {
+						["c_amt"] = 6570,
+						["c_max"] = 1110,
+						["c_num"] = 6,
+						["n_max"] = 555,
+						["targets"] = {
+							["Laughing Skull Rogue"] = {
+								["amount"] = 1638,
+							},
+							["Hellfire Imp"] = {
+								["amount"] = 1092,
+							},
+							["Shadowmoon Adept"] = {
+								["amount"] = 5487,
+							},
+						},
+						["c_min"] = 1092,
+						["amount"] = 8217,
+						["n_min"] = 546,
+						["n_amt"] = 1647,
+						["n_num"] = 3,
+						["count"] = 9,
+					},
+					["25288.1"] = {
+						["c_amt"] = 2522,
+						["c_max"] = 2522,
+						["c_num"] = 1,
+						["n_max"] = 1263,
+						["targets"] = {
+							["Shadowmoon Adept"] = {
+								["o_amt"] = 306,
+								["amount"] = 4948,
+							},
+						},
+						["c_min"] = 2522,
+						["count"] = 3,
+						["amount"] = 4948,
+						["o_amt"] = 306,
+						["n_amt"] = 2426,
+						["n_num"] = 2,
+						["n_min"] = 1163,
+					},
+					["30016.1"] = {
+						["c_amt"] = 3092,
+						["c_max"] = 632,
+						["c_num"] = 5,
+						["n_max"] = 375,
+						["targets"] = {
+							["Hellfire Imp"] = {
+								["amount"] = 340,
+							},
+							["Laughing Skull Rogue"] = {
+								["amount"] = 290,
+							},
+							["Laughing Skull Enforcer"] = {
+								["amount"] = 1281,
+							},
+							["Shadowmoon Adept"] = {
+								["amount"] = 3391,
+							},
+						},
+						["count"] = 12,
+						["amount"] = 5302,
+						["c_min"] = 610,
+						["n_amt"] = 2210,
+						["n_num"] = 7,
+						["n_min"] = 290,
+					},
+					["6603.1"] = {
+						["c_amt"] = 3180,
+						["b_amt"] = 30,
+						["g_amt"] = 666,
+						["n_max"] = 182,
+						["targets"] = {
+							["Hellfire Imp"] = {
+								["o_amt"] = 219,
+								["amount"] = 346,
+							},
+							["Shadowmoon Adept"] = {
+								["amount"] = 3314,
+							},
+							["Laughing Skull Rogue"] = {
+								["amount"] = 1665,
+							},
+							["Shadowmoon Warlock"] = {
+								["amount"] = 663,
+							},
+							["Laughing Skull Enforcer"] = {
+								["amount"] = 1785,
+							},
+						},
+						["amount"] = 7773,
+						["n_min"] = 126,
+						["g_max"] = 162,
+						["c_max"] = 346,
+						["c_num"] = 10,
+						["g_min"] = 117,
+						["g_num"] = 5,
+						["count"] = 40,
+						["o_amt"] = 219,
+						["n_amt"] = 3927,
+						["n_num"] = 25,
+						["c_min"] = 266,
+					},
+					["11581.1"] = {
+						["c_amt"] = 4568,
+						["b_amt"] = 30,
+						["c_max"] = 532,
+						["c_num"] = 9,
+						["n_max"] = 267,
+						["targets"] = {
+							["Hellfire Imp"] = {
+								["amount"] = 1996,
+							},
+							["Shadowmoon Adept"] = {
+								["amount"] = 5807,
+							},
+							["Laughing Skull Rogue"] = {
+								["amount"] = 1996,
+							},
+							["Shadowmoon Warlock"] = {
+								["amount"] = 532,
+							},
+							["Laughing Skull Enforcer"] = {
+								["amount"] = 494,
+							},
+						},
+						["count"] = 34,
+						["amount"] = 10825,
+						["c_min"] = 490,
+						["n_amt"] = 6257,
+						["n_num"] = 25,
+						["n_min"] = 215,
+					},
+					["23925.1"] = {
+						["c_amt"] = 4542,
+						["c_max"] = 1198,
+						["c_num"] = 4,
+						["n_max"] = 555,
+						["targets"] = {
+							["Laughing Skull Rogue"] = {
+								["amount"] = 1731,
+							},
+							["Laughing Skull Enforcer"] = {
+								["amount"] = 542,
+							},
+							["Shadowmoon Adept"] = {
+								["amount"] = 3366,
+							},
+						},
+						["count"] = 6,
+						["amount"] = 5639,
+						["c_min"] = 1072,
+						["n_amt"] = 1097,
+						["n_num"] = 2,
+						["n_min"] = 542,
+					},
+					["59653.1"] = {
+						["c_amt"] = 58,
+						["c_max"] = 58,
+						["c_num"] = 1,
+						["n_max"] = 80,
+						["targets"] = {
+							["Hellfire Imp"] = {
+								["amount"] = 273,
+							},
+							["Shadowmoon Adept"] = {
+								["amount"] = 1975,
+							},
+							["Laughing Skull Rogue"] = {
+								["amount"] = 511,
+							},
+							["Shadowmoon Warlock"] = {
+								["amount"] = 42,
+							},
+							["Laughing Skull Enforcer"] = {
+								["amount"] = 238,
+							},
+						},
+						["count"] = 71,
+						["amount"] = 3039,
+						["c_min"] = 58,
+						["n_amt"] = 2981,
+						["n_num"] = 70,
+						["n_min"] = 35,
+					},
+				},
+				["sunder"] = 11,
+				["timespent"] = {
+					["Hellfire Imp"] = 5.51,
+					["Shadowmoon Adept"] = 33.05,
+					["Laughing Skull Rogue"] = 17.32,
+					["Shadowmoon Warlock"] = 4.43,
+					["Laughing Skull Enforcer"] = 19.62,
+				},
+			},
+			["Bink"] = {
+				["ccdonespells"] = {
+					["-12826.64"] = {
+						["t"] = {
+							["Laughing Skull Rogue"] = 3,
+						},
 						["n"] = 3,
 					},
-					["71.1"] = {
-						["u"] = 121,
-						["n"] = 3,
+					["-10230.16"] = {
+						["t"] = {
+							["Hellfire Imp"] = 1,
+							["Laughing Skull Rogue"] = 1,
+						},
+						["n"] = 2,
 					},
-					["-1715.1"] = {
+				},
+				["interrupt"] = 2,
+				["class"] = "MAGE",
+				["auras"] = {
+					["-33041.4"] = {
 						["u"] = 4,
 						["t"] = {
-							["Treant"] = {
+							["Hellfire Imp"] = {
 								["u"] = 4,
 								["n"] = 1,
 							},
 						},
 						["n"] = 1,
 					},
-					["-12809.1"] = {
-						["u"] = 3,
-						["t"] = {
-							["Treant"] = {
-								["u"] = 3,
-								["n"] = 1,
-							},
-						},
+					["27841.2"] = {
+						["u"] = 87,
 						["n"] = 1,
 					},
-					["-20253.1"] = {
-						["u"] = 85,
+					["-10161.16"] = {
+						["u"] = 39,
 						["t"] = {
-							["Rupert"] = {
+							["Hellfire Imp"] = {
+								["u"] = 31,
+								["n"] = 2,
+							},
+							["Laughing Skull Rogue"] = {
+								["u"] = 11,
+								["n"] = 1,
+							},
+							["Shadowmoon Adept"] = {
+								["u"] = 37,
+								["n"] = 3,
+							},
+						},
+						["n"] = 6,
+					},
+					["10938.2"] = {
+						["u"] = 87,
+						["n"] = 1,
+					},
+					["-10230.16"] = {
+						["u"] = 54,
+						["t"] = {
+							["Laughing Skull Rogue"] = {
 								["u"] = 1,
 								["n"] = 1,
 							},
-							["Anastasia"] = {
+						},
+						["n"] = 2,
+					},
+					["10220.16"] = {
+						["u"] = 87,
+						["n"] = 1,
+					},
+					["-18809.4"] = {
+						["u"] = 10,
+						["t"] = {
+							["Shadowmoon Warlock"] = {
+								["u"] = 1,
+								["n"] = 1,
+							},
+							["Shadowmoon Adept"] = {
 								["u"] = 2,
 								["n"] = 1,
 							},
 						},
 						["n"] = 2,
 					},
-					["47753.2"] = {
+					["-12654.4"] = {
+						["u"] = 91,
+						["t"] = {
+							["Laughing Skull Rogue"] = {
+								["u"] = 3,
+								["n"] = 1,
+							},
+							["Laughing Skull Enforcer"] = {
+								["u"] = 2,
+								["n"] = 1,
+							},
+							["Shadowmoon Warlock"] = {
+								["u"] = 3,
+								["r"] = 1,
+								["n"] = 1,
+							},
+							["Shadowmoon Adept"] = {
+								["u"] = 11,
+								["n"] = 2,
+							},
+						},
 						["r"] = 1,
-						["u"] = 2,
-						["n"] = 1,
+						["n"] = 5,
 					},
-					["42292.1"] = {
-						["u"] = 1,
-						["n"] = 1,
+					["-12826.64"] = {
+						["u"] = 38,
+						["t"] = {
+							["Laughing Skull Rogue"] = {
+								["u"] = 38,
+								["n"] = 3,
+							},
+						},
+						["n"] = 3,
 					},
-					["2565.1"] = {
-						["u"] = 60,
-						["n"] = 2,
-					},
-					["47930.2"] = {
-						["r"] = 3,
-						["u"] = 4,
-						["n"] = 1,
-					},
-					["-46968.1"] = {
+					["-25306.4"] = {
 						["u"] = 2,
 						["t"] = {
-							["Rupert"] = {
+							["Laughing Skull Enforcer"] = {
 								["u"] = 2,
 								["n"] = 1,
 							},
 						},
 						["n"] = 1,
 					},
-					["871.1"] = {
-						["u"] = 15,
+					["-22959.4"] = {
+						["u"] = 251,
+						["t"] = {
+							["Laughing Skull Enforcer"] = {
+								["u"] = 15,
+								["n"] = 2,
+							},
+							["Laughing Skull Rogue"] = {
+								["u"] = 75,
+								["n"] = 2,
+							},
+							["Shadowmoon Warlock"] = {
+								["u"] = 3,
+								["n"] = 1,
+							},
+							["Shadowmoon Adept"] = {
+								["u"] = 70,
+								["n"] = 5,
+							},
+						},
+						["n"] = 10,
+					},
+					["-44457.4"] = {
+						["u"] = 28,
+						["t"] = {
+							["Laughing Skull Enforcer"] = {
+								["u"] = 28,
+								["n"] = 2,
+							},
+						},
+						["n"] = 2,
+					},
+					["10174.64"] = {
+						["u"] = 87,
 						["n"] = 1,
 					},
-					["12976.1"] = {
-						["u"] = 20,
+					["10157.64"] = {
+						["u"] = 87,
+						["n"] = 1,
+					},
+					["10958.32"] = {
+						["u"] = 87,
+						["n"] = 1,
+					},
+				},
+				["id"] = "0xF1300112A9000187",
+				["overkill"] = 1403,
+				["manaspells"] = {
+					["29077.64"] = 477,
+				},
+				["ccdone"] = 5,
+				["mana"] = 477,
+				["damagespells"] = {
+					["25306.4"] = {
+						["c_amt"] = 5068,
+						["c_max"] = 3058,
+						["count"] = 2,
+						["amount"] = 5068,
+						["o_amt"] = 819,
+						["c_min"] = 2010,
+						["targets"] = {
+							["Laughing Skull Enforcer"] = {
+								["amount"] = 3058,
+							},
+							["Laughing Skull Rogue"] = {
+								["o_amt"] = 819,
+								["amount"] = 2010,
+							},
+						},
+						["c_num"] = 2,
+					},
+					["10199.4"] = {
+						["n_max"] = 1048,
+						["targets"] = {
+							["Shadowmoon Adept"] = {
+								["o_amt"] = 414,
+								["amount"] = 770,
+							},
+							["Laughing Skull Enforcer"] = {
+								["amount"] = 1048,
+							},
+						},
+						["count"] = 2,
+						["amount"] = 1818,
+						["o_amt"] = 414,
+						["n_min"] = 770,
+						["n_num"] = 2,
+						["n_amt"] = 1818,
+					},
+					["18809.4"] = {
+						["c_amt"] = 6234,
+						["count"] = 2,
+						["amount"] = 6234,
+						["c_max"] = 3168,
+						["c_min"] = 3066,
+						["targets"] = {
+							["Shadowmoon Warlock"] = {
+								["amount"] = 3168,
+							},
+							["Shadowmoon Adept"] = {
+								["amount"] = 3066,
+							},
+						},
+						["c_num"] = 2,
+					},
+					["33041.4"] = {
+						["n_max"] = 656,
+						["count"] = 1,
+						["amount"] = 656,
+						["targets"] = {
+							["Hellfire Imp"] = {
+								["amount"] = 656,
+							},
+						},
+						["n_min"] = 656,
+						["n_num"] = 1,
+						["n_amt"] = 656,
+					},
+					["-25306.4"] = {
+						["n_max"] = 21,
+						["count"] = 1,
+						["amount"] = 21,
+						["targets"] = {
+							["Laughing Skull Enforcer"] = {
+								["amount"] = 21,
+							},
+						},
+						["n_min"] = 21,
+						["n_num"] = 1,
+						["n_amt"] = 21,
+					},
+					["10161.16"] = {
+						["c_amt"] = 3860,
+						["c_max"] = 976,
+						["c_num"] = 4,
+						["n_max"] = 515,
+						["targets"] = {
+							["Hellfire Imp"] = {
+								["amount"] = 1939,
+							},
+							["Laughing Skull Rogue"] = {
+								["amount"] = 485,
+							},
+							["Shadowmoon Adept"] = {
+								["amount"] = 2436,
+							},
+						},
+						["c_min"] = 958,
+						["amount"] = 4860,
+						["n_min"] = 485,
+						["n_amt"] = 1000,
+						["n_num"] = 2,
+						["count"] = 6,
+					},
+					["10230.16"] = {
+						["n_max"] = 117,
+						["count"] = 2,
+						["amount"] = 218,
+						["targets"] = {
+							["Hellfire Imp"] = {
+								["amount"] = 117,
+							},
+							["Laughing Skull Rogue"] = {
+								["amount"] = 101,
+							},
+						},
+						["n_min"] = 101,
+						["n_num"] = 2,
+						["n_amt"] = 218,
+					},
+					["-12654.4"] = {
+						["n_max"] = 160,
+						["count"] = 4,
+						["amount"] = 629,
+						["targets"] = {
+							["Laughing Skull Rogue"] = {
+								["amount"] = 158,
+							},
+							["Shadowmoon Warlock"] = {
+								["amount"] = 151,
+							},
+							["Shadowmoon Adept"] = {
+								["amount"] = 320,
+							},
+						},
+						["n_min"] = 151,
+						["n_num"] = 4,
+						["n_amt"] = 629,
+					},
+					["10207.4"] = {
+						["c_amt"] = 2352,
+						["r_amt"] = 200,
+						["c_max"] = 803,
+						["c_num"] = 3,
+						["n_max"] = 688,
+						["targets"] = {
+							["Hellfire Imp"] = {
+								["o_amt"] = 170,
+								["amount"] = 533,
+							},
+							["Shadowmoon Adept"] = {
+								["amount"] = 2811,
+							},
+							["Laughing Skull Rogue"] = {
+								["amount"] = 1257,
+							},
+							["Shadowmoon Warlock"] = {
+								["amount"] = 756,
+							},
+							["Laughing Skull Enforcer"] = {
+								["amount"] = 1155,
+							},
+						},
+						["c_min"] = 756,
+						["count"] = 11,
+						["amount"] = 6512,
+						["o_amt"] = 170,
+						["n_amt"] = 4160,
+						["n_num"] = 8,
+						["n_min"] = 464,
+					},
+					["-44457.4"] = {
+						["n_max"] = 261,
+						["count"] = 5,
+						["amount"] = 1146,
+						["targets"] = {
+							["Laughing Skull Enforcer"] = {
+								["amount"] = 1146,
+							},
+						},
+						["n_min"] = 208,
+						["n_num"] = 5,
+						["n_amt"] = 1146,
+					},
+				},
+				["interruptspells"] = {
+					["2139.64"] = {
+						["spells"] = {
+							["15242.4"] = 2,
+						},
+						["count"] = 2,
+						["targets"] = {
+							["Hellfire Imp"] = 2,
+						},
+					},
+				},
+				["damage"] = 27162,
+			},
+			["Javad"] = {
+				["ccdonespells"] = {
+					["-64695.8.Earthbind Totem"] = {
+						["t"] = {
+							["Laughing Skull Rogue"] = 2,
+						},
+						["n"] = 2,
+					},
+					["-3600.8.Earthbind Totem"] = {
+						["t"] = {
+							["Laughing Skull Rogue"] = 4,
+							["Hellfire Imp"] = 4,
+							["Shadowmoon Adept"] = 8,
+						},
+						["n"] = 16,
+					},
+				},
+				["last"] = 119309.937,
+				["damage"] = 53729,
+				["interruptspells"] = {
+					["57994.8"] = {
+						["spells"] = {
+							["15242.4"] = 4,
+							["32197.32"] = 1,
+						},
+						["count"] = 5,
+						["targets"] = {
+							["Shadowmoon Warlock"] = 1,
+							["Hellfire Imp"] = 4,
+						},
+					},
+				},
+				["id"] = "0xF13001127C000189",
+				["class"] = "SHAMAN",
+				["auras"] = {
+					["63283.4"] = {
+						["u"] = 87,
+						["n"] = 1,
+					},
+					["10958.32"] = {
+						["u"] = 87,
 						["n"] = 1,
 					},
 					["10938.2"] = {
-						["u"] = 150,
+						["u"] = 87,
 						["n"] = 1,
 					},
-					["2457.1"] = {
-						["u"] = 216,
-						["n"] = 5,
+					["54646.64"] = {
+						["u"] = 87,
+						["n"] = 1,
 					},
-					["29131.1"] = {
-						["u"] = 77,
-						["n"] = 2,
-					},
-					["25289.1"] = {
-						["u"] = 214,
-						["n"] = 2,
-					},
-					["-18498.1"] = {
-						["u"] = 22,
+					["-3600.8.Earthbind Totem"] = {
+						["u"] = 54,
 						["t"] = {
-							["Kym"] = {
+							["Laughing Skull Rogue"] = {
+								["u"] = 51,
+								["r"] = 1,
+								["n"] = 3,
+							},
+							["Hellfire Imp"] = {
+								["u"] = 11,
+								["r"] = 3,
+								["n"] = 1,
+							},
+							["Shadowmoon Adept"] = {
+								["u"] = 11,
+								["r"] = 4,
+								["n"] = 4,
+							},
+						},
+						["r"] = 8,
+						["n"] = 8,
+					},
+					["10432.8"] = {
+						["u"] = 87,
+						["n"] = 1,
+					},
+					["10157.64"] = {
+						["u"] = 87,
+						["n"] = 1,
+					},
+					["-29228.4"] = {
+						["u"] = 142,
+						["t"] = {
+							["Hellfire Imp"] = {
 								["u"] = 3,
 								["n"] = 1,
 							},
-							["Anastasia"] = {
+							["Laughing Skull Rogue"] = {
+								["u"] = 10,
+								["n"] = 2,
+							},
+							["Laughing Skull Enforcer"] = {
+								["u"] = 12,
+								["n"] = 2,
+							},
+							["Shadowmoon Adept"] = {
+								["u"] = 41,
+								["n"] = 4,
+							},
+						},
+						["n"] = 9,
+					},
+					["-64695.8.Earthbind Totem"] = {
+						["u"] = 1,
+						["t"] = {
+							["Laughing Skull Rogue"] = {
 								["u"] = 1,
+								["n"] = 2,
+							},
+						},
+						["n"] = 2,
+					},
+					["27841.2"] = {
+						["u"] = 87,
+						["n"] = 1,
+					},
+				},
+				["overkill"] = 3088,
+				["dispel"] = 3,
+				["role"] = "NONE",
+				["time"] = 75.48999999999998,
+				["ccdone"] = 18,
+				["damagespells"] = {
+					["15208.8"] = {
+						["c_amt"] = 11081,
+						["c_max"] = 2361,
+						["c_num"] = 5,
+						["n_max"] = 1123,
+						["targets"] = {
+							["Laughing Skull Rogue"] = {
+								["amount"] = 1097,
+							},
+							["Laughing Skull Enforcer"] = {
+								["o_amt"] = 425,
+								["amount"] = 5402,
+							},
+							["Shadowmoon Warlock"] = {
+								["amount"] = 2361,
+							},
+							["Shadowmoon Adept"] = {
+								["o_amt"] = 990,
+								["amount"] = 7677,
+							},
+						},
+						["c_min"] = 2115,
+						["count"] = 10,
+						["amount"] = 16537,
+						["o_amt"] = 1415,
+						["n_amt"] = 5456,
+						["n_num"] = 5,
+						["n_min"] = 1002,
+					},
+					["45300.8"] = {
+						["c_amt"] = 1596,
+						["count"] = 2,
+						["amount"] = 1596,
+						["c_max"] = 915,
+						["c_min"] = 681,
+						["targets"] = {
+							["Laughing Skull Rogue"] = {
+								["amount"] = 1596,
+							},
+						},
+						["c_num"] = 2,
+					},
+					["26363.8"] = {
+						["n_max"] = 397,
+						["count"] = 1,
+						["amount"] = 397,
+						["targets"] = {
+							["Laughing Skull Rogue"] = {
+								["amount"] = 397,
+							},
+						},
+						["n_min"] = 397,
+						["n_num"] = 1,
+						["n_amt"] = 397,
+					},
+					["45294.8"] = {
+						["c_amt"] = 2065,
+						["c_max"] = 1065,
+						["count"] = 2,
+						["amount"] = 2065,
+						["o_amt"] = 967,
+						["c_min"] = 1000,
+						["targets"] = {
+							["Shadowmoon Adept"] = {
+								["o_amt"] = 967,
+								["amount"] = 1000,
+							},
+							["Laughing Skull Enforcer"] = {
+								["amount"] = 1065,
+							},
+						},
+						["c_num"] = 2,
+					},
+					["10605.8"] = {
+						["c_amt"] = 11311,
+						["c_max"] = 2133,
+						["c_num"] = 7,
+						["n_max"] = 1087,
+						["targets"] = {
+							["Hellfire Imp"] = {
+								["amount"] = 1228,
+							},
+							["Laughing Skull Rogue"] = {
+								["o_amt"] = 271,
+								["amount"] = 5058,
+							},
+							["Laughing Skull Enforcer"] = {
+								["o_amt"] = 117,
+								["amount"] = 3709,
+							},
+							["Shadowmoon Adept"] = {
+								["amount"] = 8042,
+							},
+						},
+						["c_min"] = 861,
+						["count"] = 16,
+						["amount"] = 18037,
+						["o_amt"] = 388,
+						["n_amt"] = 6726,
+						["n_num"] = 9,
+						["n_min"] = 442,
+					},
+					["29228.4"] = {
+						["c_amt"] = 8826,
+						["r_amt"] = 324,
+						["c_max"] = 1557,
+						["c_num"] = 6,
+						["n_max"] = 883,
+						["targets"] = {
+							["Hellfire Imp"] = {
+								["amount"] = 1482,
+							},
+							["Laughing Skull Rogue"] = {
+								["amount"] = 1578,
+							},
+							["Laughing Skull Enforcer"] = {
+								["amount"] = 3046,
+							},
+							["Shadowmoon Adept"] = {
+								["o_amt"] = 195,
+								["amount"] = 5888,
+							},
+						},
+						["c_min"] = 1334,
+						["count"] = 10,
+						["amount"] = 11994,
+						["o_amt"] = 195,
+						["n_amt"] = 3168,
+						["n_num"] = 4,
+						["n_min"] = 707,
+					},
+					["-29228.4"] = {
+						["r_amt"] = 75,
+						["n_max"] = 154,
+						["targets"] = {
+							["Laughing Skull Rogue"] = {
+								["o_amt"] = 36,
+								["amount"] = 423,
+							},
+							["Laughing Skull Enforcer"] = {
+								["amount"] = 154,
+							},
+							["Shadowmoon Adept"] = {
+								["o_amt"] = 87,
+								["amount"] = 2526,
+							},
+						},
+						["count"] = 21,
+						["amount"] = 3103,
+						["o_amt"] = 123,
+						["n_amt"] = 3103,
+						["n_num"] = 21,
+						["n_min"] = 123,
+					},
+				},
+				["interrupt"] = 5,
+				["dispelspells"] = {
+					["51886.8"] = {
+						["spells"] = {
+							["34969.8"] = 3,
+						},
+						["count"] = 3,
+						["targets"] = {
+							["Javad"] = 1,
+							["Oakenshield"] = 2,
+						},
+					},
+				},
+				["timespent"] = {
+					["Hellfire Imp"] = 0.71,
+					["Shadowmoon Adept"] = 39.91,
+					["Laughing Skull Rogue"] = 13.66,
+					["Shadowmoon Warlock"] = 3.5,
+					["Laughing Skull Enforcer"] = 17.71,
+				},
+			},
+			["Shadowmoon Warlock"] = {
+				["damagespells"] = {
+					["6603.1"] = {
+						["targets"] = {
+							["Oakenshield"] = {
+								["amount"] = 224,
+							},
+						},
+						["amount"] = 224,
+					},
+				},
+				["damage"] = 224,
+				["damagedspells"] = {
+					["15208.8"] = {
+						["o_amt"] = 31,
+						["sources"] = {
+							["Javad"] = {
+								["amount"] = 2361,
+							},
+							["Umbrua"] = {
+								["o_amt"] = 31,
+								["amount"] = 1247,
+							},
+						},
+						["amount"] = 3608,
+					},
+					["11581.1"] = {
+						["sources"] = {
+							["Oakenshield"] = {
+								["amount"] = 532,
+							},
+						},
+						["amount"] = 532,
+					},
+					["-12654.4"] = {
+						["sources"] = {
+							["Bink"] = {
+								["amount"] = 151,
+							},
+						},
+						["amount"] = 151,
+					},
+					["18809.4"] = {
+						["sources"] = {
+							["Bink"] = {
+								["amount"] = 3168,
+							},
+						},
+						["amount"] = 3168,
+					},
+					["10207.4"] = {
+						["sources"] = {
+							["Bink"] = {
+								["amount"] = 756,
+							},
+						},
+						["amount"] = 756,
+					},
+					["-29228.4"] = {
+						["sources"] = {
+							["Umbrua"] = {
+								["amount"] = 185,
+							},
+						},
+						["amount"] = 185,
+					},
+					["6603.1"] = {
+						["sources"] = {
+							["Oakenshield"] = {
+								["amount"] = 663,
+							},
+						},
+						["amount"] = 663,
+					},
+					["26363.8"] = {
+						["sources"] = {
+							["Umbrua"] = {
+								["amount"] = 533,
+							},
+						},
+						["amount"] = 533,
+					},
+					["29228.4"] = {
+						["sources"] = {
+							["Umbrua"] = {
+								["amount"] = 865,
+							},
+						},
+						["amount"] = 865,
+					},
+					["59653.1"] = {
+						["sources"] = {
+							["Oakenshield"] = {
+								["amount"] = 42,
+							},
+						},
+						["amount"] = 42,
+					},
+				},
+				["id"] = "0xF1300043DB00001C",
+				["class"] = "MONSTER",
+				["damaged"] = 10503,
+				["enemy"] = true,
+			},
+			["Laughing Skull Enforcer"] = {
+				["damagespells"] = {
+					["6603.1"] = {
+						["total"] = 629,
+						["targets"] = {
+							["Oakenshield"] = {
+								["total"] = 629,
+								["amount"] = 0,
+							},
+						},
+						["amount"] = 0,
+					},
+					["15655.1"] = {
+						["total"] = 50,
+						["targets"] = {
+							["Oakenshield"] = {
+								["total"] = 50,
+								["amount"] = 0,
+							},
+						},
+						["amount"] = 0,
+					},
+					["14516.1"] = {
+						["total"] = 376,
+						["targets"] = {
+							["Oakenshield"] = {
+								["total"] = 376,
+								["amount"] = 0,
+							},
+						},
+						["amount"] = 0,
+					},
+				},
+				["totaldamage"] = 1055,
+				["enemy"] = true,
+				["id"] = "0xF1300043DA000011",
+				["damagedspells"] = {
+					["15208.8"] = {
+						["o_amt"] = 425,
+						["sources"] = {
+							["Javad"] = {
+								["o_amt"] = 425,
+								["amount"] = 5402,
+							},
+							["Umbrua"] = {
+								["amount"] = 4271,
+							},
+						},
+						["amount"] = 9673,
+					},
+					["11581.1"] = {
+						["sources"] = {
+							["Oakenshield"] = {
+								["amount"] = 494,
+							},
+						},
+						["amount"] = 494,
+					},
+					["25306.4"] = {
+						["sources"] = {
+							["Bink"] = {
+								["amount"] = 3058,
+							},
+						},
+						["amount"] = 3058,
+					},
+					["23925.1"] = {
+						["sources"] = {
+							["Oakenshield"] = {
+								["amount"] = 542,
+							},
+						},
+						["amount"] = 542,
+					},
+					["45294.8"] = {
+						["sources"] = {
+							["Javad"] = {
+								["amount"] = 1065,
+							},
+						},
+						["amount"] = 1065,
+					},
+					["10199.4"] = {
+						["sources"] = {
+							["Bink"] = {
+								["amount"] = 1048,
+							},
+						},
+						["amount"] = 1048,
+					},
+					["6603.1"] = {
+						["sources"] = {
+							["Oakenshield"] = {
+								["amount"] = 1785,
+							},
+						},
+						["amount"] = 1785,
+					},
+					["18817.32"] = {
+						["sources"] = {
+							["Oakenshield"] = {
+								["amount"] = 33,
+							},
+						},
+						["amount"] = 33,
+					},
+					["10605.8"] = {
+						["o_amt"] = 117,
+						["sources"] = {
+							["Javad"] = {
+								["o_amt"] = 117,
+								["amount"] = 3709,
+							},
+						},
+						["amount"] = 3709,
+					},
+					["-29228.4"] = {
+						["sources"] = {
+							["Javad"] = {
+								["amount"] = 154,
+							},
+							["Umbrua"] = {
+								["amount"] = 493,
+							},
+						},
+						["amount"] = 647,
+					},
+					["-25306.4"] = {
+						["sources"] = {
+							["Bink"] = {
+								["amount"] = 21,
+							},
+						},
+						["amount"] = 21,
+					},
+					["30016.1"] = {
+						["sources"] = {
+							["Oakenshield"] = {
+								["amount"] = 1281,
+							},
+						},
+						["amount"] = 1281,
+					},
+					["-44457.4"] = {
+						["sources"] = {
+							["Bink"] = {
+								["amount"] = 1146,
+							},
+						},
+						["amount"] = 1146,
+					},
+					["29228.4"] = {
+						["sources"] = {
+							["Javad"] = {
+								["amount"] = 3046,
+							},
+							["Umbrua"] = {
+								["amount"] = 1519,
+							},
+						},
+						["amount"] = 4565,
+					},
+					["10207.4"] = {
+						["sources"] = {
+							["Bink"] = {
+								["amount"] = 1155,
+							},
+						},
+						["amount"] = 1155,
+					},
+					["59653.1"] = {
+						["sources"] = {
+							["Oakenshield"] = {
+								["amount"] = 238,
+							},
+						},
+						["amount"] = 238,
+					},
+				},
+				["class"] = "MONSTER",
+				["damaged"] = 30460,
+				["damage"] = 0,
+			},
+			["Umbrua"] = {
+				["damagespells"] = {
+					["15208.8"] = {
+						["c_amt"] = 6764,
+						["r_amt"] = 109,
+						["c_max"] = 2397,
+						["c_num"] = 3,
+						["n_max"] = 1247,
+						["targets"] = {
+							["Hellfire Imp"] = {
+								["o_amt"] = 600,
+								["amount"] = 1221,
+							},
+							["Shadowmoon Adept"] = {
+								["amount"] = 5823,
+							},
+							["Laughing Skull Rogue"] = {
+								["amount"] = 1044,
+							},
+							["Shadowmoon Warlock"] = {
+								["o_amt"] = 31,
+								["amount"] = 1247,
+							},
+							["Laughing Skull Enforcer"] = {
+								["amount"] = 4271,
+							},
+						},
+						["c_min"] = 2113,
+						["count"] = 9,
+						["amount"] = 13606,
+						["o_amt"] = 631,
+						["n_amt"] = 6842,
+						["n_num"] = 6,
+						["n_min"] = 989,
+					},
+					["-29228.4"] = {
+						["n_max"] = 185,
+						["count"] = 9,
+						["amount"] = 1514,
+						["targets"] = {
+							["Laughing Skull Enforcer"] = {
+								["amount"] = 493,
+							},
+							["Laughing Skull Rogue"] = {
+								["amount"] = 320,
+							},
+							["Shadowmoon Warlock"] = {
+								["amount"] = 185,
+							},
+							["Shadowmoon Adept"] = {
+								["amount"] = 516,
+							},
+						},
+						["n_min"] = 160,
+						["n_num"] = 9,
+						["n_amt"] = 1514,
+					},
+					["6603.1"] = {
+						["c_amt"] = 1222,
+						["count"] = 1,
+						["amount"] = 1222,
+						["c_max"] = 1222,
+						["c_min"] = 1222,
+						["targets"] = {
+							["Hellfire Imp"] = {
+								["amount"] = 1222,
+							},
+						},
+						["c_num"] = 1,
+					},
+					["26363.8"] = {
+						["n_max"] = 533,
+						["count"] = 2,
+						["amount"] = 1005,
+						["targets"] = {
+							["Shadowmoon Warlock"] = {
+								["amount"] = 533,
+							},
+							["Laughing Skull Rogue"] = {
+								["amount"] = 472,
+							},
+						},
+						["n_min"] = 472,
+						["n_num"] = 2,
+						["n_amt"] = 1005,
+					},
+					["29228.4"] = {
+						["c_amt"] = 5834,
+						["r_amt"] = 318,
+						["c_max"] = 1027,
+						["c_num"] = 6,
+						["n_max"] = 518,
+						["targets"] = {
+							["Hellfire Imp"] = {
+								["amount"] = 922,
+							},
+							["Shadowmoon Adept"] = {
+								["amount"] = 3084,
+							},
+							["Laughing Skull Rogue"] = {
+								["amount"] = 1464,
+							},
+							["Shadowmoon Warlock"] = {
+								["amount"] = 865,
+							},
+							["Laughing Skull Enforcer"] = {
+								["amount"] = 1519,
+							},
+						},
+						["count"] = 10,
+						["amount"] = 7854,
+						["c_min"] = 865,
+						["n_amt"] = 2020,
+						["n_num"] = 4,
+						["n_min"] = 492,
+					},
+					["10605.8"] = {
+						["c_amt"] = 1552,
+						["c_max"] = 1552,
+						["c_num"] = 1,
+						["n_max"] = 1158,
+						["targets"] = {
+							["Shadowmoon Adept"] = {
+								["amount"] = 2508,
+							},
+							["Laughing Skull Rogue"] = {
+								["amount"] = 2208,
+							},
+						},
+						["count"] = 6,
+						["c_min"] = 1552,
+						["amount"] = 4716,
+						["n_min"] = 396,
+						["n_amt"] = 3164,
+						["n_num"] = 4,
+						["mis_n"] = 1,
+					},
+				},
+				["last"] = 119308.152,
+				["id"] = "0xF13001127B00018A",
+				["class"] = "SHAMAN",
+				["damage"] = 29917,
+				["auras"] = {
+					["10432.8"] = {
+						["u"] = 87,
+						["n"] = 1,
+					},
+					["10958.32"] = {
+						["u"] = 87,
+						["n"] = 1,
+					},
+					["-29228.4"] = {
+						["u"] = 427,
+						["t"] = {
+							["Hellfire Imp"] = {
+								["u"] = 1,
+								["n"] = 1,
+							},
+							["Shadowmoon Adept"] = {
+								["u"] = 74,
+								["n"] = 4,
+							},
+							["Laughing Skull Rogue"] = {
+								["u"] = 19,
+								["n"] = 2,
+							},
+							["Shadowmoon Warlock"] = {
+								["u"] = 5,
+								["n"] = 1,
+							},
+							["Laughing Skull Enforcer"] = {
+								["u"] = 20,
+								["n"] = 2,
+							},
+						},
+						["n"] = 10,
+					},
+					["10938.2"] = {
+						["u"] = 87,
+						["n"] = 1,
+					},
+					["10157.64"] = {
+						["u"] = 87,
+						["n"] = 1,
+					},
+					["27841.2"] = {
+						["u"] = 87,
+						["n"] = 1,
+					},
+				},
+				["dispel"] = 4,
+				["role"] = "NONE",
+				["time"] = 72.32999999999998,
+				["interruptspells"] = {
+					["57994.8"] = {
+						["spells"] = {
+							["15242.4"] = 4,
+						},
+						["count"] = 4,
+						["targets"] = {
+							["Hellfire Imp"] = 4,
+						},
+					},
+				},
+				["overkill"] = 631,
+				["interrupt"] = 4,
+				["dispelspells"] = {
+					["51886.8"] = {
+						["spells"] = {
+							["34969.8"] = 4,
+						},
+						["count"] = 4,
+						["targets"] = {
+							["Oakenshield"] = 4,
+						},
+					},
+				},
+				["timespent"] = {
+					["Hellfire Imp"] = 7.41,
+					["Shadowmoon Adept"] = 24.62,
+					["Laughing Skull Rogue"] = 15.62,
+					["Shadowmoon Warlock"] = 7.9,
+					["Laughing Skull Enforcer"] = 16.78,
+				},
+			},
+		},
+		["edamage"] = 16482,
+		["rage"] = 160,
+		["endtime"] = 1681558455,
+	}, -- [1]
+	{
+		["actors"] = {
+			["Bink"] = {
+				["damagespells"] = {
+					["-44457.4"] = {
+						["n_max"] = 208,
+						["count"] = 1,
+						["amount"] = 208,
+						["targets"] = {
+							["Laughing Skull Rogue"] = {
+								["amount"] = 208,
+							},
+						},
+						["n_min"] = 208,
+						["n_num"] = 1,
+						["n_amt"] = 208,
+					},
+					["10199.4"] = {
+						["c_amt"] = 1071,
+						["r_amt"] = 118,
+						["c_max"] = 1071,
+						["c_num"] = 1,
+						["targets"] = {
+							["Laughing Skull Rogue"] = {
+								["o_amt"] = 194,
+								["amount"] = 1071,
+							},
+						},
+						["c_min"] = 1071,
+						["amount"] = 1071,
+						["o_amt"] = 194,
+						["count"] = 1,
+					},
+					["10207.4"] = {
+						["n_max"] = 430,
+						["count"] = 1,
+						["amount"] = 430,
+						["targets"] = {
+							["Laughing Skull Rogue"] = {
+								["amount"] = 430,
+							},
+						},
+						["n_min"] = 430,
+						["n_num"] = 1,
+						["n_amt"] = 430,
+					},
+				},
+				["auras"] = {
+					["10157.64"] = {
+						["u"] = 11,
+						["n"] = 1,
+					},
+					["27841.2"] = {
+						["u"] = 11,
+						["n"] = 1,
+					},
+					["10958.32"] = {
+						["u"] = 11,
+						["n"] = 1,
+					},
+					["-44457.4"] = {
+						["u"] = 5,
+						["t"] = {
+							["Laughing Skull Rogue"] = {
+								["u"] = 5,
+								["n"] = 1,
+							},
+						},
+						["n"] = 1,
+					},
+					["10938.2"] = {
+						["u"] = 11,
+						["n"] = 1,
+					},
+					["10174.64"] = {
+						["u"] = 11,
+						["n"] = 1,
+					},
+					["10220.16"] = {
+						["u"] = 11,
+						["n"] = 1,
+					},
+					["-22959.4"] = {
+						["u"] = 1,
+						["t"] = {
+							["Laughing Skull Rogue"] = {
+								["u"] = 1,
+								["n"] = 1,
+							},
+						},
+						["n"] = 1,
+					},
+				},
+				["manaspells"] = {
+					["29077.64"] = 66,
+				},
+				["class"] = "MAGE",
+				["id"] = "0xF1300112A9000187",
+				["mana"] = 66,
+				["overkill"] = 194,
+				["damage"] = 1709,
+			},
+			["Umbrua"] = {
+				["damagespells"] = {
+					["15208.8"] = {
+						["n_max"] = 1090,
+						["count"] = 1,
+						["amount"] = 1090,
+						["targets"] = {
+							["Laughing Skull Rogue"] = {
+								["amount"] = 1090,
+							},
+						},
+						["n_min"] = 1090,
+						["n_num"] = 1,
+						["n_amt"] = 1090,
+					},
+					["29228.4"] = {
+						["n_max"] = 492,
+						["count"] = 1,
+						["amount"] = 492,
+						["targets"] = {
+							["Laughing Skull Rogue"] = {
+								["amount"] = 492,
+							},
+						},
+						["n_min"] = 492,
+						["n_num"] = 1,
+						["n_amt"] = 492,
+					},
+					["-29228.4"] = {
+						["n_max"] = 144,
+						["r_amt"] = 16,
+						["count"] = 1,
+						["amount"] = 144,
+						["targets"] = {
+							["Laughing Skull Rogue"] = {
+								["amount"] = 144,
+							},
+						},
+						["n_min"] = 144,
+						["n_num"] = 1,
+						["n_amt"] = 144,
+					},
+				},
+				["last"] = 119209.815,
+				["id"] = "0xF13001127B00018A",
+				["class"] = "SHAMAN",
+				["auras"] = {
+					["10432.8"] = {
+						["u"] = 11,
+						["n"] = 1,
+					},
+					["10958.32"] = {
+						["u"] = 11,
+						["n"] = 1,
+					},
+					["-29228.4"] = {
+						["u"] = 5,
+						["t"] = {
+							["Laughing Skull Rogue"] = {
+								["u"] = 5,
+								["n"] = 1,
+							},
+						},
+						["n"] = 1,
+					},
+					["10938.2"] = {
+						["u"] = 11,
+						["n"] = 1,
+					},
+					["10157.64"] = {
+						["u"] = 11,
+						["n"] = 1,
+					},
+					["27841.2"] = {
+						["u"] = 11,
+						["n"] = 1,
+					},
+				},
+				["dispel"] = 1,
+				["role"] = "NONE",
+				["time"] = 8.02,
+				["damage"] = 1726,
+				["dispelspells"] = {
+					["51886.8"] = {
+						["spells"] = {
+							["34969.8"] = 1,
+						},
+						["count"] = 1,
+						["targets"] = {
+							["Oakenshield"] = 1,
+						},
+					},
+				},
+				["timespent"] = {
+					["Laughing Skull Rogue"] = 8.02,
+				},
+			},
+			["Javad"] = {
+				["damagespells"] = {
+					["29228.4"] = {
+						["mis_n"] = 1,
+						["count"] = 1,
+						["targets"] = {
+							["Laughing Skull Rogue"] = {
+								["amount"] = 0,
+							},
+						},
+						["amount"] = 0,
+					},
+					["15208.8"] = {
+						["n_max"] = 981,
+						["count"] = 1,
+						["amount"] = 981,
+						["targets"] = {
+							["Laughing Skull Rogue"] = {
+								["amount"] = 981,
+							},
+						},
+						["n_min"] = 981,
+						["n_num"] = 1,
+						["n_amt"] = 981,
+					},
+				},
+				["last"] = 119209.683,
+				["id"] = "0xF13001127C000189",
+				["class"] = "SHAMAN",
+				["auras"] = {
+					["63283.4"] = {
+						["u"] = 11,
+						["n"] = 1,
+					},
+					["10432.8"] = {
+						["u"] = 11,
+						["n"] = 1,
+					},
+					["27841.2"] = {
+						["u"] = 11,
+						["n"] = 1,
+					},
+					["16246.64"] = {
+						["u"] = 11,
+						["n"] = 1,
+					},
+					["10938.2"] = {
+						["u"] = 11,
+						["n"] = 1,
+					},
+					["10157.64"] = {
+						["u"] = 11,
+						["n"] = 1,
+					},
+					["54646.64"] = {
+						["u"] = 11,
+						["n"] = 1,
+					},
+					["10958.32"] = {
+						["u"] = 11,
+						["n"] = 1,
+					},
+				},
+				["role"] = "NONE",
+				["time"] = 3.5,
+				["timespent"] = {
+					["Laughing Skull Rogue"] = 3.5,
+				},
+				["damage"] = 981,
+			},
+			["Laughing Skull Rogue"] = {
+				["damagespells"] = {
+					["6603.1"] = {
+						["targets"] = {
+							["Spirit Wolf <Oakenshield>"] = {
+								["amount"] = 455,
+							},
+							["Oakenshield"] = {
+								["amount"] = 238,
+							},
+						},
+						["amount"] = 693,
+					},
+				},
+				["enemy"] = true,
+				["id"] = "0xF13000445300000E",
+				["damagedspells"] = {
+					["15208.8"] = {
+						["sources"] = {
+							["Javad"] = {
+								["amount"] = 981,
+							},
+							["Umbrua"] = {
+								["amount"] = 1090,
+							},
+						},
+						["amount"] = 2071,
+					},
+					["11581.1"] = {
+						["sources"] = {
+							["Oakenshield"] = {
+								["amount"] = 446,
+							},
+						},
+						["amount"] = 446,
+					},
+					["10199.4"] = {
+						["o_amt"] = 194,
+						["sources"] = {
+							["Bink"] = {
+								["o_amt"] = 194,
+								["amount"] = 1071,
+							},
+						},
+						["amount"] = 1071,
+					},
+					["30016.1"] = {
+						["sources"] = {
+							["Oakenshield"] = {
+								["amount"] = 548,
+							},
+						},
+						["amount"] = 548,
+					},
+					["10207.4"] = {
+						["sources"] = {
+							["Bink"] = {
+								["amount"] = 430,
+							},
+						},
+						["amount"] = 430,
+					},
+					["-29228.4"] = {
+						["sources"] = {
+							["Umbrua"] = {
+								["amount"] = 144,
+							},
+						},
+						["amount"] = 144,
+					},
+					["-44457.4"] = {
+						["sources"] = {
+							["Bink"] = {
+								["amount"] = 208,
+							},
+						},
+						["amount"] = 208,
+					},
+					["6603.1"] = {
+						["sources"] = {
+							["Oakenshield"] = {
+								["amount"] = 2229,
+							},
+						},
+						["amount"] = 2229,
+					},
+					["29228.4"] = {
+						["sources"] = {
+							["Umbrua"] = {
+								["amount"] = 492,
+							},
+						},
+						["amount"] = 492,
+					},
+					["59653.1"] = {
+						["sources"] = {
+							["Oakenshield"] = {
+								["amount"] = 35,
+							},
+						},
+						["amount"] = 35,
+					},
+				},
+				["class"] = "MONSTER",
+				["damaged"] = 7674,
+				["damage"] = 693,
+			},
+			["Toldren"] = {
+				["last"] = 119197.476,
+				["id"] = "0xF13001124E000188",
+				["class"] = "PRIEST",
+				["role"] = "NONE",
+				["auras"] = {
+					["10952.2"] = {
+						["u"] = 11,
+						["n"] = 1,
+					},
+					["27841.2"] = {
+						["u"] = 11,
+						["n"] = 1,
+					},
+					["28804.2"] = {
+						["u"] = 11,
+						["n"] = 1,
+					},
+					["10938.2"] = {
+						["u"] = 11,
+						["n"] = 1,
+					},
+					["10157.64"] = {
+						["u"] = 11,
+						["n"] = 1,
+					},
+					["10958.32"] = {
+						["u"] = 11,
+						["n"] = 1,
+					},
+				},
+			},
+			["Oakenshield"] = {
+				["last"] = 119210.033,
+				["damagedspells"] = {
+					["6603.1"] = {
+						["sources"] = {
+							["Laughing Skull Rogue"] = {
+								["amount"] = 238,
+							},
+						},
+						["count"] = 1,
+						["amount"] = 238,
+						["n_max"] = 238,
+						["n_min"] = 238,
+						["n_num"] = 1,
+						["n_amt"] = 238,
+					},
+				},
+				["class"] = "WARRIOR",
+				["damaged"] = 238,
+				["auras"] = {
+					["-11581.1"] = {
+						["u"] = 3,
+						["t"] = {
+							["Laughing Skull Rogue"] = {
+								["u"] = 3,
+								["n"] = 1,
+							},
+						},
+						["n"] = 1,
+					},
+					["-58857.1.Spirit Wolf"] = {
+						["u"] = 2,
+						["t"] = {
+							["Laughing Skull Rogue"] = {
+								["u"] = 2,
+								["n"] = 1,
+							},
+						},
+						["n"] = 1,
+					},
+					["-58567.1"] = {
+						["u"] = 2,
+						["t"] = {
+							["Laughing Skull Rogue"] = {
+								["u"] = 2,
+								["n"] = 1,
+							},
+						},
+						["n"] = 1,
+					},
+					["6346.2"] = {
+						["u"] = 11,
+						["n"] = 1,
+					},
+				},
+				["role"] = "TANK",
+				["time"] = 6.609999999999999,
+				["damage"] = 3258,
+				["overheal"] = 4493,
+				["id"] = "0x0000000000000013",
+				["spec"] = 73,
+				["healspells"] = {
+					["58879.32.Spirit Wolf"] = {
+						["n_max"] = 403,
+						["targets"] = {
+							["Umbrua"] = {
+								["o_amt"] = 2448,
+								["amount"] = 0,
+							},
+							["Spirit Wolf <Oakenshield>"] = {
+								["o_amt"] = 2045,
+								["amount"] = 403,
+							},
+						},
+						["count"] = 10,
+						["amount"] = 403,
+						["o_amt"] = 4493,
+						["n_min"] = 0,
+						["n_num"] = 10,
+						["n_amt"] = 403,
+					},
+				},
+				["heal"] = 403,
+				["sundertargets"] = {
+					["Laughing Skull Rogue"] = 1,
+				},
+				["petdamage"] = 1845,
+				["sunder"] = 1,
+				["damagespells"] = {
+					["6603.1.Spirit Wolf"] = {
+						["c_amt"] = 580,
+						["b_amt"] = 30,
+						["c_max"] = 580,
+						["c_num"] = 1,
+						["n_max"] = 288,
+						["targets"] = {
+							["Laughing Skull Rogue"] = {
+								["amount"] = 1845,
+							},
+						},
+						["count"] = 6,
+						["amount"] = 1845,
+						["c_min"] = 580,
+						["n_amt"] = 1265,
+						["n_num"] = 5,
+						["n_min"] = 212,
+					},
+					["11581.1"] = {
+						["c_amt"] = 446,
+						["count"] = 1,
+						["amount"] = 446,
+						["c_max"] = 446,
+						["c_min"] = 446,
+						["targets"] = {
+							["Laughing Skull Rogue"] = {
+								["amount"] = 446,
+							},
+						},
+						["c_num"] = 1,
+					},
+					["30016.1"] = {
+						["c_amt"] = 548,
+						["count"] = 1,
+						["amount"] = 548,
+						["c_max"] = 548,
+						["c_min"] = 548,
+						["targets"] = {
+							["Laughing Skull Rogue"] = {
+								["amount"] = 548,
+							},
+						},
+						["c_num"] = 1,
+					},
+					["6603.1"] = {
+						["c_amt"] = 240,
+						["c_max"] = 240,
+						["c_num"] = 1,
+						["n_max"] = 144,
+						["targets"] = {
+							["Laughing Skull Rogue"] = {
+								["amount"] = 384,
+							},
+						},
+						["count"] = 2,
+						["amount"] = 384,
+						["c_min"] = 240,
+						["n_amt"] = 144,
+						["n_num"] = 1,
+						["n_min"] = 144,
+					},
+					["59653.1"] = {
+						["n_max"] = 35,
+						["count"] = 1,
+						["amount"] = 35,
+						["targets"] = {
+							["Laughing Skull Rogue"] = {
+								["amount"] = 35,
+							},
+						},
+						["n_min"] = 35,
+						["n_num"] = 1,
+						["n_amt"] = 35,
+					},
+				},
+				["timespent"] = {
+					["Laughing Skull Rogue"] = 6.609999999999999,
+				},
+			},
+		},
+		["sunder"] = 1,
+		["damaged"] = 238,
+		["dispel"] = 1,
+		["time"] = 11,
+		["damage"] = 7674,
+		["overheal"] = 4493,
+		["type"] = "party",
+		["overkill"] = 194,
+		["mana"] = 66,
+		["heal"] = 403,
+		["name"] = "Laughing Skull Rogue",
+		["mobname"] = "Laughing Skull Rogue",
+		["starttime"] = 1681558343,
+		["edamage"] = 693,
+		["edamaged"] = 7674,
+		["endtime"] = 1681558354,
+	}, -- [2]
+	{
+		["actors"] = {
+			["Oakenshield"] = {
+				["ccdonespells"] = {
+					["-7922.1"] = {
+						["t"] = {
+							["Laughing Skull Enforcer"] = 1,
+							["Shadowmoon Adept"] = 2,
+						},
+						["n"] = 3,
+					},
+				},
+				["last"] = 119193.465,
+				["damagedspells"] = {
+					["15655.1"] = {
+						["sources"] = {
+							["Laughing Skull Enforcer"] = {
+								["amount"] = 50,
+							},
+						},
+						["count"] = 1,
+						["amount"] = 50,
+						["n_max"] = 50,
+						["n_min"] = 50,
+						["n_num"] = 1,
+						["n_amt"] = 50,
+					},
+					["3391.1.6603"] = {
+						["total"] = 1162,
+						["n_max"] = 306,
+						["sources"] = {
+							["Shadowmoon Adept"] = {
+								["total"] = 1162,
+								["amount"] = 877,
+							},
+						},
+						["count"] = 4,
+						["amount"] = 877,
+						["n_min"] = 275,
+						["abs_n"] = 1,
+						["n_num"] = 3,
+						["n_amt"] = 877,
+					},
+					["11978.1"] = {
+						["dod_n"] = 1,
+						["sources"] = {
+							["Shadowmoon Adept"] = {
+								["amount"] = 60,
+							},
+						},
+						["count"] = 5,
+						["amount"] = 60,
+						["n_min"] = 15,
+						["n_amt"] = 60,
+						["n_num"] = 4,
+						["n_max"] = 15,
+					},
+					["6603.1"] = {
+						["c_amt"] = 1118,
+						["b_amt"] = 1209,
+						["n_max"] = 329,
+						["sources"] = {
+							["Laughing Skull Enforcer"] = {
+								["amount"] = 933,
+							},
+							["Hellfire Imp"] = {
+								["total"] = 1189,
+								["amount"] = 866,
+							},
+							["Shadowmoon Adept"] = {
+								["total"] = 5794,
+								["amount"] = 4675,
+							},
+						},
+						["par_n"] = 2,
+						["amount"] = 6474,
+						["n_min"] = 60,
+						["total"] = 7916,
+						["c_max"] = 616,
+						["c_num"] = 2,
+						["dod_n"] = 4,
+						["abs_n"] = 5,
+						["count"] = 39,
+						["c_min"] = 502,
+						["mis_n"] = 2,
+						["n_amt"] = 5356,
+						["n_num"] = 20,
+						["blo_n"] = 4,
+					},
+					["14516.1"] = {
+						["sources"] = {
+							["Laughing Skull Enforcer"] = {
+								["amount"] = 0,
+							},
+						},
+						["dod_n"] = 1,
+						["count"] = 1,
+						["amount"] = 0,
+					},
+				},
+				["class"] = "WARRIOR",
+				["damaged"] = 7461,
+				["auras"] = {
+					["-11581.1"] = {
+						["u"] = 142,
+						["t"] = {
+							["Laughing Skull Enforcer"] = {
+								["u"] = 88,
+								["r"] = 2,
+								["n"] = 4,
+							},
+							["Hellfire Imp"] = {
+								["u"] = 43,
+								["r"] = 1,
+								["n"] = 2,
+							},
+							["Shadowmoon Adept"] = {
+								["u"] = 35,
+								["r"] = 3,
+								["n"] = 5,
+							},
+						},
+						["r"] = 6,
+						["n"] = 11,
+					},
+					["-58857.1.Spirit Wolf"] = {
+						["u"] = 30,
+						["t"] = {
+							["Laughing Skull Enforcer"] = {
+								["u"] = 16,
+								["n"] = 3,
+							},
+						},
+						["n"] = 4,
+					},
+					["-58567.1"] = {
+						["u"] = 185,
+						["t"] = {
+							["Shadowmoon Adept"] = {
+								["u"] = 64,
+								["r"] = 1,
+								["n"] = 5,
+							},
+							["Laughing Skull Enforcer"] = {
+								["u"] = 87,
+								["r"] = 5,
+								["n"] = 4,
+							},
+						},
+						["r"] = 6,
+						["n"] = 9,
+					},
+					["-58861.1.Spirit Wolf"] = {
+						["u"] = 6,
+						["t"] = {
+							["Laughing Skull Enforcer"] = {
+								["u"] = 6,
+								["n"] = 2,
+							},
+						},
+						["n"] = 2,
+					},
+					["2565.1"] = {
+						["u"] = 10,
+						["n"] = 1,
+					},
+					["-20005.16"] = {
+						["u"] = 67,
+						["t"] = {
+							["Laughing Skull Enforcer"] = {
+								["u"] = 2,
+								["n"] = 1,
+							},
+							["Shadowmoon Adept"] = {
+								["u"] = 20,
+								["r"] = 1,
+								["n"] = 2,
+							},
+						},
+						["r"] = 1,
+						["n"] = 3,
+					},
+					["6346.2"] = {
+						["u"] = 79,
+						["n"] = 1,
+					},
+					["-355.1"] = {
+						["u"] = 3,
+						["t"] = {
+							["Shadowmoon Adept"] = {
+								["u"] = 3,
+								["n"] = 1,
+							},
+						},
+						["n"] = 1,
+					},
+					["-1161.1"] = {
+						["u"] = 6,
+						["t"] = {
+							["Hellfire Imp"] = {
+								["u"] = 4,
+								["n"] = 1,
+							},
+							["Shadowmoon Adept"] = {
+								["u"] = 6,
+								["n"] = 4,
+							},
+						},
+						["n"] = 5,
+					},
+					["10901.2"] = {
+						["u"] = 13,
+						["n"] = 1,
+					},
+					["25315.2"] = {
+						["u"] = 96,
+						["n"] = 3,
+					},
+					["-7922.1"] = {
+						["u"] = 63,
+						["t"] = {
+							["Laughing Skull Enforcer"] = {
+								["u"] = 1,
+								["n"] = 1,
+							},
+							["Shadowmoon Adept"] = {
+								["u"] = 24,
+								["n"] = 2,
+							},
+						},
+						["n"] = 3,
+					},
+					["57516.1"] = {
+						["u"] = 167,
+						["r"] = 10,
+						["n"] = 3,
+					},
+					["50227.1"] = {
+						["u"] = 107,
+						["r"] = 2,
+						["n"] = 4,
+					},
+				},
+				["role"] = "TANK",
+				["time"] = 73.56,
+				["damage"] = 37752,
+				["rage"] = 110,
+				["overheal"] = 11611,
+				["heal"] = 2408,
+				["id"] = "0x0000000000000013",
+				["spec"] = 73,
+				["healspells"] = {
+					["58879.32.Spirit Wolf"] = {
+						["n_max"] = 654,
+						["targets"] = {
+							["Umbrua"] = {
+								["o_amt"] = 6849,
+								["amount"] = 144,
+							},
+							["Spirit Wolf <Oakenshield>"] = {
+								["o_amt"] = 4729,
+								["amount"] = 2264,
+							},
+						},
+						["count"] = 36,
+						["amount"] = 2408,
+						["o_amt"] = 11578,
+						["n_min"] = 0,
+						["n_num"] = 36,
+						["n_amt"] = 2408,
+					},
+					["18817.32"] = {
+						["n_max"] = 0,
+						["targets"] = {
+							["Oakenshield"] = {
+								["o_amt"] = 33,
+								["amount"] = 0,
+							},
+						},
+						["count"] = 1,
+						["amount"] = 0,
+						["o_amt"] = 33,
+						["n_min"] = 0,
+						["n_num"] = 1,
+						["n_amt"] = 0,
+					},
+				},
+				["overkill"] = 640,
+				["petdamage"] = 4664,
+				["ragespells"] = {
+					["34846.1"] = 45,
+					["23602.1"] = 65,
+				},
+				["sundertargets"] = {
+					["Shadowmoon Adept"] = 6,
+					["Laughing Skull Enforcer"] = 9,
+				},
+				["ccdone"] = 3,
+				["totaldamaged"] = 9188,
+				["damagespells"] = {
+					["6603.1.Spirit Wolf"] = {
+						["c_amt"] = 436,
+						["c_max"] = 436,
+						["c_num"] = 1,
+						["n_max"] = 299,
+						["targets"] = {
+							["Laughing Skull Enforcer"] = {
+								["amount"] = 4184,
+							},
+							["Hellfire Imp"] = {
+								["amount"] = 480,
+							},
+						},
+						["dod_n"] = 2,
+						["mis_n"] = 1,
+						["c_min"] = 436,
+						["amount"] = 4664,
+						["n_amt"] = 4228,
+						["n_min"] = 202,
+						["n_num"] = 17,
+						["count"] = 21,
+					},
+					["11581.1"] = {
+						["c_amt"] = 5372,
+						["c_max"] = 508,
+						["c_num"] = 11,
+						["n_max"] = 272,
+						["targets"] = {
+							["Laughing Skull Enforcer"] = {
+								["amount"] = 1946,
+							},
+							["Hellfire Imp"] = {
+								["o_amt"] = 182,
+								["amount"] = 1470,
+							},
+							["Shadowmoon Adept"] = {
+								["o_amt"] = 458,
+								["amount"] = 3946,
+							},
+						},
+						["c_min"] = 446,
+						["count"] = 19,
+						["amount"] = 7362,
+						["o_amt"] = 640,
+						["n_amt"] = 1990,
+						["n_num"] = 8,
+						["n_min"] = 226,
+					},
+					["25288.1"] = {
+						["n_max"] = 1249,
+						["b_amt"] = 30,
+						["count"] = 6,
+						["amount"] = 7298,
+						["targets"] = {
+							["Shadowmoon Adept"] = {
+								["amount"] = 4811,
+							},
+							["Laughing Skull Enforcer"] = {
+								["amount"] = 2487,
+							},
+						},
+						["n_min"] = 1169,
+						["n_num"] = 6,
+						["n_amt"] = 7298,
+					},
+					["30016.1"] = {
+						["c_amt"] = 3112,
+						["c_max"] = 836,
+						["c_num"] = 5,
+						["n_max"] = 465,
+						["targets"] = {
+							["Shadowmoon Adept"] = {
+								["amount"] = 2416,
+							},
+							["Laughing Skull Enforcer"] = {
+								["amount"] = 4207,
+							},
+						},
+						["count"] = 15,
+						["amount"] = 6623,
+						["c_min"] = 526,
+						["n_amt"] = 3511,
+						["n_num"] = 10,
+						["n_min"] = 282,
+					},
+					["6603.1"] = {
+						["c_amt"] = 3962,
+						["b_amt"] = 120,
+						["c_max"] = 360,
+						["c_num"] = 12,
+						["g_amt"] = 730,
+						["n_max"] = 184,
+						["targets"] = {
+							["Laughing Skull Enforcer"] = {
+								["amount"] = 4069,
+							},
+							["Hellfire Imp"] = {
+								["amount"] = 132,
+							},
+							["Shadowmoon Adept"] = {
+								["amount"] = 3751,
+							},
+						},
+						["g_num"] = 5,
+						["g_min"] = 116,
+						["g_max"] = 163,
+						["c_min"] = 274,
+						["amount"] = 7952,
+						["n_amt"] = 3260,
+						["n_min"] = 103,
+						["n_num"] = 22,
+						["count"] = 39,
+					},
+					["18817.32"] = {
+						["n_max"] = 33,
+						["count"] = 1,
+						["amount"] = 33,
+						["targets"] = {
+							["Shadowmoon Adept"] = {
+								["amount"] = 33,
+							},
+						},
+						["n_min"] = 33,
+						["n_num"] = 1,
+						["n_amt"] = 33,
+					},
+					["23925.1"] = {
+						["n_min"] = 547,
+						["targets"] = {
+							["Hellfire Imp"] = {
+								["amount"] = 547,
+							},
+							["Laughing Skull Enforcer"] = {
+								["amount"] = 601,
+							},
+							["Shadowmoon Adept"] = {
+								["amount"] = 1111,
+							},
+						},
+						["count"] = 5,
+						["amount"] = 2259,
+						["n_max"] = 601,
+						["dod_n"] = 1,
+						["n_num"] = 4,
+						["n_amt"] = 2259,
+					},
+					["59653.1"] = {
+						["c_amt"] = 58,
+						["c_max"] = 58,
+						["c_num"] = 1,
+						["n_max"] = 93,
+						["targets"] = {
+							["Laughing Skull Enforcer"] = {
+								["amount"] = 396,
+							},
+							["Hellfire Imp"] = {
+								["amount"] = 117,
+							},
+							["Shadowmoon Adept"] = {
+								["amount"] = 1048,
+							},
+						},
+						["count"] = 35,
+						["amount"] = 1561,
+						["c_min"] = 58,
+						["n_amt"] = 1503,
+						["n_num"] = 34,
+						["n_min"] = 35,
+					},
+				},
+				["sunder"] = 15,
+				["timespent"] = {
+					["Laughing Skull Enforcer"] = 35.54000000000001,
+					["Hellfire Imp"] = 3.43,
+					["Shadowmoon Adept"] = 34.59,
+				},
+			},
+			["Hellfire Imp"] = {
+				["damagespells"] = {
+					["6603.1"] = {
+						["total"] = 5475,
+						["targets"] = {
+							["Umbrua"] = {
+								["amount"] = 2274,
+							},
+							["Toldren"] = {
+								["amount"] = 2012,
+							},
+							["Oakenshield"] = {
+								["total"] = 1189,
+								["amount"] = 866,
+							},
+						},
+						["amount"] = 5152,
+					},
+				},
+				["totaldamage"] = 5475,
+				["enemy"] = true,
+				["id"] = "0xF130004445000003",
+				["damagedspells"] = {
+					["15208.8"] = {
+						["o_amt"] = 1900,
+						["sources"] = {
+							["Javad"] = {
+								["o_amt"] = 1900,
+								["amount"] = 3311,
+							},
+							["Umbrua"] = {
+								["amount"] = 2343,
+							},
+						},
+						["amount"] = 5654,
+					},
+					["11581.1"] = {
+						["o_amt"] = 182,
+						["sources"] = {
+							["Oakenshield"] = {
+								["o_amt"] = 182,
+								["amount"] = 1470,
+							},
+						},
+						["amount"] = 1470,
+					},
+					["10605.8"] = {
+						["sources"] = {
+							["Javad"] = {
+								["amount"] = 1597,
+							},
+							["Umbrua"] = {
+								["amount"] = 2439,
+							},
+						},
+						["amount"] = 4036,
+					},
+					["44461.4"] = {
+						["sources"] = {
+							["Bink"] = {
+								["amount"] = 471,
+							},
+						},
+						["amount"] = 471,
+					},
+					["42213.16"] = {
+						["o_amt"] = 71,
+						["sources"] = {
+							["Bink"] = {
+								["o_amt"] = 71,
+								["amount"] = 606,
+							},
+						},
+						["amount"] = 606,
+					},
+					["6603.1"] = {
+						["sources"] = {
+							["Oakenshield"] = {
+								["amount"] = 612,
+							},
+						},
+						["amount"] = 612,
+					},
+					["26363.8"] = {
+						["sources"] = {
+							["Umbrua"] = {
+								["amount"] = 1018,
+							},
+						},
+						["amount"] = 1018,
+					},
+					["23925.1"] = {
+						["sources"] = {
+							["Oakenshield"] = {
+								["amount"] = 547,
+							},
+						},
+						["amount"] = 547,
+					},
+					["59653.1"] = {
+						["sources"] = {
+							["Oakenshield"] = {
+								["amount"] = 117,
+							},
+						},
+						["amount"] = 117,
+					},
+				},
+				["class"] = "MONSTER",
+				["damaged"] = 14531,
+				["damage"] = 5152,
+			},
+			["Bink"] = {
+				["damagespells"] = {
+					["25306.4"] = {
+						["c_amt"] = 6569,
+						["c_max"] = 4303,
+						["count"] = 2,
+						["amount"] = 6569,
+						["o_amt"] = 1630,
+						["c_min"] = 2266,
+						["targets"] = {
+							["Laughing Skull Enforcer"] = {
+								["o_amt"] = 1630,
+								["amount"] = 6569,
+							},
+						},
+						["c_num"] = 2,
+					},
+					["10199.4"] = {
+						["c_amt"] = 1774,
+						["r_amt"] = 79,
+						["c_max"] = 1774,
+						["c_num"] = 1,
+						["n_max"] = 718,
+						["targets"] = {
+							["Shadowmoon Adept"] = {
+								["amount"] = 718,
+							},
+							["Laughing Skull Enforcer"] = {
+								["amount"] = 1774,
+							},
+						},
+						["c_min"] = 1774,
+						["amount"] = 2492,
+						["n_min"] = 718,
+						["n_amt"] = 718,
+						["n_num"] = 1,
+						["count"] = 2,
+					},
+					["42213.16"] = {
+						["n_max"] = 303,
+						["targets"] = {
+							["Shadowmoon Adept"] = {
+								["o_amt"] = 6,
+								["amount"] = 303,
+							},
+							["Hellfire Imp"] = {
+								["o_amt"] = 71,
+								["amount"] = 606,
+							},
+						},
+						["count"] = 3,
+						["amount"] = 909,
+						["o_amt"] = 77,
+						["n_min"] = 303,
+						["n_num"] = 3,
+						["n_amt"] = 909,
+					},
+					["18809.4"] = {
+						["c_amt"] = 7858,
+						["c_max"] = 3307,
+						["c_num"] = 3,
+						["n_max"] = 1471,
+						["targets"] = {
+							["Laughing Skull Enforcer"] = {
+								["amount"] = 1471,
+							},
+							["Shadowmoon Adept"] = {
+								["amount"] = 7858,
+							},
+						},
+						["c_min"] = 2241,
+						["amount"] = 9329,
+						["n_min"] = 1471,
+						["n_amt"] = 1471,
+						["n_num"] = 1,
+						["count"] = 4,
+					},
+					["10230.16"] = {
+						["n_max"] = 97,
+						["count"] = 1,
+						["amount"] = 97,
+						["targets"] = {
+							["Shadowmoon Adept"] = {
+								["amount"] = 97,
+							},
+						},
+						["n_min"] = 97,
+						["n_num"] = 1,
+						["n_amt"] = 97,
+					},
+					["44461.4"] = {
+						["n_max"] = 525,
+						["targets"] = {
+							["Hellfire Imp"] = {
+								["amount"] = 471,
+							},
+							["Shadowmoon Adept"] = {
+								["o_amt"] = 394,
+								["amount"] = 2042,
+							},
+						},
+						["count"] = 5,
+						["amount"] = 2513,
+						["o_amt"] = 394,
+						["n_min"] = 471,
+						["n_num"] = 5,
+						["n_amt"] = 2513,
+					},
+					["10161.16"] = {
+						["c_amt"] = 954,
+						["count"] = 1,
+						["amount"] = 954,
+						["c_max"] = 954,
+						["c_min"] = 954,
+						["targets"] = {
+							["Shadowmoon Adept"] = {
+								["amount"] = 954,
+							},
+						},
+						["c_num"] = 1,
+					},
+					["-44457.4"] = {
+						["n_max"] = 258,
+						["r_amt"] = 25,
+						["count"] = 8,
+						["amount"] = 1935,
+						["targets"] = {
+							["Shadowmoon Adept"] = {
+								["amount"] = 1935,
+							},
+						},
+						["n_min"] = 232,
+						["n_num"] = 8,
+						["n_amt"] = 1935,
+					},
+					["-18809.4"] = {
+						["n_max"] = 96,
+						["count"] = 5,
+						["amount"] = 473,
+						["targets"] = {
+							["Shadowmoon Adept"] = {
+								["amount"] = 473,
+							},
+						},
+						["n_min"] = 89,
+						["n_num"] = 5,
+						["n_amt"] = 473,
+					},
+					["10207.4"] = {
+						["c_amt"] = 2952,
+						["r_amt"] = 216,
+						["c_max"] = 811,
+						["c_num"] = 4,
+						["n_max"] = 743,
+						["targets"] = {
+							["Shadowmoon Adept"] = {
+								["o_amt"] = 303,
+								["amount"] = 3708,
+							},
+							["Laughing Skull Enforcer"] = {
+								["amount"] = 2616,
+							},
+						},
+						["c_min"] = 663,
+						["count"] = 10,
+						["amount"] = 6324,
+						["o_amt"] = 303,
+						["n_amt"] = 3372,
+						["n_num"] = 6,
+						["n_min"] = 388,
+					},
+					["-12654.4"] = {
+						["n_max"] = 661,
+						["targets"] = {
+							["Shadowmoon Adept"] = {
+								["o_amt"] = 111,
+								["amount"] = 2868,
+							},
+							["Laughing Skull Enforcer"] = {
+								["o_amt"] = 270,
+								["amount"] = 972,
+							},
+						},
+						["count"] = 12,
+						["amount"] = 3840,
+						["o_amt"] = 381,
+						["n_min"] = 132,
+						["n_num"] = 12,
+						["n_amt"] = 3840,
+					},
+				},
+				["interrupt"] = 2,
+				["class"] = "MAGE",
+				["auras"] = {
+					["-22959.4"] = {
+						["u"] = 248,
+						["t"] = {
+							["Shadowmoon Adept"] = {
+								["u"] = 38,
+								["n"] = 5,
+							},
+							["Laughing Skull Enforcer"] = {
+								["u"] = 147,
+								["n"] = 4,
+							},
+						},
+						["n"] = 9,
+					},
+					["10958.32"] = {
+						["u"] = 79,
+						["n"] = 1,
+					},
+					["-7321.16"] = {
+						["u"] = 7,
+						["t"] = {
+							["Shadowmoon Adept"] = {
+								["u"] = 7,
+								["n"] = 1,
+							},
+						},
+						["n"] = 1,
+					},
+					["-10187.16"] = {
+						["u"] = 3,
+						["t"] = {
+							["Shadowmoon Adept"] = {
+								["u"] = 2,
+								["n"] = 1,
+							},
+							["Hellfire Imp"] = {
+								["u"] = 3,
 								["n"] = 1,
 							},
 						},
 						["n"] = 2,
 					},
-					["-694.1"] = {
-						["u"] = 6,
-						["t"] = {
-							["Anastasia"] = {
-								["u"] = 6,
-								["n"] = 1,
-							},
-						},
-						["n"] = 1,
-					},
-					["-20511.1"] = {
+					["-12494.16"] = {
 						["u"] = 1,
 						["t"] = {
-							["Rupert"] = {
+							["Shadowmoon Adept"] = {
 								["u"] = 1,
 								["n"] = 1,
 							},
 						},
 						["n"] = 1,
 					},
-				},
-				["dispel"] = 2,
-				["role"] = "NONE",
-				["damagespells"] = {
-					["12809.1"] = {
-						["c_amt"] = 378,
-						["count"] = 1,
-						["amount"] = 378,
-						["c_max"] = 378,
-						["c_min"] = 378,
-						["targets"] = {
-							["Treant"] = {
-								["amount"] = 378,
-							},
-						},
-						["c_num"] = 1,
+					["10938.2"] = {
+						["u"] = 79,
+						["n"] = 1,
 					},
-					["11581.1"] = {
-						["c_amt"] = 702,
-						["c_max"] = 702,
-						["c_num"] = 1,
-						["n_max"] = 313,
-						["targets"] = {
-							["Rupert"] = {
-								["amount"] = 702,
-							},
-							["Anastasia"] = {
-								["amount"] = 313,
-							},
-						},
-						["count"] = 2,
-						["amount"] = 1015,
-						["c_min"] = 702,
-						["n_amt"] = 313,
-						["n_num"] = 1,
-						["n_min"] = 313,
+					["10174.64"] = {
+						["u"] = 79,
+						["n"] = 1,
 					},
-					["34428.1"] = {
-						["c_amt"] = 448,
-						["c_max"] = 448,
-						["count"] = 1,
-						["amount"] = 448,
-						["o_amt"] = 110,
-						["c_min"] = 448,
-						["targets"] = {
-							["Treant"] = {
-								["o_amt"] = 110,
-								["amount"] = 448,
+					["-12654.4"] = {
+						["u"] = 142,
+						["t"] = {
+							["Shadowmoon Adept"] = {
+								["u"] = 51,
+								["n"] = 5,
+							},
+							["Laughing Skull Enforcer"] = {
+								["u"] = 58,
+								["n"] = 2,
 							},
 						},
-						["c_num"] = 1,
+						["n"] = 7,
 					},
-					["20569.1"] = {
-						["c_amt"] = 846,
-						["c_max"] = 846,
-						["c_num"] = 1,
-						["n_max"] = 415,
-						["targets"] = {
-							["Rupert"] = {
-								["amount"] = 382,
-							},
-							["Kym"] = {
-								["amount"] = 846,
-							},
-							["Anastasia"] = {
-								["amount"] = 415,
+					["-12826.64"] = {
+						["u"] = 26,
+						["t"] = {
+							["Laughing Skull Enforcer"] = {
+								["u"] = 7,
+								["n"] = 1,
 							},
 						},
-						["count"] = 3,
-						["amount"] = 1643,
-						["c_min"] = 846,
-						["n_amt"] = 797,
-						["n_num"] = 2,
-						["n_min"] = 382,
+						["n"] = 2,
 					},
-					["5246.1"] = {
-						["targets"] = {
-							["Anastasia"] = {
-								["amount"] = 0,
-							},
-						},
-						["mis_n"] = 1,
-						["count"] = 1,
-						["amount"] = 0,
+					["10157.64"] = {
+						["u"] = 79,
+						["n"] = 1,
 					},
-					["46968.1"] = {
-						["c_amt"] = 3264,
-						["c_max"] = 1654,
-						["count"] = 2,
-						["amount"] = 3264,
-						["o_amt"] = 1439,
-						["c_min"] = 1610,
-						["targets"] = {
-							["Rupert"] = {
-								["amount"] = 1654,
-							},
-							["Anastasia"] = {
-								["o_amt"] = 1439,
-								["amount"] = 1610,
-							},
-						},
-						["c_num"] = 2,
+					["10220.16"] = {
+						["u"] = 79,
+						["n"] = 1,
 					},
-					["20253.1"] = {
-						["c_amt"] = 344,
-						["c_max"] = 172,
-						["c_num"] = 2,
-						["n_max"] = 132,
-						["targets"] = {
-							["Rupert"] = {
-								["amount"] = 132,
-							},
-							["Anastasia"] = {
-								["amount"] = 344,
+					["-44457.4"] = {
+						["u"] = 46,
+						["t"] = {
+							["Shadowmoon Adept"] = {
+								["u"] = 46,
+								["n"] = 2,
 							},
 						},
-						["c_min"] = 172,
-						["amount"] = 476,
-						["n_min"] = 132,
-						["n_amt"] = 132,
-						["n_num"] = 1,
-						["count"] = 3,
+						["n"] = 2,
 					},
-					["694.1"] = {
-						["c_amt"] = 810,
-						["count"] = 1,
-						["amount"] = 810,
-						["c_max"] = 810,
-						["c_min"] = 810,
-						["targets"] = {
-							["Anastasia"] = {
-								["amount"] = 810,
+					["-18809.4"] = {
+						["u"] = 88,
+						["t"] = {
+							["Laughing Skull Enforcer"] = {
+								["u"] = 3,
+								["n"] = 1,
+							},
+							["Shadowmoon Adept"] = {
+								["u"] = 38,
+								["n"] = 3,
 							},
 						},
-						["c_num"] = 1,
+						["n"] = 4,
 					},
-					["6603.1"] = {
-						["c_amt"] = 1992,
-						["c_max"] = 702,
-						["c_num"] = 4,
-						["n_max"] = 364,
-						["targets"] = {
-							["Treant"] = {
-								["amount"] = 1109,
-							},
-							["Rupert"] = {
-								["amount"] = 984,
-							},
-							["Anastasia"] = {
-								["amount"] = 1414,
+					["-10161.16"] = {
+						["u"] = 8,
+						["t"] = {
+							["Shadowmoon Adept"] = {
+								["u"] = 8,
+								["n"] = 1,
 							},
 						},
-						["c_min"] = 310,
-						["amount"] = 3507,
-						["n_min"] = 134,
-						["n_amt"] = 1515,
-						["n_num"] = 6,
-						["count"] = 10,
+						["n"] = 1,
 					},
-					["30016.1"] = {
-						["c_amt"] = 1840,
-						["c_max"] = 1220,
-						["c_num"] = 2,
-						["dod_n"] = 1,
-						["targets"] = {
-							["Treant"] = {
-								["amount"] = 867,
-							},
-							["Rupert"] = {
-								["amount"] = 1220,
-							},
-							["Anastasia"] = {
-								["amount"] = 0,
-							},
-						},
-						["n_min"] = 247,
-						["count"] = 4,
-						["amount"] = 2087,
-						["n_max"] = 247,
-						["n_amt"] = 247,
-						["n_num"] = 1,
-						["c_min"] = 620,
-					},
-					["23925.1"] = {
-						["c_amt"] = 2686,
-						["c_max"] = 1472,
-						["c_num"] = 3,
-						["n_max"] = 611,
-						["targets"] = {
-							["Treant"] = {
-								["amount"] = 1586,
-							},
-							["Rupert"] = {
-								["amount"] = 1472,
-							},
-							["Anastasia"] = {
-								["amount"] = 611,
-							},
-						},
-						["count"] = 5,
-						["amount"] = 3669,
-						["c_min"] = 568,
-						["n_amt"] = 983,
-						["n_num"] = 2,
-						["n_min"] = 372,
-					},
-					["59653.1"] = {
-						["c_amt"] = 63,
-						["c_max"] = 63,
-						["c_num"] = 1,
-						["n_max"] = 68,
-						["targets"] = {
-							["Treant"] = {
-								["amount"] = 166,
-							},
-							["Kym"] = {
-								["amount"] = 63,
-							},
-							["Anastasia"] = {
-								["amount"] = 68,
-							},
-						},
-						["count"] = 9,
-						["amount"] = 297,
-						["c_min"] = 63,
-						["n_amt"] = 234,
-						["n_num"] = 8,
-						["n_min"] = 16,
+					["27841.2"] = {
+						["u"] = 79,
+						["n"] = 1,
 					},
 				},
-				["overkill"] = 1549,
-				["ragespells"] = {
-					["2687.1"] = 60,
-					["34846.1"] = 25,
-					["23602.1"] = 25,
-					["-29131.1"] = 13,
-				},
-				["sundertargets"] = {
-					["Treant"] = 2,
-					["Rupert"] = 1,
+				["id"] = "0xF1300112A9000187",
+				["overkill"] = 2785,
+				["manaspells"] = {
+					["29077.64"] = 599,
 				},
 				["ccdone"] = 3,
-				["cctakenspells"] = {
-					["-27088.16"] = {
-						["sources"] = {
-							["Anastasia"] = 1,
+				["mana"] = 599,
+				["ccdonespells"] = {
+					["-12826.64"] = {
+						["t"] = {
+							["Shadowmoon Adept"] = 1,
+							["Laughing Skull Enforcer"] = 1,
+						},
+						["n"] = 2,
+					},
+					["-10230.16"] = {
+						["t"] = {
+							["Shadowmoon Adept"] = 1,
 						},
 						["n"] = 1,
 					},
-					["-27223.32"] = {
-						["sources"] = {
-							["Rupert"] = 1,
+				},
+				["interruptspells"] = {
+					["2139.64"] = {
+						["spells"] = {
+							["15242.4"] = 2,
 						},
+						["count"] = 2,
+						["targets"] = {
+							["Hellfire Imp"] = 2,
+						},
+					},
+				},
+				["damage"] = 35435,
+			},
+			["Shadowmoon Adept"] = {
+				["damagespells"] = {
+					["6603.1"] = {
+						["total"] = 6485,
+						["targets"] = {
+							["Bink"] = {
+								["amount"] = 691,
+							},
+							["Oakenshield"] = {
+								["total"] = 5794,
+								["amount"] = 4675,
+							},
+						},
+						["amount"] = 5366,
+					},
+					["3391.1.6603"] = {
+						["total"] = 1162,
+						["targets"] = {
+							["Oakenshield"] = {
+								["total"] = 1162,
+								["amount"] = 877,
+							},
+						},
+						["amount"] = 877,
+					},
+					["11978.1"] = {
+						["targets"] = {
+							["Oakenshield"] = {
+								["amount"] = 60,
+							},
+						},
+						["amount"] = 60,
+					},
+				},
+				["totaldamage"] = 7707,
+				["enemy"] = true,
+				["id"] = "0xF1300043F5000001",
+				["damagedspells"] = {
+					["45294.8"] = {
+						["sources"] = {
+							["Javad"] = {
+								["amount"] = 504,
+							},
+						},
+						["amount"] = 504,
+					},
+					["11581.1"] = {
+						["o_amt"] = 458,
+						["sources"] = {
+							["Oakenshield"] = {
+								["o_amt"] = 458,
+								["amount"] = 3946,
+							},
+						},
+						["amount"] = 3946,
+					},
+					["10199.4"] = {
+						["sources"] = {
+							["Bink"] = {
+								["amount"] = 718,
+							},
+						},
+						["amount"] = 718,
+					},
+					["18817.32"] = {
+						["sources"] = {
+							["Oakenshield"] = {
+								["amount"] = 33,
+							},
+						},
+						["amount"] = 33,
+					},
+					["-12654.4"] = {
+						["o_amt"] = 111,
+						["sources"] = {
+							["Bink"] = {
+								["o_amt"] = 111,
+								["amount"] = 2868,
+							},
+						},
+						["amount"] = 2868,
+					},
+					["10161.16"] = {
+						["sources"] = {
+							["Bink"] = {
+								["amount"] = 954,
+							},
+						},
+						["amount"] = 954,
+					},
+					["-44457.4"] = {
+						["sources"] = {
+							["Bink"] = {
+								["amount"] = 1935,
+							},
+						},
+						["amount"] = 1935,
+					},
+					["-18809.4"] = {
+						["sources"] = {
+							["Bink"] = {
+								["amount"] = 473,
+							},
+						},
+						["amount"] = 473,
+					},
+					["23925.1"] = {
+						["sources"] = {
+							["Oakenshield"] = {
+								["amount"] = 1111,
+							},
+						},
+						["amount"] = 1111,
+					},
+					["59653.1"] = {
+						["sources"] = {
+							["Oakenshield"] = {
+								["amount"] = 1048,
+							},
+						},
+						["amount"] = 1048,
+					},
+					["15208.8"] = {
+						["sources"] = {
+							["Javad"] = {
+								["amount"] = 7745,
+							},
+							["Umbrua"] = {
+								["amount"] = 6925,
+							},
+						},
+						["amount"] = 14670,
+					},
+					["42213.16"] = {
+						["o_amt"] = 6,
+						["sources"] = {
+							["Bink"] = {
+								["o_amt"] = 6,
+								["amount"] = 303,
+							},
+						},
+						["amount"] = 303,
+					},
+					["10207.4"] = {
+						["o_amt"] = 303,
+						["sources"] = {
+							["Bink"] = {
+								["o_amt"] = 303,
+								["amount"] = 3708,
+							},
+						},
+						["amount"] = 3708,
+					},
+					["-29228.4"] = {
+						["sources"] = {
+							["Javad"] = {
+								["amount"] = 459,
+							},
+							["Umbrua"] = {
+								["amount"] = 1170,
+							},
+						},
+						["amount"] = 1629,
+					},
+					["44461.4"] = {
+						["o_amt"] = 394,
+						["sources"] = {
+							["Bink"] = {
+								["o_amt"] = 394,
+								["amount"] = 2042,
+							},
+						},
+						["amount"] = 2042,
+					},
+					["18809.4"] = {
+						["sources"] = {
+							["Bink"] = {
+								["amount"] = 7858,
+							},
+						},
+						["amount"] = 7858,
+					},
+					["30016.1"] = {
+						["sources"] = {
+							["Oakenshield"] = {
+								["amount"] = 2416,
+							},
+						},
+						["amount"] = 2416,
+					},
+					["25288.1"] = {
+						["sources"] = {
+							["Oakenshield"] = {
+								["amount"] = 4811,
+							},
+						},
+						["amount"] = 4811,
+					},
+					["10605.8"] = {
+						["o_amt"] = 279,
+						["sources"] = {
+							["Javad"] = {
+								["amount"] = 4950,
+							},
+							["Umbrua"] = {
+								["o_amt"] = 279,
+								["amount"] = 6597,
+							},
+						},
+						["amount"] = 11547,
+					},
+					["10230.16"] = {
+						["sources"] = {
+							["Bink"] = {
+								["amount"] = 97,
+							},
+						},
+						["amount"] = 97,
+					},
+					["26363.8"] = {
+						["sources"] = {
+							["Umbrua"] = {
+								["amount"] = 444,
+							},
+						},
+						["amount"] = 444,
+					},
+					["29228.4"] = {
+						["sources"] = {
+							["Javad"] = {
+								["amount"] = 4409,
+							},
+							["Umbrua"] = {
+								["amount"] = 2072,
+							},
+						},
+						["amount"] = 6481,
+					},
+					["6603.1"] = {
+						["sources"] = {
+							["Oakenshield"] = {
+								["amount"] = 3751,
+							},
+						},
+						["amount"] = 3751,
+					},
+				},
+				["class"] = "MONSTER",
+				["damaged"] = 73347,
+				["damage"] = 6303,
+			},
+			["Javad"] = {
+				["damagespells"] = {
+					["15208.8"] = {
+						["c_amt"] = 10863,
+						["c_max"] = 2401,
+						["c_num"] = 5,
+						["n_max"] = 1220,
+						["targets"] = {
+							["Laughing Skull Enforcer"] = {
+								["amount"] = 7373,
+							},
+							["Hellfire Imp"] = {
+								["o_amt"] = 1900,
+								["amount"] = 3311,
+							},
+							["Shadowmoon Adept"] = {
+								["amount"] = 7745,
+							},
+						},
+						["c_min"] = 1992,
+						["count"] = 12,
+						["amount"] = 18429,
+						["o_amt"] = 1900,
+						["n_amt"] = 7566,
+						["n_num"] = 7,
+						["n_min"] = 980,
+					},
+					["-29228.4"] = {
+						["n_max"] = 166,
+						["count"] = 8,
+						["amount"] = 1229,
+						["targets"] = {
+							["Shadowmoon Adept"] = {
+								["amount"] = 459,
+							},
+							["Laughing Skull Enforcer"] = {
+								["amount"] = 770,
+							},
+						},
+						["n_min"] = 141,
+						["n_num"] = 8,
+						["n_amt"] = 1229,
+					},
+					["10605.8"] = {
+						["c_amt"] = 8957,
+						["c_max"] = 2298,
+						["c_num"] = 5,
+						["n_max"] = 1186,
+						["targets"] = {
+							["Laughing Skull Enforcer"] = {
+								["amount"] = 7032,
+							},
+							["Hellfire Imp"] = {
+								["amount"] = 1597,
+							},
+							["Shadowmoon Adept"] = {
+								["amount"] = 4950,
+							},
+						},
+						["c_min"] = 1267,
+						["amount"] = 13579,
+						["n_min"] = 485,
+						["n_amt"] = 4622,
+						["n_num"] = 5,
+						["count"] = 10,
+					},
+					["29228.4"] = {
+						["c_amt"] = 4391,
+						["r_amt"] = 231,
+						["c_max"] = 1575,
+						["c_num"] = 3,
+						["n_max"] = 852,
+						["targets"] = {
+							["Shadowmoon Adept"] = {
+								["amount"] = 4409,
+							},
+							["Laughing Skull Enforcer"] = {
+								["amount"] = 4054,
+							},
+						},
+						["count"] = 8,
+						["amount"] = 8463,
+						["c_min"] = 1334,
+						["n_amt"] = 4072,
+						["n_num"] = 5,
+						["n_min"] = 755,
+					},
+					["45294.8"] = {
+						["n_max"] = 535,
+						["count"] = 3,
+						["amount"] = 1480,
+						["targets"] = {
+							["Shadowmoon Adept"] = {
+								["amount"] = 504,
+							},
+							["Laughing Skull Enforcer"] = {
+								["amount"] = 976,
+							},
+						},
+						["n_min"] = 441,
+						["n_num"] = 3,
+						["n_amt"] = 1480,
+					},
+				},
+				["last"] = 119194.362,
+				["id"] = "0xF13001127C000189",
+				["class"] = "SHAMAN",
+				["auras"] = {
+					["10432.8"] = {
+						["u"] = 79,
 						["n"] = 1,
+					},
+					["27841.2"] = {
+						["u"] = 79,
+						["n"] = 1,
+					},
+					["-29228.4"] = {
+						["u"] = 229,
+						["t"] = {
+							["Shadowmoon Adept"] = {
+								["u"] = 65,
+								["n"] = 4,
+							},
+							["Laughing Skull Enforcer"] = {
+								["u"] = 84,
+								["n"] = 4,
+							},
+						},
+						["n"] = 8,
+					},
+					["10938.2"] = {
+						["u"] = 79,
+						["n"] = 1,
+					},
+					["10157.64"] = {
+						["u"] = 79,
+						["n"] = 1,
+					},
+					["54646.64"] = {
+						["u"] = 79,
+						["n"] = 1,
+					},
+					["10958.32"] = {
+						["u"] = 79,
+						["n"] = 1,
+					},
+				},
+				["role"] = "NONE",
+				["time"] = 64.94999999999999,
+				["damage"] = 43180,
+				["overkill"] = 1900,
+				["interrupt"] = 3,
+				["interruptspells"] = {
+					["57994.8"] = {
+						["spells"] = {
+							["15242.4"] = 3,
+						},
+						["count"] = 3,
+						["targets"] = {
+							["Hellfire Imp"] = 3,
+						},
 					},
 				},
 				["timespent"] = {
-					["Rupert"] = 9.200000000000001,
-					["Kym"] = 3.5,
-					["Treant"] = 13.84,
-					["Anastasia"] = 14.6,
+					["Laughing Skull Enforcer"] = 30.90000000000001,
+					["Hellfire Imp"] = 7,
+					["Shadowmoon Adept"] = 27.05,
 				},
-				["ccdonespells"] = {
-					["-12809.1"] = {
-						["t"] = {
-							["Treant"] = 1,
+			},
+			["Laughing Skull Enforcer"] = {
+				["damagespells"] = {
+					["6603.1"] = {
+						["targets"] = {
+							["Spirit Wolf <Oakenshield>"] = {
+								["amount"] = 1875,
+							},
+							["Oakenshield"] = {
+								["amount"] = 933,
+							},
 						},
-						["n"] = 1,
+						["amount"] = 2808,
 					},
-					["-46968.1"] = {
-						["t"] = {
-							["Rupert"] = 1,
+					["15655.1"] = {
+						["targets"] = {
+							["Oakenshield"] = {
+								["amount"] = 50,
+							},
 						},
-						["n"] = 1,
+						["amount"] = 50,
 					},
-					["-7922.1"] = {
-						["t"] = {
-							["Anastasia"] = 1,
+					["14516.1"] = {
+						["targets"] = {
+							["Spirit Wolf <Oakenshield>"] = {
+								["amount"] = 614,
+							},
 						},
-						["n"] = 1,
+						["amount"] = 614,
 					},
 				},
+				["enemy"] = true,
+				["id"] = "0xF1300043DA00000D",
 				["damagedspells"] = {
-					["25307.32"] = {
-						["c_amt"] = 2127,
-						["c_max"] = 1065,
-						["c_num"] = 2,
-						["n_max"] = 1412,
+					["45294.8"] = {
 						["sources"] = {
-							["Rupert"] = {
-								["amount"] = 4179,
+							["Javad"] = {
+								["amount"] = 976,
 							},
 						},
-						["count"] = 4,
-						["amount"] = 4179,
-						["c_min"] = 1062,
-						["n_amt"] = 2052,
-						["n_num"] = 2,
-						["n_min"] = 640,
+						["amount"] = 976,
 					},
-					["26984.8"] = {
-						["c_amt"] = 2448,
-						["total"] = 4255,
-						["c_max"] = 1720,
-						["c_num"] = 2,
-						["n_max"] = 932,
+					["11581.1"] = {
 						["sources"] = {
-							["Kym"] = {
-								["total"] = 4255,
-								["amount"] = 3380,
+							["Oakenshield"] = {
+								["amount"] = 1946,
 							},
 						},
-						["c_min"] = 728,
-						["amount"] = 3380,
-						["n_min"] = 932,
-						["n_amt"] = 932,
-						["n_num"] = 1,
-						["count"] = 3,
+						["amount"] = 1946,
 					},
-					["9835.64"] = {
-						["c_amt"] = 682,
+					["25306.4"] = {
+						["o_amt"] = 1630,
 						["sources"] = {
-							["Kym"] = {
-								["amount"] = 682,
+							["Bink"] = {
+								["o_amt"] = 1630,
+								["amount"] = 6569,
 							},
 						},
-						["count"] = 1,
-						["amount"] = 682,
-						["c_min"] = 682,
-						["c_max"] = 682,
-						["c_num"] = 1,
+						["amount"] = 6569,
 					},
-					["50288.64"] = {
-						["c_amt"] = 1217,
-						["c_max"] = 625,
-						["c_num"] = 2,
-						["n_max"] = 299,
+					["23925.1"] = {
 						["sources"] = {
-							["Kym"] = {
-								["amount"] = 2345,
+							["Oakenshield"] = {
+								["amount"] = 601,
 							},
 						},
-						["c_min"] = 592,
-						["amount"] = 2345,
-						["n_min"] = 269,
-						["n_amt"] = 1128,
-						["n_num"] = 4,
-						["count"] = 6,
+						["amount"] = 601,
 					},
-					["42226.4"] = {
-						["c_amt"] = 734,
-						["c_max"] = 367,
-						["c_num"] = 2,
-						["n_max"] = 518,
+					["-29228.4"] = {
 						["sources"] = {
-							["Rupert"] = {
-								["amount"] = 1770,
+							["Javad"] = {
+								["amount"] = 770,
+							},
+							["Umbrua"] = {
+								["amount"] = 500,
 							},
 						},
-						["count"] = 4,
-						["amount"] = 1770,
-						["c_min"] = 367,
-						["n_amt"] = 1036,
-						["n_num"] = 2,
-						["n_min"] = 518,
+						["amount"] = 1270,
+					},
+					["10199.4"] = {
+						["sources"] = {
+							["Bink"] = {
+								["amount"] = 1774,
+							},
+						},
+						["amount"] = 1774,
+					},
+					["18809.4"] = {
+						["sources"] = {
+							["Bink"] = {
+								["amount"] = 1471,
+							},
+						},
+						["amount"] = 1471,
+					},
+					["10605.8"] = {
+						["sources"] = {
+							["Javad"] = {
+								["amount"] = 7032,
+							},
+							["Umbrua"] = {
+								["amount"] = 2845,
+							},
+						},
+						["amount"] = 9877,
 					},
 					["-12654.4"] = {
-						["n_min"] = 566,
+						["o_amt"] = 270,
 						["sources"] = {
-							["Anastasia"] = {
-								["o_amt"] = 121,
-								["amount"] = 1132,
+							["Bink"] = {
+								["o_amt"] = 270,
+								["amount"] = 972,
 							},
 						},
-						["count"] = 2,
-						["amount"] = 1132,
-						["o_amt"] = 121,
-						["n_amt"] = 1132,
-						["n_num"] = 2,
-						["n_max"] = 566,
+						["amount"] = 972,
 					},
-					["27223.32"] = {
+					["15208.8"] = {
+						["o_amt"] = 1005,
 						["sources"] = {
-							["Rupert"] = {
-								["amount"] = 312,
+							["Javad"] = {
+								["amount"] = 7373,
+							},
+							["Umbrua"] = {
+								["o_amt"] = 1005,
+								["amount"] = 5619,
 							},
 						},
-						["count"] = 1,
-						["amount"] = 312,
-						["n_min"] = 312,
-						["n_amt"] = 312,
-						["n_num"] = 1,
-						["n_max"] = 312,
+						["amount"] = 12992,
 					},
-					["-9835.64"] = {
+					["25288.1"] = {
 						["sources"] = {
-							["Kym"] = {
-								["amount"] = 905,
+							["Oakenshield"] = {
+								["amount"] = 2487,
 							},
 						},
-						["count"] = 5,
-						["amount"] = 905,
-						["n_min"] = 181,
-						["n_amt"] = 905,
-						["n_num"] = 5,
-						["n_max"] = 181,
+						["amount"] = 2487,
 					},
-					["50294.64"] = {
-						["c_amt"] = 153,
+					["30016.1"] = {
 						["sources"] = {
-							["Kym"] = {
-								["amount"] = 153,
+							["Oakenshield"] = {
+								["amount"] = 4207,
 							},
 						},
-						["count"] = 1,
-						["amount"] = 153,
-						["c_min"] = 153,
-						["c_max"] = 153,
-						["c_num"] = 1,
+						["amount"] = 4207,
 					},
 					["6603.1"] = {
-						["c_amt"] = 622,
-						["b_amt"] = 554,
-						["c_max"] = 472,
-						["c_num"] = 2,
-						["blo_n"] = 3,
-						["c_min"] = 150,
-						["n_min"] = 81,
-						["n_max"] = 233,
 						["sources"] = {
-							["Rupert"] = {
-								["amount"] = 0,
-							},
-							["Kym"] = {
-								["amount"] = 472,
-							},
-							["Treant"] = {
-								["amount"] = 882,
-							},
-							["Anastasia"] = {
-								["amount"] = 0,
+							["Oakenshield"] = {
+								["amount"] = 8253,
 							},
 						},
-						["par_n"] = 1,
-						["amount"] = 1354,
-						["dod_n"] = 1,
-						["n_amt"] = 732,
-						["n_num"] = 4,
-						["count"] = 11,
+						["amount"] = 8253,
 					},
-					["-27132.4"] = {
+					["29228.4"] = {
 						["sources"] = {
-							["Anastasia"] = {
-								["amount"] = 90,
+							["Javad"] = {
+								["amount"] = 4054,
+							},
+							["Umbrua"] = {
+								["amount"] = 2525,
 							},
 						},
-						["count"] = 1,
-						["amount"] = 90,
-						["n_min"] = 90,
-						["n_amt"] = 90,
-						["n_num"] = 1,
-						["n_max"] = 90,
+						["amount"] = 6579,
 					},
-					["27088.16"] = {
+					["10207.4"] = {
 						["sources"] = {
-							["Anastasia"] = {
-								["amount"] = 407,
+							["Bink"] = {
+								["amount"] = 2616,
 							},
 						},
-						["count"] = 1,
-						["amount"] = 407,
-						["n_min"] = 407,
-						["n_amt"] = 407,
-						["n_num"] = 1,
-						["n_max"] = 407,
+						["amount"] = 2616,
 					},
-					["27132.4"] = {
-						["c_amt"] = 2830,
+					["59653.1"] = {
 						["sources"] = {
-							["Anastasia"] = {
-								["amount"] = 2830,
+							["Oakenshield"] = {
+								["amount"] = 396,
 							},
 						},
-						["count"] = 1,
-						["amount"] = 2830,
-						["c_min"] = 2830,
-						["c_max"] = 2830,
-						["c_num"] = 1,
+						["amount"] = 396,
 					},
 				},
-				["sunder"] = 3,
-				["time"] = 41.13999999999999,
-				["cctaken"] = 2,
-				["damage"] = 17594,
-				["rage"] = 123,
-				["deathlog"] = {
-					{
-						["log"] = {
-							{
-								["src"] = "Rupert",
-								["time"] = 79616.072,
-								["id"] = "-32391.32",
-								["rem"] = 1,
-								["hp"] = 1,
-								["aur"] = 1,
-							}, -- [1]
-							{
-								["src"] = "Anastasia",
-								["time"] = 79616.072,
-								["id"] = "-27132.4",
-								["rem"] = 1,
-								["hp"] = 1,
-								["aur"] = 1,
-							}, -- [2]
-							{
-								["src"] = "Rupert",
-								["time"] = 79616.073,
-								["id"] = "-17800.32",
-								["rem"] = 1,
-								["hp"] = 1,
-								["aur"] = 1,
-							}, -- [3]
-							{
-								["src"] = "Xor'juul",
-								["time"] = 79616.07400000001,
-								["id"] = "-14325.64",
-								["rem"] = 1,
-								["hp"] = 1,
-								["aur"] = 1,
-							}, -- [4]
-							{
-								["src"] = "Anastasia",
-								["time"] = 79616.07500000001,
-								["id"] = "-12654.4",
-								["rem"] = 1,
-								["hp"] = 1,
-								["aur"] = 1,
-							}, -- [5]
-							{
-								["time"] = 79616.076,
-								["id"] = "2565.1",
-								["rem"] = 1,
-								["hp"] = 1,
-								["aur"] = 1,
-							}, -- [6]
-							{
-								["src"] = "Anastasia",
-								["time"] = 79616.07700000001,
-								["amt"] = -566,
-								["id"] = "-12654.4",
-								["hp"] = 1,
-								["ovk"] = 121,
-							}, -- [7]
-							{
-								["src"] = "Anastasia",
-								["time"] = 79615.678,
-								["id"] = "-7321.16",
-								["rem"] = 1,
-								["hp"] = 445,
-								["aur"] = 1,
-							}, -- [8]
-							{
-								["src"] = "Anastasia",
-								["time"] = 79615.679,
-								["id"] = "-27088.16",
-								["rem"] = 1,
-								["hp"] = 445,
-								["aur"] = 1,
-							}, -- [9]
-							{
-								["src"] = "Anastasia",
-								["time"] = 79615.37999999999,
-								["id"] = "-7321.16",
-								["hp"] = 445,
-								["aur"] = 1,
-							}, -- [10]
-							{
-								["src"] = "Anastasia",
-								["time"] = 79614.965,
-								["id"] = "-27088.16",
-								["hp"] = 445,
-								["aur"] = 1,
-							}, -- [11]
-							{
-								["src"] = "Anastasia",
-								["time"] = 79614.883,
-								["amt"] = -407,
-								["id"] = "27088.16",
-								["hp"] = 926,
-							}, -- [12]
-							{
-								["src"] = "Anastasia",
-								["time"] = 79614.751,
-								["amt"] = -90,
-								["id"] = "-27132.4",
-								["hp"] = 1333,
-							}, -- [13]
-							{
-								["src"] = "Anastasia",
-								["time"] = 79614.385,
-								["id"] = "6603.1",
-								["blo"] = 89,
-								["hp"] = 1423,
-							}, -- [14]
+				["class"] = "MONSTER",
+				["damaged"] = 62986,
+				["damage"] = 3472,
+			},
+			["Toldren"] = {
+				["ccdonespells"] = {
+					["-64044.32"] = {
+						["t"] = {
+							["Laughing Skull Enforcer"] = 1,
 						},
-						["time"] = 79616.071,
-						["id"] = "-12654.4",
-						["timeod"] = 1690480294,
-						["hpm"] = 5916,
-						["src"] = "Anastasia",
-					}, -- [1]
+						["n"] = 1,
+					},
+					["-15487.32"] = {
+						["t"] = {
+							["Hellfire Imp"] = 1,
+						},
+						["n"] = 1,
+					},
 				},
-				["id"] = "0xF130017A4600001F",
+				["last"] = 119170.933,
+				["overheal"] = 13213,
+				["absorb"] = 1727,
+				["id"] = "0xF13001124E000188",
+				["class"] = "PRIEST",
 				["healspells"] = {
-					["28495.1"] = {
-						["c_amt"] = 2401,
-						["c_max"] = 2401,
-						["c_num"] = 1,
-						["n_max"] = 1617,
+					["-25315.2"] = {
+						["n_max"] = 626,
 						["targets"] = {
-							["Bilban"] = {
-								["amount"] = 4018,
+							["Umbrua"] = {
+								["o_amt"] = 2870,
+								["amount"] = 2100,
+							},
+							["Bink"] = {
+								["o_amt"] = 1744,
+								["amount"] = 691,
+							},
+							["Toldren"] = {
+								["o_amt"] = 2055,
+								["amount"] = 1075,
+							},
+							["Oakenshield"] = {
+								["o_amt"] = 3728,
+								["amount"] = 4372,
 							},
 						},
-						["count"] = 2,
-						["amount"] = 4018,
-						["c_min"] = 2401,
-						["n_amt"] = 1617,
+						["count"] = 35,
+						["amount"] = 8238,
+						["o_amt"] = 10397,
+						["n_min"] = 15,
+						["n_num"] = 35,
+						["n_amt"] = 8238,
+					},
+					["10917.2"] = {
+						["c_amt"] = 2086,
+						["c_max"] = 1149,
+						["c_num"] = 2,
+						["n_max"] = 1613,
+						["targets"] = {
+							["Toldren"] = {
+								["o_amt"] = 1451,
+								["amount"] = 937,
+							},
+							["Oakenshield"] = {
+								["o_amt"] = 1365,
+								["amount"] = 2762,
+							},
+						},
+						["c_min"] = 937,
+						["count"] = 3,
+						["amount"] = 3699,
+						["o_amt"] = 2816,
+						["n_amt"] = 1613,
 						["n_num"] = 1,
-						["n_min"] = 1617,
+						["n_min"] = 1613,
 					},
-				},
-				["potionspells"] = {
-					["43569"] = 2,
-				},
-				["totaldamaged"] = 20414,
-				["potion"] = 2,
-				["dispelspells"] = {
-					["23925.1"] = {
-						["spells"] = {
-							["10157.64"] = 1,
-							["9885.8"] = 1,
-						},
-						["count"] = 2,
-						["targets"] = {
-							["Rupert"] = 1,
-							["Anastasia"] = 1,
-						},
-					},
-				},
-				["heal"] = 4018,
-				["interrupt"] = 1,
-				["interruptspells"] = {
-					["72.1"] = {
-						["spells"] = {
-							["9858.8"] = 1,
-						},
+					["56160.2"] = {
+						["n_max"] = 300,
 						["count"] = 1,
+						["amount"] = 300,
 						["targets"] = {
-							["Kym"] = 1,
+							["Oakenshield"] = {
+								["amount"] = 300,
+							},
+						},
+						["n_min"] = 300,
+						["n_num"] = 1,
+						["n_amt"] = 300,
+					},
+				},
+				["auras"] = {
+					["-6788.2"] = {
+						["u"] = 15,
+						["t"] = {
+							["Oakenshield"] = {
+								["u"] = 15,
+								["n"] = 1,
+							},
+						},
+						["n"] = 1,
+					},
+					["10958.32"] = {
+						["u"] = 79,
+						["n"] = 1,
+					},
+					["10938.2"] = {
+						["u"] = 79,
+						["n"] = 1,
+					},
+					["-64044.32"] = {
+						["u"] = 3,
+						["t"] = {
+							["Laughing Skull Enforcer"] = {
+								["u"] = 3,
+								["n"] = 1,
+							},
+						},
+						["n"] = 1,
+					},
+					["10952.2"] = {
+						["u"] = 79,
+						["n"] = 1,
+					},
+					["10157.64"] = {
+						["u"] = 79,
+						["n"] = 1,
+					},
+					["27841.2"] = {
+						["u"] = 79,
+						["n"] = 1,
+					},
+					["-15487.32"] = {
+						["u"] = 5,
+						["t"] = {
+							["Hellfire Imp"] = {
+								["u"] = 5,
+								["n"] = 1,
+							},
+						},
+						["n"] = 1,
+					},
+					["-64058.1"] = {
+						["u"] = 7,
+						["t"] = {
+							["Laughing Skull Enforcer"] = {
+								["u"] = 7,
+								["n"] = 1,
+							},
+						},
+						["n"] = 1,
+					},
+				},
+				["absorbspells"] = {
+					["10901.2"] = {
+						["n_max"] = 327,
+						["count"] = 7,
+						["amount"] = 1727,
+						["targets"] = {
+							["Oakenshield"] = 1727,
+						},
+						["n_min"] = 45,
+						["n_num"] = 7,
+						["n_amt"] = 1727,
+					},
+				},
+				["role"] = "NONE",
+				["time"] = 14.18,
+				["ccdone"] = 2,
+				["heal"] = 12237,
+				["manaspells"] = {
+					["28760.1"] = 500,
+				},
+				["mana"] = 500,
+				["timespent"] = {
+					["Oakenshield"] = 14.18,
+				},
+			},
+			["Umbrua"] = {
+				["ccdonespells"] = {
+					["-3600.8.Earthbind Totem"] = {
+						["t"] = {
+							["Hellfire Imp"] = 2,
+						},
+						["n"] = 2,
+					},
+				},
+				["last"] = 119194.946,
+				["id"] = "0xF13001127B00018A",
+				["class"] = "SHAMAN",
+				["damage"] = 34497,
+				["auras"] = {
+					["10432.8"] = {
+						["u"] = 79,
+						["n"] = 1,
+					},
+					["10958.32"] = {
+						["u"] = 79,
+						["n"] = 1,
+					},
+					["-29228.4"] = {
+						["u"] = 200,
+						["t"] = {
+							["Shadowmoon Adept"] = {
+								["u"] = 61,
+								["n"] = 4,
+							},
+							["Laughing Skull Enforcer"] = {
+								["u"] = 79,
+								["n"] = 3,
+							},
+						},
+						["n"] = 7,
+					},
+					["10938.2"] = {
+						["u"] = 79,
+						["n"] = 1,
+					},
+					["27841.2"] = {
+						["u"] = 79,
+						["n"] = 1,
+					},
+					["10157.64"] = {
+						["u"] = 79,
+						["n"] = 1,
+					},
+					["-3600.8.Earthbind Totem"] = {
+						["u"] = 3,
+						["t"] = {
+							["Hellfire Imp"] = {
+								["u"] = 3,
+								["r"] = 1,
+								["n"] = 1,
+							},
+						},
+						["r"] = 1,
+						["n"] = 1,
+					},
+				},
+				["interrupt"] = 4,
+				["role"] = "NONE",
+				["time"] = 62.97999999999999,
+				["ccdone"] = 2,
+				["overkill"] = 1284,
+				["damagespells"] = {
+					["15208.8"] = {
+						["c_amt"] = 6948,
+						["r_amt"] = 235,
+						["c_max"] = 2343,
+						["c_num"] = 3,
+						["n_max"] = 1234,
+						["targets"] = {
+							["Laughing Skull Enforcer"] = {
+								["o_amt"] = 1005,
+								["amount"] = 5619,
+							},
+							["Hellfire Imp"] = {
+								["amount"] = 2343,
+							},
+							["Shadowmoon Adept"] = {
+								["amount"] = 6925,
+							},
+						},
+						["c_min"] = 2286,
+						["count"] = 10,
+						["amount"] = 14887,
+						["o_amt"] = 1005,
+						["n_amt"] = 7939,
+						["n_num"] = 7,
+						["n_min"] = 964,
+					},
+					["-29228.4"] = {
+						["n_max"] = 180,
+						["r_amt"] = 34,
+						["count"] = 10,
+						["amount"] = 1670,
+						["targets"] = {
+							["Shadowmoon Adept"] = {
+								["amount"] = 1170,
+							},
+							["Laughing Skull Enforcer"] = {
+								["amount"] = 500,
+							},
+						},
+						["n_min"] = 138,
+						["n_num"] = 10,
+						["n_amt"] = 1670,
+					},
+					["26363.8"] = {
+						["n_max"] = 509,
+						["r_amt"] = 49,
+						["count"] = 3,
+						["amount"] = 1462,
+						["targets"] = {
+							["Shadowmoon Adept"] = {
+								["amount"] = 444,
+							},
+							["Hellfire Imp"] = {
+								["amount"] = 1018,
+							},
+						},
+						["n_min"] = 444,
+						["n_num"] = 3,
+						["n_amt"] = 1462,
+					},
+					["29228.4"] = {
+						["c_amt"] = 2033,
+						["r_amt"] = 105,
+						["c_max"] = 1081,
+						["c_num"] = 2,
+						["n_max"] = 518,
+						["targets"] = {
+							["Shadowmoon Adept"] = {
+								["amount"] = 2072,
+							},
+							["Laughing Skull Enforcer"] = {
+								["amount"] = 2525,
+							},
+						},
+						["c_min"] = 952,
+						["amount"] = 4597,
+						["n_min"] = 492,
+						["n_amt"] = 2564,
+						["n_num"] = 5,
+						["count"] = 7,
+					},
+					["10605.8"] = {
+						["c_amt"] = 5537,
+						["r_amt"] = 292,
+						["c_max"] = 2104,
+						["c_num"] = 4,
+						["n_max"] = 1229,
+						["targets"] = {
+							["Hellfire Imp"] = {
+								["amount"] = 2439,
+							},
+							["Laughing Skull Enforcer"] = {
+								["amount"] = 2845,
+							},
+							["Shadowmoon Adept"] = {
+								["o_amt"] = 279,
+								["amount"] = 6597,
+							},
+						},
+						["c_min"] = 831,
+						["count"] = 11,
+						["amount"] = 11881,
+						["o_amt"] = 279,
+						["n_amt"] = 6344,
+						["n_num"] = 7,
+						["n_min"] = 504,
+					},
+				},
+				["interruptspells"] = {
+					["57994.8"] = {
+						["spells"] = {
+							["15242.4"] = 4,
+						},
+						["count"] = 4,
+						["targets"] = {
+							["Hellfire Imp"] = 4,
 						},
 					},
 				},
-				["death"] = 1,
+				["timespent"] = {
+					["Laughing Skull Enforcer"] = 27.3,
+					["Hellfire Imp"] = 2.88,
+					["Shadowmoon Adept"] = 32.8,
+				},
 			},
 		},
-		["sunder"] = 3,
-		["absorb"] = 4586,
-		["etotaldamaged"] = 50497,
-		["potion"] = 3,
-		["faction"] = 1,
-		["ccdone"] = 12,
-		["overheal"] = 23434,
-		["starttime"] = 1690480284,
-		["endtime"] = 1690480500,
-	}, -- [1]
+		["sunder"] = 15,
+		["damaged"] = 7461,
+		["time"] = 79,
+		["etotaldamage"] = 16654,
+		["damage"] = 150864,
+		["overheal"] = 24824,
+		["absorb"] = 1727,
+		["totaldamaged"] = 9188,
+		["mana"] = 1099,
+		["interrupt"] = 9,
+		["type"] = "party",
+		["starttime"] = 1681558260,
+		["overkill"] = 6609,
+		["ccdone"] = 10,
+		["heal"] = 14645,
+		["name"] = "Laughing Skull Enforcer",
+		["mobname"] = "Laughing Skull Enforcer",
+		["edamaged"] = 150864,
+		["edamage"] = 14927,
+		["rage"] = 110,
+		["endtime"] = 1681558339,
+	}, -- [3]
 	[0] = {
 		["actors"] = {
-			["Golhine"] = {
-				["overheal"] = 9602,
-				["id"] = "0xF130017A4300001C",
-				["class"] = "DRUID",
-				["damaged"] = 1395,
-				["role"] = "NONE",
-				["time"] = 7.82,
-				["mana"] = 155,
-				["heal"] = 7995,
-				["damage"] = 1807,
+			["Bink"] = {
+				["overkill"] = 4382,
+				["mana"] = 1142,
+				["ccdone"] = 8,
+				["interrupt"] = 4,
+				["class"] = "PET",
+				["id"] = "0xF1300112A9000187",
+				["damage"] = 64306,
 			},
-			["Lariia"] = {
-				["class"] = "PRIEST",
-				["damaged"] = 10126,
-				["dispel"] = 15,
+			["Javad"] = {
+				["id"] = "0xF13001127C000189",
+				["class"] = "SHAMAN",
+				["overkill"] = 4988,
+				["dispel"] = 3,
 				["role"] = "NONE",
-				["time"] = 20.81,
-				["cctaken"] = 2,
-				["damage"] = 962,
-				["absorb"] = 3442,
-				["id"] = "0xF130017A47000020",
-				["heal"] = 17958,
-				["death"] = 1,
-				["overheal"] = 6891,
-				["ccdone"] = 3,
-				["totaldamaged"] = 12693,
-				["mana"] = 290,
+				["time"] = 136.94,
+				["ccdone"] = 18,
+				["interrupt"] = 8,
+				["damage"] = 97890,
+			},
+			["Umbrua"] = {
+				["id"] = "0xF13001127B00018A",
+				["class"] = "SHAMAN",
+				["overkill"] = 1915,
+				["dispel"] = 5,
+				["role"] = "NONE",
+				["time"] = 132.83,
+				["ccdone"] = 2,
+				["interrupt"] = 8,
+				["damage"] = 66140,
+			},
+			["Toldren"] = {
+				["overheal"] = 21124,
+				["absorb"] = 3342,
+				["id"] = "0xF13001124E000188",
+				["class"] = "PRIEST",
+				["heal"] = 28468,
+				["time"] = 26.79,
+				["ccdone"] = 9,
+				["role"] = "NONE",
+				["mana"] = 500,
 			},
 			["Oakenshield"] = {
+				["overheal"] = 16137,
+				["class"] = "WARRIOR",
+				["sunder"] = 27,
 				["id"] = "0x0000000000000013",
-				["class"] = "WARRIOR",
-				["damaged"] = 6674,
-				["role"] = "TANK",
-				["time"] = 7.300000000000001,
-				["death"] = 1,
 				["spec"] = 73,
-				["damage"] = 144,
-			},
-			["Keryn"] = {
-				["totaldamaged"] = 8478,
-				["id"] = "0xF130017A3F000018",
-				["class"] = "ROGUE",
-				["damaged"] = 8022,
-				["overkill"] = 446,
-				["interrupt"] = 2,
-				["role"] = "DAMAGER",
-				["time"] = 28.57,
-				["ccdone"] = 1,
-				["totaldamage"] = 5460,
-				["energy"] = 60,
-				["damage"] = 5416,
-			},
-			["Solm"] = {
-				["death"] = 1,
-				["heal"] = 2368,
-				["id"] = "0xF130017A40000019",
-				["class"] = "ROGUE",
-				["damaged"] = 6894,
-				["overkill"] = 360,
-				["interrupt"] = 2,
-				["totaldamage"] = 18501,
-				["time"] = 41.77,
-				["ccdone"] = 4,
-				["potion"] = 1,
-				["role"] = "DAMAGER",
-				["energy"] = 25,
-				["damage"] = 18459,
-			},
-			["Sandahl"] = {
-				["mana"] = 1330,
-				["damaged"] = 0,
-				["totaldamage"] = 6029,
-				["pettotaldamage"] = 1969,
-				["damage"] = 4340,
-				["overheal"] = 6941,
-				["absorb"] = 1144,
-				["id"] = "0xF130017A4500001E",
-				["overkill"] = 1321,
-				["heal"] = 233,
-				["totaldamaged"] = 1308,
-				["petdamage"] = 1797,
-				["class"] = "WARLOCK",
-				["ccdone"] = 1,
-				["role"] = "DAMAGER",
-				["time"] = 16.51,
-			},
-			["Bilban"] = {
-				["class"] = "WARRIOR",
-				["damaged"] = 19539,
-				["dispel"] = 2,
-				["role"] = "NONE",
-				["time"] = 41.13999999999999,
-				["cctaken"] = 2,
-				["damage"] = 17594,
-				["id"] = "0xF130017A4600001F",
-				["overkill"] = 1549,
-				["totaldamaged"] = 20414,
-				["heal"] = 4018,
-				["potion"] = 2,
-				["death"] = 1,
-				["interrupt"] = 1,
-				["sunder"] = 3,
-				["rage"] = 123,
-				["ccdone"] = 3,
+				["damaged"] = 22721,
+				["overkill"] = 1165,
+				["role"] = "TANK",
+				["heal"] = 2811,
+				["time"] = 150.53,
+				["ccdone"] = 14,
+				["rage"] = 270,
+				["petdamage"] = 6509,
+				["totaldamaged"] = 26063,
+				["damage"] = 86786,
 			},
 		},
-		["mana"] = 1775,
-		["damaged"] = 52650,
-		["dispel"] = 17,
-		["totaldamage"] = 50497,
-		["time"] = 216,
-		["cctaken"] = 4,
-		["sunder"] = 3,
-		["ccdone"] = 12,
-		["damage"] = 48722,
-		["overheal"] = 23434,
-		["absorb"] = 4586,
-		["rage"] = 123,
-		["totaldamaged"] = 57856,
-		["interrupt"] = 5,
-		["starttime"] = 1690479881,
-		["overkill"] = 3676,
-		["heal"] = 32572,
-		["potion"] = 3,
-		["death"] = 4,
+		["sunder"] = 27,
+		["damaged"] = 22721,
+		["dispel"] = 8,
+		["time"] = 177,
+		["damage"] = 315122,
+		["rage"] = 270,
+		["absorb"] = 3342,
+		["interrupt"] = 20,
+		["overkill"] = 12450,
+		["heal"] = 31279,
 		["name"] = "Total",
-		["energy"] = 85,
+		["ccdone"] = 51,
+		["totaldamaged"] = 26063,
+		["overheal"] = 37261,
+		["mana"] = 1642,
+		["starttime"] = 1681558209,
 	},
 }

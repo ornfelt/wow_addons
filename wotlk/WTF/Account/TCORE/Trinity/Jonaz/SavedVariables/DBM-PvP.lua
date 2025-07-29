@@ -27,10 +27,10 @@ DBMPvP_SavedVars = {
 	},
 	["WarsongGulch"] = {
 		["TimerFlag"] = true,
-		["ShowFlagCarrierErrorNote"] = false,
-		["ShowFlagCarrier"] = true,
-		["Enabled"] = true,
 		["Announce"] = false,
+		["ShowFlagCarrierErrorNote"] = false,
+		["Enabled"] = true,
+		["ShowFlagCarrier"] = true,
 		["TimerStart"] = true,
 	},
 	["Arenas"] = {

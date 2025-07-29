@@ -330,6 +330,13 @@ CartographerDB = {
 								["icon"] = "POI",
 							},
 						},
+						["Westfall"] = {
+							[3438781] = {
+								["titleCol"] = 16744448,
+								["title"] = "Goldshire",
+								["icon"] = "POI",
+							},
+						},
 						["Desolace"] = {
 							[62539178] = {
 								["titleCol"] = 16744448,
@@ -339,6 +346,48 @@ CartographerDB = {
 							[55304880] = {
 								["titleCol"] = 16744448,
 								["title"] = "Thunder Bluff",
+								["icon"] = "POI",
+							},
+						},
+						["Stonetalon Mountains"] = {
+							[42180720] = {
+								["titleCol"] = 16744448,
+								["title"] = "Cragpool Lake",
+								["icon"] = "POI",
+							},
+							[7924470] = {
+								["titleCol"] = 16744448,
+								["title"] = "Stonetalon Peak",
+								["icon"] = "POI",
+							},
+							[73742742] = {
+								["titleCol"] = 16744448,
+								["title"] = "Sishir Canyon",
+								["icon"] = "POI",
+							},
+							[59433324] = {
+								["titleCol"] = 16744448,
+								["title"] = "Windshear Mine",
+								["icon"] = "POI",
+							},
+							[15354511] = {
+								["titleCol"] = 16744448,
+								["title"] = "The Talon Den",
+								["icon"] = "POI",
+							},
+							[42542080] = {
+								["titleCol"] = 16744448,
+								["title"] = "The Talondeep Path",
+								["icon"] = "POI",
+							},
+							[6038033] = {
+								["titleCol"] = 16744448,
+								["title"] = "Astranaar",
+								["icon"] = "POI",
+							},
+							[60830863] = {
+								["titleCol"] = 16744448,
+								["title"] = "Sun Rock Retreat",
 								["icon"] = "POI",
 							},
 						},
@@ -431,6 +480,11 @@ CartographerDB = {
 								["title"] = "The Crossroads",
 								["icon"] = "POI",
 							},
+							[78301077] = {
+								["titleCol"] = 16744448,
+								["title"] = "Ratchet",
+								["icon"] = "POI",
+							},
 							[42439506] = {
 								["titleCol"] = 16744448,
 								["title"] = "Razor Hill",
@@ -441,9 +495,16 @@ CartographerDB = {
 								["title"] = "Orgrimmar",
 								["icon"] = "POI",
 							},
-							[78301077] = {
+						},
+						["Azuremyst Isle"] = {
+							[49802937] = {
 								["titleCol"] = 16744448,
-								["title"] = "Ratchet",
+								["title"] = "Crash Site",
+								["icon"] = "POI",
+							},
+							[44717845] = {
+								["titleCol"] = 16744448,
+								["title"] = "The Exodar",
 								["icon"] = "POI",
 							},
 						},
@@ -631,10 +692,22 @@ CartographerDB = {
 								["icon"] = "POI",
 							},
 						},
-						["Netherstorm"] = {
-							[65259747] = {
+						["Silvermoon City"] = {
+							[80515455] = {
 								["titleCol"] = 16744448,
-								["title"] = "Area 52",
+								["title"] = "Silvermoon City",
+								["icon"] = "POI",
+							},
+							[27221066] = {
+								["titleCol"] = 16744448,
+								["title"] = "Silvermoon City, Hunter Trainer",
+								["icon"] = "POI",
+							},
+						},
+						["Netherstorm"] = {
+							[35968058] = {
+								["titleCol"] = 16744448,
+								["title"] = "The Stormspire",
 								["icon"] = "POI",
 							},
 							[66356659] = {
@@ -642,14 +715,14 @@ CartographerDB = {
 								["title"] = "Evergrove",
 								["icon"] = "POI",
 							},
+							[65259747] = {
+								["titleCol"] = 16744448,
+								["title"] = "Area 52",
+								["icon"] = "POI",
+							},
 							[67053330] = {
 								["titleCol"] = 16744448,
 								["title"] = "Cosmowrench",
-								["icon"] = "POI",
-							},
-							[35968058] = {
-								["titleCol"] = 16744448,
-								["title"] = "The Stormspire",
 								["icon"] = "POI",
 							},
 						},
@@ -680,64 +753,64 @@ CartographerDB = {
 								["icon"] = "POI",
 							},
 						},
-						["Silvermoon City"] = {
-							[80515455] = {
+						["Howling Fjord"] = {
+							[67212016] = {
 								["titleCol"] = 16744448,
-								["title"] = "Silvermoon City",
+								["title"] = "New Agamand",
 								["icon"] = "POI",
 							},
-							[27221066] = {
+							[16577804] = {
 								["titleCol"] = 16744448,
-								["title"] = "Silvermoon City, Hunter Trainer",
+								["title"] = "Fort Wildervar",
 								["icon"] = "POI",
 							},
-						},
-						["Stonetalon Mountains"] = {
-							[42180720] = {
+							[62022171] = {
 								["titleCol"] = 16744448,
-								["title"] = "Cragpool Lake",
+								["title"] = "Valgarde",
 								["icon"] = "POI",
 							},
-							[7924470] = {
+							[11176020] = {
 								["titleCol"] = 16744448,
-								["title"] = "Stonetalon Peak",
+								["title"] = "Camp Winterhoof",
 								["icon"] = "POI",
 							},
-							[73742742] = {
+							[42927351] = {
 								["titleCol"] = 16744448,
-								["title"] = "Sishir Canyon",
-								["icon"] = "POI",
-							},
-							[59433324] = {
-								["titleCol"] = 16744448,
-								["title"] = "Windshear Mine",
-								["icon"] = "POI",
-							},
-							[15354511] = {
-								["titleCol"] = 16744448,
-								["title"] = "The Talon Den",
-								["icon"] = "POI",
-							},
-							[42542080] = {
-								["titleCol"] = 16744448,
-								["title"] = "The Talondeep Path",
-								["icon"] = "POI",
-							},
-							[6038033] = {
-								["titleCol"] = 16744448,
-								["title"] = "Astranaar",
-								["icon"] = "POI",
-							},
-							[60830863] = {
-								["titleCol"] = 16744448,
-								["title"] = "Sun Rock Retreat",
+								["title"] = "Westguard Keep",
 								["icon"] = "POI",
 							},
 						},
-						["Teldrassil"] = {
-							[55388602] = {
+						["Ghostlands"] = {
+							[31807833] = {
 								["titleCol"] = 16744448,
-								["title"] = "Darnassus",
+								["title"] = "Tranquillien",
+								["icon"] = "POI",
+							},
+						},
+						["Shadowmoon Valley"] = {
+							[55859291] = {
+								["titleCol"] = 16744448,
+								["title"] = "Wildhammer Stronghold",
+								["icon"] = "POI",
+							},
+							[29315918] = {
+								["titleCol"] = 16744448,
+								["title"] = "Shadowmoon Village",
+								["icon"] = "POI",
+							},
+							[58691518] = {
+								["titleCol"] = 16744448,
+								["title"] = "Sanctum of the Stars",
+								["icon"] = "POI",
+							},
+							[29869205] = {
+								["titleCol"] = 16744448,
+								["title"] = "Altar of Sha'tar",
+								["icon"] = "POI",
+							},
+							[27563217] = {
+								["titleCol"] = 16744448,
+								["title"] = "Allerian Stronghold",
 								["icon"] = "POI",
 							},
 						},
@@ -875,33 +948,6 @@ CartographerDB = {
 								["icon"] = "POI",
 							},
 						},
-						["Howling Fjord"] = {
-							[67212016] = {
-								["titleCol"] = 16744448,
-								["title"] = "New Agamand",
-								["icon"] = "POI",
-							},
-							[16577804] = {
-								["titleCol"] = 16744448,
-								["title"] = "Fort Wildervar",
-								["icon"] = "POI",
-							},
-							[62022171] = {
-								["titleCol"] = 16744448,
-								["title"] = "Valgarde",
-								["icon"] = "POI",
-							},
-							[11176020] = {
-								["titleCol"] = 16744448,
-								["title"] = "Camp Winterhoof",
-								["icon"] = "POI",
-							},
-							[42927351] = {
-								["titleCol"] = 16744448,
-								["title"] = "Westguard Keep",
-								["icon"] = "POI",
-							},
-						},
 						["Tanaris"] = {
 							[11511258] = {
 								["titleCol"] = 16744448,
@@ -921,23 +967,6 @@ CartographerDB = {
 							[10763421] = {
 								["titleCol"] = 16744448,
 								["title"] = "Fungal Rock",
-								["icon"] = "POI",
-							},
-						},
-						["Burning Steppes"] = {
-							[31842619] = {
-								["titleCol"] = 16744448,
-								["title"] = "Slither Rock",
-								["icon"] = "POI",
-							},
-							[22988852] = {
-								["titleCol"] = 16744448,
-								["title"] = "Flame Crest",
-								["icon"] = "POI",
-							},
-							[14828304] = {
-								["titleCol"] = 16744448,
-								["title"] = "Dustbelch Grotto",
 								["icon"] = "POI",
 							},
 						},
@@ -988,6 +1017,23 @@ CartographerDB = {
 								["icon"] = "POI",
 							},
 						},
+						["Burning Steppes"] = {
+							[31842619] = {
+								["titleCol"] = 16744448,
+								["title"] = "Slither Rock",
+								["icon"] = "POI",
+							},
+							[22988852] = {
+								["titleCol"] = 16744448,
+								["title"] = "Flame Crest",
+								["icon"] = "POI",
+							},
+							[14828304] = {
+								["titleCol"] = 16744448,
+								["title"] = "Dustbelch Grotto",
+								["icon"] = "POI",
+							},
+						},
 						["The Storm Peaks"] = {
 							[79889956] = {
 								["titleCol"] = 16744448,
@@ -1002,6 +1048,23 @@ CartographerDB = {
 							[68441757] = {
 								["titleCol"] = 16744448,
 								["title"] = "Brunnhildar Village",
+								["icon"] = "POI",
+							},
+						},
+						["Stranglethorn Vale"] = {
+							[16593179] = {
+								["titleCol"] = 16744448,
+								["title"] = "Yojamba Isle",
+								["icon"] = "POI",
+							},
+							[28436032] = {
+								["titleCol"] = 16744448,
+								["title"] = "Grom'gol Base Camp",
+								["icon"] = "POI",
+							},
+							[60719580] = {
+								["titleCol"] = 16744448,
+								["title"] = "Spirit Den",
 								["icon"] = "POI",
 							},
 						},
@@ -1023,21 +1086,16 @@ CartographerDB = {
 								["title"] = "Menethil Harbor",
 								["icon"] = "POI",
 							},
+							[74142210] = {
+								["titleCol"] = 16744448,
+								["title"] = "Dun Algaz",
+								["icon"] = "POI",
+							},
 						},
-						["Stranglethorn Vale"] = {
-							[16593179] = {
+						["The Exodar"] = {
+							[56443282] = {
 								["titleCol"] = 16744448,
-								["title"] = "Yojamba Isle",
-								["icon"] = "POI",
-							},
-							[28436032] = {
-								["titleCol"] = 16744448,
-								["title"] = "Grom'gol Base Camp",
-								["icon"] = "POI",
-							},
-							[60719580] = {
-								["titleCol"] = 16744448,
-								["title"] = "Spirit Den",
+								["title"] = "The Exodar",
 								["icon"] = "POI",
 							},
 						},
@@ -1203,6 +1261,28 @@ CartographerDB = {
 								["icon"] = "POI",
 							},
 						},
+						["Teldrassil"] = {
+							[55388602] = {
+								["titleCol"] = 16744448,
+								["title"] = "Darnassus",
+								["icon"] = "POI",
+							},
+							[40339942] = {
+								["titleCol"] = 16744448,
+								["title"] = "Aldrassil",
+								["icon"] = "POI",
+							},
+							[39839880] = {
+								["titleCol"] = 16744448,
+								["title"] = "Aldrassil",
+								["icon"] = "POI",
+							},
+							[31688850] = {
+								["titleCol"] = 16744448,
+								["title"] = "Shadowthread Cave",
+								["icon"] = "POI",
+							},
+						},
 						["Silithus"] = {
 							[47729956] = {
 								["titleCol"] = 16744448,
@@ -1231,14 +1311,14 @@ CartographerDB = {
 							},
 						},
 						["Dragonblight"] = {
+							[54251404] = {
+								["titleCol"] = 16744448,
+								["title"] = "Wyrmrest Temple",
+								["icon"] = "POI",
+							},
 							[74732372] = {
 								["titleCol"] = 16744448,
 								["title"] = "Moa'ki Harbor",
-								["icon"] = "POI",
-							},
-							[55618474] = {
-								["titleCol"] = 16744448,
-								["title"] = "Stars' Rest",
 								["icon"] = "POI",
 							},
 							[62433944] = {
@@ -1246,36 +1326,9 @@ CartographerDB = {
 								["title"] = "Venomspite",
 								["icon"] = "POI",
 							},
-							[54251404] = {
+							[55618474] = {
 								["titleCol"] = 16744448,
-								["title"] = "Wyrmrest Temple",
-								["icon"] = "POI",
-							},
-						},
-						["Shadowmoon Valley"] = {
-							[55859291] = {
-								["titleCol"] = 16744448,
-								["title"] = "Wildhammer Stronghold",
-								["icon"] = "POI",
-							},
-							[29315918] = {
-								["titleCol"] = 16744448,
-								["title"] = "Shadowmoon Village",
-								["icon"] = "POI",
-							},
-							[58691518] = {
-								["titleCol"] = 16744448,
-								["title"] = "Sanctum of the Stars",
-								["icon"] = "POI",
-							},
-							[29869205] = {
-								["titleCol"] = 16744448,
-								["title"] = "Altar of Sha'tar",
-								["icon"] = "POI",
-							},
-							[27563217] = {
-								["titleCol"] = 16744448,
-								["title"] = "Allerian Stronghold",
+								["title"] = "Stars' Rest",
 								["icon"] = "POI",
 							},
 						},

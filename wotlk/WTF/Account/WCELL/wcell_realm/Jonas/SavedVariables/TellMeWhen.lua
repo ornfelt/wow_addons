@@ -1,51 +1,51 @@
 
 TellMeWhen_Settings = {
-	["Locked"] = false,
+	["Locked"] = true,
 	["Groups"] = {
 		{
 			["Enabled"] = true,
 			["Columns"] = 4,
-			["Scale"] = 2,
+			["Scale"] = 1.805667996406555,
 			["Rows"] = 1,
 			["Icons"] = {
 				{
 					["WpnEnchantType"] = "mainhand",
-					["ShowTimer"] = false,
+					["ShowTimer"] = true,
 					["BuffOrDebuff"] = "HELPFUL",
 					["CooldownShowWhen"] = "usable",
 					["Unit"] = "player",
 					["OnlyMine"] = false,
-					["Name"] = "",
+					["Name"] = "57761",
 					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
-					["Type"] = "",
-					["Enabled"] = false,
+					["Type"] = "buff",
+					["Enabled"] = true,
 				}, -- [1]
 				{
 					["WpnEnchantType"] = "mainhand",
-					["ShowTimer"] = false,
+					["ShowTimer"] = true,
 					["BuffOrDebuff"] = "HELPFUL",
 					["CooldownShowWhen"] = "usable",
 					["Unit"] = "player",
 					["OnlyMine"] = false,
-					["Name"] = "",
+					["Name"] = "Fingers of Frost",
 					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
-					["Type"] = "",
-					["Enabled"] = false,
+					["Type"] = "buff",
+					["Enabled"] = true,
 				}, -- [2]
 				{
 					["WpnEnchantType"] = "mainhand",
-					["ShowTimer"] = false,
+					["ShowTimer"] = true,
 					["BuffOrDebuff"] = "HELPFUL",
 					["CooldownShowWhen"] = "usable",
 					["Unit"] = "player",
 					["OnlyMine"] = false,
-					["Name"] = "",
+					["Name"] = "Hot Streak",
 					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
-					["Type"] = "",
-					["Enabled"] = false,
+					["Type"] = "buff",
+					["Enabled"] = true,
 				}, -- [3]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -647,8 +647,11 @@ TellMeWhen_Settings = {
 				}, -- [49]
 			},
 			["Width"] = 30,
+			["y"] = 65.12658402798242,
+			["x"] = 95.75575579491242,
 			["PrimarySpec"] = true,
 			["Height"] = 30,
+			["point"] = "CENTER",
 			["SecondarySpec"] = true,
 			["OnlyInCombat"] = false,
 		}, -- [1]

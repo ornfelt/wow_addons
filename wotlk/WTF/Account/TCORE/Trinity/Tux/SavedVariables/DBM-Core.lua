@@ -14,24 +14,24 @@ DBM_SavedOptions = {
 	["BlockVersionUpdatePopup"] = true,
 	["WarningColors"] = {
 		{
-			["b"] = 0.94,
-			["g"] = 0.8,
 			["r"] = 0.41,
+			["g"] = 0.8,
+			["b"] = 0.94,
 		}, -- [1]
 		{
-			["b"] = 0,
-			["g"] = 0.95,
 			["r"] = 0.95,
+			["g"] = 0.95,
+			["b"] = 0,
 		}, -- [2]
 		{
-			["b"] = 0,
-			["g"] = 0.5,
 			["r"] = 1,
+			["g"] = 0.5,
+			["b"] = 0,
 		}, -- [3]
 		{
-			["b"] = 0.1,
-			["g"] = 0.1,
 			["r"] = 1,
+			["g"] = 0.1,
+			["b"] = 0.1,
 		}, -- [4]
 	},
 	["RangeFrameY"] = -50,
@@ -41,42 +41,42 @@ DBM_SavedOptions = {
 	["LatencyThreshold"] = 250,
 	["DontSendBossAnnounces"] = false,
 	["HPFrameMaxEntries"] = 5,
-	["WarningIconRight"] = true,
+	["ArrowPoint"] = "TOP",
 	["RangeFramePoint"] = "CENTER",
 	["SpecialWarningPoint"] = "CENTER",
-	["ShowSpecialWarnings"] = true,
+	["ArrowPosY"] = -150,
 	["RaidWarningSound"] = "Sound\\Doodad\\BellTollNightElf.wav",
 	["SpecialWarningSound"] = "Sound\\Spells\\PVPFlagTaken.wav",
-	["DontShowBossAnnounces"] = false,
+	["HealthFrameLocked"] = false,
 	["SpecialWarningY"] = 75,
 	["RangeFrameSound2"] = "none",
-	["AlwaysShowHealthFrame"] = false,
+	["ShowMinimapButton"] = true,
 	["RaidWarningPosition"] = {
 		["Y"] = -185,
 		["X"] = 0,
 		["Point"] = "TOP",
 	},
-	["RangeFrameX"] = 50,
+	["SpecialWarningX"] = 0,
 	["Enabled"] = true,
+	["RangeFrameLocked"] = false,
+	["DontSendBossWhispers"] = false,
+	["HealthFrameWidth"] = 200,
+	["RangeFrameSound1"] = "none",
+	["WarningIconLeft"] = true,
 	["SpecialWarningFontColor"] = {
 		0, -- [1]
 		0, -- [2]
 		1, -- [3]
 	},
-	["WarningIconLeft"] = true,
-	["HealthFrameWidth"] = 200,
-	["RangeFrameLocked"] = false,
-	["DontSendBossWhispers"] = false,
-	["RangeFrameSound1"] = "none",
 	["HPFrameY"] = 50,
 	["FixCLEUOnCombatStart"] = false,
-	["SpecialWarningX"] = 0,
-	["ShowMinimapButton"] = true,
+	["RangeFrameX"] = 50,
+	["AlwaysShowHealthFrame"] = false,
 	["HPFrameX"] = -50,
-	["HealthFrameLocked"] = false,
+	["DontShowBossAnnounces"] = false,
 	["SpamBlockBossWhispers"] = false,
-	["ArrowPosY"] = -150,
-	["ArrowPoint"] = "TOP",
+	["ShowSpecialWarnings"] = true,
+	["WarningIconRight"] = true,
 }
 DBT_SavedOptions = {
 	["DBM"] = {

@@ -41,11 +41,23 @@ MACRO 16777223 ".addtankitems2" Ability_Warrior_DefensiveStance
 .additem 50364
 .additem 50444
 END
-MACRO 16777217 "botf" Spell_Misc_EmotionHappy
-.npcbot command follow
+MACRO 16777238 "1" INV_Misc_QuestionMark
+#showtooltip steady shot
+/petattack
+/cast [nomod] steady shot
+/cast [mod:alt, target=arena1] wyvern sting
 END
-MACRO 16777218 "bots" Spell_Misc_EmotionSad
-.npcbot command stopfully
+MACRO 16777239 "2" INV_Misc_QuestionMark
+#showtooltip arcane shot
+/petattack
+/cast [nomod] arcane shot
+/cast [mod:alt, target=arena2] wyvern sting
+END
+MACRO 16777240 "3" INV_Misc_QuestionMark
+#showtooltip aimed shot
+/petattack
+/cast [nomod] aimed shot
+/cast [mod:alt, target=arena3] wyvern sting
 END
 MACRO 16777230 "enchants" Spell_Arcane_Arcane01
 .additem 44879

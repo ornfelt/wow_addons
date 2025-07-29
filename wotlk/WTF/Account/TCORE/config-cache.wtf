@@ -1,5 +1,6 @@
 SET autoLootDefault "1"
-SET flaggedTutorials "v##M##%##&##$##:##Z##1##9##I##D##0##J##V##[##A##B##+##;##-##,##K##X##)##C##\##]##7##S##T##Q##(##R##.##/##^##*##<##O##?##Y##3"
+SET scriptErrors "1"
+SET flaggedTutorials "v##M##%##&##$##:##Z##1##9##I##D##0##J##V##[##A##B##+##;##-##,##K##X##)##C##\##]##7##S##T##Q##(##R##.##/##^##*##<##O##?##Y##3##@##F"
 SET UnitNameOwn "1"
 SET cameraPitchMoveSpeed "65"
 SET cameraYawMoveSpeed "130"

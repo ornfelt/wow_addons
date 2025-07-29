@@ -93,8 +93,8 @@ MACRO 16777227 "enchants" Spell_Arcane_Arcane01
 .additem 44455
 .additem 38953
 .additem 40125 6
-.additem 40132 2
-.additem 40153 11
+.additem 40132 3
+.additem 40153 14
 .additem 41285
 END
 MACRO 16777226 "glyphs" Spell_Nature_EarthShock
@@ -117,6 +117,7 @@ MACRO 16777234 "m" INV_Misc_QuestionMark
 /stopcasting
 /cancelaura ice block
 /cancelaura levitate
+/cancelaura Sentry totem
 /cast swift spectral tiger
 /petfollow
 END
@@ -125,6 +126,18 @@ MACRO 16777230 "p" INV_Misc_QuestionMark
 /cast [nomod] purge
 /cast [mod:shift, target=focus] purge
 /cast [mod:ctrl, target=mouseover] purge
+END
+MACRO 16777236 "pvp_items" Spell_Shaman_ThunderStorm
+.additem 51511
+.additem 51333
+.additem 51502
+.additem 51332
+.additem 51509
+.additem 51373
+.additem 51498
+.additem 51374
+.additem 51512
+.additem 51372
 END
 MACRO 16777229 "w" INV_Misc_QuestionMark
 #showtooltip wind shear

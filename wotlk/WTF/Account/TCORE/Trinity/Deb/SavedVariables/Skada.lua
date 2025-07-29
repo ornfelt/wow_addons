@@ -325,23 +325,23 @@ SkadaCharDB = {
 						["amount"] = 0,
 					},
 					["1161.1"] = {
-						["imm_n"] = 1,
 						["count"] = 1,
 						["targets"] = {
 							["Deathbound Ward"] = {
 								["amount"] = 0,
 							},
 						},
+						["imm_n"] = 1,
 						["amount"] = 0,
 					},
 					["355.1"] = {
-						["imm_n"] = 8,
 						["count"] = 8,
 						["targets"] = {
 							["Deathbound Ward"] = {
 								["amount"] = 0,
 							},
 						},
+						["imm_n"] = 8,
 						["amount"] = 0,
 					},
 					["59653.1"] = {
@@ -561,12 +561,12 @@ SkadaCharDB = {
 						["n_min"] = 5507,
 					},
 					["-48463.64"] = {
-						["n_max"] = 2602,
+						["n_amt"] = 64014,
 						["r_amt"] = 1261,
 						["count"] = 36,
 						["amount"] = 64014,
 						["n_num"] = 36,
-						["n_min"] = 1175,
+						["n_max"] = 2602,
 						["targets"] = {
 							["Servant of the Throne"] = {
 								["amount"] = 28959,
@@ -575,7 +575,7 @@ SkadaCharDB = {
 								["amount"] = 35055,
 							},
 						},
-						["n_amt"] = 64014,
+						["n_min"] = 1175,
 					},
 					["6603.1"] = {
 						["c_amt"] = 8275,
@@ -600,11 +600,11 @@ SkadaCharDB = {
 						["g_min"] = 351,
 					},
 					["-48468.8"] = {
-						["n_max"] = 3093,
+						["n_amt"] = 77277,
 						["count"] = 36,
 						["amount"] = 77277,
 						["n_num"] = 36,
-						["n_min"] = 1561,
+						["n_max"] = 3093,
 						["targets"] = {
 							["Servant of the Throne"] = {
 								["amount"] = 34359,
@@ -613,7 +613,7 @@ SkadaCharDB = {
 								["amount"] = 42918,
 							},
 						},
-						["n_amt"] = 77277,
+						["n_min"] = 1561,
 					},
 					["48461.8"] = {
 						["c_amt"] = 192815,
@@ -637,12 +637,12 @@ SkadaCharDB = {
 						["n_min"] = 5681,
 					},
 					["-71023.8"] = {
-						["n_max"] = 4647,
+						["n_amt"] = 24118,
 						["r_amt"] = 1124,
 						["count"] = 11,
 						["amount"] = 24118,
 						["n_num"] = 11,
-						["n_min"] = 518,
+						["n_max"] = 4647,
 						["targets"] = {
 							["Deathbound Ward"] = {
 								["amount"] = 20418,
@@ -651,7 +651,7 @@ SkadaCharDB = {
 								["amount"] = 3700,
 							},
 						},
-						["n_amt"] = 24118,
+						["n_min"] = 518,
 					},
 				},
 				["last"] = 655451.296,
@@ -1060,17 +1060,17 @@ SkadaCharDB = {
 						["c_min"] = 4153,
 					},
 					["49279.8"] = {
-						["n_max"] = 1921,
+						["n_amt"] = 1921,
 						["count"] = 1,
 						["amount"] = 1921,
 						["n_num"] = 1,
-						["n_min"] = 1921,
+						["n_max"] = 1921,
 						["targets"] = {
 							["Servant of the Throne"] = {
 								["amount"] = 1921,
 							},
 						},
-						["n_amt"] = 1921,
+						["n_min"] = 1921,
 					},
 					["60043.4"] = {
 						["c_amt"] = 76334,
@@ -1089,12 +1089,12 @@ SkadaCharDB = {
 						["c_max"] = 13821,
 					},
 					["-49233.4"] = {
-						["n_max"] = 771,
+						["n_amt"] = 20715,
 						["r_amt"] = 705,
 						["count"] = 32,
 						["amount"] = 20715,
 						["n_num"] = 32,
-						["n_min"] = 559,
+						["n_max"] = 771,
 						["targets"] = {
 							["Servant of the Throne"] = {
 								["amount"] = 6058,
@@ -1103,20 +1103,20 @@ SkadaCharDB = {
 								["amount"] = 14657,
 							},
 						},
-						["n_amt"] = 20715,
+						["n_min"] = 559,
 					},
 					["6603.1"] = {
-						["n_max"] = 965,
+						["n_amt"] = 965,
 						["count"] = 1,
 						["amount"] = 965,
 						["n_num"] = 1,
-						["n_min"] = 965,
+						["n_max"] = 965,
 						["targets"] = {
 							["Deathbound Ward"] = {
 								["amount"] = 965,
 							},
 						},
-						["n_amt"] = 965,
+						["n_min"] = 965,
 					},
 					["49269.8"] = {
 						["c_amt"] = 8049,
@@ -1488,12 +1488,12 @@ SkadaCharDB = {
 			["Bink"] = {
 				["damagespells"] = {
 					["-42891.4"] = {
-						["n_max"] = 444,
+						["n_amt"] = 6667,
 						["r_amt"] = 155,
 						["count"] = 18,
 						["amount"] = 6667,
 						["n_num"] = 18,
-						["n_min"] = 320,
+						["n_max"] = 444,
 						["targets"] = {
 							["Servant of the Throne"] = {
 								["amount"] = 2476,
@@ -1502,7 +1502,7 @@ SkadaCharDB = {
 								["amount"] = 4191,
 							},
 						},
-						["n_amt"] = 6667,
+						["n_min"] = 320,
 					},
 					["47610.20"] = {
 						["c_amt"] = 210034,
@@ -1521,12 +1521,12 @@ SkadaCharDB = {
 						["c_max"] = 16011,
 					},
 					["-12654.4"] = {
-						["n_max"] = 16012,
+						["n_amt"] = 112724,
 						["r_amt"] = 1960,
 						["count"] = 23,
 						["amount"] = 112724,
 						["n_num"] = 23,
-						["n_min"] = 724,
+						["n_max"] = 16012,
 						["targets"] = {
 							["Servant of the Throne"] = {
 								["amount"] = 23459,
@@ -1535,7 +1535,7 @@ SkadaCharDB = {
 								["amount"] = 89265,
 							},
 						},
-						["n_amt"] = 112724,
+						["n_min"] = 724,
 					},
 					["42891.4"] = {
 						["c_amt"] = 122772,
@@ -1580,12 +1580,12 @@ SkadaCharDB = {
 						["c_min"] = 3628,
 					},
 					["-55360.4"] = {
-						["n_max"] = 1412,
+						["n_amt"] = 20538,
 						["r_amt"] = 355,
 						["count"] = 17,
 						["amount"] = 20538,
 						["n_num"] = 17,
-						["n_min"] = 909,
+						["n_max"] = 1412,
 						["targets"] = {
 							["Servant of the Throne"] = {
 								["amount"] = 5827,
@@ -1594,7 +1594,7 @@ SkadaCharDB = {
 								["amount"] = 14711,
 							},
 						},
-						["n_amt"] = 20538,
+						["n_min"] = 909,
 					},
 					["42859.4"] = {
 						["c_amt"] = 12125,
@@ -1630,11 +1630,11 @@ SkadaCharDB = {
 						["c_max"] = 6094,
 					},
 					["-47610.20"] = {
-						["n_max"] = 54,
+						["n_amt"] = 656,
 						["count"] = 14,
 						["amount"] = 656,
 						["n_num"] = 14,
-						["n_min"] = 44,
+						["n_max"] = 54,
 						["targets"] = {
 							["Servant of the Throne"] = {
 								["amount"] = 220,
@@ -1643,7 +1643,7 @@ SkadaCharDB = {
 								["amount"] = 436,
 							},
 						},
-						["n_amt"] = 656,
+						["n_min"] = 44,
 					},
 				},
 				["last"] = 655451.015,
@@ -1850,17 +1850,17 @@ SkadaCharDB = {
 				},
 				["damagespells"] = {
 					["-12654.4"] = {
-						["n_max"] = 1584,
+						["n_amt"] = 3168,
 						["count"] = 2,
 						["amount"] = 3168,
 						["n_num"] = 2,
-						["n_min"] = 1584,
+						["n_max"] = 1584,
 						["targets"] = {
 							["Servant of the Throne"] = {
 								["amount"] = 3168,
 							},
 						},
-						["n_amt"] = 3168,
+						["n_min"] = 1584,
 					},
 					["42845.64"] = {
 						["c_amt"] = 131701,
@@ -2210,12 +2210,12 @@ SkadaCharDB = {
 						["c_min"] = 0,
 					},
 					["-48068.2"] = {
-						["n_max"] = 2538,
+						["n_amt"] = 15022,
 						["n_num"] = 15,
 						["count"] = 15,
 						["amount"] = 15022,
 						["o_amt"] = 21236,
-						["n_min"] = 330,
+						["n_max"] = 2538,
 						["targets"] = {
 							["Deb"] = {
 								["o_amt"] = 9591,
@@ -2226,7 +2226,7 @@ SkadaCharDB = {
 								["amount"] = 0,
 							},
 						},
-						["n_amt"] = 15022,
+						["n_min"] = 330,
 					},
 					["52985.2"] = {
 						["c_amt"] = 21427,
@@ -2339,16 +2339,16 @@ SkadaCharDB = {
 						["c_min"] = 4186,
 					},
 					["48066.2"] = {
-						["n_max"] = 10424,
+						["n_amt"] = 18736,
 						["count"] = 4,
 						["amount"] = 18736,
 						["n_num"] = 4,
-						["n_min"] = 808,
+						["n_max"] = 10424,
 						["targets"] = {
 							["Deb"] = 17928,
 							["Wu"] = 808,
 						},
-						["n_amt"] = 18736,
+						["n_min"] = 808,
 					},
 				},
 				["role"] = "NONE",
@@ -2378,11 +2378,11 @@ SkadaCharDB = {
 				["id"] = "0xF1300113100001E0",
 				["class"] = "DRUID",
 				["auras"] = {
-					["73828.1"] = {
+					["783.1"] = {
 						["u"] = 77,
 						["n"] = 1,
 					},
-					["48161.2"] = {
+					["73828.1"] = {
 						["u"] = 77,
 						["n"] = 1,
 					},
@@ -2469,7 +2469,7 @@ SkadaCharDB = {
 						},
 						["n"] = 3,
 					},
-					["783.1"] = {
+					["48161.2"] = {
 						["u"] = 77,
 						["n"] = 1,
 					},
@@ -2503,12 +2503,12 @@ SkadaCharDB = {
 						["c_min"] = 2805,
 					},
 					["-71023.8"] = {
-						["n_max"] = 1397,
+						["n_amt"] = 11891,
 						["r_amt"] = 101,
 						["count"] = 14,
 						["amount"] = 11891,
 						["n_num"] = 14,
-						["n_min"] = 274,
+						["n_max"] = 1397,
 						["targets"] = {
 							["Servant of the Throne"] = {
 								["amount"] = 4070,
@@ -2517,15 +2517,15 @@ SkadaCharDB = {
 								["amount"] = 7821,
 							},
 						},
-						["n_amt"] = 11891,
+						["n_min"] = 274,
 					},
 					["-48463.64"] = {
-						["n_max"] = 1168,
+						["n_amt"] = 20180,
 						["r_amt"] = 815,
 						["count"] = 22,
 						["amount"] = 20180,
 						["n_num"] = 22,
-						["n_min"] = 740,
+						["n_max"] = 1168,
 						["targets"] = {
 							["Servant of the Throne"] = {
 								["amount"] = 5964,
@@ -2534,20 +2534,20 @@ SkadaCharDB = {
 								["amount"] = 14216,
 							},
 						},
-						["n_amt"] = 20180,
+						["n_min"] = 740,
 					},
 					["-53308.8"] = {
-						["n_max"] = 630,
+						["n_amt"] = 4869,
 						["count"] = 9,
 						["amount"] = 4869,
 						["n_num"] = 9,
-						["n_min"] = 486,
+						["n_max"] = 630,
 						["targets"] = {
 							["Servant of the Throne"] = {
 								["amount"] = 4869,
 							},
 						},
-						["n_amt"] = 4869,
+						["n_min"] = 486,
 					},
 					["48461.8"] = {
 						["c_amt"] = 138087,
@@ -2564,14 +2564,14 @@ SkadaCharDB = {
 								["amount"] = 126452,
 							},
 						},
-						["count"] = 32,
+						["c_min"] = 6256,
 						["n_amt"] = 55447,
-						["mis_n"] = 1,
+						["count"] = 32,
 						["amount"] = 193534,
 						["o_amt"] = 969,
 						["n_min"] = 3269,
 						["n_num"] = 13,
-						["c_min"] = 6256,
+						["mis_n"] = 1,
 					},
 					["48465.64"] = {
 						["c_amt"] = 43154,
@@ -2627,7 +2627,7 @@ SkadaCharDB = {
 						["u"] = 77,
 						["n"] = 1,
 					},
-					["48469.8"] = {
+					["50720.1"] = {
 						["u"] = 77,
 						["n"] = 1,
 					},
@@ -2649,19 +2649,9 @@ SkadaCharDB = {
 						["u"] = 77,
 						["n"] = 1,
 					},
-					["-47437.1"] = {
-						["u"] = 21,
-						["t"] = {
-							["Servant of the Throne"] = {
-								["u"] = 19,
-								["n"] = 2,
-							},
-							["Deathbound Ward"] = {
-								["u"] = 21,
-								["n"] = 1,
-							},
-						},
-						["n"] = 3,
+					["48469.8"] = {
+						["u"] = 77,
+						["n"] = 1,
 					},
 					["73828.1"] = {
 						["u"] = 77,
@@ -2679,9 +2669,19 @@ SkadaCharDB = {
 						["u"] = 77,
 						["n"] = 1,
 					},
-					["50720.1"] = {
-						["u"] = 77,
-						["n"] = 1,
+					["-47437.1"] = {
+						["u"] = 21,
+						["t"] = {
+							["Servant of the Throne"] = {
+								["u"] = 19,
+								["n"] = 2,
+							},
+							["Deathbound Ward"] = {
+								["u"] = 21,
+								["n"] = 1,
+							},
+						},
+						["n"] = 3,
 					},
 				},
 				["role"] = "NONE",
@@ -2775,12 +2775,12 @@ SkadaCharDB = {
 						["c_max"] = 7557,
 					},
 					["-70809.8"] = {
-						["n_max"] = 0,
+						["n_amt"] = 0,
 						["n_num"] = 12,
 						["count"] = 12,
 						["amount"] = 0,
 						["o_amt"] = 2724,
-						["n_min"] = 0,
+						["n_max"] = 0,
 						["targets"] = {
 							["Rohan"] = {
 								["o_amt"] = 1398,
@@ -2799,7 +2799,7 @@ SkadaCharDB = {
 								["amount"] = 0,
 							},
 						},
-						["n_amt"] = 0,
+						["n_min"] = 0,
 					},
 				},
 				["auras"] = {
@@ -3632,11 +3632,29 @@ SkadaCharDB = {
 					["Ancient Skeletal Soldier"] = 17.65,
 				},
 				["auras"] = {
-					["73828.1"] = {
-						["u"] = 112,
-						["n"] = 1,
+					["-48467.8"] = {
+						["u"] = 76,
+						["t"] = {
+							["Servant of the Throne"] = {
+								["u"] = 23,
+								["n"] = 1,
+								["r"] = 2,
+							},
+							["The Damned"] = {
+								["u"] = 76,
+								["n"] = 8,
+								["r"] = 13,
+							},
+							["Deathbound Ward"] = {
+								["u"] = 76,
+								["n"] = 2,
+								["r"] = 4,
+							},
+						},
+						["n"] = 11,
+						["r"] = 19,
 					},
-					["48161.2"] = {
+					["73828.1"] = {
 						["u"] = 112,
 						["n"] = 1,
 					},
@@ -3746,27 +3764,9 @@ SkadaCharDB = {
 						},
 						["n"] = 4,
 					},
-					["-48467.8"] = {
-						["u"] = 76,
-						["t"] = {
-							["Servant of the Throne"] = {
-								["u"] = 23,
-								["n"] = 1,
-								["r"] = 2,
-							},
-							["The Damned"] = {
-								["u"] = 76,
-								["n"] = 8,
-								["r"] = 13,
-							},
-							["Deathbound Ward"] = {
-								["u"] = 76,
-								["n"] = 2,
-								["r"] = 4,
-							},
-						},
-						["n"] = 11,
-						["r"] = 19,
+					["48161.2"] = {
+						["u"] = 112,
+						["n"] = 1,
 					},
 				},
 				["damagespells"] = {
@@ -3797,11 +3797,11 @@ SkadaCharDB = {
 						["n_min"] = 1409,
 					},
 					["-53308.8"] = {
-						["n_max"] = 538,
+						["n_amt"] = 7190,
 						["count"] = 14,
 						["amount"] = 7190,
 						["n_num"] = 14,
-						["n_min"] = 500,
+						["n_max"] = 538,
 						["targets"] = {
 							["Servant of the Throne"] = {
 								["amount"] = 2690,
@@ -3810,7 +3810,7 @@ SkadaCharDB = {
 								["amount"] = 4500,
 							},
 						},
-						["n_amt"] = 7190,
+						["n_min"] = 500,
 					},
 					["48466.8"] = {
 						["c_amt"] = 254025,
@@ -3829,21 +3829,21 @@ SkadaCharDB = {
 								["amount"] = 98309,
 							},
 						},
+						["count"] = 267,
 						["mis_n"] = 4,
-						["c_min"] = 1724,
 						["amount"] = 458338,
 						["n_min"] = 1150,
 						["n_amt"] = 204313,
 						["n_num"] = 145,
-						["count"] = 267,
+						["c_min"] = 1724,
 					},
 					["-48463.64"] = {
-						["n_max"] = 1266,
+						["n_amt"] = 18175,
 						["r_amt"] = 395,
 						["count"] = 18,
 						["amount"] = 18175,
 						["n_num"] = 18,
-						["n_min"] = 832,
+						["n_max"] = 1266,
 						["targets"] = {
 							["Servant of the Throne"] = {
 								["amount"] = 944,
@@ -3858,7 +3858,7 @@ SkadaCharDB = {
 								["amount"] = 5420,
 							},
 						},
-						["n_amt"] = 18175,
+						["n_min"] = 832,
 					},
 					["48465.64"] = {
 						["c_amt"] = 30027,
@@ -3899,22 +3899,22 @@ SkadaCharDB = {
 								["amount"] = 55332,
 							},
 						},
-						["count"] = 27,
+						["c_min"] = 6783,
 						["n_min"] = 3110,
-						["mis_n"] = 1,
+						["count"] = 27,
 						["amount"] = 170915,
 						["o_amt"] = 5827,
 						["n_amt"] = 50795,
 						["n_num"] = 12,
-						["c_min"] = 6783,
+						["mis_n"] = 1,
 					},
 					["-71023.8"] = {
-						["n_max"] = 552,
+						["n_amt"] = 5054,
 						["r_amt"] = 53,
 						["count"] = 15,
 						["amount"] = 5054,
 						["n_num"] = 15,
-						["n_min"] = 215,
+						["n_max"] = 552,
 						["targets"] = {
 							["Servant of the Throne"] = {
 								["amount"] = 596,
@@ -3926,7 +3926,7 @@ SkadaCharDB = {
 								["amount"] = 3135,
 							},
 						},
-						["n_amt"] = 5054,
+						["n_min"] = 215,
 					},
 				},
 				["role"] = "NONE",
@@ -3944,23 +3944,23 @@ SkadaCharDB = {
 			["Wu"] = {
 				["damagespells"] = {
 					["355.1"] = {
-						["imm_n"] = 12,
 						["count"] = 12,
 						["targets"] = {
 							["Deathbound Ward"] = {
 								["amount"] = 0,
 							},
 						},
+						["imm_n"] = 12,
 						["amount"] = 0,
 					},
 					["1161.1"] = {
-						["imm_n"] = 1,
 						["count"] = 1,
 						["targets"] = {
 							["Deathbound Ward"] = {
 								["amount"] = 0,
 							},
 						},
+						["imm_n"] = 1,
 						["amount"] = 0,
 					},
 					["676.1"] = {
@@ -3974,11 +3974,11 @@ SkadaCharDB = {
 						["amount"] = 0,
 					},
 					["59653.1"] = {
-						["n_max"] = 323,
+						["n_amt"] = 1503,
 						["count"] = 5,
 						["amount"] = 1503,
 						["n_num"] = 5,
-						["n_min"] = 271,
+						["n_max"] = 323,
 						["targets"] = {
 							["Servant of the Throne"] = {
 								["amount"] = 631,
@@ -3990,7 +3990,7 @@ SkadaCharDB = {
 								["amount"] = 294,
 							},
 						},
-						["n_amt"] = 1503,
+						["n_min"] = 271,
 					},
 				},
 				["last"] = 655361.906,
@@ -4197,12 +4197,12 @@ SkadaCharDB = {
 						["c_min"] = 2744,
 					},
 					["-48463.64"] = {
-						["n_max"] = 2057,
+						["n_amt"] = 74339,
 						["r_amt"] = 313,
 						["count"] = 45,
 						["amount"] = 74339,
 						["n_num"] = 45,
-						["n_min"] = 1254,
+						["n_max"] = 2057,
 						["targets"] = {
 							["Servant of the Throne"] = {
 								["amount"] = 13894,
@@ -4217,14 +4217,14 @@ SkadaCharDB = {
 								["amount"] = 14422,
 							},
 						},
-						["n_amt"] = 74339,
+						["n_min"] = 1254,
 					},
 					["-48468.8"] = {
-						["n_max"] = 2421,
+						["n_amt"] = 47307,
 						["count"] = 22,
 						["amount"] = 47307,
 						["n_num"] = 22,
-						["n_min"] = 1694,
+						["n_max"] = 2421,
 						["targets"] = {
 							["Servant of the Throne"] = {
 								["amount"] = 8804,
@@ -4239,14 +4239,14 @@ SkadaCharDB = {
 								["amount"] = 7436,
 							},
 						},
-						["n_amt"] = 47307,
+						["n_min"] = 1694,
 					},
 					["-71023.8"] = {
-						["n_max"] = 1959,
+						["n_amt"] = 20647,
 						["count"] = 16,
 						["amount"] = 20647,
 						["n_num"] = 16,
-						["n_min"] = 613,
+						["n_max"] = 1959,
 						["targets"] = {
 							["Servant of the Throne"] = {
 								["amount"] = 6386,
@@ -4261,7 +4261,7 @@ SkadaCharDB = {
 								["amount"] = 8014,
 							},
 						},
-						["n_amt"] = 20647,
+						["n_min"] = 613,
 					},
 					["53227.8"] = {
 						["c_amt"] = 35977,
@@ -4750,10 +4750,10 @@ SkadaCharDB = {
 						},
 						["count"] = 1,
 						["amount"] = 3621,
-						["n_max"] = 3621,
-						["n_min"] = 3621,
-						["n_num"] = 1,
 						["n_amt"] = 3621,
+						["n_max"] = 3621,
+						["n_num"] = 1,
+						["n_min"] = 3621,
 					},
 					["70961.1"] = {
 						["total"] = 13578,
@@ -4766,10 +4766,10 @@ SkadaCharDB = {
 						},
 						["count"] = 3,
 						["amount"] = 2036,
-						["n_amt"] = 2036,
-						["n_min"] = 2036,
-						["n_num"] = 1,
 						["abs_n"] = 2,
+						["n_amt"] = 2036,
+						["n_num"] = 1,
+						["n_min"] = 2036,
 					},
 					["71021.1"] = {
 						["n_amt"] = 67572,
@@ -4795,10 +4795,10 @@ SkadaCharDB = {
 						},
 						["count"] = 2,
 						["amount"] = 10941,
-						["n_max"] = 10941,
-						["n_min"] = 10941,
-						["n_num"] = 1,
 						["n_amt"] = 10941,
+						["n_max"] = 10941,
+						["n_num"] = 1,
+						["n_min"] = 10941,
 					},
 					["6603.1"] = {
 						["c_amt"] = 19796,
@@ -4806,8 +4806,8 @@ SkadaCharDB = {
 						["c_max"] = 8562,
 						["c_num"] = 3,
 						["n_max"] = 6765,
-						["count"] = 58,
-						["n_amt"] = 138752,
+						["mis_n"] = 4,
+						["abs_n"] = 9,
 						["sources"] = {
 							["Servant of the Throne"] = {
 								["amount"] = 2718,
@@ -4824,12 +4824,12 @@ SkadaCharDB = {
 								["amount"] = 8230,
 							},
 						},
-						["c_min"] = 3620,
+						["count"] = 58,
 						["amount"] = 158548,
-						["abs_n"] = 9,
 						["n_min"] = 16,
+						["n_amt"] = 138752,
 						["n_num"] = 42,
-						["mis_n"] = 4,
+						["c_min"] = 3620,
 					},
 				},
 				["damage"] = 1692088,
@@ -5165,11 +5165,11 @@ SkadaCharDB = {
 						["n_min"] = 1767,
 					},
 					["49279.8"] = {
-						["n_max"] = 2213,
+						["n_amt"] = 4426,
 						["count"] = 2,
 						["amount"] = 4426,
 						["n_num"] = 2,
-						["n_min"] = 2213,
+						["n_max"] = 2213,
 						["targets"] = {
 							["Deathbound Ward"] = {
 								["amount"] = 2213,
@@ -5178,15 +5178,15 @@ SkadaCharDB = {
 								["amount"] = 2213,
 							},
 						},
-						["n_amt"] = 4426,
+						["n_min"] = 2213,
 					},
 					["-49233.4"] = {
-						["n_max"] = 769,
+						["n_amt"] = 25254,
 						["r_amt"] = 581,
 						["count"] = 38,
 						["amount"] = 25254,
 						["n_num"] = 38,
-						["n_min"] = 496,
+						["n_max"] = 769,
 						["targets"] = {
 							["Servant of the Throne"] = {
 								["amount"] = 2097,
@@ -5198,7 +5198,7 @@ SkadaCharDB = {
 								["amount"] = 18434,
 							},
 						},
-						["n_amt"] = 25254,
+						["n_min"] = 496,
 					},
 					["49238.8"] = {
 						["c_amt"] = 257653,
@@ -5778,12 +5778,12 @@ SkadaCharDB = {
 				},
 				["damagespells"] = {
 					["-42891.4"] = {
-						["n_max"] = 471,
+						["n_amt"] = 7343,
 						["r_amt"] = 271,
 						["count"] = 19,
 						["amount"] = 7343,
 						["n_num"] = 19,
-						["n_min"] = 304,
+						["n_max"] = 471,
 						["targets"] = {
 							["The Damned"] = {
 								["amount"] = 428,
@@ -5795,7 +5795,7 @@ SkadaCharDB = {
 								["amount"] = 840,
 							},
 						},
-						["n_amt"] = 7343,
+						["n_min"] = 304,
 					},
 					["42917.16"] = {
 						["c_amt"] = 27388,
@@ -5817,12 +5817,12 @@ SkadaCharDB = {
 						["c_max"] = 3625,
 					},
 					["-12654.4"] = {
-						["n_max"] = 14449,
+						["n_amt"] = 133746,
 						["r_amt"] = 1866,
 						["count"] = 47,
 						["amount"] = 133746,
 						["n_num"] = 47,
-						["n_min"] = 741,
+						["n_max"] = 14449,
 						["targets"] = {
 							["Servant of the Throne"] = {
 								["amount"] = 5132,
@@ -5837,7 +5837,7 @@ SkadaCharDB = {
 								["amount"] = 10119,
 							},
 						},
-						["n_amt"] = 133746,
+						["n_min"] = 741,
 					},
 					["42891.4"] = {
 						["c_amt"] = 172837,
@@ -5863,17 +5863,17 @@ SkadaCharDB = {
 						["c_max"] = 18117,
 					},
 					["-47610.20"] = {
-						["n_max"] = 54,
+						["n_amt"] = 514,
 						["count"] = 11,
 						["amount"] = 514,
 						["n_num"] = 11,
-						["n_min"] = 44,
+						["n_max"] = 54,
 						["targets"] = {
 							["Deathbound Ward"] = {
 								["amount"] = 514,
 							},
 						},
-						["n_amt"] = 514,
+						["n_min"] = 44,
 					},
 					["42950.4"] = {
 						["c_amt"] = 8158,
@@ -5948,25 +5948,25 @@ SkadaCharDB = {
 						["n_min"] = 1205,
 					},
 					["43044.4"] = {
-						["n_max"] = 256,
+						["n_amt"] = 256,
 						["count"] = 1,
 						["amount"] = 256,
 						["n_num"] = 1,
-						["n_min"] = 256,
+						["n_max"] = 256,
 						["targets"] = {
 							["Servant of the Throne"] = {
 								["amount"] = 256,
 							},
 						},
-						["n_amt"] = 256,
+						["n_min"] = 256,
 					},
 					["-42926.4"] = {
-						["n_max"] = 810,
+						["n_amt"] = 25971,
 						["r_amt"] = 213,
 						["count"] = 36,
 						["amount"] = 25971,
 						["n_num"] = 36,
-						["n_min"] = 646,
+						["n_max"] = 810,
 						["targets"] = {
 							["Servant of the Throne"] = {
 								["amount"] = 1434,
@@ -5978,15 +5978,15 @@ SkadaCharDB = {
 								["amount"] = 7860,
 							},
 						},
-						["n_amt"] = 25971,
+						["n_min"] = 646,
 					},
 					["-55360.4"] = {
-						["n_max"] = 1614,
+						["n_amt"] = 31968,
 						["r_amt"] = 121,
 						["count"] = 24,
 						["amount"] = 31968,
 						["n_num"] = 24,
-						["n_min"] = 1090,
+						["n_max"] = 1614,
 						["targets"] = {
 							["Servant of the Throne"] = {
 								["amount"] = 3228,
@@ -5998,7 +5998,7 @@ SkadaCharDB = {
 								["amount"] = 20572,
 							},
 						},
-						["n_amt"] = 31968,
+						["n_min"] = 1090,
 					},
 					["42926.4"] = {
 						["c_amt"] = 31189,
@@ -6530,13 +6530,27 @@ SkadaCharDB = {
 						["u"] = 112,
 						["n"] = 1,
 					},
-					["48469.8"] = {
-						["u"] = 112,
-						["n"] = 1,
-					},
 					["50720.1"] = {
 						["u"] = 112,
 						["n"] = 1,
+					},
+					["-47437.1"] = {
+						["u"] = 21,
+						["t"] = {
+							["Servant of the Throne"] = {
+								["u"] = 12,
+								["n"] = 1,
+							},
+							["The Damned"] = {
+								["u"] = 21,
+								["n"] = 3,
+							},
+							["Deathbound Ward"] = {
+								["u"] = 16,
+								["n"] = 1,
+							},
+						},
+						["n"] = 5,
 					},
 					["-12323.1"] = {
 						["u"] = 10,
@@ -6566,23 +6580,9 @@ SkadaCharDB = {
 						["u"] = 112,
 						["n"] = 1,
 					},
-					["-47437.1"] = {
-						["u"] = 21,
-						["t"] = {
-							["Servant of the Throne"] = {
-								["u"] = 12,
-								["n"] = 1,
-							},
-							["The Damned"] = {
-								["u"] = 21,
-								["n"] = 3,
-							},
-							["Deathbound Ward"] = {
-								["u"] = 16,
-								["n"] = 1,
-							},
-						},
-						["n"] = 5,
+					["48469.8"] = {
+						["u"] = 112,
+						["n"] = 1,
 					},
 					["48066.2"] = {
 						["u"] = 112,
@@ -6607,15 +6607,15 @@ SkadaCharDB = {
 				},
 				["absorbspells"] = {
 					["70845.1"] = {
-						["n_max"] = 2514,
+						["n_amt"] = 2514,
 						["count"] = 1,
 						["amount"] = 2514,
 						["n_num"] = 1,
-						["n_min"] = 2514,
+						["n_max"] = 2514,
 						["targets"] = {
 							["Alyissia"] = 2514,
 						},
-						["n_amt"] = 2514,
+						["n_min"] = 2514,
 					},
 				},
 				["role"] = "NONE",
@@ -6830,15 +6830,15 @@ SkadaCharDB = {
 				},
 				["absorbspells"] = {
 					["43012.16"] = {
-						["n_max"] = 4448,
+						["n_amt"] = 4448,
 						["count"] = 1,
 						["amount"] = 4448,
 						["n_num"] = 1,
-						["n_min"] = 4448,
+						["n_max"] = 4448,
 						["targets"] = {
 							["Dink"] = 4448,
 						},
-						["n_amt"] = 4448,
+						["n_min"] = 4448,
 					},
 				},
 				["role"] = "DAMAGER",
@@ -6846,11 +6846,11 @@ SkadaCharDB = {
 				["damage"] = 905801,
 				["damagespells"] = {
 					["-12654.4"] = {
-						["n_max"] = 1305,
+						["n_amt"] = 5833,
 						["count"] = 5,
 						["amount"] = 5833,
 						["n_num"] = 5,
-						["n_min"] = 1004,
+						["n_max"] = 1305,
 						["targets"] = {
 							["Deathbound Ward"] = {
 								["amount"] = 2008,
@@ -6859,7 +6859,7 @@ SkadaCharDB = {
 								["amount"] = 3825,
 							},
 						},
-						["n_amt"] = 5833,
+						["n_min"] = 1004,
 					},
 					["43044.4"] = {
 						["c_amt"] = 463,
@@ -7156,24 +7156,24 @@ SkadaCharDB = {
 				},
 				["absorbspells"] = {
 					["47753.2"] = {
-						["n_max"] = 8667,
+						["n_amt"] = 38343,
 						["count"] = 14,
 						["amount"] = 41184,
 						["n_num"] = 14,
-						["n_min"] = 668,
+						["n_max"] = 8667,
 						["targets"] = {
 							["Deb"] = 35319,
 							["Wu"] = 4529,
 							["Umbrua"] = 1336,
 						},
-						["n_amt"] = 38343,
+						["n_min"] = 668,
 					},
 					["48066.2"] = {
-						["n_max"] = 11349,
+						["n_amt"] = 73125,
 						["count"] = 18,
 						["amount"] = 73125,
 						["n_num"] = 18,
-						["n_min"] = 651,
+						["n_max"] = 11349,
 						["targets"] = {
 							["Wu"] = 9176,
 							["Loganaar"] = 11349,
@@ -7181,7 +7181,7 @@ SkadaCharDB = {
 							["Alyissia"] = 10476,
 							["Umbrua"] = 9605,
 						},
-						["n_amt"] = 73125,
+						["n_min"] = 651,
 					},
 				},
 				["role"] = "NONE",
@@ -7270,25 +7270,25 @@ SkadaCharDB = {
 						["c_min"] = 0,
 					},
 					["56131.2"] = {
-						["n_max"] = 1502,
+						["n_amt"] = 1502,
 						["count"] = 1,
 						["amount"] = 1502,
 						["n_num"] = 1,
-						["n_min"] = 1502,
+						["n_max"] = 1502,
 						["targets"] = {
 							["Deb"] = {
 								["amount"] = 1502,
 							},
 						},
-						["n_amt"] = 1502,
+						["n_min"] = 1502,
 					},
 					["-48068.2"] = {
-						["n_max"] = 2716,
+						["n_amt"] = 25331,
 						["n_num"] = 25,
 						["count"] = 25,
 						["amount"] = 25331,
 						["o_amt"] = 38759,
-						["n_min"] = 0,
+						["n_max"] = 2716,
 						["targets"] = {
 							["Deb"] = {
 								["o_amt"] = 14566,
@@ -7303,20 +7303,20 @@ SkadaCharDB = {
 								["amount"] = 727,
 							},
 						},
-						["n_amt"] = 25331,
+						["n_min"] = 0,
 					},
 					["48071.2"] = {
-						["n_max"] = 6665,
+						["n_amt"] = 6665,
 						["count"] = 1,
 						["amount"] = 6665,
 						["n_num"] = 1,
-						["n_min"] = 6665,
+						["n_max"] = 6665,
 						["targets"] = {
 							["Deb"] = {
 								["amount"] = 6665,
 							},
 						},
-						["n_amt"] = 6665,
+						["n_min"] = 6665,
 					},
 					["52985.2"] = {
 						["c_amt"] = 30192,
@@ -7503,12 +7503,12 @@ SkadaCharDB = {
 						["n_min"] = 0,
 					},
 					["-70809.8"] = {
-						["n_max"] = 836,
+						["n_amt"] = 1343,
 						["n_num"] = 9,
 						["count"] = 9,
 						["amount"] = 1343,
 						["o_amt"] = 3589,
-						["n_min"] = 507,
+						["n_max"] = 836,
 						["targets"] = {
 							["Deb"] = {
 								["o_amt"] = 1014,
@@ -7519,7 +7519,7 @@ SkadaCharDB = {
 								["amount"] = 836,
 							},
 						},
-						["n_amt"] = 1343,
+						["n_min"] = 507,
 					},
 				},
 				["auras"] = {
@@ -8142,17 +8142,17 @@ SkadaCharDB = {
 						["n_min"] = 1729,
 					},
 					["-53308.8"] = {
-						["n_max"] = 486,
+						["n_amt"] = 972,
 						["count"] = 2,
 						["amount"] = 972,
 						["n_num"] = 2,
-						["n_min"] = 486,
+						["n_max"] = 486,
 						["targets"] = {
 							["The Damned"] = {
 								["amount"] = 972,
 							},
 						},
-						["n_amt"] = 972,
+						["n_min"] = 486,
 					},
 					["48466.8"] = {
 						["c_amt"] = 158336,
@@ -8164,20 +8164,20 @@ SkadaCharDB = {
 								["amount"] = 282644,
 							},
 						},
+						["count"] = 171,
 						["mis_n"] = 3,
-						["c_min"] = 1837,
 						["amount"] = 282644,
 						["n_min"] = 1225,
 						["n_amt"] = 124308,
 						["n_num"] = 91,
-						["count"] = 171,
+						["c_min"] = 1837,
 					},
 					["-48463.64"] = {
-						["n_max"] = 1087,
+						["n_amt"] = 3060,
 						["count"] = 3,
 						["amount"] = 3060,
 						["n_num"] = 3,
-						["n_min"] = 886,
+						["n_max"] = 1087,
 						["targets"] = {
 							["Servant of the Throne"] = {
 								["amount"] = 2174,
@@ -8186,14 +8186,14 @@ SkadaCharDB = {
 								["amount"] = 886,
 							},
 						},
-						["n_amt"] = 3060,
+						["n_min"] = 886,
 					},
 					["-71023.8"] = {
-						["n_max"] = 858,
+						["n_amt"] = 1425,
 						["count"] = 3,
 						["amount"] = 1425,
 						["n_num"] = 3,
-						["n_min"] = 267,
+						["n_max"] = 858,
 						["targets"] = {
 							["Servant of the Throne"] = {
 								["amount"] = 858,
@@ -8202,7 +8202,7 @@ SkadaCharDB = {
 								["amount"] = 567,
 							},
 						},
-						["n_amt"] = 1425,
+						["n_min"] = 267,
 					},
 					["48461.8"] = {
 						["c_amt"] = 41438,
@@ -8302,11 +8302,11 @@ SkadaCharDB = {
 						["n_min"] = 2018,
 					},
 					["-48463.64"] = {
-						["n_max"] = 2057,
+						["n_amt"] = 22727,
 						["count"] = 15,
 						["amount"] = 22727,
 						["n_num"] = 15,
-						["n_min"] = 1239,
+						["n_max"] = 2057,
 						["targets"] = {
 							["Servant of the Throne"] = {
 								["amount"] = 7098,
@@ -8315,14 +8315,14 @@ SkadaCharDB = {
 								["amount"] = 15629,
 							},
 						},
-						["n_amt"] = 22727,
+						["n_min"] = 1239,
 					},
 					["-48468.8"] = {
-						["n_max"] = 2421,
+						["n_amt"] = 27684,
 						["count"] = 14,
 						["amount"] = 27684,
 						["n_num"] = 14,
-						["n_min"] = 1440,
+						["n_max"] = 2421,
 						["targets"] = {
 							["Servant of the Throne"] = {
 								["amount"] = 16669,
@@ -8331,7 +8331,7 @@ SkadaCharDB = {
 								["amount"] = 11015,
 							},
 						},
-						["n_amt"] = 27684,
+						["n_min"] = 1440,
 					},
 					["48461.8"] = {
 						["c_amt"] = 90936,
@@ -8347,11 +8347,11 @@ SkadaCharDB = {
 						["c_max"] = 25288,
 					},
 					["-71023.8"] = {
-						["n_max"] = 3242,
+						["n_amt"] = 9501,
 						["count"] = 4,
 						["amount"] = 9501,
 						["n_num"] = 4,
-						["n_min"] = 1010,
+						["n_max"] = 3242,
 						["targets"] = {
 							["Servant of the Throne"] = {
 								["amount"] = 7494,
@@ -8360,7 +8360,7 @@ SkadaCharDB = {
 								["amount"] = 2007,
 							},
 						},
-						["n_amt"] = 9501,
+						["n_min"] = 1010,
 					},
 				},
 				["last"] = 655242.8590000001,
@@ -8625,10 +8625,10 @@ SkadaCharDB = {
 						},
 						["count"] = 2,
 						["amount"] = 4102,
-						["n_min"] = 4102,
-						["abs_n"] = 1,
-						["n_num"] = 1,
 						["n_amt"] = 4102,
+						["n_min"] = 4102,
+						["n_num"] = 1,
+						["abs_n"] = 1,
 					},
 					["70961.1"] = {
 						["n_amt"] = 5243,
@@ -8834,11 +8834,11 @@ SkadaCharDB = {
 						["c_min"] = 6652,
 					},
 					["-49233.4"] = {
-						["n_max"] = 743,
+						["n_amt"] = 15147,
 						["count"] = 22,
 						["amount"] = 15147,
 						["n_num"] = 22,
-						["n_min"] = 609,
+						["n_max"] = 743,
 						["targets"] = {
 							["Servant of the Throne"] = {
 								["amount"] = 2229,
@@ -8847,7 +8847,7 @@ SkadaCharDB = {
 								["amount"] = 12918,
 							},
 						},
-						["n_amt"] = 15147,
+						["n_min"] = 609,
 					},
 					["60043.4"] = {
 						["c_amt"] = 48283,
@@ -9166,11 +9166,11 @@ SkadaCharDB = {
 				},
 				["damagespells"] = {
 					["-42891.4"] = {
-						["n_max"] = 381,
+						["n_amt"] = 1141,
 						["count"] = 3,
 						["amount"] = 1141,
 						["n_num"] = 3,
-						["n_min"] = 379,
+						["n_max"] = 381,
 						["targets"] = {
 							["Servant of the Throne"] = {
 								["amount"] = 762,
@@ -9179,7 +9179,7 @@ SkadaCharDB = {
 								["amount"] = 379,
 							},
 						},
-						["n_amt"] = 1141,
+						["n_min"] = 379,
 					},
 					["42917.16"] = {
 						["c_amt"] = 2940,
@@ -9199,11 +9199,11 @@ SkadaCharDB = {
 						["n_min"] = 1375,
 					},
 					["-12654.4"] = {
-						["n_max"] = 4603,
+						["n_amt"] = 18413,
 						["count"] = 12,
 						["amount"] = 18413,
 						["n_num"] = 12,
-						["n_min"] = 821,
+						["n_max"] = 4603,
 						["targets"] = {
 							["Servant of the Throne"] = {
 								["amount"] = 7107,
@@ -9212,14 +9212,14 @@ SkadaCharDB = {
 								["amount"] = 11306,
 							},
 						},
-						["n_amt"] = 18413,
+						["n_min"] = 821,
 					},
 					["-55360.4"] = {
-						["n_max"] = 1614,
+						["n_amt"] = 9192,
 						["count"] = 6,
 						["amount"] = 9192,
 						["n_num"] = 6,
-						["n_min"] = 1368,
+						["n_max"] = 1614,
 						["targets"] = {
 							["Servant of the Throne"] = {
 								["amount"] = 2736,
@@ -9228,7 +9228,7 @@ SkadaCharDB = {
 								["amount"] = 6456,
 							},
 						},
-						["n_amt"] = 9192,
+						["n_min"] = 1368,
 					},
 					["42891.4"] = {
 						["c_amt"] = 38072,
@@ -9810,28 +9810,28 @@ SkadaCharDB = {
 				},
 				["absorbspells"] = {
 					["47753.2"] = {
-						["n_max"] = 3015,
+						["n_amt"] = 8160,
 						["count"] = 4,
 						["amount"] = 8160,
 						["n_num"] = 4,
-						["n_min"] = 830,
+						["n_max"] = 3015,
 						["targets"] = {
 							["Deb"] = 6824,
 							["Wu"] = 1336,
 						},
-						["n_amt"] = 8160,
+						["n_min"] = 830,
 					},
 					["48066.2"] = {
-						["n_max"] = 2514,
+						["n_amt"] = 35314,
 						["count"] = 22,
 						["amount"] = 35314,
 						["n_num"] = 22,
-						["n_min"] = 102,
+						["n_max"] = 2514,
 						["targets"] = {
 							["Alyissia"] = 12154,
 							["Wu"] = 23160,
 						},
-						["n_amt"] = 35314,
+						["n_min"] = 102,
 					},
 				},
 				["role"] = "NONE",
@@ -9876,12 +9876,12 @@ SkadaCharDB = {
 						["n_min"] = 845,
 					},
 					["-48068.2"] = {
-						["n_max"] = 1547,
+						["n_amt"] = 1547,
 						["n_num"] = 11,
 						["count"] = 11,
 						["amount"] = 1547,
 						["o_amt"] = 26459,
-						["n_min"] = 0,
+						["n_max"] = 1547,
 						["targets"] = {
 							["Deb"] = {
 								["o_amt"] = 18983,
@@ -9892,7 +9892,7 @@ SkadaCharDB = {
 								["amount"] = 0,
 							},
 						},
-						["n_amt"] = 1547,
+						["n_min"] = 0,
 					},
 					["48071.2"] = {
 						["c_amt"] = 3696,
@@ -10188,15 +10188,15 @@ SkadaCharDB = {
 				},
 				["absorbspells"] = {
 					["70845.1"] = {
-						["n_max"] = 2514,
+						["n_amt"] = 4613,
 						["count"] = 3,
 						["amount"] = 4613,
 						["n_num"] = 3,
-						["n_min"] = 125,
+						["n_max"] = 2514,
 						["targets"] = {
 							["Alyissia"] = 4613,
 						},
-						["n_amt"] = 4613,
+						["n_min"] = 125,
 					},
 				},
 				["role"] = "NONE",
@@ -10269,12 +10269,12 @@ SkadaCharDB = {
 						["n_min"] = 0,
 					},
 					["-70809.8"] = {
-						["n_max"] = 0,
+						["n_amt"] = 0,
 						["n_num"] = 31,
 						["count"] = 31,
 						["amount"] = 0,
 						["o_amt"] = 11725,
-						["n_min"] = 0,
+						["n_max"] = 0,
 						["targets"] = {
 							["Bink"] = {
 								["o_amt"] = 388,
@@ -10301,22 +10301,22 @@ SkadaCharDB = {
 								["amount"] = 0,
 							},
 						},
-						["n_amt"] = 0,
+						["n_min"] = 0,
 					},
 					["49276.8"] = {
-						["n_max"] = 0,
+						["n_amt"] = 0,
 						["n_num"] = 1,
 						["count"] = 1,
 						["amount"] = 0,
 						["o_amt"] = 5558,
-						["n_min"] = 0,
+						["n_max"] = 0,
 						["targets"] = {
 							["Deb"] = {
 								["o_amt"] = 5558,
 								["amount"] = 0,
 							},
 						},
-						["n_amt"] = 0,
+						["n_min"] = 0,
 					},
 				},
 				["auras"] = {
@@ -10758,30 +10758,30 @@ SkadaCharDB = {
 						["c_max"] = 2635,
 					},
 					["-48463.64"] = {
-						["n_max"] = 768,
+						["n_amt"] = 3840,
 						["count"] = 5,
 						["amount"] = 3840,
 						["n_num"] = 5,
-						["n_min"] = 768,
+						["n_max"] = 768,
 						["targets"] = {
 							["The Damned"] = {
 								["amount"] = 3840,
 							},
 						},
-						["n_amt"] = 3840,
+						["n_min"] = 768,
 					},
 					["-71023.8"] = {
-						["n_max"] = 796,
+						["n_amt"] = 2233,
 						["count"] = 4,
 						["amount"] = 2233,
 						["n_num"] = 4,
-						["n_min"] = 223,
+						["n_max"] = 796,
 						["targets"] = {
 							["The Damned"] = {
 								["amount"] = 2233,
 							},
 						},
-						["n_amt"] = 2233,
+						["n_min"] = 223,
 					},
 					["48461.8"] = {
 						["c_amt"] = 27696,
@@ -10928,30 +10928,30 @@ SkadaCharDB = {
 						["n_min"] = 14982,
 					},
 					["-48463.64"] = {
-						["n_max"] = 1327,
+						["n_amt"] = 11031,
 						["count"] = 9,
 						["amount"] = 11031,
 						["n_num"] = 9,
-						["n_min"] = 1175,
+						["n_max"] = 1327,
 						["targets"] = {
 							["The Damned"] = {
 								["amount"] = 11031,
 							},
 						},
-						["n_amt"] = 11031,
+						["n_min"] = 1175,
 					},
 					["-48468.8"] = {
-						["n_max"] = 1534,
+						["n_amt"] = 18534,
 						["count"] = 13,
 						["amount"] = 18534,
 						["n_num"] = 13,
-						["n_min"] = 1358,
+						["n_max"] = 1534,
 						["targets"] = {
 							["The Damned"] = {
 								["amount"] = 18534,
 							},
 						},
-						["n_amt"] = 18534,
+						["n_min"] = 1358,
 					},
 					["48461.8"] = {
 						["c_amt"] = 120206,
@@ -10971,17 +10971,17 @@ SkadaCharDB = {
 						["n_min"] = 13334,
 					},
 					["-71023.8"] = {
-						["n_max"] = 857,
+						["n_amt"] = 857,
 						["count"] = 1,
 						["amount"] = 857,
 						["n_num"] = 1,
-						["n_min"] = 857,
+						["n_max"] = 857,
 						["targets"] = {
 							["The Damned"] = {
 								["amount"] = 857,
 							},
 						},
-						["n_amt"] = 857,
+						["n_min"] = 857,
 					},
 				},
 				["last"] = 655184.546,
@@ -11141,18 +11141,18 @@ SkadaCharDB = {
 						["c_max"] = 7398,
 						["c_num"] = 1,
 						["n_max"] = 4122,
-						["count"] = 7,
+						["mis_n"] = 2,
 						["sources"] = {
 							["The Damned"] = {
 								["amount"] = 22747,
 							},
 						},
-						["c_min"] = 7398,
+						["count"] = 7,
 						["amount"] = 22747,
 						["n_amt"] = 15349,
 						["n_min"] = 3195,
 						["n_num"] = 4,
-						["mis_n"] = 2,
+						["c_min"] = 7398,
 					},
 					["70961.1"] = {
 						["sources"] = {
@@ -11162,10 +11162,10 @@ SkadaCharDB = {
 						},
 						["count"] = 1,
 						["amount"] = 4526,
-						["n_max"] = 4526,
-						["n_min"] = 4526,
-						["n_num"] = 1,
 						["n_amt"] = 4526,
+						["n_max"] = 4526,
+						["n_num"] = 1,
+						["n_min"] = 4526,
 					},
 				},
 				["class"] = "DRUID",
@@ -11262,30 +11262,30 @@ SkadaCharDB = {
 				},
 				["damagespells"] = {
 					["49233.4"] = {
-						["n_max"] = 2765,
+						["n_amt"] = 2765,
 						["count"] = 1,
 						["amount"] = 2765,
 						["n_num"] = 1,
-						["n_min"] = 2765,
+						["n_max"] = 2765,
 						["targets"] = {
 							["The Damned"] = {
 								["amount"] = 2765,
 							},
 						},
-						["n_amt"] = 2765,
+						["n_min"] = 2765,
 					},
 					["-49233.4"] = {
-						["n_max"] = 571,
+						["n_amt"] = 3997,
 						["count"] = 7,
 						["amount"] = 3997,
 						["n_num"] = 7,
-						["n_min"] = 571,
+						["n_max"] = 571,
 						["targets"] = {
 							["The Damned"] = {
 								["amount"] = 3997,
 							},
 						},
-						["n_amt"] = 3997,
+						["n_min"] = 571,
 					},
 					["49238.8"] = {
 						["c_amt"] = 56976,
@@ -11375,17 +11375,17 @@ SkadaCharDB = {
 						["c_max"] = 7959,
 					},
 					["-42891.4"] = {
-						["n_max"] = 447,
+						["n_amt"] = 447,
 						["count"] = 1,
 						["amount"] = 447,
 						["n_num"] = 1,
-						["n_min"] = 447,
+						["n_max"] = 447,
 						["targets"] = {
 							["The Damned"] = {
 								["amount"] = 447,
 							},
 						},
-						["n_amt"] = 447,
+						["n_min"] = 447,
 					},
 					["47610.20"] = {
 						["c_amt"] = 30482,
@@ -11431,30 +11431,30 @@ SkadaCharDB = {
 						["c_max"] = 6706,
 					},
 					["-42926.4"] = {
-						["n_max"] = 955,
+						["n_amt"] = 6249,
 						["count"] = 7,
 						["amount"] = 6249,
 						["n_num"] = 7,
-						["n_min"] = 846,
+						["n_max"] = 955,
 						["targets"] = {
 							["The Damned"] = {
 								["amount"] = 6249,
 							},
 						},
-						["n_amt"] = 6249,
+						["n_min"] = 846,
 					},
 					["-55360.4"] = {
-						["n_max"] = 1136,
+						["n_amt"] = 4544,
 						["count"] = 4,
 						["amount"] = 4544,
 						["n_num"] = 4,
-						["n_min"] = 1136,
+						["n_max"] = 1136,
 						["targets"] = {
 							["The Damned"] = {
 								["amount"] = 4544,
 							},
 						},
-						["n_amt"] = 4544,
+						["n_min"] = 1136,
 					},
 					["55362.4"] = {
 						["c_amt"] = 12727,
@@ -11470,17 +11470,17 @@ SkadaCharDB = {
 						["c_max"] = 7024,
 					},
 					["-12654.4"] = {
-						["n_max"] = 2802,
+						["n_amt"] = 10204,
 						["count"] = 5,
 						["amount"] = 10204,
 						["n_num"] = 5,
-						["n_min"] = 1237,
+						["n_max"] = 2802,
 						["targets"] = {
 							["The Damned"] = {
 								["amount"] = 10204,
 							},
 						},
-						["n_amt"] = 10204,
+						["n_min"] = 1237,
 					},
 					["42891.4"] = {
 						["c_amt"] = 35555,
@@ -11522,17 +11522,17 @@ SkadaCharDB = {
 						["c_max"] = 7566,
 					},
 					["-47610.20"] = {
-						["n_max"] = 53,
+						["n_amt"] = 53,
 						["count"] = 1,
 						["amount"] = 53,
 						["n_num"] = 1,
-						["n_min"] = 53,
+						["n_max"] = 53,
 						["targets"] = {
 							["The Damned"] = {
 								["amount"] = 53,
 							},
 						},
-						["n_amt"] = 53,
+						["n_min"] = 53,
 					},
 				},
 				["last"] = 655185.687,
@@ -11770,15 +11770,15 @@ SkadaCharDB = {
 				},
 				["absorbspells"] = {
 					["70845.1"] = {
-						["n_max"] = 625,
+						["n_amt"] = 625,
 						["count"] = 1,
 						["amount"] = 625,
 						["n_num"] = 1,
-						["n_min"] = 625,
+						["n_max"] = 625,
 						["targets"] = {
 							["Wu"] = 625,
 						},
-						["n_amt"] = 625,
+						["n_min"] = 625,
 					},
 				},
 				["role"] = "NONE",
@@ -11977,27 +11977,27 @@ SkadaCharDB = {
 				["class"] = "PRIEST",
 				["healspells"] = {
 					["48063.2"] = {
-						["n_max"] = 4122,
+						["n_amt"] = 4122,
 						["n_num"] = 1,
 						["count"] = 1,
 						["amount"] = 4122,
 						["o_amt"] = 11211,
-						["n_min"] = 4122,
+						["n_max"] = 4122,
 						["targets"] = {
 							["Deb"] = {
 								["o_amt"] = 11211,
 								["amount"] = 4122,
 							},
 						},
-						["n_amt"] = 4122,
+						["n_min"] = 4122,
 					},
 					["71641.2"] = {
-						["n_max"] = 2546,
+						["n_amt"] = 4205,
 						["n_num"] = 5,
 						["count"] = 5,
 						["amount"] = 4205,
 						["o_amt"] = 40492,
-						["n_min"] = 814,
+						["n_max"] = 2546,
 						["targets"] = {
 							["Dink"] = {
 								["o_amt"] = 7780,
@@ -12008,7 +12008,7 @@ SkadaCharDB = {
 								["amount"] = 3391,
 							},
 						},
-						["n_amt"] = 4205,
+						["n_min"] = 814,
 					},
 					["56160.2"] = {
 						["c_amt"] = 0,
@@ -12034,34 +12034,34 @@ SkadaCharDB = {
 						["c_min"] = 0,
 					},
 					["-48068.2"] = {
-						["n_max"] = 0,
+						["n_amt"] = 0,
 						["n_num"] = 2,
 						["count"] = 2,
 						["amount"] = 0,
 						["o_amt"] = 5432,
-						["n_min"] = 0,
+						["n_max"] = 0,
 						["targets"] = {
 							["Deb"] = {
 								["o_amt"] = 5432,
 								["amount"] = 0,
 							},
 						},
-						["n_amt"] = 0,
+						["n_min"] = 0,
 					},
 					["52985.2"] = {
-						["n_max"] = 4722,
+						["n_amt"] = 8681,
 						["n_num"] = 3,
 						["count"] = 3,
 						["amount"] = 8681,
 						["o_amt"] = 5769,
-						["n_min"] = 3959,
+						["n_max"] = 4722,
 						["targets"] = {
 							["Deb"] = {
 								["o_amt"] = 5769,
 								["amount"] = 8681,
 							},
 						},
-						["n_amt"] = 8681,
+						["n_min"] = 3959,
 					},
 				},
 				["auras"] = {
@@ -12118,27 +12118,27 @@ SkadaCharDB = {
 				},
 				["absorbspells"] = {
 					["47753.2"] = {
-						["n_max"] = 1266,
+						["n_amt"] = 1266,
 						["count"] = 1,
 						["amount"] = 1266,
 						["n_num"] = 1,
-						["n_min"] = 1266,
+						["n_max"] = 1266,
 						["targets"] = {
 							["Wu"] = 1266,
 						},
-						["n_amt"] = 1266,
+						["n_min"] = 1266,
 					},
 					["48066.2"] = {
-						["n_max"] = 2514,
+						["n_amt"] = 14455,
 						["count"] = 8,
 						["amount"] = 14455,
 						["n_num"] = 8,
-						["n_min"] = 389,
+						["n_max"] = 2514,
 						["targets"] = {
 							["Alyissia"] = 9753,
 							["Wu"] = 4702,
 						},
-						["n_amt"] = 14455,
+						["n_min"] = 389,
 					},
 				},
 				["heal"] = 17008,

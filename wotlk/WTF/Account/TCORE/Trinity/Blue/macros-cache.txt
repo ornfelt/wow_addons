@@ -94,7 +94,7 @@ MACRO 16777227 "enchants" Spell_Arcane_Arcane01
 .additem 38953
 .additem 40125 6
 .additem 40132 2
-.additem 40153 11
+.additem 40153 14
 .additem 41285
 END
 MACRO 16777226 "glyphs" Spell_Nature_EarthShock

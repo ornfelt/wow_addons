@@ -1,4813 +1,2071 @@
 
 SkadaCharDB = {
 	{
-		["edamaged"] = 284552,
-		["totaldamaged"] = 4880,
-		["damaged"] = 3220,
-		["time"] = 596,
-		["etotaldamage"] = 5973,
-		["damage"] = 284552,
-		["rage"] = 89,
-		["absorb"] = 1660,
-		["overheal"] = 302305,
-		["type"] = "pvp",
-		["starttime"] = 1689788291,
-		["runic"] = 300,
-		["ccdone"] = 9,
-		["overkill"] = 54729,
+		["edamaged"] = 273439,
+		["eoverkill"] = 209,
+		["totaldamaged"] = 60303,
+		["damaged"] = 55049,
+		["dispel"] = 15,
+		["totaldamage"] = 299563,
+		["time"] = 40,
+		["cctaken"] = 3,
+		["death"] = 1,
+		["etotaldamage"] = 60303,
+		["damage"] = 273439,
+		["starttime"] = 1752935308,
+		["type"] = "arena",
 		["actors"] = {
-			["Sian'dur"] = {
-				["last"] = 46746.332,
-				["id"] = "0xF130011D30000123",
-				["class"] = "HUNTER",
-				["role"] = "DAMAGER",
-				["auras"] = {
-					["24529.8"] = {
-						["u"] = 596,
-						["n"] = 1,
-					},
-					["55775.1"] = {
-						["u"] = 15,
-						["n"] = 1,
-					},
-					["47436.1"] = {
-						["u"] = 596,
-						["n"] = 1,
-					},
-					["26297.1"] = {
-						["u"] = 9,
-						["n"] = 1,
-					},
-					["61847.8"] = {
-						["u"] = 558,
-						["n"] = 1,
-					},
-					["-57669.8"] = {
-						["u"] = 30,
-					},
-					["48169.32"] = {
-						["u"] = 596,
-						["n"] = 1,
-					},
-					["57475.8"] = {
-						["u"] = 596,
-						["n"] = 1,
-					},
-					["48073.2"] = {
-						["u"] = 596,
-						["n"] = 1,
-					},
-					["67699.64"] = {
-						["u"] = 15,
-						["n"] = 1,
-					},
-					["48161.2"] = {
-						["u"] = 596,
-						["n"] = 1,
-					},
-					["42995.64"] = {
-						["u"] = 596,
-						["n"] = 1,
-					},
-					["20217.2"] = {
-						["u"] = 596,
-						["n"] = 1,
-					},
-				},
-			},
-			["Zel'mak"] = {
-				["rage"] = 40,
-				["last"] = 46787.814,
-				["id"] = "0xF130011D21000114",
-				["class"] = "WARRIOR",
-				["auras"] = {
-					["57522.1"] = {
-						["u"] = 12,
-						["n"] = 1,
-					},
-					["48169.32"] = {
-						["u"] = 596,
-						["n"] = 1,
-					},
-					["47436.1"] = {
-						["u"] = 596,
-						["n"] = 1,
-					},
-					["48161.2"] = {
-						["u"] = 596,
-						["n"] = 1,
-					},
-					["29131.1"] = {
-						["u"] = 10,
-						["n"] = 1,
-					},
-					["26297.1"] = {
-						["u"] = 10,
-						["n"] = 1,
-					},
-					["70845.1"] = {
-						["u"] = 10,
-						["n"] = 1,
-					},
-					["20217.2"] = {
-						["u"] = 596,
-						["n"] = 1,
-					},
-				},
-				["role"] = "NONE",
-				["time"] = 7,
-				["damage"] = 9317,
-				["ragespells"] = {
-					["2687.1"] = 30,
-					["-29131.1"] = 10,
-				},
-				["damagespells"] = {
-					["6603.1"] = {
-						["c_amt"] = 3148,
-						["c_max"] = 3148,
-						["c_num"] = 1,
-						["n_max"] = 1539,
-						["targets"] = {
-							["Frostwolf"] = {
-								["amount"] = 4687,
-							},
-						},
-						["count"] = 2,
-						["amount"] = 4687,
-						["c_min"] = 3148,
-						["n_min"] = 1539,
-						["n_num"] = 1,
-						["n_amt"] = 1539,
-					},
-					["694.1"] = {
-						["c_amt"] = 4630,
-						["count"] = 1,
-						["amount"] = 4630,
-						["c_max"] = 4630,
-						["c_min"] = 4630,
-						["targets"] = {
-							["Frostwolf"] = {
-								["amount"] = 4630,
-							},
-						},
-						["c_num"] = 1,
-					},
-				},
-				["timespent"] = {
-					["Frostwolf"] = 7,
-				},
-			},
-			["Sark"] = {
-				["rage"] = 20,
-				["last"] = 46746.332,
-				["role"] = "NONE",
-				["id"] = "0xF130011D25000118",
-				["class"] = "WARRIOR",
-				["ragespells"] = {
-					["23691.1"] = 20,
-				},
-				["auras"] = {
-					["48169.32"] = {
-						["u"] = 596,
-						["n"] = 1,
-					},
-					["2457.1"] = {
-						["u"] = 596,
-						["n"] = 2,
-					},
-					["47436.1"] = {
-						["u"] = 596,
-						["n"] = 1,
-					},
-					["18499.1"] = {
-						["u"] = 10,
-						["n"] = 1,
-					},
-					["2458.1"] = {
-						["u"] = 27,
-						["n"] = 2,
-					},
-					["48161.2"] = {
-						["u"] = 596,
-						["n"] = 1,
-					},
-					["20217.2"] = {
-						["u"] = 596,
-						["n"] = 1,
-					},
-				},
-			},
-			["Torm"] = {
-				["overheal"] = 683,
-				["last"] = 46773.742,
-				["damage"] = 10226,
-				["id"] = "0xF130011D1800010B",
-				["class"] = "WARRIOR",
-				["healspells"] = {
-					["23880.1"] = {
-						["n_amt"] = 0,
-						["targets"] = {
-							["Torm"] = {
-								["o_amt"] = 683,
-								["amount"] = 0,
-							},
-						},
-						["count"] = 1,
-						["amount"] = 0,
-						["o_amt"] = 683,
-						["n_max"] = 0,
-						["n_num"] = 1,
-						["n_min"] = 0,
-					},
-				},
-				["auras"] = {
-					["23885.1"] = {
-						["u"] = 8,
-						["n"] = 1,
-					},
-					["48169.32"] = {
-						["u"] = 596,
-						["n"] = 1,
-					},
-					["2457.1"] = {
-						["u"] = 592,
-						["n"] = 1,
-					},
-					["47436.1"] = {
-						["u"] = 596,
-						["n"] = 1,
-					},
-					["2458.1"] = {
-						["u"] = 4,
-						["n"] = 1,
-					},
-					["12970.1"] = {
-						["u"] = 15,
-						["n"] = 1,
-					},
-					["48161.2"] = {
-						["u"] = 596,
-						["n"] = 1,
-					},
-					["20217.2"] = {
-						["u"] = 596,
-						["n"] = 1,
-					},
-				},
-				["overkill"] = 2524,
-				["heal"] = 0,
-				["time"] = 3.5,
-				["ragespells"] = {
-					["12964.1"] = 3,
-				},
-				["rage"] = 3,
-				["damagespells"] = {
-					["6603.1"] = {
-						["c_amt"] = 3702,
-						["c_max"] = 3702,
-						["c_num"] = 1,
-						["n_max"] = 1360,
-						["targets"] = {
-							["Frostwolf"] = {
-								["amount"] = 5062,
-							},
-						},
-						["c_min"] = 3702,
-						["amount"] = 5062,
-						["n_amt"] = 1360,
-						["n_min"] = 1360,
-						["n_num"] = 1,
-						["count"] = 2,
-					},
-					["23881.1"] = {
-						["c_amt"] = 5164,
-						["count"] = 1,
-						["c_max"] = 5164,
-						["c_num"] = 1,
-						["o_amt"] = 2524,
-						["c_min"] = 5164,
-						["targets"] = {
-							["Frostwolf"] = {
-								["o_amt"] = 2524,
-								["amount"] = 5164,
-							},
-						},
-						["amount"] = 5164,
-					},
-				},
-				["role"] = "NONE",
-				["timespent"] = {
-					["Frostwolf"] = 3.5,
-				},
-			},
-			["Whitewhisker Vermin"] = {
-				["damagespells"] = {
-					["6603.1"] = {
-						["total"] = 139,
-						["targets"] = {
-							["Celoenus"] = {
-								["total"] = 139,
-								["amount"] = 112,
-							},
-						},
-						["amount"] = 112,
-					},
-					["25228.32"] = {
-						["targets"] = {
-							["Voidwalker <Celoenus>"] = {
-								["amount"] = 27,
-							},
-						},
-						["amount"] = 27,
-					},
-				},
-				["totaldamage"] = 166,
-				["enemy"] = true,
-				["id"] = "0xF130002AE600019F",
-				["damagedspells"] = {
-					["49909.16"] = {
-						["o_amt"] = 1130,
-						["sources"] = {
-							["Zor'be"] = {
-								["o_amt"] = 1130,
-								["amount"] = 2095,
-							},
-						},
-						["amount"] = 2095,
-					},
-					["51460.32"] = {
-						["sources"] = {
-							["Zor'be"] = {
-								["amount"] = 580,
-							},
-						},
-						["amount"] = 580,
-					},
-					["6603.1"] = {
-						["sources"] = {
-							["Celoenus"] = {
-								["amount"] = 334,
-							},
-							["Zor'be"] = {
-								["amount"] = 2900,
-							},
-						},
-						["amount"] = 3234,
-					},
-					["50526.32"] = {
-						["sources"] = {
-							["Zor'be"] = {
-								["amount"] = 498,
-							},
-						},
-						["amount"] = 498,
-					},
-					["50463.1"] = {
-						["sources"] = {
-							["Zor'be"] = {
-								["amount"] = 352,
-							},
-						},
-						["amount"] = 352,
-					},
-					["59172.4"] = {
-						["o_amt"] = 4391,
-						["sources"] = {
-							["Celoenus"] = {
-								["o_amt"] = 4391,
-								["amount"] = 8854,
-							},
-						},
-						["amount"] = 8854,
-					},
-				},
-				["class"] = "MONSTER",
-				["damaged"] = 15613,
-				["damage"] = 139,
-			},
-			["Gregory"] = {
-				["role"] = "DAMAGER",
-				["id"] = "0xF130011D2E000121",
-				["class"] = "ROGUE",
-				["last"] = 46746.332,
-				["auras"] = {
-					["20217.2"] = {
-						["u"] = 596,
-						["n"] = 1,
-					},
-					["48169.32"] = {
-						["u"] = 596,
-						["n"] = 1,
-					},
-					["48161.2"] = {
-						["u"] = 596,
-						["n"] = 1,
-					},
-					["47436.1"] = {
-						["u"] = 596,
-						["n"] = 1,
-					},
-				},
-			},
-			["Maximillion"] = {
-				["overheal"] = 10095,
-				["last"] = 46746.332,
-				["role"] = "DAMAGER",
-				["heal"] = 0,
-				["id"] = "0xF130011D26000119",
-				["class"] = "WARLOCK",
-				["healspells"] = {
-					["-47893.32"] = {
-						["c_amt"] = 0,
-						["c_max"] = 0,
-						["c_num"] = 6,
-						["n_max"] = 0,
-						["targets"] = {
-							["Maximillion"] = {
-								["o_amt"] = 10095,
-								["amount"] = 0,
-							},
-						},
-						["n_amt"] = 0,
-						["count"] = 15,
-						["amount"] = 0,
-						["o_amt"] = 10095,
-						["n_min"] = 0,
-						["n_num"] = 9,
-						["c_min"] = 0,
-					},
-				},
-				["auras"] = {
-					["-57669.8"] = {
-						["u"] = 30,
-					},
-					["47436.1"] = {
-						["u"] = 596,
-						["n"] = 1,
-					},
-					["47893.32"] = {
-						["u"] = 596,
-						["n"] = 1,
-					},
-					["132.32"] = {
-						["u"] = 596,
-						["n"] = 1,
-					},
-					["48169.32"] = {
-						["u"] = 596,
-						["n"] = 1,
-					},
-					["25228.32"] = {
-						["u"] = 586,
-						["n"] = 1,
-					},
-					["48073.2"] = {
-						["u"] = 596,
-						["n"] = 1,
-					},
-					["48161.2"] = {
-						["u"] = 596,
-						["n"] = 1,
-					},
-					["23161.1"] = {
-						["u"] = 596,
-						["n"] = 2,
-					},
-					["42995.64"] = {
-						["u"] = 596,
-						["n"] = 1,
-					},
-					["20217.2"] = {
-						["u"] = 596,
-						["n"] = 1,
-					},
-				},
-			},
-			["Zor'be"] = {
+			["Duesten"] = {
 				["ccdonespells"] = {
-					["-45524.16"] = {
+					["-15487.32"] = {
 						["t"] = {
-							["Whitewhisker Digger"] = 4,
-							["Taskmaster Snivvle"] = 1,
-							["Whitewhisker Overseer"] = 1,
+							["Theodrus"] = 1,
 						},
-						["n"] = 6,
-					},
-				},
-				["last"] = 46839.92,
-				["damagedspells"] = {
-					["6603.1"] = {
-						["n_max"] = 108,
-						["dod_n"] = 1,
-						["par_n"] = 11,
-						["sources"] = {
-							["Frostwolf"] = {
-								["amount"] = 82,
-							},
-							["Whitewhisker Overseer"] = {
-								["amount"] = 79,
-							},
-							["Whitewhisker Geomancer"] = {
-								["amount"] = 0,
-							},
-							["Taskmaster Snivvle"] = {
-								["amount"] = 108,
-							},
-							["Whitewhisker Vermin"] = {
-								["amount"] = 0,
-							},
-							["Whitewhisker Digger"] = {
-								["amount"] = 0,
-							},
-						},
-						["count"] = 16,
-						["amount"] = 269,
-						["n_amt"] = 269,
-						["n_min"] = 79,
-						["n_num"] = 3,
-						["mis_n"] = 1,
-					},
-				},
-				["class"] = "DEATHKNIGHT",
-				["damaged"] = 269,
-				["auras"] = {
-					["-51735.32"] = {
-						["u"] = 670,
-						["t"] = {
-							["Frostwolf"] = {
-								["u"] = 6,
-								["n"] = 2,
-							},
-							["Whitewhisker Overseer"] = {
-								["u"] = 9,
-								["n"] = 2,
-							},
-							["Whitewhisker Geomancer"] = {
-								["u"] = 1,
-								["n"] = 1,
-							},
-							["Taskmaster Snivvle"] = {
-								["u"] = 4,
-								["r"] = 1,
-								["n"] = 1,
-							},
-							["Whitewhisker Digger"] = {
-								["u"] = 64,
-								["n"] = 5,
-							},
-						},
-						["r"] = 1,
-						["n"] = 11,
-					},
-					["22751.2"] = {
-						["u"] = 501,
-						["n"] = 1,
-					},
-					["26297.1"] = {
-						["u"] = 7,
-						["n"] = 1,
-					},
-					["45529.1"] = {
-						["u"] = 100,
-						["n"] = 2,
-					},
-					["48778.32"] = {
-						["u"] = 596,
-						["n"] = 5,
-					},
-					["64713.1"] = {
-						["u"] = 10,
-						["n"] = 1,
-					},
-					["70654.32"] = {
-						["u"] = 80,
-						["n"] = 2,
-					},
-					["-55095.16"] = {
-						["u"] = 670,
-						["t"] = {
-							["Frostwolf"] = {
-								["u"] = 6,
-								["n"] = 2,
-							},
-							["Whitewhisker Overseer"] = {
-								["u"] = 9,
-								["n"] = 2,
-							},
-							["Whitewhisker Geomancer"] = {
-								["u"] = 1,
-								["n"] = 1,
-							},
-							["Taskmaster Snivvle"] = {
-								["u"] = 4,
-								["r"] = 1,
-								["n"] = 1,
-							},
-							["Whitewhisker Digger"] = {
-								["u"] = 64,
-								["n"] = 5,
-							},
-						},
-						["r"] = 1,
-						["n"] = 11,
-					},
-					["55915.64"] = {
-						["u"] = 15,
-						["n"] = 1,
-					},
-					["48161.2"] = {
-						["u"] = 596,
-						["n"] = 1,
-					},
-					["50421.1"] = {
-						["u"] = 61,
-						["r"] = 2,
-						["n"] = 2,
-					},
-					["49222.8"] = {
-						["u"] = 596,
-						["n"] = 1,
-					},
-					["-68766.32"] = {
-						["u"] = 2,
-						["t"] = {
-							["Whitewhisker Digger"] = {
-								["u"] = 2,
-								["n"] = 1,
-							},
-							["Whitewhisker Overseer"] = {
-								["u"] = 2,
-								["n"] = 1,
-							},
-						},
-						["n"] = 2,
-					},
-					["48169.32"] = {
-						["u"] = 596,
-						["n"] = 1,
-					},
-					["58578.1"] = {
-						["u"] = 137,
-						["r"] = 11,
-						["n"] = 2,
-					},
-					["48073.2"] = {
-						["u"] = 596,
-						["n"] = 1,
-					},
-					["-45524.16"] = {
-						["u"] = 96,
-						["t"] = {
-							["Whitewhisker Digger"] = {
-								["u"] = 50,
-								["n"] = 4,
-							},
-							["Taskmaster Snivvle"] = {
-								["u"] = 2,
-								["n"] = 1,
-							},
-							["Whitewhisker Overseer"] = {
-								["u"] = 2,
-								["n"] = 1,
-							},
-						},
-						["n"] = 6,
-					},
-					["47436.1"] = {
-						["u"] = 596,
-						["n"] = 1,
-					},
-					["42995.64"] = {
-						["u"] = 596,
-						["n"] = 1,
-					},
-					["20217.2"] = {
-						["u"] = 596,
 						["n"] = 1,
 					},
 				},
-				["role"] = "NONE",
-				["time"] = 46.15999999999999,
-				["damage"] = 94723,
-				["damagespells"] = {
-					["51460.32"] = {
-						["n_amt"] = 3794,
-						["count"] = 9,
-						["amount"] = 3794,
-						["targets"] = {
-							["Frostwolf"] = {
-								["amount"] = 289,
-							},
-							["Whitewhisker Digger"] = {
-								["amount"] = 838,
-							},
-							["Taskmaster Snivvle"] = {
-								["amount"] = 486,
-							},
-							["Whitewhisker Vermin"] = {
-								["amount"] = 580,
-							},
-							["Whitewhisker Overseer"] = {
-								["amount"] = 1601,
-							},
-						},
-						["n_max"] = 580,
-						["n_num"] = 9,
-						["n_min"] = 263,
-					},
-					["56815.1"] = {
-						["c_amt"] = 27066,
-						["count"] = 6,
-						["c_max"] = 4798,
-						["c_num"] = 6,
-						["o_amt"] = 10735,
-						["c_min"] = 4198,
-						["targets"] = {
-							["Whitewhisker Digger"] = {
-								["o_amt"] = 10735,
-								["amount"] = 27066,
-							},
-						},
-						["amount"] = 27066,
-					},
-					["47632.32"] = {
-						["c_amt"] = 11571,
-						["c_max"] = 4107,
-						["c_num"] = 3,
-						["n_max"] = 2211,
-						["targets"] = {
-							["Whitewhisker Overseer"] = {
-								["o_amt"] = 1987,
-								["amount"] = 5943,
-							},
-							["Taskmaster Snivvle"] = {
-								["o_amt"] = 1769,
-								["amount"] = 4107,
-							},
-							["Whitewhisker Digger"] = {
-								["o_amt"] = 490,
-								["amount"] = 3732,
-							},
-						},
-						["count"] = 4,
-						["c_min"] = 3732,
-						["amount"] = 13782,
-						["o_amt"] = 4246,
-						["n_min"] = 2211,
-						["n_num"] = 1,
-						["n_amt"] = 2211,
-					},
-					["50526.32"] = {
-						["n_amt"] = 1558,
-						["count"] = 3,
-						["amount"] = 1558,
-						["targets"] = {
-							["Taskmaster Snivvle"] = {
-								["amount"] = 562,
-							},
-							["Whitewhisker Geomancer"] = {
-								["amount"] = 498,
-							},
-							["Whitewhisker Vermin"] = {
-								["amount"] = 498,
-							},
-						},
-						["n_max"] = 562,
-						["n_num"] = 3,
-						["n_min"] = 498,
-					},
-					["6603.1.Risen Ghoul"] = {
-						["c_amt"] = 734,
-						["c_max"] = 734,
-						["c_num"] = 1,
-						["n_max"] = 359,
-						["targets"] = {
-							["Whitewhisker Overseer"] = {
-								["amount"] = 688,
-							},
-							["Whitewhisker Geomancer"] = {
-								["o_amt"] = 209,
-								["amount"] = 359,
-							},
-							["Whitewhisker Digger"] = {
-								["amount"] = 1438,
-							},
-						},
-						["count"] = 6,
-						["c_min"] = 734,
-						["amount"] = 2485,
-						["o_amt"] = 209,
-						["n_min"] = 334,
-						["n_num"] = 5,
-						["n_amt"] = 1751,
-					},
-					["58621.16"] = {
-						["n_amt"] = 3872,
-						["count"] = 6,
-						["amount"] = 3872,
-						["targets"] = {
-							["Whitewhisker Digger"] = {
-								["amount"] = 2524,
-							},
-							["Taskmaster Snivvle"] = {
-								["amount"] = 711,
-							},
-							["Whitewhisker Overseer"] = {
-								["amount"] = 637,
-							},
-						},
-						["n_max"] = 711,
-						["n_num"] = 6,
-						["n_min"] = 629,
-					},
-					["49909.16"] = {
-						["c_amt"] = 12677,
-						["c_max"] = 2182,
-						["c_num"] = 6,
-						["n_max"] = 1095,
-						["targets"] = {
-							["Frostwolf"] = {
-								["amount"] = 4343,
-							},
-							["Whitewhisker Overseer"] = {
-								["amount"] = 1095,
-							},
-							["Whitewhisker Geomancer"] = {
-								["amount"] = 2080,
-							},
-							["Taskmaster Snivvle"] = {
-								["amount"] = 2092,
-							},
-							["Whitewhisker Vermin"] = {
-								["o_amt"] = 1130,
-								["amount"] = 2095,
-							},
-							["Whitewhisker Digger"] = {
-								["amount"] = 2067,
-							},
-						},
-						["n_amt"] = 1095,
-						["count"] = 7,
-						["amount"] = 13772,
-						["o_amt"] = 1130,
-						["n_min"] = 1095,
-						["n_num"] = 1,
-						["c_min"] = 2067,
-					},
-					["50463.1"] = {
-						["n_amt"] = 1032,
-						["count"] = 2,
-						["amount"] = 1032,
-						["targets"] = {
-							["Whitewhisker Digger"] = {
-								["amount"] = 680,
-							},
-							["Whitewhisker Vermin"] = {
-								["amount"] = 352,
-							},
-						},
-						["n_max"] = 680,
-						["n_num"] = 2,
-						["n_min"] = 352,
-					},
-					["6603.1"] = {
-						["c_amt"] = 13342,
-						["c_max"] = 2900,
-						["c_num"] = 5,
-						["n_max"] = 1494,
-						["targets"] = {
-							["Frostwolf"] = {
-								["amount"] = 1445,
-							},
-							["Whitewhisker Digger"] = {
-								["amount"] = 4202,
-							},
-							["Taskmaster Snivvle"] = {
-								["amount"] = 2430,
-							},
-							["Whitewhisker Vermin"] = {
-								["amount"] = 2900,
-							},
-							["Whitewhisker Overseer"] = {
-								["amount"] = 8012,
-							},
-						},
-						["count"] = 9,
-						["amount"] = 18989,
-						["c_min"] = 2430,
-						["n_min"] = 1319,
-						["n_num"] = 4,
-						["n_amt"] = 5647,
-					},
-					["47468.1.Risen Ghoul"] = {
-						["c_amt"] = 1032,
-						["c_max"] = 1032,
-						["c_num"] = 1,
-						["n_max"] = 548,
-						["targets"] = {
-							["Whitewhisker Digger"] = {
-								["amount"] = 1084,
-							},
-							["Whitewhisker Overseer"] = {
-								["amount"] = 1032,
-							},
-						},
-						["c_min"] = 1032,
-						["amount"] = 2116,
-						["n_amt"] = 1084,
-						["n_min"] = 536,
-						["n_num"] = 2,
-						["count"] = 3,
-					},
-					["49921.1"] = {
-						["c_amt"] = 5812,
-						["c_max"] = 3006,
-						["c_num"] = 2,
-						["dod_n"] = 1,
-						["targets"] = {
-							["Whitewhisker Overseer"] = {
-								["o_amt"] = 1591,
-								["amount"] = 3006,
-							},
-							["Whitewhisker Digger"] = {
-								["o_amt"] = 2780,
-								["amount"] = 2806,
-							},
-						},
-						["c_min"] = 2806,
-						["amount"] = 5812,
-						["o_amt"] = 4371,
-						["count"] = 3,
-					},
-					["-55095.16"] = {
-						["n_amt"] = 445,
-						["count"] = 1,
-						["amount"] = 445,
-						["targets"] = {
-							["Taskmaster Snivvle"] = {
-								["amount"] = 445,
-							},
-						},
-						["n_max"] = 445,
-						["n_num"] = 1,
-						["n_min"] = 445,
-					},
-				},
-				["id"] = "0xF130011D1B00010E",
-				["healspells"] = {
-					["-63560.8.Risen Ghoul"] = {
-						["n_amt"] = 0,
-						["targets"] = {
-							["Risen Ghoul <Zor'be>"] = {
-								["o_amt"] = 13740,
-								["amount"] = 0,
-							},
-						},
-						["count"] = 10,
-						["amount"] = 0,
-						["o_amt"] = 13740,
-						["n_max"] = 0,
-						["n_num"] = 10,
-						["n_min"] = 0,
-					},
-				},
-				["overkill"] = 20691,
-				["heal"] = 0,
-				["overheal"] = 13740,
-				["petdamage"] = 4601,
-				["ccdone"] = 6,
-				["runic"] = 300,
-				["runicspells"] = {
-					["50422.1"] = 40,
-					["50163.1"] = 240,
-					["45529.1"] = 20,
-				},
-				["timespent"] = {
-					["Frostwolf"] = 3.5,
-					["Whitewhisker Digger"] = 19.82,
-					["Whitewhisker Geomancer"] = 0.87,
-					["Taskmaster Snivvle"] = 7.51,
-					["Whitewhisker Vermin"] = 3.5,
-					["Whitewhisker Overseer"] = 10.96,
-				},
-			},
-			["Zandine"] = {
-				["damagespells"] = {
-					["75.1"] = {
-						["c_amt"] = 5400,
-						["count"] = 2,
-						["amount"] = 5400,
-						["c_max"] = 2830,
-						["c_min"] = 2570,
-						["targets"] = {
-							["Frostwolf"] = {
-								["amount"] = 5400,
-							},
-						},
-						["c_num"] = 2,
-					},
-					["49045.64"] = {
-						["c_amt"] = 3518,
-						["count"] = 1,
-						["amount"] = 3518,
-						["c_max"] = 3518,
-						["c_min"] = 3518,
-						["targets"] = {
-							["Frostwolf"] = {
-								["amount"] = 3518,
-							},
-						},
-						["c_num"] = 1,
-					},
-				},
-				["last"] = 46783.401,
-				["id"] = "0xF130011D2900011C",
-				["class"] = "HUNTER",
-				["auras"] = {
-					["-57669.8"] = {
-						["u"] = 30,
-					},
-					["47436.1"] = {
-						["u"] = 596,
-						["n"] = 1,
-					},
-					["-53338.64"] = {
-						["u"] = 8,
-						["t"] = {
-							["Frostwolf"] = {
-								["u"] = 8,
-								["n"] = 2,
-							},
-						},
-						["n"] = 2,
-					},
-					["61847.8"] = {
-						["u"] = 561,
-						["n"] = 1,
-					},
-					["48169.32"] = {
-						["u"] = 596,
-						["n"] = 1,
-					},
-					["48073.2"] = {
-						["u"] = 596,
-						["n"] = 1,
-					},
-					["60517.1"] = {
-						["u"] = 20,
-						["n"] = 1,
-					},
-					["48161.2"] = {
-						["u"] = 596,
-						["n"] = 1,
-					},
-					["42995.64"] = {
-						["u"] = 596,
-						["n"] = 1,
-					},
-					["20217.2"] = {
-						["u"] = 596,
-						["n"] = 1,
-					},
-				},
-				["role"] = "DAMAGER",
-				["time"] = 4.72,
-				["damage"] = 8918,
-				["timespent"] = {
-					["Frostwolf"] = 4.72,
-				},
-			},
-			["Frostwolf"] = {
-				["damagespells"] = {
-					["6603.1"] = {
-						["targets"] = {
-							["Osselan"] = {
-								["amount"] = 282,
-							},
-							["Zor'be"] = {
-								["amount"] = 82,
-							},
-						},
-						["amount"] = 364,
-					},
-				},
-				["enemy"] = true,
-				["damagedspells"] = {
-					["48664.1"] = {
-						["sources"] = {
-							["Nerisen"] = {
-								["amount"] = 1956,
-							},
-						},
-						["amount"] = 1956,
-					},
-					["20467.2"] = {
-						["sources"] = {
-							["Osselan"] = {
-								["amount"] = 4476,
-							},
-						},
-						["amount"] = 4476,
-					},
-					["47498.1"] = {
-						["o_amt"] = 2632,
-						["sources"] = {
-							["Chris"] = {
-								["o_amt"] = 2632,
-								["amount"] = 3758,
-							},
-						},
-						["amount"] = 3758,
-					},
-					["48127.32"] = {
-						["sources"] = {
-							["Ur'kyo"] = {
-								["amount"] = 9491,
-							},
-							["Belestra"] = {
-								["amount"] = 2280,
-							},
-							["Tai'jin"] = {
-								["amount"] = 8804,
-							},
-						},
-						["amount"] = 20575,
-					},
-					["6603.1"] = {
-						["o_amt"] = 1033,
-						["sources"] = {
-							["Krang"] = {
-								["o_amt"] = 1033,
-								["amount"] = 3418,
-							},
-							["Nerisen"] = {
-								["amount"] = 1481,
-							},
-							["Chris"] = {
-								["amount"] = 2456,
-							},
-							["Zel'mak"] = {
-								["amount"] = 4687,
-							},
-							["Zor'be"] = {
-								["amount"] = 1445,
-							},
-							["Osselan"] = {
-								["amount"] = 1734,
-							},
-							["Torm"] = {
-								["amount"] = 5062,
-							},
-						},
-						["amount"] = 20283,
-					},
-					["75.1"] = {
-						["sources"] = {
-							["Zandine"] = {
-								["amount"] = 5400,
-							},
-						},
-						["amount"] = 5400,
-					},
-					["49045.64"] = {
-						["sources"] = {
-							["Zandine"] = {
-								["amount"] = 3518,
-							},
-						},
-						["amount"] = 3518,
-					},
-					["5019.1"] = {
-						["sources"] = {
-							["Belestra"] = {
-								["amount"] = 691,
-							},
-						},
-						["amount"] = 691,
-					},
-					["-48135.2"] = {
-						["sources"] = {
-							["Belestra"] = {
-								["amount"] = 262,
-							},
-						},
-						["amount"] = 262,
-					},
-					["694.1"] = {
-						["sources"] = {
-							["Zel'mak"] = {
-								["amount"] = 4630,
-							},
-						},
-						["amount"] = 4630,
-					},
-					["49909.16"] = {
-						["sources"] = {
-							["Zor'be"] = {
-								["amount"] = 4343,
-							},
-						},
-						["amount"] = 4343,
-					},
-					["47610.20"] = {
-						["o_amt"] = 2536,
-						["sources"] = {
-							["Shymm"] = {
-								["o_amt"] = 2536,
-								["amount"] = 6879,
-							},
-						},
-						["amount"] = 6879,
-					},
-					["48801.2"] = {
-						["sources"] = {
-							["Osselan"] = {
-								["amount"] = 2989,
-							},
-						},
-						["amount"] = 2989,
-					},
-					["48158.32"] = {
-						["o_amt"] = 3006,
-						["sources"] = {
-							["Ponaris"] = {
-								["o_amt"] = 2886,
-								["amount"] = 4923,
-							},
-							["Aldrae"] = {
-								["o_amt"] = 120,
-								["amount"] = 2544,
-							},
-						},
-						["amount"] = 7467,
-					},
-					["51460.32"] = {
-						["sources"] = {
-							["Zor'be"] = {
-								["amount"] = 289,
-							},
-						},
-						["amount"] = 289,
-					},
-					["58381.32"] = {
-						["sources"] = {
-							["Ur'kyo"] = {
-								["amount"] = 1555,
-							},
-						},
-						["amount"] = 1555,
-					},
-					["48135.2"] = {
-						["sources"] = {
-							["Belestra"] = {
-								["amount"] = 2520,
-							},
-						},
-						["amount"] = 2520,
-					},
-					["20424.2"] = {
-						["sources"] = {
-							["Osselan"] = {
-								["amount"] = 890,
-							},
-						},
-						["amount"] = 890,
-					},
-					["57965.8"] = {
-						["sources"] = {
-							["Nerisen"] = {
-								["amount"] = 751,
-							},
-						},
-						["amount"] = 751,
-					},
-					["48665.1"] = {
-						["sources"] = {
-							["Nerisen"] = {
-								["amount"] = 1840,
-							},
-						},
-						["amount"] = 1840,
-					},
-					["42859.4"] = {
-						["sources"] = {
-							["Shymm"] = {
-								["amount"] = 1541,
-							},
-							["Un'Thuwa"] = {
-								["amount"] = 5738,
-							},
-						},
-						["amount"] = 7279,
-					},
-					["42873.4"] = {
-						["sources"] = {
-							["Shymm"] = {
-								["amount"] = 2147,
-							},
-						},
-						["amount"] = 2147,
-					},
-					["23881.1"] = {
-						["o_amt"] = 2524,
-						["sources"] = {
-							["Torm"] = {
-								["o_amt"] = 2524,
-								["amount"] = 5164,
-							},
-						},
-						["amount"] = 5164,
-					},
-				},
-				["id"] = "0xF130002AE5000058",
-				["class"] = "NEUTRAL",
-				["damaged"] = 109662,
-				["damage"] = 364,
-			},
-			["Aldrae"] = {
-				["damagespells"] = {
-					["48158.32"] = {
-						["n_amt"] = 2544,
-						["targets"] = {
-							["Frostwolf"] = {
-								["o_amt"] = 120,
-								["amount"] = 2544,
-							},
-						},
-						["count"] = 1,
-						["amount"] = 2544,
-						["o_amt"] = 120,
-						["n_max"] = 2544,
-						["n_num"] = 1,
-						["n_min"] = 2544,
-					},
-				},
-				["last"] = 46747.464,
-				["id"] = "0xF130011D23000116",
-				["class"] = "PRIEST",
-				["overkill"] = 120,
-				["role"] = "NONE",
-				["time"] = 1.13,
-				["damage"] = 2544,
-				["auras"] = {
-					["-57669.8"] = {
-						["u"] = 45,
-					},
-					["48168.2"] = {
-						["u"] = 596,
-						["n"] = 1,
-					},
-					["47436.1"] = {
-						["u"] = 596,
-						["n"] = 1,
-					},
-					["6346.2"] = {
-						["u"] = 596,
-						["n"] = 1,
-					},
-					["48169.32"] = {
-						["u"] = 596,
-						["n"] = 1,
-					},
-					["48073.2"] = {
-						["u"] = 596,
-						["n"] = 1,
-					},
-					["48161.2"] = {
-						["u"] = 596,
-						["n"] = 1,
-					},
-					["42995.64"] = {
-						["u"] = 596,
-						["n"] = 1,
-					},
-					["20217.2"] = {
-						["u"] = 596,
-						["n"] = 1,
-					},
-				},
-				["timespent"] = {
-					["Frostwolf"] = 1.13,
-				},
-			},
-			["Whitewhisker Geomancer"] = {
-				["damagespells"] = {
-					["6603.1"] = {
-						["total"] = 505,
-						["targets"] = {
-							["Celoenus"] = {
-								["total"] = 505,
-								["amount"] = 292,
-							},
-						},
-						["amount"] = 292,
-					},
-					["25228.32"] = {
-						["targets"] = {
-							["Voidwalker <Celoenus>"] = {
-								["amount"] = 72,
-							},
-						},
-						["amount"] = 72,
-					},
-				},
-				["totaldamage"] = 577,
-				["enemy"] = true,
-				["id"] = "0xF130002D540001F6",
-				["damagedspells"] = {
-					["47811.4"] = {
-						["o_amt"] = 244,
-						["sources"] = {
-							["Celoenus"] = {
-								["o_amt"] = 244,
-								["amount"] = 3586,
-							},
-						},
-						["amount"] = 3586,
-					},
-					["49909.16"] = {
-						["sources"] = {
-							["Zor'be"] = {
-								["amount"] = 2080,
-							},
-						},
-						["amount"] = 2080,
-					},
-					["6603.1"] = {
-						["o_amt"] = 209,
-						["sources"] = {
-							["Celoenus"] = {
-								["amount"] = 1226,
-							},
-							["Zor'be"] = {
-								["o_amt"] = 209,
-								["amount"] = 359,
-							},
-						},
-						["amount"] = 1585,
-					},
-					["47818.4"] = {
-						["o_amt"] = 44,
-						["sources"] = {
-							["Celoenus"] = {
-								["o_amt"] = 44,
-								["amount"] = 1910,
-							},
-						},
-						["amount"] = 1910,
-					},
-					["47847.32"] = {
-						["sources"] = {
-							["Celoenus"] = {
-								["amount"] = 3174,
-							},
-						},
-						["amount"] = 3174,
-					},
-					["50526.32"] = {
-						["sources"] = {
-							["Zor'be"] = {
-								["amount"] = 498,
-							},
-						},
-						["amount"] = 498,
-					},
-				},
-				["class"] = "MONSTER",
-				["damaged"] = 12833,
-				["damage"] = 364,
-			},
-			["Chris"] = {
-				["damagespells"] = {
-					["6603.1"] = {
-						["c_amt"] = 2456,
-						["count"] = 1,
-						["amount"] = 2456,
-						["c_max"] = 2456,
-						["c_min"] = 2456,
-						["targets"] = {
-							["Frostwolf"] = {
-								["amount"] = 2456,
-							},
-						},
-						["c_num"] = 1,
-					},
-					["47498.1"] = {
-						["c_amt"] = 3758,
-						["count"] = 1,
-						["c_max"] = 3758,
-						["c_num"] = 1,
-						["o_amt"] = 2632,
-						["c_min"] = 3758,
-						["targets"] = {
-							["Frostwolf"] = {
-								["o_amt"] = 2632,
-								["amount"] = 3758,
-							},
-						},
-						["amount"] = 3758,
-					},
-				},
-				["last"] = 46751.405,
-				["id"] = "0xF130011D1D000110",
-				["class"] = "WARRIOR",
-				["auras"] = {
-					["20217.2"] = {
-						["u"] = 596,
-						["n"] = 1,
-					},
-					["48169.32"] = {
-						["u"] = 596,
-						["n"] = 1,
-					},
-					["48161.2"] = {
-						["u"] = 596,
-						["n"] = 1,
-					},
-					["47436.1"] = {
-						["u"] = 596,
-						["n"] = 1,
-					},
-				},
-				["role"] = "NONE",
-				["time"] = 3.5,
-				["damage"] = 6214,
-				["overkill"] = 2632,
-				["timespent"] = {
-					["Frostwolf"] = 3.5,
-				},
-			},
-			["Ponaris"] = {
-				["damagespells"] = {
-					["48158.32"] = {
-						["c_amt"] = 4923,
-						["count"] = 1,
-						["c_max"] = 4923,
-						["c_num"] = 1,
-						["o_amt"] = 2886,
-						["c_min"] = 4923,
-						["targets"] = {
-							["Frostwolf"] = {
-								["o_amt"] = 2886,
-								["amount"] = 4923,
-							},
-						},
-						["amount"] = 4923,
-					},
-				},
-				["last"] = 46783.817,
-				["id"] = "0xF130011D20000113",
-				["class"] = "PRIEST",
-				["healspells"] = {
-					["-15290.32"] = {
-						["n_amt"] = 0,
-						["targets"] = {
-							["Malakai"] = {
-								["o_amt"] = 147,
-								["amount"] = 0,
-							},
-							["Krang"] = {
-								["o_amt"] = 147,
-								["amount"] = 0,
-							},
-							["Zel'mak"] = {
-								["o_amt"] = 147,
-								["amount"] = 0,
-							},
-							["Shymm"] = {
-								["o_amt"] = 147,
-								["amount"] = 0,
-							},
-							["Ur'kyo"] = {
-								["o_amt"] = 147,
-								["amount"] = 0,
-							},
-							["Sark"] = {
-								["o_amt"] = 147,
-								["amount"] = 0,
-							},
-							["Torm"] = {
-								["o_amt"] = 147,
-								["amount"] = 0,
-							},
-							["Ravager <Zandine>"] = {
-								["o_amt"] = 205,
-								["amount"] = 0,
-							},
-							["Gregory"] = {
-								["o_amt"] = 147,
-								["amount"] = 0,
-							},
-							["Ursyn"] = {
-								["o_amt"] = 147,
-								["amount"] = 0,
-							},
-							["Lotheolan"] = {
-								["o_amt"] = 147,
-								["amount"] = 0,
-							},
-							["Osselan"] = {
-								["o_amt"] = 147,
-								["amount"] = 0,
-							},
-							["Belestra"] = {
-								["o_amt"] = 147,
-								["amount"] = 0,
-							},
-							["Duesten"] = {
-								["o_amt"] = 147,
-								["amount"] = 0,
-							},
-							["Water Elemental <Enyo>"] = {
-								["o_amt"] = 147,
-								["amount"] = 0,
-							},
-							["Tai'jin"] = {
-								["o_amt"] = 147,
-								["amount"] = 0,
-							},
-							["David"] = {
-								["o_amt"] = 147,
-								["amount"] = 0,
-							},
-							["Nerisen"] = {
-								["o_amt"] = 176,
-								["amount"] = 0,
-							},
-							["Zandine"] = {
-								["o_amt"] = 147,
-								["amount"] = 0,
-							},
-							["Ponaris"] = {
-								["o_amt"] = 738,
-								["amount"] = 0,
-							},
-							["Enyo"] = {
-								["o_amt"] = 147,
-								["amount"] = 0,
-							},
-							["Aldrae"] = {
-								["o_amt"] = 147,
-								["amount"] = 0,
-							},
-							["Sian'dur"] = {
-								["o_amt"] = 161,
-								["amount"] = 0,
-							},
-							["Chris"] = {
-								["o_amt"] = 147,
-								["amount"] = 0,
-							},
-							["Hyena <Sian'dur>"] = {
-								["o_amt"] = 205,
-								["amount"] = 0,
-							},
-							["Kragg"] = {
-								["o_amt"] = 147,
-								["amount"] = 0,
-							},
-							["Lankester"] = {
-								["o_amt"] = 147,
-								["amount"] = 0,
-							},
-							["Un'Thuwa"] = {
-								["o_amt"] = 147,
-								["amount"] = 0,
-							},
-						},
-						["count"] = 28,
-						["amount"] = 0,
-						["o_amt"] = 4866,
-						["n_max"] = 0,
-						["n_num"] = 28,
-						["n_min"] = 0,
-					},
-				},
-				["auras"] = {
-					["-57669.8"] = {
-						["u"] = 30,
-					},
-					["15271.32"] = {
-						["u"] = 15,
-						["n"] = 1,
-					},
-					["48168.2"] = {
-						["u"] = 596,
-						["n"] = 1,
-					},
-					["48161.2"] = {
-						["u"] = 596,
-						["n"] = 1,
-					},
-					["47436.1"] = {
-						["u"] = 596,
-						["n"] = 1,
-					},
-					["61792.1"] = {
-						["u"] = 10,
-						["n"] = 1,
-					},
-					["15473.32"] = {
-						["u"] = 596,
-						["n"] = 1,
-					},
-					["48073.2"] = {
-						["u"] = 596,
-						["n"] = 1,
-					},
-					["6346.2"] = {
-						["u"] = 596,
-						["n"] = 1,
-					},
-					["48169.32"] = {
-						["u"] = 596,
-						["n"] = 1,
-					},
-					["15286.32"] = {
-						["u"] = 596,
-						["n"] = 1,
-					},
-					["55637.2"] = {
-						["u"] = 15,
-						["n"] = 1,
-					},
-					["15258.32"] = {
-						["u"] = 15,
-						["n"] = 1,
-					},
-					["59000.32"] = {
-						["u"] = 8,
-						["n"] = 1,
-					},
-					["42995.64"] = {
-						["u"] = 596,
-						["n"] = 1,
-					},
-					["20217.2"] = {
-						["u"] = 596,
-						["n"] = 1,
-					},
-				},
-				["heal"] = 0,
-				["time"] = 3.5,
-				["damage"] = 4923,
-				["role"] = "NONE",
-				["overkill"] = 2886,
-				["overheal"] = 4866,
-				["timespent"] = {
-					["Frostwolf"] = 3.5,
-				},
-			},
-			["Whitewhisker Overseer"] = {
-				["damagespells"] = {
-					["6603.1"] = {
-						["total"] = 583,
-						["targets"] = {
-							["Celoenus"] = {
-								["total"] = 504,
-								["amount"] = 405,
-							},
-							["Zor'be"] = {
-								["amount"] = 79,
-							},
-						},
-						["amount"] = 484,
-					},
-					["25228.32"] = {
-						["targets"] = {
-							["Voidwalker <Celoenus>"] = {
-								["amount"] = 141,
-							},
-						},
-						["amount"] = 141,
-					},
-					["15284.1"] = {
-						["total"] = 387,
-						["targets"] = {
-							["Celoenus"] = {
-								["total"] = 214,
-								["amount"] = 172,
-							},
-							["Voidwalker <Celoenus>"] = {
-								["amount"] = 173,
-							},
-						},
-						["amount"] = 345,
-					},
-				},
-				["totaldamage"] = 1111,
-				["enemy"] = true,
-				["id"] = "0xF130002D550001F2",
+				["last"] = 238969.193,
 				["damagedspells"] = {
 					["49909.16"] = {
 						["sources"] = {
-							["Zor'be"] = {
-								["amount"] = 1095,
+							["Siouxsie"] = {
+								["amount"] = 791,
 							},
 						},
-						["amount"] = 1095,
-					},
-					["47632.32"] = {
-						["o_amt"] = 1987,
-						["sources"] = {
-							["Zor'be"] = {
-								["o_amt"] = 1987,
-								["amount"] = 5943,
-							},
-						},
-						["amount"] = 5943,
-					},
-					["47818.4"] = {
-						["o_amt"] = 708,
-						["sources"] = {
-							["Celoenus"] = {
-								["o_amt"] = 708,
-								["amount"] = 13056,
-							},
-						},
-						["amount"] = 13056,
-					},
-					["58621.16"] = {
-						["sources"] = {
-							["Zor'be"] = {
-								["amount"] = 637,
-							},
-						},
-						["amount"] = 637,
-					},
-					["-61291.4"] = {
-						["sources"] = {
-							["Celoenus"] = {
-								["amount"] = 514,
-							},
-						},
-						["amount"] = 514,
+						["count"] = 1,
+						["amount"] = 791,
+						["n_min"] = 791,
+						["n_amt"] = 791,
+						["n_num"] = 1,
+						["n_max"] = 791,
 					},
 					["47468.1"] = {
 						["sources"] = {
-							["Zor'be"] = {
-								["amount"] = 1032,
+							["Risen Ghoul"] = {
+								["amount"] = 822,
 							},
 						},
-						["amount"] = 1032,
+						["count"] = 3,
+						["amount"] = 822,
+						["n_min"] = 274,
+						["n_amt"] = 822,
+						["n_num"] = 3,
+						["n_max"] = 274,
 					},
-					["47847.32"] = {
+					["-48135.2"] = {
+						["c_amt"] = 159,
 						["sources"] = {
-							["Celoenus"] = {
-								["amount"] = 3333,
+							["Nara"] = {
+								["amount"] = 159,
 							},
 						},
-						["amount"] = 3333,
+						["count"] = 1,
+						["amount"] = 159,
+						["c_min"] = 159,
+						["c_max"] = 159,
+						["c_num"] = 1,
 					},
 					["6603.1"] = {
-						["o_amt"] = 67,
-						["sources"] = {
-							["Celoenus"] = {
-								["o_amt"] = 67,
-								["amount"] = 644,
-							},
-							["Zor'be"] = {
-								["amount"] = 8700,
-							},
-						},
-						["amount"] = 9344,
-					},
-					["51460.32"] = {
-						["sources"] = {
-							["Zor'be"] = {
-								["amount"] = 1601,
-							},
-						},
-						["amount"] = 1601,
-					},
-					["49921.1"] = {
-						["o_amt"] = 1591,
-						["sources"] = {
-							["Zor'be"] = {
-								["o_amt"] = 1591,
-								["amount"] = 3006,
-							},
-						},
-						["amount"] = 3006,
-					},
-					["61290.32"] = {
-						["sources"] = {
-							["Celoenus"] = {
-								["amount"] = 1836,
-							},
-						},
-						["amount"] = 1836,
-					},
-				},
-				["class"] = "MONSTER",
-				["damaged"] = 41397,
-				["damage"] = 970,
-			},
-			["Shymm"] = {
-				["damagespells"] = {
-					["42859.4"] = {
-						["n_amt"] = 1541,
-						["count"] = 1,
-						["amount"] = 1541,
-						["targets"] = {
-							["Frostwolf"] = {
-								["amount"] = 1541,
-							},
-						},
-						["n_max"] = 1541,
-						["n_num"] = 1,
-						["n_min"] = 1541,
-					},
-					["42873.4"] = {
-						["n_amt"] = 2147,
-						["count"] = 1,
-						["amount"] = 2147,
-						["targets"] = {
-							["Frostwolf"] = {
-								["amount"] = 2147,
-							},
-						},
-						["n_max"] = 2147,
-						["n_num"] = 1,
-						["n_min"] = 2147,
-					},
-					["47610.20"] = {
-						["c_amt"] = 6879,
-						["count"] = 1,
-						["c_max"] = 6879,
+						["c_amt"] = 2874,
+						["total"] = 3489,
+						["c_max"] = 2874,
 						["c_num"] = 1,
-						["o_amt"] = 2536,
-						["c_min"] = 6879,
-						["targets"] = {
-							["Frostwolf"] = {
-								["o_amt"] = 2536,
-								["amount"] = 6879,
+						["n_max"] = 183,
+						["abs_n"] = 1,
+						["dod_n"] = 2,
+						["sources"] = {
+							["Summoned Skeleton"] = {
+								["total"] = 249,
+								["amount"] = 207,
+							},
+							["Siouxsie"] = {
+								["amount"] = 2874,
+							},
+							["Risen Ghoul"] = {
+								["amount"] = 366,
 							},
 						},
-						["amount"] = 6879,
+						["c_min"] = 2874,
+						["amount"] = 3447,
+						["n_min"] = 29,
+						["n_amt"] = 573,
+						["n_num"] = 8,
+						["count"] = 12,
+					},
+					["5019.1"] = {
+						["c_amt"] = 3185,
+						["c_max"] = 1126,
+						["c_num"] = 3,
+						["n_max"] = 691,
+						["sources"] = {
+							["Nara"] = {
+								["amount"] = 6272,
+							},
+						},
+						["c_min"] = 1000,
+						["amount"] = 6272,
+						["n_min"] = 580,
+						["n_amt"] = 3087,
+						["n_num"] = 5,
+						["count"] = 8,
+					},
+					["48127.32"] = {
+						["c_amt"] = 4330,
+						["total"] = 8464,
+						["c_max"] = 4330,
+						["c_num"] = 1,
+						["n_max"] = 1898,
+						["c_min"] = 4330,
+						["sources"] = {
+							["Nara"] = {
+								["total"] = 8464,
+								["amount"] = 6228,
+							},
+						},
+						["count"] = 3,
+						["amount"] = 6228,
+						["n_min"] = 1898,
+						["abs_n"] = 1,
+						["n_num"] = 1,
+						["n_amt"] = 1898,
+					},
+					["48135.2"] = {
+						["c_amt"] = 418,
+						["total"] = 5028,
+						["c_max"] = 418,
+						["c_num"] = 1,
+						["n_max"] = 1973,
+						["sources"] = {
+							["Nara"] = {
+								["total"] = 5028,
+								["amount"] = 2391,
+							},
+						},
+						["c_min"] = 418,
+						["amount"] = 2391,
+						["n_min"] = 1973,
+						["n_amt"] = 1973,
+						["n_num"] = 1,
+						["count"] = 2,
 					},
 				},
-				["last"] = 46788.496,
-				["id"] = "0xF130011D32000125",
-				["mana"] = 119,
-				["overkill"] = 2536,
-				["role"] = "DAMAGER",
-				["time"] = 7,
-				["damage"] = 10567,
-				["class"] = "MAGE",
+				["class"] = "PRIEST",
+				["damaged"] = 20110,
 				["auras"] = {
-					["-57669.8"] = {
-						["u"] = 44,
+					["59626.32"] = {
+						["u"] = 10,
+						["n"] = 1,
 					},
-					["-22959.4"] = {
-						["u"] = 26,
+					["60437.1"] = {
+						["u"] = 10,
+						["n"] = 1,
+					},
+					["48066.2"] = {
+						["u"] = 7,
+						["n"] = 1,
+					},
+					["15286.32"] = {
+						["u"] = 40,
+						["n"] = 1,
+					},
+					["59000.32"] = {
+						["u"] = 25,
+						["n"] = 2,
+					},
+					["-48156.32"] = {
+						["u"] = 2,
 						["t"] = {
-							["Frostwolf"] = {
-								["u"] = 26,
-								["n"] = 2,
+							["Nara"] = {
+								["u"] = 2,
+								["n"] = 1,
+							},
+							["Duesten"] = {
+								["u"] = 2,
+								["n"] = 1,
 							},
 						},
 						["n"] = 2,
 					},
+					["15271.32"] = {
+						["u"] = 32,
+						["n"] = 2,
+					},
+					["-6788.2"] = {
+						["u"] = 13,
+						["t"] = {
+							["Duesten"] = {
+								["u"] = 13,
+								["n"] = 1,
+							},
+						},
+						["n"] = 1,
+					},
+					["48168.2"] = {
+						["u"] = 40,
+						["n"] = 1,
+					},
 					["48161.2"] = {
-						["u"] = 596,
+						["u"] = 12,
 						["n"] = 1,
 					},
-					["12043.1"] = {
-						["u"] = 1,
+					["-15487.32"] = {
+						["u"] = 4,
+						["t"] = {
+							["Theodrus"] = {
+								["u"] = 4,
+								["n"] = 1,
+							},
+						},
 						["n"] = 1,
 					},
+					["70772.2"] = {
+						["u"] = 9,
+						["n"] = 1,
+					},
+					["15473.32"] = {
+						["u"] = 40,
+						["n"] = 3,
+					},
+					["-33198.32"] = {
+						["r"] = 1,
+						["u"] = 39,
+						["t"] = {
+							["Nara"] = {
+								["r"] = 1,
+								["u"] = 4,
+								["n"] = 1,
+							},
+							["Risen Ghoul"] = {
+								["u"] = 39,
+								["n"] = 1,
+							},
+						},
+						["n"] = 2,
+					},
+					["6346.2"] = {
+						["u"] = 40,
+						["n"] = 1,
+					},
+					["48169.32"] = {
+						["u"] = 19,
+						["n"] = 1,
+					},
+					["-48160.32"] = {
+						["u"] = 50,
+						["t"] = {
+							["Nara"] = {
+								["u"] = 1,
+								["n"] = 1,
+							},
+							["Risen Ghoul"] = {
+								["u"] = 17,
+								["n"] = 1,
+							},
+						},
+						["n"] = 2,
+					},
+					["15258.32"] = {
+						["r"] = 6,
+						["u"] = 40,
+						["n"] = 2,
+					},
+					["48068.2"] = {
+						["u"] = 43,
+						["n"] = 2,
+					},
+					["65006.1"] = {
+						["r"] = 19,
+						["u"] = 39,
+						["n"] = 1,
+					},
+					["42995.64"] = {
+						["u"] = 14,
+						["n"] = 1,
+					},
+					["48073.2"] = {
+						["u"] = 12,
+						["n"] = 1,
+					},
+				},
+				["dispel"] = 14,
+				["role"] = "NONE",
+				["time"] = 32.44000000000001,
+				["totaldamage"] = 47965,
+				["interruptspells"] = {
+					["32747.1"] = {
+						["spells"] = {
+							["48156.32"] = 1,
+						},
+						["count"] = 1,
+						["targets"] = {
+							["Theodrus"] = 1,
+						},
+					},
+				},
+				["damage"] = 47661,
+				["overheal"] = 21432,
+				["absorb"] = 4915,
+				["totaldamaged"] = 25025,
+				["id"] = "0xF130011FE800000C",
+				["healspells"] = {
+					["56131.2"] = {
+						["c_amt"] = 1453,
+						["c_max"] = 1035,
+						["count"] = 2,
+						["amount"] = 1453,
+						["o_amt"] = 713,
+						["c_min"] = 418,
+						["targets"] = {
+							["Duesten"] = {
+								["o_amt"] = 713,
+								["amount"] = 1453,
+							},
+						},
+						["c_num"] = 2,
+					},
+					["-15290.32"] = {
+						["targets"] = {
+							["Pierce"] = {
+								["o_amt"] = 171,
+								["amount"] = 403,
+							},
+							["Bluex"] = {
+								["o_amt"] = 293,
+								["amount"] = 228,
+							},
+							["Duesten"] = {
+								["o_amt"] = 2003,
+								["amount"] = 2649,
+							},
+						},
+						["n_min"] = 0,
+						["count"] = 29,
+						["amount"] = 3280,
+						["o_amt"] = 2467,
+						["n_amt"] = 3280,
+						["n_num"] = 29,
+						["n_max"] = 735,
+					},
+					["56160.2"] = {
+						["c_amt"] = 1474,
+						["count"] = 1,
+						["amount"] = 1474,
+						["c_max"] = 1474,
+						["c_min"] = 1474,
+						["targets"] = {
+							["Duesten"] = {
+								["amount"] = 1474,
+							},
+						},
+						["c_num"] = 1,
+					},
+					["48063.2"] = {
+						["targets"] = {
+							["Duesten"] = {
+								["o_amt"] = 4209,
+								["amount"] = 4629,
+							},
+						},
+						["n_min"] = 4629,
+						["count"] = 1,
+						["amount"] = 4629,
+						["o_amt"] = 4209,
+						["n_amt"] = 4629,
+						["n_num"] = 1,
+						["n_max"] = 4629,
+					},
+					["-48068.2"] = {
+						["c_amt"] = 8498,
+						["c_max"] = 2257,
+						["c_num"] = 7,
+						["n_max"] = 774,
+						["targets"] = {
+							["Duesten"] = {
+								["o_amt"] = 9170,
+								["amount"] = 9272,
+							},
+						},
+						["n_min"] = 774,
+						["c_min"] = 0,
+						["amount"] = 9272,
+						["o_amt"] = 9170,
+						["n_amt"] = 774,
+						["n_num"] = 2,
+						["count"] = 9,
+					},
+					["48071.2"] = {
+						["targets"] = {
+							["Duesten"] = {
+								["o_amt"] = 3929,
+								["amount"] = 212,
+							},
+						},
+						["n_min"] = 212,
+						["count"] = 1,
+						["amount"] = 212,
+						["o_amt"] = 3929,
+						["n_amt"] = 212,
+						["n_num"] = 1,
+						["n_max"] = 212,
+					},
+					["-70772.2"] = {
+						["targets"] = {
+							["Duesten"] = {
+								["o_amt"] = 944,
+								["amount"] = 421,
+							},
+						},
+						["n_min"] = 0,
+						["count"] = 3,
+						["amount"] = 421,
+						["o_amt"] = 944,
+						["n_amt"] = 421,
+						["n_num"] = 3,
+						["n_max"] = 421,
+					},
+				},
+				["overkill"] = 4686,
+				["interrupt"] = 1,
+				["heal"] = 20741,
+				["absorbspells"] = {
+					["48066.2"] = {
+						["c_amt"] = 2637,
+						["c_max"] = 2637,
+						["c_num"] = 1,
+						["n_max"] = 2236,
+						["targets"] = {
+							["Duesten"] = 4915,
+						},
+						["count"] = 3,
+						["amount"] = 4915,
+						["c_min"] = 2637,
+						["n_amt"] = 2278,
+						["n_num"] = 2,
+						["n_min"] = 42,
+					},
+				},
+				["ccdone"] = 1,
+				["damagespells"] = {
+					["58381.32"] = {
+						["c_amt"] = 5072,
+						["c_max"] = 2557,
+						["c_num"] = 2,
+						["n_max"] = 1343,
+						["targets"] = {
+							["Nara"] = {
+								["amount"] = 6415,
+							},
+						},
+						["c_min"] = 2515,
+						["amount"] = 6415,
+						["n_min"] = 1343,
+						["n_amt"] = 1343,
+						["n_num"] = 1,
+						["count"] = 3,
+					},
+					["-48160.32"] = {
+						["c_amt"] = 8541,
+						["c_max"] = 2847,
+						["c_num"] = 3,
+						["n_max"] = 1457,
+						["targets"] = {
+							["Risen Ghoul"] = {
+								["amount"] = 14369,
+							},
+						},
+						["count"] = 7,
+						["amount"] = 14369,
+						["c_min"] = 2847,
+						["n_amt"] = 5828,
+						["n_num"] = 4,
+						["n_min"] = 1457,
+					},
+					["48127.32"] = {
+						["targets"] = {
+							["Nara"] = {
+								["amount"] = 2711,
+							},
+						},
+						["count"] = 1,
+						["amount"] = 2711,
+						["n_min"] = 2711,
+						["n_amt"] = 2711,
+						["n_num"] = 1,
+						["n_max"] = 2711,
+					},
+					["5019.1"] = {
+						["c_amt"] = 2552,
+						["total"] = 6571,
+						["c_max"] = 1171,
+						["c_num"] = 3,
+						["n_max"] = 855,
+						["targets"] = {
+							["Summoned Skeleton"] = {
+								["amount"] = 4553,
+							},
+							["Nara"] = {
+								["total"] = 2018,
+								["amount"] = 1714,
+							},
+						},
+						["count"] = 8,
+						["amount"] = 6267,
+						["c_min"] = 543,
+						["n_amt"] = 3715,
+						["n_num"] = 5,
+						["n_min"] = 622,
+					},
+					["48158.32"] = {
+						["c_amt"] = 4903,
+						["c_max"] = 4903,
+						["c_num"] = 1,
+						["n_max"] = 2652,
+						["targets"] = {
+							["Summoned Skeleton"] = {
+								["o_amt"] = 2530,
+								["amount"] = 4903,
+							},
+							["Nara"] = {
+								["o_amt"] = 2156,
+								["amount"] = 2652,
+							},
+						},
+						["n_min"] = 2652,
+						["c_min"] = 4903,
+						["amount"] = 7555,
+						["o_amt"] = 4686,
+						["n_amt"] = 2652,
+						["n_num"] = 1,
+						["count"] = 2,
+					},
+					["64085.32"] = {
+						["targets"] = {
+							["Nara"] = {
+								["amount"] = 10344,
+							},
+						},
+						["count"] = 1,
+						["amount"] = 10344,
+						["n_min"] = 10344,
+						["n_amt"] = 10344,
+						["n_num"] = 1,
+						["n_max"] = 10344,
+					},
+				},
+				["dispelspells"] = {
+					["528.2"] = {
+						["spells"] = {
+							["55095.16"] = 1,
+						},
+						["count"] = 1,
+						["targets"] = {
+							["Duesten"] = 1,
+						},
+					},
+					["988.2"] = {
+						["spells"] = {
+							["48161.2"] = 1,
+							["50449.1"] = 1,
+							["6346.2"] = 1,
+							["48135.2"] = 2,
+							["48073.2"] = 3,
+							["48066.2"] = 1,
+							["48169.32"] = 2,
+							["47753.2"] = 1,
+							["10060.2"] = 1,
+						},
+						["count"] = 13,
+						["targets"] = {
+							["Siouxsie"] = 2,
+							["Theodrus"] = 2,
+							["Nara"] = 7,
+							["Duesten"] = 2,
+						},
+					},
+				},
+				["timespent"] = {
+					["Summoned Skeleton"] = 9.26,
+					["Duesten"] = 1.56,
+					["Nara"] = 11.07,
+					["Risen Ghoul"] = 10.55,
+				},
+			},
+			["Pierce"] = {
+				["ccdonespells"] = {
+					["-12826.64"] = {
+						["t"] = {
+							["Siouxsie"] = 1,
+						},
+						["n"] = 1,
+					},
+					["-42917.16"] = {
+						["t"] = {
+							["Summoned Skeleton"] = 1,
+							["Risen Ghoul"] = 1,
+						},
+						["n"] = 2,
+					},
+				},
+				["last"] = 238966.916,
+				["damagedspells"] = {
+					["-55095.16"] = {
+						["total"] = 339,
+						["count"] = 1,
+						["amount"] = 0,
+						["abs_n"] = 1,
+						["sources"] = {
+							["Siouxsie"] = {
+								["total"] = 339,
+								["amount"] = 0,
+							},
+						},
+					},
+					["49909.16"] = {
+						["c_amt"] = 1683,
+						["r_amt"] = 187,
+						["count"] = 1,
+						["amount"] = 1683,
+						["sources"] = {
+							["Siouxsie"] = {
+								["amount"] = 1683,
+							},
+						},
+						["c_min"] = 1683,
+						["c_max"] = 1683,
+						["c_num"] = 1,
+					},
+				},
+				["mana"] = 244,
+				["damaged"] = 1683,
+				["auras"] = {
 					["-12355.4"] = {
+						["u"] = 1,
+						["t"] = {
+							["Theodrus"] = {
+								["u"] = 1,
+								["n"] = 1,
+							},
+						},
+						["n"] = 1,
+					},
+					["43012.16"] = {
+						["u"] = 30,
+						["n"] = 1,
+					},
+					["54741.1"] = {
+						["u"] = 10,
+						["n"] = 1,
+					},
+					["1953.64"] = {
+						["u"] = 17,
+						["n"] = 2,
+					},
+					["43008.16"] = {
+						["u"] = 40,
+						["n"] = 1,
+					},
+					["-12654.4"] = {
+						["r"] = 1,
+						["u"] = 74,
+						["t"] = {
+							["Summoned Skeleton"] = {
+								["u"] = 4,
+								["n"] = 1,
+							},
+							["Theodrus"] = {
+								["r"] = 1,
+								["u"] = 6,
+								["n"] = 2,
+							},
+							["Risen Ghoul"] = {
+								["u"] = 4,
+								["n"] = 1,
+							},
+						},
+						["n"] = 5,
+					},
+					["-42917.16"] = {
+						["u"] = 1,
+						["t"] = {
+							["Summoned Skeleton"] = {
+								["u"] = 1,
+								["n"] = 1,
+							},
+							["Risen Ghoul"] = {
+								["u"] = 1,
+								["n"] = 1,
+							},
+						},
+						["n"] = 2,
+					},
+					["-12826.64"] = {
+						["u"] = 4,
+						["t"] = {
+							["Siouxsie"] = {
+								["u"] = 4,
+								["n"] = 1,
+							},
+						},
+						["n"] = 1,
+					},
+					["71605.64"] = {
+						["u"] = 20,
+						["n"] = 1,
+					},
+					["-42891.4"] = {
 						["u"] = 2,
 						["t"] = {
-							["Frostwolf"] = {
+							["Theodrus"] = {
 								["u"] = 2,
 								["n"] = 1,
 							},
 						},
 						["n"] = 1,
 					},
-					["1953.64"] = {
+					["12536.64"] = {
 						["u"] = 1,
 						["n"] = 1,
 					},
-					["43008.16"] = {
-						["u"] = 596,
+					["48161.2"] = {
+						["u"] = 6,
 						["n"] = 1,
 					},
-					["-12654.4"] = {
-						["u"] = 1,
+					["-22959.4"] = {
+						["u"] = 33,
 						["t"] = {
-							["Frostwolf"] = {
-								["u"] = 1,
+							["Nara"] = {
+								["u"] = 6,
+								["n"] = 3,
+							},
+							["Theodrus"] = {
+								["u"] = 6,
+								["n"] = 2,
+							},
+						},
+						["n"] = 5,
+					},
+					["48108.1"] = {
+						["u"] = 1,
+						["n"] = 1,
+					},
+					["-42945.4"] = {
+						["u"] = 6,
+						["t"] = {
+							["Summoned Skeleton"] = {
+								["u"] = 6,
+								["n"] = 1,
+							},
+							["Siouxsie"] = {
+								["u"] = 4,
+								["n"] = 1,
+							},
+							["Risen Ghoul"] = {
+								["u"] = 6,
 								["n"] = 1,
 							},
 						},
+						["n"] = 3,
+					},
+					["45438.16"] = {
+						["u"] = 10,
 						["n"] = 1,
 					},
-					["48169.32"] = {
-						["u"] = 596,
-						["n"] = 1,
-					},
-					["64343.4"] = {
-						["u"] = 34,
+					["6346.2"] = {
+						["u"] = 36,
 						["n"] = 2,
 					},
-					["48073.2"] = {
-						["u"] = 596,
-						["n"] = 1,
-					},
-					["47436.1"] = {
-						["u"] = 596,
-						["n"] = 1,
-					},
-					["43015.64"] = {
-						["u"] = 596,
-						["n"] = 1,
-					},
-					["42995.64"] = {
-						["u"] = 596,
-						["n"] = 1,
-					},
-					["20217.2"] = {
-						["u"] = 596,
-						["n"] = 1,
-					},
-				},
-				["manaspells"] = {
-					["29077.64"] = 119,
-				},
-				["timespent"] = {
-					["Frostwolf"] = 7,
-				},
-			},
-			["Belestra"] = {
-				["damagespells"] = {
-					["-48135.2"] = {
-						["c_amt"] = 157,
-						["c_max"] = 157,
-						["c_num"] = 1,
-						["n_max"] = 105,
-						["targets"] = {
-							["Frostwolf"] = {
-								["amount"] = 262,
-							},
-						},
-						["count"] = 2,
-						["amount"] = 262,
-						["c_min"] = 157,
-						["n_min"] = 105,
-						["n_num"] = 1,
-						["n_amt"] = 105,
-					},
-					["48135.2"] = {
-						["n_amt"] = 2520,
-						["count"] = 1,
-						["amount"] = 2520,
-						["targets"] = {
-							["Frostwolf"] = {
-								["amount"] = 2520,
-							},
-						},
-						["n_max"] = 2520,
-						["n_num"] = 1,
-						["n_min"] = 2520,
-					},
-					["48127.32"] = {
-						["n_amt"] = 2280,
-						["count"] = 1,
-						["amount"] = 2280,
-						["targets"] = {
-							["Frostwolf"] = {
-								["amount"] = 2280,
-							},
-						},
-						["n_max"] = 2280,
-						["n_num"] = 1,
-						["n_min"] = 2280,
-					},
-					["5019.1"] = {
-						["n_amt"] = 691,
-						["count"] = 1,
-						["amount"] = 691,
-						["targets"] = {
-							["Frostwolf"] = {
-								["amount"] = 691,
-							},
-						},
-						["n_max"] = 691,
-						["n_num"] = 1,
-						["n_min"] = 691,
-					},
-				},
-				["last"] = 46783.534,
-				["id"] = "0xF130011D2800011B",
-				["class"] = "PRIEST",
-				["auras"] = {
-					["-57669.8"] = {
-						["u"] = 30,
-					},
-					["48168.2"] = {
-						["u"] = 596,
-						["n"] = 1,
-					},
-					["47436.1"] = {
-						["u"] = 596,
-						["n"] = 1,
-					},
-					["67596.64"] = {
-						["u"] = 15,
-						["n"] = 1,
-					},
-					["6346.2"] = {
-						["u"] = 596,
-						["n"] = 1,
-					},
 					["48169.32"] = {
-						["u"] = 596,
+						["u"] = 6,
 						["n"] = 1,
 					},
-					["48073.2"] = {
-						["u"] = 596,
-						["n"] = 1,
-					},
-					["-48135.2"] = {
-						["u"] = 3,
+					["-41425.16"] = {
+						["u"] = 29,
 						["t"] = {
-							["Frostwolf"] = {
-								["u"] = 3,
+							["Pierce"] = {
+								["u"] = 29,
 								["n"] = 1,
 							},
 						},
 						["n"] = 1,
 					},
-					["48161.2"] = {
-						["u"] = 596,
-						["n"] = 1,
-					},
-					["42995.64"] = {
-						["u"] = 596,
-						["n"] = 1,
-					},
-					["20217.2"] = {
-						["u"] = 596,
-						["n"] = 1,
-					},
-				},
-				["role"] = "NONE",
-				["time"] = 7.44,
-				["damage"] = 5753,
-				["timespent"] = {
-					["Frostwolf"] = 7.44,
-				},
-			},
-			["Bluex"] = {
-				["overheal"] = 200073,
-				["last"] = 46746.332,
-				["id"] = "0x0000000000000005",
-				["spec"] = 262,
-				["healspells"] = {
-					["61301.8"] = {
-						["c_amt"] = 0,
-						["c_max"] = 0,
-						["c_num"] = 11,
-						["n_max"] = 0,
-						["targets"] = {
-							["Bluex"] = {
-								["o_amt"] = 92625,
-								["amount"] = 0,
-							},
-						},
-						["count"] = 30,
-						["c_min"] = 0,
-						["amount"] = 0,
-						["o_amt"] = 92625,
-						["n_min"] = 0,
-						["n_num"] = 19,
-						["n_amt"] = 0,
-					},
-					["-61301.8"] = {
-						["n_amt"] = 0,
-						["targets"] = {
-							["Bluex"] = {
-								["o_amt"] = 107448,
-								["amount"] = 0,
-							},
-						},
-						["count"] = 132,
-						["amount"] = 0,
-						["o_amt"] = 107448,
-						["n_max"] = 0,
-						["n_num"] = 132,
-						["n_min"] = 0,
-					},
-				},
-				["auras"] = {
-					["49281.8"] = {
-						["u"] = 596,
-						["r"] = 20,
-						["n"] = 1,
-					},
-					["48169.32"] = {
-						["u"] = 596,
-						["n"] = 1,
-					},
-					["47436.1"] = {
-						["u"] = 521,
-						["n"] = 1,
-					},
-					["48161.2"] = {
-						["u"] = 596,
-						["n"] = 1,
-					},
-					["61301.8"] = {
-						["u"] = 596,
-						["r"] = 13,
-						["n"] = 17,
-					},
 					["48073.2"] = {
-						["u"] = 596,
+						["u"] = 25,
 						["n"] = 1,
 					},
-					["42995.64"] = {
-						["u"] = 596,
-						["n"] = 1,
-					},
-					["22751.2"] = {
-						["u"] = 920,
-						["n"] = 3,
-					},
-				},
-				["heal"] = 0,
-				["role"] = "DAMAGER",
-				["class"] = "SHAMAN",
-			},
-			["Nerisen"] = {
-				["damagespells"] = {
-					["48665.1"] = {
-						["c_amt"] = 1840,
-						["count"] = 1,
-						["amount"] = 1840,
-						["c_max"] = 1840,
-						["c_min"] = 1840,
-						["targets"] = {
-							["Frostwolf"] = {
-								["amount"] = 1840,
-							},
-						},
-						["c_num"] = 1,
-					},
-					["48664.1"] = {
-						["c_amt"] = 1956,
-						["count"] = 1,
-						["amount"] = 1956,
-						["c_max"] = 1956,
-						["c_min"] = 1956,
-						["targets"] = {
-							["Frostwolf"] = {
-								["amount"] = 1956,
-							},
-						},
-						["c_num"] = 1,
-					},
-					["6603.1"] = {
-						["c_amt"] = 1060,
-						["c_max"] = 1060,
-						["c_num"] = 1,
-						["n_max"] = 421,
-						["targets"] = {
-							["Frostwolf"] = {
-								["amount"] = 1481,
-							},
-						},
-						["c_min"] = 1060,
-						["amount"] = 1481,
-						["n_amt"] = 421,
-						["n_min"] = 421,
-						["n_num"] = 1,
-						["count"] = 2,
-					},
-					["57965.8"] = {
-						["n_amt"] = 751,
-						["count"] = 1,
-						["amount"] = 751,
-						["targets"] = {
-							["Frostwolf"] = {
-								["amount"] = 751,
-							},
-						},
-						["n_max"] = 751,
-						["n_num"] = 1,
-						["n_min"] = 751,
-					},
-				},
-				["last"] = 46750.922,
-				["id"] = "0xF130011D31000124",
-				["class"] = "ROGUE",
-				["auras"] = {
-					["48169.32"] = {
-						["u"] = 596,
-						["n"] = 1,
-					},
-					["48161.2"] = {
-						["u"] = 596,
-						["n"] = 1,
-					},
-					["6774.1"] = {
-						["u"] = 554,
-						["n"] = 1,
-					},
-					["47436.1"] = {
-						["u"] = 596,
-						["n"] = 1,
-					},
-					["20217.2"] = {
-						["u"] = 596,
-						["n"] = 1,
-					},
-				},
-				["energyspells"] = {
-					["14181.1"] = 25,
-				},
-				["role"] = "DAMAGER",
-				["time"] = 3.51,
-				["damage"] = 6028,
-				["energy"] = 25,
-				["timespent"] = {
-					["Frostwolf"] = 3.51,
-				},
-			},
-			["Lotheolan"] = {
-				["role"] = "NONE",
-				["id"] = "0xF130011D1C00010F",
-				["class"] = "PRIEST",
-				["last"] = 46746.332,
-				["auras"] = {
-					["-57669.8"] = {
-						["u"] = 15,
-					},
-					["48168.2"] = {
-						["u"] = 596,
-						["n"] = 1,
-					},
-					["48161.2"] = {
-						["u"] = 596,
-						["n"] = 1,
-					},
-					["6346.2"] = {
-						["u"] = 596,
-						["n"] = 1,
-					},
-					["48169.32"] = {
-						["u"] = 596,
-						["n"] = 1,
-					},
-					["48073.2"] = {
-						["u"] = 596,
-						["n"] = 1,
-					},
-					["47436.1"] = {
-						["u"] = 596,
-						["n"] = 1,
-					},
-					["42995.64"] = {
-						["u"] = 596,
-						["n"] = 1,
-					},
-					["20217.2"] = {
-						["u"] = 596,
-						["n"] = 1,
-					},
-				},
-			},
-			["Taskmaster Snivvle"] = {
-				["damagespells"] = {
-					["6603.1"] = {
-						["targets"] = {
-							["Zor'be"] = {
-								["amount"] = 108,
-							},
-						},
-						["amount"] = 108,
-					},
-				},
-				["damage"] = 108,
-				["damagedspells"] = {
-					["58621.16"] = {
-						["sources"] = {
-							["Zor'be"] = {
-								["amount"] = 711,
-							},
-						},
-						["amount"] = 711,
-					},
-					["51460.32"] = {
-						["sources"] = {
-							["Zor'be"] = {
-								["amount"] = 486,
-							},
-						},
-						["amount"] = 486,
-					},
-					["50526.32"] = {
-						["sources"] = {
-							["Zor'be"] = {
-								["amount"] = 562,
-							},
-						},
-						["amount"] = 562,
-					},
-					["6603.1"] = {
-						["sources"] = {
-							["Zor'be"] = {
-								["amount"] = 2430,
-							},
-						},
-						["amount"] = 2430,
-					},
-					["47632.32"] = {
-						["o_amt"] = 1769,
-						["sources"] = {
-							["Zor'be"] = {
-								["o_amt"] = 1769,
-								["amount"] = 4107,
-							},
-						},
-						["amount"] = 4107,
-					},
-					["-55095.16"] = {
-						["sources"] = {
-							["Zor'be"] = {
-								["amount"] = 445,
-							},
-						},
-						["amount"] = 445,
-					},
-					["49909.16"] = {
-						["sources"] = {
-							["Zor'be"] = {
-								["amount"] = 2092,
-							},
-						},
-						["amount"] = 2092,
-					},
-				},
-				["id"] = "0xF130002D9D000205",
-				["class"] = "MONSTER",
-				["damaged"] = 10833,
-				["enemy"] = true,
-			},
-			["Osselan"] = {
-				["overheal"] = 5797,
-				["last"] = 46788.331,
-				["damage"] = 10089,
-				["id"] = "0xF130011D1F000112",
-				["damagedspells"] = {
-					["6603.1"] = {
-						["c_amt"] = 282,
-						["sources"] = {
-							["Frostwolf"] = {
-								["amount"] = 282,
-							},
-						},
-						["count"] = 1,
-						["amount"] = 282,
-						["c_min"] = 282,
-						["c_max"] = 282,
-						["c_num"] = 1,
-					},
-				},
-				["mana"] = 20505,
-				["damaged"] = 282,
-				["auras"] = {
-					["-57669.8"] = {
-						["u"] = 28,
-					},
-					["48161.2"] = {
-						["u"] = 596,
-						["n"] = 1,
-					},
-					["47436.1"] = {
-						["u"] = 596,
-						["n"] = 1,
-					},
-					["59578.1"] = {
-						["u"] = 596,
-						["n"] = 3,
-					},
-					["67740.1"] = {
+					["28682.4"] = {
 						["u"] = 20,
 						["n"] = 1,
 					},
-					["-61840.2"] = {
-						["u"] = 61,
-						["t"] = {
-							["Frostwolf"] = {
-								["u"] = 61,
-								["n"] = 3,
-							},
-						},
-						["n"] = 3,
-					},
-					["20053.1"] = {
-						["u"] = 595,
-						["r"] = 3,
+					["43015.64"] = {
+						["u"] = 40,
 						["n"] = 1,
-					},
-					["-54499.2"] = {
-						["u"] = 61,
-						["t"] = {
-							["Frostwolf"] = {
-								["u"] = 61,
-								["n"] = 3,
-							},
-						},
-						["n"] = 3,
-					},
-					["48169.32"] = {
-						["u"] = 596,
-						["n"] = 1,
-					},
-					["34767.2"] = {
-						["u"] = 596,
-						["n"] = 5,
-					},
-					["48073.2"] = {
-						["u"] = 596,
-						["n"] = 1,
-					},
-					["20375.2"] = {
-						["u"] = 596,
-						["n"] = 1,
-					},
-					["-20185.2"] = {
-						["u"] = 61,
-						["t"] = {
-							["Frostwolf"] = {
-								["u"] = 61,
-								["n"] = 3,
-							},
-						},
-						["n"] = 3,
 					},
 					["42995.64"] = {
-						["u"] = 596,
+						["u"] = 40,
 						["n"] = 1,
 					},
-					["20217.2"] = {
-						["u"] = 596,
+					["12043.1"] = {
+						["u"] = 2,
 						["n"] = 1,
 					},
 				},
-				["healspells"] = {
-					["-20267.2"] = {
-						["n_amt"] = 0,
+				["absorbspells"] = {
+					["43012.16"] = {
 						["targets"] = {
-							["Zel'mak"] = {
-								["o_amt"] = 617,
-								["amount"] = 0,
+							["Pierce"] = 339,
+						},
+						["count"] = 1,
+						["amount"] = 339,
+						["n_min"] = 339,
+						["n_amt"] = 339,
+						["n_num"] = 1,
+						["n_max"] = 339,
+					},
+				},
+				["totaldamage"] = 56797,
+				["time"] = 21.72,
+				["cctaken"] = 1,
+				["damage"] = 55971,
+				["damagespells"] = {
+					["-12654.4"] = {
+						["n_min"] = 670,
+						["targets"] = {
+							["Summoned Skeleton"] = {
+								["amount"] = 1340,
 							},
-							["Ur'kyo"] = {
-								["o_amt"] = 461,
-								["amount"] = 0,
+							["Theodrus"] = {
+								["o_amt"] = 5141,
+								["amount"] = 5798,
 							},
-							["Nerisen"] = {
-								["o_amt"] = 1226,
-								["amount"] = 0,
-							},
-							["Chris"] = {
-								["o_amt"] = 643,
-								["amount"] = 0,
+							["Risen Ghoul"] = {
+								["amount"] = 1348,
 							},
 						},
 						["count"] = 5,
-						["amount"] = 0,
-						["o_amt"] = 2947,
-						["n_max"] = 0,
+						["amount"] = 8486,
+						["o_amt"] = 5141,
+						["n_amt"] = 8486,
 						["n_num"] = 5,
-						["n_min"] = 0,
+						["n_max"] = 5798,
 					},
-					["28005.64"] = {
-						["c_amt"] = 0,
-						["c_max"] = 0,
-						["c_num"] = 5,
-						["n_max"] = 0,
-						["targets"] = {
-							["Malakai"] = {
-								["o_amt"] = 199,
-								["amount"] = 0,
-							},
-							["Shymm"] = {
-								["o_amt"] = 376,
-								["amount"] = 0,
-							},
-							["Zor'be"] = {
-								["o_amt"] = 198,
-								["amount"] = 0,
-							},
-							["David"] = {
-								["o_amt"] = 227,
-								["amount"] = 0,
-							},
-							["Aldrae"] = {
-								["o_amt"] = 430,
-								["amount"] = 0,
-							},
-							["Nerisen"] = {
-								["o_amt"] = 526,
-								["amount"] = 0,
-							},
-							["Chris"] = {
-								["o_amt"] = 295,
-								["amount"] = 0,
-							},
-							["Osselan"] = {
-								["o_amt"] = 316,
-								["amount"] = 0,
-							},
-							["Un'Thuwa"] = {
-								["o_amt"] = 283,
-								["amount"] = 0,
-							},
-						},
-						["n_amt"] = 0,
-						["count"] = 9,
-						["amount"] = 0,
-						["o_amt"] = 2850,
-						["n_min"] = 0,
-						["n_num"] = 4,
-						["c_min"] = 0,
-					},
-				},
-				["role"] = "NONE",
-				["time"] = 11.19,
-				["heal"] = 0,
-				["manaspells"] = {
-					["31930.2"] = 3294,
-					["-57669.8"] = 17211,
-				},
-				["damagespells"] = {
-					["6603.1"] = {
-						["c_amt"] = 1734,
+					["42891.4"] = {
+						["c_amt"] = 18446,
 						["count"] = 1,
-						["amount"] = 1734,
-						["c_max"] = 1734,
-						["c_min"] = 1734,
+						["amount"] = 18446,
+						["c_max"] = 18446,
+						["c_min"] = 18446,
 						["targets"] = {
-							["Frostwolf"] = {
-								["amount"] = 1734,
+							["Theodrus"] = {
+								["amount"] = 18446,
 							},
 						},
 						["c_num"] = 1,
 					},
-					["48801.2"] = {
-						["c_amt"] = 2989,
-						["count"] = 1,
-						["amount"] = 2989,
-						["c_max"] = 2989,
-						["c_min"] = 2989,
+					["42945.4"] = {
+						["c_amt"] = 5953,
+						["total"] = 7789,
+						["c_max"] = 2986,
+						["c_num"] = 2,
+						["n_max"] = 1010,
 						["targets"] = {
-							["Frostwolf"] = {
-								["amount"] = 2989,
+							["Summoned Skeleton"] = {
+								["amount"] = 2967,
+							},
+							["Siouxsie"] = {
+								["total"] = 1836,
+								["amount"] = 1010,
+							},
+							["Risen Ghoul"] = {
+								["amount"] = 2986,
 							},
 						},
-						["c_num"] = 1,
-					},
-					["20424.2"] = {
-						["c_amt"] = 890,
-						["count"] = 1,
-						["amount"] = 890,
-						["c_max"] = 890,
-						["c_min"] = 890,
-						["targets"] = {
-							["Frostwolf"] = {
-								["amount"] = 890,
-							},
-						},
-						["c_num"] = 1,
-					},
-					["20467.2"] = {
-						["c_amt"] = 4476,
+						["c_min"] = 2967,
+						["amount"] = 6963,
+						["n_min"] = 1010,
+						["n_amt"] = 1010,
+						["n_num"] = 1,
 						["count"] = 3,
-						["amount"] = 4476,
-						["c_max"] = 1546,
-						["c_min"] = 1420,
+					},
+					["42859.4"] = {
+						["c_amt"] = 11433,
+						["c_max"] = 4753,
+						["c_num"] = 3,
+						["n_max"] = 1770,
 						["targets"] = {
-							["Frostwolf"] = {
-								["amount"] = 4476,
+							["Nara"] = {
+								["amount"] = 6450,
+							},
+							["Theodrus"] = {
+								["amount"] = 8522,
 							},
 						},
-						["c_num"] = 3,
+						["c_min"] = 2911,
+						["amount"] = 14972,
+						["n_min"] = 1769,
+						["n_amt"] = 3539,
+						["n_num"] = 2,
+						["count"] = 5,
+					},
+					["42873.4"] = {
+						["targets"] = {
+							["Theodrus"] = {
+								["amount"] = 2913,
+							},
+						},
+						["count"] = 1,
+						["amount"] = 2913,
+						["n_min"] = 2913,
+						["n_amt"] = 2913,
+						["n_num"] = 1,
+						["n_max"] = 2913,
+					},
+					["42917.16"] = {
+						["c_amt"] = 4191,
+						["count"] = 2,
+						["amount"] = 4191,
+						["c_max"] = 2103,
+						["c_min"] = 2088,
+						["targets"] = {
+							["Summoned Skeleton"] = {
+								["amount"] = 2103,
+							},
+							["Risen Ghoul"] = {
+								["amount"] = 2088,
+							},
+						},
+						["c_num"] = 2,
 					},
 				},
-				["class"] = "PALADIN",
+				["absorb"] = 339,
+				["role"] = "DAMAGER",
+				["class"] = "MAGE",
+				["interrupt"] = 2,
+				["dispel"] = 1,
+				["overkill"] = 5141,
+				["cctakenspells"] = {
+					["-64044.32"] = {
+						["sources"] = {
+							["Theodrus"] = 1,
+						},
+						["n"] = 1,
+					},
+				},
+				["totaldamaged"] = 2022,
+				["manaspells"] = {
+					["29077.64"] = 244,
+				},
+				["ccdone"] = 3,
+				["id"] = "0xF130011FE900000D",
+				["interruptspells"] = {
+					["2139.64"] = {
+						["spells"] = {
+							["48063.2"] = 1,
+							["48127.32"] = 1,
+						},
+						["count"] = 2,
+						["targets"] = {
+							["Nara"] = 1,
+							["Theodrus"] = 1,
+						},
+					},
+				},
+				["dispelspells"] = {
+					["30449.64"] = {
+						["spells"] = {
+							["6346.2"] = 1,
+						},
+						["count"] = 1,
+						["targets"] = {
+							["Theodrus"] = 1,
+						},
+					},
+				},
 				["timespent"] = {
-					["Frostwolf"] = 11.19,
+					["Theodrus"] = 8.32,
+					["Siouxsie"] = 0,
+					["Nara"] = 4.8,
+					["Summoned Skeleton"] = 6.6,
+					["Risen Ghoul"] = 2,
 				},
 			},
-			["Duesten"] = {
-				["role"] = "NONE",
-				["id"] = "0xF130011D2700011A",
-				["class"] = "PRIEST",
-				["last"] = 46746.332,
-				["auras"] = {
-					["-57669.8"] = {
-						["u"] = 15,
-					},
-					["48168.2"] = {
-						["u"] = 596,
-						["n"] = 1,
-					},
-					["47436.1"] = {
-						["u"] = 596,
-						["n"] = 1,
-					},
-					["6346.2"] = {
-						["u"] = 596,
-						["n"] = 1,
-					},
-					["48169.32"] = {
-						["u"] = 596,
-						["n"] = 1,
-					},
-					["48073.2"] = {
-						["u"] = 596,
-						["n"] = 1,
-					},
-					["48161.2"] = {
-						["u"] = 596,
-						["n"] = 1,
-					},
-					["42995.64"] = {
-						["u"] = 596,
-						["n"] = 1,
-					},
-					["20217.2"] = {
-						["u"] = 596,
-						["n"] = 1,
-					},
-				},
-			},
-			["Krang"] = {
+			["Rune Weapon"] = {
 				["damagespells"] = {
 					["6603.1"] = {
-						["c_amt"] = 3418,
-						["count"] = 1,
-						["c_max"] = 3418,
-						["c_num"] = 1,
-						["o_amt"] = 1033,
-						["c_min"] = 3418,
 						["targets"] = {
-							["Frostwolf"] = {
-								["o_amt"] = 1033,
-								["amount"] = 3418,
+							["Bluex"] = {
+								["amount"] = 58,
 							},
 						},
-						["amount"] = 3418,
+						["amount"] = 58,
+					},
+					["49930.1"] = {
+						["targets"] = {
+							["Bluex"] = {
+								["amount"] = 109,
+							},
+						},
+						["amount"] = 109,
 					},
 				},
-				["last"] = 46771.762,
-				["id"] = "0xF130011D2D000120",
-				["class"] = "WARRIOR",
-				["damage"] = 3418,
-				["overkill"] = 1033,
-				["rage"] = 26,
-				["role"] = "NONE",
-				["time"] = 3.5,
-				["ccdone"] = 1,
-				["auras"] = {
-					["47436.1"] = {
-						["u"] = 596,
-						["n"] = 1,
-					},
-					["-7922.1"] = {
-						["u"] = 1,
-						["t"] = {
-							["Frostwolf"] = {
-								["u"] = 1,
-								["n"] = 1,
+				["damage"] = 167,
+				["id"] = "0xF130006CF5000009",
+				["class"] = "PET",
+				["enemy"] = true,
+			},
+			["Bluex"] = {
+				["last"] = 238956.209,
+				["damagedspells"] = {
+					["-55095.16"] = {
+						["sources"] = {
+							["Siouxsie"] = {
+								["amount"] = 1130,
 							},
 						},
-						["n"] = 1,
+						["count"] = 4,
+						["amount"] = 1130,
+						["n_min"] = 272,
+						["n_amt"] = 1130,
+						["n_num"] = 4,
+						["n_max"] = 293,
 					},
+					["-55078.32"] = {
+						["sources"] = {
+							["Siouxsie"] = {
+								["amount"] = 492,
+							},
+						},
+						["count"] = 2,
+						["amount"] = 492,
+						["n_min"] = 235,
+						["n_amt"] = 492,
+						["n_num"] = 2,
+						["n_max"] = 257,
+					},
+					["48127.32"] = {
+						["c_amt"] = 3648,
+						["sources"] = {
+							["Theodrus"] = {
+								["amount"] = 3648,
+							},
+						},
+						["count"] = 1,
+						["amount"] = 3648,
+						["c_min"] = 3648,
+						["c_max"] = 3648,
+						["c_num"] = 1,
+					},
+					["48158.32"] = {
+						["c_amt"] = 3419,
+						["sources"] = {
+							["Theodrus"] = {
+								["o_amt"] = 209,
+								["amount"] = 3419,
+							},
+						},
+						["count"] = 1,
+						["amount"] = 3419,
+						["o_amt"] = 209,
+						["c_min"] = 3419,
+						["c_max"] = 3419,
+						["c_num"] = 1,
+					},
+					["58381.32"] = {
+						["sources"] = {
+							["Theodrus"] = {
+								["amount"] = 1202,
+							},
+						},
+						["count"] = 1,
+						["amount"] = 1202,
+						["n_min"] = 1202,
+						["n_amt"] = 1202,
+						["n_num"] = 1,
+						["n_max"] = 1202,
+					},
+					["49930.1"] = {
+						["c_amt"] = 2496,
+						["c_max"] = 2496,
+						["c_num"] = 1,
+						["n_max"] = 109,
+						["sources"] = {
+							["Siouxsie"] = {
+								["amount"] = 2496,
+							},
+							["Rune Weapon"] = {
+								["amount"] = 109,
+							},
+						},
+						["c_min"] = 2496,
+						["amount"] = 2605,
+						["n_min"] = 109,
+						["n_amt"] = 109,
+						["n_num"] = 1,
+						["count"] = 2,
+					},
+					["-48160.32"] = {
+						["c_amt"] = 5937,
+						["c_max"] = 1979,
+						["c_num"] = 3,
+						["n_max"] = 1340,
+						["sources"] = {
+							["Theodrus"] = {
+								["amount"] = 9957,
+							},
+						},
+						["count"] = 6,
+						["amount"] = 9957,
+						["c_min"] = 1979,
+						["n_amt"] = 4020,
+						["n_num"] = 3,
+						["n_min"] = 1340,
+					},
+					["47481.1"] = {
+						["sources"] = {
+							["Risen Ghoul"] = {
+								["amount"] = 19,
+							},
+						},
+						["count"] = 1,
+						["amount"] = 19,
+						["n_min"] = 19,
+						["n_amt"] = 19,
+						["n_num"] = 1,
+						["n_max"] = 19,
+					},
+					["6603.1"] = {
+						["c_amt"] = 4332,
+						["c_max"] = 2184,
+						["c_num"] = 2,
+						["n_max"] = 1397,
+						["sources"] = {
+							["Siouxsie"] = {
+								["amount"] = 5729,
+							},
+							["Rune Weapon"] = {
+								["amount"] = 58,
+							},
+							["Risen Ghoul"] = {
+								["amount"] = 1103,
+							},
+						},
+						["count"] = 13,
+						["amount"] = 6890,
+						["c_min"] = 2148,
+						["n_amt"] = 2558,
+						["n_num"] = 11,
+						["n_min"] = 16,
+					},
+					["49909.16"] = {
+						["sources"] = {
+							["Siouxsie"] = {
+								["amount"] = 763,
+							},
+						},
+						["count"] = 1,
+						["amount"] = 763,
+						["n_min"] = 763,
+						["n_amt"] = 763,
+						["n_num"] = 1,
+						["n_max"] = 763,
+					},
+					["49921.1"] = {
+						["c_amt"] = 2181,
+						["sources"] = {
+							["Siouxsie"] = {
+								["amount"] = 2181,
+							},
+						},
+						["count"] = 1,
+						["amount"] = 2181,
+						["c_min"] = 2181,
+						["c_max"] = 2181,
+						["c_num"] = 1,
+					},
+					["47468.1"] = {
+						["sources"] = {
+							["Risen Ghoul"] = {
+								["amount"] = 950,
+							},
+						},
+						["count"] = 4,
+						["amount"] = 950,
+						["n_min"] = 234,
+						["n_amt"] = 950,
+						["n_num"] = 4,
+						["n_max"] = 246,
+					},
+				},
+				["class"] = "SHAMAN",
+				["damaged"] = 33256,
+				["auras"] = {
 					["75473.1"] = {
 						["u"] = 15,
 						["n"] = 1,
 					},
-					["48169.32"] = {
-						["u"] = 596,
-						["n"] = 1,
-					},
-					["2457.1"] = {
-						["u"] = 596,
-						["n"] = 3,
-					},
-					["2458.1"] = {
-						["u"] = 22,
-						["n"] = 2,
-					},
-					["12970.1"] = {
-						["u"] = 15,
-						["n"] = 1,
-					},
-					["48161.2"] = {
-						["u"] = 596,
-						["n"] = 1,
-					},
-					["20217.2"] = {
-						["u"] = 596,
-						["n"] = 1,
-					},
-				},
-				["ragespells"] = {
-					["34846.1"] = 25,
-					["12964.1"] = 1,
-				},
-				["ccdonespells"] = {
-					["-7922.1"] = {
-						["t"] = {
-							["Frostwolf"] = 1,
-						},
-						["n"] = 1,
-					},
-				},
-				["timespent"] = {
-					["Frostwolf"] = 3.5,
-				},
-			},
-			["Lankester"] = {
-				["role"] = "NONE",
-				["id"] = "0xF130011D24000117",
-				["class"] = "PRIEST",
-				["last"] = 46746.332,
-				["auras"] = {
-					["-57669.8"] = {
-						["u"] = 30,
-					},
-					["48168.2"] = {
-						["u"] = 596,
-						["n"] = 1,
-					},
-					["47436.1"] = {
-						["u"] = 596,
-						["n"] = 1,
-					},
-					["6346.2"] = {
-						["u"] = 596,
-						["n"] = 1,
-					},
-					["48169.32"] = {
-						["u"] = 596,
-						["n"] = 1,
-					},
-					["48073.2"] = {
-						["u"] = 596,
-						["n"] = 1,
-					},
-					["48161.2"] = {
-						["u"] = 596,
-						["n"] = 1,
-					},
-					["42995.64"] = {
-						["u"] = 596,
-						["n"] = 1,
-					},
-					["20217.2"] = {
-						["u"] = 596,
-						["n"] = 1,
-					},
-				},
-			},
-			["Enyo"] = {
-				["last"] = 46746.332,
-				["id"] = "0xF130011D22000115",
-				["class"] = "MAGE",
-				["role"] = "DAMAGER",
-				["auras"] = {
-					["43008.16"] = {
-						["u"] = 596,
-						["n"] = 1,
-					},
-					["48169.32"] = {
-						["u"] = 596,
-						["n"] = 1,
-					},
-					["48161.2"] = {
-						["u"] = 596,
-						["n"] = 1,
-					},
-					["47436.1"] = {
-						["u"] = 596,
-						["n"] = 1,
-					},
-					["48073.2"] = {
-						["u"] = 596,
-						["n"] = 1,
-					},
-					["43015.64"] = {
-						["u"] = 596,
-						["n"] = 1,
-					},
-					["42995.64"] = {
-						["u"] = 596,
-						["n"] = 1,
-					},
-					["20217.2"] = {
-						["u"] = 596,
-						["n"] = 1,
-					},
-				},
-			},
-			["Ursyn"] = {
-				["role"] = "DAMAGER",
-				["id"] = "0xF130011D34000127",
-				["class"] = "MAGE",
-				["last"] = 46746.332,
-				["auras"] = {
-					["65008.1"] = {
-						["u"] = 20,
-						["n"] = 1,
-					},
-					["48161.2"] = {
-						["u"] = 596,
-						["n"] = 1,
-					},
-					["43008.16"] = {
-						["u"] = 596,
-						["n"] = 1,
-					},
-					["48169.32"] = {
-						["u"] = 596,
-						["n"] = 1,
-					},
-					["48073.2"] = {
-						["u"] = 596,
-						["n"] = 1,
-					},
-					["12536.64"] = {
-						["u"] = 15,
-						["n"] = 1,
-					},
-					["43015.64"] = {
-						["u"] = 596,
-						["n"] = 1,
-					},
-					["42995.64"] = {
-						["u"] = 596,
-						["n"] = 1,
-					},
-					["-57669.8"] = {
-						["u"] = 30,
-					},
-				},
-			},
-			["David"] = {
-				["last"] = 46746.332,
-				["id"] = "0xF130011D33000126",
-				["class"] = "ROGUE",
-				["role"] = "DAMAGER",
-				["auras"] = {
-					["48169.32"] = {
-						["u"] = 596,
-						["n"] = 1,
-					},
-					["20217.2"] = {
-						["u"] = 596,
-						["n"] = 1,
-					},
-					["48161.2"] = {
-						["u"] = 596,
-						["n"] = 1,
-					},
-				},
-			},
-			["Malakai"] = {
-				["role"] = "NONE",
-				["id"] = "0xF130011D1A00010D",
-				["class"] = "PRIEST",
-				["last"] = 46746.332,
-				["auras"] = {
-					["-57669.8"] = {
-						["u"] = 15,
-					},
-					["48168.2"] = {
-						["u"] = 596,
-						["n"] = 1,
-					},
-					["48161.2"] = {
-						["u"] = 596,
-						["n"] = 1,
-					},
-					["6346.2"] = {
-						["u"] = 596,
-						["n"] = 1,
-					},
-					["48169.32"] = {
-						["u"] = 596,
-						["n"] = 1,
-					},
-					["48073.2"] = {
-						["u"] = 596,
-						["n"] = 1,
-					},
-					["47436.1"] = {
-						["u"] = 596,
-						["n"] = 1,
-					},
-					["42995.64"] = {
-						["u"] = 596,
-						["n"] = 1,
-					},
-					["20217.2"] = {
-						["u"] = 596,
-						["n"] = 1,
-					},
-				},
-			},
-			["Rupert"] = {
-				["overheal"] = 10146,
-				["last"] = 46746.332,
-				["role"] = "DAMAGER",
-				["heal"] = 0,
-				["id"] = "0xF130011D2A00011D",
-				["class"] = "WARLOCK",
-				["healspells"] = {
-					["-47893.32"] = {
-						["c_amt"] = 0,
-						["c_max"] = 0,
-						["c_num"] = 8,
-						["n_max"] = 0,
-						["targets"] = {
-							["Rupert"] = {
-								["o_amt"] = 10146,
-								["amount"] = 0,
-							},
-						},
-						["count"] = 15,
-						["c_min"] = 0,
-						["amount"] = 0,
-						["o_amt"] = 10146,
-						["n_min"] = 0,
-						["n_num"] = 7,
-						["n_amt"] = 0,
-					},
-				},
-				["auras"] = {
-					["47436.1"] = {
-						["u"] = 596,
-						["n"] = 1,
-					},
-					["47893.32"] = {
-						["u"] = 596,
-						["n"] = 1,
-					},
-					["132.32"] = {
-						["u"] = 596,
-						["n"] = 1,
-					},
-					["48169.32"] = {
-						["u"] = 596,
-						["n"] = 1,
-					},
-					["48161.2"] = {
-						["u"] = 596,
-						["n"] = 1,
-					},
-					["48073.2"] = {
-						["u"] = 596,
-						["n"] = 1,
-					},
-					["25228.32"] = {
-						["u"] = 596,
-						["n"] = 2,
-					},
-					["23161.1"] = {
-						["u"] = 596,
-						["n"] = 3,
-					},
-					["42995.64"] = {
-						["u"] = 596,
-						["n"] = 1,
-					},
-					["20217.2"] = {
-						["u"] = 596,
-						["n"] = 1,
-					},
-				},
-			},
-			["Whitewhisker Digger"] = {
-				["damagespells"] = {
-					["6603.1"] = {
-						["total"] = 2314,
-						["targets"] = {
-							["Celoenus"] = {
-								["total"] = 2052,
-								["amount"] = 1185,
-							},
-							["Voidwalker <Celoenus>"] = {
-								["amount"] = 262,
-							},
-						},
-						["amount"] = 1447,
-					},
-					["25228.32"] = {
-						["targets"] = {
-							["Voidwalker <Celoenus>"] = {
-								["amount"] = 418,
-							},
-						},
-						["amount"] = 418,
-					},
-					["12057.1"] = {
-						["total"] = 915,
-						["targets"] = {
-							["Celoenus"] = {
-								["total"] = 915,
-								["amount"] = 503,
-							},
-						},
-						["amount"] = 503,
-					},
-				},
-				["totaldamage"] = 3647,
-				["enemy"] = true,
-				["id"] = "0xF130002D530001AF",
-				["damagedspells"] = {
-					["47818.4"] = {
-						["o_amt"] = 1595,
-						["sources"] = {
-							["Celoenus"] = {
-								["o_amt"] = 1595,
-								["amount"] = 8219,
-							},
-						},
-						["amount"] = 8219,
-					},
-					["51460.32"] = {
-						["sources"] = {
-							["Zor'be"] = {
-								["amount"] = 838,
-							},
-						},
-						["amount"] = 838,
-					},
-					["47847.32"] = {
-						["sources"] = {
-							["Celoenus"] = {
-								["amount"] = 6432,
-							},
-						},
-						["amount"] = 6432,
-					},
-					["56815.1"] = {
-						["o_amt"] = 10735,
-						["sources"] = {
-							["Zor'be"] = {
-								["o_amt"] = 10735,
-								["amount"] = 27066,
-							},
-						},
-						["amount"] = 27066,
-					},
-					["-47811.4"] = {
-						["sources"] = {
-							["Celoenus"] = {
-								["amount"] = 672,
-							},
-						},
-						["amount"] = 672,
-					},
-					["47632.32"] = {
-						["o_amt"] = 490,
-						["sources"] = {
-							["Zor'be"] = {
-								["o_amt"] = 490,
-								["amount"] = 3732,
-							},
-						},
-						["amount"] = 3732,
-					},
-					["47827.32"] = {
-						["o_amt"] = 3717,
-						["sources"] = {
-							["Celoenus"] = {
-								["o_amt"] = 3717,
-								["amount"] = 4458,
-							},
-						},
-						["amount"] = 4458,
-					},
-					["59172.4"] = {
-						["o_amt"] = 6605,
-						["sources"] = {
-							["Celoenus"] = {
-								["o_amt"] = 6605,
-								["amount"] = 9183,
-							},
-						},
-						["amount"] = 9183,
-					},
-					["58621.16"] = {
-						["sources"] = {
-							["Zor'be"] = {
-								["amount"] = 2524,
-							},
-						},
-						["amount"] = 2524,
-					},
-					["50463.1"] = {
-						["sources"] = {
-							["Zor'be"] = {
-								["amount"] = 680,
-							},
-						},
-						["amount"] = 680,
-					},
-					["47468.1"] = {
-						["sources"] = {
-							["Zor'be"] = {
-								["amount"] = 1084,
-							},
-						},
-						["amount"] = 1084,
-					},
-					["17962.4"] = {
-						["o_amt"] = 4193,
-						["sources"] = {
-							["Celoenus"] = {
-								["o_amt"] = 4193,
-								["amount"] = 4516,
-							},
-						},
-						["amount"] = 4516,
-					},
-					["6603.1"] = {
-						["sources"] = {
-							["Celoenus"] = {
-								["amount"] = 3677,
-							},
-							["Zor'be"] = {
-								["amount"] = 5640,
-							},
-						},
-						["amount"] = 9317,
-					},
-					["49909.16"] = {
-						["sources"] = {
-							["Zor'be"] = {
-								["amount"] = 2067,
-							},
-						},
-						["amount"] = 2067,
-					},
-					["49921.1"] = {
-						["o_amt"] = 2780,
-						["sources"] = {
-							["Zor'be"] = {
-								["o_amt"] = 2780,
-								["amount"] = 2806,
-							},
-						},
-						["amount"] = 2806,
-					},
-					["47811.4"] = {
-						["o_amt"] = 743,
-						["sources"] = {
-							["Celoenus"] = {
-								["o_amt"] = 743,
-								["amount"] = 10620,
-							},
-						},
-						["amount"] = 10620,
-					},
-				},
-				["class"] = "MONSTER",
-				["damaged"] = 94214,
-				["damage"] = 2368,
-			},
-			["Celoenus"] = {
-				["ccdonespells"] = {
-					["-6215.32"] = {
-						["t"] = {
-							["Whitewhisker Overseer"] = 2,
-						},
-						["n"] = 2,
-					},
-				},
-				["last"] = 46838.821,
-				["damagedspells"] = {
-					["6603.1"] = {
-						["total"] = 3200,
-						["n_max"] = 160,
-						["dod_n"] = 1,
-						["n_amt"] = 1994,
-						["sources"] = {
-							["Whitewhisker Vermin"] = {
-								["total"] = 139,
-								["amount"] = 112,
-							},
-							["Whitewhisker Digger"] = {
-								["total"] = 2052,
-								["amount"] = 1185,
-							},
-							["Whitewhisker Geomancer"] = {
-								["total"] = 505,
-								["amount"] = 292,
-							},
-							["Whitewhisker Overseer"] = {
-								["total"] = 504,
-								["amount"] = 405,
-							},
-						},
-						["count"] = 23,
-						["amount"] = 1994,
-						["abs_n"] = 5,
-						["n_min"] = 105,
-						["n_num"] = 16,
-						["mis_n"] = 1,
-					},
-					["15284.1"] = {
-						["total"] = 214,
-						["sources"] = {
-							["Whitewhisker Overseer"] = {
-								["total"] = 214,
-								["amount"] = 172,
-							},
-						},
-						["count"] = 1,
-						["amount"] = 172,
-						["n_min"] = 172,
-						["n_max"] = 172,
-						["n_num"] = 1,
-						["n_amt"] = 172,
-					},
-					["12057.1"] = {
-						["total"] = 915,
-						["n_max"] = 261,
-						["n_amt"] = 503,
-						["sources"] = {
-							["Whitewhisker Digger"] = {
-								["total"] = 915,
-								["amount"] = 503,
-							},
-						},
-						["count"] = 5,
-						["amount"] = 503,
-						["n_min"] = 242,
-						["abs_n"] = 1,
-						["n_num"] = 2,
-						["mis_n"] = 2,
-					},
-					["15572.1"] = {
-						["sources"] = {
-							["Whitewhisker Digger"] = {
-								["amount"] = 0,
-							},
-						},
-						["dod_n"] = 1,
-						["count"] = 1,
-						["amount"] = 0,
-					},
-				},
-				["class"] = "WARLOCK",
-				["damaged"] = 2669,
-				["auras"] = {
-					["63244.4"] = {
-						["u"] = 10,
-						["n"] = 1,
-					},
-					["22751.2"] = {
-						["u"] = 501,
-						["n"] = 1,
-					},
-					["47893.32"] = {
-						["u"] = 596,
-						["n"] = 1,
-					},
-					["47986.32"] = {
-						["u"] = 30,
-						["n"] = 1,
-					},
-					["-47990.32.Voidwalker"] = {
-						["u"] = 3,
-						["t"] = {
-							["Whitewhisker Geomancer"] = {
-								["u"] = 2,
-								["n"] = 1,
-							},
-							["Whitewhisker Digger"] = {
-								["u"] = 3,
-								["n"] = 1,
-							},
-						},
-						["n"] = 2,
-					},
-					["54277.1"] = {
-						["u"] = 11,
-						["n"] = 1,
-					},
-					["34936.4"] = {
-						["u"] = 122,
-						["n"] = 4,
-					},
-					["63321.4"] = {
-						["u"] = 40,
-						["n"] = 1,
-					},
-					["-61291.4"] = {
-						["u"] = 3,
-						["t"] = {
-							["Whitewhisker Overseer"] = {
-								["u"] = 3,
-								["n"] = 1,
-							},
-						},
-						["n"] = 1,
-					},
-					["-47847.32"] = {
-						["u"] = 3,
-						["t"] = {
-							["Whitewhisker Overseer"] = {
-								["u"] = 2,
-								["n"] = 1,
-							},
-							["Whitewhisker Geomancer"] = {
-								["u"] = 3,
-								["n"] = 1,
-							},
-							["Whitewhisker Digger"] = {
-								["u"] = 3,
-								["n"] = 2,
-							},
-						},
-						["n"] = 4,
-					},
-					["67740.1"] = {
-						["u"] = 20,
-						["n"] = 1,
-					},
-					["23161.1"] = {
-						["u"] = 596,
-						["n"] = 4,
-					},
-					["-63311.4"] = {
-						["u"] = 3,
-						["t"] = {
-							["Whitewhisker Overseer"] = {
-								["u"] = 3,
-								["n"] = 1,
-							},
-						},
-						["n"] = 1,
-					},
-					["48169.32"] = {
-						["u"] = 596,
-						["n"] = 1,
-					},
-					["-57669.8"] = {
-						["u"] = 15,
-					},
-					["47436.1"] = {
-						["u"] = 596,
-						["n"] = 1,
-					},
-					["48161.2"] = {
-						["u"] = 596,
-						["n"] = 1,
-					},
-					["-60947.32"] = {
-						["u"] = 2,
-						["t"] = {
-							["Whitewhisker Overseer"] = {
-								["u"] = 2,
-								["n"] = 1,
-							},
-						},
-						["n"] = 1,
-					},
-					["47820.4"] = {
+					["33697.1"] = {
 						["u"] = 5,
 						["n"] = 1,
 					},
-					["61188.1"] = {
-						["u"] = 58,
-						["r"] = 2,
-						["n"] = 1,
-					},
-					["-6215.32"] = {
-						["u"] = 35,
-						["t"] = {
-							["Whitewhisker Overseer"] = {
-								["u"] = 35,
-								["n"] = 2,
-							},
-						},
-						["n"] = 2,
-					},
-					["-47811.4"] = {
-						["u"] = 554,
-						["t"] = {
-							["Whitewhisker Digger"] = {
-								["u"] = 554,
-								["n"] = 3,
-							},
-						},
-						["n"] = 3,
-					},
-					["132.32"] = {
-						["u"] = 596,
-						["n"] = 1,
-					},
-					["25228.32"] = {
-						["u"] = 596,
-						["n"] = 2,
-					},
-					["-47820.4"] = {
-						["u"] = 8,
-						["t"] = {
-							["Whitewhisker Overseer"] = {
-								["u"] = 3,
-								["n"] = 2,
-							},
-							["Whitewhisker Geomancer"] = {
-								["u"] = 1,
-								["n"] = 1,
-							},
-							["Whitewhisker Digger"] = {
-								["u"] = 8,
-								["n"] = 3,
-							},
-						},
-						["n"] = 6,
-					},
-					["48073.2"] = {
-						["u"] = 596,
-						["n"] = 1,
-					},
-					["57073.1"] = {
+					["61301.8"] = {
 						["u"] = 9,
 						["n"] = 1,
 					},
-					["-17928.32"] = {
-						["u"] = 8,
+					["64701.8"] = {
+						["u"] = 5,
+						["n"] = 1,
+					},
+					["16166.8"] = {
+						["u"] = 1,
+						["n"] = 1,
+					},
+					["57960.8"] = {
+						["u"] = 23,
+						["n"] = 1,
+					},
+					["16246.64"] = {
+						["u"] = 22,
+						["n"] = 2,
+					},
+					["-49231.8"] = {
+						["u"] = 25,
 						["t"] = {
-							["Whitewhisker Digger"] = {
-								["u"] = 8,
-								["n"] = 3,
-							},
-							["Whitewhisker Overseer"] = {
-								["u"] = 3,
+							["Siouxsie"] = {
+								["u"] = 25,
 								["n"] = 2,
 							},
 						},
-						["n"] = 5,
-					},
-					["42995.64"] = {
-						["u"] = 596,
-						["n"] = 1,
-					},
-					["20217.2"] = {
-						["u"] = 596,
-						["n"] = 1,
-					},
-				},
-				["absorbspells"] = {
-					["25228.32"] = {
-						["n_amt"] = 658,
-						["count"] = 19,
-						["amount"] = 658,
-						["targets"] = {
-							["Celoenus"] = 658,
-						},
-						["n_max"] = 65,
-						["n_num"] = 19,
-						["n_min"] = 26,
+						["n"] = 2,
 					},
 				},
 				["role"] = "DAMAGER",
-				["time"] = 37.57,
-				["damage"] = 86244,
-				["overheal"] = 36348,
-				["absorb"] = 658,
-				["id"] = "0xF130011D2B00011E",
+				["time"] = 16.77,
+				["cctaken"] = 2,
+				["damage"] = 169807,
+				["overheal"] = 3862,
+				["deathlog"] = {
+					{
+						["log"] = {
+							{
+								["src"] = "Siouxsie",
+								["time"] = 238956.218,
+								["id"] = "-55095.16",
+								["rem"] = 1,
+								["hp"] = 1,
+								["aur"] = 1,
+							}, -- [1]
+							{
+								["src"] = "Siouxsie",
+								["time"] = 238956.219,
+								["id"] = "-55078.32",
+								["rem"] = 1,
+								["hp"] = 1,
+								["aur"] = 1,
+							}, -- [2]
+							{
+								["src"] = "Siouxsie",
+								["time"] = 238956.22,
+								["id"] = "-49028.1",
+								["rem"] = 1,
+								["hp"] = 1,
+								["aur"] = 1,
+							}, -- [3]
+							{
+								["src"] = "Theodrus",
+								["time"] = 238956.22,
+								["id"] = "-48160.32",
+								["rem"] = 1,
+								["hp"] = 1,
+								["aur"] = 1,
+							}, -- [4]
+							{
+								["src"] = "Theodrus",
+								["time"] = 238956.22,
+								["id"] = "-33198.32",
+								["rem"] = 1,
+								["hp"] = 1,
+								["aur"] = 1,
+							}, -- [5]
+							{
+								["cri"] = 1,
+								["src"] = "Theodrus",
+								["time"] = 238956.22,
+								["amt"] = -3419,
+								["id"] = "48158.32",
+								["hp"] = 1,
+								["ovk"] = 209,
+							}, -- [6]
+							{
+								["cri"] = 1,
+								["src"] = "Theodrus",
+								["time"] = 238955.72,
+								["amt"] = -1979,
+								["id"] = "-48160.32",
+								["hp"] = 2250,
+							}, -- [7]
+							{
+								["src"] = "Risen Ghoul",
+								["time"] = 238955.4,
+								["amt"] = -246,
+								["id"] = "47468.1",
+								["hp"] = 4229,
+							}, -- [8]
+							{
+								["src"] = "Siouxsie",
+								["time"] = 238955.221,
+								["amt"] = -272,
+								["id"] = "-55095.16",
+								["hp"] = 4475,
+							}, -- [9]
+							{
+								["src"] = "Risen Ghoul",
+								["time"] = 238954.794,
+								["amt"] = -165,
+								["id"] = "6603.1",
+								["hp"] = 4747,
+							}, -- [10]
+							{
+								["src"] = "Rune Weapon",
+								["time"] = 238954.522,
+								["amt"] = -20,
+								["id"] = "6603.1",
+								["hp"] = 4932,
+							}, -- [11]
+							{
+								["src"] = "Theodrus",
+								["time"] = 238954.096,
+								["id"] = "-48301.32",
+								["rem"] = 1,
+								["hp"] = 4932,
+								["aur"] = 1,
+							}, -- [12]
+							{
+								["src"] = "Rune Weapon",
+								["time"] = 238953.999,
+								["amt"] = -109,
+								["id"] = "49930.1",
+								["hp"] = 4932,
+							}, -- [13]
+							{
+								["cri"] = 1,
+								["src"] = "Siouxsie",
+								["time"] = 238954,
+								["amt"] = -2496,
+								["id"] = "49930.1",
+								["hp"] = 5041,
+							}, -- [14]
+						},
+						["time"] = 238956.221,
+						["id"] = "48158.32",
+						["timeod"] = 1752935332,
+						["hpm"] = 26789,
+						["src"] = "Theodrus",
+					}, -- [1]
+				},
+				["id"] = "0x000000000000000F",
+				["spec"] = 262,
 				["healspells"] = {
-					["54181.2"] = {
-						["n_amt"] = 2394,
+					["61301.8"] = {
+						["c_amt"] = 3534,
+						["count"] = 1,
+						["amount"] = 3534,
+						["c_max"] = 3534,
+						["c_min"] = 3534,
 						["targets"] = {
-							["Voidwalker <Celoenus>"] = {
-								["o_amt"] = 9648,
-								["amount"] = 2394,
+							["Bluex"] = {
+								["amount"] = 3534,
 							},
 						},
-						["count"] = 24,
-						["amount"] = 2394,
-						["o_amt"] = 9648,
-						["n_max"] = 1328,
-						["n_num"] = 24,
-						["n_min"] = 30,
+						["c_num"] = 1,
 					},
-					["-47893.32"] = {
-						["c_amt"] = 427,
-						["c_max"] = 237,
-						["c_num"] = 15,
-						["n_max"] = 548,
+					["-61301.8"] = {
 						["targets"] = {
-							["Celoenus"] = {
-								["o_amt"] = 26700,
+							["Bluex"] = {
+								["amount"] = 2496,
+							},
+						},
+						["count"] = 3,
+						["amount"] = 2496,
+						["n_min"] = 768,
+						["n_amt"] = 2496,
+						["n_num"] = 3,
+						["n_max"] = 960,
+					},
+					["49276.8"] = {
+						["targets"] = {
+							["Bluex"] = {
+								["o_amt"] = 3862,
+								["amount"] = 0,
+							},
+						},
+						["n_min"] = 0,
+						["count"] = 1,
+						["amount"] = 0,
+						["o_amt"] = 3862,
+						["n_amt"] = 0,
+						["n_num"] = 1,
+						["n_max"] = 0,
+					},
+				},
+				["overkill"] = 97237,
+				["mana"] = 4232,
+				["heal"] = 6030,
+				["manaspells"] = {
+					["59159.8"] = 2264,
+					["57961.8"] = 1968,
+				},
+				["death"] = 1,
+				["totaldamage"] = 194801,
+				["damagespells"] = {
+					["60043.4"] = {
+						["c_amt"] = 16016,
+						["c_max"] = 16016,
+						["c_num"] = 1,
+						["n_max"] = 13354,
+						["targets"] = {
+							["Siouxsie"] = {
+								["amount"] = 13354,
+							},
+							["Theodrus"] = {
+								["amount"] = 16016,
+							},
+						},
+						["c_min"] = 16016,
+						["amount"] = 29370,
+						["n_min"] = 13354,
+						["n_amt"] = 13354,
+						["n_num"] = 1,
+						["count"] = 2,
+					},
+					["49238.8"] = {
+						["targets"] = {
+							["Siouxsie"] = {
+								["amount"] = 4559,
+							},
+						},
+						["count"] = 1,
+						["amount"] = 4559,
+						["n_min"] = 4559,
+						["n_amt"] = 4559,
+						["n_num"] = 1,
+						["n_max"] = 4559,
+					},
+					["59159.8"] = {
+						["c_amt"] = 9826,
+						["count"] = 2,
+						["amount"] = 9826,
+						["c_max"] = 4924,
+						["c_min"] = 4902,
+						["targets"] = {
+							["Siouxsie"] = {
+								["amount"] = 4924,
+							},
+							["Risen Ghoul"] = {
+								["amount"] = 4902,
+							},
+						},
+						["c_num"] = 2,
+					},
+					["49231.8"] = {
+						["targets"] = {
+							["Siouxsie"] = {
+								["total"] = 16146,
+								["amount"] = 11387,
+							},
+						},
+						["total"] = 16146,
+						["count"] = 2,
+						["amount"] = 11387,
+						["n_min"] = 4287,
+						["n_amt"] = 11387,
+						["n_num"] = 2,
+						["n_max"] = 7100,
+					},
+					["44425.64"] = {
+						["total"] = 134900,
+						["n_max"] = 114665,
+						["targets"] = {
+							["Siouxsie"] = {
+								["o_amt"] = 97237,
+								["total"] = 134900,
+								["amount"] = 114665,
+							},
+						},
+						["count"] = 1,
+						["amount"] = 114665,
+						["o_amt"] = 97237,
+						["n_amt"] = 114665,
+						["n_num"] = 1,
+						["n_min"] = 114665,
+					},
+				},
+				["cctakenspells"] = {
+					["-15487.32"] = {
+						["sources"] = {
+							["Theodrus"] = 1,
+						},
+						["n"] = 1,
+					},
+					["-47481.1"] = {
+						["sources"] = {
+							["Risen Ghoul"] = 1,
+						},
+						["n"] = 1,
+					},
+				},
+				["timespent"] = {
+					["Siouxsie"] = 9.989999999999998,
+					["Theodrus"] = 3.28,
+					["Risen Ghoul"] = 3.5,
+				},
+			},
+			["Nara"] = {
+				["damagespells"] = {
+					["-48135.2"] = {
+						["targets"] = {
+							["Duesten"] = {
+								["amount"] = 159,
+							},
+						},
+						["amount"] = 159,
+					},
+					["48135.2"] = {
+						["total"] = 5028,
+						["targets"] = {
+							["Duesten"] = {
+								["total"] = 5028,
+								["amount"] = 2391,
+							},
+						},
+						["amount"] = 2391,
+					},
+					["48127.32"] = {
+						["total"] = 8464,
+						["targets"] = {
+							["Duesten"] = {
+								["total"] = 8464,
+								["amount"] = 6228,
+							},
+						},
+						["amount"] = 6228,
+					},
+					["5019.1"] = {
+						["targets"] = {
+							["Duesten"] = {
+								["amount"] = 6272,
+							},
+						},
+						["amount"] = 6272,
+					},
+				},
+				["id"] = "0xF130011FE600000A",
+				["class"] = "MONSTER",
+				["damaged"] = 30286,
+				["enemy"] = true,
+				["totaldamage"] = 19923,
+				["totaldamaged"] = 30590,
+				["damagedspells"] = {
+					["58381.32"] = {
+						["sources"] = {
+							["Duesten"] = {
+								["amount"] = 6415,
+							},
+						},
+						["amount"] = 6415,
+					},
+					["48158.32"] = {
+						["o_amt"] = 2156,
+						["sources"] = {
+							["Duesten"] = {
+								["o_amt"] = 2156,
+								["amount"] = 2652,
+							},
+						},
+						["amount"] = 2652,
+					},
+					["42859.4"] = {
+						["sources"] = {
+							["Pierce"] = {
+								["amount"] = 6450,
+							},
+						},
+						["amount"] = 6450,
+					},
+					["5019.1"] = {
+						["sources"] = {
+							["Duesten"] = {
+								["total"] = 2018,
+								["amount"] = 1714,
+							},
+						},
+						["total"] = 2018,
+						["amount"] = 1714,
+					},
+					["48127.32"] = {
+						["sources"] = {
+							["Duesten"] = {
+								["amount"] = 2711,
+							},
+						},
+						["amount"] = 2711,
+					},
+					["64085.32"] = {
+						["sources"] = {
+							["Duesten"] = {
+								["amount"] = 10344,
+							},
+						},
+						["amount"] = 10344,
+					},
+				},
+				["damage"] = 15050,
+			},
+			["Theodrus"] = {
+				["damagespells"] = {
+					["58381.32"] = {
+						["targets"] = {
+							["Bluex"] = {
+								["amount"] = 1202,
+							},
+						},
+						["amount"] = 1202,
+					},
+					["48158.32"] = {
+						["o_amt"] = 209,
+						["targets"] = {
+							["Bluex"] = {
+								["o_amt"] = 209,
+								["amount"] = 3419,
+							},
+						},
+						["amount"] = 3419,
+					},
+					["48127.32"] = {
+						["targets"] = {
+							["Bluex"] = {
+								["amount"] = 3648,
+							},
+						},
+						["amount"] = 3648,
+					},
+					["-48160.32"] = {
+						["targets"] = {
+							["Bluex"] = {
+								["amount"] = 9957,
+							},
+						},
+						["amount"] = 9957,
+					},
+				},
+				["id"] = "0xF130011FE5000009",
+				["class"] = "MONSTER",
+				["damaged"] = 51695,
+				["enemy"] = true,
+				["overkill"] = 209,
+				["damagedspells"] = {
+					["-12654.4"] = {
+						["o_amt"] = 5141,
+						["sources"] = {
+							["Pierce"] = {
+								["o_amt"] = 5141,
+								["amount"] = 5798,
+							},
+						},
+						["amount"] = 5798,
+					},
+					["42891.4"] = {
+						["sources"] = {
+							["Pierce"] = {
+								["amount"] = 18446,
+							},
+						},
+						["amount"] = 18446,
+					},
+					["60043.4"] = {
+						["sources"] = {
+							["Bluex"] = {
+								["amount"] = 16016,
+							},
+						},
+						["amount"] = 16016,
+					},
+					["42859.4"] = {
+						["sources"] = {
+							["Pierce"] = {
+								["amount"] = 8522,
+							},
+						},
+						["amount"] = 8522,
+					},
+					["42873.4"] = {
+						["sources"] = {
+							["Pierce"] = {
+								["amount"] = 2913,
+							},
+						},
+						["amount"] = 2913,
+					},
+				},
+				["damage"] = 18226,
+			},
+			["Siouxsie"] = {
+				["damagespells"] = {
+					["-55095.16"] = {
+						["total"] = 1469,
+						["targets"] = {
+							["Pierce"] = {
+								["total"] = 339,
+								["amount"] = 0,
+							},
+							["Bluex"] = {
+								["amount"] = 1130,
+							},
+						},
+						["amount"] = 1130,
+					},
+					["49930.1"] = {
+						["targets"] = {
+							["Bluex"] = {
+								["amount"] = 2496,
+							},
+						},
+						["amount"] = 2496,
+					},
+					["6603.1"] = {
+						["targets"] = {
+							["Bluex"] = {
+								["amount"] = 5729,
+							},
+							["Duesten"] = {
+								["amount"] = 2874,
+							},
+						},
+						["amount"] = 8603,
+					},
+					["-55078.32"] = {
+						["targets"] = {
+							["Bluex"] = {
+								["amount"] = 492,
+							},
+						},
+						["amount"] = 492,
+					},
+					["49921.1"] = {
+						["targets"] = {
+							["Bluex"] = {
+								["amount"] = 2181,
+							},
+						},
+						["amount"] = 2181,
+					},
+					["49909.16"] = {
+						["targets"] = {
+							["Pierce"] = {
+								["amount"] = 1683,
+							},
+							["Duesten"] = {
+								["amount"] = 791,
+							},
+							["Bluex"] = {
+								["amount"] = 763,
+							},
+						},
+						["amount"] = 3237,
+					},
+				},
+				["id"] = "0xF130011FE700000B",
+				["class"] = "MONSTER",
+				["damaged"] = 149899,
+				["enemy"] = true,
+				["totaldamage"] = 18478,
+				["damagedspells"] = {
+					["60043.4"] = {
+						["sources"] = {
+							["Bluex"] = {
+								["amount"] = 13354,
+							},
+						},
+						["amount"] = 13354,
+					},
+					["42945.4"] = {
+						["total"] = 1836,
+						["sources"] = {
+							["Pierce"] = {
+								["total"] = 1836,
+								["amount"] = 1010,
+							},
+						},
+						["amount"] = 1010,
+					},
+					["49238.8"] = {
+						["sources"] = {
+							["Bluex"] = {
+								["amount"] = 4559,
+							},
+						},
+						["amount"] = 4559,
+					},
+					["59159.8"] = {
+						["sources"] = {
+							["Bluex"] = {
+								["amount"] = 4924,
+							},
+						},
+						["amount"] = 4924,
+					},
+					["49231.8"] = {
+						["total"] = 16146,
+						["sources"] = {
+							["Bluex"] = {
+								["total"] = 16146,
+								["amount"] = 11387,
+							},
+						},
+						["amount"] = 11387,
+					},
+					["44425.64"] = {
+						["o_amt"] = 97237,
+						["total"] = 134900,
+						["sources"] = {
+							["Bluex"] = {
+								["o_amt"] = 97237,
+								["total"] = 134900,
+								["amount"] = 114665,
+							},
+						},
+						["amount"] = 114665,
+					},
+				},
+				["totaldamaged"] = 175719,
+				["damage"] = 18139,
+			},
+			["Summoned Skeleton"] = {
+				["damagespells"] = {
+					["6603.1"] = {
+						["total"] = 249,
+						["targets"] = {
+							["Duesten"] = {
+								["total"] = 249,
+								["amount"] = 207,
+							},
+						},
+						["amount"] = 207,
+					},
+				},
+				["id"] = "0xF130002BC0000008",
+				["class"] = "PET",
+				["damaged"] = 15866,
+				["enemy"] = true,
+				["totaldamage"] = 249,
+				["damagedspells"] = {
+					["-12654.4"] = {
+						["sources"] = {
+							["Pierce"] = {
 								["amount"] = 1340,
 							},
 						},
-						["n_amt"] = 913,
-						["count"] = 39,
 						["amount"] = 1340,
-						["o_amt"] = 26700,
-						["n_min"] = 0,
-						["n_num"] = 24,
-						["c_min"] = 0,
+					},
+					["42945.4"] = {
+						["sources"] = {
+							["Pierce"] = {
+								["amount"] = 2967,
+							},
+						},
+						["amount"] = 2967,
+					},
+					["5019.1"] = {
+						["sources"] = {
+							["Duesten"] = {
+								["amount"] = 4553,
+							},
+						},
+						["amount"] = 4553,
+					},
+					["48158.32"] = {
+						["o_amt"] = 2530,
+						["sources"] = {
+							["Duesten"] = {
+								["o_amt"] = 2530,
+								["amount"] = 4903,
+							},
+						},
+						["amount"] = 4903,
+					},
+					["42917.16"] = {
+						["sources"] = {
+							["Pierce"] = {
+								["amount"] = 2103,
+							},
+						},
+						["amount"] = 2103,
 					},
 				},
-				["overkill"] = 22307,
-				["mana"] = 3946,
-				["heal"] = 3734,
-				["manaspells"] = {
-					["31818.32"] = 3946,
-				},
-				["petdamage"] = 5106,
-				["ccdone"] = 2,
+				["damage"] = 207,
+			},
+			["Risen Ghoul"] = {
 				["damagespells"] = {
-					["6603.1.Voidwalker"] = {
-						["c_amt"] = 3190,
-						["c_max"] = 676,
-						["c_num"] = 5,
-						["n_max"] = 330,
-						["targets"] = {
-							["Whitewhisker Digger"] = {
-								["amount"] = 3236,
-							},
-							["Whitewhisker Geomancer"] = {
-								["amount"] = 1226,
-							},
-							["Whitewhisker Overseer"] = {
-								["o_amt"] = 67,
-								["amount"] = 644,
-							},
-						},
-						["count"] = 11,
-						["c_min"] = 604,
-						["amount"] = 5106,
-						["o_amt"] = 67,
-						["n_min"] = 306,
-						["n_num"] = 6,
-						["n_amt"] = 1916,
-					},
-					["47818.4"] = {
-						["c_amt"] = 19584,
-						["c_max"] = 3264,
-						["c_num"] = 6,
-						["n_max"] = 1910,
-						["targets"] = {
-							["Whitewhisker Overseer"] = {
-								["o_amt"] = 708,
-								["amount"] = 13056,
-							},
-							["Whitewhisker Geomancer"] = {
-								["o_amt"] = 44,
-								["amount"] = 1910,
-							},
-							["Whitewhisker Digger"] = {
-								["o_amt"] = 1595,
-								["amount"] = 8219,
-							},
-						},
-						["n_amt"] = 3601,
-						["count"] = 8,
-						["amount"] = 23185,
-						["o_amt"] = 2347,
-						["n_min"] = 1691,
-						["n_num"] = 2,
-						["c_min"] = 3264,
-					},
-					["47827.32"] = {
-						["c_amt"] = 4458,
-						["count"] = 1,
-						["c_max"] = 4458,
-						["c_num"] = 1,
-						["o_amt"] = 3717,
-						["c_min"] = 4458,
-						["targets"] = {
-							["Whitewhisker Digger"] = {
-								["o_amt"] = 3717,
-								["amount"] = 4458,
-							},
-						},
-						["amount"] = 4458,
-					},
-					["59172.4"] = {
-						["c_amt"] = 18037,
-						["count"] = 2,
-						["c_max"] = 9183,
-						["c_num"] = 2,
-						["o_amt"] = 10996,
-						["c_min"] = 8854,
-						["targets"] = {
-							["Whitewhisker Digger"] = {
-								["o_amt"] = 6605,
-								["amount"] = 9183,
-							},
-							["Whitewhisker Vermin"] = {
-								["o_amt"] = 4391,
-								["amount"] = 8854,
-							},
-						},
-						["amount"] = 18037,
-					},
-					["47811.4"] = {
-						["c_amt"] = 10249,
-						["c_max"] = 3586,
-						["c_num"] = 3,
-						["n_max"] = 2036,
-						["targets"] = {
-							["Whitewhisker Geomancer"] = {
-								["o_amt"] = 244,
-								["amount"] = 3586,
-							},
-							["Whitewhisker Digger"] = {
-								["o_amt"] = 743,
-								["amount"] = 10620,
-							},
-						},
-						["n_amt"] = 3957,
-						["count"] = 5,
-						["amount"] = 14206,
-						["o_amt"] = 987,
-						["n_min"] = 1921,
-						["n_num"] = 2,
-						["c_min"] = 3279,
-					},
-					["-61291.4"] = {
-						["c_amt"] = 514,
-						["count"] = 1,
-						["amount"] = 514,
-						["c_max"] = 514,
-						["c_min"] = 514,
-						["targets"] = {
-							["Whitewhisker Overseer"] = {
-								["amount"] = 514,
-							},
-						},
-						["c_num"] = 1,
-					},
-					["61290.32"] = {
-						["c_amt"] = 1836,
-						["count"] = 1,
-						["amount"] = 1836,
-						["c_max"] = 1836,
-						["c_min"] = 1836,
-						["targets"] = {
-							["Whitewhisker Overseer"] = {
-								["amount"] = 1836,
-							},
-						},
-						["c_num"] = 1,
-					},
-					["17962.4"] = {
-						["c_amt"] = 4516,
-						["count"] = 1,
-						["c_max"] = 4516,
-						["c_num"] = 1,
-						["o_amt"] = 4193,
-						["c_min"] = 4516,
-						["targets"] = {
-							["Whitewhisker Digger"] = {
-								["o_amt"] = 4193,
-								["amount"] = 4516,
-							},
-						},
-						["amount"] = 4516,
-					},
 					["6603.1"] = {
-						["c_amt"] = 334,
-						["c_max"] = 334,
-						["c_num"] = 1,
-						["n_max"] = 235,
 						["targets"] = {
-							["Whitewhisker Digger"] = {
-								["amount"] = 441,
-							},
-							["Whitewhisker Vermin"] = {
-								["amount"] = 334,
-							},
-						},
-						["c_min"] = 334,
-						["amount"] = 775,
-						["n_amt"] = 441,
-						["n_min"] = 206,
-						["n_num"] = 2,
-						["count"] = 3,
-					},
-					["-47811.4"] = {
-						["n_amt"] = 672,
-						["count"] = 1,
-						["amount"] = 672,
-						["targets"] = {
-							["Whitewhisker Digger"] = {
-								["amount"] = 672,
-							},
-						},
-						["n_max"] = 672,
-						["n_num"] = 1,
-						["n_min"] = 672,
-					},
-					["47847.32"] = {
-						["c_amt"] = 12939,
-						["count"] = 4,
-						["amount"] = 12939,
-						["c_max"] = 3333,
-						["c_min"] = 3111,
-						["targets"] = {
-							["Whitewhisker Overseer"] = {
-								["amount"] = 3333,
-							},
-							["Whitewhisker Geomancer"] = {
-								["amount"] = 3174,
-							},
-							["Whitewhisker Digger"] = {
-								["amount"] = 6432,
-							},
-						},
-						["c_num"] = 4,
-					},
-					["47990.32.Voidwalker"] = {
-						["res_n"] = 1,
-						["targets"] = {
-							["Whitewhisker Digger"] = {
-								["amount"] = 0,
-							},
-						},
-						["count"] = 1,
-						["amount"] = 0,
-					},
-				},
-				["totaldamaged"] = 4329,
-				["timespent"] = {
-					["Whitewhisker Vermin"] = 5.25,
-					["Whitewhisker Digger"] = 18.78,
-					["Whitewhisker Geomancer"] = 4.85,
-					["Whitewhisker Overseer"] = 8.690000000000001,
-				},
-			},
-			["Ur'kyo"] = {
-				["overheal"] = 11397,
-				["last"] = 46771.61,
-				["id"] = "0xF130011D1900010C",
-				["class"] = "PRIEST",
-				["healspells"] = {
-					["-15290.32"] = {
-						["n_amt"] = 104,
-						["targets"] = {
-							["Malakai"] = {
-								["o_amt"] = 329,
-								["amount"] = 0,
-							},
-							["Zel'mak"] = {
-								["o_amt"] = 329,
-								["amount"] = 0,
-							},
-							["Sark"] = {
-								["o_amt"] = 329,
-								["amount"] = 0,
-							},
-							["Scorpid <Kragg>"] = {
-								["o_amt"] = 145,
-								["amount"] = 0,
-							},
-							["Ravager <Zandine>"] = {
-								["o_amt"] = 459,
-								["amount"] = 0,
-							},
-							["Gregory"] = {
-								["o_amt"] = 329,
-								["amount"] = 0,
-							},
-							["Ursyn"] = {
-								["o_amt"] = 329,
-								["amount"] = 0,
-							},
-							["Water Elemental <Enyo>"] = {
-								["o_amt"] = 225,
-								["amount"] = 0,
-							},
-							["Zor'be"] = {
-								["o_amt"] = 104,
-								["amount"] = 0,
-							},
-							["Zandine"] = {
-								["o_amt"] = 329,
-								["amount"] = 0,
-							},
-							["Aldrae"] = {
-								["o_amt"] = 329,
-								["amount"] = 0,
-							},
-							["Chris"] = {
-								["o_amt"] = 329,
-								["amount"] = 0,
-							},
-							["Ponaris"] = {
-								["o_amt"] = 329,
-								["amount"] = 0,
-							},
-							["Krang"] = {
-								["o_amt"] = 329,
-								["amount"] = 0,
-							},
-							["Shymm"] = {
-								["o_amt"] = 329,
-								["amount"] = 0,
-							},
-							["Belestra"] = {
-								["o_amt"] = 329,
-								["amount"] = 0,
-							},
-							["Risen Ghoul <Zor'be>"] = {
-								["o_amt"] = 104,
-								["amount"] = 0,
-							},
-							["Nerisen"] = {
-								["o_amt"] = 393,
-								["amount"] = 0,
-							},
-							["Rupert"] = {
-								["o_amt"] = 150,
-								["amount"] = 0,
-							},
-							["Osselan"] = {
-								["o_amt"] = 225,
-								["amount"] = 104,
+							["Bluex"] = {
+								["amount"] = 1103,
 							},
 							["Duesten"] = {
-								["o_amt"] = 329,
-								["amount"] = 0,
-							},
-							["Lankester"] = {
-								["o_amt"] = 329,
-								["amount"] = 0,
-							},
-							["Ur'kyo"] = {
-								["o_amt"] = 1656,
-								["amount"] = 0,
-							},
-							["Sian'dur"] = {
-								["o_amt"] = 360,
-								["amount"] = 0,
-							},
-							["David"] = {
-								["o_amt"] = 329,
-								["amount"] = 0,
-							},
-							["Enyo"] = {
-								["o_amt"] = 329,
-								["amount"] = 0,
-							},
-							["Kragg"] = {
-								["o_amt"] = 329,
-								["amount"] = 0,
-							},
-							["Torm"] = {
-								["o_amt"] = 329,
-								["amount"] = 0,
-							},
-							["Celoenus"] = {
-								["o_amt"] = 104,
-								["amount"] = 0,
-							},
-							["Maximillion"] = {
-								["o_amt"] = 104,
-								["amount"] = 0,
-							},
-							["Hyena <Sian'dur>"] = {
-								["o_amt"] = 459,
-								["amount"] = 0,
-							},
-							["Lotheolan"] = {
-								["o_amt"] = 329,
-								["amount"] = 0,
-							},
-							["Tai'jin"] = {
-								["o_amt"] = 329,
-								["amount"] = 0,
-							},
-							["Un'Thuwa"] = {
-								["o_amt"] = 329,
-								["amount"] = 0,
+								["amount"] = 366,
 							},
 						},
-						["count"] = 90,
-						["amount"] = 104,
-						["o_amt"] = 11397,
-						["n_max"] = 104,
-						["n_num"] = 90,
-						["n_min"] = 0,
+						["amount"] = 1469,
 					},
-				},
-				["auras"] = {
-					["26297.1"] = {
-						["u"] = 10,
-						["n"] = 1,
-					},
-					["-48156.32"] = {
-						["u"] = 1,
-						["t"] = {
-							["Frostwolf"] = {
-								["u"] = 1,
-								["n"] = 1,
-							},
-							["Ur'kyo"] = {
-								["u"] = 1,
-								["n"] = 1,
-							},
-						},
-						["n"] = 2,
-					},
-					["-48301.32"] = {
-						["u"] = 1,
-						["t"] = {
-							["Frostwolf"] = {
-								["u"] = 1,
-								["n"] = 1,
-							},
-						},
-						["n"] = 1,
-					},
-					["15286.32"] = {
-						["u"] = 596,
-						["n"] = 1,
-					},
-					["67750.1"] = {
-						["u"] = 40,
-						["r"] = 1,
-						["n"] = 2,
-					},
-					["59000.32"] = {
-						["u"] = 7,
-						["n"] = 1,
-					},
-					["-57669.8"] = {
-						["u"] = 15,
-					},
-					["-33198.32"] = {
-						["u"] = 1,
-						["t"] = {
-							["Frostwolf"] = {
-								["u"] = 1,
-								["n"] = 1,
-							},
-						},
-						["n"] = 1,
-					},
-					["48168.2"] = {
-						["u"] = 596,
-						["n"] = 1,
-					},
-					["47436.1"] = {
-						["u"] = 596,
-						["n"] = 1,
-					},
-					["15473.32"] = {
-						["u"] = 596,
-						["n"] = 1,
-					},
-					["6346.2"] = {
-						["u"] = 596,
-						["n"] = 1,
-					},
-					["48169.32"] = {
-						["u"] = 596,
-						["n"] = 1,
-					},
-					["61792.1"] = {
-						["u"] = 9,
-						["n"] = 1,
-					},
-					["15258.32"] = {
-						["u"] = 51,
-						["r"] = 1,
-						["n"] = 2,
-					},
-					["48161.2"] = {
-						["u"] = 596,
-						["n"] = 1,
-					},
-					["48073.2"] = {
-						["u"] = 596,
-						["n"] = 1,
-					},
-					["42995.64"] = {
-						["u"] = 596,
-						["n"] = 1,
-					},
-					["20217.2"] = {
-						["u"] = 596,
-						["n"] = 1,
-					},
-				},
-				["heal"] = 104,
-				["time"] = 7.93,
-				["damage"] = 11046,
-				["role"] = "NONE",
-				["damagespells"] = {
-					["48127.32"] = {
-						["c_amt"] = 5995,
-						["c_max"] = 5995,
-						["c_num"] = 1,
-						["n_max"] = 3496,
+					["47468.1"] = {
 						["targets"] = {
-							["Frostwolf"] = {
-								["amount"] = 9491,
-							},
-						},
-						["count"] = 2,
-						["amount"] = 9491,
-						["c_min"] = 5995,
-						["n_min"] = 3496,
-						["n_num"] = 1,
-						["n_amt"] = 3496,
-					},
-					["58381.32"] = {
-						["n_amt"] = 1555,
-						["count"] = 1,
-						["amount"] = 1555,
-						["targets"] = {
-							["Frostwolf"] = {
-								["amount"] = 1555,
-							},
-						},
-						["n_max"] = 1555,
-						["n_num"] = 1,
-						["n_min"] = 1555,
-					},
-				},
-				["timespent"] = {
-					["Frostwolf"] = 7.93,
-				},
-			},
-			["Kragg"] = {
-				["role"] = "DAMAGER",
-				["id"] = "0xF130011D1E000111",
-				["class"] = "HUNTER",
-				["last"] = 46746.332,
-				["auras"] = {
-					["48161.2"] = {
-						["u"] = 596,
-						["n"] = 1,
-					},
-					["61847.8"] = {
-						["u"] = 595,
-						["n"] = 1,
-					},
-					["48169.32"] = {
-						["u"] = 596,
-						["n"] = 1,
-					},
-					["42995.64"] = {
-						["u"] = 596,
-						["n"] = 1,
-					},
-					["48073.2"] = {
-						["u"] = 596,
-						["n"] = 1,
-					},
-					["64420.8"] = {
-						["u"] = 596,
-						["r"] = 7,
-						["n"] = 3,
-					},
-					["47436.1"] = {
-						["u"] = 596,
-						["n"] = 1,
-					},
-					["20572.1"] = {
-						["u"] = 15,
-						["n"] = 1,
-					},
-					["20217.2"] = {
-						["u"] = 596,
-						["n"] = 1,
-					},
-				},
-			},
-			["Tai'jin"] = {
-				["damagespells"] = {
-					["48127.32"] = {
-						["c_amt"] = 5727,
-						["c_max"] = 5727,
-						["c_num"] = 1,
-						["n_max"] = 3077,
-						["targets"] = {
-							["Frostwolf"] = {
-								["amount"] = 8804,
-							},
-						},
-						["c_min"] = 5727,
-						["amount"] = 8804,
-						["n_amt"] = 3077,
-						["n_min"] = 3077,
-						["n_num"] = 1,
-						["count"] = 2,
-					},
-				},
-				["last"] = 46787.514,
-				["id"] = "0xF130011D2F000122",
-				["class"] = "PRIEST",
-				["healspells"] = {
-					["-15290.32"] = {
-						["n_amt"] = 0,
-						["targets"] = {
-							["Enyo"] = {
-								["o_amt"] = 263,
-								["amount"] = 0,
-							},
-							["Krang"] = {
-								["o_amt"] = 263,
-								["amount"] = 0,
-							},
-							["Zel'mak"] = {
-								["o_amt"] = 263,
-								["amount"] = 0,
-							},
-							["Shymm"] = {
-								["o_amt"] = 263,
-								["amount"] = 0,
-							},
-							["Ur'kyo"] = {
-								["o_amt"] = 263,
-								["amount"] = 0,
-							},
-							["Sark"] = {
-								["o_amt"] = 263,
-								["amount"] = 0,
-							},
-							["Torm"] = {
-								["o_amt"] = 263,
-								["amount"] = 0,
-							},
-							["Belestra"] = {
-								["o_amt"] = 263,
-								["amount"] = 0,
-							},
-							["Ravager <Zandine>"] = {
-								["o_amt"] = 239,
-								["amount"] = 0,
-							},
-							["Nerisen"] = {
-								["o_amt"] = 315,
-								["amount"] = 0,
-							},
-							["Ursyn"] = {
-								["o_amt"] = 263,
-								["amount"] = 0,
-							},
-							["Lotheolan"] = {
-								["o_amt"] = 263,
-								["amount"] = 0,
-							},
-							["Kragg"] = {
-								["o_amt"] = 263,
-								["amount"] = 0,
-							},
-							["Osselan"] = {
-								["o_amt"] = 263,
-								["amount"] = 0,
-							},
-							["Sian'dur"] = {
-								["o_amt"] = 289,
-								["amount"] = 0,
-							},
-							["Hyena <Sian'dur>"] = {
-								["o_amt"] = 367,
-								["amount"] = 0,
+							["Bluex"] = {
+								["amount"] = 950,
 							},
 							["Duesten"] = {
-								["o_amt"] = 263,
-								["amount"] = 0,
-							},
-							["Water Elemental <Enyo>"] = {
-								["o_amt"] = 263,
-								["amount"] = 0,
-							},
-							["Tai'jin"] = {
-								["o_amt"] = 1320,
-								["amount"] = 0,
-							},
-							["Gregory"] = {
-								["o_amt"] = 263,
-								["amount"] = 0,
-							},
-							["Rupert"] = {
-								["o_amt"] = 171,
-								["amount"] = 0,
-							},
-							["David"] = {
-								["o_amt"] = 263,
-								["amount"] = 0,
-							},
-							["Scorpid <Kragg>"] = {
-								["o_amt"] = 239,
-								["amount"] = 0,
-							},
-							["Maximillion"] = {
-								["o_amt"] = 171,
-								["amount"] = 0,
-							},
-							["Aldrae"] = {
-								["o_amt"] = 263,
-								["amount"] = 0,
-							},
-							["Zandine"] = {
-								["o_amt"] = 263,
-								["amount"] = 0,
-							},
-							["Chris"] = {
-								["o_amt"] = 263,
-								["amount"] = 0,
-							},
-							["Ponaris"] = {
-								["o_amt"] = 263,
-								["amount"] = 0,
-							},
-							["Lankester"] = {
-								["o_amt"] = 263,
-								["amount"] = 0,
-							},
-							["Malakai"] = {
-								["o_amt"] = 263,
-								["amount"] = 0,
-							},
-							["Un'Thuwa"] = {
-								["o_amt"] = 263,
-								["amount"] = 0,
+								["amount"] = 822,
 							},
 						},
-						["count"] = 58,
-						["amount"] = 0,
-						["o_amt"] = 9160,
-						["n_max"] = 0,
-						["n_num"] = 58,
-						["n_min"] = 0,
+						["amount"] = 1772,
 					},
-				},
-				["auras"] = {
-					["26297.1"] = {
-						["u"] = 10,
-						["n"] = 1,
-					},
-					["71541.64"] = {
-						["u"] = 15,
-						["n"] = 1,
-					},
-					["-48156.32"] = {
-						["u"] = 16,
-						["t"] = {
-							["Frostwolf"] = {
-								["u"] = 16,
-								["n"] = 2,
-							},
-							["Tai'jin"] = {
-								["u"] = 16,
-								["n"] = 2,
-							},
-						},
-						["n"] = 4,
-					},
-					["-48301.32"] = {
-						["u"] = 16,
-						["t"] = {
-							["Frostwolf"] = {
-								["u"] = 16,
-								["n"] = 2,
-							},
-						},
-						["n"] = 2,
-					},
-					["15286.32"] = {
-						["u"] = 596,
-						["n"] = 1,
-					},
-					["71638.1"] = {
-						["u"] = 10,
-						["n"] = 1,
-					},
-					["59000.32"] = {
-						["u"] = 8,
-						["n"] = 1,
-					},
-					["-57669.8"] = {
-						["u"] = 30,
-					},
-					["-33198.32"] = {
-						["u"] = 16,
-						["t"] = {
-							["Frostwolf"] = {
-								["u"] = 16,
-								["n"] = 2,
-							},
-						},
-						["n"] = 2,
-					},
-					["48168.2"] = {
-						["u"] = 596,
-						["n"] = 1,
-					},
-					["47436.1"] = {
-						["u"] = 596,
-						["n"] = 1,
-					},
-					["15473.32"] = {
-						["u"] = 596,
-						["n"] = 1,
-					},
-					["6346.2"] = {
-						["u"] = 596,
-						["n"] = 1,
-					},
-					["48169.32"] = {
-						["u"] = 596,
-						["n"] = 1,
-					},
-					["15258.32"] = {
-						["u"] = 29,
-						["r"] = 1,
-						["n"] = 1,
-					},
-					["48073.2"] = {
-						["u"] = 596,
-						["n"] = 1,
-					},
-					["48161.2"] = {
-						["u"] = 596,
-						["n"] = 1,
-					},
-					["61792.1"] = {
-						["u"] = 10,
-						["n"] = 1,
-					},
-					["42995.64"] = {
-						["u"] = 596,
-						["n"] = 1,
-					},
-					["20217.2"] = {
-						["u"] = 596,
-						["n"] = 1,
-					},
-				},
-				["heal"] = 0,
-				["time"] = 7,
-				["damage"] = 8804,
-				["role"] = "NONE",
-				["overheal"] = 9160,
-				["timespent"] = {
-					["Frostwolf"] = 7,
-				},
-			},
-			["Voidwalker"] = {
-				["absorbspells"] = {
-					["47986.32"] = {
-						["n_amt"] = 1002,
-						["count"] = 6,
-						["amount"] = 1002,
+					["47481.1"] = {
 						["targets"] = {
-							["Celoenus"] = 1002,
-						},
-						["n_max"] = 287,
-						["n_num"] = 6,
-						["n_min"] = 133,
-					},
-				},
-				["absorb"] = 1002,
-				["time"] = 12.07,
-				["id"] = "0xF130011366000119",
-				["class"] = "PET",
-				["last"] = 46819.554,
-				["timespent"] = {
-					["Celoenus"] = 12.07,
-				},
-			},
-			["Un'Thuwa"] = {
-				["damagespells"] = {
-					["42859.4"] = {
-						["c_amt"] = 3279,
-						["c_max"] = 3279,
-						["c_num"] = 1,
-						["n_max"] = 2459,
-						["targets"] = {
-							["Frostwolf"] = {
-								["amount"] = 5738,
+							["Bluex"] = {
+								["amount"] = 19,
 							},
 						},
-						["count"] = 2,
-						["amount"] = 5738,
-						["c_min"] = 3279,
-						["n_min"] = 2459,
-						["n_num"] = 1,
-						["n_amt"] = 2459,
+						["amount"] = 19,
 					},
 				},
-				["last"] = 46772.26,
-				["id"] = "0xF130011D2C00011F",
-				["class"] = "MAGE",
-				["auras"] = {
-					["-57669.8"] = {
-						["u"] = 15,
-					},
-					["-22959.4"] = {
-						["u"] = 29,
-						["t"] = {
-							["Frostwolf"] = {
-								["u"] = 29,
-								["n"] = 2,
-							},
-						},
-						["n"] = 2,
-					},
-					["48161.2"] = {
-						["u"] = 596,
-						["n"] = 1,
-					},
-					["26297.1"] = {
-						["u"] = 10,
-						["n"] = 1,
-					},
-					["75490.1"] = {
-						["u"] = 15,
-						["n"] = 1,
-					},
-					["43008.16"] = {
-						["u"] = 596,
-						["n"] = 1,
-					},
+				["damagedspells"] = {
 					["-12654.4"] = {
-						["u"] = 2,
-						["t"] = {
-							["Frostwolf"] = {
-								["u"] = 2,
-								["n"] = 1,
+						["sources"] = {
+							["Pierce"] = {
+								["amount"] = 1348,
 							},
 						},
-						["n"] = 1,
+						["amount"] = 1348,
 					},
-					["48169.32"] = {
-						["u"] = 596,
-						["n"] = 1,
+					["-48160.32"] = {
+						["sources"] = {
+							["Duesten"] = {
+								["amount"] = 14369,
+							},
+						},
+						["amount"] = 14369,
 					},
-					["47436.1"] = {
-						["u"] = 596,
-						["n"] = 1,
+					["42945.4"] = {
+						["sources"] = {
+							["Pierce"] = {
+								["amount"] = 2986,
+							},
+						},
+						["amount"] = 2986,
 					},
-					["48073.2"] = {
-						["u"] = 596,
-						["n"] = 1,
+					["42917.16"] = {
+						["sources"] = {
+							["Pierce"] = {
+								["amount"] = 2088,
+							},
+						},
+						["amount"] = 2088,
 					},
-					["64343.4"] = {
-						["u"] = 10,
-						["n"] = 1,
-					},
-					["43015.64"] = {
-						["u"] = 596,
-						["n"] = 1,
-					},
-					["42995.64"] = {
-						["u"] = 596,
-						["n"] = 1,
-					},
-					["20217.2"] = {
-						["u"] = 596,
-						["n"] = 1,
+					["59159.8"] = {
+						["sources"] = {
+							["Bluex"] = {
+								["amount"] = 4902,
+							},
+						},
+						["amount"] = 4902,
 					},
 				},
-				["role"] = "DAMAGER",
-				["time"] = 3.76,
-				["damage"] = 5738,
-				["mana"] = 68,
-				["manaspells"] = {
-					["29077.64"] = 68,
-				},
-				["timespent"] = {
-					["Frostwolf"] = 3.76,
-				},
+				["damage"] = 3260,
+				["id"] = "0xF13001138A000006",
+				["class"] = "PET",
+				["damaged"] = 25693,
+				["enemy"] = true,
 			},
 		},
-		["heal"] = 3838,
-		["name"] = "Alterac Valley",
-		["mobname"] = "Alterac Valley",
-		["mana"] = 24638,
-		["edamage"] = 4313,
-		["energy"] = 25,
-		["endtime"] = 1689788887,
+		["interrupt"] = 3,
+		["absorb"] = 5254,
+		["mana"] = 4476,
+		["overkill"] = 107064,
+		["etotaldamaged"] = 299563,
+		["heal"] = 26771,
+		["name"] = "Nagrand Arena",
+		["mobname"] = "Nagrand Arena",
+		["overheal"] = 25294,
+		["edamage"] = 55049,
+		["ccdone"] = 4,
+		["endtime"] = 1752935348,
 	}, -- [1]
 	[0] = {
 		["actors"] = {
-			["Krang"] = {
-				["rage"] = 26,
-				["role"] = "NONE",
-				["time"] = 0,
-				["ccdone"] = 1,
-				["id"] = "0xF130011D2D000120",
-				["class"] = "WARRIOR",
-				["overkill"] = 1033,
-				["damage"] = 3418,
-			},
-			["Zel'mak"] = {
-				["rage"] = 40,
-				["role"] = "NONE",
-				["time"] = 3.5,
-				["id"] = "0xF130011D21000114",
-				["class"] = "WARRIOR",
-				["damage"] = 9317,
-			},
-			["Shymm"] = {
-				["role"] = "DAMAGER",
-				["time"] = 3.5,
-				["overkill"] = 2536,
-				["id"] = "0xF130011D32000125",
-				["mana"] = 119,
+			["Pierce"] = {
 				["class"] = "MAGE",
-				["damage"] = 10567,
+				["damaged"] = 1683,
+				["dispel"] = 1,
+				["role"] = "DAMAGER",
+				["time"] = 21.72,
+				["cctaken"] = 1,
+				["damage"] = 55971,
+				["absorb"] = 339,
+				["interrupt"] = 2,
+				["overkill"] = 5141,
+				["ccdone"] = 3,
+				["id"] = "0xF130011FE900000D",
+				["totaldamaged"] = 2022,
+				["mana"] = 244,
+				["totaldamage"] = 56797,
 			},
-			["Ur'kyo"] = {
-				["overheal"] = 11397,
+			["Duesten"] = {
+				["totaldamaged"] = 25025,
+				["damaged"] = 20110,
+				["dispel"] = 14,
 				["role"] = "NONE",
-				["time"] = 4.43,
-				["id"] = "0xF130011D1900010C",
+				["time"] = 31.45,
+				["damage"] = 47661,
+				["absorb"] = 4915,
+				["interrupt"] = 1,
+				["overkill"] = 4686,
+				["heal"] = 20741,
+				["ccdone"] = 1,
+				["totaldamage"] = 47965,
+				["overheal"] = 21432,
+				["id"] = "0xF130011FE800000C",
 				["class"] = "PRIEST",
-				["heal"] = 104,
-				["damage"] = 11046,
-			},
-			["Sark"] = {
-				["rage"] = 20,
-				["role"] = "NONE",
-				["id"] = "0xF130011D25000118",
-				["class"] = "WARRIOR",
-			},
-			["Torm"] = {
-				["overheal"] = 683,
-				["id"] = "0xF130011D1800010B",
-				["class"] = "WARRIOR",
-				["overkill"] = 2524,
-				["role"] = "NONE",
-				["time"] = 0,
-				["heal"] = 0,
-				["rage"] = 3,
-				["damage"] = 10226,
 			},
 			["Bluex"] = {
-				["overheal"] = 200073,
-				["role"] = "DAMAGER",
-				["id"] = "0x0000000000000005",
+				["overheal"] = 3862,
+				["totaldamage"] = 194801,
+				["id"] = "0x000000000000000F",
 				["class"] = "SHAMAN",
-				["heal"] = 0,
+				["damaged"] = 33256,
+				["overkill"] = 97237,
+				["mana"] = 4232,
+				["role"] = "DAMAGER",
+				["time"] = 13.49,
+				["death"] = 1,
+				["cctaken"] = 2,
+				["heal"] = 6030,
 				["spec"] = 262,
-			},
-			["Nerisen"] = {
-				["role"] = "DAMAGER",
-				["time"] = 0.01,
-				["id"] = "0xF130011D31000124",
-				["class"] = "ROGUE",
-				["energy"] = 25,
-				["damage"] = 6028,
-			},
-			["Maximillion"] = {
-				["overheal"] = 10095,
-				["heal"] = 0,
-				["id"] = "0xF130011D26000119",
-				["class"] = "WARLOCK",
-				["role"] = "DAMAGER",
-			},
-			["Rupert"] = {
-				["overheal"] = 10146,
-				["heal"] = 0,
-				["id"] = "0xF130011D2A00011D",
-				["class"] = "WARLOCK",
-				["role"] = "DAMAGER",
-			},
-			["Osselan"] = {
-				["overheal"] = 5797,
-				["id"] = "0xF130011D1F000112",
-				["class"] = "PALADIN",
-				["damaged"] = 282,
-				["role"] = "NONE",
-				["time"] = 10.37,
-				["mana"] = 20505,
-				["heal"] = 0,
-				["damage"] = 10089,
-			},
-			["Voidwalker"] = {
-				["id"] = "0xF130011366000119",
-				["class"] = "PET",
-				["time"] = 12.07,
-				["absorb"] = 1002,
-			},
-			["Tai'jin"] = {
-				["overheal"] = 9160,
-				["role"] = "NONE",
-				["time"] = 3.5,
-				["id"] = "0xF130011D2F000122",
-				["class"] = "PRIEST",
-				["heal"] = 0,
-				["damage"] = 8804,
-			},
-			["Zor'be"] = {
-				["overheal"] = 13740,
-				["id"] = "0xF130011D1B00010E",
-				["class"] = "DEATHKNIGHT",
-				["damaged"] = 269,
-				["overkill"] = 20691,
-				["heal"] = 0,
-				["time"] = 46.15999999999999,
-				["petdamage"] = 4601,
-				["runic"] = 300,
-				["role"] = "NONE",
-				["ccdone"] = 6,
-				["damage"] = 94723,
-			},
-			["Zandine"] = {
-				["role"] = "DAMAGER",
-				["time"] = 1.22,
-				["id"] = "0xF130011D2900011C",
-				["class"] = "HUNTER",
-				["damage"] = 8918,
-			},
-			["Aldrae"] = {
-				["role"] = "NONE",
-				["time"] = 0,
-				["id"] = "0xF130011D23000116",
-				["class"] = "PRIEST",
-				["overkill"] = 120,
-				["damage"] = 2544,
-			},
-			["Celoenus"] = {
-				["overheal"] = 36348,
-				["absorb"] = 658,
-				["id"] = "0xF130011D2B00011E",
-				["totaldamaged"] = 4329,
-				["damaged"] = 2669,
-				["overkill"] = 22307,
-				["class"] = "WARLOCK",
-				["role"] = "DAMAGER",
-				["time"] = 37.57,
-				["petdamage"] = 5106,
-				["mana"] = 3946,
-				["heal"] = 3734,
-				["ccdone"] = 2,
-				["damage"] = 86244,
-			},
-			["Chris"] = {
-				["role"] = "NONE",
-				["time"] = 0,
-				["id"] = "0xF130011D1D000110",
-				["class"] = "WARRIOR",
-				["overkill"] = 2632,
-				["damage"] = 6214,
-			},
-			["Ponaris"] = {
-				["overheal"] = 4866,
-				["role"] = "NONE",
-				["time"] = 0,
-				["overkill"] = 2886,
-				["id"] = "0xF130011D20000113",
-				["class"] = "PRIEST",
-				["heal"] = 0,
-				["damage"] = 4923,
-			},
-			["Belestra"] = {
-				["role"] = "NONE",
-				["time"] = 3.94,
-				["id"] = "0xF130011D2800011B",
-				["class"] = "PRIEST",
-				["damage"] = 5753,
-			},
-			["Un'Thuwa"] = {
-				["role"] = "DAMAGER",
-				["time"] = 3.5,
-				["id"] = "0xF130011D2C00011F",
-				["mana"] = 68,
-				["class"] = "MAGE",
-				["damage"] = 5738,
+				["damage"] = 169807,
 			},
 		},
-		["absorb"] = 1660,
-		["overheal"] = 302305,
-		["rage"] = 89,
-		["mana"] = 24638,
-		["totaldamaged"] = 4880,
-		["damaged"] = 3220,
-		["overkill"] = 54729,
-		["runic"] = 300,
-		["heal"] = 3838,
+		["totaldamaged"] = 60303,
+		["damaged"] = 55049,
+		["dispel"] = 15,
+		["totaldamage"] = 299563,
+		["time"] = 40,
+		["cctaken"] = 3,
+		["damage"] = 273439,
+		["overheal"] = 25294,
+		["absorb"] = 5254,
+		["interrupt"] = 3,
+		["death"] = 1,
+		["overkill"] = 107064,
+		["mana"] = 4476,
+		["heal"] = 26771,
 		["name"] = "Total",
-		["ccdone"] = 9,
-		["time"] = 596,
-		["starttime"] = 1689788209,
-		["energy"] = 25,
-		["damage"] = 284552,
+		["ccdone"] = 4,
+		["starttime"] = 1752935242,
 	},
 }

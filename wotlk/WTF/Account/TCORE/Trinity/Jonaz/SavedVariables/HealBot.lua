@@ -210,8 +210,7 @@ HealBot_Config = {
 	},
 	["FocusMonitor"] = {
 	},
-	["CurrentSpec"] = 2,
-	["Current_Skin"] = "Standard",
+	["CurrentSpec"] = 3,
 	["IgnoreFastDurDebuffs"] = 1,
 	["HealBot_Custom_Debuffs"] = {
 		["Burning Bile"] = 10,
@@ -308,8 +307,6 @@ HealBot_Config = {
 	},
 	["DisabledSpellTarget"] = {
 	},
-	["Tooltip_Recommend"] = 0,
-	["ShortBuffTimer"] = 30,
 	["DisabledKeyCombo"] = {
 		["Button42"] = "MainTank",
 		["Left1"] = "Target",
@@ -340,6 +337,8 @@ HealBot_Config = {
 		["Button4"] = "MainTank",
 		["Button52"] = "MainAssist",
 	},
+	["ShortBuffTimer"] = 30,
+	["Tooltip_Recommend"] = 0,
 	["EmergIncHealers"] = {
 		["Warrior"] = 0,
 		["Paladin"] = 0,
@@ -395,6 +394,16 @@ HealBot_Config = {
 		["Button41"] = "MainTank",
 		["Alt-ShiftLeft3"] = "Target",
 	},
+	["SoundDebuffPlay"] = "Tribal Bass Drum",
+	["TooltipUpdate"] = 1,
+	["EnLibQuickHealth"] = 1,
+	["EnableHealthy"] = 1,
+	["noTestBars"] = 25,
+	["Tooltip_ShowMyBuffs"] = 1,
+	["EnabledSpellTarget"] = {
+	},
+	["SmartCastBuff"] = 1,
+	["CDCMonitor"] = 1,
 	["SkinDefault"] = {
 		["Ranged"] = 1,
 		["Square"] = 1,
@@ -407,16 +416,6 @@ HealBot_Config = {
 		["Group"] = 1,
 		["Light"] = 1,
 	},
-	["TooltipUpdate"] = 1,
-	["EnLibQuickHealth"] = 1,
-	["EnableHealthy"] = 1,
-	["noTestBars"] = 25,
-	["Tooltip_ShowMyBuffs"] = 1,
-	["EnabledSpellTarget"] = {
-	},
-	["SmartCastBuff"] = 1,
-	["CDCMonitor"] = 1,
-	["SoundDebuffPlay"] = "Tribal Bass Drum",
 	["DisableHealBot"] = 0,
 	["HideOptions"] = 1,
 	["noTestPets"] = 4,
@@ -471,4 +470,5 @@ HealBot_Config = {
 	},
 	["HealBot_BuffWatchGUID"] = {
 	},
+	["Current_Skin"] = "Standard",
 }

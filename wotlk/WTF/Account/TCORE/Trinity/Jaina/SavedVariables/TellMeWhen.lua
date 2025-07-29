@@ -17,9 +17,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [1]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -30,9 +30,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [2]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -43,9 +43,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "Hot Streak",
 					["Enabled"] = true,
-					["BuffShowWhen"] = "present",
-					["Type"] = "buff",
 					["CooldownType"] = "spell",
+					["Type"] = "buff",
+					["BuffShowWhen"] = "present",
 				}, -- [3]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -56,9 +56,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [4]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -69,9 +69,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [5]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -82,9 +82,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [6]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -95,9 +95,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [7]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -108,9 +108,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [8]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -121,9 +121,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [9]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -134,9 +134,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [10]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -147,9 +147,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [11]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -160,9 +160,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [12]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -173,9 +173,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [13]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -186,9 +186,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [14]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -199,9 +199,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [15]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -212,9 +212,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [16]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -225,9 +225,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [17]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -238,9 +238,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [18]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -251,9 +251,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [19]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -264,9 +264,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [20]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -277,9 +277,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [21]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -290,9 +290,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [22]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -303,9 +303,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [23]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -316,9 +316,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [24]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -329,9 +329,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [25]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -342,9 +342,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [26]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -355,9 +355,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [27]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -368,9 +368,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [28]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -381,9 +381,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [29]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -394,9 +394,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [30]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -407,9 +407,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [31]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -420,9 +420,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [32]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -433,9 +433,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [33]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -446,9 +446,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [34]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -459,9 +459,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [35]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -472,9 +472,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [36]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -485,9 +485,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [37]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -498,9 +498,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [38]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -511,9 +511,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [39]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -524,9 +524,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [40]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -537,9 +537,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [41]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -550,9 +550,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [42]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -563,9 +563,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [43]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -576,9 +576,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [44]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -589,9 +589,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [45]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -602,9 +602,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [46]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -615,9 +615,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [47]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -628,9 +628,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [48]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -641,9 +641,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [49]
 			},
 			["Width"] = 30,
@@ -670,9 +670,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [1]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -683,9 +683,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [2]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -696,9 +696,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [3]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -709,9 +709,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [4]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -722,9 +722,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [5]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -735,9 +735,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [6]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -748,9 +748,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [7]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -761,9 +761,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [8]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -774,9 +774,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [9]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -787,9 +787,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [10]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -800,9 +800,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [11]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -813,9 +813,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [12]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -826,9 +826,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [13]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -839,9 +839,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [14]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -852,9 +852,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [15]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -865,9 +865,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [16]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -878,9 +878,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [17]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -891,9 +891,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [18]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -904,9 +904,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [19]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -917,9 +917,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [20]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -930,9 +930,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [21]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -943,9 +943,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [22]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -956,9 +956,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [23]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -969,9 +969,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [24]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -982,9 +982,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [25]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -995,9 +995,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [26]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -1008,9 +1008,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [27]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -1021,9 +1021,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [28]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -1034,9 +1034,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [29]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -1047,9 +1047,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [30]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -1060,9 +1060,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [31]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -1073,9 +1073,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [32]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -1086,9 +1086,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [33]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -1099,9 +1099,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [34]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -1112,9 +1112,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [35]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -1125,9 +1125,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [36]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -1138,9 +1138,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [37]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -1151,9 +1151,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [38]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -1164,9 +1164,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [39]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -1177,9 +1177,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [40]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -1190,9 +1190,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [41]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -1203,9 +1203,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [42]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -1216,9 +1216,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [43]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -1229,9 +1229,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [44]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -1242,9 +1242,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [45]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -1255,9 +1255,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [46]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -1268,9 +1268,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [47]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -1281,9 +1281,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [48]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -1294,9 +1294,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [49]
 			},
 			["Width"] = 30,
@@ -1320,9 +1320,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [1]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -1333,9 +1333,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [2]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -1346,9 +1346,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [3]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -1359,9 +1359,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [4]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -1372,9 +1372,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [5]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -1385,9 +1385,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [6]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -1398,9 +1398,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [7]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -1411,9 +1411,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [8]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -1424,9 +1424,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [9]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -1437,9 +1437,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [10]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -1450,9 +1450,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [11]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -1463,9 +1463,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [12]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -1476,9 +1476,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [13]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -1489,9 +1489,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [14]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -1502,9 +1502,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [15]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -1515,9 +1515,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [16]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -1528,9 +1528,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [17]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -1541,9 +1541,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [18]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -1554,9 +1554,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [19]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -1567,9 +1567,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [20]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -1580,9 +1580,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [21]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -1593,9 +1593,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [22]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -1606,9 +1606,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [23]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -1619,9 +1619,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [24]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -1632,9 +1632,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [25]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -1645,9 +1645,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [26]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -1658,9 +1658,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [27]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -1671,9 +1671,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [28]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -1684,9 +1684,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [29]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -1697,9 +1697,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [30]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -1710,9 +1710,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [31]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -1723,9 +1723,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [32]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -1736,9 +1736,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [33]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -1749,9 +1749,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [34]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -1762,9 +1762,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [35]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -1775,9 +1775,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [36]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -1788,9 +1788,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [37]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -1801,9 +1801,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [38]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -1814,9 +1814,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [39]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -1827,9 +1827,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [40]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -1840,9 +1840,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [41]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -1853,9 +1853,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [42]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -1866,9 +1866,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [43]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -1879,9 +1879,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [44]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -1892,9 +1892,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [45]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -1905,9 +1905,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [46]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -1918,9 +1918,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [47]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -1931,9 +1931,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [48]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -1944,9 +1944,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [49]
 			},
 			["Width"] = 30,
@@ -1970,9 +1970,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [1]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -1983,9 +1983,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [2]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -1996,9 +1996,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [3]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -2009,9 +2009,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [4]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -2022,9 +2022,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [5]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -2035,9 +2035,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [6]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -2048,9 +2048,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [7]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -2061,9 +2061,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [8]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -2074,9 +2074,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [9]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -2087,9 +2087,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [10]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -2100,9 +2100,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [11]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -2113,9 +2113,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [12]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -2126,9 +2126,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [13]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -2139,9 +2139,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [14]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -2152,9 +2152,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [15]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -2165,9 +2165,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [16]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -2178,9 +2178,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [17]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -2191,9 +2191,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [18]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -2204,9 +2204,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [19]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -2217,9 +2217,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [20]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -2230,9 +2230,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [21]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -2243,9 +2243,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [22]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -2256,9 +2256,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [23]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -2269,9 +2269,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [24]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -2282,9 +2282,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [25]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -2295,9 +2295,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [26]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -2308,9 +2308,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [27]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -2321,9 +2321,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [28]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -2334,9 +2334,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [29]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -2347,9 +2347,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [30]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -2360,9 +2360,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [31]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -2373,9 +2373,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [32]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -2386,9 +2386,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [33]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -2399,9 +2399,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [34]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -2412,9 +2412,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [35]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -2425,9 +2425,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [36]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -2438,9 +2438,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [37]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -2451,9 +2451,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [38]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -2464,9 +2464,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [39]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -2477,9 +2477,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [40]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -2490,9 +2490,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [41]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -2503,9 +2503,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [42]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -2516,9 +2516,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [43]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -2529,9 +2529,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [44]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -2542,9 +2542,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [45]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -2555,9 +2555,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [46]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -2568,9 +2568,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [47]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -2581,9 +2581,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [48]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -2594,9 +2594,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [49]
 			},
 			["Width"] = 30,
@@ -2620,9 +2620,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [1]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -2633,9 +2633,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [2]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -2646,9 +2646,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [3]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -2659,9 +2659,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [4]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -2672,9 +2672,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [5]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -2685,9 +2685,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [6]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -2698,9 +2698,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [7]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -2711,9 +2711,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [8]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -2724,9 +2724,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [9]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -2737,9 +2737,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [10]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -2750,9 +2750,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [11]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -2763,9 +2763,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [12]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -2776,9 +2776,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [13]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -2789,9 +2789,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [14]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -2802,9 +2802,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [15]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -2815,9 +2815,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [16]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -2828,9 +2828,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [17]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -2841,9 +2841,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [18]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -2854,9 +2854,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [19]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -2867,9 +2867,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [20]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -2880,9 +2880,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [21]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -2893,9 +2893,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [22]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -2906,9 +2906,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [23]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -2919,9 +2919,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [24]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -2932,9 +2932,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [25]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -2945,9 +2945,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [26]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -2958,9 +2958,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [27]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -2971,9 +2971,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [28]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -2984,9 +2984,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [29]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -2997,9 +2997,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [30]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -3010,9 +3010,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [31]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -3023,9 +3023,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [32]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -3036,9 +3036,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [33]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -3049,9 +3049,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [34]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -3062,9 +3062,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [35]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -3075,9 +3075,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [36]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -3088,9 +3088,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [37]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -3101,9 +3101,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [38]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -3114,9 +3114,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [39]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -3127,9 +3127,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [40]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -3140,9 +3140,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [41]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -3153,9 +3153,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [42]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -3166,9 +3166,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [43]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -3179,9 +3179,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [44]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -3192,9 +3192,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [45]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -3205,9 +3205,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [46]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -3218,9 +3218,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [47]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -3231,9 +3231,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [48]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -3244,9 +3244,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [49]
 			},
 			["Width"] = 30,
@@ -3270,9 +3270,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [1]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -3283,9 +3283,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [2]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -3296,9 +3296,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [3]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -3309,9 +3309,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [4]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -3322,9 +3322,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [5]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -3335,9 +3335,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [6]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -3348,9 +3348,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [7]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -3361,9 +3361,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [8]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -3374,9 +3374,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [9]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -3387,9 +3387,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [10]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -3400,9 +3400,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [11]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -3413,9 +3413,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [12]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -3426,9 +3426,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [13]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -3439,9 +3439,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [14]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -3452,9 +3452,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [15]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -3465,9 +3465,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [16]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -3478,9 +3478,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [17]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -3491,9 +3491,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [18]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -3504,9 +3504,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [19]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -3517,9 +3517,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [20]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -3530,9 +3530,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [21]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -3543,9 +3543,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [22]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -3556,9 +3556,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [23]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -3569,9 +3569,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [24]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -3582,9 +3582,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [25]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -3595,9 +3595,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [26]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -3608,9 +3608,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [27]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -3621,9 +3621,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [28]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -3634,9 +3634,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [29]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -3647,9 +3647,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [30]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -3660,9 +3660,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [31]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -3673,9 +3673,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [32]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -3686,9 +3686,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [33]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -3699,9 +3699,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [34]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -3712,9 +3712,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [35]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -3725,9 +3725,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [36]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -3738,9 +3738,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [37]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -3751,9 +3751,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [38]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -3764,9 +3764,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [39]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -3777,9 +3777,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [40]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -3790,9 +3790,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [41]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -3803,9 +3803,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [42]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -3816,9 +3816,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [43]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -3829,9 +3829,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [44]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -3842,9 +3842,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [45]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -3855,9 +3855,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [46]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -3868,9 +3868,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [47]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -3881,9 +3881,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [48]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -3894,9 +3894,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [49]
 			},
 			["Width"] = 30,
@@ -3920,9 +3920,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [1]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -3933,9 +3933,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [2]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -3946,9 +3946,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [3]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -3959,9 +3959,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [4]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -3972,9 +3972,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [5]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -3985,9 +3985,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [6]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -3998,9 +3998,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [7]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -4011,9 +4011,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [8]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -4024,9 +4024,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [9]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -4037,9 +4037,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [10]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -4050,9 +4050,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [11]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -4063,9 +4063,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [12]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -4076,9 +4076,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [13]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -4089,9 +4089,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [14]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -4102,9 +4102,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [15]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -4115,9 +4115,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [16]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -4128,9 +4128,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [17]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -4141,9 +4141,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [18]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -4154,9 +4154,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [19]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -4167,9 +4167,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [20]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -4180,9 +4180,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [21]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -4193,9 +4193,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [22]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -4206,9 +4206,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [23]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -4219,9 +4219,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [24]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -4232,9 +4232,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [25]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -4245,9 +4245,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [26]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -4258,9 +4258,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [27]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -4271,9 +4271,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [28]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -4284,9 +4284,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [29]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -4297,9 +4297,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [30]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -4310,9 +4310,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [31]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -4323,9 +4323,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [32]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -4336,9 +4336,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [33]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -4349,9 +4349,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [34]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -4362,9 +4362,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [35]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -4375,9 +4375,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [36]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -4388,9 +4388,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [37]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -4401,9 +4401,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [38]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -4414,9 +4414,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [39]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -4427,9 +4427,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [40]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -4440,9 +4440,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [41]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -4453,9 +4453,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [42]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -4466,9 +4466,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [43]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -4479,9 +4479,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [44]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -4492,9 +4492,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [45]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -4505,9 +4505,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [46]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -4518,9 +4518,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [47]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -4531,9 +4531,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [48]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -4544,9 +4544,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [49]
 			},
 			["Width"] = 30,
@@ -4570,9 +4570,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [1]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -4583,9 +4583,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [2]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -4596,9 +4596,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [3]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -4609,9 +4609,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [4]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -4622,9 +4622,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [5]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -4635,9 +4635,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [6]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -4648,9 +4648,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [7]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -4661,9 +4661,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [8]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -4674,9 +4674,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [9]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -4687,9 +4687,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [10]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -4700,9 +4700,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [11]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -4713,9 +4713,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [12]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -4726,9 +4726,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [13]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -4739,9 +4739,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [14]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -4752,9 +4752,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [15]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -4765,9 +4765,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [16]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -4778,9 +4778,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [17]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -4791,9 +4791,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [18]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -4804,9 +4804,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [19]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -4817,9 +4817,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [20]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -4830,9 +4830,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [21]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -4843,9 +4843,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [22]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -4856,9 +4856,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [23]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -4869,9 +4869,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [24]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -4882,9 +4882,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [25]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -4895,9 +4895,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [26]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -4908,9 +4908,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [27]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -4921,9 +4921,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [28]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -4934,9 +4934,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [29]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -4947,9 +4947,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [30]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -4960,9 +4960,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [31]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -4973,9 +4973,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [32]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -4986,9 +4986,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [33]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -4999,9 +4999,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [34]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -5012,9 +5012,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [35]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -5025,9 +5025,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [36]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -5038,9 +5038,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [37]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -5051,9 +5051,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [38]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -5064,9 +5064,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [39]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -5077,9 +5077,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [40]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -5090,9 +5090,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [41]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -5103,9 +5103,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [42]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -5116,9 +5116,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [43]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -5129,9 +5129,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [44]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -5142,9 +5142,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [45]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -5155,9 +5155,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [46]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -5168,9 +5168,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [47]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -5181,9 +5181,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [48]
 				{
 					["WpnEnchantType"] = "mainhand",
@@ -5194,9 +5194,9 @@ TellMeWhen_Settings = {
 					["OnlyMine"] = false,
 					["Name"] = "",
 					["Enabled"] = false,
-					["BuffShowWhen"] = "present",
-					["Type"] = "",
 					["CooldownType"] = "spell",
+					["Type"] = "",
+					["BuffShowWhen"] = "present",
 				}, -- [49]
 			},
 			["Width"] = 30,

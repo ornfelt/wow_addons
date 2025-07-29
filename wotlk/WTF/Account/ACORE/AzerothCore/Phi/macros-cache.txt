@@ -102,15 +102,15 @@ MACRO 16777233 "ms" INV_Misc_QuestionMark
 #showtooltip shadowstep
 /cast [target=mouseover] shadowstep
 END
-MACRO 16777236 "s" INV_Misc_QuestionMark
-#showtooltip sap
-/cast sap
-END
 MACRO 16777232 "s" INV_Misc_QuestionMark
 #showtooltip sap
 /cast [nomod] sap
 /cast [mod:shift, target=focus] sap
 /cast [mod:ctrl, target=mouseover] sap
+END
+MACRO 16777236 "s" INV_Misc_QuestionMark
+#showtooltip sap
+/cast sap
 END
 MACRO 16777218 "wp" INV_Misc_QuestionMark
 .npcb list spawned

@@ -1,0 +1,8 @@
+Version: 1
+Frame: ChatFrame2
+FrameLevel: 5
+Anchor: BOTTOMLEFT
+X: 32
+Y: 95
+W: 430
+H: 96

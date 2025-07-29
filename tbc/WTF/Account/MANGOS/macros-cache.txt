@@ -1,0 +1,188 @@
+MACRO 16 ".additemdru1" Ability_Druid_TravelForm
+.additem 23035
+.additem 21608
+.additem 22983
+.additem 23050
+.additem 21838
+END
+MACRO 17 ".additemdru2" Ability_Druid_TravelForm
+.additem 21186
+.additem 21585
+.additem 22730
+.additem 23070
+.additem 21600
+.additem 21709
+.additem 23031
+.additem 23207
+.additem 23046
+.additem 22800
+.additem 23197
+.additem 18795
+END
+MACRO 10 ".additemhunt1" Ability_Hunter_BeastTaming
+.additem 22438
+.additem 19377
+.additem 22439
+.additem 21710
+.additem 22436
+.additem 22443
+.additem 16463
+END
+MACRO 11 ".additemhunt2" Ability_Hunter_BeastTaming
+.additem 22442
+.additem 22437
+.additem 22440
+.additem 23067
+.additem 22961
+.additem 13965
+.additem 23041
+.additem 22802
+.additem 23014
+.additem 22812
+.additem 18714
+.additem 18713
+.additem 22441
+.additem 12654 200
+.additem 18042 200
+.additem 4599 200
+END
+MACRO 12 ".additempri1" Spell_Holy_Heal02
+.additem 17966
+.additem 17966
+.additem 17966
+.additem 17966
+.additem 22514
+.additem 23036
+.additem 22515
+.additem 22960
+.additem 22512
+.additem 22519
+.additem 22517
+END
+MACRO 13 ".additempri2" Spell_Holy_Heal
+.additem 22513
+.additem 21582
+.additem 22518
+.additem 22516
+.additem 23061
+.additem 22939
+.additem 23027
+.additem 23047
+.additem 23048
+.additem 23056
+.additem 22801
+.additem 23009
+END
+MACRO 14 ".additemrog1" Ability_Stealth
+.additem 19346
+.additem 19019
+.additem 22478
+.additem 19377
+.additem 22479
+.additem 23045
+.additem 22476
+.additem 22483
+.additem 22481
+.additem 21586
+.additem 22477
+END
+MACRO 15 ".additemrog2" Ability_Stealth
+.additem 22480
+.additem 23060
+.additem 23038
+.additem 23041
+.additem 22954
+.additem 23054
+.additem 23577
+.additem 22802
+.additem 21126
+.additem 22812
+END
+MACRO 8 ".additemsham1" Spell_Nature_Lightning
+.additem 35050
+.additem 30008
+.additem 35052
+.additem 35321
+.additem 35048
+.additem 35173
+.additem 35049
+.additem 32330
+.additem 34542
+.additem 35051
+.additem 5176
+.additem 5177
+END
+MACRO 9 ".additemsham2" Spell_Nature_Lightning
+.additem 35143
+.additem 35129
+.additem 32527
+.additem 33829
+.additem 30345
+.additem 32641
+.additem 32196
+.additem 32218 7
+.additem 5178
+.additem 5175
+.additem 34540
+.additem 30908
+.additem 32374
+.additem 29988
+.additem 37864
+END
+MACRO 5 "battlebotallywsg" Ability_Warrior_Charge
+.battlebot add warsong alliance
+END
+MACRO 6 "battlebothordews" Ability_Warrior_Charge
+.battlebot add warsong horde
+END
+MACRO 19 "botattack" Ability_DualWield
+.partybot attackstart
+END
+MACRO 18 "botr" Spell_Shadow_SacrificialShield
+.partybot remove
+END
+MACRO 3 "learn" Ability_Creature_Cursed_05
+.learn 33388
+.learn 33391
+.additem 17966
+.additem 17966
+.additem 17966
+.additem 17966
+#.learn all_myspells
+.mod money 100000000
+.max
+/s Don't forget to use max again after learning new weapons...
+END
+MACRO 1 "mageitems" Spell_Frost_ChillingArmor
+.additem 32048
+.additem 33065
+.additem 32047
+.additem 28766
+.additem 32050
+.additem 32820
+.additem 32049
+.additem 30095
+.additem 30049
+.additem 32962
+.additem 32799
+.additem 30207
+.additem 32795
+.additem 30109
+.additem 29287
+.additem 29370
+END
+MACRO 2 "mageitems2" Spell_Frost_ChillingArmor
+.additem 28239
+.additem 34220
+.additem 24030 2
+.additem 24056
+.additem 24059 6
+.additem 34540
+.additem 30908
+.additem 32374
+.additem 29988
+.additem 37864
+END
+MACRO 4 "ranadd" Ability_Creature_Cursed_04
+.bot ranadd
+END

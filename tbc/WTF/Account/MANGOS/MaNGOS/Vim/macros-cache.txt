@@ -1,0 +1,90 @@
+MACRO 16777226 "c" INV_Misc_QuestionMark
+#showtooltip counterspell
+/cast [nomod] counterspell
+/cast [mod:shift, target=focus] counterspell
+/cast [mod:ctrl, target=mouseover] counterspell
+END
+MACRO 16777223 "focus" INV_Misc_QuestionMark
+/focus [target=mouseover]
+END
+MACRO 16777217 "go" Ability_Hunter_BeastCall
+#.go creature Katie Hunter
+.go xyz -9455.37 -1385.32 47.20 0
+END
+MACRO 16777221 "go_bg" Ability_DualWield
+.go creature 54614
+END
+MACRO 16777222 "go_fly" Ability_Mount_NetherdrakePurple
+.additem 32858
+.go creature 72610
+END
+MACRO 16777218 "go_train" Ability_Hunter_BeastTraining
+#.go creature elsharin
+.go xyz -9006.11 885.37 29.70 0
+END
+MACRO 16777229 "i" INV_Misc_QuestionMark
+#showtooltip ice block
+/cast !ice block
+END
+MACRO 16777230 "m" INV_Misc_QuestionMark
+#showtooltip Reins of the Swift Mistsaber
+/cancelform
+/stopcasting
+/cancelaura ice block
+/cancelaura levitate
+/cancelaura Sentry totem
+/petfollow
+/use 4 1
+END
+MACRO 16777219 "mount" Ability_Mount_BlackDireWolf
+/s Adding mount
+/script local f=UnitFactionGroup("player") if f=="Alliance" then SendChatMessage(".additem 18767", "SAY") else SendChatMessage(".additem 18798", "SAY") end
+END
+MACRO 16777227 "p" INV_Misc_QuestionMark
+#showtooltip polymorph
+/cast [nomod] polymorph
+/cast [mod:shift, target=focus] polymorph
+/cast [mod:ctrl, target=mouseover] polymorph
+///script print("hi from Lua!")
+END
+MACRO 16777224 "p" INV_Misc_QuestionMark
+#showtooltip
+/cast [nopet][target=pet, dead] Summon Water Elemental; Freeze
+END
+MACRO 16777231 "pve" Spell_Arcane_Blast
+.additem 31056
+.additem 31055
+.additem 31058
+.additem 31059
+.additem 31057
+.additem 34574
+.additem 34447
+.additem 34557
+.additem 34204
+.additem 34242
+.additem 34347
+.additem 34362
+.additem 33497
+.additem 34429
+.additem 32483
+END
+MACRO 16777232 "pve_gems" Spell_Arcane_Blast
+.additem 34220
+.additem 24030 2
+.additem 24056 3
+.additem 24059 8
+END
+MACRO 16777228 "s" INV_Misc_QuestionMark
+#showtooltip spellsteal
+/cast [nomod] spellsteal
+/cast [mod:shift, target=focus] spellsteal
+/cast [mod:ctrl, target=mouseover] spellsteal
+END
+MACRO 16777225 "s" INV_Misc_QuestionMark
+#showtooltip slow fall
+/cast [nomod] slow fall
+/cancelaura [mod:shift] slow fall
+END
+MACRO 16777220 "test" Ability_Ambush
+/script local f=UnitFactionGroup("player") if f=="Alliance" then SendChatMessage("Hello from the Alliance!", "SAY") else SendChatMessage("Horde here!", "SAY") end
+END

@@ -6,10 +6,3 @@ X: 32
 Y: 95
 W: 430
 H: 96
-Frame: TutorialFrame
-FrameLevel: 4
-Anchor: CENTER
-X: -246
-Y: 107
-W: 230
-H: 128

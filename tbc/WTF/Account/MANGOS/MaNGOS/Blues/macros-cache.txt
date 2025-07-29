@@ -1,0 +1,63 @@
+MACRO 16777225 "focus" INV_Misc_QuestionMark
+/focus [target=mouseover]
+END
+MACRO 16777218 "go" Ability_Hunter_BeastCall
+#.go creature 63167 
+.go xyz -3972.17 -11927.50 -0.75 530
+END
+MACRO 16777222 "go_bg" Ability_DualWield
+.go creature 54614
+END
+MACRO 16777227 "go_fly" Ability_Mount_NetherdrakePurple
+.additem 32858
+.go creature 72610
+END
+MACRO 16777219 "go_train" Ability_Hunter_BeastTraining
+#.go creature 63014
+.go xyz -3889.27 -11323.0 -126.29 530
+END
+MACRO 16777228 "m" INV_Misc_QuestionMark
+#showtooltip Reins of the Swift Mistsaber
+/cancelform
+/stopcasting
+/cancelaura ice block
+/cancelaura levitate
+/cancelaura Sentry totem
+/petfollow
+/use 4 1
+END
+MACRO 16777220 "mount" Ability_Mount_BlackDireWolf
+/s Adding mount
+/script local f=UnitFactionGroup("player") if f=="Alliance" then SendChatMessage(".additem 18767", "SAY") else SendChatMessage(".additem 18798", "SAY") end
+END
+MACRO 16777226 "p" INV_Misc_QuestionMark
+#showtooltip purge
+/cast [nomod] purge
+/cast [mod:shift, target=focus] purge
+/cast [mod:ctrl, target=mouseover] purge
+END
+MACRO 16777224 "pve_gems" Spell_Nature_ElementalPrecision_1
+.additem 34220
+.additem 35760 8
+.additem 32215 3
+.additem 32196
+END
+MACRO 16777223 "pve_items" Spell_Nature_ElementalPrecision_1
+.additem 31014
+.additem 31017
+.additem 31008
+.additem 31020
+.additem 31023
+.additem 34542
+.additem 34437
+.additem 34566
+.additem 34204
+.additem 34242
+.additem 34230
+.additem 34362
+.additem 28785
+.additem 34429
+END
+MACRO 16777221 "test" Ability_Ambush
+/script local f=UnitFactionGroup("player") if f=="Alliance" then SendChatMessage("Hello from the Alliance!", "SAY") else SendChatMessage("Horde here!", "SAY") end
+END

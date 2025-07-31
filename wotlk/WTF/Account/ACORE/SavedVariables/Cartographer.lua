@@ -41,16 +41,6 @@ CartographerDB = {
 				["Default"] = {
 					["pois"] = {
 						["The Hinterlands"] = {
-							[19382589] = {
-								["titleCol"] = 16744448,
-								["title"] = "Uther's Tomb",
-								["icon"] = "POI",
-							},
-							[95794652] = {
-								["titleCol"] = 16744448,
-								["title"] = "Hammerfall",
-								["icon"] = "POI",
-							},
 							[47996235] = {
 								["titleCol"] = 16744448,
 								["title"] = "Aerie Peak",
@@ -59,6 +49,16 @@ CartographerDB = {
 							[79505781] = {
 								["titleCol"] = 16744448,
 								["title"] = "Revantusk Village",
+								["icon"] = "POI",
+							},
+							[19382589] = {
+								["titleCol"] = 16744448,
+								["title"] = "Uther's Tomb",
+								["icon"] = "POI",
+							},
+							[95794652] = {
+								["titleCol"] = 16744448,
+								["title"] = "Hammerfall",
 								["icon"] = "POI",
 							},
 						},
@@ -88,9 +88,9 @@ CartographerDB = {
 								["title"] = "Whitereach Post",
 								["icon"] = "POI",
 							},
-							[81951383] = {
+							[50719644] = {
 								["titleCol"] = 16744448,
-								["title"] = "Fungal Rock",
+								["title"] = "Freewind Post",
 								["icon"] = "POI",
 							},
 							[12937856] = {
@@ -98,9 +98,9 @@ CartographerDB = {
 								["title"] = "Stonemaul Ruins",
 								["icon"] = "POI",
 							},
-							[50719644] = {
+							[81951383] = {
 								["titleCol"] = 16744448,
-								["title"] = "Freewind Post",
+								["title"] = "Fungal Rock",
 								["icon"] = "POI",
 							},
 						},
@@ -350,9 +350,9 @@ CartographerDB = {
 							},
 						},
 						["Stonetalon Mountains"] = {
-							[42180720] = {
+							[59433324] = {
 								["titleCol"] = 16744448,
-								["title"] = "Cragpool Lake",
+								["title"] = "Windshear Mine",
 								["icon"] = "POI",
 							},
 							[7924470] = {
@@ -365,9 +365,9 @@ CartographerDB = {
 								["title"] = "Sishir Canyon",
 								["icon"] = "POI",
 							},
-							[59433324] = {
+							[42180720] = {
 								["titleCol"] = 16744448,
-								["title"] = "Windshear Mine",
+								["title"] = "Cragpool Lake",
 								["icon"] = "POI",
 							},
 							[15354511] = {
@@ -380,14 +380,14 @@ CartographerDB = {
 								["title"] = "The Talondeep Path",
 								["icon"] = "POI",
 							},
-							[6038033] = {
-								["titleCol"] = 16744448,
-								["title"] = "Astranaar",
-								["icon"] = "POI",
-							},
 							[60830863] = {
 								["titleCol"] = 16744448,
 								["title"] = "Sun Rock Retreat",
+								["icon"] = "POI",
+							},
+							[6038033] = {
+								["titleCol"] = 16744448,
+								["title"] = "Astranaar",
 								["icon"] = "POI",
 							},
 						},
@@ -453,16 +453,6 @@ CartographerDB = {
 							},
 						},
 						["Borean Tundra"] = {
-							[19237629] = {
-								["titleCol"] = 16744448,
-								["title"] = "Fizzcrank Airstrip",
-								["icon"] = "POI",
-							},
-							[37801516] = {
-								["titleCol"] = 16744448,
-								["title"] = "Taunka'le Village",
-								["icon"] = "POI",
-							},
 							[10415973] = {
 								["titleCol"] = 16744448,
 								["title"] = "Bor'gorok Outpost",
@@ -473,16 +463,21 @@ CartographerDB = {
 								["title"] = "Unu'pe",
 								["icon"] = "POI",
 							},
+							[19237629] = {
+								["titleCol"] = 16744448,
+								["title"] = "Fizzcrank Airstrip",
+								["icon"] = "POI",
+							},
+							[37801516] = {
+								["titleCol"] = 16744448,
+								["title"] = "Taunka'le Village",
+								["icon"] = "POI",
+							},
 						},
 						["Durotar"] = {
 							[64237727] = {
 								["titleCol"] = 16744448,
 								["title"] = "The Crossroads",
-								["icon"] = "POI",
-							},
-							[78301077] = {
-								["titleCol"] = 16744448,
-								["title"] = "Ratchet",
 								["icon"] = "POI",
 							},
 							[42439506] = {
@@ -495,16 +490,21 @@ CartographerDB = {
 								["title"] = "Orgrimmar",
 								["icon"] = "POI",
 							},
-						},
-						["Azuremyst Isle"] = {
-							[49802937] = {
+							[78301077] = {
 								["titleCol"] = 16744448,
-								["title"] = "Crash Site",
+								["title"] = "Ratchet",
 								["icon"] = "POI",
 							},
-							[44717845] = {
+						},
+						["Icecrown"] = {
+							[72165191] = {
 								["titleCol"] = 16744448,
-								["title"] = "The Exodar",
+								["title"] = "Crusaders' Pinnacle",
+								["icon"] = "POI",
+							},
+							[23876750] = {
+								["titleCol"] = 16744448,
+								["title"] = "The Shadow Vault",
 								["icon"] = "POI",
 							},
 						},
@@ -648,8 +648,8 @@ CartographerDB = {
 								["icon"] = "POI",
 							},
 							[81454338] = {
-								["titleCol"] = 16744448,
 								["title"] = "Camp Winterhoof",
+								["titleCol"] = 16744448,
 								["icon"] = "POI",
 							},
 							[27508661] = {
@@ -680,15 +680,15 @@ CartographerDB = {
 								["icon"] = "POI",
 							},
 						},
-						["Icecrown"] = {
-							[72165191] = {
+						["Azuremyst Isle"] = {
+							[49802937] = {
 								["titleCol"] = 16744448,
-								["title"] = "Crusaders' Pinnacle",
+								["title"] = "Crash Site",
 								["icon"] = "POI",
 							},
-							[23876750] = {
+							[44717845] = {
 								["titleCol"] = 16744448,
-								["title"] = "The Shadow Vault",
+								["title"] = "The Exodar",
 								["icon"] = "POI",
 							},
 						},
@@ -705,9 +705,9 @@ CartographerDB = {
 							},
 						},
 						["Netherstorm"] = {
-							[35968058] = {
+							[65259747] = {
 								["titleCol"] = 16744448,
-								["title"] = "The Stormspire",
+								["title"] = "Area 52",
 								["icon"] = "POI",
 							},
 							[66356659] = {
@@ -715,14 +715,14 @@ CartographerDB = {
 								["title"] = "Evergrove",
 								["icon"] = "POI",
 							},
-							[65259747] = {
-								["titleCol"] = 16744448,
-								["title"] = "Area 52",
-								["icon"] = "POI",
-							},
 							[67053330] = {
 								["titleCol"] = 16744448,
 								["title"] = "Cosmowrench",
+								["icon"] = "POI",
+							},
+							[35968058] = {
+								["titleCol"] = 16744448,
+								["title"] = "The Stormspire",
 								["icon"] = "POI",
 							},
 						},
@@ -780,13 +780,6 @@ CartographerDB = {
 								["icon"] = "POI",
 							},
 						},
-						["Ghostlands"] = {
-							[31807833] = {
-								["titleCol"] = 16744448,
-								["title"] = "Tranquillien",
-								["icon"] = "POI",
-							},
-						},
 						["Shadowmoon Valley"] = {
 							[55859291] = {
 								["titleCol"] = 16744448,
@@ -811,6 +804,13 @@ CartographerDB = {
 							[27563217] = {
 								["titleCol"] = 16744448,
 								["title"] = "Allerian Stronghold",
+								["icon"] = "POI",
+							},
+						},
+						["Ghostlands"] = {
+							[31807833] = {
+								["titleCol"] = 16744448,
+								["title"] = "Tranquillien",
 								["icon"] = "POI",
 							},
 						},
@@ -861,10 +861,25 @@ CartographerDB = {
 								["icon"] = "POI",
 							},
 						},
-						["Blasted Lands"] = {
-							[10598514] = {
+						["Teldrassil"] = {
+							[55388602] = {
 								["titleCol"] = 16744448,
-								["title"] = "Stagalbog Cave",
+								["title"] = "Darnassus",
+								["icon"] = "POI",
+							},
+							[40339942] = {
+								["titleCol"] = 16744448,
+								["title"] = "Aldrassil",
+								["icon"] = "POI",
+							},
+							[39839880] = {
+								["titleCol"] = 16744448,
+								["title"] = "Aldrassil",
+								["icon"] = "POI",
+							},
+							[31688850] = {
+								["titleCol"] = 16744448,
+								["title"] = "Shadowthread Cave",
 								["icon"] = "POI",
 							},
 						},
@@ -996,12 +1011,12 @@ CartographerDB = {
 								["title"] = "Spirit Tower",
 								["icon"] = "POI",
 							},
-							[60290926] = {
+							[78001848] = {
 								["titleCol"] = 16744448,
 								["title"] = "Spirit Tower",
 								["icon"] = "POI",
 							},
-							[78001848] = {
+							[60290926] = {
 								["titleCol"] = 16744448,
 								["title"] = "Spirit Tower",
 								["icon"] = "POI",
@@ -1068,15 +1083,10 @@ CartographerDB = {
 								["icon"] = "POI",
 							},
 						},
-						["Crystalsong Forest"] = {
-							[5064186] = {
+						["The Exodar"] = {
+							[56443282] = {
 								["titleCol"] = 16744448,
-								["title"] = "Crusaders' Pinnacle",
-								["icon"] = "POI",
-							},
-							[20831284] = {
-								["titleCol"] = 16744448,
-								["title"] = "K3",
+								["title"] = "The Exodar",
 								["icon"] = "POI",
 							},
 						},
@@ -1092,10 +1102,15 @@ CartographerDB = {
 								["icon"] = "POI",
 							},
 						},
-						["The Exodar"] = {
-							[56443282] = {
+						["Crystalsong Forest"] = {
+							[5064186] = {
 								["titleCol"] = 16744448,
-								["title"] = "The Exodar",
+								["title"] = "Crusaders' Pinnacle",
+								["icon"] = "POI",
+							},
+							[20831284] = {
+								["titleCol"] = 16744448,
+								["title"] = "K3",
 								["icon"] = "POI",
 							},
 						},
@@ -1261,25 +1276,10 @@ CartographerDB = {
 								["icon"] = "POI",
 							},
 						},
-						["Teldrassil"] = {
-							[55388602] = {
+						["Blasted Lands"] = {
+							[10598514] = {
 								["titleCol"] = 16744448,
-								["title"] = "Darnassus",
-								["icon"] = "POI",
-							},
-							[40339942] = {
-								["titleCol"] = 16744448,
-								["title"] = "Aldrassil",
-								["icon"] = "POI",
-							},
-							[39839880] = {
-								["titleCol"] = 16744448,
-								["title"] = "Aldrassil",
-								["icon"] = "POI",
-							},
-							[31688850] = {
-								["titleCol"] = 16744448,
-								["title"] = "Shadowthread Cave",
+								["title"] = "Stagalbog Cave",
 								["icon"] = "POI",
 							},
 						},
@@ -1311,14 +1311,14 @@ CartographerDB = {
 							},
 						},
 						["Dragonblight"] = {
-							[54251404] = {
-								["titleCol"] = 16744448,
-								["title"] = "Wyrmrest Temple",
-								["icon"] = "POI",
-							},
 							[74732372] = {
 								["titleCol"] = 16744448,
 								["title"] = "Moa'ki Harbor",
+								["icon"] = "POI",
+							},
+							[55618474] = {
+								["titleCol"] = 16744448,
+								["title"] = "Stars' Rest",
 								["icon"] = "POI",
 							},
 							[62433944] = {
@@ -1326,9 +1326,9 @@ CartographerDB = {
 								["title"] = "Venomspite",
 								["icon"] = "POI",
 							},
-							[55618474] = {
+							[54251404] = {
 								["titleCol"] = 16744448,
-								["title"] = "Stars' Rest",
+								["title"] = "Wyrmrest Temple",
 								["icon"] = "POI",
 							},
 						},
@@ -1392,9 +1392,9 @@ CartographerDB = {
 								["title"] = "Umbrafen Lake",
 								["icon"] = "POI",
 							},
-							[43858645] = {
+							[51743980] = {
 								["titleCol"] = 16744448,
-								["title"] = "Halaa",
+								["title"] = "Shattrath City",
 								["icon"] = "POI",
 							},
 							[73292782] = {
@@ -1417,9 +1417,9 @@ CartographerDB = {
 								["title"] = "Cenarion Refuge",
 								["icon"] = "POI",
 							},
-							[51743980] = {
+							[43858645] = {
 								["titleCol"] = 16744448,
-								["title"] = "Shattrath City",
+								["title"] = "Halaa",
 								["icon"] = "POI",
 							},
 						},

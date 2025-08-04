@@ -1,7 +1,7 @@
 Frame: ChatFrame2
 FrameLevel: 4
 X: 32
-Y: -568
+Y: -551
 W: 430
 H: 120
 Frame: TutorialFrame

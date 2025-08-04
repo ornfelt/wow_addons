@@ -1,4 +1,0 @@
-Frame: TutorialFrame
-FrameLevel: 1
-X: 644
-Y: -294

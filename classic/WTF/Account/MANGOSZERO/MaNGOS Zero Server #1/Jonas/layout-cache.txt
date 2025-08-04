@@ -1,7 +1,7 @@
 Frame: ChatFrame2
 FrameLevel: 4
 X: 32
-Y: -653
+Y: -636
 W: 430
 H: 120
 Frame: TutorialFrame
@@ -10,7 +10,7 @@ X: 398
 Y: -256
 Frame: DPSMate_DPSMate
 FrameLevel: 1
-X: 903
+X: 725
 Y: -581
 W: 235
 H: 152

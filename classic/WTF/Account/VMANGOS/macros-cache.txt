@@ -153,7 +153,6 @@ END
 MACRO 3 "learn" Ability_Creature_Cursed_05
 .learn 33388
 .learn 33391
-.additem 18767
 .additem 17966
 .additem 17966
 .additem 17966

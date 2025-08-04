@@ -12,13 +12,13 @@ DPSMateUser = {
 	["Squirrel"] = {
 		[1] = 9,
 	},
-	["Scorpok Stinger"] = {
-		[1] = 14,
+	["Saranesta"] = {
+		[1] = 10,
 	},
 	["Vim"] = {
 		[1] = 1,
 		[2] = "mage",
-		[8] = 1,
+		[8] = 60,
 	},
 	["Fytleno"] = {
 		[1] = 4,
@@ -35,15 +35,6 @@ DPSMateUser = {
 	["Horikleyn"] = {
 		[1] = 11,
 	},
-	["Teeldenk"] = {
-		[1] = 6,
-		[2] = "mage",
-		[3] = 1,
-		[8] = 37,
-	},
-	["Saranesta"] = {
-		[1] = 10,
-	},
 	["Gray Forest Wolf"] = {
 		[1] = 17,
 	},
@@ -53,19 +44,29 @@ DPSMateUser = {
 		[3] = 1,
 		[8] = 9,
 	},
-	["Unknown"] = {
-		[1] = 3,
+	["Environment"] = {
+		[1] = 8,
 	},
 	["?!NIL Name?!"] = {
 		[1] = 15,
 	},
-	["Environment"] = {
-		[1] = 8,
+	["Unknown"] = {
+		[1] = 3,
+	},
+	["Scorpok Stinger"] = {
+		[1] = 14,
+	},
+	["Teeldenk"] = {
+		[1] = 6,
+		[2] = "mage",
+		[3] = 1,
+		[8] = 37,
 	},
 }
 DPSMateAbility = {
-	["Power of the Guardian"] = {
-		[1] = 2,
+	["Fireball"] = {
+		[1] = 20,
+		[3] = "fire",
 	},
 	["Arcane Intellect"] = {
 		[1] = 5,
@@ -74,27 +75,29 @@ DPSMateAbility = {
 		[1] = 18,
 		[3] = "frost",
 	},
-	["Blessing of Wisdom"] = {
-		[1] = 13,
+	["Arcane Explosion"] = {
+		[1] = 8,
+		[3] = "arcane",
 	},
 	["Fire Blast"] = {
 		[1] = 19,
 		[3] = "fire",
 	},
-	["AutoAttack"] = {
-		[1] = 22,
+	["Evocation"] = {
+		[1] = 14,
 	},
 	["Shadow Protection"] = {
 		[1] = 10,
 	},
-	["Mage Armor"] = {
-		[1] = 6,
+	["Fireball(Periodic)"] = {
+		[1] = 21,
+		[3] = "fire",
 	},
 	["Ice Barrier"] = {
 		[1] = 23,
 	},
-	["Evocation"] = {
-		[1] = 14,
+	["AutoAttack"] = {
+		[1] = 22,
 	},
 	["Frost Armor"] = {
 		[1] = 3,
@@ -102,13 +105,11 @@ DPSMateAbility = {
 	["Init"] = {
 		[1] = 1,
 	},
-	["Fireball(Periodic)"] = {
-		[1] = 21,
-		[3] = "fire",
+	["Mage Armor"] = {
+		[1] = 6,
 	},
-	["Fireball"] = {
-		[1] = 20,
-		[3] = "fire",
+	["Power of the Guardian"] = {
+		[1] = 2,
 	},
 	["Falling"] = {
 		[1] = 7,
@@ -116,8 +117,8 @@ DPSMateAbility = {
 	["Frost Ward"] = {
 		[1] = 15,
 	},
-	["Chilled"] = {
-		[1] = 24,
+	["15 Mana from Saranesta 's Blessing of Wisdom"] = {
+		[1] = 12,
 	},
 	["Blink"] = {
 		[1] = 17,
@@ -125,8 +126,8 @@ DPSMateAbility = {
 	["Ice Block"] = {
 		[1] = 16,
 	},
-	["15 Mana from Saranesta 's Blessing of Wisdom"] = {
-		[1] = 12,
+	["Chilled"] = {
+		[1] = 24,
 	},
 	["Power Word: Fortitude"] = {
 		[1] = 9,
@@ -134,9 +135,8 @@ DPSMateAbility = {
 	["Stealth"] = {
 		[1] = 4,
 	},
-	["Arcane Explosion"] = {
-		[1] = 8,
-		[3] = "arcane",
+	["Blessing of Wisdom"] = {
+		[1] = 13,
 	},
 	["Fire Ward"] = {
 		[1] = 11,
@@ -866,10 +866,6 @@ DPSMateAbsorbs = {
 					},
 					[2] = {
 						["i"] = {
-							[1] = 0,
-							[2] = 0,
-							[3] = 0,
-							[4] = 0,
 						},
 					},
 				},
@@ -904,10 +900,6 @@ DPSMateAbsorbs = {
 				[23] = {
 					[1] = {
 						["i"] = {
-							[1] = 0,
-							[2] = 0,
-							[3] = 0,
-							[4] = 0,
 						},
 					},
 				},
@@ -1060,13 +1052,14 @@ DPSMateAurasGained = {
 				},
 				[2] = {
 					[1] = 12.20310052314997,
+					[2] = 24.57910107651949,
 				},
 				[3] = {
 					[3] = 2,
 				},
 				[4] = false,
 				[5] = 2,
-				[6] = 1,
+				[6] = 2,
 			},
 			[17] = {
 				[1] = {
@@ -1210,13 +1203,14 @@ DPSMateAurasGained = {
 					[1] = 12.37610055336952,
 				},
 				[2] = {
+					[1] = 12.37610055336952,
 				},
 				[3] = {
 					[3] = 1,
 				},
 				[4] = false,
 				[5] = 1,
-				[6] = 0,
+				[6] = 1,
 			},
 			[5] = {
 				[1] = {
@@ -1270,41 +1264,41 @@ DPSMateCombatTime = {
 DPSMateHistory = {
 	["EDDone"] = {
 	},
-	["DMGTaken"] = {
+	["Fails"] = {
 	},
 	["OHealing"] = {
 	},
-	["names"] = {
+	["EHealingTaken"] = {
 	},
 	["EHealing"] = {
 	},
 	["EDTaken"] = {
 	},
-	["Interrupts"] = {
+	["CCBreaker"] = {
 	},
-	["Deaths"] = {
+	["Threat"] = {
 	},
 	["Dispels"] = {
 	},
 	["THealingTaken"] = {
 	},
-	["EHealingTaken"] = {
+	["Auras"] = {
 	},
 	["OHealingTaken"] = {
 	},
 	["THealing"] = {
 	},
-	["Auras"] = {
+	["names"] = {
 	},
 	["Absorbs"] = {
 	},
-	["Threat"] = {
+	["Deaths"] = {
 	},
-	["Fails"] = {
+	["DMGTaken"] = {
 	},
 	["DMGDone"] = {
 	},
-	["CCBreaker"] = {
+	["Interrupts"] = {
 	},
 }
 DPSMateFails = {

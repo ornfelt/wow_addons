@@ -46,8 +46,9 @@ DPSMateUser = {
 	},
 }
 DPSMateAbility = {
-	["Power of the Guardian"] = {
-		[1] = 4,
+	["Fireball"] = {
+		[1] = 9,
+		[3] = "fire",
 	},
 	["Arcane Intellect"] = {
 		[1] = 15,
@@ -59,8 +60,9 @@ DPSMateAbility = {
 	["Mage Armor"] = {
 		[1] = 6,
 	},
-	["Mark of the Wild"] = {
-		[1] = 19,
+	["Fire Blast"] = {
+		[1] = 13,
+		[3] = "fire",
 	},
 	["Soulstone Resurrection"] = {
 		[1] = 22,
@@ -85,9 +87,8 @@ DPSMateAbility = {
 	["Clearcasting"] = {
 		[1] = 11,
 	},
-	["Fire Blast"] = {
-		[1] = 13,
-		[3] = "fire",
+	["Mark of the Wild"] = {
+		[1] = 19,
 	},
 	["Frost Ward"] = {
 		[1] = 16,
@@ -112,9 +113,8 @@ DPSMateAbility = {
 	["AutoAttack"] = {
 		[1] = 3,
 	},
-	["Fireball"] = {
-		[1] = 9,
-		[3] = "fire",
+	["Power of the Guardian"] = {
+		[1] = 4,
 	},
 	["Inner Fire"] = {
 		[1] = 21,
@@ -2123,41 +2123,41 @@ DPSMateCombatTime = {
 DPSMateHistory = {
 	["EDDone"] = {
 	},
-	["DMGTaken"] = {
+	["Fails"] = {
 	},
 	["OHealing"] = {
 	},
-	["Auras"] = {
+	["names"] = {
 	},
 	["EHealing"] = {
 	},
 	["EDTaken"] = {
 	},
-	["Interrupts"] = {
+	["CCBreaker"] = {
 	},
-	["Deaths"] = {
+	["Threat"] = {
 	},
 	["Dispels"] = {
 	},
 	["THealingTaken"] = {
 	},
-	["names"] = {
+	["EHealingTaken"] = {
 	},
 	["OHealingTaken"] = {
 	},
 	["THealing"] = {
 	},
-	["EHealingTaken"] = {
+	["Auras"] = {
 	},
 	["Absorbs"] = {
 	},
-	["Threat"] = {
+	["Deaths"] = {
 	},
-	["Fails"] = {
+	["DMGTaken"] = {
 	},
 	["DMGDone"] = {
 	},
-	["CCBreaker"] = {
+	["Interrupts"] = {
 	},
 }
 DPSMateFails = {

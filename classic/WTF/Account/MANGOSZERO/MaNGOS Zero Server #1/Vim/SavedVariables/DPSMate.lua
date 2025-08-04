@@ -12,8 +12,8 @@ DPSMateUser = {
 	["Squirrel"] = {
 		[1] = 9,
 	},
-	["Scorpok Stinger"] = {
-		[1] = 14,
+	["Saranesta"] = {
+		[1] = 10,
 	},
 	["Vim"] = {
 		[1] = 1,
@@ -35,23 +35,8 @@ DPSMateUser = {
 	["Horikleyn"] = {
 		[1] = 11,
 	},
-	["Environment"] = {
-		[1] = 8,
-	},
-	["?!NIL Name?!"] = {
-		[1] = 15,
-	},
-	["Teeldenk"] = {
-		[1] = 6,
-		[2] = "mage",
-		[3] = 1,
-		[8] = 37,
-	},
-	["Saranesta"] = {
-		[1] = 10,
-	},
-	["Unknown"] = {
-		[1] = 3,
+	["Gray Forest Wolf"] = {
+		[1] = 17,
 	},
 	["Baraldrin"] = {
 		[1] = 16,
@@ -59,8 +44,23 @@ DPSMateUser = {
 		[3] = 1,
 		[8] = 9,
 	},
-	["Gray Forest Wolf"] = {
-		[1] = 17,
+	["Environment"] = {
+		[1] = 8,
+	},
+	["?!NIL Name?!"] = {
+		[1] = 15,
+	},
+	["Unknown"] = {
+		[1] = 3,
+	},
+	["Scorpok Stinger"] = {
+		[1] = 14,
+	},
+	["Teeldenk"] = {
+		[1] = 6,
+		[2] = "mage",
+		[3] = 1,
+		[8] = 37,
 	},
 }
 DPSMateAbility = {
@@ -75,28 +75,29 @@ DPSMateAbility = {
 		[1] = 18,
 		[3] = "frost",
 	},
-	["Mage Armor"] = {
-		[1] = 6,
+	["Arcane Explosion"] = {
+		[1] = 8,
+		[3] = "arcane",
 	},
 	["Fire Blast"] = {
 		[1] = 19,
 		[3] = "fire",
 	},
-	["Fire Ward"] = {
-		[1] = 11,
+	["Evocation"] = {
+		[1] = 14,
 	},
 	["Shadow Protection"] = {
 		[1] = 10,
 	},
-	["Arcane Explosion"] = {
-		[1] = 8,
-		[3] = "arcane",
+	["Fireball(Periodic)"] = {
+		[1] = 21,
+		[3] = "fire",
 	},
 	["Ice Barrier"] = {
 		[1] = 23,
 	},
-	["Stealth"] = {
-		[1] = 4,
+	["AutoAttack"] = {
+		[1] = 22,
 	},
 	["Frost Armor"] = {
 		[1] = 3,
@@ -104,20 +105,20 @@ DPSMateAbility = {
 	["Init"] = {
 		[1] = 1,
 	},
-	["Blessing of Wisdom"] = {
-		[1] = 13,
+	["Mage Armor"] = {
+		[1] = 6,
 	},
-	["15 Mana from Saranesta 's Blessing of Wisdom"] = {
-		[1] = 12,
+	["Power of the Guardian"] = {
+		[1] = 2,
 	},
-	["Chilled"] = {
-		[1] = 24,
+	["Falling"] = {
+		[1] = 7,
 	},
 	["Frost Ward"] = {
 		[1] = 15,
 	},
-	["Falling"] = {
-		[1] = 7,
+	["15 Mana from Saranesta 's Blessing of Wisdom"] = {
+		[1] = 12,
 	},
 	["Blink"] = {
 		[1] = 17,
@@ -125,21 +126,20 @@ DPSMateAbility = {
 	["Ice Block"] = {
 		[1] = 16,
 	},
-	["Power of the Guardian"] = {
-		[1] = 2,
+	["Chilled"] = {
+		[1] = 24,
 	},
 	["Power Word: Fortitude"] = {
 		[1] = 9,
 	},
-	["AutoAttack"] = {
-		[1] = 22,
+	["Stealth"] = {
+		[1] = 4,
 	},
-	["Fireball(Periodic)"] = {
-		[1] = 21,
-		[3] = "fire",
+	["Blessing of Wisdom"] = {
+		[1] = 13,
 	},
-	["Evocation"] = {
-		[1] = 14,
+	["Fire Ward"] = {
+		[1] = 11,
 	},
 }
 DPSMateDamageDone = {
@@ -886,6 +886,14 @@ DPSMateAbsorbs = {
 						["i"] = {
 						},
 					},
+					[2] = {
+						["i"] = {
+							[1] = 0,
+							[2] = 0,
+							[3] = 0,
+							[4] = 0,
+						},
+					},
 				},
 				[15] = {
 					[1] = {
@@ -910,6 +918,16 @@ DPSMateAbsorbs = {
 		[1] = {
 			[3] = {
 				["i"] = {
+				},
+				[11] = {
+					[1] = {
+						["i"] = {
+							[1] = 0,
+							[2] = 0,
+							[3] = 0,
+							[4] = 0,
+						},
+					},
 				},
 				[23] = {
 					[1] = {
@@ -1016,15 +1034,16 @@ DPSMateAurasGained = {
 			[11] = {
 				[1] = {
 					[1] = 0.8281000146478414,
+					[2] = 24.57910107651949,
 				},
 				[2] = {
 					[1] = 0.8281000146478414,
 				},
 				[3] = {
-					[3] = 1,
+					[3] = 2,
 				},
 				[4] = false,
-				[5] = 1,
+				[5] = 2,
 				[6] = 1,
 			},
 			[14] = {
@@ -1069,6 +1088,23 @@ DPSMateAurasGained = {
 				[5] = 1,
 				[6] = 1,
 			},
+			[23] = {
+				[1] = {
+					[1] = 12.20310052314997,
+					[2] = 24.57910107651949,
+					[3] = 24.57910107651949,
+				},
+				[2] = {
+					[1] = 12.20310052314997,
+					[2] = 24.57910107651949,
+				},
+				[3] = {
+					[3] = 3,
+				},
+				[4] = false,
+				[5] = 3,
+				[6] = 2,
+			},
 			[17] = {
 				[1] = {
 					[1] = 0.8281000146478414,
@@ -1088,23 +1124,6 @@ DPSMateAurasGained = {
 				[4] = false,
 				[5] = 4,
 				[6] = 4,
-			},
-			[23] = {
-				[1] = {
-					[1] = 12.20310052314997,
-					[2] = 24.57910107651949,
-					[3] = 24.57910107651949,
-				},
-				[2] = {
-					[1] = 12.20310052314997,
-					[2] = 24.57910107651949,
-				},
-				[3] = {
-					[3] = 3,
-				},
-				[4] = false,
-				[5] = 3,
-				[6] = 2,
 			},
 		},
 		[3] = {
@@ -1238,20 +1257,6 @@ DPSMateAurasGained = {
 				[5] = 1,
 				[6] = 0,
 			},
-			[17] = {
-				[1] = {
-					[1] = 12.37610055336952,
-				},
-				[2] = {
-					[1] = 12.37610055336952,
-				},
-				[3] = {
-					[3] = 1,
-				},
-				[4] = false,
-				[5] = 1,
-				[6] = 1,
-			},
 			[23] = {
 				[1] = {
 					[1] = 12.37610055336952,
@@ -1266,6 +1271,33 @@ DPSMateAurasGained = {
 				[4] = false,
 				[5] = 2,
 				[6] = 1,
+			},
+			[17] = {
+				[1] = {
+					[1] = 12.37610055336952,
+				},
+				[2] = {
+					[1] = 12.37610055336952,
+				},
+				[3] = {
+					[3] = 1,
+				},
+				[4] = false,
+				[5] = 1,
+				[6] = 1,
+			},
+			[11] = {
+				[1] = {
+					[1] = 12.37610055336952,
+				},
+				[2] = {
+				},
+				[3] = {
+					[3] = 1,
+				},
+				[4] = false,
+				[5] = 1,
+				[6] = 0,
 			},
 		},
 		[17] = {
@@ -1306,7 +1338,7 @@ DPSMateCombatTime = {
 DPSMateHistory = {
 	["EDDone"] = {
 	},
-	["DMGTaken"] = {
+	["Fails"] = {
 	},
 	["OHealing"] = {
 	},
@@ -1314,33 +1346,33 @@ DPSMateHistory = {
 	},
 	["EHealing"] = {
 	},
-	["OHealingTaken"] = {
+	["EDTaken"] = {
 	},
-	["Interrupts"] = {
+	["CCBreaker"] = {
 	},
-	["Deaths"] = {
+	["Threat"] = {
 	},
 	["Dispels"] = {
 	},
 	["THealingTaken"] = {
 	},
-	["CCBreaker"] = {
+	["Auras"] = {
 	},
-	["EDTaken"] = {
+	["OHealingTaken"] = {
 	},
 	["THealing"] = {
 	},
-	["Fails"] = {
-	},
-	["Threat"] = {
+	["names"] = {
 	},
 	["Absorbs"] = {
 	},
-	["names"] = {
+	["Deaths"] = {
+	},
+	["DMGTaken"] = {
 	},
 	["DMGDone"] = {
 	},
-	["Auras"] = {
+	["Interrupts"] = {
 	},
 }
 DPSMateFails = {

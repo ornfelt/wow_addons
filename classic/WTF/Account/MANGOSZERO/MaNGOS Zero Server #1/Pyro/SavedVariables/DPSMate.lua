@@ -54,11 +54,11 @@ DPSMateUser = {
 	["Bimble Longberry"] = {
 		[1] = 19,
 	},
-	["Rabbit"] = {
-		[1] = 11,
-	},
-	["Pocush"] = {
-		[1] = 20,
+	["Binigull"] = {
+		[1] = 3,
+		[2] = "mage",
+		[3] = 1,
+		[8] = 4,
 	},
 	["Bhagrarm"] = {
 		[1] = 7,
@@ -66,14 +66,14 @@ DPSMateUser = {
 	["Environment"] = {
 		[1] = 21,
 	},
+	["Pocush"] = {
+		[1] = 20,
+	},
 	["Unknown"] = {
 		[1] = 2,
 	},
-	["Binigull"] = {
-		[1] = 3,
-		[2] = "mage",
-		[3] = 1,
-		[8] = 4,
+	["Rabbit"] = {
+		[1] = 11,
 	},
 	["Winterspring Owl"] = {
 		[1] = 13,
@@ -145,9 +145,8 @@ DPSMateAbility = {
 		[1] = 19,
 		[3] = "fire",
 	},
-	["Scorch"] = {
-		[1] = 35,
-		[3] = "fire",
+	["AutoAttack"] = {
+		[1] = 20,
 	},
 	["Cone of Cold"] = {
 		[1] = 34,
@@ -159,8 +158,8 @@ DPSMateAbility = {
 	["Hunter's Mark"] = {
 		[1] = 17,
 	},
-	["Ice Armor"] = {
-		[1] = 33,
+	["Init"] = {
+		[1] = 1,
 	},
 	["Fire Ward"] = {
 		[1] = 14,
@@ -178,17 +177,17 @@ DPSMateAbility = {
 	["Frost Armor"] = {
 		[1] = 3,
 	},
-	["Init"] = {
-		[1] = 1,
+	["Ice Armor"] = {
+		[1] = 33,
 	},
 	["Amplify Magic"] = {
 		[1] = 30,
 	},
-	["10 Mana from Bhagrarm 's Blessing of Wisdom"] = {
-		[1] = 9,
-	},
 	["Cat Form"] = {
 		[1] = 5,
+	},
+	["10 Mana from Bhagrarm 's Blessing of Wisdom"] = {
+		[1] = 9,
 	},
 	["Arcane Intellect"] = {
 		[1] = 2,
@@ -205,8 +204,9 @@ DPSMateAbility = {
 	["Ignite"] = {
 		[1] = 25,
 	},
-	["AutoAttack"] = {
-		[1] = 20,
+	["Scorch"] = {
+		[1] = 35,
+		[3] = "fire",
 	},
 	["Evocation"] = {
 		[1] = 36,
@@ -671,8 +671,8 @@ DPSMateDamageDone = {
 					[125] = 12,
 					[123] = 11,
 					[77] = 11,
-					[17] = 11,
 					[69] = 11,
+					[17] = 11,
 					[85] = 10,
 					[101] = 10,
 					[29] = 11,
@@ -880,8 +880,8 @@ DPSMateEDT = {
 						[125] = 12,
 						[123] = 11,
 						[77] = 11,
-						[17] = 11,
 						[69] = 11,
+						[17] = 11,
 						[85] = 10,
 						[101] = 10,
 						[29] = 11,
@@ -2610,6 +2610,14 @@ DPSMateAbsorbs = {
 						["i"] = {
 						},
 					},
+					[5] = {
+						["i"] = {
+							[1] = 0,
+							[2] = 0,
+							[3] = 0,
+							[4] = 0,
+						},
+					},
 				},
 				[11] = {
 					[1] = {
@@ -2621,6 +2629,22 @@ DPSMateAbsorbs = {
 		},
 	},
 	[2] = {
+		[1] = {
+			[2] = {
+				["i"] = {
+				},
+				[14] = {
+					[1] = {
+						["i"] = {
+							[1] = 0,
+							[2] = 0,
+							[3] = 0,
+							[4] = 0,
+						},
+					},
+				},
+			},
+		},
 	},
 }
 DPSMateThreat = {
@@ -2728,6 +2752,7 @@ DPSMateAurasGained = {
 					[2] = 3.125100152736902,
 					[3] = 137.7501061709434,
 					[4] = 157.3751070482493,
+					[5] = 298.03111333417,
 				},
 				[2] = {
 					[1] = 3.125100152736902,
@@ -2736,10 +2761,10 @@ DPSMateAurasGained = {
 					[4] = 157.3751070482493,
 				},
 				[3] = {
-					[2] = 4,
+					[2] = 5,
 				},
 				[4] = false,
-				[5] = 4,
+				[5] = 5,
 				[6] = 4,
 			},
 			[15] = {
@@ -3512,6 +3537,19 @@ DPSMateAurasGained = {
 				[5] = 1,
 				[6] = 1,
 			},
+			[14] = {
+				[1] = {
+					[1] = 10.75010048056245,
+				},
+				[2] = {
+				},
+				[3] = {
+					[2] = 1,
+				},
+				[4] = false,
+				[5] = 1,
+				[6] = 0,
+			},
 			[43] = {
 				[1] = {
 					[1] = 10.75010048056245,
@@ -3619,41 +3657,41 @@ DPSMateCombatTime = {
 DPSMateHistory = {
 	["EDDone"] = {
 	},
-	["Fails"] = {
+	["DMGTaken"] = {
 	},
 	["OHealing"] = {
 	},
-	["EHealingTaken"] = {
+	["Auras"] = {
 	},
 	["EHealing"] = {
 	},
 	["EDTaken"] = {
 	},
-	["CCBreaker"] = {
+	["Interrupts"] = {
 	},
-	["Threat"] = {
+	["Deaths"] = {
 	},
 	["Dispels"] = {
 	},
 	["THealingTaken"] = {
 	},
-	["Auras"] = {
+	["names"] = {
 	},
 	["OHealingTaken"] = {
 	},
 	["THealing"] = {
 	},
-	["names"] = {
+	["EHealingTaken"] = {
 	},
 	["Absorbs"] = {
 	},
-	["Deaths"] = {
+	["Threat"] = {
 	},
-	["DMGTaken"] = {
+	["Fails"] = {
 	},
 	["DMGDone"] = {
 	},
-	["Interrupts"] = {
+	["CCBreaker"] = {
 	},
 }
 DPSMateFails = {

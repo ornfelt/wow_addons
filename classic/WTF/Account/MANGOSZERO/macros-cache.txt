@@ -169,6 +169,7 @@ MACRO 1 "mageitems" Spell_Frost_ChillingArmor
 .additem 16444
 .additem 16917
 .additem 23050
+.additem 22820
 END
 MACRO 2 "mageitems2" Spell_Frost_ChillingArmor
 .additem 22496

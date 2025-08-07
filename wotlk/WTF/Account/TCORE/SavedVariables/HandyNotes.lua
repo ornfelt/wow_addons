@@ -8,10 +8,10 @@ HandyNotesDB = {
 		["Bluex - Trinity"] = "Bluex - Trinity",
 		["Neovi - AzerothCore"] = "Neovi - AzerothCore",
 		["Phi - AzerothCore"] = "Phi - AzerothCore",
-		["Bluev - AzerothCore"] = "Bluev - AzerothCore",
-		["Pyro - Trinity"] = "Pyro - Trinity",
-		["Blues - AzerothCore"] = "Blues - AzerothCore",
 		["Arch - Trinity"] = "Arch - Trinity",
+		["Pyro - Trinity"] = "Pyro - Trinity",
+		["Botty - Trinity"] = "Botty - Trinity",
+		["Bluev - AzerothCore"] = "Bluev - AzerothCore",
 		["Red - AzerothCore"] = "Red - AzerothCore",
 		["Deb - AzerothCore"] = "Deb - AzerothCore",
 		["Jaina - AzerothCore"] = "Jaina - AzerothCore",
@@ -27,7 +27,7 @@ HandyNotesDB = {
 		["Oakenshield - AzerothCore"] = "Oakenshield - AzerothCore",
 		["Neovi - Trinity"] = "Neovi - Trinity",
 		["Vim - Trinity"] = "Vim - Trinity",
-		["Botty - Trinity"] = "Botty - Trinity",
+		["Blues - AzerothCore"] = "Blues - AzerothCore",
 		["Jonaz - Trinity"] = "Jonaz - Trinity",
 	},
 	["profiles"] = {
@@ -45,13 +45,13 @@ HandyNotesDB = {
 		},
 		["Phi - AzerothCore"] = {
 		},
-		["Bluev - AzerothCore"] = {
+		["Arch - Trinity"] = {
 		},
 		["Pyro - Trinity"] = {
 		},
-		["Blues - AzerothCore"] = {
+		["Botty - Trinity"] = {
 		},
-		["Arch - Trinity"] = {
+		["Bluev - AzerothCore"] = {
 		},
 		["Red - AzerothCore"] = {
 		},
@@ -83,7 +83,7 @@ HandyNotesDB = {
 		},
 		["Vim - Trinity"] = {
 		},
-		["Botty - Trinity"] = {
+		["Blues - AzerothCore"] = {
 		},
 		["Jonaz - Trinity"] = {
 		},
@@ -98,10 +98,10 @@ HandyNotes_HandyNotesDB = {
 		["Bluex - Trinity"] = "Bluex - Trinity",
 		["Neovi - AzerothCore"] = "Neovi - AzerothCore",
 		["Phi - AzerothCore"] = "Phi - AzerothCore",
-		["Bluev - AzerothCore"] = "Bluev - AzerothCore",
-		["Pyro - Trinity"] = "Pyro - Trinity",
-		["Blues - AzerothCore"] = "Blues - AzerothCore",
 		["Arch - Trinity"] = "Arch - Trinity",
+		["Pyro - Trinity"] = "Pyro - Trinity",
+		["Botty - Trinity"] = "Botty - Trinity",
+		["Bluev - AzerothCore"] = "Bluev - AzerothCore",
 		["Red - AzerothCore"] = "Red - AzerothCore",
 		["Deb - AzerothCore"] = "Deb - AzerothCore",
 		["Jaina - AzerothCore"] = "Jaina - AzerothCore",
@@ -117,7 +117,7 @@ HandyNotes_HandyNotesDB = {
 		["Oakenshield - AzerothCore"] = "Oakenshield - AzerothCore",
 		["Neovi - Trinity"] = "Neovi - Trinity",
 		["Vim - Trinity"] = "Vim - Trinity",
-		["Botty - Trinity"] = "Botty - Trinity",
+		["Blues - AzerothCore"] = "Blues - AzerothCore",
 		["Jonaz - Trinity"] = "Jonaz - Trinity",
 	},
 	["global"] = {
@@ -434,10 +434,10 @@ HandyNotes_HandyNotesDB = {
 				["title"] = "MorgansVigil 651",
 				["desc"] = "650:0 652:0 659:0 ",
 			},
-			[38775340] = {
+			[80114315] = {
 				["icon"] = 1,
-				["title"] = "DracodarHub 641",
-				["desc"] = "630:0 639:0 642:0 644:0 645:0 ",
+				["title"] = "DreadmaulRockTop2 653",
+				["desc"] = "652:0 ",
 			},
 			[83333763] = {
 				["icon"] = 1,
@@ -449,10 +449,10 @@ HandyNotes_HandyNotesDB = {
 				["title"] = "BlackrockStrongholdInside 643",
 				["desc"] = "642:0 ",
 			},
-			[80114315] = {
+			[38775340] = {
 				["icon"] = 1,
-				["title"] = "DreadmaulRockTop2 653",
-				["desc"] = "652:0 ",
+				["title"] = "DracodarHub 641",
+				["desc"] = "630:0 639:0 642:0 644:0 645:0 ",
 			},
 			[45243719] = {
 				["icon"] = 1,
@@ -505,6 +505,1721 @@ HandyNotes_HandyNotesDB = {
 				["icon"] = 1,
 				["title"] = "MoongladeFlightA 1201",
 				["desc"] = "1200:0 ",
+			},
+		},
+		["Dragonblight"] = {
+			[92066402] = {
+				["title"] = "db67 DragonspineTributary1 2954",
+				["icon"] = 1,
+				["desc"] = "2953:0 3157:0 ",
+			},
+			[25716845] = {
+				["title"] = "db10 GlitteringStrand1 2897",
+				["icon"] = 1,
+				["desc"] = "2896:0 ",
+			},
+			[70696887] = {
+				["title"] = "db41 NewHearthglen1 2928",
+				["icon"] = 1,
+				["desc"] = "2929:0 2927:0 2931:0 ",
+			},
+			[44722107] = {
+				["title"] = "db27 KorkronVanguard1 2914",
+				["icon"] = 1,
+				["desc"] = "2913:0 2911:0 2912:0 ",
+			},
+			[32074858] = {
+				["title"] = "db21 Dragonblight6 2908",
+				["icon"] = 1,
+				["desc"] = "2909:0 2892:0 2907:0 2898:0 ",
+			},
+			[23955137] = {
+				["title"] = "db5 Dragonblight3 2892",
+				["icon"] = 1,
+				["desc"] = "2895:0 2890:0 2893:0 2908:0 ",
+			},
+			[60901019] = {
+				["title"] = "db54 TheCrystalVice3 2941",
+				["icon"] = 1,
+				["desc"] = "2940:0 2964:0 ",
+			},
+			[67045731] = {
+				["title"] = "db46 TheDragonWastes13 2933",
+				["icon"] = 1,
+				["desc"] = "2959:0 2926:0 2932:0 ",
+			},
+			[53435367] = {
+				["title"] = "db34 TheDragonWastes8 2921",
+				["icon"] = 1,
+				["desc"] = "2919:0 2920:0 2918:0 2961:0 ",
+			},
+			[77366461] = {
+				["title"] = "db71 Dragonblight29 2958",
+				["icon"] = 1,
+				["desc"] = "2931:0 2955:0 2957:0 ",
+			},
+			[70803291] = {
+				["title"] = "db56 TheDragonWastes20 2943",
+				["icon"] = 1,
+				["desc"] = "2942:0 2944:0 ",
+			},
+			[51552294] = {
+				["title"] = "db28 TheDragonWastes2 2915",
+				["icon"] = 1,
+				["desc"] = "2913:0 2938:0 2916:0 ",
+			},
+			[30325917] = {
+				["title"] = "db11 LothalorWoodlands1 2898",
+				["icon"] = 1,
+				["desc"] = "2906:0 2895:0 2908:0 2892:0 2899:0 ",
+			},
+			[43583006] = {
+				["title"] = "db24 Dragonblight9 2911",
+				["icon"] = 1,
+				["desc"] = "2912:0 2913:0 2914:0 2910:0 ",
+			},
+			[37754930] = {
+				["title"] = "db75 Dragonblight33 2962",
+				["icon"] = 1,
+				["desc"] = "2907:0 2963:0 2961:0 ",
+			},
+			[67416786] = {
+				["title"] = "db40 TheDragonWastes12 2927",
+				["icon"] = 1,
+				["desc"] = "2928:0 2926:0 2933:0 ",
+			},
+			[38027254] = {
+				["title"] = "db14 InduleVillage1 2901",
+				["icon"] = 1,
+				["desc"] = "2899:0 2902:0 2900:0 ",
+			},
+			[48437447] = {
+				["title"] = "db17 MoakiHarbor1 2904",
+				["icon"] = 1,
+				["desc"] = "2903:0 ",
+			},
+			[21724574] = {
+				["title"] = "db6 Dragonblight4 2893",
+				["icon"] = 1,
+				["desc"] = "2890:0 2894:0 ",
+			},
+			[62954003] = {
+				["title"] = "db48 TheDragonWastes15 2935",
+				["icon"] = 1,
+				["desc"] = "2960:0 2934:0 2918:0 2936:0 ",
+			},
+			[26513940] = {
+				["title"] = "db7 IcemistVillage1 2894",
+				["icon"] = 1,
+				["desc"] = "2893:0 ",
+			},
+			[39693838] = {
+				["title"] = "db23 Dragonblight8 2910",
+				["icon"] = 1,
+				["desc"] = "2963:0 2917:0 2962:0 2911:0 2909:0 ",
+			},
+			[55722590] = {
+				["title"] = "db51 TheDragonWastes18 2938",
+				["icon"] = 1,
+				["desc"] = "2915:0 2937:0 2913:0 ",
+			},
+			[56074203] = {
+				["title"] = "db31 TheDragonWastes5 2918",
+				["icon"] = 1,
+				["desc"] = "2919:0 2935:0 2917:0 ",
+			},
+			[44827070] = {
+				["title"] = "db15 SnowfallGlade1 2902",
+				["icon"] = 1,
+				["desc"] = "2904:0 2903:0 2905:0 2901:0 ",
+			},
+			[69547458] = {
+				["title"] = "db43 NewHearthglen3 2930",
+				["icon"] = 1,
+				["desc"] = "2929:0 ",
+			},
+			[67304138] = {
+				["title"] = "db73 TheDragonWastes31 2960",
+				["icon"] = 1,
+				["desc"] = "2935:0 2959:0 2936:0 ",
+			},
+			[18195108] = {
+				["title"] = "db3 Dragonblight2 2890",
+				["icon"] = 1,
+				["desc"] = "2889:0 2892:0 2891:0 2893:0 ",
+			},
+			[41484729] = {
+				["title"] = "db76 Dragonblight34 2963",
+				["icon"] = 1,
+				["desc"] = "2962:0 2961:0 2910:0 ",
+			},
+			[84082997] = {
+				["title"] = "db58 Dragonblight22 2945",
+				["icon"] = 1,
+				["desc"] = "2944:0 2946:0 2947:0 2948:0 ",
+			},
+			[36945277] = {
+				["title"] = "db20 Dragonblight5 2907",
+				["icon"] = 1,
+				["desc"] = "2962:0 2906:0 2908:0 2961:0 ",
+			},
+			[18876015] = {
+				["title"] = "db4 MoonrestGardens1 2891",
+				["icon"] = 1,
+				["desc"] = "2896:0 2890:0 ",
+			},
+			[46912504] = {
+				["title"] = "db26 TheDragonWastes1 2913",
+				["icon"] = 1,
+				["desc"] = "2914:0 2915:0 2911:0 ",
+			},
+			[62672670] = {
+				["title"] = "db50 TheDragonWastes17 2937",
+				["icon"] = 1,
+				["desc"] = "2939:0 2936:0 2938:0 ",
+			},
+			[42622881] = {
+				["title"] = "db25 FordragonHold1 2912",
+				["icon"] = 1,
+				["desc"] = "2911:0 2913:0 2914:0 ",
+			},
+			[72266916] = {
+				["title"] = "db42 NewHearthglen2 2929",
+				["icon"] = 1,
+				["desc"] = "2928:0 2930:0 2931:0 ",
+			},
+			[43986134] = {
+				["title"] = "db18 SnowfallGlade3 2905",
+				["icon"] = 1,
+				["desc"] = "2961:0 2902:0 2906:0 2903:0 ",
+			},
+			[30007411] = {
+				["title"] = "db13 LothalorWoodlands3 2900",
+				["icon"] = 1,
+				["desc"] = "2901:0 2899:0 ",
+			},
+			[54256106] = {
+				["title"] = "db33 TheDragonWastes7 2920",
+				["icon"] = 1,
+				["desc"] = "2922:0 2921:0 2924:0 2919:0 ",
+			},
+			[64786298] = {
+				["title"] = "db39 TheDragonWastes11 2926",
+				["icon"] = 1,
+				["desc"] = "2924:0 2933:0 2927:0 ",
+			},
+			[33094251] = {
+				["title"] = "db22 Dragonblight7 2909",
+				["icon"] = 1,
+				["desc"] = "2908:0 2894:0 2962:0 2910:0 ",
+			},
+			[24055840] = {
+				["title"] = "db8 MoonrestGardens2 2895",
+				["icon"] = 1,
+				["desc"] = "2896:0 2892:0 2891:0 2898:0 ",
+			},
+			[77323300] = {
+				["title"] = "db57 Dragonblight21 2944",
+				["icon"] = 1,
+				["desc"] = "2943:0 2945:0 ",
+			},
+			[81536079] = {
+				["title"] = "db68 Dragonblight27 2955",
+				["icon"] = 1,
+				["desc"] = "2956:0 2952:0 2958:0 ",
+			},
+			[47343900] = {
+				["title"] = "db30 TheDragonWastes4 2917",
+				["icon"] = 1,
+				["desc"] = "2916:0 2910:0 2918:0 ",
+			},
+			[86884443] = {
+				["title"] = "db62 Dragonblight24 2949",
+				["icon"] = 1,
+				["desc"] = "2948:0 2950:0 ",
+			},
+			[86315847] = {
+				["title"] = "db65 Dragonblight25 2952",
+				["icon"] = 1,
+				["desc"] = "2953:0 2955:0 2951:0 2950:0 ",
+			},
+			[77966168] = {
+				["title"] = "db69 Venomspite1 2956",
+				["icon"] = 1,
+				["desc"] = "2957:0 2955:0 ",
+			},
+			[35056672] = {
+				["title"] = "db12 LothalorWoodlands2 2899",
+				["icon"] = 1,
+				["desc"] = "2906:0 2901:0 2898:0 2900:0 ",
+			},
+			[36525950] = {
+				["title"] = "db19 LothalorWoodlands4 2906",
+				["icon"] = 1,
+				["desc"] = "2907:0 2899:0 2898:0 2905:0 ",
+			},
+			[59371441] = {
+				["title"] = "db53 TheCrystalVice2 2940",
+				["icon"] = 1,
+				["desc"] = "2941:0 2939:0 ",
+			},
+			[88604925] = {
+				["title"] = "db63 TheCarrionFields1 2950",
+				["icon"] = 1,
+				["desc"] = "2949:0 2951:0 2952:0 ",
+			},
+			[49823178] = {
+				["title"] = "db29 TheDragonWastes3 2916",
+				["icon"] = 1,
+				["desc"] = "2917:0 2911:0 2913:0 ",
+			},
+			[13095569] = {
+				["title"] = "db2 Dragonblight1 2889",
+				["icon"] = 1,
+				["desc"] = "2888:0 2890:0 ",
+			},
+			[75286499] = {
+				["title"] = "db44 NewHearthglen4 2931",
+				["icon"] = 1,
+				["desc"] = "2929:0 2958:0 2932:0 ",
+			},
+			[75226309] = {
+				["title"] = "db70 Dragonblight28 2957",
+				["icon"] = 1,
+				["desc"] = "2931:0 2956:0 ",
+			},
+			[52686262] = {
+				["title"] = "db35 TheDragonWastes9 2922",
+				["icon"] = 1,
+				["desc"] = "2920:0 2923:0 ",
+			},
+			[86003995] = {
+				["title"] = "db61 OnslaughtBaseCamp1 2948",
+				["icon"] = 1,
+				["desc"] = "2949:0 2945:0 2946:0 ",
+			},
+			[91283058] = {
+				["title"] = "db59 Dragonblight23 2946",
+				["icon"] = 1,
+				["desc"] = "2947:0 2945:0 2948:0 3151:0 ",
+			},
+			[64462342] = {
+				["title"] = "db52 TheCrystalVice1 2939",
+				["icon"] = 1,
+				["desc"] = "2937:0 2936:0 2942:0 2940:0 ",
+			},
+			[62604990] = {
+				["title"] = "db47 TheDragonWastes14 2934",
+				["icon"] = 1,
+				["desc"] = "2959:0 2935:0 ",
+			},
+			[23286240] = {
+				["title"] = "db9 MoonrestGardens3 2896",
+				["icon"] = 1,
+				["desc"] = "2895:0 2891:0 2897:0 ",
+			},
+			[10855392] = {
+				["title"] = "db1 ColdwindPass1 2888",
+				["icon"] = 1,
+				["desc"] = "2889:0 2721:0 ",
+			},
+			[56515197] = {
+				["title"] = "db32 TheDragonWastes6 2919",
+				["icon"] = 1,
+				["desc"] = "2921:0 2918:0 2920:0 ",
+			},
+			[89046292] = {
+				["title"] = "db66 Dragonblight26 2953",
+				["icon"] = 1,
+				["desc"] = "2954:0 2952:0 ",
+			},
+			[50986717] = {
+				["title"] = "db36 MoakiHarbor2 2923",
+				["icon"] = 1,
+				["desc"] = "2903:0 2922:0 ",
+			},
+			[60026221] = {
+				["title"] = "db37 PathoftheTitans1 2924",
+				["icon"] = 1,
+				["desc"] = "2926:0 2920:0 2925:0 ",
+			},
+			[58417119] = {
+				["title"] = "db38 TheDragonWastes10 2925",
+				["icon"] = 1,
+				["desc"] = "2924:0 2926:0 ",
+			},
+			[70256299] = {
+				["title"] = "db45 Dragonblight10 2932",
+				["icon"] = 1,
+				["desc"] = "2933:0 2931:0 ",
+			},
+			[83785119] = {
+				["title"] = "db64 TheCarrionFields2 2951",
+				["icon"] = 1,
+				["desc"] = "2950:0 2952:0 ",
+			},
+			[71492787] = {
+				["title"] = "db55 TheDragonWastes19 2942",
+				["icon"] = 1,
+				["desc"] = "2943:0 2936:0 ",
+			},
+			[67193114] = {
+				["title"] = "db49 TheDragonWastes16 2936",
+				["icon"] = 1,
+				["desc"] = "2942:0 2960:0 2937:0 2935:0 ",
+			},
+			[48996693] = {
+				["title"] = "db16 SnowfallGlade2 2903",
+				["icon"] = 1,
+				["desc"] = "2923:0 2904:0 2902:0 2905:0 ",
+			},
+			[88752393] = {
+				["title"] = "db60 Jinthakalar1 2947",
+				["icon"] = 1,
+				["desc"] = "2946:0 2945:0 3056:0 ",
+			},
+			[66154986] = {
+				["title"] = "db72 TheDragonWastes30 2959",
+				["icon"] = 1,
+				["desc"] = "2934:0 2933:0 2960:0 ",
+			},
+			[43165598] = {
+				["title"] = "db74 Dragonblight32 2961",
+				["icon"] = 1,
+				["desc"] = "2905:0 2963:0 2907:0 2921:0 ",
+			},
+		},
+		["Winterspring"] = {
+			[62363683] = {
+				["icon"] = 1,
+				["title"] = "EverlookFlightA 1241",
+				["desc"] = "1239:0 1242:0 ",
+			},
+			[66864460] = {
+				["icon"] = 1,
+				["title"] = "IceThistleHills1 1247",
+				["desc"] = "1239:0 1248:0 1249:0 ",
+			},
+			[31233789] = {
+				["icon"] = 1,
+				["title"] = "FrostfireHotSprings3 1204",
+				["desc"] = "1202:0 1203:0 1205:0 1206:0 1207:0 ",
+			},
+			[53744219] = {
+				["icon"] = 1,
+				["title"] = "LakeKeltheril 1216",
+				["desc"] = "1214:0 1215:0 143:0 1218:0 ",
+			},
+			[66645192] = {
+				["icon"] = 1,
+				["title"] = "IceThistleHills2 1248",
+				["desc"] = "1247:0 1255:0 ",
+			},
+			[53382315] = {
+				["icon"] = 1,
+				["title"] = "WinterspringNRoad2 1226",
+				["desc"] = "1222:0 1227:0 1231:0 1233:0 ",
+			},
+			[57745370] = {
+				["icon"] = 1,
+				["title"] = "Mazthoril2 1219",
+				["desc"] = "1217:0 1220:0 1255:0 1259:0 ",
+			},
+			[64237265] = {
+				["icon"] = 1,
+				["title"] = "DarkwhisperGorge2 1266",
+				["desc"] = "1265:0 ",
+			},
+			[34434184] = {
+				["icon"] = 1,
+				["title"] = "WinterspringWRoad1 1206",
+				["desc"] = "1203:0 1204:0 1208:0 1209:0 ",
+			},
+			[43823985] = {
+				["icon"] = 1,
+				["title"] = "WinterspringWRoad4 1212",
+				["desc"] = "1210:0 1211:0 1214:0 ",
+			},
+			[64814969] = {
+				["icon"] = 1,
+				["title"] = "WinterspringSFork 1254",
+				["desc"] = "1220:0 1239:0 1255:0 ",
+			},
+			[58355116] = {
+				["icon"] = 1,
+				["title"] = "Mazthoril3 1220",
+				["desc"] = "1219:0 1254:0 1255:0 ",
+			},
+			[56711341] = {
+				["icon"] = 1,
+				["title"] = "FrostsaberRockSide4 1232",
+				["desc"] = "1230:0 1231:0 1234:0 ",
+			},
+			[59783967] = {
+				["icon"] = 1,
+				["title"] = "EverlookFork1 1218",
+				["desc"] = "56:0 1216:0 1217:0 1239:0 1240:0 ",
+			},
+			[60247303] = {
+				["icon"] = 1,
+				["title"] = "DarkwhisperGorge1 1265",
+				["desc"] = "1264:0 1266:0 1267:0 1268:0 ",
+			},
+			[62506769] = {
+				["icon"] = 1,
+				["title"] = "FrostwhisperGorgeBridge1 1263",
+				["desc"] = "1258:0 1264:0 ",
+			},
+			[53773423] = {
+				["icon"] = 1,
+				["title"] = "WinterspringCFork 1221",
+				["desc"] = "1214:0 1222:0 1224:0 1225:0 ",
+			},
+			[65943148] = {
+				["icon"] = 1,
+				["title"] = "WinterfallVillage1 1238",
+				["desc"] = "1235:0 1236:0 1243:0 ",
+			},
+			[33343708] = {
+				["icon"] = 1,
+				["title"] = "FrostfireHotSprings5 1207",
+				["desc"] = "1204:0 1205:0 ",
+			},
+			[64126916] = {
+				["icon"] = 1,
+				["title"] = "FrostwhisperGorge3 1262",
+				["desc"] = "1261:0 ",
+			},
+			[70223769] = {
+				["icon"] = 1,
+				["title"] = "IceThistleHillsCave5 1253",
+				["desc"] = "1252:0 ",
+			},
+			[57982096] = {
+				["icon"] = 1,
+				["title"] = "WinterspringN_hub2 1233",
+				["desc"] = "1226:0 1231:0 1234:0 1235:0 ",
+			},
+			[51162894] = {
+				["icon"] = 1,
+				["title"] = "StarfallVillage1 1223",
+				["desc"] = "1222:0 1224:0 ",
+			},
+			[51961849] = {
+				["icon"] = 1,
+				["title"] = "WinterspringNRoad3 1227",
+				["desc"] = "1226:0 1228:0 1229:0 1230:0 ",
+			},
+			[53932839] = {
+				["icon"] = 1,
+				["title"] = "WinterspringNRoad1 1222",
+				["desc"] = "1221:0 1223:0 1224:0 1225:0 1226:0 ",
+			},
+			[65681985] = {
+				["icon"] = 1,
+				["title"] = "WinterspringN_hub5 1236",
+				["desc"] = "1235:0 1237:0 1238:0 ",
+			},
+			[28643937] = {
+				["icon"] = 1,
+				["title"] = "FrostfireHotSprings1 1202",
+				["desc"] = "142:0 1203:0 1204:0 1205:0 ",
+			},
+			[49600957] = {
+				["icon"] = 1,
+				["title"] = "FrostsaberRock 1228",
+				["desc"] = "1227:0 1229:0 1230:0 ",
+			},
+			[62963393] = {
+				["icon"] = 1,
+				["title"] = "WinterspringN_hub6 1242",
+				["desc"] = "1240:0 1241:0 1243:0 ",
+			},
+			[60811462] = {
+				["icon"] = 1,
+				["title"] = "WinterspringN_hub3 1234",
+				["desc"] = "1232:0 1233:0 ",
+			},
+			[66113367] = {
+				["icon"] = 1,
+				["title"] = "WinterfallVillageOutside 1243",
+				["desc"] = "1238:0 1242:0 1244:0 ",
+			},
+			[30893567] = {
+				["icon"] = 1,
+				["title"] = "FrostfireHotSprings4 1205",
+				["desc"] = "1202:0 1203:0 1204:0 1207:0 ",
+			},
+			[62114065] = {
+				["icon"] = 1,
+				["title"] = "EverlookFork2 1239",
+				["desc"] = "1218:0 1241:0 1247:0 1254:0 ",
+			},
+			[63481622] = {
+				["icon"] = 1,
+				["title"] = "HiddenGrove 1237",
+				["desc"] = "1236:0 ",
+			},
+			[67584173] = {
+				["icon"] = 1,
+				["title"] = "IceThistleHillsCave1 1249",
+				["desc"] = "1247:0 1250:0 ",
+			},
+			[62705920] = {
+				["icon"] = 1,
+				["title"] = "WinterspringSRoad1 1255",
+				["desc"] = "144:0 1219:0 1220:0 1248:0 1254:0 1256:0 1258:0 ",
+			},
+			[47203963] = {
+				["icon"] = 1,
+				["title"] = "WinterspringWRoad5 1214",
+				["desc"] = "1212:0 1215:0 1216:0 1221:0 ",
+			},
+			[40874058] = {
+				["icon"] = 1,
+				["title"] = "WinterspringWRoad3 1211",
+				["desc"] = "1208:0 1212:0 1213:0 ",
+			},
+			[60513627] = {
+				["icon"] = 1,
+				["title"] = "EverlookFlightH 1240",
+				["desc"] = "56:0 1218:0 1242:0 ",
+			},
+			[59427595] = {
+				["icon"] = 1,
+				["title"] = "DarkwhisperGorge4 1268",
+				["desc"] = "1265:0 ",
+			},
+			[69363838] = {
+				["icon"] = 1,
+				["title"] = "WinterfallVillage4 1246",
+				["desc"] = "1245:0 ",
+			},
+			[37934203] = {
+				["icon"] = 1,
+				["title"] = "WinterspringWRoad2 1208",
+				["desc"] = "1206:0 1209:0 1211:0 1213:0 ",
+			},
+			[69914195] = {
+				["icon"] = 1,
+				["title"] = "IceThistleHillsCave3 1251",
+				["desc"] = "1250:0 ",
+			},
+			[61726319] = {
+				["icon"] = 1,
+				["title"] = "WinterspringSRoad2 1258",
+				["desc"] = "144:0 1255:0 1263:0 ",
+			},
+			[38793698] = {
+				["icon"] = 1,
+				["title"] = "FrostfireHotSprings6 1213",
+				["desc"] = "1208:0 1211:0 ",
+			},
+			[65575976] = {
+				["icon"] = 1,
+				["title"] = "OwlWingThicket1 1256",
+				["desc"] = "1255:0 1257:0 ",
+			},
+			[54801211] = {
+				["icon"] = 1,
+				["title"] = "FrostsaberRockSide2 1230",
+				["desc"] = "1227:0 1228:0 1231:0 1232:0 ",
+			},
+			[57662700] = {
+				["icon"] = 1,
+				["title"] = "WinterspringN_hub1 1225",
+				["desc"] = "147:0 1221:0 1222:0 1235:0 ",
+			},
+			[50364513] = {
+				["icon"] = 1,
+				["title"] = "WinterspringWRoad6 1215",
+				["desc"] = "1214:0 1216:0 1217:0 ",
+			},
+			[61226838] = {
+				["icon"] = 1,
+				["title"] = "FrostwhisperGorge2 1261",
+				["desc"] = "1260:0 1262:0 ",
+			},
+			[52133039] = {
+				["icon"] = 1,
+				["title"] = "StarfallVillage2 1224",
+				["desc"] = "1221:0 1222:0 1223:0 ",
+			},
+			[55261767] = {
+				["icon"] = 1,
+				["title"] = "FrostsaberRockSide3 1231",
+				["desc"] = "1226:0 1230:0 1232:0 1233:0 ",
+			},
+			[55624965] = {
+				["icon"] = 1,
+				["title"] = "Mazthoril1 1217",
+				["desc"] = "1215:0 1218:0 1219:0 ",
+			},
+			[67303644] = {
+				["icon"] = 1,
+				["title"] = "WinterfallVillage2 1244",
+				["desc"] = "1243:0 1245:0 ",
+			},
+			[57776782] = {
+				["icon"] = 1,
+				["title"] = "DarkwhisperGorge3 1267",
+				["desc"] = "1265:0 ",
+			},
+			[29894262] = {
+				["icon"] = 1,
+				["title"] = "FrostfireHotSprings2 1203",
+				["desc"] = "1202:0 1204:0 1205:0 1206:0 ",
+			},
+			[61807075] = {
+				["icon"] = 1,
+				["title"] = "FrostwhisperGorgeBridge2 1264",
+				["desc"] = "1263:0 1265:0 ",
+			},
+			[59116670] = {
+				["icon"] = 1,
+				["title"] = "FrostwhisperGorge1 1260",
+				["desc"] = "144:0 1261:0 ",
+			},
+			[61612374] = {
+				["icon"] = 1,
+				["title"] = "WinterspringN_hub4 1235",
+				["desc"] = "1225:0 1233:0 1236:0 1238:0 ",
+			},
+			[49461968] = {
+				["icon"] = 1,
+				["title"] = "FrostsaberRockSide1 1229",
+				["desc"] = "1227:0 1228:0 ",
+			},
+			[57805931] = {
+				["icon"] = 1,
+				["title"] = "DunMandarrW 1259",
+				["desc"] = "144:0 1219:0 ",
+			},
+			[65016374] = {
+				["icon"] = 1,
+				["title"] = "OwlWingThicket2 1257",
+				["desc"] = "1256:0 ",
+			},
+			[69783984] = {
+				["icon"] = 1,
+				["title"] = "IceThistleHillsCave2 1250",
+				["desc"] = "1249:0 1251:0 1252:0 ",
+			},
+			[68153810] = {
+				["icon"] = 1,
+				["title"] = "WinterfallVillage3 1245",
+				["desc"] = "1244:0 1246:0 ",
+			},
+			[71284103] = {
+				["icon"] = 1,
+				["title"] = "IceThistleHillsCave4 1252",
+				["desc"] = "1250:0 1253:0 ",
+			},
+			[43364293] = {
+				["icon"] = 1,
+				["title"] = "TimbermawPost2 1210",
+				["desc"] = "1209:0 1212:0 ",
+			},
+			[37454416] = {
+				["icon"] = 1,
+				["title"] = "TimbermawPost1 1209",
+				["desc"] = "1206:0 1208:0 1210:0 ",
+			},
+		},
+		["TheStormPeaks"] = {
+			[73136280] = {
+				["icon"] = 1,
+				["title"] = "sp33 FjornsAnvil1 3036",
+				["desc"] = "3037:0 3035:0 ",
+			},
+			[59354391] = {
+				["icon"] = 1,
+				["title"] = "sp43 TerraceoftheMakers2 3046",
+				["desc"] = "3045:0 3047:0 3048:0 ",
+			},
+			[49345230] = {
+				["icon"] = 1,
+				["title"] = "sp19 GimoraksDen2 3022",
+				["desc"] = "3021:0 ",
+			},
+			[42086387] = {
+				["icon"] = 1,
+				["title"] = "sp13 TheFrigidTomb2 3016",
+				["desc"] = "3015:0 ",
+			},
+			[33968609] = {
+				["icon"] = 1,
+				["title"] = "sp2 SparksocketMinefield1 3005",
+				["desc"] = "3004:0 3006:0 3007:0 3008:0 ",
+			},
+			[53926141] = {
+				["icon"] = 1,
+				["title"] = "sp28 HibernalCavern2 3031",
+				["desc"] = "3030:0 ",
+			},
+			[45736105] = {
+				["icon"] = 1,
+				["title"] = "sp20 TheFootSteppes5 3023",
+				["desc"] = "3024:0 3014:0 3015:0 3021:0 ",
+			},
+			[55536503] = {
+				["icon"] = 1,
+				["title"] = "sp26 ValleyofAncientWinters1 3029",
+				["desc"] = "3030:0 3032:0 3026:0 ",
+			},
+			[57174754] = {
+				["icon"] = 1,
+				["title"] = "sp45 TerraceoftheMakers4 3048",
+				["desc"] = "3046:0 ",
+			},
+			[46556514] = {
+				["icon"] = 1,
+				["title"] = "sp21 TheFootSteppes6 3024",
+				["desc"] = "3025:0 3023:0 ",
+			},
+			[47678207] = {
+				["icon"] = 1,
+				["title"] = "sp8 Garm1 3011",
+				["desc"] = "3012:0 3013:0 3010:0 ",
+			},
+			[40037400] = {
+				["icon"] = 1,
+				["title"] = "sp6 CrystalwebCavern1 3009",
+				["desc"] = "3010:0 ",
+			},
+			[76946303] = {
+				["icon"] = 1,
+				["title"] = "sp34 FjornsAnvil2 3037",
+				["desc"] = "3036:0 ",
+			},
+			[59456046] = {
+				["icon"] = 1,
+				["title"] = "sp29 ValleyofAncientWinters2 3032",
+				["desc"] = "3039:0 3033:0 3029:0 ",
+			},
+			[36556414] = {
+				["icon"] = 1,
+				["title"] = "sp15 AbandonedCamp1 3018",
+				["desc"] = "3017:0 ",
+			},
+			[50578188] = {
+				["icon"] = 1,
+				["title"] = "sp9 GarmsRise1 3012",
+				["desc"] = "3011:0 ",
+			},
+			[55956422] = {
+				["icon"] = 1,
+				["title"] = "sp27 HibernalCavern1 3030",
+				["desc"] = "3029:0 3031:0 ",
+			},
+			[48157012] = {
+				["icon"] = 1,
+				["title"] = "sp24 BrunnhildarVillage3 3027",
+				["desc"] = "3028:0 3025:0 3011:0 ",
+			},
+			[39945223] = {
+				["icon"] = 1,
+				["title"] = "sp16 TheFootSteppes3 3019",
+				["desc"] = "3020:0 3017:0 ",
+			},
+			[40228603] = {
+				["icon"] = 1,
+				["title"] = "sp5 K31 3008",
+				["desc"] = "3010:0 3005:0 3007:0 3002:0 ",
+			},
+			[57904070] = {
+				["icon"] = 1,
+				["title"] = "sp44 TerraceoftheMakers3 3047",
+				["desc"] = "3046:0 ",
+			},
+			[60154779] = {
+				["icon"] = 1,
+				["title"] = "sp42 TerraceoftheMakers1 3045",
+				["desc"] = "3044:0 3046:0 ",
+			},
+			[58804856] = {
+				["icon"] = 1,
+				["title"] = "sp41 TheStormPeaks3 3044",
+				["desc"] = "3043:0 3045:0 ",
+			},
+			[59614943] = {
+				["icon"] = 1,
+				["title"] = "sp40 TheStormPeaks2 3043",
+				["desc"] = "3044:0 3042:0 ",
+			},
+			[63886077] = {
+				["icon"] = 1,
+				["title"] = "sp30 DunNiffelem1 3033",
+				["desc"] = "3034:0 3032:0 ",
+			},
+			[48766698] = {
+				["icon"] = 1,
+				["title"] = "sp22 BrunnhildarVillage1 3025",
+				["desc"] = "3028:0 3027:0 3026:0 3024:0 ",
+			},
+			[68365972] = {
+				["icon"] = 1,
+				["title"] = "sp32 FrostfieldLake1 3035",
+				["desc"] = "3034:0 3036:0 3038:0 ",
+			},
+			[48997813] = {
+				["icon"] = 1,
+				["title"] = "sp10 Garm2 3013",
+				["desc"] = "3011:0 ",
+			},
+			[40748166] = {
+				["icon"] = 1,
+				["title"] = "sp7 SnowblindHills3 3010",
+				["desc"] = "3008:0 3007:0 3009:0 3011:0 ",
+			},
+			[57775358] = {
+				["icon"] = 1,
+				["title"] = "sp38 BrannsBase-Camp3 3041",
+				["desc"] = "3040:0 3042:0 ",
+			},
+			[43385453] = {
+				["icon"] = 1,
+				["title"] = "sp17 TheFootSteppes4 3020",
+				["desc"] = "3014:0 3021:0 3019:0 ",
+			},
+			[32219330] = {
+				["icon"] = 1,
+				["title"] = "sp1 TheStormPeaks1 3004",
+				["desc"] = "3005:0 2985:0 ",
+			},
+			[65836163] = {
+				["icon"] = 1,
+				["title"] = "sp31 DunNiffelem2 3034",
+				["desc"] = "3033:0 3035:0 ",
+			},
+			[51976681] = {
+				["icon"] = 1,
+				["title"] = "sp23 BrunnhildarVillage2 3026",
+				["desc"] = "3025:0 3028:0 3029:0 ",
+			},
+			[60215642] = {
+				["icon"] = 1,
+				["title"] = "sp36 BrannsBase-Camp1 3039",
+				["desc"] = "3040:0 3032:0 ",
+			},
+			[36258224] = {
+				["icon"] = 1,
+				["title"] = "sp4 SnowblindHills2 3007",
+				["desc"] = "3005:0 3010:0 3008:0 ",
+			},
+			[43205878] = {
+				["icon"] = 1,
+				["title"] = "sp11 TheFootSteppes1 3014",
+				["desc"] = "3020:0 3015:0 3023:0 ",
+			},
+			[70885316] = {
+				["icon"] = 1,
+				["title"] = "sp35 Thunderfall1 3038",
+				["desc"] = "3035:0 ",
+			},
+			[46775525] = {
+				["icon"] = 1,
+				["title"] = "sp18 GimoraksDen1 3021",
+				["desc"] = "3020:0 3022:0 3023:0 ",
+			},
+			[41846167] = {
+				["icon"] = 1,
+				["title"] = "sp12 TheFrigidTomb1 3015",
+				["desc"] = "3016:0 3014:0 3023:0 3017:0 ",
+			},
+			[49746954] = {
+				["icon"] = 1,
+				["title"] = "sp25 ThePitoftheFang1 3028",
+				["desc"] = "3027:0 3025:0 3026:0 ",
+			},
+			[58205575] = {
+				["icon"] = 1,
+				["title"] = "sp37 BrannsBase-Camp2 3040",
+				["desc"] = "3041:0 3039:0 ",
+			},
+			[37705785] = {
+				["icon"] = 1,
+				["title"] = "sp14 TheFootSteppes2 3017",
+				["desc"] = "3018:0 3019:0 3015:0 ",
+			},
+			[59185186] = {
+				["icon"] = 1,
+				["title"] = "sp39 BrannsBase-Camp4 3042",
+				["desc"] = "3043:0 3041:0 ",
+			},
+			[30398553] = {
+				["icon"] = 1,
+				["title"] = "sp3 SnowblindHills1 3006",
+				["desc"] = "3005:0 3007:0 ",
+			},
+		},
+		["GrizzlyHills"] = {
+			[62615735] = {
+				["icon"] = 1,
+				["title"] = "gh105 HeartsBloodShrine1 3219",
+				["desc"] = "3218:0 3221:0 3220:0 3203:0 ",
+			},
+			[30947090] = {
+				["icon"] = 1,
+				["title"] = "gh76 GrizzlyHills36 3190",
+				["desc"] = "3191:0 3189:0 3192:0 ",
+			},
+			[39335100] = {
+				["icon"] = 1,
+				["title"] = "gh81 GrizzlyHills40 3195",
+				["desc"] = "3176:0 3194:0 3178:0 ",
+			},
+			[16127362] = {
+				["icon"] = 1,
+				["title"] = "gh46 VentureBay1 3160",
+				["desc"] = "3161:0 3158:0 3186:0 ",
+			},
+			[12575511] = {
+				["icon"] = 1,
+				["title"] = "gh40 GrizzlyHills10 3154",
+				["desc"] = "3156:0 3155:0 3153:0 ",
+			},
+			[65781705] = {
+				["icon"] = 1,
+				["title"] = "gh6 ThorModan2 3120",
+				["desc"] = "3119:0 ",
+			},
+			[51921722] = {
+				["icon"] = 1,
+				["title"] = "gh23 UrsocsDen1 3137",
+				["desc"] = "3136:0 3135:0 3134:0 ",
+			},
+			[37984101] = {
+				["icon"] = 1,
+				["title"] = "gh27 BlueSkyLoggingGrounds1 3141",
+				["desc"] = "3142:0 3176:0 3177:0 3140:0 ",
+			},
+			[24826947] = {
+				["icon"] = 1,
+				["title"] = "gh71 GrizzlyHills32 3185",
+				["desc"] = "3189:0 3184:0 3186:0 3164:0 ",
+			},
+			[42015867] = {
+				["icon"] = 1,
+				["title"] = "gh65 GrizzlyHills26 3179",
+				["desc"] = "3194:0 3195:0 3178:0 ",
+			},
+			[51625152] = {
+				["icon"] = 1,
+				["title"] = "gh82 VordrassilsHeart1 3196",
+				["desc"] = "3200:0 3197:0 3178:0 ",
+			},
+			[53323786] = {
+				["icon"] = 1,
+				["title"] = "gh88 Grizzlemaw4 3202",
+				["desc"] = "3198:0 3132:0 3133:0 ",
+			},
+			[70945789] = {
+				["icon"] = 1,
+				["title"] = "gh103 DunArgol5 3217",
+				["desc"] = "3215:0 3211:0 3220:0 ",
+			},
+			[64264440] = {
+				["icon"] = 1,
+				["title"] = "gh91 GrizzlyHills43 3205",
+				["desc"] = "3131:0 3204:0 ",
+			},
+			[21157344] = {
+				["icon"] = 1,
+				["title"] = "gh72 GrizzlyHills33 3186",
+				["desc"] = "3160:0 3185:0 3187:0 ",
+			},
+			[15317846] = {
+				["icon"] = 1,
+				["title"] = "gh47 GrizzlyHills15 3161",
+				["desc"] = "3163:0 3160:0 3159:0 3162:0 ",
+			},
+			[61123098] = {
+				["icon"] = 1,
+				["title"] = "gh8 WestfallBrigadeEncampment1 3122",
+				["desc"] = "3123:0 3133:0 3124:0 3132:0 ",
+			},
+			[52182300] = {
+				["icon"] = 1,
+				["title"] = "gh22 GrizzlyHills5 3136",
+				["desc"] = "3135:0 3134:0 3137:0 ",
+			},
+			[50684401] = {
+				["icon"] = 1,
+				["title"] = "gh87 Grizzlemaw3 3201",
+				["desc"] = "3200:0 ",
+			},
+			[29813760] = {
+				["icon"] = 1,
+				["title"] = "gh31 BlueSkyLoggingGrounds5 3145",
+				["desc"] = "3143:0 3146:0 3147:0 3172:0 ",
+			},
+			[48963316] = {
+				["icon"] = 1,
+				["title"] = "gh24 UrsocsDen2 3138",
+				["desc"] = "3134:0 3140:0 3139:0 ",
+			},
+			[27444465] = {
+				["icon"] = 1,
+				["title"] = "gh57 GrizzlyHills20 3171",
+				["desc"] = "3172:0 3167:0 3173:0 ",
+			},
+			[74362424] = {
+				["icon"] = 1,
+				["title"] = "gh13 EastwindShore1 3127",
+				["desc"] = "3126:0 3125:0 ",
+			},
+			[34995474] = {
+				["icon"] = 1,
+				["title"] = "gh61 GrizzlyHills23 3175",
+				["desc"] = "3182:0 3181:0 3194:0 ",
+			},
+			[11113673] = {
+				["icon"] = 1,
+				["title"] = "gh38 GrizzlyHills8 3152",
+				["desc"] = "3151:0 3153:0 3169:0 ",
+			},
+			[83345826] = {
+				["icon"] = 1,
+				["title"] = "gh111 EastwindShore2 3225",
+				["desc"] = "3224:0 3226:0 ",
+			},
+			[15375870] = {
+				["icon"] = 1,
+				["title"] = "gh41 GrizzlyHills11 3155",
+				["desc"] = "3156:0 3154:0 3165:0 ",
+			},
+			[66196455] = {
+				["icon"] = 1,
+				["title"] = "gh108 GrizzlyHills50 3222",
+				["desc"] = "3221:0 3223:0 ",
+			},
+			[44965088] = {
+				["icon"] = 1,
+				["title"] = "gh64 VordrassilPass1 3178",
+				["desc"] = "3195:0 3177:0 3196:0 3179:0 3194:0 ",
+			},
+			[65191250] = {
+				["icon"] = 1,
+				["title"] = "gh2 BoulderHills1 3116",
+				["desc"] = "3115:0 3117:0 3118:0 ",
+			},
+			[84136290] = {
+				["icon"] = 1,
+				["title"] = "gh112 TheBrokenBluffs1 3226",
+				["desc"] = "3225:0 3227:0 ",
+			},
+			[32526750] = {
+				["icon"] = 1,
+				["title"] = "gh77 GrizzlyHills37 3191",
+				["desc"] = "3193:0 3190:0 3181:0 ",
+			},
+			[87806964] = {
+				["icon"] = 1,
+				["title"] = "gh113 TheBrokenBluffs2 3227",
+				["desc"] = "3226:0 3228:0 ",
+			},
+			[33506010] = {
+				["icon"] = 1,
+				["title"] = "gh67 GrizzlyHills28 3181",
+				["desc"] = "3175:0 3180:0 3182:0 3191:0 ",
+			},
+			[32743827] = {
+				["icon"] = 1,
+				["title"] = "gh29 BlueSkyLoggingGrounds3 3143",
+				["desc"] = "3145:0 3144:0 3142:0 ",
+			},
+			[19923577] = {
+				["icon"] = 1,
+				["title"] = "gh55 ZebHalak1 3169",
+				["desc"] = "3168:0 3149:0 3150:0 ",
+			},
+			[70150613] = {
+				["icon"] = 1,
+				["title"] = "gh3 BoulderHills2 3117",
+				["desc"] = "3116:0 ",
+			},
+			[70562798] = {
+				["icon"] = 1,
+				["title"] = "gh11 DrakiljinRuins1 3125",
+				["desc"] = "3126:0 3129:0 3124:0 3127:0 ",
+			},
+			[61324657] = {
+				["icon"] = 1,
+				["title"] = "gh90 AshwoodPost1 3204",
+				["desc"] = "3205:0 3131:0 3203:0 3206:0 ",
+			},
+			[43644302] = {
+				["icon"] = 1,
+				["title"] = "gh63 GrizzlyHills25 3177",
+				["desc"] = "3140:0 3178:0 3141:0 3176:0 ",
+			},
+			[29245018] = {
+				["icon"] = 1,
+				["title"] = "gh59 GrizzlyHills21 3173",
+				["desc"] = "3172:0 3174:0 3182:0 3166:0 ",
+			},
+			[59935262] = {
+				["icon"] = 1,
+				["title"] = "gh89 Grizzlemaw5 3203",
+				["desc"] = "3204:0 3219:0 3197:0 ",
+			},
+			[23833965] = {
+				["icon"] = 1,
+				["title"] = "gh56 ZebHalak2 3170",
+				["desc"] = "3167:0 3168:0 3149:0 ",
+			},
+			[17932922] = {
+				["icon"] = 1,
+				["title"] = "gh36 SilverbrookHills1 3150",
+				["desc"] = "3149:0 3151:0 3169:0 ",
+			},
+			[66446019] = {
+				["icon"] = 1,
+				["title"] = "gh106 GrizzlyHills49 3220",
+				["desc"] = "3219:0 3218:0 3217:0 ",
+			},
+			[57584104] = {
+				["icon"] = 1,
+				["title"] = "gh18 SolsticeVillage1 3132",
+				["desc"] = "3131:0 3133:0 3198:0 ",
+			},
+			[38824682] = {
+				["icon"] = 1,
+				["title"] = "gh62 GrizzlyHills24 3176",
+				["desc"] = "3195:0 3141:0 3142:0 ",
+			},
+			[77995905] = {
+				["icon"] = 1,
+				["title"] = "gh99 DunArgol1 3213",
+				["desc"] = "3212:0 3214:0 ",
+			},
+			[53294196] = {
+				["icon"] = 1,
+				["title"] = "gh85 Grizzlemaw1 3199",
+				["desc"] = "3198:0 ",
+			},
+			[76145695] = {
+				["icon"] = 1,
+				["title"] = "gh98 GrizzlyHills47 3212",
+				["desc"] = "3211:0 3213:0 3215:0 ",
+			},
+			[11267358] = {
+				["icon"] = 1,
+				["title"] = "gh44 GrizzlyHills13 3158",
+				["desc"] = "3159:0 3157:0 3160:0 ",
+			},
+			[12387976] = {
+				["icon"] = 1,
+				["title"] = "gh49 VentureBay3 3163",
+				["desc"] = "3161:0 3159:0 3158:0 ",
+			},
+			[12903066] = {
+				["icon"] = 1,
+				["title"] = "gh37 GrizzlyHills7 3151",
+				["desc"] = "3152:0 3150:0 3153:0 2946:0 ",
+			},
+			[35514314] = {
+				["icon"] = 1,
+				["title"] = "gh28 BlueSkyLoggingGrounds2 3142",
+				["desc"] = "3141:0 3176:0 3143:0 ",
+			},
+			[73563418] = {
+				["icon"] = 1,
+				["title"] = "gh14 HarkorsCamp1 3128",
+				["desc"] = "3129:0 3209:0 3125:0 ",
+			},
+			[63916166] = {
+				["icon"] = 1,
+				["title"] = "gh107 HeartsBloodShrine2 3221",
+				["desc"] = "3220:0 3219:0 3222:0 ",
+			},
+			[29454738] = {
+				["icon"] = 1,
+				["title"] = "gh58 VordrassilsTears1 3172",
+				["desc"] = "3173:0 3171:0 3145:0 ",
+			},
+			[10457639] = {
+				["icon"] = 1,
+				["title"] = "gh45 GrizzlyHills14 3159",
+				["desc"] = "3158:0 3163:0 ",
+			},
+			[35786750] = {
+				["icon"] = 1,
+				["title"] = "gh79 GrizzlyHills39 3193",
+				["desc"] = "3191:0 3180:0 3190:0 3192:0 ",
+			},
+			[67286935] = {
+				["icon"] = 1,
+				["title"] = "gh109 TheForgottenOverlook2 3223",
+				["desc"] = "3222:0 3238:0 ",
+			},
+			[81466025] = {
+				["icon"] = 1,
+				["title"] = "gh100 DunArgol2 3214",
+				["desc"] = "3213:0 ",
+			},
+			[33807597] = {
+				["icon"] = 1,
+				["title"] = "gh78 GrizzlyHills38 3192",
+				["desc"] = "3190:0 3191:0 3193:0 3250:0 ",
+			},
+			[12906209] = {
+				["icon"] = 1,
+				["title"] = "gh42 GrizzlyHills12 3156",
+				["desc"] = "3157:0 3155:0 3154:0 ",
+			},
+			[44772815] = {
+				["icon"] = 1,
+				["title"] = "gh25 HeartwoodTradingPost1 3139",
+				["desc"] = "3140:0 3138:0 3134:0 3083:0 ",
+			},
+			[70473611] = {
+				["icon"] = 1,
+				["title"] = "gh15 ThePathofIron3 3129",
+				["desc"] = "3128:0 3208:0 3125:0 ",
+			},
+			[21345152] = {
+				["icon"] = 1,
+				["title"] = "gh52 GrizzlyHills17 3166",
+				["desc"] = "3165:0 3167:0 3173:0 3183:0 ",
+			},
+			[56054913] = {
+				["icon"] = 1,
+				["title"] = "gh83 GrizzlyHills41 3197",
+				["desc"] = "3198:0 3196:0 3203:0 ",
+			},
+			[25403433] = {
+				["icon"] = 1,
+				["title"] = "gh33 Silverbrook1 3147",
+				["desc"] = "3148:0 3146:0 3149:0 ",
+			},
+			[75966228] = {
+				["icon"] = 1,
+				["title"] = "gh102 DunArgol4 3216",
+				["desc"] = "3215:0 ",
+			},
+			[50454695] = {
+				["icon"] = 1,
+				["title"] = "gh86 Grizzlemaw2 3200",
+				["desc"] = "3201:0 3196:0 3198:0 ",
+			},
+			[50552439] = {
+				["icon"] = 1,
+				["title"] = "gh21 GrizzlyHills4 3135",
+				["desc"] = "3136:0 3134:0 3137:0 ",
+			},
+			[73605146] = {
+				["icon"] = 1,
+				["title"] = "gh97 ThePathofIron5 3211",
+				["desc"] = "3207:0 3210:0 3224:0 3212:0 3217:0 ",
+			},
+			[70424875] = {
+				["icon"] = 1,
+				["title"] = "gh93 GrizzlyHills44 3207",
+				["desc"] = "3208:0 3211:0 3206:0 ",
+			},
+			[22733076] = {
+				["icon"] = 1,
+				["title"] = "gh35 Silverbrook3 3149",
+				["desc"] = "3148:0 3147:0 3150:0 3170:0 ",
+			},
+			[27463513] = {
+				["icon"] = 1,
+				["title"] = "gh32 GrizzlyHills6 3146",
+				["desc"] = "3147:0 3148:0 3145:0 ",
+			},
+			[60291720] = {
+				["icon"] = 1,
+				["title"] = "gh1 GrizzlyHills1 3115",
+				["desc"] = "3118:0 3116:0 3092:0 ",
+			},
+			[65355524] = {
+				["icon"] = 1,
+				["title"] = "gh104 GrizzlyHills48 3218",
+				["desc"] = "3206:0 3219:0 3220:0 ",
+			},
+			[65695127] = {
+				["icon"] = 1,
+				["title"] = "gh92 SolsticeVillage2 3206",
+				["desc"] = "3218:0 3204:0 3207:0 ",
+			},
+			[66542428] = {
+				["icon"] = 1,
+				["title"] = "gh7 ThorModan3 3121",
+				["desc"] = "3119:0 ",
+			},
+			[23118075] = {
+				["icon"] = 1,
+				["title"] = "gh73 GrizzlyHills34 3187",
+				["desc"] = "3162:0 3186:0 3188:0 ",
+			},
+			[70484344] = {
+				["icon"] = 1,
+				["title"] = "gh94 GrizzlyHills45 3208",
+				["desc"] = "3207:0 3209:0 3129:0 ",
+			},
+			[26485711] = {
+				["icon"] = 1,
+				["title"] = "gh69 GrizzlyHills30 3183",
+				["desc"] = "3182:0 3184:0 3173:0 3166:0 3165:0 ",
+			},
+			[25266597] = {
+				["icon"] = 1,
+				["title"] = "gh70 GrizzlyHills31 3184",
+				["desc"] = "3185:0 3189:0 3183:0 ",
+			},
+			[61712639] = {
+				["icon"] = 1,
+				["title"] = "gh9 ThePathofIron1 3123",
+				["desc"] = "3118:0 3122:0 3119:0 ",
+			},
+			[73726051] = {
+				["icon"] = 1,
+				["title"] = "gh101 DunArgol3 3215",
+				["desc"] = "3216:0 3217:0 3212:0 ",
+			},
+			[39185645] = {
+				["icon"] = 1,
+				["title"] = "gh80 ForestsEdgePost1 3194",
+				["desc"] = "3195:0 3179:0 3175:0 3180:0 3178:0 ",
+			},
+			[31045535] = {
+				["icon"] = 1,
+				["title"] = "gh68 GrizzlyHills29 3182",
+				["desc"] = "3174:0 3175:0 3173:0 3183:0 ",
+			},
+			[63482282] = {
+				["icon"] = 1,
+				["title"] = "gh5 ThorModan1 3119",
+				["desc"] = "3118:0 3121:0 3123:0 3120:0 ",
+			},
+			[19463964] = {
+				["icon"] = 1,
+				["title"] = "gh54 GrizzlyHills19 3168",
+				["desc"] = "3169:0 3170:0 3167:0 ",
+			},
+			[62584112] = {
+				["icon"] = 1,
+				["title"] = "gh17 SolsticeVillage1 3131",
+				["desc"] = "3205:0 3130:0 3132:0 ",
+			},
+			[26533218] = {
+				["icon"] = 1,
+				["title"] = "gh34 Silverbrook2 3148",
+				["desc"] = "3147:0 3146:0 3149:0 ",
+			},
+			[52082886] = {
+				["icon"] = 1,
+				["title"] = "gh20 WestfallBrigadeEncampment2 3134",
+				["desc"] = "3136:0 3135:0 3138:0 ",
+			},
+			[20236052] = {
+				["icon"] = 1,
+				["title"] = "gh51 GrizzlyHills16 3165",
+				["desc"] = "3155:0 3166:0 3164:0 3183:0 ",
+			},
+			[36706294] = {
+				["icon"] = 1,
+				["title"] = "gh66 GrizzlyHills27 3180",
+				["desc"] = "3193:0 3181:0 3194:0 ",
+			},
+			[29518185] = {
+				["icon"] = 1,
+				["title"] = "gh74 VentureBay5 3188",
+				["desc"] = "3187:0 3250:0 3260:0 ",
+			},
+			[42883565] = {
+				["icon"] = 1,
+				["title"] = "gh26 DrakatalPassage1 3140",
+				["desc"] = "3177:0 3139:0 3138:0 3141:0 ",
+			},
+			[31655050] = {
+				["icon"] = 1,
+				["title"] = "gh60 GrizzlyHills22 3174",
+				["desc"] = "3173:0 3182:0 3175:0 ",
+			},
+			[73784123] = {
+				["icon"] = 1,
+				["title"] = "gh95 GrizzlyHills46 3209",
+				["desc"] = "3210:0 3208:0 3128:0 ",
+			},
+			[78304974] = {
+				["icon"] = 1,
+				["title"] = "gh110 TheForgottenOverlook1 3224",
+				["desc"] = "3210:0 3211:0 3212:0 3225:0 ",
+			},
+			[26376884] = {
+				["icon"] = 1,
+				["title"] = "gh75 GrizzlyHills35 3189",
+				["desc"] = "3185:0 3184:0 3190:0 ",
+			},
+			[17226713] = {
+				["icon"] = 1,
+				["title"] = "gh50 VentureBay4 3164",
+				["desc"] = "3160:0 3157:0 3165:0 3186:0 3185:0 ",
+			},
+			[57043307] = {
+				["icon"] = 1,
+				["title"] = "gh19 WhitePineTradingPost1 3133",
+				["desc"] = "3122:0 3132:0 3202:0 ",
+			},
+			[71402395] = {
+				["icon"] = 1,
+				["title"] = "gh12 DrakiljinRuins2 3126",
+				["desc"] = "3127:0 3125:0 ",
+			},
+			[12264380] = {
+				["icon"] = 1,
+				["title"] = "gh39 GrizzlyHills9 3153",
+				["desc"] = "3152:0 3154:0 3151:0 ",
+			},
+			[11456683] = {
+				["icon"] = 1,
+				["title"] = "gh43 RuinsofDrakZin1 3157",
+				["desc"] = "3156:0 3158:0 3164:0 2954:0 ",
+			},
+			[75194569] = {
+				["icon"] = 1,
+				["title"] = "gh96 ThePathofIron4 3210",
+				["desc"] = "3209:0 3211:0 3224:0 ",
+			},
+			[54034585] = {
+				["icon"] = 1,
+				["title"] = "gh84 GrizzlyHills42 3198",
+				["desc"] = "3199:0 3197:0 3200:0 3202:0 3132:0 ",
+			},
+			[34673286] = {
+				["icon"] = 1,
+				["title"] = "gh30 BlueSkyLoggingGrounds4 3144",
+				["desc"] = "3143:0 3142:0 3145:0 ",
+			},
+			[60622288] = {
+				["icon"] = 1,
+				["title"] = "gh4 GrizzlyHills2 3118",
+				["desc"] = "3119:0 3123:0 3115:0 ",
+			},
+			[66393052] = {
+				["icon"] = 1,
+				["title"] = "gh10 ThePathofIron2 3124",
+				["desc"] = "3122:0 3130:0 3129:0 3125:0 ",
+			},
+			[23644426] = {
+				["icon"] = 1,
+				["title"] = "gh53 GrizzlyHills18 3167",
+				["desc"] = "3170:0 3171:0 3166:0 ",
+			},
+			[19078281] = {
+				["icon"] = 1,
+				["title"] = "gh48 VentureBay2 3162",
+				["desc"] = "3187:0 3161:0 ",
+			},
+			[64883557] = {
+				["icon"] = 1,
+				["title"] = "gh16 GrizzlyHills3 3130",
+				["desc"] = "3124:0 3129:0 3131:0 ",
+			},
+		},
+		["CrystalsongForest"] = {
+			[74494904] = {
+				["icon"] = 1,
+				["title"] = "cs24 SunreaversCommand1 2987",
+				["desc"] = "2986:0 3002:0 2988:0 ",
+			},
+			[55736356] = {
+				["icon"] = 1,
+				["title"] = "cs29 ForlornWoods7 2992",
+				["desc"] = "2965:0 2993:0 2994:0 2991:0 ",
+			},
+			[46574497] = {
+				["icon"] = 1,
+				["title"] = "cs32 ForlornWoods9 2995",
+				["desc"] = "2984:0 2996:0 2985:0 ",
+			},
+			[47296823] = {
+				["icon"] = 1,
+				["title"] = "cs1 CrystalsongForest1 2964",
+				["desc"] = "2992:0 2965:0 2941:0 ",
+			},
+			[71626513] = {
+				["icon"] = 1,
+				["title"] = "cs26 RuinsofShandaral1 2989",
+				["desc"] = "2988:0 2990:0 2997:0 2991:0 ",
+			},
+			[38113672] = {
+				["icon"] = 1,
+				["title"] = "cs20 ForlornWoods4 2983",
+				["desc"] = "2996:0 2984:0 2980:0 ",
+			},
+			[29824117] = {
+				["icon"] = 1,
+				["title"] = "cs17 ForlornWoods2 2980",
+				["desc"] = "2996:0 2983:0 2975:0 ",
+			},
+			[17282689] = {
+				["icon"] = 1,
+				["title"] = "cs13 CrystalsongForest4 2976",
+				["desc"] = "2978:0 2977:0 2975:0 2982:0 ",
+			},
+			[29386004] = {
+				["icon"] = 1,
+				["title"] = "cs6 TheAzureFront3 2969",
+				["desc"] = "2967:0 2968:0 2970:0 ",
+			},
+			[71015678] = {
+				["icon"] = 1,
+				["title"] = "cs25 TheUnboundThicket2 2988",
+				["desc"] = "2989:0 2986:0 3003:0 ",
+			},
+			[13234366] = {
+				["icon"] = 1,
+				["title"] = "cs10 VioletStand1 2973",
+				["desc"] = "2974:0 2972:0 2978:0 ",
+			},
+			[92735871] = {
+				["icon"] = 1,
+				["title"] = "cs37 TheUnboundThicket8 3000",
+				["desc"] = "3001:0 2999:0 3049:0 ",
+			},
+			[21401688] = {
+				["icon"] = 1,
+				["title"] = "cs19 TheDecrepitFlow1 2982",
+				["desc"] = "2976:0 2981:0 ",
+			},
+			[10243158] = {
+				["icon"] = 1,
+				["title"] = "cs14 TheGreatTree1 2977",
+				["desc"] = "2978:0 2976:0 ",
+			},
+			[76717055] = {
+				["icon"] = 1,
+				["title"] = "cs34 TheUnboundThicket6 2997",
+				["desc"] = "2998:0 2989:0 2990:0 ",
+			},
+			[67934929] = {
+				["icon"] = 1,
+				["title"] = "cs23 TheUnboundThicket1 2986",
+				["desc"] = "2987:0 2988:0 2994:0 2985:0 ",
+			},
+			[70607604] = {
+				["icon"] = 1,
+				["title"] = "cs27 TheUnboundThicket3 2990",
+				["desc"] = "2989:0 2991:0 2997:0 ",
+			},
+			[81415005] = {
+				["icon"] = 1,
+				["title"] = "cs39 SunreaversCommand2 3002",
+				["desc"] = "3001:0 2987:0 3008:0 ",
+			},
+			[56104133] = {
+				["icon"] = 1,
+				["title"] = "cs22 ForlornWoods6 2985",
+				["desc"] = "2994:0 2995:0 2984:0 2986:0 2828:0 3004:0 ",
+			},
+			[41715949] = {
+				["icon"] = 1,
+				["title"] = "cs3 CrystalsongForest2 2966",
+				["desc"] = "2967:0 2965:0 ",
+			},
+			[78545789] = {
+				["icon"] = 1,
+				["title"] = "cs40 RuinsofShandaral4 3003",
+				["desc"] = "3001:0 3002:0 2988:0 ",
+			},
+			[20313790] = {
+				["icon"] = 1,
+				["title"] = "cs12 VioletStand3 2975",
+				["desc"] = "2974:0 2978:0 2976:0 2980:0 ",
+			},
+			[23685028] = {
+				["icon"] = 1,
+				["title"] = "cs16 TheAzureFront6 2979",
+				["desc"] = "2970:0 2972:0 2974:0 ",
+			},
+			[57495054] = {
+				["icon"] = 1,
+				["title"] = "cs31 ForlornWoods8 2994",
+				["desc"] = "2985:0 2993:0 2965:0 2986:0 ",
+			},
+			[35954660] = {
+				["icon"] = 1,
+				["title"] = "cs33 ForlornWoods10 2996",
+				["desc"] = "2967:0 2983:0 2980:0 2995:0 ",
+			},
+			[60565765] = {
+				["icon"] = 1,
+				["title"] = "cs30 TheUnboundThicket5 2993",
+				["desc"] = "2994:0 2992:0 2965:0 ",
+			},
+			[79427492] = {
+				["icon"] = 1,
+				["title"] = "cs35 TheUnboundThicket7 2998",
+				["desc"] = "2997:0 2999:0 ",
+			},
+			[65657031] = {
+				["icon"] = 1,
+				["title"] = "cs28 TheUnboundThicket4 2991",
+				["desc"] = "2990:0 2989:0 2997:0 2992:0 ",
+			},
+			[84735623] = {
+				["icon"] = 1,
+				["title"] = "cs38 RuinsofShandaral3 3001",
+				["desc"] = "2999:0 3003:0 3002:0 ",
+			},
+			[19916654] = {
+				["icon"] = 1,
+				["title"] = "cs8 TheAzureFront5 2971",
+				["desc"] = "2970:0 ",
+			},
+			[22205707] = {
+				["icon"] = 1,
+				["title"] = "cs7 TheAzureFront4 2970",
+				["desc"] = "2979:0 2971:0 2969:0 2972:0 ",
+			},
+			[33605509] = {
+				["icon"] = 1,
+				["title"] = "cs4 TheAzureFront1 2967",
+				["desc"] = "2969:0 2996:0 2966:0 ",
+			},
+			[16894364] = {
+				["icon"] = 1,
+				["title"] = "cs11 VioletStand2 2974",
+				["desc"] = "2973:0 2975:0 2972:0 ",
+			},
+			[27652493] = {
+				["icon"] = 1,
+				["title"] = "cs18 ForlornWoods3 2981",
+				["desc"] = "2982:0 2976:0 2980:0 ",
+			},
+			[15363215] = {
+				["icon"] = 1,
+				["title"] = "cs15 TheGreatTree2 2978",
+				["desc"] = "2976:0 2977:0 2975:0 ",
+			},
+			[30097166] = {
+				["icon"] = 1,
+				["title"] = "cs5 TheAzureFront2 2968",
+				["desc"] = "2969:0 2967:0 ",
+			},
+			[84976382] = {
+				["icon"] = 1,
+				["title"] = "cs36 RuinsofShandaral2 2999",
+				["desc"] = "3001:0 2998:0 3000:0 ",
+			},
+			[46983604] = {
+				["icon"] = 1,
+				["title"] = "cs21 ForlornWoods5 2984",
+				["desc"] = "2995:0 2983:0 2985:0 ",
+			},
+			[51535690] = {
+				["icon"] = 1,
+				["title"] = "cs2 ForlornWoods1 2965",
+				["desc"] = "2992:0 2993:0 2994:0 2966:0 2964:0 ",
+			},
+			[14195085] = {
+				["icon"] = 1,
+				["title"] = "cs9 CrystalsongForest3 2972",
+				["desc"] = "2973:0 2974:0 2979:0 ",
 			},
 		},
 		["Barrens"] = {
@@ -1033,15 +2748,15 @@ HandyNotes_HandyNotesDB = {
 				["icon"] = 1,
 				["desc"] = "1579:0 1582:0 ",
 			},
+			[56320576] = {
+				["title"] = "BarrensNW13 1462",
+				["icon"] = 1,
+				["desc"] = "1459:0 1463:0 1464:0 1466:0 ",
+			},
 			[46628568] = {
 				["icon"] = 1,
 				["title"] = "BaelModan4 1610",
 				["desc"] = "1598:0 1611:0 ",
-			},
-			[62521921] = {
-				["icon"] = 1,
-				["title"] = "BarrensNWBridge 1449",
-				["desc"] = "1406:0 1450:0 ",
 			},
 			[45931345] = {
 				["title"] = "BarrensNW50 1499",
@@ -1168,20 +2883,20 @@ HandyNotes_HandyNotesDB = {
 				["icon"] = 1,
 				["desc"] = "1461:0 1469:0 1471:0 1472:0 ",
 			},
-			[53485235] = {
-				["title"] = "BarrensC12 1545",
+			[44488835] = {
 				["icon"] = 1,
-				["desc"] = "1538:0 1546:0 1547:0 1548:0 1544:0 ",
+				["title"] = "BarrensS21 1603",
+				["desc"] = "1602:0 1604:0 1606:0 ",
 			},
 			[41204530] = {
 				["title"] = "BarrensC26 1559",
 				["icon"] = 1,
 				["desc"] = "1558:0 1561:0 ",
 			},
-			[44488835] = {
+			[57765410] = {
 				["icon"] = 1,
-				["title"] = "BarrensS21 1603",
-				["desc"] = "1602:0 1604:0 1606:0 ",
+				["title"] = "RaptorGrounds 1613",
+				["desc"] = "1544:0 ",
 			},
 			[59980754] = {
 				["title"] = "BarrensNW10 1459",
@@ -1198,10 +2913,10 @@ HandyNotes_HandyNotesDB = {
 				["icon"] = 1,
 				["desc"] = "1503:0 1499:0 1509:0 1520:0 1521:0 1522:0 ",
 			},
-			[57765410] = {
+			[53485235] = {
+				["title"] = "BarrensC12 1545",
 				["icon"] = 1,
-				["title"] = "RaptorGrounds 1613",
-				["desc"] = "1544:0 ",
+				["desc"] = "1538:0 1546:0 1547:0 1548:0 1544:0 ",
 			},
 			[59622084] = {
 				["title"] = "BarrensNW24 1473",
@@ -1283,15 +2998,15 @@ HandyNotes_HandyNotesDB = {
 				["icon"] = 1,
 				["desc"] = "1575:0 1577:0 ",
 			},
-			[56320576] = {
-				["title"] = "BarrensNW13 1462",
-				["icon"] = 1,
-				["desc"] = "1459:0 1463:0 1464:0 1466:0 ",
-			},
 			[55142221] = {
 				["title"] = "BarrensNW28 1477",
 				["icon"] = 1,
 				["desc"] = "1471:0 1472:0 1478:0 1491:0 1492:0 ",
+			},
+			[62521921] = {
+				["icon"] = 1,
+				["title"] = "BarrensNWBridge 1449",
+				["desc"] = "1406:0 1450:0 ",
 			},
 			[61345503] = {
 				["title"] = "NorthwatchHold3 1577",
@@ -1352,1461 +3067,6 @@ HandyNotes_HandyNotesDB = {
 				["title"] = "BarrensC17 1550",
 				["icon"] = 1,
 				["desc"] = "174:0 1547:0 1548:0 1551:0 1552:0 1554:0 1583:0 1585:0 ",
-			},
-		},
-		["Winterspring"] = {
-			[62363683] = {
-				["icon"] = 1,
-				["title"] = "EverlookFlightA 1241",
-				["desc"] = "1239:0 1242:0 ",
-			},
-			[66864460] = {
-				["icon"] = 1,
-				["title"] = "IceThistleHills1 1247",
-				["desc"] = "1239:0 1248:0 1249:0 ",
-			},
-			[31233789] = {
-				["icon"] = 1,
-				["title"] = "FrostfireHotSprings3 1204",
-				["desc"] = "1202:0 1203:0 1205:0 1206:0 1207:0 ",
-			},
-			[53744219] = {
-				["icon"] = 1,
-				["title"] = "LakeKeltheril 1216",
-				["desc"] = "1214:0 1215:0 143:0 1218:0 ",
-			},
-			[66645192] = {
-				["icon"] = 1,
-				["title"] = "IceThistleHills2 1248",
-				["desc"] = "1247:0 1255:0 ",
-			},
-			[53382315] = {
-				["icon"] = 1,
-				["title"] = "WinterspringNRoad2 1226",
-				["desc"] = "1222:0 1227:0 1231:0 1233:0 ",
-			},
-			[57745370] = {
-				["icon"] = 1,
-				["title"] = "Mazthoril2 1219",
-				["desc"] = "1217:0 1220:0 1255:0 1259:0 ",
-			},
-			[64237265] = {
-				["icon"] = 1,
-				["title"] = "DarkwhisperGorge2 1266",
-				["desc"] = "1265:0 ",
-			},
-			[34434184] = {
-				["icon"] = 1,
-				["title"] = "WinterspringWRoad1 1206",
-				["desc"] = "1203:0 1204:0 1208:0 1209:0 ",
-			},
-			[43823985] = {
-				["icon"] = 1,
-				["title"] = "WinterspringWRoad4 1212",
-				["desc"] = "1210:0 1211:0 1214:0 ",
-			},
-			[64814969] = {
-				["icon"] = 1,
-				["title"] = "WinterspringSFork 1254",
-				["desc"] = "1220:0 1239:0 1255:0 ",
-			},
-			[58355116] = {
-				["icon"] = 1,
-				["title"] = "Mazthoril3 1220",
-				["desc"] = "1219:0 1254:0 1255:0 ",
-			},
-			[56711341] = {
-				["icon"] = 1,
-				["title"] = "FrostsaberRockSide4 1232",
-				["desc"] = "1230:0 1231:0 1234:0 ",
-			},
-			[59783967] = {
-				["icon"] = 1,
-				["title"] = "EverlookFork1 1218",
-				["desc"] = "56:0 1216:0 1217:0 1239:0 1240:0 ",
-			},
-			[60247303] = {
-				["icon"] = 1,
-				["title"] = "DarkwhisperGorge1 1265",
-				["desc"] = "1264:0 1266:0 1267:0 1268:0 ",
-			},
-			[62506769] = {
-				["icon"] = 1,
-				["title"] = "FrostwhisperGorgeBridge1 1263",
-				["desc"] = "1258:0 1264:0 ",
-			},
-			[53773423] = {
-				["icon"] = 1,
-				["title"] = "WinterspringCFork 1221",
-				["desc"] = "1214:0 1222:0 1224:0 1225:0 ",
-			},
-			[65943148] = {
-				["icon"] = 1,
-				["title"] = "WinterfallVillage1 1238",
-				["desc"] = "1235:0 1236:0 1243:0 ",
-			},
-			[33343708] = {
-				["icon"] = 1,
-				["title"] = "FrostfireHotSprings5 1207",
-				["desc"] = "1204:0 1205:0 ",
-			},
-			[64126916] = {
-				["icon"] = 1,
-				["title"] = "FrostwhisperGorge3 1262",
-				["desc"] = "1261:0 ",
-			},
-			[70223769] = {
-				["icon"] = 1,
-				["title"] = "IceThistleHillsCave5 1253",
-				["desc"] = "1252:0 ",
-			},
-			[57982096] = {
-				["icon"] = 1,
-				["title"] = "WinterspringN_hub2 1233",
-				["desc"] = "1226:0 1231:0 1234:0 1235:0 ",
-			},
-			[51162894] = {
-				["icon"] = 1,
-				["title"] = "StarfallVillage1 1223",
-				["desc"] = "1222:0 1224:0 ",
-			},
-			[51961849] = {
-				["icon"] = 1,
-				["title"] = "WinterspringNRoad3 1227",
-				["desc"] = "1226:0 1228:0 1229:0 1230:0 ",
-			},
-			[53932839] = {
-				["icon"] = 1,
-				["title"] = "WinterspringNRoad1 1222",
-				["desc"] = "1221:0 1223:0 1224:0 1225:0 1226:0 ",
-			},
-			[65681985] = {
-				["icon"] = 1,
-				["title"] = "WinterspringN_hub5 1236",
-				["desc"] = "1235:0 1237:0 1238:0 ",
-			},
-			[28643937] = {
-				["icon"] = 1,
-				["title"] = "FrostfireHotSprings1 1202",
-				["desc"] = "142:0 1203:0 1204:0 1205:0 ",
-			},
-			[49600957] = {
-				["icon"] = 1,
-				["title"] = "FrostsaberRock 1228",
-				["desc"] = "1227:0 1229:0 1230:0 ",
-			},
-			[62963393] = {
-				["icon"] = 1,
-				["title"] = "WinterspringN_hub6 1242",
-				["desc"] = "1240:0 1241:0 1243:0 ",
-			},
-			[60811462] = {
-				["icon"] = 1,
-				["title"] = "WinterspringN_hub3 1234",
-				["desc"] = "1232:0 1233:0 ",
-			},
-			[66113367] = {
-				["icon"] = 1,
-				["title"] = "WinterfallVillageOutside 1243",
-				["desc"] = "1238:0 1242:0 1244:0 ",
-			},
-			[30893567] = {
-				["icon"] = 1,
-				["title"] = "FrostfireHotSprings4 1205",
-				["desc"] = "1202:0 1203:0 1204:0 1207:0 ",
-			},
-			[62114065] = {
-				["icon"] = 1,
-				["title"] = "EverlookFork2 1239",
-				["desc"] = "1218:0 1241:0 1247:0 1254:0 ",
-			},
-			[63481622] = {
-				["icon"] = 1,
-				["title"] = "HiddenGrove 1237",
-				["desc"] = "1236:0 ",
-			},
-			[67584173] = {
-				["icon"] = 1,
-				["title"] = "IceThistleHillsCave1 1249",
-				["desc"] = "1247:0 1250:0 ",
-			},
-			[62705920] = {
-				["icon"] = 1,
-				["title"] = "WinterspringSRoad1 1255",
-				["desc"] = "144:0 1219:0 1220:0 1248:0 1254:0 1256:0 1258:0 ",
-			},
-			[47203963] = {
-				["icon"] = 1,
-				["title"] = "WinterspringWRoad5 1214",
-				["desc"] = "1212:0 1215:0 1216:0 1221:0 ",
-			},
-			[40874058] = {
-				["icon"] = 1,
-				["title"] = "WinterspringWRoad3 1211",
-				["desc"] = "1208:0 1212:0 1213:0 ",
-			},
-			[60513627] = {
-				["icon"] = 1,
-				["title"] = "EverlookFlightH 1240",
-				["desc"] = "56:0 1218:0 1242:0 ",
-			},
-			[59427595] = {
-				["icon"] = 1,
-				["title"] = "DarkwhisperGorge4 1268",
-				["desc"] = "1265:0 ",
-			},
-			[69363838] = {
-				["icon"] = 1,
-				["title"] = "WinterfallVillage4 1246",
-				["desc"] = "1245:0 ",
-			},
-			[37934203] = {
-				["icon"] = 1,
-				["title"] = "WinterspringWRoad2 1208",
-				["desc"] = "1206:0 1209:0 1211:0 1213:0 ",
-			},
-			[69914195] = {
-				["icon"] = 1,
-				["title"] = "IceThistleHillsCave3 1251",
-				["desc"] = "1250:0 ",
-			},
-			[61726319] = {
-				["icon"] = 1,
-				["title"] = "WinterspringSRoad2 1258",
-				["desc"] = "144:0 1255:0 1263:0 ",
-			},
-			[38793698] = {
-				["icon"] = 1,
-				["title"] = "FrostfireHotSprings6 1213",
-				["desc"] = "1208:0 1211:0 ",
-			},
-			[65575976] = {
-				["icon"] = 1,
-				["title"] = "OwlWingThicket1 1256",
-				["desc"] = "1255:0 1257:0 ",
-			},
-			[54801211] = {
-				["icon"] = 1,
-				["title"] = "FrostsaberRockSide2 1230",
-				["desc"] = "1227:0 1228:0 1231:0 1232:0 ",
-			},
-			[57662700] = {
-				["icon"] = 1,
-				["title"] = "WinterspringN_hub1 1225",
-				["desc"] = "147:0 1221:0 1222:0 1235:0 ",
-			},
-			[50364513] = {
-				["icon"] = 1,
-				["title"] = "WinterspringWRoad6 1215",
-				["desc"] = "1214:0 1216:0 1217:0 ",
-			},
-			[61226838] = {
-				["icon"] = 1,
-				["title"] = "FrostwhisperGorge2 1261",
-				["desc"] = "1260:0 1262:0 ",
-			},
-			[52133039] = {
-				["icon"] = 1,
-				["title"] = "StarfallVillage2 1224",
-				["desc"] = "1221:0 1222:0 1223:0 ",
-			},
-			[55261767] = {
-				["icon"] = 1,
-				["title"] = "FrostsaberRockSide3 1231",
-				["desc"] = "1226:0 1230:0 1232:0 1233:0 ",
-			},
-			[55624965] = {
-				["icon"] = 1,
-				["title"] = "Mazthoril1 1217",
-				["desc"] = "1215:0 1218:0 1219:0 ",
-			},
-			[67303644] = {
-				["icon"] = 1,
-				["title"] = "WinterfallVillage2 1244",
-				["desc"] = "1243:0 1245:0 ",
-			},
-			[57776782] = {
-				["icon"] = 1,
-				["title"] = "DarkwhisperGorge3 1267",
-				["desc"] = "1265:0 ",
-			},
-			[29894262] = {
-				["icon"] = 1,
-				["title"] = "FrostfireHotSprings2 1203",
-				["desc"] = "1202:0 1204:0 1205:0 1206:0 ",
-			},
-			[61807075] = {
-				["icon"] = 1,
-				["title"] = "FrostwhisperGorgeBridge2 1264",
-				["desc"] = "1263:0 1265:0 ",
-			},
-			[59116670] = {
-				["icon"] = 1,
-				["title"] = "FrostwhisperGorge1 1260",
-				["desc"] = "144:0 1261:0 ",
-			},
-			[61612374] = {
-				["icon"] = 1,
-				["title"] = "WinterspringN_hub4 1235",
-				["desc"] = "1225:0 1233:0 1236:0 1238:0 ",
-			},
-			[49461968] = {
-				["icon"] = 1,
-				["title"] = "FrostsaberRockSide1 1229",
-				["desc"] = "1227:0 1228:0 ",
-			},
-			[57805931] = {
-				["icon"] = 1,
-				["title"] = "DunMandarrW 1259",
-				["desc"] = "144:0 1219:0 ",
-			},
-			[65016374] = {
-				["icon"] = 1,
-				["title"] = "OwlWingThicket2 1257",
-				["desc"] = "1256:0 ",
-			},
-			[69783984] = {
-				["icon"] = 1,
-				["title"] = "IceThistleHillsCave2 1250",
-				["desc"] = "1249:0 1251:0 1252:0 ",
-			},
-			[68153810] = {
-				["icon"] = 1,
-				["title"] = "WinterfallVillage3 1245",
-				["desc"] = "1244:0 1246:0 ",
-			},
-			[71284103] = {
-				["icon"] = 1,
-				["title"] = "IceThistleHillsCave4 1252",
-				["desc"] = "1250:0 1253:0 ",
-			},
-			[43364293] = {
-				["icon"] = 1,
-				["title"] = "TimbermawPost2 1210",
-				["desc"] = "1209:0 1212:0 ",
-			},
-			[37454416] = {
-				["icon"] = 1,
-				["title"] = "TimbermawPost1 1209",
-				["desc"] = "1206:0 1208:0 1210:0 ",
-			},
-		},
-		["TheStormPeaks"] = {
-			[73136280] = {
-				["icon"] = 1,
-				["title"] = "sp33 FjornsAnvil1 3036",
-				["desc"] = "3037:0 3035:0 ",
-			},
-			[59354391] = {
-				["icon"] = 1,
-				["title"] = "sp43 TerraceoftheMakers2 3046",
-				["desc"] = "3045:0 3047:0 3048:0 ",
-			},
-			[49345230] = {
-				["icon"] = 1,
-				["title"] = "sp19 GimoraksDen2 3022",
-				["desc"] = "3021:0 ",
-			},
-			[42086387] = {
-				["icon"] = 1,
-				["title"] = "sp13 TheFrigidTomb2 3016",
-				["desc"] = "3015:0 ",
-			},
-			[33968609] = {
-				["icon"] = 1,
-				["title"] = "sp2 SparksocketMinefield1 3005",
-				["desc"] = "3004:0 3006:0 3007:0 3008:0 ",
-			},
-			[53926141] = {
-				["icon"] = 1,
-				["title"] = "sp28 HibernalCavern2 3031",
-				["desc"] = "3030:0 ",
-			},
-			[45736105] = {
-				["icon"] = 1,
-				["title"] = "sp20 TheFootSteppes5 3023",
-				["desc"] = "3024:0 3014:0 3015:0 3021:0 ",
-			},
-			[55536503] = {
-				["icon"] = 1,
-				["title"] = "sp26 ValleyofAncientWinters1 3029",
-				["desc"] = "3030:0 3032:0 3026:0 ",
-			},
-			[57174754] = {
-				["icon"] = 1,
-				["title"] = "sp45 TerraceoftheMakers4 3048",
-				["desc"] = "3046:0 ",
-			},
-			[46556514] = {
-				["icon"] = 1,
-				["title"] = "sp21 TheFootSteppes6 3024",
-				["desc"] = "3025:0 3023:0 ",
-			},
-			[47678207] = {
-				["icon"] = 1,
-				["title"] = "sp8 Garm1 3011",
-				["desc"] = "3012:0 3013:0 3010:0 ",
-			},
-			[40037400] = {
-				["icon"] = 1,
-				["title"] = "sp6 CrystalwebCavern1 3009",
-				["desc"] = "3010:0 ",
-			},
-			[76946303] = {
-				["icon"] = 1,
-				["title"] = "sp34 FjornsAnvil2 3037",
-				["desc"] = "3036:0 ",
-			},
-			[59456046] = {
-				["icon"] = 1,
-				["title"] = "sp29 ValleyofAncientWinters2 3032",
-				["desc"] = "3039:0 3033:0 3029:0 ",
-			},
-			[36556414] = {
-				["icon"] = 1,
-				["title"] = "sp15 AbandonedCamp1 3018",
-				["desc"] = "3017:0 ",
-			},
-			[50578188] = {
-				["icon"] = 1,
-				["title"] = "sp9 GarmsRise1 3012",
-				["desc"] = "3011:0 ",
-			},
-			[55956422] = {
-				["icon"] = 1,
-				["title"] = "sp27 HibernalCavern1 3030",
-				["desc"] = "3029:0 3031:0 ",
-			},
-			[48157012] = {
-				["icon"] = 1,
-				["title"] = "sp24 BrunnhildarVillage3 3027",
-				["desc"] = "3028:0 3025:0 3011:0 ",
-			},
-			[39945223] = {
-				["icon"] = 1,
-				["title"] = "sp16 TheFootSteppes3 3019",
-				["desc"] = "3020:0 3017:0 ",
-			},
-			[57904070] = {
-				["icon"] = 1,
-				["title"] = "sp44 TerraceoftheMakers3 3047",
-				["desc"] = "3046:0 ",
-			},
-			[40228603] = {
-				["icon"] = 1,
-				["title"] = "sp5 K31 3008",
-				["desc"] = "3010:0 3005:0 3007:0 3002:0 ",
-			},
-			[60154779] = {
-				["icon"] = 1,
-				["title"] = "sp42 TerraceoftheMakers1 3045",
-				["desc"] = "3044:0 3046:0 ",
-			},
-			[58804856] = {
-				["icon"] = 1,
-				["title"] = "sp41 TheStormPeaks3 3044",
-				["desc"] = "3043:0 3045:0 ",
-			},
-			[59614943] = {
-				["icon"] = 1,
-				["title"] = "sp40 TheStormPeaks2 3043",
-				["desc"] = "3044:0 3042:0 ",
-			},
-			[63886077] = {
-				["icon"] = 1,
-				["title"] = "sp30 DunNiffelem1 3033",
-				["desc"] = "3034:0 3032:0 ",
-			},
-			[48766698] = {
-				["icon"] = 1,
-				["title"] = "sp22 BrunnhildarVillage1 3025",
-				["desc"] = "3028:0 3027:0 3026:0 3024:0 ",
-			},
-			[68365972] = {
-				["icon"] = 1,
-				["title"] = "sp32 FrostfieldLake1 3035",
-				["desc"] = "3034:0 3036:0 3038:0 ",
-			},
-			[48997813] = {
-				["icon"] = 1,
-				["title"] = "sp10 Garm2 3013",
-				["desc"] = "3011:0 ",
-			},
-			[40748166] = {
-				["icon"] = 1,
-				["title"] = "sp7 SnowblindHills3 3010",
-				["desc"] = "3008:0 3007:0 3009:0 3011:0 ",
-			},
-			[57775358] = {
-				["icon"] = 1,
-				["title"] = "sp38 BrannsBase-Camp3 3041",
-				["desc"] = "3040:0 3042:0 ",
-			},
-			[43385453] = {
-				["icon"] = 1,
-				["title"] = "sp17 TheFootSteppes4 3020",
-				["desc"] = "3014:0 3021:0 3019:0 ",
-			},
-			[32219330] = {
-				["icon"] = 1,
-				["title"] = "sp1 TheStormPeaks1 3004",
-				["desc"] = "3005:0 2985:0 ",
-			},
-			[65836163] = {
-				["icon"] = 1,
-				["title"] = "sp31 DunNiffelem2 3034",
-				["desc"] = "3033:0 3035:0 ",
-			},
-			[51976681] = {
-				["icon"] = 1,
-				["title"] = "sp23 BrunnhildarVillage2 3026",
-				["desc"] = "3025:0 3028:0 3029:0 ",
-			},
-			[60215642] = {
-				["icon"] = 1,
-				["title"] = "sp36 BrannsBase-Camp1 3039",
-				["desc"] = "3040:0 3032:0 ",
-			},
-			[36258224] = {
-				["icon"] = 1,
-				["title"] = "sp4 SnowblindHills2 3007",
-				["desc"] = "3005:0 3010:0 3008:0 ",
-			},
-			[43205878] = {
-				["icon"] = 1,
-				["title"] = "sp11 TheFootSteppes1 3014",
-				["desc"] = "3020:0 3015:0 3023:0 ",
-			},
-			[70885316] = {
-				["icon"] = 1,
-				["title"] = "sp35 Thunderfall1 3038",
-				["desc"] = "3035:0 ",
-			},
-			[46775525] = {
-				["icon"] = 1,
-				["title"] = "sp18 GimoraksDen1 3021",
-				["desc"] = "3020:0 3022:0 3023:0 ",
-			},
-			[41846167] = {
-				["icon"] = 1,
-				["title"] = "sp12 TheFrigidTomb1 3015",
-				["desc"] = "3016:0 3014:0 3023:0 3017:0 ",
-			},
-			[49746954] = {
-				["icon"] = 1,
-				["title"] = "sp25 ThePitoftheFang1 3028",
-				["desc"] = "3027:0 3025:0 3026:0 ",
-			},
-			[58205575] = {
-				["icon"] = 1,
-				["title"] = "sp37 BrannsBase-Camp2 3040",
-				["desc"] = "3041:0 3039:0 ",
-			},
-			[37705785] = {
-				["icon"] = 1,
-				["title"] = "sp14 TheFootSteppes2 3017",
-				["desc"] = "3018:0 3019:0 3015:0 ",
-			},
-			[59185186] = {
-				["icon"] = 1,
-				["title"] = "sp39 BrannsBase-Camp4 3042",
-				["desc"] = "3043:0 3041:0 ",
-			},
-			[30398553] = {
-				["icon"] = 1,
-				["title"] = "sp3 SnowblindHills1 3006",
-				["desc"] = "3005:0 3007:0 ",
-			},
-		},
-		["CrystalsongForest"] = {
-			[74494904] = {
-				["icon"] = 1,
-				["title"] = "cs24 SunreaversCommand1 2987",
-				["desc"] = "2986:0 3002:0 2988:0 ",
-			},
-			[55736356] = {
-				["icon"] = 1,
-				["title"] = "cs29 ForlornWoods7 2992",
-				["desc"] = "2965:0 2993:0 2994:0 2991:0 ",
-			},
-			[46574497] = {
-				["icon"] = 1,
-				["title"] = "cs32 ForlornWoods9 2995",
-				["desc"] = "2984:0 2996:0 2985:0 ",
-			},
-			[47296823] = {
-				["icon"] = 1,
-				["title"] = "cs1 CrystalsongForest1 2964",
-				["desc"] = "2992:0 2965:0 2941:0 ",
-			},
-			[71626513] = {
-				["icon"] = 1,
-				["title"] = "cs26 RuinsofShandaral1 2989",
-				["desc"] = "2988:0 2990:0 2997:0 2991:0 ",
-			},
-			[38113672] = {
-				["icon"] = 1,
-				["title"] = "cs20 ForlornWoods4 2983",
-				["desc"] = "2996:0 2984:0 2980:0 ",
-			},
-			[29824117] = {
-				["icon"] = 1,
-				["title"] = "cs17 ForlornWoods2 2980",
-				["desc"] = "2996:0 2983:0 2975:0 ",
-			},
-			[17282689] = {
-				["icon"] = 1,
-				["title"] = "cs13 CrystalsongForest4 2976",
-				["desc"] = "2978:0 2977:0 2975:0 2982:0 ",
-			},
-			[29386004] = {
-				["icon"] = 1,
-				["title"] = "cs6 TheAzureFront3 2969",
-				["desc"] = "2967:0 2968:0 2970:0 ",
-			},
-			[71015678] = {
-				["icon"] = 1,
-				["title"] = "cs25 TheUnboundThicket2 2988",
-				["desc"] = "2989:0 2986:0 3003:0 ",
-			},
-			[13234366] = {
-				["icon"] = 1,
-				["title"] = "cs10 VioletStand1 2973",
-				["desc"] = "2974:0 2972:0 2978:0 ",
-			},
-			[92735871] = {
-				["icon"] = 1,
-				["title"] = "cs37 TheUnboundThicket8 3000",
-				["desc"] = "3001:0 2999:0 3049:0 ",
-			},
-			[21401688] = {
-				["icon"] = 1,
-				["title"] = "cs19 TheDecrepitFlow1 2982",
-				["desc"] = "2976:0 2981:0 ",
-			},
-			[10243158] = {
-				["icon"] = 1,
-				["title"] = "cs14 TheGreatTree1 2977",
-				["desc"] = "2978:0 2976:0 ",
-			},
-			[76717055] = {
-				["icon"] = 1,
-				["title"] = "cs34 TheUnboundThicket6 2997",
-				["desc"] = "2998:0 2989:0 2990:0 ",
-			},
-			[67934929] = {
-				["icon"] = 1,
-				["title"] = "cs23 TheUnboundThicket1 2986",
-				["desc"] = "2987:0 2988:0 2994:0 2985:0 ",
-			},
-			[70607604] = {
-				["icon"] = 1,
-				["title"] = "cs27 TheUnboundThicket3 2990",
-				["desc"] = "2989:0 2991:0 2997:0 ",
-			},
-			[81415005] = {
-				["icon"] = 1,
-				["title"] = "cs39 SunreaversCommand2 3002",
-				["desc"] = "3001:0 2987:0 3008:0 ",
-			},
-			[56104133] = {
-				["icon"] = 1,
-				["title"] = "cs22 ForlornWoods6 2985",
-				["desc"] = "2994:0 2995:0 2984:0 2986:0 2828:0 3004:0 ",
-			},
-			[41715949] = {
-				["icon"] = 1,
-				["title"] = "cs3 CrystalsongForest2 2966",
-				["desc"] = "2967:0 2965:0 ",
-			},
-			[78545789] = {
-				["icon"] = 1,
-				["title"] = "cs40 RuinsofShandaral4 3003",
-				["desc"] = "3001:0 3002:0 2988:0 ",
-			},
-			[20313790] = {
-				["icon"] = 1,
-				["title"] = "cs12 VioletStand3 2975",
-				["desc"] = "2974:0 2978:0 2976:0 2980:0 ",
-			},
-			[23685028] = {
-				["icon"] = 1,
-				["title"] = "cs16 TheAzureFront6 2979",
-				["desc"] = "2970:0 2972:0 2974:0 ",
-			},
-			[57495054] = {
-				["icon"] = 1,
-				["title"] = "cs31 ForlornWoods8 2994",
-				["desc"] = "2985:0 2993:0 2965:0 2986:0 ",
-			},
-			[35954660] = {
-				["icon"] = 1,
-				["title"] = "cs33 ForlornWoods10 2996",
-				["desc"] = "2967:0 2983:0 2980:0 2995:0 ",
-			},
-			[60565765] = {
-				["icon"] = 1,
-				["title"] = "cs30 TheUnboundThicket5 2993",
-				["desc"] = "2994:0 2992:0 2965:0 ",
-			},
-			[79427492] = {
-				["icon"] = 1,
-				["title"] = "cs35 TheUnboundThicket7 2998",
-				["desc"] = "2997:0 2999:0 ",
-			},
-			[65657031] = {
-				["icon"] = 1,
-				["title"] = "cs28 TheUnboundThicket4 2991",
-				["desc"] = "2990:0 2989:0 2997:0 2992:0 ",
-			},
-			[84735623] = {
-				["icon"] = 1,
-				["title"] = "cs38 RuinsofShandaral3 3001",
-				["desc"] = "2999:0 3003:0 3002:0 ",
-			},
-			[19916654] = {
-				["icon"] = 1,
-				["title"] = "cs8 TheAzureFront5 2971",
-				["desc"] = "2970:0 ",
-			},
-			[22205707] = {
-				["icon"] = 1,
-				["title"] = "cs7 TheAzureFront4 2970",
-				["desc"] = "2979:0 2971:0 2969:0 2972:0 ",
-			},
-			[33605509] = {
-				["icon"] = 1,
-				["title"] = "cs4 TheAzureFront1 2967",
-				["desc"] = "2969:0 2996:0 2966:0 ",
-			},
-			[16894364] = {
-				["icon"] = 1,
-				["title"] = "cs11 VioletStand2 2974",
-				["desc"] = "2973:0 2975:0 2972:0 ",
-			},
-			[27652493] = {
-				["icon"] = 1,
-				["title"] = "cs18 ForlornWoods3 2981",
-				["desc"] = "2982:0 2976:0 2980:0 ",
-			},
-			[15363215] = {
-				["icon"] = 1,
-				["title"] = "cs15 TheGreatTree2 2978",
-				["desc"] = "2976:0 2977:0 2975:0 ",
-			},
-			[30097166] = {
-				["icon"] = 1,
-				["title"] = "cs5 TheAzureFront2 2968",
-				["desc"] = "2969:0 2967:0 ",
-			},
-			[84976382] = {
-				["icon"] = 1,
-				["title"] = "cs36 RuinsofShandaral2 2999",
-				["desc"] = "3001:0 2998:0 3000:0 ",
-			},
-			[46983604] = {
-				["icon"] = 1,
-				["title"] = "cs21 ForlornWoods5 2984",
-				["desc"] = "2995:0 2983:0 2985:0 ",
-			},
-			[51535690] = {
-				["icon"] = 1,
-				["title"] = "cs2 ForlornWoods1 2965",
-				["desc"] = "2992:0 2993:0 2994:0 2966:0 2964:0 ",
-			},
-			[14195085] = {
-				["icon"] = 1,
-				["title"] = "cs9 CrystalsongForest3 2972",
-				["desc"] = "2973:0 2974:0 2979:0 ",
-			},
-		},
-		["Hinterlands"] = {
-			[32847489] = {
-				["title"] = "ShadraAlorS 395",
-				["icon"] = 1,
-				["desc"] = "393:0 394:0 396:0 ",
-			},
-			[28295459] = {
-				["title"] = "QuelDanilS 388",
-				["icon"] = 1,
-				["desc"] = "55:0 82:0 387:0 389:0 390:0 391:0 392:0 ",
-			},
-			[57714300] = {
-				["title"] = "SkulkRock 399",
-				["icon"] = 1,
-				["desc"] = "397:0 398:0 401:0 404:0 ",
-			},
-			[72796664] = {
-				["title"] = "OverlookCliffsRampTop 405",
-				["icon"] = 1,
-				["desc"] = "403:0 406:0 ",
-			},
-			[46164167] = {
-				["title"] = "AgolWatha 397",
-				["icon"] = 1,
-				["desc"] = "390:0 398:0 399:0 ",
-			},
-			[82365195] = {
-				["title"] = "OverlookCliffsEnd 408",
-				["icon"] = 1,
-				["desc"] = "406:0 ",
-			},
-			[31544895] = {
-				["title"] = "QuelDanil 389",
-				["icon"] = 1,
-				["desc"] = "388:0 390:0 392:0 ",
-			},
-			[32225852] = {
-				["title"] = "HiriWatha 392",
-				["icon"] = 1,
-				["desc"] = "389:0 390:0 388:0 393:0 ",
-			},
-			[32686870] = {
-				["title"] = "ShadraAlorW 396",
-				["icon"] = 1,
-				["desc"] = "393:0 395:0 394:0 ",
-			},
-			[79335727] = {
-				["title"] = "OverlookCliffsRampBottom 406",
-				["icon"] = 1,
-				["desc"] = "405:0 407:0 408:0 ",
-			},
-			[23855761] = {
-				["title"] = "ZunWatha 387",
-				["icon"] = 1,
-				["desc"] = "55:0 82:0 388:0 391:0 ",
-			},
-			[26256487] = {
-				["title"] = "BogensLedge 391",
-				["icon"] = 1,
-				["desc"] = "387:0 388:0 393:0 ",
-			},
-			[33805199] = {
-				["title"] = "HL_hubW 390",
-				["icon"] = 1,
-				["desc"] = "388:0 389:0 392:0 393:0 397:0 398:0 ",
-			},
-			[60583873] = {
-				["title"] = "SeradaneBridge 404",
-				["icon"] = 1,
-				["desc"] = "399:0 401:0 409:0 ",
-			},
-			[35856338] = {
-				["title"] = "ShadraAlorEntrance 393",
-				["icon"] = 1,
-				["desc"] = "391:0 392:0 390:0 395:0 394:0 396:0 398:0 400:0 ",
-			},
-			[7036016] = {
-				["title"] = "HinterlandsEntrance 386",
-				["icon"] = 1,
-				["desc"] = "372:0 55:0 ",
-			},
-			[60985286] = {
-				["title"] = "HL_hubC 401",
-				["icon"] = 1,
-				["desc"] = "398:0 399:0 402:0 403:0 404:0 ",
-			},
-			[70846278] = {
-				["title"] = "OverlookCliffsS 403",
-				["icon"] = 1,
-				["desc"] = "401:0 402:0 405:0 ",
-			},
-			[49125260] = {
-				["title"] = "CreepingRun 398",
-				["icon"] = 1,
-				["desc"] = "393:0 397:0 390:0 399:0 400:0 401:0 ",
-			},
-			[45306290] = {
-				["title"] = "AltarOfZul 400",
-				["icon"] = 1,
-				["desc"] = "393:0 398:0 ",
-			},
-			[35857141] = {
-				["title"] = "ShadraAlorE 394",
-				["icon"] = 1,
-				["desc"] = "393:0 395:0 396:0 ",
-			},
-			[63282767] = {
-				["title"] = "Seradane 409",
-				["icon"] = 1,
-				["desc"] = "404:0 ",
-			},
-			[67146561] = {
-				["title"] = "JinthaAlor 402",
-				["icon"] = 1,
-				["desc"] = "401:0 403:0 ",
-			},
-			[74217109] = {
-				["title"] = "RevantuskOutside 407",
-				["icon"] = 1,
-				["desc"] = "406:0 179:0 ",
-			},
-		},
-		["GrizzlyHills"] = {
-			[62615735] = {
-				["icon"] = 1,
-				["title"] = "gh105 HeartsBloodShrine1 3219",
-				["desc"] = "3218:0 3221:0 3220:0 3203:0 ",
-			},
-			[30947090] = {
-				["icon"] = 1,
-				["title"] = "gh76 GrizzlyHills36 3190",
-				["desc"] = "3191:0 3189:0 3192:0 ",
-			},
-			[39335100] = {
-				["icon"] = 1,
-				["title"] = "gh81 GrizzlyHills40 3195",
-				["desc"] = "3176:0 3194:0 3178:0 ",
-			},
-			[16127362] = {
-				["icon"] = 1,
-				["title"] = "gh46 VentureBay1 3160",
-				["desc"] = "3161:0 3158:0 3186:0 ",
-			},
-			[12575511] = {
-				["icon"] = 1,
-				["title"] = "gh40 GrizzlyHills10 3154",
-				["desc"] = "3156:0 3155:0 3153:0 ",
-			},
-			[65781705] = {
-				["icon"] = 1,
-				["title"] = "gh6 ThorModan2 3120",
-				["desc"] = "3119:0 ",
-			},
-			[51921722] = {
-				["icon"] = 1,
-				["title"] = "gh23 UrsocsDen1 3137",
-				["desc"] = "3136:0 3135:0 3134:0 ",
-			},
-			[37984101] = {
-				["icon"] = 1,
-				["title"] = "gh27 BlueSkyLoggingGrounds1 3141",
-				["desc"] = "3142:0 3176:0 3177:0 3140:0 ",
-			},
-			[24826947] = {
-				["icon"] = 1,
-				["title"] = "gh71 GrizzlyHills32 3185",
-				["desc"] = "3189:0 3184:0 3186:0 3164:0 ",
-			},
-			[42015867] = {
-				["icon"] = 1,
-				["title"] = "gh65 GrizzlyHills26 3179",
-				["desc"] = "3194:0 3195:0 3178:0 ",
-			},
-			[51625152] = {
-				["icon"] = 1,
-				["title"] = "gh82 VordrassilsHeart1 3196",
-				["desc"] = "3200:0 3197:0 3178:0 ",
-			},
-			[53323786] = {
-				["icon"] = 1,
-				["title"] = "gh88 Grizzlemaw4 3202",
-				["desc"] = "3198:0 3132:0 3133:0 ",
-			},
-			[70945789] = {
-				["icon"] = 1,
-				["title"] = "gh103 DunArgol5 3217",
-				["desc"] = "3215:0 3211:0 3220:0 ",
-			},
-			[64264440] = {
-				["icon"] = 1,
-				["title"] = "gh91 GrizzlyHills43 3205",
-				["desc"] = "3131:0 3204:0 ",
-			},
-			[21157344] = {
-				["icon"] = 1,
-				["title"] = "gh72 GrizzlyHills33 3186",
-				["desc"] = "3160:0 3185:0 3187:0 ",
-			},
-			[15317846] = {
-				["icon"] = 1,
-				["title"] = "gh47 GrizzlyHills15 3161",
-				["desc"] = "3163:0 3160:0 3159:0 3162:0 ",
-			},
-			[61123098] = {
-				["icon"] = 1,
-				["title"] = "gh8 WestfallBrigadeEncampment1 3122",
-				["desc"] = "3123:0 3133:0 3124:0 3132:0 ",
-			},
-			[52182300] = {
-				["icon"] = 1,
-				["title"] = "gh22 GrizzlyHills5 3136",
-				["desc"] = "3135:0 3134:0 3137:0 ",
-			},
-			[50684401] = {
-				["icon"] = 1,
-				["title"] = "gh87 Grizzlemaw3 3201",
-				["desc"] = "3200:0 ",
-			},
-			[29813760] = {
-				["icon"] = 1,
-				["title"] = "gh31 BlueSkyLoggingGrounds5 3145",
-				["desc"] = "3143:0 3146:0 3147:0 3172:0 ",
-			},
-			[48963316] = {
-				["icon"] = 1,
-				["title"] = "gh24 UrsocsDen2 3138",
-				["desc"] = "3134:0 3140:0 3139:0 ",
-			},
-			[27444465] = {
-				["icon"] = 1,
-				["title"] = "gh57 GrizzlyHills20 3171",
-				["desc"] = "3172:0 3167:0 3173:0 ",
-			},
-			[74362424] = {
-				["icon"] = 1,
-				["title"] = "gh13 EastwindShore1 3127",
-				["desc"] = "3126:0 3125:0 ",
-			},
-			[34995474] = {
-				["icon"] = 1,
-				["title"] = "gh61 GrizzlyHills23 3175",
-				["desc"] = "3182:0 3181:0 3194:0 ",
-			},
-			[11113673] = {
-				["icon"] = 1,
-				["title"] = "gh38 GrizzlyHills8 3152",
-				["desc"] = "3151:0 3153:0 3169:0 ",
-			},
-			[83345826] = {
-				["icon"] = 1,
-				["title"] = "gh111 EastwindShore2 3225",
-				["desc"] = "3224:0 3226:0 ",
-			},
-			[15375870] = {
-				["icon"] = 1,
-				["title"] = "gh41 GrizzlyHills11 3155",
-				["desc"] = "3156:0 3154:0 3165:0 ",
-			},
-			[66196455] = {
-				["icon"] = 1,
-				["title"] = "gh108 GrizzlyHills50 3222",
-				["desc"] = "3221:0 3223:0 ",
-			},
-			[87806964] = {
-				["icon"] = 1,
-				["title"] = "gh113 TheBrokenBluffs2 3227",
-				["desc"] = "3226:0 3228:0 ",
-			},
-			[65191250] = {
-				["icon"] = 1,
-				["title"] = "gh2 BoulderHills1 3116",
-				["desc"] = "3115:0 3117:0 3118:0 ",
-			},
-			[84136290] = {
-				["icon"] = 1,
-				["title"] = "gh112 TheBrokenBluffs1 3226",
-				["desc"] = "3225:0 3227:0 ",
-			},
-			[32526750] = {
-				["icon"] = 1,
-				["title"] = "gh77 GrizzlyHills37 3191",
-				["desc"] = "3193:0 3190:0 3181:0 ",
-			},
-			[44965088] = {
-				["icon"] = 1,
-				["title"] = "gh64 VordrassilPass1 3178",
-				["desc"] = "3195:0 3177:0 3196:0 3179:0 3194:0 ",
-			},
-			[33506010] = {
-				["icon"] = 1,
-				["title"] = "gh67 GrizzlyHills28 3181",
-				["desc"] = "3175:0 3180:0 3182:0 3191:0 ",
-			},
-			[32743827] = {
-				["icon"] = 1,
-				["title"] = "gh29 BlueSkyLoggingGrounds3 3143",
-				["desc"] = "3145:0 3144:0 3142:0 ",
-			},
-			[19923577] = {
-				["icon"] = 1,
-				["title"] = "gh55 ZebHalak1 3169",
-				["desc"] = "3168:0 3149:0 3150:0 ",
-			},
-			[70150613] = {
-				["icon"] = 1,
-				["title"] = "gh3 BoulderHills2 3117",
-				["desc"] = "3116:0 ",
-			},
-			[70562798] = {
-				["icon"] = 1,
-				["title"] = "gh11 DrakiljinRuins1 3125",
-				["desc"] = "3126:0 3129:0 3124:0 3127:0 ",
-			},
-			[61324657] = {
-				["icon"] = 1,
-				["title"] = "gh90 AshwoodPost1 3204",
-				["desc"] = "3205:0 3131:0 3203:0 3206:0 ",
-			},
-			[43644302] = {
-				["icon"] = 1,
-				["title"] = "gh63 GrizzlyHills25 3177",
-				["desc"] = "3140:0 3178:0 3141:0 3176:0 ",
-			},
-			[29245018] = {
-				["icon"] = 1,
-				["title"] = "gh59 GrizzlyHills21 3173",
-				["desc"] = "3172:0 3174:0 3182:0 3166:0 ",
-			},
-			[59935262] = {
-				["icon"] = 1,
-				["title"] = "gh89 Grizzlemaw5 3203",
-				["desc"] = "3204:0 3219:0 3197:0 ",
-			},
-			[23833965] = {
-				["icon"] = 1,
-				["title"] = "gh56 ZebHalak2 3170",
-				["desc"] = "3167:0 3168:0 3149:0 ",
-			},
-			[17932922] = {
-				["icon"] = 1,
-				["title"] = "gh36 SilverbrookHills1 3150",
-				["desc"] = "3149:0 3151:0 3169:0 ",
-			},
-			[66446019] = {
-				["icon"] = 1,
-				["title"] = "gh106 GrizzlyHills49 3220",
-				["desc"] = "3219:0 3218:0 3217:0 ",
-			},
-			[57584104] = {
-				["icon"] = 1,
-				["title"] = "gh18 SolsticeVillage1 3132",
-				["desc"] = "3131:0 3133:0 3198:0 ",
-			},
-			[38824682] = {
-				["icon"] = 1,
-				["title"] = "gh62 GrizzlyHills24 3176",
-				["desc"] = "3195:0 3141:0 3142:0 ",
-			},
-			[67286935] = {
-				["icon"] = 1,
-				["title"] = "gh109 TheForgottenOverlook2 3223",
-				["desc"] = "3222:0 3238:0 ",
-			},
-			[53294196] = {
-				["icon"] = 1,
-				["title"] = "gh85 Grizzlemaw1 3199",
-				["desc"] = "3198:0 ",
-			},
-			[54034585] = {
-				["icon"] = 1,
-				["title"] = "gh84 GrizzlyHills42 3198",
-				["desc"] = "3199:0 3197:0 3200:0 3202:0 3132:0 ",
-			},
-			[11267358] = {
-				["icon"] = 1,
-				["title"] = "gh44 GrizzlyHills13 3158",
-				["desc"] = "3159:0 3157:0 3160:0 ",
-			},
-			[12387976] = {
-				["icon"] = 1,
-				["title"] = "gh49 VentureBay3 3163",
-				["desc"] = "3161:0 3159:0 3158:0 ",
-			},
-			[12903066] = {
-				["icon"] = 1,
-				["title"] = "gh37 GrizzlyHills7 3151",
-				["desc"] = "3152:0 3150:0 3153:0 2946:0 ",
-			},
-			[35514314] = {
-				["icon"] = 1,
-				["title"] = "gh28 BlueSkyLoggingGrounds2 3142",
-				["desc"] = "3141:0 3176:0 3143:0 ",
-			},
-			[73563418] = {
-				["icon"] = 1,
-				["title"] = "gh14 HarkorsCamp1 3128",
-				["desc"] = "3129:0 3209:0 3125:0 ",
-			},
-			[63916166] = {
-				["icon"] = 1,
-				["title"] = "gh107 HeartsBloodShrine2 3221",
-				["desc"] = "3220:0 3219:0 3222:0 ",
-			},
-			[77995905] = {
-				["icon"] = 1,
-				["title"] = "gh99 DunArgol1 3213",
-				["desc"] = "3212:0 3214:0 ",
-			},
-			[10457639] = {
-				["icon"] = 1,
-				["title"] = "gh45 GrizzlyHills14 3159",
-				["desc"] = "3158:0 3163:0 ",
-			},
-			[35786750] = {
-				["icon"] = 1,
-				["title"] = "gh79 GrizzlyHills39 3193",
-				["desc"] = "3191:0 3180:0 3190:0 3192:0 ",
-			},
-			[29454738] = {
-				["icon"] = 1,
-				["title"] = "gh58 VordrassilsTears1 3172",
-				["desc"] = "3173:0 3171:0 3145:0 ",
-			},
-			[81466025] = {
-				["icon"] = 1,
-				["title"] = "gh100 DunArgol2 3214",
-				["desc"] = "3213:0 ",
-			},
-			[33807597] = {
-				["icon"] = 1,
-				["title"] = "gh78 GrizzlyHills38 3192",
-				["desc"] = "3190:0 3191:0 3193:0 3250:0 ",
-			},
-			[12906209] = {
-				["icon"] = 1,
-				["title"] = "gh42 GrizzlyHills12 3156",
-				["desc"] = "3157:0 3155:0 3154:0 ",
-			},
-			[44772815] = {
-				["icon"] = 1,
-				["title"] = "gh25 HeartwoodTradingPost1 3139",
-				["desc"] = "3140:0 3138:0 3134:0 3083:0 ",
-			},
-			[70473611] = {
-				["icon"] = 1,
-				["title"] = "gh15 ThePathofIron3 3129",
-				["desc"] = "3128:0 3208:0 3125:0 ",
-			},
-			[21345152] = {
-				["icon"] = 1,
-				["title"] = "gh52 GrizzlyHills17 3166",
-				["desc"] = "3165:0 3167:0 3173:0 3183:0 ",
-			},
-			[50552439] = {
-				["icon"] = 1,
-				["title"] = "gh21 GrizzlyHills4 3135",
-				["desc"] = "3136:0 3134:0 3137:0 ",
-			},
-			[25403433] = {
-				["icon"] = 1,
-				["title"] = "gh33 Silverbrook1 3147",
-				["desc"] = "3148:0 3146:0 3149:0 ",
-			},
-			[75966228] = {
-				["icon"] = 1,
-				["title"] = "gh102 DunArgol4 3216",
-				["desc"] = "3215:0 ",
-			},
-			[70424875] = {
-				["icon"] = 1,
-				["title"] = "gh93 GrizzlyHills44 3207",
-				["desc"] = "3208:0 3211:0 3206:0 ",
-			},
-			[56054913] = {
-				["icon"] = 1,
-				["title"] = "gh83 GrizzlyHills41 3197",
-				["desc"] = "3198:0 3196:0 3203:0 ",
-			},
-			[73605146] = {
-				["icon"] = 1,
-				["title"] = "gh97 ThePathofIron5 3211",
-				["desc"] = "3207:0 3210:0 3224:0 3212:0 3217:0 ",
-			},
-			[50454695] = {
-				["icon"] = 1,
-				["title"] = "gh86 Grizzlemaw2 3200",
-				["desc"] = "3201:0 3196:0 3198:0 ",
-			},
-			[22733076] = {
-				["icon"] = 1,
-				["title"] = "gh35 Silverbrook3 3149",
-				["desc"] = "3148:0 3147:0 3150:0 3170:0 ",
-			},
-			[27463513] = {
-				["icon"] = 1,
-				["title"] = "gh32 GrizzlyHills6 3146",
-				["desc"] = "3147:0 3148:0 3145:0 ",
-			},
-			[65355524] = {
-				["icon"] = 1,
-				["title"] = "gh104 GrizzlyHills48 3218",
-				["desc"] = "3206:0 3219:0 3220:0 ",
-			},
-			[60291720] = {
-				["icon"] = 1,
-				["title"] = "gh1 GrizzlyHills1 3115",
-				["desc"] = "3118:0 3116:0 3092:0 ",
-			},
-			[65695127] = {
-				["icon"] = 1,
-				["title"] = "gh92 SolsticeVillage2 3206",
-				["desc"] = "3218:0 3204:0 3207:0 ",
-			},
-			[42883565] = {
-				["icon"] = 1,
-				["title"] = "gh26 DrakatalPassage1 3140",
-				["desc"] = "3177:0 3139:0 3138:0 3141:0 ",
-			},
-			[23118075] = {
-				["icon"] = 1,
-				["title"] = "gh73 GrizzlyHills34 3187",
-				["desc"] = "3162:0 3186:0 3188:0 ",
-			},
-			[70484344] = {
-				["icon"] = 1,
-				["title"] = "gh94 GrizzlyHills45 3208",
-				["desc"] = "3207:0 3209:0 3129:0 ",
-			},
-			[26485711] = {
-				["icon"] = 1,
-				["title"] = "gh69 GrizzlyHills30 3183",
-				["desc"] = "3182:0 3184:0 3173:0 3166:0 3165:0 ",
-			},
-			[25266597] = {
-				["icon"] = 1,
-				["title"] = "gh70 GrizzlyHills31 3184",
-				["desc"] = "3185:0 3189:0 3183:0 ",
-			},
-			[62584112] = {
-				["icon"] = 1,
-				["title"] = "gh17 SolsticeVillage1 3131",
-				["desc"] = "3205:0 3130:0 3132:0 ",
-			},
-			[61712639] = {
-				["icon"] = 1,
-				["title"] = "gh9 ThePathofIron1 3123",
-				["desc"] = "3118:0 3122:0 3119:0 ",
-			},
-			[39185645] = {
-				["icon"] = 1,
-				["title"] = "gh80 ForestsEdgePost1 3194",
-				["desc"] = "3195:0 3179:0 3175:0 3180:0 3178:0 ",
-			},
-			[31045535] = {
-				["icon"] = 1,
-				["title"] = "gh68 GrizzlyHills29 3182",
-				["desc"] = "3174:0 3175:0 3173:0 3183:0 ",
-			},
-			[63482282] = {
-				["icon"] = 1,
-				["title"] = "gh5 ThorModan1 3119",
-				["desc"] = "3118:0 3121:0 3123:0 3120:0 ",
-			},
-			[19463964] = {
-				["icon"] = 1,
-				["title"] = "gh54 GrizzlyHills19 3168",
-				["desc"] = "3169:0 3170:0 3167:0 ",
-			},
-			[52082886] = {
-				["icon"] = 1,
-				["title"] = "gh20 WestfallBrigadeEncampment2 3134",
-				["desc"] = "3136:0 3135:0 3138:0 ",
-			},
-			[26533218] = {
-				["icon"] = 1,
-				["title"] = "gh34 Silverbrook2 3148",
-				["desc"] = "3147:0 3146:0 3149:0 ",
-			},
-			[73726051] = {
-				["icon"] = 1,
-				["title"] = "gh101 DunArgol3 3215",
-				["desc"] = "3216:0 3217:0 3212:0 ",
-			},
-			[20236052] = {
-				["icon"] = 1,
-				["title"] = "gh51 GrizzlyHills16 3165",
-				["desc"] = "3155:0 3166:0 3164:0 3183:0 ",
-			},
-			[36706294] = {
-				["icon"] = 1,
-				["title"] = "gh66 GrizzlyHills27 3180",
-				["desc"] = "3193:0 3181:0 3194:0 ",
-			},
-			[29518185] = {
-				["icon"] = 1,
-				["title"] = "gh74 VentureBay5 3188",
-				["desc"] = "3187:0 3250:0 3260:0 ",
-			},
-			[66542428] = {
-				["icon"] = 1,
-				["title"] = "gh7 ThorModan3 3121",
-				["desc"] = "3119:0 ",
-			},
-			[31655050] = {
-				["icon"] = 1,
-				["title"] = "gh60 GrizzlyHills22 3174",
-				["desc"] = "3173:0 3182:0 3175:0 ",
-			},
-			[78304974] = {
-				["icon"] = 1,
-				["title"] = "gh110 TheForgottenOverlook1 3224",
-				["desc"] = "3210:0 3211:0 3212:0 3225:0 ",
-			},
-			[73784123] = {
-				["icon"] = 1,
-				["title"] = "gh95 GrizzlyHills46 3209",
-				["desc"] = "3210:0 3208:0 3128:0 ",
-			},
-			[26376884] = {
-				["icon"] = 1,
-				["title"] = "gh75 GrizzlyHills35 3189",
-				["desc"] = "3185:0 3184:0 3190:0 ",
-			},
-			[17226713] = {
-				["icon"] = 1,
-				["title"] = "gh50 VentureBay4 3164",
-				["desc"] = "3160:0 3157:0 3165:0 3186:0 3185:0 ",
-			},
-			[57043307] = {
-				["icon"] = 1,
-				["title"] = "gh19 WhitePineTradingPost1 3133",
-				["desc"] = "3122:0 3132:0 3202:0 ",
-			},
-			[71402395] = {
-				["icon"] = 1,
-				["title"] = "gh12 DrakiljinRuins2 3126",
-				["desc"] = "3127:0 3125:0 ",
-			},
-			[12264380] = {
-				["icon"] = 1,
-				["title"] = "gh39 GrizzlyHills9 3153",
-				["desc"] = "3152:0 3154:0 3151:0 ",
-			},
-			[11456683] = {
-				["icon"] = 1,
-				["title"] = "gh43 RuinsofDrakZin1 3157",
-				["desc"] = "3156:0 3158:0 3164:0 2954:0 ",
-			},
-			[75194569] = {
-				["icon"] = 1,
-				["title"] = "gh96 ThePathofIron4 3210",
-				["desc"] = "3209:0 3211:0 3224:0 ",
-			},
-			[76145695] = {
-				["icon"] = 1,
-				["title"] = "gh98 GrizzlyHills47 3212",
-				["desc"] = "3211:0 3213:0 3215:0 ",
-			},
-			[34673286] = {
-				["icon"] = 1,
-				["title"] = "gh30 BlueSkyLoggingGrounds4 3144",
-				["desc"] = "3143:0 3142:0 3145:0 ",
-			},
-			[60622288] = {
-				["icon"] = 1,
-				["title"] = "gh4 GrizzlyHills2 3118",
-				["desc"] = "3119:0 3123:0 3115:0 ",
-			},
-			[66393052] = {
-				["icon"] = 1,
-				["title"] = "gh10 ThePathofIron2 3124",
-				["desc"] = "3122:0 3130:0 3129:0 3125:0 ",
-			},
-			[23644426] = {
-				["icon"] = 1,
-				["title"] = "gh53 GrizzlyHills18 3167",
-				["desc"] = "3170:0 3171:0 3166:0 ",
-			},
-			[19078281] = {
-				["icon"] = 1,
-				["title"] = "gh48 VentureBay2 3162",
-				["desc"] = "3187:0 3161:0 ",
-			},
-			[64883557] = {
-				["icon"] = 1,
-				["title"] = "gh16 GrizzlyHills3 3130",
-				["desc"] = "3124:0 3129:0 3131:0 ",
 			},
 		},
 		["BoreanTundra"] = {
@@ -2960,15 +3220,15 @@ HandyNotes_HandyNotesDB = {
 				["title"] = "bt2 BoreanTundra1 2704",
 				["desc"] = "2703:0 2711:0 2705:0 ",
 			},
-			[54401659] = {
-				["icon"] = 1,
-				["title"] = "bt35 BoreanTundra10 2737",
-				["desc"] = "2735:0 2732:0 2736:0 ",
-			},
 			[44501513] = {
 				["icon"] = 1,
 				["title"] = "bt31 BoreanTundra9 2733",
 				["desc"] = "2734:0 2735:0 2732:0 ",
+			},
+			[54401659] = {
+				["icon"] = 1,
+				["title"] = "bt35 BoreanTundra10 2737",
+				["desc"] = "2735:0 2732:0 2736:0 ",
 			},
 			[90433780] = {
 				["icon"] = 1,
@@ -3229,10 +3489,10 @@ HandyNotes_HandyNotesDB = {
 				["title"] = "BL_elemsS 604",
 				["desc"] = "603:0 ",
 			},
-			[12998601] = {
-				["title"] = "CampCaggS 596",
+			[67172170] = {
 				["icon"] = 1,
-				["desc"] = "595:0 597:0 ",
+				["title"] = "CampKosh 618",
+				["desc"] = "617:0 619:0 ",
 			},
 			[77403762] = {
 				["icon"] = 1,
@@ -3249,15 +3509,15 @@ HandyNotes_HandyNotesDB = {
 				["title"] = "DustbowlW 600",
 				["desc"] = "595:0 598:0 599:0 601:0 602:0 ",
 			},
+			[47003648] = {
+				["icon"] = 1,
+				["title"] = "BL_hubN2 620",
+				["desc"] = "25:0 601:0 608:0 609:0 619:0 ",
+			},
 			[11834287] = {
 				["icon"] = 1,
 				["title"] = "KargathE 598",
 				["desc"] = "600:0 599:0 24:0 ",
-			},
-			[63396932] = {
-				["icon"] = 1,
-				["title"] = "CampBoff 607",
-				["desc"] = "603:0 605:0 608:0 609:0 ",
 			},
 			[64582841] = {
 				["icon"] = 1,
@@ -3299,10 +3559,10 @@ HandyNotes_HandyNotesDB = {
 				["title"] = "LethlorRavineEntranceS 610",
 				["desc"] = "609:0 611:0 ",
 			},
-			[47003648] = {
+			[63396932] = {
 				["icon"] = 1,
-				["title"] = "BL_hubN2 620",
-				["desc"] = "25:0 601:0 608:0 609:0 619:0 ",
+				["title"] = "CampBoff 607",
+				["desc"] = "603:0 605:0 608:0 609:0 ",
 			},
 			[49626895] = {
 				["icon"] = 1,
@@ -3314,10 +3574,10 @@ HandyNotes_HandyNotesDB = {
 				["title"] = "LethlorRavineC 612",
 				["desc"] = "611:0 613:0 ",
 			},
-			[67172170] = {
+			[12998601] = {
+				["title"] = "CampCaggS 596",
 				["icon"] = 1,
-				["title"] = "CampKosh 618",
-				["desc"] = "617:0 619:0 ",
+				["desc"] = "595:0 597:0 ",
 			},
 		},
 		["Darkshore"] = {
@@ -3451,15 +3711,15 @@ HandyNotes_HandyNotesDB = {
 				["icon"] = 1,
 				["desc"] = "1011:0 1012:0 1014:0 ",
 			},
-			[42114043] = {
-				["title"] = "DarkshoreNRoad1 1012",
+			[43343468] = {
+				["title"] = "DarkshoreNRoad2 1014",
 				["icon"] = 1,
-				["desc"] = "59:0 1011:0 1013:0 1014:0 ",
+				["desc"] = "1012:0 1013:0 1015:0 ",
 			},
-			[36508288] = {
-				["title"] = "RemtravelsExcavation 999",
+			[36704812] = {
+				["title"] = "LongWash1 994",
 				["icon"] = 1,
-				["desc"] = "997:0 1000:0 95:0 94:0 ",
+				["desc"] = "59:0 993:0 995:0 1008:0 ",
 			},
 			[52602477] = {
 				["title"] = "DarkshoreNRoad6 1018",
@@ -3471,589 +3731,269 @@ HandyNotes_HandyNotesDB = {
 				["icon"] = 1,
 				["desc"] = "1014:0 1016:0 1022:0 ",
 			},
-			[41487601] = {
-				["title"] = "WindbendRiverS 95",
+			[55283623] = {
+				["title"] = "CliffspringFallsInside1 1020",
 				["icon"] = 1,
-				["desc"] = "996:0 999:0 1005:0 94:0 1006:0 ",
+				["desc"] = "96:0 ",
 			},
 			[36737604] = {
 				["title"] = "TwilightShore1 996",
 				["icon"] = 1,
 				["desc"] = "995:0 997:0 1005:0 95:0 ",
 			},
-			[55283623] = {
-				["title"] = "CliffspringFallsInside1 1020",
+			[41487601] = {
+				["title"] = "WindbendRiverS 95",
 				["icon"] = 1,
-				["desc"] = "96:0 ",
+				["desc"] = "996:0 999:0 1005:0 94:0 1006:0 ",
 			},
 			[57042747] = {
 				["title"] = "TowerOfAlthalaxx 1023",
 				["icon"] = 1,
 				["desc"] = "1018:0 1024:0 ",
 			},
-			[36704812] = {
-				["title"] = "LongWash1 994",
+			[36508288] = {
+				["title"] = "RemtravelsExcavation 999",
 				["icon"] = 1,
-				["desc"] = "59:0 993:0 995:0 1008:0 ",
+				["desc"] = "997:0 1000:0 95:0 94:0 ",
 			},
-			[43343468] = {
-				["title"] = "DarkshoreNRoad2 1014",
+			[42114043] = {
+				["title"] = "DarkshoreNRoad1 1012",
 				["icon"] = 1,
-				["desc"] = "1012:0 1013:0 1015:0 ",
-			},
-		},
-		["Redridge"] = {
-			[66804283] = {
-				["icon"] = 1,
-				["title"] = "StonewatchFork 687",
-				["desc"] = "686:0 685:0 688:0 689:0 690:0 ",
-			},
-			[3069586] = {
-				["title"] = "DuskwoodExitNE 792",
-				["icon"] = 1,
-				["desc"] = "694:0 791:0 ",
-			},
-			[28711240] = {
-				["icon"] = 1,
-				["title"] = "RendersRockInside 662",
-				["desc"] = "75:0 ",
-			},
-			[33822356] = {
-				["icon"] = 1,
-				["title"] = "RedridgeCanyons1 667",
-				["desc"] = "664:0 668:0 670:0 ",
-			},
-			[40874755] = {
-				["icon"] = 1,
-				["title"] = "EverstillN 673",
-				["desc"] = "665:0 ",
-			},
-			[52807252] = {
-				["icon"] = 1,
-				["title"] = "RedridgeS3 677",
-				["desc"] = "676:0 675:0 678:0 679:0 691:0 ",
-			},
-			[80956179] = {
-				["icon"] = 1,
-				["title"] = "RedridgeE5 684",
-				["desc"] = "680:0 683:0 ",
-			},
-			[77356385] = {
-				["icon"] = 1,
-				["title"] = "RedridgeE2 681",
-				["desc"] = "679:0 680:0 ",
-			},
-			[13935091] = {
-				["icon"] = 1,
-				["title"] = "RedridgeW 666",
-				["desc"] = "10:0 672:0 ",
-			},
-			[74378125] = {
-				["icon"] = 1,
-				["title"] = "RedridgeS4 679",
-				["desc"] = "677:0 680:0 681:0 ",
-			},
-			[21123874] = {
-				["icon"] = 1,
-				["title"] = "RedridgeCanyons4 670",
-				["desc"] = "667:0 668:0 669:0 77:0 ",
-			},
-			[55274424] = {
-				["icon"] = 1,
-				["title"] = "AlthersMillCenter 690",
-				["desc"] = "687:0 663:0 ",
-			},
-			[40563624] = {
-				["icon"] = 1,
-				["title"] = "RedridgeHub1 664",
-				["desc"] = "663:0 665:0 667:0 669:0 ",
-			},
-			[17331739] = {
-				["icon"] = 1,
-				["title"] = "RethbanCavernsInside 671",
-				["desc"] = "77:0 ",
-			},
-			[26722000] = {
-				["icon"] = 1,
-				["title"] = "RedridgeCanyons2 668",
-				["desc"] = "667:0 669:0 670:0 ",
-			},
-			[43087004] = {
-				["icon"] = 1,
-				["title"] = "RedridgeS2 676",
-				["desc"] = "675:0 677:0 ",
-			},
-			[33096413] = {
-				["icon"] = 1,
-				["title"] = "RedridgeBridgeS 672",
-				["desc"] = "665:0 666:0 674:0 675:0 ",
-			},
-			[87296163] = {
-				["icon"] = 1,
-				["title"] = "RedridgeE4 683",
-				["desc"] = "680:0 682:0 74:0 684:0 ",
-			},
-			[80357155] = {
-				["icon"] = 1,
-				["title"] = "RedridgeE1 680",
-				["desc"] = "679:0 681:0 682:0 683:0 684:0 ",
-			},
-			[10637216] = {
-				["icon"] = 1,
-				["title"] = "RedridgeExitW1 693",
-				["desc"] = "692:0 674:0 694:0 696:0 ",
-			},
-			[46312260] = {
-				["icon"] = 1,
-				["title"] = "RedridgeExitN 661",
-				["desc"] = "660:0 75:0 663:0 ",
-			},
-			[59896103] = {
-				["icon"] = 1,
-				["title"] = "EverstillE 691",
-				["desc"] = "677:0 ",
-			},
-			[28923943] = {
-				["icon"] = 1,
-				["title"] = "RedridgeCanyons3 669",
-				["desc"] = "668:0 664:0 670:0 ",
-			},
-			[23477225] = {
-				["icon"] = 1,
-				["title"] = "ThreeCorners 674",
-				["desc"] = "672:0 675:0 692:0 693:0 694:0 ",
-			},
-			[48733997] = {
-				["icon"] = 1,
-				["title"] = "AlthersMillEntrance 663",
-				["desc"] = "661:0 664:0 690:0 ",
-			},
-			[69185456] = {
-				["icon"] = 1,
-				["title"] = "StonewatchTop 689",
-				["desc"] = "687:0 688:0 678:0 ",
-			},
-			[76793508] = {
-				["icon"] = 1,
-				["title"] = "RedridgeNE 685",
-				["desc"] = "74:0 686:0 687:0 ",
-			},
-			[89037070] = {
-				["icon"] = 1,
-				["title"] = "RedridgeE3 682",
-				["desc"] = "680:0 683:0 ",
-			},
-			[66196171] = {
-				["icon"] = 1,
-				["title"] = "StonewatchS 678",
-				["desc"] = "677:0 689:0 ",
-			},
-			[17756201] = {
-				["icon"] = 1,
-				["title"] = "ThreeCornersCamp1 692",
-				["desc"] = "674:0 693:0 694:0 ",
-			},
-			[32867865] = {
-				["icon"] = 1,
-				["title"] = "RedridgeS1 675",
-				["desc"] = "672:0 674:0 676:0 677:0 ",
-			},
-			[75535127] = {
-				["icon"] = 1,
-				["title"] = "RedridgeE6 686",
-				["desc"] = "685:0 74:0 687:0 ",
-			},
-			[8928667] = {
-				["icon"] = 1,
-				["title"] = "RedridgeExitW2 694",
-				["desc"] = "692:0 674:0 693:0 695:0 792:0 ",
-			},
-			[32874922] = {
-				["icon"] = 1,
-				["title"] = "RedridgeBridgeN 665",
-				["desc"] = "664:0 10:0 672:0 673:0 ",
+				["desc"] = "59:0 1011:0 1013:0 1014:0 ",
 			},
 		},
-		["Dragonblight"] = {
-			[92066402] = {
-				["title"] = "db67 DragonspineTributary1 2954",
+		["Dustwallow"] = {
+			[41691146] = {
 				["icon"] = 1,
-				["desc"] = "2953:0 3157:0 ",
+				["title"] = "BlackhoofVillage 1874",
+				["desc"] = "102:0 1875:0 ",
 			},
-			[25716845] = {
-				["title"] = "db10 GlitteringStrand1 2897",
+			[37986742] = {
 				["icon"] = 1,
-				["desc"] = "2896:0 ",
+				["title"] = "DustwallowS1 1909",
+				["desc"] = "103:0 108:0 1908:0 233:0 105:0 ",
 			},
-			[70696887] = {
-				["title"] = "db41 NewHearthglen1 2928",
+			[54161238] = {
 				["icon"] = 1,
-				["desc"] = "2929:0 2927:0 2931:0 ",
+				["title"] = "DustwallowCoastN12 1895",
+				["desc"] = "1896:0 1894:0 1899:0 1900:0 ",
 			},
-			[44722107] = {
-				["title"] = "db27 KorkronVanguard1 2914",
+			[59546803] = {
 				["icon"] = 1,
-				["desc"] = "2913:0 2911:0 2912:0 ",
+				["title"] = "TidefuryCoveReal 104",
+				["desc"] = "106:0 1912:0 ",
 			},
-			[32074858] = {
-				["title"] = "db21 Dragonblight6 2908",
+			[57891843] = {
 				["icon"] = 1,
-				["desc"] = "2909:0 2892:0 2907:0 2898:0 ",
+				["title"] = "DustwallowCoastN9 1892",
+				["desc"] = "1879:0 1890:0 1891:0 ",
 			},
-			[23955137] = {
-				["title"] = "db5 Dragonblight3 2892",
+			[61723168] = {
 				["icon"] = 1,
-				["desc"] = "2895:0 2890:0 2893:0 2908:0 ",
+				["title"] = "DustwallowCoastN3 1886",
+				["desc"] = "1885:0 1887:0 1897:0 ",
 			},
-			[60901019] = {
-				["title"] = "db54 TheCrystalVice3 2941",
+			[62294166] = {
 				["icon"] = 1,
-				["desc"] = "2940:0 2964:0 ",
+				["title"] = "DustwallowN8 1882",
+				["desc"] = "109:0 54:0 1884:0 1912:0 ",
 			},
-			[67045731] = {
-				["title"] = "db46 TheDragonWastes13 2933",
+			[64814071] = {
 				["icon"] = 1,
-				["desc"] = "2959:0 2926:0 2932:0 ",
+				["title"] = "DustwallowCoastN1 1884",
+				["desc"] = "1882:0 1885:0 ",
 			},
-			[53435367] = {
-				["title"] = "db34 TheDragonWastes8 2921",
+			[47851511] = {
 				["icon"] = 1,
-				["desc"] = "2919:0 2920:0 2918:0 2961:0 ",
+				["title"] = "DustwallowN2 1876",
+				["desc"] = "1875:0 1877:0 ",
 			},
-			[77366461] = {
-				["title"] = "db71 Dragonblight29 2958",
+			[57143207] = {
 				["icon"] = 1,
-				["desc"] = "2931:0 2955:0 2957:0 ",
+				["title"] = "DustwallowN6 1880",
+				["desc"] = "110:0 1878:0 1879:0 1881:0 1887:0 ",
 			},
-			[70803291] = {
-				["title"] = "db56 TheDragonWastes20 2943",
+			[33064124] = {
 				["icon"] = 1,
-				["desc"] = "2942:0 2944:0 ",
+				["title"] = "DustwallowC1 1873",
+				["desc"] = "99:0 187:0 1903:0 1904:0 103:0 ",
 			},
-			[51552294] = {
-				["title"] = "db28 TheDragonWastes2 2915",
+			[59300957] = {
 				["icon"] = 1,
-				["desc"] = "2913:0 2938:0 2916:0 ",
+				["title"] = "DustwallowCoastN16 1899",
+				["desc"] = "1893:0 1895:0 1900:0 1901:0 ",
 			},
-			[30325917] = {
-				["title"] = "db11 LothalorWoodlands1 2898",
+			[51442517] = {
 				["icon"] = 1,
-				["desc"] = "2906:0 2895:0 2908:0 2892:0 2899:0 ",
+				["title"] = "DustwallowN4 1878",
+				["desc"] = "101:0 110:0 1877:0 1879:0 1880:0 ",
 			},
-			[43583006] = {
-				["title"] = "db24 Dragonblight9 2911",
+			[61922227] = {
 				["icon"] = 1,
-				["desc"] = "2912:0 2913:0 2914:0 2910:0 ",
+				["title"] = "DustwallowCoastN5 1888",
+				["desc"] = "1889:0 1887:0 1897:0 1898:0 ",
 			},
-			[37754930] = {
-				["title"] = "db75 Dragonblight33 2962",
+			[57317484] = {
 				["icon"] = 1,
-				["desc"] = "2907:0 2963:0 2961:0 ",
+				["title"] = "DustwallowS2 1910",
+				["desc"] = "106:0 107:0 ",
 			},
-			[67416786] = {
-				["title"] = "db40 TheDragonWastes12 2927",
+			[59081747] = {
 				["icon"] = 1,
-				["desc"] = "2928:0 2926:0 2933:0 ",
+				["title"] = "DustwallowCoastN7 1890",
+				["desc"] = "1889:0 1891:0 1892:0 1893:0 ",
 			},
-			[38027254] = {
-				["title"] = "db14 InduleVillage1 2901",
+			[62481799] = {
 				["icon"] = 1,
-				["desc"] = "2899:0 2902:0 2900:0 ",
+				["title"] = "DustwallowCoastN15 1898",
+				["desc"] = "1888:0 1889:0 1901:0 ",
 			},
-			[48437447] = {
-				["title"] = "db17 MoakiHarbor1 2904",
+			[53075685] = {
 				["icon"] = 1,
-				["desc"] = "2903:0 ",
+				["title"] = "DustwallowC5 1906",
+				["desc"] = "1905:0 1907:0 105:0 ",
 			},
-			[21724574] = {
-				["title"] = "db6 Dragonblight4 2893",
+			[45671866] = {
 				["icon"] = 1,
-				["desc"] = "2890:0 2894:0 ",
+				["title"] = "DustwallowN1 1875",
+				["desc"] = "101:0 102:0 1874:0 1876:0 1877:0 1902:0 ",
 			},
-			[62954003] = {
-				["title"] = "db48 TheDragonWastes15 2935",
+			[64832767] = {
 				["icon"] = 1,
-				["desc"] = "2960:0 2934:0 2918:0 2936:0 ",
+				["title"] = "DustwallowCoastN14 1897",
+				["desc"] = "1886:0 1887:0 1888:0 ",
 			},
-			[26513940] = {
-				["title"] = "db7 IcemistVillage1 2894",
+			[61572720] = {
 				["icon"] = 1,
-				["desc"] = "2893:0 ",
+				["title"] = "DustwallowCoastN4 1887",
+				["desc"] = "1880:0 1886:0 1888:0 1897:0 ",
 			},
-			[39693838] = {
-				["title"] = "db23 Dragonblight8 2910",
+			[42113576] = {
 				["icon"] = 1,
-				["desc"] = "2963:0 2917:0 2962:0 2911:0 2909:0 ",
+				["title"] = "DustwallowC2 1903",
+				["desc"] = "1873:0 1902:0 1904:0 1905:0 ",
 			},
-			[55722590] = {
-				["title"] = "db51 TheDragonWastes18 2938",
+			[63390738] = {
 				["icon"] = 1,
-				["desc"] = "2915:0 2937:0 2913:0 ",
+				["title"] = "DustwallowCoastN18 1901",
+				["desc"] = "1898:0 1899:0 1900:0 ",
 			},
-			[56074203] = {
-				["title"] = "db31 TheDragonWastes5 2918",
+			[46734741] = {
 				["icon"] = 1,
-				["desc"] = "2919:0 2935:0 2917:0 ",
+				["title"] = "DustwallowC4 1905",
+				["desc"] = "1903:0 1904:0 1906:0 1907:0 ",
 			},
-			[44827070] = {
-				["title"] = "db15 SnowfallGlade1 2902",
+			[60385592] = {
 				["icon"] = 1,
-				["desc"] = "2904:0 2903:0 2905:0 2901:0 ",
+				["title"] = "DustwallowCoastS1 1912",
+				["desc"] = "104:0 1882:0 ",
 			},
-			[69547458] = {
-				["title"] = "db43 NewHearthglen3 2930",
+			[54321639] = {
 				["icon"] = 1,
-				["desc"] = "2929:0 ",
+				["title"] = "DustwallowCoastN11 1894",
+				["desc"] = "1877:0 1891:0 1895:0 ",
 			},
-			[67304138] = {
-				["title"] = "db73 TheDragonWastes31 2960",
+			[57051718] = {
 				["icon"] = 1,
-				["desc"] = "2935:0 2959:0 2936:0 ",
+				["title"] = "DustwallowCoastN8 1891",
+				["desc"] = "1890:0 1892:0 1893:0 1894:0 ",
 			},
-			[18195108] = {
-				["title"] = "db3 Dragonblight2 2890",
+			[52087441] = {
 				["icon"] = 1,
-				["desc"] = "2889:0 2892:0 2891:0 2893:0 ",
+				["title"] = "OnyxiasLairReal 106",
+				["desc"] = "233:0 105:0 1910:0 1911:0 104:0 ",
 			},
-			[41484729] = {
-				["title"] = "db76 Dragonblight34 2963",
+			[59260768] = {
 				["icon"] = 1,
-				["desc"] = "2962:0 2961:0 2910:0 ",
+				["title"] = "DustwallowCoastN17 1900",
+				["desc"] = "1573:0 1574:0 1895:0 1899:0 1901:0 ",
 			},
-			[84082997] = {
-				["title"] = "db58 Dragonblight22 2945",
+			[63133703] = {
 				["icon"] = 1,
-				["desc"] = "2944:0 2946:0 2947:0 2948:0 ",
+				["title"] = "DustwallowCoastN2 1885",
+				["desc"] = "1884:0 1886:0 ",
 			},
-			[36945277] = {
-				["title"] = "db20 Dragonblight5 2907",
+			[45925669] = {
 				["icon"] = 1,
-				["desc"] = "2962:0 2906:0 2908:0 2961:0 ",
+				["title"] = "DustwallowC6 1907",
+				["desc"] = "1904:0 1905:0 1906:0 103:0 105:0 ",
 			},
-			[18876015] = {
-				["title"] = "db4 MoonrestGardens1 2891",
+			[43382597] = {
 				["icon"] = 1,
-				["desc"] = "2896:0 2890:0 ",
+				["title"] = "DustwallowN9 1902",
+				["desc"] = "100:0 101:0 102:0 1875:0 1903:0 ",
 			},
-			[46912504] = {
-				["title"] = "db26 TheDragonWastes1 2913",
+			[40594606] = {
 				["icon"] = 1,
-				["desc"] = "2914:0 2915:0 2911:0 ",
+				["title"] = "DustwallowC3 1904",
+				["desc"] = "99:0 1873:0 1903:0 1905:0 1907:0 103:0 ",
 			},
-			[62672670] = {
-				["title"] = "db50 TheDragonWastes17 2937",
+			[34656277] = {
 				["icon"] = 1,
-				["desc"] = "2939:0 2936:0 2938:0 ",
+				["title"] = "DustwallowC7 1908",
+				["desc"] = "103:0 108:0 1909:0 ",
 			},
-			[42622881] = {
-				["title"] = "db25 FordragonHold1 2912",
+			[66634555] = {
 				["icon"] = 1,
-				["desc"] = "2911:0 2913:0 2914:0 ",
+				["title"] = "TheramoreInn 1883",
+				["desc"] = "54:0 ",
 			},
-			[72266916] = {
-				["title"] = "db42 NewHearthglen2 2929",
+			[57572198] = {
 				["icon"] = 1,
-				["desc"] = "2928:0 2930:0 2931:0 ",
+				["title"] = "DustwallowN5 1879",
+				["desc"] = "110:0 1877:0 1878:0 1880:0 1892:0 ",
 			},
-			[43986134] = {
-				["title"] = "db18 SnowfallGlade3 2905",
+			[47028103] = {
 				["icon"] = 1,
-				["desc"] = "2961:0 2902:0 2906:0 2903:0 ",
+				["title"] = "DustwallowS3 1911",
+				["desc"] = "106:0 107:0 233:0 ",
 			},
-			[30007411] = {
-				["title"] = "db13 LothalorWoodlands3 2900",
+			[57921503] = {
 				["icon"] = 1,
-				["desc"] = "2901:0 2899:0 ",
+				["title"] = "DustwallowCoastN10 1893",
+				["desc"] = "1890:0 1891:0 1899:0 ",
 			},
-			[54256106] = {
-				["title"] = "db33 TheDragonWastes7 2920",
+			[60331842] = {
 				["icon"] = 1,
-				["desc"] = "2922:0 2921:0 2924:0 2919:0 ",
+				["title"] = "DustwallowCoastN6 1889",
+				["desc"] = "1888:0 1890:0 1898:0 ",
 			},
-			[64786298] = {
-				["title"] = "db39 TheDragonWastes11 2926",
+			[51441824] = {
 				["icon"] = 1,
-				["desc"] = "2924:0 2933:0 2927:0 ",
+				["title"] = "DustwallowN3 1877",
+				["desc"] = "101:0 110:0 1875:0 1876:0 1878:0 1879:0 1894:0 ",
 			},
-			[33094251] = {
-				["title"] = "db22 Dragonblight7 2909",
+			[28504717] = {
 				["icon"] = 1,
-				["desc"] = "2908:0 2894:0 2962:0 2910:0 ",
+				["title"] = "DWMExitW 1872",
+				["desc"] = "1596:0 99:0 ",
 			},
-			[24055840] = {
-				["title"] = "db8 MoonrestGardens2 2895",
+			[59453636] = {
 				["icon"] = 1,
-				["desc"] = "2896:0 2892:0 2891:0 2898:0 ",
+				["title"] = "DustwallowN7 1881",
+				["desc"] = "109:0 1880:0 ",
 			},
-			[77323300] = {
-				["title"] = "db57 Dragonblight21 2944",
+		},
+		["Kalimdor"] = {
+			[52375493] = {
 				["icon"] = 1,
-				["desc"] = "2943:0 2945:0 ",
+				["title"] = "BarrensWC3 1616",
+				["desc"] = "1615:0 1617:0 ",
 			},
-			[81536079] = {
-				["title"] = "db68 Dragonblight27 2955",
+			[51935454] = {
 				["icon"] = 1,
-				["desc"] = "2956:0 2952:0 2958:0 ",
+				["title"] = "BarrensWC2 1615",
+				["desc"] = "1614:0 1616:0 ",
 			},
-			[47343900] = {
-				["title"] = "db30 TheDragonWastes4 2917",
+			[51945500] = {
 				["icon"] = 1,
-				["desc"] = "2916:0 2910:0 2918:0 ",
+				["title"] = "BarrensWC1 1614",
+				["desc"] = "98:0 1615:0 ",
 			},
-			[86884443] = {
-				["title"] = "db62 Dragonblight24 2949",
+			[52865478] = {
 				["icon"] = 1,
-				["desc"] = "2948:0 2950:0 ",
-			},
-			[86315847] = {
-				["title"] = "db65 Dragonblight25 2952",
-				["icon"] = 1,
-				["desc"] = "2953:0 2955:0 2951:0 2950:0 ",
-			},
-			[77966168] = {
-				["title"] = "db69 Venomspite1 2956",
-				["icon"] = 1,
-				["desc"] = "2957:0 2955:0 ",
-			},
-			[35056672] = {
-				["title"] = "db12 LothalorWoodlands2 2899",
-				["icon"] = 1,
-				["desc"] = "2906:0 2901:0 2898:0 2900:0 ",
-			},
-			[36525950] = {
-				["title"] = "db19 LothalorWoodlands4 2906",
-				["icon"] = 1,
-				["desc"] = "2907:0 2899:0 2898:0 2905:0 ",
-			},
-			[59371441] = {
-				["title"] = "db53 TheCrystalVice2 2940",
-				["icon"] = 1,
-				["desc"] = "2941:0 2939:0 ",
-			},
-			[88604925] = {
-				["title"] = "db63 TheCarrionFields1 2950",
-				["icon"] = 1,
-				["desc"] = "2949:0 2951:0 2952:0 ",
-			},
-			[49823178] = {
-				["title"] = "db29 TheDragonWastes3 2916",
-				["icon"] = 1,
-				["desc"] = "2917:0 2911:0 2913:0 ",
-			},
-			[13095569] = {
-				["title"] = "db2 Dragonblight1 2889",
-				["icon"] = 1,
-				["desc"] = "2888:0 2890:0 ",
-			},
-			[75286499] = {
-				["title"] = "db44 NewHearthglen4 2931",
-				["icon"] = 1,
-				["desc"] = "2929:0 2958:0 2932:0 ",
-			},
-			[75226309] = {
-				["title"] = "db70 Dragonblight28 2957",
-				["icon"] = 1,
-				["desc"] = "2931:0 2956:0 ",
-			},
-			[52686262] = {
-				["title"] = "db35 TheDragonWastes9 2922",
-				["icon"] = 1,
-				["desc"] = "2920:0 2923:0 ",
-			},
-			[86003995] = {
-				["title"] = "db61 OnslaughtBaseCamp1 2948",
-				["icon"] = 1,
-				["desc"] = "2949:0 2945:0 2946:0 ",
-			},
-			[91283058] = {
-				["title"] = "db59 Dragonblight23 2946",
-				["icon"] = 1,
-				["desc"] = "2947:0 2945:0 2948:0 3151:0 ",
-			},
-			[64462342] = {
-				["title"] = "db52 TheCrystalVice1 2939",
-				["icon"] = 1,
-				["desc"] = "2937:0 2936:0 2942:0 2940:0 ",
-			},
-			[62604990] = {
-				["title"] = "db47 TheDragonWastes14 2934",
-				["icon"] = 1,
-				["desc"] = "2959:0 2935:0 ",
-			},
-			[23286240] = {
-				["title"] = "db9 MoonrestGardens3 2896",
-				["icon"] = 1,
-				["desc"] = "2895:0 2891:0 2897:0 ",
-			},
-			[10855392] = {
-				["title"] = "db1 ColdwindPass1 2888",
-				["icon"] = 1,
-				["desc"] = "2889:0 2721:0 ",
-			},
-			[56515197] = {
-				["title"] = "db32 TheDragonWastes6 2919",
-				["icon"] = 1,
-				["desc"] = "2921:0 2918:0 2920:0 ",
-			},
-			[58417119] = {
-				["title"] = "db38 TheDragonWastes10 2925",
-				["icon"] = 1,
-				["desc"] = "2924:0 2926:0 ",
-			},
-			[50986717] = {
-				["title"] = "db36 MoakiHarbor2 2923",
-				["icon"] = 1,
-				["desc"] = "2903:0 2922:0 ",
-			},
-			[60026221] = {
-				["title"] = "db37 PathoftheTitans1 2924",
-				["icon"] = 1,
-				["desc"] = "2926:0 2920:0 2925:0 ",
-			},
-			[89046292] = {
-				["title"] = "db66 Dragonblight26 2953",
-				["icon"] = 1,
-				["desc"] = "2954:0 2952:0 ",
-			},
-			[70256299] = {
-				["title"] = "db45 Dragonblight10 2932",
-				["icon"] = 1,
-				["desc"] = "2933:0 2931:0 ",
-			},
-			[83785119] = {
-				["title"] = "db64 TheCarrionFields2 2951",
-				["icon"] = 1,
-				["desc"] = "2950:0 2952:0 ",
-			},
-			[71492787] = {
-				["title"] = "db55 TheDragonWastes19 2942",
-				["icon"] = 1,
-				["desc"] = "2943:0 2936:0 ",
-			},
-			[67193114] = {
-				["title"] = "db49 TheDragonWastes16 2936",
-				["icon"] = 1,
-				["desc"] = "2942:0 2960:0 2937:0 2935:0 ",
-			},
-			[48996693] = {
-				["title"] = "db16 SnowfallGlade2 2903",
-				["icon"] = 1,
-				["desc"] = "2923:0 2904:0 2902:0 2905:0 ",
-			},
-			[88752393] = {
-				["title"] = "db60 Jinthakalar1 2947",
-				["icon"] = 1,
-				["desc"] = "2946:0 2945:0 3056:0 ",
-			},
-			[66154986] = {
-				["title"] = "db72 TheDragonWastes30 2959",
-				["icon"] = 1,
-				["desc"] = "2934:0 2933:0 2960:0 ",
-			},
-			[43165598] = {
-				["title"] = "db74 Dragonblight32 2961",
-				["icon"] = 1,
-				["desc"] = "2905:0 2963:0 2907:0 2921:0 ",
+				["title"] = "BarrensWC4 1617",
+				["desc"] = "1616:0 ",
 			},
 		},
 		["WesternPlaguelands"] = {
@@ -4424,10 +4364,10 @@ HandyNotes_HandyNotesDB = {
 				["title"] = "DesolaceS6 1801",
 				["desc"] = "1800:0 1802:0 1803:0 ",
 			},
-			[53045370] = {
+			[63637839] = {
 				["icon"] = 1,
-				["title"] = "DesolaceC21 1767",
-				["desc"] = "1766:0 1768:0 ",
+				["title"] = "DesolaceC15 1761",
+				["desc"] = "1760:0 1762:0 1764:0 1777:0 1811:0 1813:0 ",
 			},
 			[68381736] = {
 				["icon"] = 1,
@@ -4454,10 +4394,10 @@ HandyNotes_HandyNotesDB = {
 				["title"] = "DesolaceC6 1752",
 				["desc"] = "1751:0 1753:0 ",
 			},
-			[63637839] = {
+			[53045370] = {
 				["icon"] = 1,
-				["title"] = "DesolaceC15 1761",
-				["desc"] = "1760:0 1762:0 1764:0 1777:0 1811:0 1813:0 ",
+				["title"] = "DesolaceC21 1767",
+				["desc"] = "1766:0 1768:0 ",
 			},
 			[49507583] = {
 				["icon"] = 1,
@@ -4564,20 +4504,20 @@ HandyNotes_HandyNotesDB = {
 				["title"] = "DesolaceC3 1749",
 				["desc"] = "1747:0 129:0 1750:0 ",
 			},
-			[56837398] = {
+			[70393255] = {
 				["icon"] = 1,
-				["title"] = "DesolaceS14 1810",
-				["desc"] = "1777:0 1808:0 1811:0 ",
+				["title"] = "DesolaceN18 1723",
+				["desc"] = "1711:0 1712:0 1720:0 1722:0 1744:0 1745:0 ",
 			},
 			[31808149] = {
 				["icon"] = 1,
 				["title"] = "DesolaceC49 1795",
 				["desc"] = "1794:0 1793:0 1796:0 1797:0 ",
 			},
-			[70393255] = {
+			[56837398] = {
 				["icon"] = 1,
-				["title"] = "DesolaceN18 1723",
-				["desc"] = "1711:0 1712:0 1720:0 1722:0 1744:0 1745:0 ",
+				["title"] = "DesolaceS14 1810",
+				["desc"] = "1777:0 1808:0 1811:0 ",
 			},
 			[38732310] = {
 				["icon"] = 1,
@@ -4715,416 +4655,371 @@ HandyNotes_HandyNotesDB = {
 				["desc"] = "1757:0 ",
 			},
 		},
-		["Tanaris"] = {
-			[39444794] = {
-				["title"] = "Tanaris37 2184",
+		["UngoroCrater"] = {
+			[33722230] = {
+				["title"] = "Ungoro23 2243",
 				["icon"] = 1,
-				["desc"] = "2173:0 2174:0 2185:0 2186:0 2187:0 ",
+				["desc"] = "2242:0 2244:0 2271:0 ",
 			},
-			[55627768] = {
-				["title"] = "Tanaris54 2201",
+			[38463027] = {
+				["title"] = "Ungoro54 2274",
 				["icon"] = 1,
-				["desc"] = "2199:0 ",
+				["desc"] = "2271:0 2273:0 2275:0 ",
 			},
-			[66813793] = {
-				["title"] = "WavestriderBeachReal 113",
+			[45126364] = {
+				["title"] = "Ungoro44 2264",
 				["icon"] = 1,
-				["desc"] = "2157:0 2158:0 2159:0 2160:0 ",
+				["desc"] = "2262:0 2263:0 2265:0 2276:0 ",
 			},
-			[55784221] = {
-				["title"] = "Tanaris14 2161",
+			[51484573] = {
+				["title"] = "Ungoro62 2282",
 				["icon"] = 1,
-				["desc"] = "2148:0 2158:0 2160:0 2162:0 2163:0 2164:0 2165:0 ",
+				["desc"] = "2281:0 2283:0 ",
 			},
-			[37272433] = {
-				["title"] = "Tanaris22 2169",
+			[47178690] = {
+				["title"] = "Ungoro11 2231",
 				["icon"] = 1,
-				["desc"] = "2167:0 2168:0 2170:0 2171:0 ",
+				["desc"] = "2229:0 ",
 			},
-			[29925137] = {
-				["title"] = "Tanaris36 2183",
+			[34543808] = {
+				["title"] = "Ungoro53 2273",
 				["icon"] = 1,
-				["desc"] = "2175:0 2182:0 2188:0 2189:0 2190:0 ",
+				["desc"] = "2240:0 2241:0 2242:0 2274:0 2275:0 ",
 			},
-			[42655380] = {
-				["title"] = "Tanaris40 2187",
+			[47855309] = {
+				["title"] = "Ungoro57 2277",
 				["icon"] = 1,
-				["desc"] = "2173:0 2184:0 2185:0 2186:0 ",
+				["desc"] = "2276:0 2278:0 2286:0 ",
 			},
-			[56556461] = {
-				["title"] = "Tanaris57 2204",
+			[41757688] = {
+				["title"] = "Ungoro12 2232",
 				["icon"] = 1,
-				["desc"] = "2197:0 2199:0 2200:0 2205:0 2209:0 ",
+				["desc"] = "2228:0 2229:0 2233:0 2234:0 2262:0 ",
 			},
-			[46532772] = {
-				["title"] = "Tanaris19 2166",
+			[43147126] = {
+				["title"] = "Ungoro42 2262",
 				["icon"] = 1,
-				["desc"] = "2144:0 2145:0 2146:0 2165:0 2167:0 2170:0 2172:0 ",
+				["desc"] = "2229:0 2232:0 2234:0 2263:0 2264:0 ",
 			},
-			[68474137] = {
-				["title"] = "Tanaris12 2159",
+			[44151146] = {
+				["title"] = "Ungoro25 2245",
 				["icon"] = 1,
-				["desc"] = "113:0 2160:0 2210:0 ",
+				["desc"] = "111:0 2244:0 2246:0 ",
 			},
-			[67442309] = {
-				["title"] = "Tanaris8 2155",
+			[63292468] = {
+				["title"] = "Ungoro31 2251",
 				["icon"] = 1,
-				["desc"] = "2153:0 2154:0 2156:0 ",
+				["desc"] = "112:0 2249:0 2252:0 2253:0 2269:0 2270:0 ",
 			},
-			[57412472] = {
-				["title"] = "Tanaris2 2149",
+			[20573957] = {
+				["title"] = "Ungoro19 2239",
 				["icon"] = 1,
-				["desc"] = "2144:0 2148:0 2150:0 2151:0 2152:0 ",
+				["desc"] = "2238:0 ",
 			},
-			[49562843] = {
-				["title"] = "GadgetzanA1 2145",
+			[40664480] = {
+				["title"] = "Ungoro55 2275",
 				["icon"] = 1,
-				["desc"] = "2143:0 2146:0 2165:0 2166:0 ",
+				["desc"] = "2240:0 2271:0 2273:0 2274:0 2276:0 ",
 			},
-			[42442325] = {
-				["title"] = "Tanaris20 2167",
+			[47434986] = {
+				["title"] = "Ungoro28 2278",
 				["icon"] = 1,
-				["desc"] = "2166:0 2168:0 2169:0 2170:0 ",
+				["desc"] = "2277:0 ",
 			},
-			[56806922] = {
-				["title"] = "Tanaris55 2202",
+			[50777703] = {
+				["title"] = "Ungoro9 2229",
 				["icon"] = 1,
-				["desc"] = "2200:0 ",
+				["desc"] = "2227:0 2228:0 2230:0 2231:0 2232:0 2261:0 2262:0 2265:0 ",
 			},
-			[58786004] = {
-				["title"] = "Tanaris62 2209",
+			[25554453] = {
+				["title"] = "Ungoro18 2238",
 				["icon"] = 1,
-				["desc"] = "2163:0 2204:0 2205:0 2206:0 2208:0 ",
+				["desc"] = "2236:0 2239:0 2240:0 ",
 			},
-			[32217652] = {
-				["title"] = "Tanaris46 2193",
+			[49725359] = {
+				["title"] = "Ungoro66 2286",
 				["icon"] = 1,
-				["desc"] = "2192:0 114:0 2194:0 ",
+				["desc"] = "2277:0 2287:0 ",
 			},
-			[31156964] = {
-				["title"] = "Tanaris45 2192",
+			[54728601] = {
+				["title"] = "Ungoro6 2226",
 				["icon"] = 1,
-				["desc"] = "2189:0 2190:0 2191:0 2193:0 2194:0 ",
+				["desc"] = "2225:0 2227:0 2228:0 2261:0 ",
 			},
-			[34644535] = {
-				["title"] = "Tanaris33 2180",
+			[45265292] = {
+				["title"] = "Ungoro56 2276",
 				["icon"] = 1,
-				["desc"] = "2181:0 2179:0 ",
+				["desc"] = "2263:0 2264:0 2275:0 2277:0 ",
 			},
-			[56547060] = {
-				["title"] = "Tanaris53 2200",
+			[60143630] = {
+				["title"] = "Ungoro49 2269",
 				["icon"] = 1,
-				["desc"] = "2199:0 2202:0 2203:0 2204:0 ",
+				["desc"] = "2249:0 2251:0 2253:0 2268:0 2270:0 ",
 			},
-			[60334890] = {
-				["title"] = "Tanaris15 2162",
+			[50054803] = {
+				["title"] = "Ungoro63 2283",
 				["icon"] = 1,
-				["desc"] = "2160:0 2161:0 2163:0 2206:0 ",
+				["desc"] = "2282:0 2284:0 2285:0 ",
 			},
-			[35323327] = {
-				["title"] = "Tanaris24 2171",
+			[25865640] = {
+				["title"] = "Ungoro16 2236",
 				["icon"] = 1,
-				["desc"] = "2169:0 2170:0 2172:0 2174:0 2175:0 ",
+				["desc"] = "2235:0 2237:0 2238:0 ",
 			},
-			[37523974] = {
-				["title"] = "Tanaris27 2174",
+			[70723519] = {
+				["title"] = "Ungoro33 2253",
 				["icon"] = 1,
-				["desc"] = "2171:0 2172:0 2173:0 2175:0 2179:0 2182:0 2184:0 ",
+				["desc"] = "2251:0 2252:0 2254:0 2267:0 2269:0 ",
 			},
-			[33596317] = {
-				["title"] = "Tanaris43 2190",
+			[53095081] = {
+				["title"] = "Ungoro67 2287",
 				["icon"] = 1,
-				["desc"] = "2183:0 2185:0 2186:0 2189:0 2192:0 2194:0 ",
+				["desc"] = "2286:0 2288:0 ",
 			},
-			[51042951] = {
-				["title"] = "GadgetzanA2 2146",
+			[52924545] = {
+				["title"] = "Ungoro61 2281",
 				["icon"] = 1,
-				["desc"] = "2145:0 52:0 2147:0 2148:0 2165:0 2166:0 ",
+				["desc"] = "2280:0 2282:0 ",
 			},
-			[40155863] = {
-				["title"] = "Tanaris39 2186",
+			[28672111] = {
+				["title"] = "Ungoro69 2289",
 				["icon"] = 1,
-				["desc"] = "2184:0 2185:0 2187:0 2190:0 2194:0 2196:0 ",
+				["desc"] = "2242:0 2290:0 ",
 			},
-			[44514308] = {
-				["title"] = "Tanaris26 2173",
+			[46231383] = {
+				["title"] = "Ungoro27 2247",
 				["icon"] = 1,
-				["desc"] = "2164:0 2165:0 2172:0 2174:0 2184:0 2187:0 ",
+				["desc"] = "2244:0 2246:0 2248:0 ",
 			},
-			[66892741] = {
-				["title"] = "Tanaris9 2156",
+			[67467382] = {
+				["title"] = "Ungoro40 2260",
 				["icon"] = 1,
-				["desc"] = "2153:0 2155:0 2157:0 ",
+				["desc"] = "2223:0 2225:0 2259:0 2261:0 2266:0 ",
 			},
-			[35655038] = {
-				["title"] = "Tanaris35 2182",
+			[75404468] = {
+				["title"] = "Ungoro34 2254",
 				["icon"] = 1,
-				["desc"] = "2174:0 2179:0 2183:0 2185:0 ",
+				["desc"] = "2253:0 2255:0 2256:0 2267:0 ",
 			},
-			[52542795] = {
-				["title"] = "GadgetzanS 2147",
+			[31622706] = {
+				["title"] = "Ungoro22 2242",
 				["icon"] = 1,
-				["desc"] = "52:0 2144:0 2146:0 ",
+				["desc"] = "2241:0 2243:0 2273:0 2289:0 ",
 			},
-			[33114332] = {
-				["title"] = "Tanaris31 2178",
+			[34767351] = {
+				["title"] = "Ungoro14 2234",
 				["icon"] = 1,
-				["desc"] = "2175:0 ",
+				["desc"] = "2232:0 2233:0 2235:0 2262:0 2263:0 ",
 			},
-			[33014674] = {
-				["title"] = "Tanaris32 2179",
+			[36366316] = {
+				["title"] = "Ungoro43 2263",
 				["icon"] = 1,
-				["desc"] = "2174:0 2175:0 2180:0 2181:0 2182:0 ",
+				["desc"] = "2234:0 2235:0 2262:0 2264:0 2276:0 ",
 			},
-			[66295801] = {
-				["title"] = "Tanaris60 2207",
+			[42651583] = {
+				["title"] = "Ungoro24 2244",
 				["icon"] = 1,
-				["desc"] = "2206:0 2208:0 2371:0 ",
+				["desc"] = "2243:0 2245:0 2247:0 ",
 			},
-			[27827041] = {
-				["title"] = "Tanaris44 2191",
+			[46922921] = {
+				["title"] = "Ungoro51 2271",
 				["icon"] = 1,
-				["desc"] = "2189:0 2192:0 ",
+				["desc"] = "2243:0 2248:0 2249:0 2270:0 2272:0 2274:0 2275:0 ",
 			},
-			[60112262] = {
-				["title"] = "Tanaris4 2151",
+			[76395269] = {
+				["title"] = "Ungoro36 2256",
 				["icon"] = 1,
-				["desc"] = "2149:0 2150:0 2152:0 ",
+				["desc"] = "2254:0 2257:0 ",
 			},
-			[43407359] = {
-				["title"] = "Tanaris48 2195",
+			[80273964] = {
+				["title"] = "Ungoro35 2255",
 				["icon"] = 1,
-				["desc"] = "114:0 2194:0 2196:0 2197:0 2198:0 ",
+				["desc"] = "2254:0 ",
 			},
-			[40442840] = {
-				["title"] = "Tanaris23 2170",
+			[71148511] = {
+				["title"] = "Ungoro1 2221",
 				["icon"] = 1,
-				["desc"] = "2166:0 2167:0 2168:0 2169:0 2171:0 2172:0 ",
+				["desc"] = "2220:0 2222:0 ",
 			},
-			[55075079] = {
-				["title"] = "Tanaris16 2163",
+			[51154075] = {
+				["title"] = "Ungoro52 2272",
 				["icon"] = 1,
-				["desc"] = "2161:0 2162:0 2164:0 2205:0 2209:0 ",
+				["desc"] = "2268:0 2270:0 2271:0 2280:0 ",
 			},
-			[50702343] = {
+			[45391203] = {
+				["title"] = "Ungoro26 2246",
 				["icon"] = 1,
-				["title"] = "TanarisExitN2 2143",
-				["desc"] = "2142:0 2144:0 2145:0 ",
+				["desc"] = "111:0 2245:0 2247:0 ",
 			},
-			[31454507] = {
-				["title"] = "Tanaris34 2181",
+			[75586121] = {
+				["title"] = "Ungoro37 2257",
 				["icon"] = 1,
-				["desc"] = "2180:0 2179:0 ",
+				["desc"] = "2256:0 2258:0 2259:0 ",
 			},
-			[70335315] = {
+			[53346382] = {
+				["title"] = "Ungoro45 2265",
 				["icon"] = 1,
-				["title"] = "TanarisSpawnAll 2371",
-				["desc"] = "2207:0 ",
+				["desc"] = "2229:0 2261:0 2264:0 2268:0 ",
 			},
-			[64822370] = {
-				["title"] = "Tanaris6 2153",
-				["icon"] = 1,
-				["desc"] = "2152:0 2154:0 2155:0 2156:0 2157:0 ",
-			},
-			[64463155] = {
-				["title"] = "Tanaris10 2157",
-				["icon"] = 1,
-				["desc"] = "2150:0 2152:0 2153:0 2156:0 2158:0 113:0 ",
-			},
-			[39487154] = {
-				["title"] = "Tanaris47 2194",
-				["icon"] = 1,
-				["desc"] = "114:0 2186:0 2190:0 2192:0 2193:0 2195:0 2196:0 ",
-			},
-			[59462844] = {
-				["title"] = "Tanaris3 2150",
-				["icon"] = 1,
-				["desc"] = "2148:0 2149:0 2151:0 2152:0 2157:0 2158:0 ",
-			},
-			[34513950] = {
-				["title"] = "Tanaris30 2177",
-				["icon"] = 1,
-				["desc"] = "2175:0 ",
-			},
-			[63984110] = {
-				["title"] = "Tanaris13 2160",
-				["icon"] = 1,
-				["desc"] = "113:0 2158:0 2159:0 2161:0 2162:0 ",
-			},
-			[27135856] = {
-				["title"] = "Tanaris41 2188",
-				["icon"] = 1,
-				["desc"] = "2183:0 2189:0 2220:0 ",
-			},
-			[72754813] = {
-				["title"] = "Tanaris71 2218",
-				["icon"] = 1,
-				["desc"] = "2215:0 ",
-			},
-			[35174371] = {
-				["title"] = "Tanaris29 2176",
-				["icon"] = 1,
-				["desc"] = "2175:0 ",
-			},
-			[51392550] = {
-				["title"] = "GadgetzanH1 2144",
-				["icon"] = 1,
-				["desc"] = "2143:0 52:0 2147:0 2148:0 2149:0 2166:0 ",
-			},
-			[71874360] = {
-				["title"] = "Tanaris64 2211",
-				["icon"] = 1,
-				["desc"] = "2210:0 2212:0 2213:0 2215:0 ",
-			},
-			[51544528] = {
-				["title"] = "Tanaris17 2164",
-				["icon"] = 1,
-				["desc"] = "2161:0 2163:0 2165:0 2173:0 ",
-			},
-			[60753437] = {
-				["title"] = "Tanaris11 2158",
-				["icon"] = 1,
-				["desc"] = "2148:0 2150:0 2152:0 2157:0 113:0 2160:0 2161:0 ",
-			},
-			[29656202] = {
-				["title"] = "Tanaris42 2189",
-				["icon"] = 1,
-				["desc"] = "2183:0 2188:0 2190:0 2191:0 2192:0 ",
-			},
-			[64246210] = {
-				["title"] = "Tanaris61 2208",
-				["icon"] = 1,
-				["desc"] = "2207:0 2209:0 ",
-			},
-			[44906558] = {
-				["title"] = "Tanaris49 2196",
-				["icon"] = 1,
-				["desc"] = "2186:0 2194:0 2195:0 2197:0 2198:0 ",
-			},
-			[50043603] = {
-				["title"] = "Tanaris18 2165",
-				["icon"] = 1,
-				["desc"] = "2145:0 2146:0 2148:0 2161:0 2164:0 2166:0 2172:0 2173:0 ",
-			},
-			[33304093] = {
-				["title"] = "Tanaris28 2175",
-				["icon"] = 1,
-				["desc"] = "2171:0 2174:0 2176:0 2177:0 2178:0 2179:0 2183:0 ",
-			},
-			[38992114] = {
-				["title"] = "Tanaris21 2168",
-				["icon"] = 1,
-				["desc"] = "2167:0 2169:0 2170:0 ",
-			},
-			[62232627] = {
-				["title"] = "Tanaris5 2152",
-				["icon"] = 1,
-				["desc"] = "2149:0 2150:0 2151:0 2153:0 2157:0 2158:0 ",
-			},
-			[37015627] = {
-				["title"] = "Tanaris38 2185",
-				["icon"] = 1,
-				["desc"] = "2182:0 2184:0 2186:0 2187:0 2190:0 ",
-			},
-			[42713387] = {
-				["title"] = "Tanaris25 2172",
-				["icon"] = 1,
-				["desc"] = "2165:0 2166:0 2170:0 2171:0 2173:0 2174:0 ",
-			},
-			[52667350] = {
-				["title"] = "Tanaris52 2199",
-				["icon"] = 1,
-				["desc"] = "2197:0 2198:0 2200:0 2201:0 2204:0 ",
-			},
-			[49516557] = {
-				["title"] = "Tanaris50 2197",
-				["icon"] = 1,
-				["desc"] = "2195:0 2196:0 2198:0 2199:0 2204:0 2205:0 ",
-			},
-			[55392959] = {
-				["title"] = "Tanaris1 2148",
-				["icon"] = 1,
-				["desc"] = "2144:0 2146:0 2149:0 2150:0 2158:0 2161:0 2165:0 ",
-			},
-			[67161892] = {
-				["title"] = "Tanaris7 2154",
-				["icon"] = 1,
-				["desc"] = "2153:0 2155:0 ",
-			},
-			[74364745] = {
-				["title"] = "Tanaris69 2216",
-				["icon"] = 1,
-				["desc"] = "2213:0 2215:0 ",
-			},
-			[47937612] = {
-				["title"] = "Tanaris51 2198",
-				["icon"] = 1,
-				["desc"] = "2195:0 2196:0 2197:0 2199:0 ",
-			},
-			[73594840] = {
-				["title"] = "Tanaris70 2217",
-				["icon"] = 1,
-				["desc"] = "2215:0 ",
-			},
-			[54677313] = {
-				["title"] = "Tanaris56 2203",
-				["icon"] = 1,
-				["desc"] = "2200:0 ",
-			},
-			[52605886] = {
-				["title"] = "Tanaris58 2205",
-				["icon"] = 1,
-				["desc"] = "2163:0 2197:0 2204:0 2209:0 ",
-			},
-			[61845568] = {
-				["title"] = "Tanaris59 2206",
-				["icon"] = 1,
-				["desc"] = "2162:0 2207:0 2209:0 ",
-			},
-			[51512209] = {
-				["icon"] = 1,
-				["title"] = "TanarisExitN1 2142",
-				["desc"] = "2141:0 2143:0 ",
-			},
-			[69934260] = {
-				["title"] = "Tanaris63 2210",
-				["icon"] = 1,
-				["desc"] = "2159:0 2211:0 ",
-			},
-			[75814528] = {
-				["title"] = "Tanaris67 2214",
-				["icon"] = 1,
-				["desc"] = "2213:0 ",
-			},
-			[73254576] = {
-				["title"] = "Tanaris68 2215",
-				["icon"] = 1,
-				["desc"] = "2211:0 2213:0 2216:0 2217:0 2218:0 2219:0 ",
-			},
-			[36677822] = {
-				["title"] = "UldumReal 114",
-				["icon"] = 1,
-				["desc"] = "2193:0 2194:0 2195:0 ",
-			},
-			[71314715] = {
-				["title"] = "Tanaris65 2212",
-				["icon"] = 1,
-				["desc"] = "2211:0 ",
-			},
-			[75164588] = {
-				["title"] = "Tanaris66 2213",
-				["icon"] = 1,
-				["desc"] = "2211:0 2214:0 2215:0 2216:0 ",
-			},
-			[72254665] = {
-				["title"] = "Tanaris72 2219",
-				["icon"] = 1,
-				["desc"] = "2215:0 ",
-			},
-			[26975148] = {
+			[70629226] = {
 				["title"] = "TanarisExitSW 2220",
 				["icon"] = 1,
 				["desc"] = "2188:0 2221:0 ",
+			},
+			[71157695] = {
+				["title"] = "Ungoro3 2223",
+				["icon"] = 1,
+				["desc"] = "2222:0 2224:0 2260:0 ",
+			},
+			[44980589] = {
+				["title"] = "MarshalsRefugeReal 111",
+				["icon"] = 1,
+				["desc"] = "2245:0 2246:0 ",
+			},
+			[68261591] = {
+				["title"] = "Ungoro30 2250",
+				["icon"] = 1,
+				["desc"] = "112:0 ",
+			},
+			[72317904] = {
+				["title"] = "Ungoro2 2222",
+				["icon"] = 1,
+				["desc"] = "2221:0 2223:0 ",
+			},
+			[20486028] = {
+				["title"] = "Ungoro17 2237",
+				["icon"] = 1,
+				["desc"] = "2236:0 ",
+			},
+			[50251825] = {
+				["title"] = "Ungoro28 2248",
+				["icon"] = 1,
+				["desc"] = "2247:0 2249:0 2270:0 2271:0 ",
+			},
+			[27151035] = {
+				["title"] = "Ungoro71 2291",
+				["icon"] = 1,
+				["desc"] = "2290:0 2292:0 ",
+			},
+			[57259255] = {
+				["title"] = "Ungoro7 2227",
+				["icon"] = 1,
+				["desc"] = "2226:0 2229:0 ",
+			},
+			[51204974] = {
+				["title"] = "Ungoro65 2285",
+				["icon"] = 1,
+				["desc"] = "2283:0 ",
+			},
+			[64806140] = {
+				["title"] = "Ungoro46 2266",
+				["icon"] = 1,
+				["desc"] = "2259:0 2260:0 2261:0 2267:0 ",
+			},
+			[63184985] = {
+				["title"] = "Ungoro47 2267",
+				["icon"] = 1,
+				["desc"] = "2253:0 2254:0 2266:0 2268:0 ",
+			},
+			[59146967] = {
+				["title"] = "Ungoro41 2261",
+				["icon"] = 1,
+				["desc"] = "2225:0 2226:0 2229:0 2260:0 2265:0 2266:0 ",
+			},
+			[53884753] = {
+				["title"] = "Ungoro59 2279",
+				["icon"] = 1,
+				["desc"] = "2268:0 ",
+			},
+			[43758155] = {
+				["title"] = "Ungoro10 2230",
+				["icon"] = 1,
+				["desc"] = "2229:0 ",
+			},
+			[79895891] = {
+				["title"] = "Ungoro38 2258",
+				["icon"] = 1,
+				["desc"] = "2257:0 ",
+			},
+			[69212273] = {
+				["title"] = "Ungoro32 2252",
+				["icon"] = 1,
+				["desc"] = "2251:0 2253:0 ",
+			},
+			[69577977] = {
+				["title"] = "Ungoro4 2224",
+				["icon"] = 1,
+				["desc"] = "2223:0 2225:0 ",
+			},
+			[29776281] = {
+				["title"] = "Ungoro15 2235",
+				["icon"] = 1,
+				["desc"] = "2233:0 2234:0 2236:0 2240:0 2263:0 ",
+			},
+			[64257775] = {
+				["title"] = "Ungoro5 2225",
+				["icon"] = 1,
+				["desc"] = "2224:0 2226:0 2260:0 2261:0 ",
+			},
+			[52984173] = {
+				["title"] = "Ungoro60 2280",
+				["icon"] = 1,
+				["desc"] = "2268:0 2272:0 2281:0 ",
+			},
+			[54453146] = {
+				["title"] = "Ungoro50 2270",
+				["icon"] = 1,
+				["desc"] = "2248:0 2249:0 2251:0 2268:0 2269:0 2271:0 2272:0 ",
+			},
+			[27933459] = {
+				["title"] = "Ungoro21 2241",
+				["icon"] = 1,
+				["desc"] = "2240:0 2242:0 2273:0 ",
+			},
+			[30747810] = {
+				["title"] = "Ungoro13 2233",
+				["icon"] = 1,
+				["desc"] = "2232:0 2234:0 2235:0 ",
+			},
+			[29774423] = {
+				["title"] = "Ungoro20 2240",
+				["icon"] = 1,
+				["desc"] = "2235:0 2238:0 2241:0 2273:0 2275:0 ",
+			},
+			[55251736] = {
+				["title"] = "Ungoro29 2249",
+				["icon"] = 1,
+				["desc"] = "2248:0 112:0 2251:0 2269:0 2270:0 2271:0 ",
+			},
+			[46108506] = {
+				["title"] = "Ungoro2228",
+				["icon"] = 1,
+				["desc"] = "",
+			},
+			[30321034] = {
+				["title"] = "Ungoro70 2290",
+				["icon"] = 1,
+				["desc"] = "2289:0 2291:0 ",
+			},
+			[71986676] = {
+				["title"] = "Ungoro39 2259",
+				["icon"] = 1,
+				["desc"] = "2257:0 2260:0 2266:0 ",
+			},
+			[57594402] = {
+				["title"] = "Ungoro48 2268",
+				["icon"] = 1,
+				["desc"] = "2265:0 2267:0 2269:0 2270:0 2272:0 2279:0 2280:0 ",
+			},
+			[54055521] = {
+				["title"] = "Ungoro68 2288",
+				["icon"] = 1,
+				["desc"] = "2287:0 ",
+			},
+			[49504568] = {
+				["title"] = "Ungoro64 2284",
+				["icon"] = 1,
+				["desc"] = "2283:0 ",
 			},
 		},
 		["ZulDrak"] = {
@@ -5398,10 +5293,10 @@ HandyNotes_HandyNotesDB = {
 				["title"] = "zd57 Gundrak2 3105",
 				["desc"] = "3104:0 3106:0 3109:0 ",
 			},
-			[57315565] = {
+			[58087997] = {
 				["icon"] = 1,
-				["title"] = "zd22 ZulDrak14 3070",
-				["desc"] = "3071:0 3087:0 3069:0 3101:0 ",
+				["title"] = "zd36 Kolramas1 3084",
+				["desc"] = "3085:0 3081:0 3083:0 ",
 			},
 			[37107267] = {
 				["icon"] = 1,
@@ -5413,10 +5308,10 @@ HandyNotes_HandyNotesDB = {
 				["title"] = "zd30 ZulDrak17 3078",
 				["desc"] = "3077:0 ",
 			},
-			[58087997] = {
+			[57315565] = {
 				["icon"] = 1,
-				["title"] = "zd36 Kolramas1 3084",
-				["desc"] = "3085:0 3081:0 3083:0 ",
+				["title"] = "zd22 ZulDrak14 3070",
+				["desc"] = "3071:0 3087:0 3069:0 3101:0 ",
 			},
 			[74315862] = {
 				["icon"] = 1,
@@ -5636,26 +5531,191 @@ HandyNotes_HandyNotesDB = {
 				["desc"] = "421:0 425:0 ",
 			},
 		},
-		["Kalimdor"] = {
-			[52375493] = {
+		["BladesEdgeMountains"] = {
+			[55512460] = {
 				["icon"] = 1,
-				["title"] = "BarrensWC3 1616",
-				["desc"] = "1615:0 1617:0 ",
+				["title"] = "be24 BloodmaulCamp1 2636",
+				["desc"] = "2635:0 2637:0 2638:0 ",
 			},
-			[51935454] = {
+			[68984340] = {
 				["icon"] = 1,
-				["title"] = "BarrensWC2 1615",
-				["desc"] = "1614:0 1616:0 ",
+				["title"] = "be15 RazaansLanding1 2627",
+				["desc"] = "2632:0 2628:0 2629:0 2625:0 ",
 			},
-			[51945500] = {
+			[42508392] = {
 				["icon"] = 1,
-				["title"] = "BarrensWC1 1614",
-				["desc"] = "98:0 1615:0 ",
+				["title"] = "be32 DraenethystMine1 2644",
+				["desc"] = "2643:0 ",
 			},
-			[52865478] = {
+			[51847309] = {
 				["icon"] = 1,
-				["title"] = "BarrensWC4 1617",
-				["desc"] = "1616:0 ",
+				["title"] = "be3 JaggedRidge1 2615",
+				["desc"] = "2616:0 2614:0 ",
+			},
+			[29849384] = {
+				["icon"] = 1,
+				["title"] = "be37 BladeToothCanyon1 2649",
+				["desc"] = "2648:0 2509:0 ",
+			},
+			[38547646] = {
+				["icon"] = 1,
+				["title"] = "be33 TheLivingGrove1 2645",
+				["desc"] = "2647:0 2643:0 2646:0 ",
+			},
+			[68857438] = {
+				["icon"] = 1,
+				["title"] = "be6 ScalewingShelf1 2618",
+				["desc"] = "2617:0 2619:0 ",
+			},
+			[66653834] = {
+				["icon"] = 1,
+				["title"] = "be20 BladedGulch3 2632",
+				["desc"] = "2633:0 2627:0 2629:0 ",
+			},
+			[75702293] = {
+				["icon"] = 1,
+				["title"] = "be18 BladedGulch2 2630",
+				["desc"] = "2631:0 2629:0 ",
+			},
+			[32319188] = {
+				["icon"] = 1,
+				["title"] = "be36 BladesEdgeMountains2 2648",
+				["desc"] = "2649:0 2647:0 ",
+			},
+			[59772988] = {
+				["icon"] = 1,
+				["title"] = "be23 DaggermawCanyon1 2635",
+				["desc"] = "2634:0 2636:0 2633:0 ",
+			},
+			[61292096] = {
+				["icon"] = 1,
+				["title"] = "be25 DaggermawCanyon2 2637",
+				["desc"] = "2636:0 ",
+			},
+			[75937044] = {
+				["icon"] = 1,
+				["title"] = "be10 VekhaarStand1 2622",
+				["desc"] = "2620:0 2624:0 2623:0 2621:0 ",
+			},
+			[71263431] = {
+				["icon"] = 1,
+				["title"] = "be17 BladedGulch1 2629",
+				["desc"] = "2632:0 2627:0 2630:0 ",
+			},
+			[75536300] = {
+				["icon"] = 1,
+				["title"] = "be8 MokNathalVillage1 2620",
+				["desc"] = "2622:0 2619:0 2621:0 ",
+			},
+			[58285803] = {
+				["icon"] = 1,
+				["title"] = "be14 BladespireOutpost1 2626",
+				["desc"] = "2616:0 2625:0 ",
+			},
+			[39604934] = {
+				["icon"] = 1,
+				["title"] = "be29 BladespireHold1 2641",
+				["desc"] = "2640:0 2639:0 ",
+			},
+			[52959460] = {
+				["icon"] = 1,
+				["title"] = "be2 BladesRun2 2614",
+				["desc"] = "2613:0 2615:0 ",
+			},
+			[45056517] = {
+				["icon"] = 1,
+				["title"] = "be30 BloodmaulRavine1 2642",
+				["desc"] = "2640:0 2643:0 ",
+			},
+			[54123728] = {
+				["icon"] = 1,
+				["title"] = "be26 DaggermawCanyon3 2638",
+				["desc"] = "2636:0 2639:0 ",
+			},
+			[69026376] = {
+				["icon"] = 1,
+				["title"] = "be7 ScalewingShelf2 2619",
+				["desc"] = "2620:0 2618:0 2625:0 ",
+			},
+			[43997560] = {
+				["icon"] = 1,
+				["title"] = "be31 BloodmaulRavine2 2643",
+				["desc"] = "2645:0 2644:0 2642:0 ",
+			},
+			[37168116] = {
+				["icon"] = 1,
+				["title"] = "be35 BladesEdgeMountains1 2647",
+				["desc"] = "2645:0 2646:0 2648:0 ",
+			},
+			[37106925] = {
+				["icon"] = 1,
+				["title"] = "be34 Sylvanaar1 2646",
+				["desc"] = "2645:0 2647:0 ",
+			},
+			[78117384] = {
+				["icon"] = 1,
+				["title"] = "be12 VeilVekh2 2624",
+				["desc"] = "2623:0 2622:0 2621:0 ",
+			},
+			[61503867] = {
+				["icon"] = 1,
+				["title"] = "be21 Evergrove1 2633",
+				["desc"] = "2632:0 2635:0 2634:0 ",
+			},
+			[81472887] = {
+				["icon"] = 1,
+				["title"] = "be19 BrokenWilds1 2631",
+				["desc"] = "2630:0 2650:0 ",
+			},
+			[65095391] = {
+				["icon"] = 1,
+				["title"] = "be13 RazorRidge2 2625",
+				["desc"] = "2626:0 2619:0 2627:0 ",
+			},
+			[62697865] = {
+				["icon"] = 1,
+				["title"] = "be5 SingingRidge1 2617",
+				["desc"] = "2618:0 2616:0 ",
+			},
+			[76177680] = {
+				["icon"] = 1,
+				["title"] = "be11 VeilVekh1 2623",
+				["desc"] = "2624:0 2622:0 2620:0 ",
+			},
+			[44555524] = {
+				["icon"] = 1,
+				["title"] = "be28 BladespireGrounds1 2640",
+				["desc"] = "2642:0 2641:0 2639:0 ",
+			},
+			[46854398] = {
+				["icon"] = 1,
+				["title"] = "be27 ChurningGulch1 2639",
+				["desc"] = "2640:0 2641:0 2638:0 ",
+			},
+			[59107023] = {
+				["icon"] = 1,
+				["title"] = "be4 RazorRidge1 2616",
+				["desc"] = "2626:0 2615:0 2617:0 ",
+			},
+			[71346968] = {
+				["icon"] = 1,
+				["title"] = "be9 DeathsDoor1 2621",
+				["desc"] = "2622:0 2623:0 2620:0 ",
+			},
+			[52409875] = {
+				["icon"] = 1,
+				["title"] = "be1 BladesRun1 2613",
+				["desc"] = "2614:0 2548:0 ",
+			},
+			[75314080] = {
+				["icon"] = 1,
+				["title"] = "be16 ForgeCamp:Anger1 2628",
+				["desc"] = "2627:0 ",
+			},
+			[63092638] = {
+				["icon"] = 1,
+				["title"] = "be22 RuuanWeald1 2634",
+				["desc"] = "2633:0 2635:0 ",
 			},
 		},
 		["Alterac"] = {
@@ -5764,15 +5824,15 @@ HandyNotes_HandyNotesDB = {
 				["title"] = "CorrahnsDagger 345",
 				["desc"] = "343:0 346:0 380:0 ",
 			},
-			[62374372] = {
-				["icon"] = 1,
-				["title"] = "Strahnbard 331",
-				["desc"] = "330:0 332:0 343:0 ",
-			},
 			[50175391] = {
 				["icon"] = 1,
 				["title"] = "RuinsOfAlteracE 343",
 				["desc"] = "331:0 337:0 344:0 345:0 380:0 ",
+			},
+			[62374372] = {
+				["icon"] = 1,
+				["title"] = "Strahnbard 331",
+				["desc"] = "330:0 332:0 343:0 ",
 			},
 			[30128706] = {
 				["icon"] = 1,
@@ -6021,10 +6081,10 @@ HandyNotes_HandyNotesDB = {
 				["title"] = "DurotarCanyon3_1 1422",
 				["desc"] = "31:0 1413:0 1420:0 1421:0 1423:0 ",
 			},
-			[64327424] = {
+			[55171022] = {
 				["icon"] = 1,
-				["title"] = "EchoIsles1 1444",
-				["desc"] = "1419:0 1445:0 1448:0 ",
+				["title"] = "SkullRock1 1363",
+				["desc"] = "1362:0 1364:0 1365:0 ",
 			},
 			[38323771] = {
 				["icon"] = 1,
@@ -6036,15 +6096,15 @@ HandyNotes_HandyNotesDB = {
 				["title"] = "EchoIsles5 1448",
 				["desc"] = "1444:0 1446:0 1447:0 ",
 			},
-			[54122514] = {
+			[52062488] = {
 				["icon"] = 1,
-				["title"] = "DurotarCanyon1_9 1380",
-				["desc"] = "1379:0 1381:0 1382:0 ",
+				["title"] = "DustwindCave2 1369",
+				["desc"] = "1368:0 ",
 			},
-			[42425047] = {
+			[44824824] = {
 				["icon"] = 1,
-				["title"] = "DurotarSW_hub4 1440",
-				["desc"] = "1403:0 1404:0 1439:0 1441:0 ",
+				["title"] = "DurotarSW_hub3 1439",
+				["desc"] = "1437:0 1438:0 1440:0 ",
 			},
 			[38431610] = {
 				["icon"] = 1,
@@ -6056,35 +6116,35 @@ HandyNotes_HandyNotesDB = {
 				["title"] = "DurotarN_hub8 1372",
 				["desc"] = "1371:0 66:0 67:0 1400:0 1403:0 ",
 			},
-			[41272380] = {
+			[58605370] = {
 				["icon"] = 1,
-				["title"] = "DurotarCanyon2_4 1395",
-				["desc"] = "1394:0 1396:0 1397:0 ",
+				["title"] = "TirigardeKeep1 1414",
+				["desc"] = "1407:0 1408:0 1409:0 1410:0 1411:0 1415:0 ",
 			},
 			[55722009] = {
 				["icon"] = 1,
 				["title"] = "DurotarN_hub3 1365",
 				["desc"] = "1362:0 1363:0 1366:0 1367:0 ",
 			},
-			[55171022] = {
+			[64327424] = {
 				["icon"] = 1,
-				["title"] = "SkullRock1 1363",
-				["desc"] = "1362:0 1364:0 1365:0 ",
+				["title"] = "EchoIsles1 1444",
+				["desc"] = "1419:0 1445:0 1448:0 ",
 			},
 			[39183368] = {
 				["icon"] = 1,
 				["title"] = "DurotarCanyon2_1 1392",
 				["desc"] = "67:0 1390:0 1391:0 1393:0 1400:0 ",
 			},
-			[47577697] = {
+			[54122514] = {
 				["icon"] = 1,
-				["title"] = "DurotarCanyon3_7 1428",
-				["desc"] = "1427:0 ",
+				["title"] = "DurotarCanyon1_9 1380",
+				["desc"] = "1379:0 1381:0 1382:0 ",
 			},
-			[64258638] = {
+			[58996030] = {
 				["icon"] = 1,
-				["title"] = "EchoIsles3 1446",
-				["desc"] = "1445:0 1447:0 1448:0 ",
+				["title"] = "TirigardeKeep4 1417",
+				["desc"] = "1415:0 1418:0 ",
 			},
 			[40351999] = {
 				["icon"] = 1,
@@ -6126,35 +6186,35 @@ HandyNotes_HandyNotesDB = {
 				["icon"] = 1,
 				["desc"] = "1359:0 1454:0 ",
 			},
-			[44824824] = {
+			[42425047] = {
 				["icon"] = 1,
-				["title"] = "DurotarSW_hub3 1439",
-				["desc"] = "1437:0 1438:0 1440:0 ",
+				["title"] = "DurotarSW_hub4 1440",
+				["desc"] = "1403:0 1404:0 1439:0 1441:0 ",
 			},
-			[48132680] = {
+			[52635412] = {
 				["icon"] = 1,
-				["title"] = "DurotarCanyon1_13 1384",
-				["desc"] = "1375:0 1385:0 ",
+				["title"] = "DurotarRoadS2 1410",
+				["desc"] = "1407:0 1409:0 1411:0 1414:0 ",
 			},
-			[52564797] = {
+			[53273708] = {
 				["icon"] = 1,
-				["title"] = "DurotarRoadS1 1409",
-				["desc"] = "28:0 1402:0 1407:0 1410:0 1414:0 1415:0 ",
+				["title"] = "DurotarN_hub6 1370",
+				["desc"] = "1367:0 1368:0 1371:0 1407:0 ",
 			},
 			[52842920] = {
 				["icon"] = 1,
 				["title"] = "DustwindCave1 1368",
 				["desc"] = "1367:0 1369:0 1370:0 ",
 			},
-			[58996030] = {
+			[64258638] = {
 				["icon"] = 1,
-				["title"] = "TirigardeKeep4 1417",
-				["desc"] = "1415:0 1418:0 ",
+				["title"] = "EchoIsles3 1446",
+				["desc"] = "1445:0 1447:0 1448:0 ",
 			},
-			[53273708] = {
+			[52564797] = {
 				["icon"] = 1,
-				["title"] = "DurotarN_hub6 1370",
-				["desc"] = "1367:0 1368:0 1371:0 1407:0 ",
+				["title"] = "DurotarRoadS1 1409",
+				["desc"] = "28:0 1402:0 1407:0 1410:0 1414:0 1415:0 ",
 			},
 			[40673049] = {
 				["icon"] = 1,
@@ -6186,20 +6246,20 @@ HandyNotes_HandyNotesDB = {
 				["title"] = "DurotarCanyon1_4 1375",
 				["desc"] = "1374:0 1376:0 1384:0 ",
 			},
-			[52635412] = {
+			[48132680] = {
 				["icon"] = 1,
-				["title"] = "DurotarRoadS2 1410",
-				["desc"] = "1407:0 1409:0 1411:0 1414:0 ",
+				["title"] = "DurotarCanyon1_13 1384",
+				["desc"] = "1375:0 1385:0 ",
 			},
-			[52062488] = {
+			[47577697] = {
 				["icon"] = 1,
-				["title"] = "DustwindCave2 1369",
-				["desc"] = "1368:0 ",
+				["title"] = "DurotarCanyon3_7 1428",
+				["desc"] = "1427:0 ",
 			},
-			[58605370] = {
+			[41272380] = {
 				["icon"] = 1,
-				["title"] = "TirigardeKeep1 1414",
-				["desc"] = "1407:0 1408:0 1409:0 1410:0 1411:0 1415:0 ",
+				["title"] = "DurotarCanyon2_4 1395",
+				["desc"] = "1394:0 1396:0 1397:0 ",
 			},
 			[46512076] = {
 				["icon"] = 1,
@@ -6247,950 +6307,765 @@ HandyNotes_HandyNotesDB = {
 				["desc"] = "1410:0 1412:0 1414:0 1415:0 ",
 			},
 		},
-		["Feralas"] = {
-			[49234794] = {
-				["icon"] = 1,
-				["title"] = "FeralasC3 1945",
-				["desc"] = "1944:0 1946:0 ",
-			},
-			[70275426] = {
-				["icon"] = 1,
-				["title"] = "FeralasE8 1981",
-				["desc"] = "1971:0 1975:0 1978:0 1993:0 1994:0 ",
-			},
-			[85764224] = {
-				["icon"] = 1,
-				["title"] = "FeralasE39 2012",
-				["desc"] = "2011:0 2013:0 2015:0 ",
-			},
-			[54593301] = {
-				["icon"] = 1,
-				["title"] = "FeralasN16 1928",
-				["desc"] = "131:0 ",
-			},
-			[41322598] = {
-				["icon"] = 1,
-				["title"] = "FeralasN6 1918",
-				["desc"] = "1917:0 1919:0 1923:0 ",
-			},
-			[27344624] = {
-				["icon"] = 1,
-				["title"] = "SardorIsle2 1941",
-				["desc"] = "58:0 132:0 1940:0 ",
-			},
-			[61835569] = {
-				["icon"] = 1,
-				["title"] = "FeralasC23 1965",
-				["desc"] = "1964:0 1966:0 ",
-			},
-			[40341437] = {
-				["icon"] = 1,
-				["title"] = "FeralasN4 1916",
-				["desc"] = "1915:0 1917:0 1920:0 ",
-			},
-			[65574725] = {
-				["icon"] = 1,
-				["title"] = "FeralasC30 1972",
-				["desc"] = "1968:0 1973:0 ",
-			},
-			[48402370] = {
-				["icon"] = 1,
-				["title"] = "FeralasN10 1922",
-				["desc"] = "1919:0 1923:0 1925:0 1926:0 ",
-			},
-			[89284116] = {
-				["icon"] = 1,
-				["title"] = "FeralasE46 2019",
-				["desc"] = "40:0 2014:0 2016:0 2018:0 2020:0 ",
-			},
-			[60305920] = {
-				["icon"] = 1,
-				["title"] = "FeralasC22 1964",
-				["desc"] = "1953:0 1956:0 1957:0 1961:0 1965:0 ",
-			},
-			[72136335] = {
-				["icon"] = 1,
-				["title"] = "FeralasE12 1985",
-				["desc"] = "1984:0 ",
-			},
-			[59375362] = {
-				["icon"] = 1,
-				["title"] = "FeralasC10 1952",
-				["desc"] = "1949:0 1951:0 1966:0 ",
-			},
-			[61285294] = {
-				["icon"] = 1,
-				["title"] = "FeralasC24 1966",
-				["desc"] = "1949:0 1952:0 1965:0 1967:0 ",
-			},
-			[39183639] = {
-				["icon"] = 1,
-				["title"] = "FeralasCoast2 1933",
-				["desc"] = "1932:0 1934:0 1939:0 ",
-			},
-			[45986625] = {
-				["icon"] = 1,
-				["title"] = "FeralasCoast7 1938",
-				["desc"] = "1937:0 ",
-			},
-			[76586657] = {
-				["icon"] = 1,
-				["title"] = "FeralasE16 1989",
-				["desc"] = "1988:0 ",
-			},
-			[81094031] = {
-				["icon"] = 1,
-				["title"] = "FeralasE35 2008",
-				["desc"] = "2003:0 2007:0 2010:0 2017:0 ",
-			},
-			[47874290] = {
-				["icon"] = 1,
-				["title"] = "FeralasC1 1943",
-				["desc"] = "1931:0 1944:0 ",
-			},
-			[78584234] = {
-				["icon"] = 1,
-				["title"] = "FeralasE25 1998",
-				["desc"] = "1997:0 2003:0 ",
-			},
-			[68605465] = {
-				["icon"] = 1,
-				["title"] = "FeralasE5 1978",
-				["desc"] = "1974:0 1979:0 1981:0 1982:0 ",
-			},
-			[71426373] = {
-				["icon"] = 1,
-				["title"] = "FeralasE10 1983",
-				["desc"] = "1982:0 1984:0 1994:0 ",
-			},
-			[58546970] = {
-				["icon"] = 1,
-				["title"] = "FeralasC20 1962",
-				["desc"] = "1961:0 1963:0 ",
-			},
-			[62236872] = {
-				["icon"] = 1,
-				["title"] = "FeralasC18 1960",
-				["desc"] = "1959:0 1961:0 ",
-			},
-			[55255138] = {
-				["icon"] = 1,
-				["title"] = "FeralasC9 1951",
-				["desc"] = "1947:0 1950:0 1952:0 1953:0 ",
-			},
-			[53505539] = {
-				["icon"] = 1,
-				["title"] = "FeralasC12 1954",
-				["desc"] = "1953:0 1955:0 ",
-			},
-			[85603736] = {
-				["icon"] = 1,
-				["title"] = "FeralasE44 2017",
-				["desc"] = "2008:0 2018:0 ",
-			},
-			[87754137] = {
-				["icon"] = 1,
-				["title"] = "FeralasE43 2016",
-				["desc"] = "2015:0 2019:0 ",
-			},
-			[37781899] = {
-				["icon"] = 1,
-				["title"] = "FeralasN5 1917",
-				["desc"] = "1916:0 1918:0 ",
-			},
-			[82654128] = {
-				["icon"] = 1,
-				["title"] = "FeralasE37 2010",
-				["desc"] = "2008:0 2009:0 2011:0 ",
-			},
-			[85904572] = {
-				["icon"] = 1,
-				["title"] = "FeralasE40 2013",
-				["desc"] = "2009:0 2012:0 2014:0 ",
-			},
-			[52034710] = {
-				["icon"] = 1,
-				["title"] = "FeralasC6 1948",
-				["desc"] = "1947:0 1949:0 ",
-			},
-			[63885039] = {
-				["icon"] = 1,
-				["title"] = "FeralasC26 1968",
-				["desc"] = "1967:0 1969:0 1972:0 ",
-			},
-			[70494896] = {
-				["icon"] = 1,
-				["title"] = "FeralasE2 1975",
-				["desc"] = "1973:0 1974:0 1976:0 1981:0 1993:0 1994:0 1995:0 ",
-			},
-			[83294513] = {
-				["icon"] = 1,
-				["title"] = "FeralasE36 2009",
-				["desc"] = "2002:0 2010:0 2013:0 ",
-			},
-			[46392120] = {
-				["icon"] = 1,
-				["title"] = "FeralasN7 1919",
-				["desc"] = "1918:0 1920:0 1922:0 ",
-			},
-			[28217039] = {
-				["icon"] = 1,
-				["title"] = "ShalzarusLairInside 1942",
-				["desc"] = "140:0 ",
-			},
-			[69524969] = {
-				["icon"] = 1,
-				["title"] = "FeralasE1 1974",
-				["desc"] = "1971:0 1973:0 1975:0 1978:0 2006:0 ",
-			},
-			[53857296] = {
-				["icon"] = 1,
-				["title"] = "FeralasC16 1958",
-				["desc"] = "1957:0 1959:0 ",
-			},
-			[52986007] = {
-				["icon"] = 1,
-				["title"] = "FeralasC13 1955",
-				["desc"] = "1954:0 ",
-			},
-			[58606679] = {
-				["icon"] = 1,
-				["title"] = "19 1961",
-				["desc"] = "1957:0 1960:0 1962:0 1964:0 ",
-			},
-			[51031081] = {
-				["icon"] = 1,
-				["title"] = "FeralasN9 1921",
-				["desc"] = "1914:0 1920:0 ",
-			},
-			[33704380] = {
-				["icon"] = 1,
-				["title"] = "FeathermoonCoast 1939",
-				["desc"] = "58:0 1933:0 1935:0 ",
-			},
-			[55635651] = {
-				["icon"] = 1,
-				["title"] = "FeralasC11 1953",
-				["desc"] = "1951:0 1954:0 1956:0 1964:0 ",
-			},
-			[70563814] = {
-				["icon"] = 1,
-				["title"] = "FeralasE32 2005",
-				["desc"] = "1977:0 2006:0 ",
-			},
-			[75355664] = {
-				["icon"] = 1,
-				["title"] = "FeralasE18 1991",
-				["desc"] = "1984:0 136:0 1992:0 1994:0 ",
-			},
-			[77344828] = {
-				["icon"] = 1,
-				["title"] = "FeralasE27 2000",
-				["desc"] = "1999:0 2001:0 ",
-			},
-			[86684297] = {
-				["icon"] = 1,
-				["title"] = "FeralasE42 2015",
-				["desc"] = "2012:0 2016:0 ",
-			},
-			[60687335] = {
-				["icon"] = 1,
-				["title"] = "FeralasC17 1959",
-				["desc"] = "1958:0 1960:0 ",
-			},
-			[83774181] = {
-				["icon"] = 1,
-				["title"] = "FeralasE38 2011",
-				["desc"] = "2010:0 2012:0 ",
-			},
-			[50364969] = {
-				["icon"] = 1,
-				["title"] = "FeralasC4 1946",
-				["desc"] = "1945:0 1947:0 ",
-			},
-			[45931235] = {
-				["icon"] = 1,
-				["title"] = "FeralasN8 1920",
-				["desc"] = "1914:0 1915:0 1916:0 1919:0 1921:0 ",
-			},
-			[65984910] = {
-				["icon"] = 1,
-				["title"] = "FeralasC28 1970",
-				["desc"] = "1969:0 1971:0 ",
-			},
-			[48363308] = {
-				["icon"] = 1,
-				["title"] = "FeralasN17 1929",
-				["desc"] = "1925:0 1930:0 ",
-			},
-			[73415395] = {
-				["icon"] = 1,
-				["title"] = "FeralasE19 1992",
-				["desc"] = "136:0 1991:0 1993:0 1994:0 1999:0 ",
-			},
-			[46000443] = {
-				["icon"] = 1,
-				["title"] = "FeralasN1 1913",
-				["desc"] = "1802:0 1914:0 ",
-			},
-			[78944490] = {
-				["icon"] = 1,
-				["title"] = "FeralasE29 2002",
-				["desc"] = "2001:0 2003:0 2009:0 ",
-			},
-			[71615085] = {
-				["icon"] = 1,
-				["title"] = "FeralasE20 1993",
-				["desc"] = "1975:0 1981:0 1992:0 ",
-			},
-			[75644948] = {
-				["icon"] = 1,
-				["title"] = "FeralasE26 1999",
-				["desc"] = "1992:0 2000:0 ",
-			},
-			[78636418] = {
-				["icon"] = 1,
-				["title"] = "FeralasE17 1990",
-				["desc"] = "1988:0 ",
-			},
-			[44334363] = {
-				["icon"] = 1,
-				["title"] = "FeralasCoast4 1935",
-				["desc"] = "1932:0 1936:0 1937:0 1939:0 1944:0 ",
-			},
-			[46272625] = {
-				["icon"] = 1,
-				["title"] = "FeralasN12 1924",
-				["desc"] = "1923:0 1925:0 ",
-			},
-			[72964773] = {
-				["icon"] = 1,
-				["title"] = "FeralasE22 1995",
-				["desc"] = "1975:0 1976:0 53:0 2006:0 ",
-			},
-			[78754744] = {
-				["icon"] = 1,
-				["title"] = "FeralasE28 2001",
-				["desc"] = "2000:0 2002:0 ",
-			},
-			[48123884] = {
-				["icon"] = 1,
-				["title"] = "FeralasN19 1931",
-				["desc"] = "1926:0 1930:0 1943:0 ",
-			},
-			[69604367] = {
-				["icon"] = 1,
-				["title"] = "FeralasE3 1976",
-				["desc"] = "1973:0 1975:0 1977:0 1995:0 2006:0 ",
-			},
-			[59104756] = {
-				["icon"] = 1,
-				["title"] = "FeralasC7 1949",
-				["desc"] = "1948:0 1952:0 1966:0 ",
-			},
-			[57967168] = {
-				["icon"] = 1,
-				["title"] = "FeralasC21 1963",
-				["desc"] = "1962:0 ",
-			},
-			[48784517] = {
-				["icon"] = 1,
-				["title"] = "FeralasC2 1944",
-				["desc"] = "1935:0 1943:0 1945:0 ",
-			},
-			[67345583] = {
-				["icon"] = 1,
-				["title"] = "FeralasE6 1979",
-				["desc"] = "1978:0 1980:0 ",
-			},
-			[51983191] = {
-				["icon"] = 1,
-				["title"] = "FeralasN15 1927",
-				["desc"] = "1926:0 131:0 ",
-			},
-			[77336425] = {
-				["icon"] = 1,
-				["title"] = "FeralasE15 1988",
-				["desc"] = "1984:0 1989:0 1990:0 ",
-			},
-			[55315945] = {
-				["icon"] = 1,
-				["title"] = "FeralasC14 1956",
-				["desc"] = "1953:0 1957:0 1964:0 ",
-			},
-			[68454617] = {
-				["icon"] = 1,
-				["title"] = "FeralasC31 1973",
-				["desc"] = "1972:0 1974:0 1975:0 1976:0 ",
-			},
-			[46762830] = {
-				["icon"] = 1,
-				["title"] = "FeralasN13 1925",
-				["desc"] = "1922:0 1924:0 1929:0 ",
-			},
-			[67994992] = {
-				["icon"] = 1,
-				["title"] = "FeralasC29 1971",
-				["desc"] = "1970:0 1974:0 1981:0 ",
-			},
-			[76663969] = {
-				["icon"] = 1,
-				["title"] = "FeralasE31 2004",
-				["desc"] = "2003:0 2006:0 137:0 ",
-			},
-			[66995349] = {
-				["icon"] = 1,
-				["title"] = "FeralasE7 1980",
-				["desc"] = "1979:0 178:0 ",
-			},
-			[50443289] = {
-				["icon"] = 1,
-				["title"] = "FeralasN14 1926",
-				["desc"] = "1922:0 1927:0 1931:0 ",
-			},
-			[68873983] = {
-				["icon"] = 1,
-				["title"] = "FeralasE4 1977",
-				["desc"] = "1976:0 2005:0 2006:0 ",
-			},
-			[89333934] = {
-				["icon"] = 1,
-				["title"] = "FeralasE45 2018",
-				["desc"] = "2017:0 2019:0 2023:0 ",
-			},
-			[46795472] = {
-				["icon"] = 1,
-				["title"] = "FeralasCoast6 1937",
-				["desc"] = "1935:0 1936:0 1938:0 ",
-			},
-			[72185705] = {
-				["icon"] = 1,
-				["title"] = "FeralasE21 1994",
-				["desc"] = "1975:0 1981:0 1982:0 1983:0 1991:0 1992:0 ",
-			},
-			[55476358] = {
-				["icon"] = 1,
-				["title"] = "FeralasC15 1957",
-				["desc"] = "1956:0 1958:0 1961:0 1964:0 ",
-			},
-			[34203187] = {
-				["icon"] = 1,
-				["title"] = "FeralasCoast3 1934",
-				["desc"] = "1933:0 ",
-			},
-			[49295138] = {
-				["icon"] = 1,
-				["title"] = "FeralasCoast5 1936",
-				["desc"] = "1935:0 1937:0 1950:0 ",
-			},
-			[44690810] = {
-				["icon"] = 1,
-				["title"] = "FeralasN2 1914",
-				["desc"] = "1913:0 1915:0 1920:0 1921:0 ",
-			},
-			[78366256] = {
-				["icon"] = 1,
-				["title"] = "FeralasE14 1987",
-				["desc"] = "1984:0 ",
-			},
-			[47923741] = {
-				["icon"] = 1,
-				["title"] = "FeralasN18 1930",
-				["desc"] = "1929:0 1931:0 1932:0 ",
-			},
-			[44763780] = {
-				["icon"] = 1,
-				["title"] = "FeralasCoast1 1932",
-				["desc"] = "1930:0 1933:0 1935:0 ",
-			},
-			[53645199] = {
-				["icon"] = 1,
-				["title"] = "FeralasC8 1950",
-				["desc"] = "1936:0 1951:0 ",
-			},
-			[79534173] = {
-				["icon"] = 1,
-				["title"] = "FeralasE30 2003",
-				["desc"] = "1998:0 2002:0 2004:0 2007:0 2008:0 ",
-			},
-			[44582465] = {
-				["icon"] = 1,
-				["title"] = "FeralasN11 1923",
-				["desc"] = "1918:0 1922:0 1924:0 ",
-			},
-			[63135361] = {
-				["icon"] = 1,
-				["title"] = "FeralasC25 1967",
-				["desc"] = "1966:0 1968:0 ",
-			},
-			[39171000] = {
-				["icon"] = 1,
-				["title"] = "FeralasN3 1915",
-				["desc"] = "1914:0 1916:0 1920:0 ",
-			},
-			[65165007] = {
-				["icon"] = 1,
-				["title"] = "FeralasC27 1969",
-				["desc"] = "1968:0 1970:0 ",
-			},
-			[75006028] = {
-				["icon"] = 1,
-				["title"] = "FeralasE11 1984",
-				["desc"] = "1983:0 1985:0 1986:0 1987:0 1988:0 1991:0 ",
-			},
-			[68336006] = {
-				["icon"] = 1,
-				["title"] = "FeralasE9 1982",
-				["desc"] = "1978:0 1983:0 1994:0 ",
-			},
-			[76544337] = {
-				["icon"] = 1,
-				["title"] = "FeralasE24 1997",
-				["desc"] = "53:0 1998:0 ",
-			},
-			[79473755] = {
-				["icon"] = 1,
-				["title"] = "FeralasE34 2007",
-				["desc"] = "2003:0 137:0 2008:0 ",
-			},
-			[52735034] = {
-				["icon"] = 1,
-				["title"] = "FeralasC5 1947",
-				["desc"] = "1946:0 1948:0 1951:0 ",
-			},
-			[74536513] = {
-				["icon"] = 1,
-				["title"] = "FeralasE13 1986",
-				["desc"] = "1984:0 ",
-			},
-			[71694128] = {
-				["icon"] = 1,
-				["title"] = "FeralasE33 2006",
-				["desc"] = "1974:0 1976:0 1977:0 1995:0 2004:0 2005:0 137:0 ",
-			},
-			[75024565] = {
-				["icon"] = 1,
-				["title"] = "FeralasE23 1996",
-				["desc"] = "53:0 ",
-			},
-			[88094569] = {
-				["icon"] = 1,
-				["title"] = "FeralasE41 2014",
-				["desc"] = "2013:0 40:0 2019:0 ",
-			},
-			[31705413] = {
-				["icon"] = 1,
-				["title"] = "SardorIsle1 1940",
-				["desc"] = "58:0 132:0 1941:0 ",
+		["Stormwind"] = {
+			[61966885] = {
+				["title"] = "TradeDistrict 712",
+				["icon"] = 1,
+				["desc"] = "16:0 ",
 			},
 		},
-		["Silithus"] = {
-			[45542875] = {
-				["title"] = "Silithus25 2316",
+		["Tirisfal"] = {
+			[37226746] = {
+				["title"] = "UndeadStartE 296",
 				["icon"] = 1,
-				["desc"] = "2313:0 ",
+				["desc"] = "295:0 4:0 ",
 			},
-			[56365247] = {
-				["title"] = "Silithus59 2350",
+			[32054671] = {
+				["title"] = "CrusadersOutpost 293",
 				["icon"] = 1,
-				["desc"] = "177:0 2294:0 2295:0 2304:0 2348:0 2351:0 2352:0 2355:0 ",
+				["desc"] = "288:0 292:0 ",
 			},
-			[48623149] = {
-				["title"] = "Silithus2311",
+			[58793167] = {
+				["title"] = "GarrensHaunt 280",
 				["icon"] = 1,
-				["desc"] = "",
+				["desc"] = "279:0 281:0 284:0 ",
 			},
-			[33198581] = {
-				["title"] = "Silithus48 2339",
+			[75306741] = {
+				["title"] = "TG_hubSE 275",
 				["icon"] = 1,
-				["desc"] = "193:0 2337:0 2338:0 2340:0 ",
+				["desc"] = "273:0 276:0 277:0 ",
 			},
-			[46262271] = {
-				["title"] = "Silithus23 2314",
+			[46383772] = {
+				["title"] = "AgamandMillsEntrance 289",
 				["icon"] = 1,
-				["desc"] = "2313:0 ",
+				["desc"] = "288:0 290:0 291:0 ",
 			},
-			[38376188] = {
-				["title"] = "Silithus44 2335",
+			[66202995] = {
+				["title"] = "NorthCoastC 283",
 				["icon"] = 1,
-				["desc"] = "177:0 189:0 2324:0 2326:0 2336:0 2341:0 2342:0 2343:0 ",
+				["desc"] = "282:0 284:0 ",
 			},
-			[50813775] = {
-				["title"] = "Silithus15 2306",
+			[74682672] = {
+				["title"] = "NorthCoastE 282",
 				["icon"] = 1,
-				["desc"] = "2305:0 188:0 2307:0 2308:0 2309:0 2310:0 ",
+				["desc"] = "281:0 283:0 ",
 			},
-			[38961318] = {
-				["title"] = "Silithus12 2303",
+			[53455741] = {
+				["title"] = "ColdHearthManor 285",
 				["icon"] = 1,
-				["desc"] = "2301:0 2302:0 ",
+				["desc"] = "278:0 18:0 286:0 287:0 297:0 ",
 			},
-			[62898190] = {
-				["title"] = "Silithus71 2362",
+			[85257012] = {
+				["title"] = "Bulwark 273",
 				["icon"] = 1,
-				["desc"] = "2360:0 2363:0 2364:0 ",
+				["desc"] = "267:0 274:0 275:0 276:0 ",
 			},
-			[44258973] = {
-				["title"] = "Silithus54 2345",
+			[65373994] = {
+				["title"] = "BrightwaterLake 281",
 				["icon"] = 1,
-				["desc"] = "2344:0 ",
+				["desc"] = "2:0 279:0 280:0 282:0 284:0 ",
 			},
-			[18113235] = {
-				["title"] = "Silithus29 2320",
+			[69076000] = {
+				["title"] = "TG_hubC2 277",
 				["icon"] = 1,
-				["desc"] = "2319:0 2321:0 134:0 ",
+				["desc"] = "2:0 275:0 276:0 ",
 			},
-			[58818520] = {
-				["title"] = "Silithus70 2361",
+			[57635117] = {
+				["title"] = "BrillEntrance 278",
 				["icon"] = 1,
-				["desc"] = "2359:0 2360:0 2365:0 2366:0 ",
+				["desc"] = "2:0 279:0 285:0 297:0 ",
 			},
-			[53704151] = {
-				["title"] = "Silithus60 2351",
+			[43605420] = {
+				["title"] = "TG_hubC1 286",
 				["icon"] = 1,
-				["desc"] = "2294:0 2304:0 2323:0 2350:0 ",
+				["desc"] = "285:0 287:0 288:0 292:0 294:0 ",
 			},
-			[41709120] = {
-				["title"] = "Silithus53 2344",
+			[76706002] = {
+				["title"] = "BalnirFarmstead 276",
 				["icon"] = 1,
-				["desc"] = "193:0 2345:0 ",
+				["desc"] = "273:0 275:0 277:0 ",
 			},
-			[43826406] = {
-				["title"] = "Silithus52 2343",
+			[40745444] = {
+				["title"] = "UndeadStartExit 294",
 				["icon"] = 1,
-				["desc"] = "177:0 2324:0 2335:0 2342:0 2348:0 ",
+				["desc"] = "288:0 286:0 292:0 295:0 ",
 			},
-			[62795115] = {
-				["title"] = "Silithus62 2353",
+			[43533145] = {
+				["title"] = "AgamandMillsW 290",
 				["icon"] = 1,
-				["desc"] = "2294:0 2352:0 2354:0 2356:0 ",
+				["desc"] = "289:0 291:0 ",
 			},
-			[86361135] = {
-				["title"] = "Ungoro71",
+			[58532832] = {
+				["title"] = "NorthCoastW 284",
 				["icon"] = 1,
-				["desc"] = "",
+				["desc"] = "280:0 281:0 283:0 ",
 			},
-			[32217678] = {
-				["title"] = "Silithus46 2337",
+			[35735894] = {
+				["title"] = "UndeadStartEnd 295",
 				["icon"] = 1,
-				["desc"] = "135:0 2336:0 2338:0 2339:0 2340:0 ",
+				["desc"] = "294:0 83:0 4:0 296:0 ",
 			},
-			[48103977] = {
-				["title"] = "Silithus19 2310",
+			[51556771] = {
+				["title"] = "CrusadersOutpost 287",
 				["icon"] = 1,
-				["desc"] = "2306:0 2309:0 2323:0 ",
+				["desc"] = "286:0 285:0 297:0 ",
 			},
-			[49213425] = {
-				["title"] = "Silithus16 2307",
+			[53412867] = {
+				["title"] = "AgamandMillsE 291",
 				["icon"] = 1,
-				["desc"] = "2306:0 ",
+				["desc"] = "289:0 290:0 ",
 			},
-			[40112386] = {
-				["title"] = "Silithus9 2300",
+			[35975007] = {
+				["title"] = "SollidenFarmstead 292",
 				["icon"] = 1,
-				["desc"] = "2299:0 2301:0 2311:0 2317:0 2322:0 2323:0 ",
+				["desc"] = "286:0 288:0 293:0 294:0 ",
 			},
-			[47636691] = {
-				["title"] = "Silithus57 2348",
+			[43184616] = {
+				["title"] = "TG_hubNE 288",
 				["icon"] = 1,
-				["desc"] = "177:0 2342:0 2343:0 2347:0 2349:0 2350:0 ",
+				["desc"] = "286:0 289:0 292:0 293:0 294:0 ",
 			},
-			[66867993] = {
-				["title"] = "Silithus67 2358",
+			[55604108] = {
+				["title"] = "GarrensHauntGraves 279",
 				["icon"] = 1,
-				["desc"] = "192:0 ",
+				["desc"] = "2:0 278:0 280:0 281:0 ",
 			},
-			[65327533] = {
-				["title"] = "Silithus72 2363",
+			[54837287] = {
+				["title"] = "TH_exitS 297",
 				["icon"] = 1,
-				["desc"] = "2362:0 ",
-			},
-			[55826235] = {
-				["title"] = "Silithus58 2349",
-				["icon"] = 1,
-				["desc"] = "177:0 2348:0 2355:0 2357:0 192:0 2359:0 ",
-			},
-			[46064207] = {
-				["title"] = "Silithus32 2323",
-				["icon"] = 1,
-				["desc"] = "177:0 189:0 2300:0 2310:0 2324:0 2351:0 ",
-			},
-			[51152731] = {
-				["title"] = "Silithus24 2315",
-				["icon"] = 1,
-				["desc"] = "2313:0 ",
-			},
-			[37166192] = {
-				["title"] = "Silithus40 2331",
-				["icon"] = 1,
-				["desc"] = "2328:0 ",
-			},
-			[48492592] = {
-				["title"] = "Silithus22 2313",
-				["icon"] = 1,
-				["desc"] = "2311:0 2314:0 2315:0 2316:0 ",
-			},
-			[51853672] = {
-				["title"] = "Silithus14 2305",
-				["icon"] = 1,
-				["desc"] = "2304:0 2306:0 188:0 ",
-			},
-			[24494280] = {
-				["title"] = "Silithus30 2321",
-				["icon"] = 1,
-				["desc"] = "2320:0 134:0 2322:0 2325:0 ",
-			},
-			[25951302] = {
-				["title"] = "Silithus27 2318",
-				["icon"] = 1,
-				["desc"] = "2317:0 2319:0 133:0 ",
-			},
-			[35378294] = {
-				["title"] = "Silithus49 2340",
-				["icon"] = 1,
-				["desc"] = "193:0 2337:0 2339:0 2341:0 ",
-			},
-			[72161484] = {
-				["title"] = "Silithus7 2298",
-				["icon"] = 1,
-				["desc"] = "2297:0 ",
-			},
-			[59825647] = {
-				["title"] = "Silithus64 2355",
-				["icon"] = 1,
-				["desc"] = "2349:0 2350:0 2356:0 2357:0 ",
-			},
-			[53341582] = {
-				["title"] = "Silithus8 2299",
-				["icon"] = 1,
-				["desc"] = "191:0 2296:0 2300:0 2304:0 2311:0 ",
-			},
-			[72731252] = {
-				["title"] = "Silithus6 2297",
-				["icon"] = 1,
-				["desc"] = "191:0 2298:0 ",
-			},
-			[40302807] = {
-				["title"] = "Silithus21 2312",
-				["icon"] = 1,
-				["desc"] = "2311:0 ",
-			},
-			[63135958] = {
-				["title"] = "Silithus66 2357",
-				["icon"] = 1,
-				["desc"] = "2349:0 2354:0 2355:0 192:0 ",
-			},
-			[42987130] = {
-				["title"] = "Silithus51 2342",
-				["icon"] = 1,
-				["desc"] = "2335:0 2336:0 2341:0 2343:0 2347:0 2348:0 ",
-			},
-			[20786357] = {
-				["title"] = "Silithus38 2329",
-				["icon"] = 1,
-				["desc"] = "2327:0 2332:0 ",
-			},
-			[60567944] = {
-				["title"] = "Silithus69 2360",
-				["icon"] = 1,
-				["desc"] = "2359:0 2361:0 2362:0 ",
-			},
-			[54333652] = {
-				["title"] = "Silithus13 2304",
-				["icon"] = 1,
-				["desc"] = "2294:0 2295:0 2296:0 2299:0 2305:0 2350:0 2351:0 ",
-			},
-			[44041801] = {
-				["title"] = "Silithus10 2301",
-				["icon"] = 1,
-				["desc"] = "2300:0 2302:0 2303:0 ",
-			},
-			[33356498] = {
-				["title"] = "Silithus45 2336",
-				["icon"] = 1,
-				["desc"] = "2326:0 2335:0 135:0 2337:0 2341:0 2342:0 ",
-			},
-			[26205797] = {
-				["title"] = "Silithus36 2327",
-				["icon"] = 1,
-				["desc"] = "2326:0 2328:0 2329:0 2330:0 ",
-			},
-			[18891956] = {
-				["title"] = "Silithus28 2319",
-				["icon"] = 1,
-				["desc"] = "2318:0 133:0 2320:0 134:0 ",
-			},
-			[51219392] = {
-				["title"] = "Silithus75 2366",
-				["icon"] = 1,
-				["desc"] = "2361:0 2367:0 ",
-			},
-			[40667601] = {
-				["title"] = "Silithus50 2341",
-				["icon"] = 1,
-				["desc"] = "193:0 2335:0 2336:0 2340:0 2342:0 2347:0 ",
-			},
-			[60864820] = {
-				["title"] = "Silithus61 2352",
-				["icon"] = 1,
-				["desc"] = "2294:0 2350:0 2353:0 ",
-			},
-			[60562249] = {
-				["title"] = "Silithus5 2296",
-				["icon"] = 1,
-				["desc"] = "191:0 2293:0 2295:0 2299:0 2304:0 2311:0 ",
-			},
-			[30465463] = {
-				["title"] = "Silithus35 2326",
-				["icon"] = 1,
-				["desc"] = "2325:0 2327:0 2335:0 2336:0 ",
-			},
-			[47883485] = {
-				["title"] = "Silithus18 2309",
-				["icon"] = 1,
-				["desc"] = "2306:0 2310:0 2311:0 ",
-			},
-			[63493518] = {
-				["title"] = "Silithus4 2295",
-				["icon"] = 1,
-				["desc"] = "191:0 2293:0 2294:0 2296:0 2304:0 2350:0 ",
-			},
-			[54787645] = {
-				["title"] = "Silithus68 2359",
-				["icon"] = 1,
-				["desc"] = "2349:0 2360:0 2361:0 2346:0 ",
-			},
-			[83541429] = {
-				["title"] = "Silithus1 2292",
-				["icon"] = 1,
-				["desc"] = "2291:0 184:0 ",
-			},
-			[44651184] = {
-				["title"] = "Silithus11 2302",
-				["icon"] = 1,
-				["desc"] = "2301:0 2303:0 ",
-			},
-			[63904736] = {
-				["title"] = "Silithus3 2294",
-				["icon"] = 1,
-				["desc"] = "2293:0 2295:0 2304:0 2350:0 2351:0 2352:0 2353:0 ",
-			},
-			[23546166] = {
-				["title"] = "Silithus42 2333",
-				["icon"] = 1,
-				["desc"] = "2330:0 ",
-			},
-			[50833364] = {
-				["title"] = "Silithus17 2308",
-				["icon"] = 1,
-				["desc"] = "2306:0 ",
-			},
-			[20165863] = {
-				["title"] = "Silithus43 2334",
-				["icon"] = 1,
-				["desc"] = "2330:0 ",
-			},
-			[33823618] = {
-				["title"] = "Silithus31 2322",
-				["icon"] = 1,
-				["desc"] = "134:0 189:0 2300:0 2317:0 2321:0 2325:0 ",
-			},
-			[30038485] = {
-				["title"] = "Silithus47 2338",
-				["icon"] = 1,
-				["desc"] = "135:0 2337:0 2339:0 ",
-			},
-			[30054924] = {
-				["title"] = "Silithus34 2325",
-				["icon"] = 1,
-				["desc"] = "189:0 2321:0 2322:0 2326:0 ",
-			},
-			[72363294] = {
-				["title"] = "Silithus2 2293",
-				["icon"] = 1,
-				["desc"] = "184:0 2294:0 2295:0 2296:0 ",
-			},
-			[64677405] = {
-				["title"] = "Silithus73 2364",
-				["icon"] = 1,
-				["desc"] = "2362:0 ",
-			},
-			[26756494] = {
-				["title"] = "Silithus37 2328",
-				["icon"] = 1,
-				["desc"] = "2327:0 2331:0 ",
-			},
-			[48058167] = {
-				["title"] = "Silithus56 2347",
-				["icon"] = 1,
-				["desc"] = "193:0 2341:0 2342:0 2348:0 ",
-			},
-			[63415603] = {
-				["title"] = "Silithus63 2354",
-				["icon"] = 1,
-				["desc"] = "2353:0 2356:0 2357:0 ",
-			},
-			[23625545] = {
-				["title"] = "Silithus39 2330",
-				["icon"] = 1,
-				["desc"] = "2327:0 2333:0 2334:0 ",
-			},
-			[60285273] = {
-				["title"] = "Silithus65 2356",
-				["icon"] = 1,
-				["desc"] = "2353:0 2354:0 2355:0 ",
-			},
-			[34591974] = {
-				["title"] = "Silithus26 2317",
-				["icon"] = 1,
-				["desc"] = "2300:0 2318:0 2322:0 ",
-			},
-			[44815255] = {
-				["title"] = "Silithus33 2324",
-				["icon"] = 1,
-				["desc"] = "177:0 189:0 2323:0 2335:0 2343:0 ",
-			},
-			[45358598] = {
-				["title"] = "Silithus74 2365",
-				["icon"] = 1,
-				["desc"] = "2361:0 ",
-			},
-			[61719949] = {
-				["title"] = "Silithus74 2365",
-				["icon"] = 1,
-				["desc"] = "2361:0 ",
-			},
-			[23837119] = {
-				["title"] = "Silithus41 2332",
-				["icon"] = 1,
-				["desc"] = "2329:0 ",
-			},
-			[44398606] = {
-				["title"] = "Silithus76 2367",
-				["icon"] = 1,
-				["desc"] = "2366:0 ",
-			},
-			[53648882] = {
-				["title"] = "Silithus55 2346",
-				["icon"] = 1,
-				["desc"] = "193:0 2359:0 ",
+				["desc"] = "278:0 285:0 287:0 298:0 ",
 			},
 		},
-		["ShattrathCity"] = {
-			[74961251] = {
+		["HowlingFjord"] = {
+			[55535887] = {
 				["icon"] = 1,
-				["title"] = "t26 ShattrathCity1 2747",
-				["desc"] = "2538:0 2455:0 2450:0 ",
+				["title"] = "hj106 HowlingFjord53 3333",
+				["desc"] = "3332:0 3334:0 ",
 			},
-			[79425738] = {
+			[62538101] = {
 				["icon"] = 1,
-				["title"] = "t2 ShattrathCity2 2450",
-				["desc"] = "2455:0 2449:0 2456:0 2747:0 ",
+				["title"] = "hj95 ShieldHill2 3322",
+				["desc"] = "3321:0 ",
 			},
-			[57214635] = {
+			[22741912] = {
 				["icon"] = 1,
-				["title"] = "t1 ShattrathCity1 2449",
-				["desc"] = "2450:0 ",
+				["title"] = "hj32 ChillmereCoast4 3259",
+				["desc"] = "3257:0 3260:0 3258:0 3261:0 ",
+			},
+			[72775560] = {
+				["icon"] = 1,
+				["title"] = "hj83 Nifflevar4 3310",
+				["desc"] = "3306:0 3305:0 3304:0 ",
+			},
+			[34215098] = {
+				["icon"] = 1,
+				["title"] = "hj117 WestguardKeep1 3344",
+				["desc"] = "3345:0 3343:0 3346:0 ",
+			},
+			[46532922] = {
+				["icon"] = 1,
+				["title"] = "hj47 Skorn1 3274",
+				["desc"] = "3275:0 3273:0 3279:0 3296:0 ",
+			},
+			[51245407] = {
+				["icon"] = 1,
+				["title"] = "hj122 Halgrind1 3349",
+				["desc"] = "3348:0 ",
+			},
+			[38743845] = {
+				["icon"] = 1,
+				["title"] = "hj40 WhisperGulch4 3267",
+				["desc"] = "3266:0 3268:0 3342:0 ",
+			},
+			[48097370] = {
+				["icon"] = 1,
+				["title"] = "hj96 ShieldHill3 3323",
+				["desc"] = "3325:0 3320:0 3326:0 ",
+			},
+			[49200991] = {
+				["icon"] = 1,
+				["title"] = "hj12 CampWinterhoof1 3239",
+				["desc"] = "3240:0 3238:0 3237:0 ",
+			},
+			[36371159] = {
+				["icon"] = 1,
+				["title"] = "hj19 Gjalerbron3 3246",
+				["desc"] = "3248:0 3245:0 3247:0 ",
+			},
+			[72035864] = {
+				["icon"] = 1,
+				["title"] = "hj79 HowlingFjord34 3306",
+				["desc"] = "3310:0 3312:0 3311:0 ",
+			},
+			[61633015] = {
+				["icon"] = 1,
+				["title"] = "hj59 HowlingFjord23 3286",
+				["desc"] = "3292:0 3283:0 3284:0 3287:0 ",
+			},
+			[50044186] = {
+				["icon"] = 1,
+				["title"] = "hj111 HowlingFjord57 3338",
+				["desc"] = "3335:0 3336:0 3339:0 3340:0 ",
+			},
+			[44915390] = {
+				["icon"] = 1,
+				["title"] = "hj120 EmberClutch2 3347",
+				["desc"] = "3351:0 3348:0 3346:0 3341:0 3352:0 3353:0 ",
+			},
+			[33674036] = {
+				["icon"] = 1,
+				["title"] = "hj38 WhisperGulch2 3265",
+				["desc"] = "3264:0 3266:0 ",
+			},
+			[69332271] = {
+				["icon"] = 1,
+				["title"] = "hj5 GiantsRun2 3232",
+				["desc"] = "3231:0 3288:0 3230:0 3285:0 ",
+			},
+			[46963632] = {
+				["icon"] = 1,
+				["title"] = "hj51 Skorn5 3278",
+				["desc"] = "3277:0 3276:0 ",
+			},
+			[40132506] = {
+				["icon"] = 1,
+				["title"] = "hj45 HowlingFjord18 3272",
+				["desc"] = "3273:0 3243:0 3269:0 3268:0 ",
+			},
+			[53835848] = {
+				["icon"] = 1,
+				["title"] = "hj103 HowlingFjord50 3330",
+				["desc"] = "3331:0 3328:0 3327:0 ",
+			},
+			[38634977] = {
+				["icon"] = 1,
+				["title"] = "hj118 HowlingFjord63 3345",
+				["desc"] = "3342:0 3341:0 3344:0 ",
+			},
+			[67283851] = {
+				["icon"] = 1,
+				["title"] = "hj62 GiantsRun3 3289",
+				["desc"] = "3290:0 3291:0 3297:0 3287:0 3288:0 ",
+			},
+			[76184255] = {
+				["icon"] = 1,
+				["title"] = "hj72 HowlingFjord30 3299",
+				["desc"] = "3302:0 3298:0 3303:0 3300:0 ",
+			},
+			[28281385] = {
+				["icon"] = 1,
+				["title"] = "hj22 Rivenwood1 3249",
+				["desc"] = "3250:0 3271:0 3251:0 3248:0 3244:0 ",
+			},
+			[76936409] = {
+				["icon"] = 1,
+				["title"] = "hj86 HowlingFjord38 3313",
+				["desc"] = "3312:0 3311:0 3306:0 ",
+			},
+			[29722120] = {
+				["icon"] = 1,
+				["title"] = "hj44 SteelGate1 3271",
+				["desc"] = "3251:0 3252:0 3269:0 3249:0 3244:0 ",
+			},
+			[53126949] = {
+				["icon"] = 1,
+				["title"] = "hj97 HowlingFjord46 3324",
+				["desc"] = "3329:0 3320:0 3325:0 ",
+			},
+			[64937055] = {
+				["icon"] = 1,
+				["title"] = "hj90 HowlingFjord42 3317",
+				["desc"] = "3311:0 3316:0 3319:0 ",
+			},
+			[44545952] = {
+				["icon"] = 1,
+				["title"] = "hj125 HowlingFjord65 3352",
+				["desc"] = "3347:0 3353:0 3326:0 3327:0 ",
+			},
+			[54732325] = {
+				["icon"] = 1,
+				["title"] = "hj55 TheTwistedGlade1 3282",
+				["desc"] = "3279:0 3295:0 3236:0 3283:0 3281:0 ",
+			},
+			[34481475] = {
+				["icon"] = 1,
+				["title"] = "hj18 Gjalerbron2 3245",
+				["desc"] = "3248:0 3244:0 3246:0 3249:0 ",
+			},
+			[33801191] = {
+				["icon"] = 1,
+				["title"] = "hj21 Gjalerbron4 3248",
+				["desc"] = "3245:0 3246:0 3249:0 ",
+			},
+			[54535092] = {
+				["icon"] = 1,
+				["title"] = "hj105 HowlingFjord52 3332",
+				["desc"] = "3331:0 3335:0 3333:0 ",
+			},
+			[44846728] = {
+				["icon"] = 1,
+				["title"] = "hj99 HowlingFjord47 3326",
+				["desc"] = "3352:0 3325:0 3323:0 ",
+			},
+			[21141453] = {
+				["icon"] = 1,
+				["title"] = "hj33 ChillmereCoast5 3260",
+				["desc"] = "3259:0 3188:0 3258:0 ",
+			},
+			[65313338] = {
+				["icon"] = 1,
+				["title"] = "hj60 HowlingFjord24 3287",
+				["desc"] = "3291:0 3289:0 3290:0 3288:0 3286:0 ",
+			},
+			[21752852] = {
+				["icon"] = 1,
+				["title"] = "hj29 ChillmereCoast1 3256",
+				["desc"] = "3261:0 3257:0 3255:0 ",
+			},
+			[37564370] = {
+				["icon"] = 1,
+				["title"] = "hj115 HowlingFjord61 3342",
+				["desc"] = "3343:0 3341:0 3267:0 3345:0 ",
+			},
+			[73402417] = {
+				["icon"] = 1,
+				["title"] = "hj4 GiantsRun1 3231",
+				["desc"] = "3232:0 3230:0 3288:0 ",
+			},
+			[64984100] = {
+				["icon"] = 1,
+				["title"] = "hj63 Baleheim1 3290",
+				["desc"] = "3291:0 3289:0 3297:0 ",
+			},
+			[40586045] = {
+				["icon"] = 1,
+				["title"] = "hj126 EmberSpearTower1 3353",
+				["desc"] = "3352:0 3346:0 3347:0 ",
+			},
+			[18332042] = {
+				["icon"] = 1,
+				["title"] = "hj31 ChillmereCoast3 3258",
+				["desc"] = "3257:0 3259:0 3260:0 ",
+			},
+			[63962193] = {
+				["icon"] = 1,
+				["title"] = "hj58 TheFrozenGlade1 3285",
+				["desc"] = "3284:0 3234:0 3235:0 3232:0 ",
+			},
+			[34884287] = {
+				["icon"] = 1,
+				["title"] = "hj116 HowlingFjord62 3343",
+				["desc"] = "3342:0 3344:0 ",
+			},
+			[26843238] = {
+				["icon"] = 1,
+				["title"] = "hj27 HowlingFjord14 3254",
+				["desc"] = "3253:0 3255:0 ",
+			},
+			[26142446] = {
+				["icon"] = 1,
+				["title"] = "hj25 ApothecaryCamp1 3252",
+				["desc"] = "3251:0 3271:0 3270:0 3253:0 ",
+			},
+			[49242405] = {
+				["icon"] = 1,
+				["title"] = "hj52 Skorn6 3279",
+				["desc"] = "3280:0 3282:0 3274:0 3273:0 ",
+			},
+			[74771343] = {
+				["icon"] = 1,
+				["title"] = "hj2 HowlingFjord1 3229",
+				["desc"] = "3230:0 3228:0 ",
+			},
+			[66707344] = {
+				["icon"] = 1,
+				["title"] = "hj89 HowlingFjord41 3316",
+				["desc"] = "3315:0 3317:0 3311:0 ",
+			},
+			[27914039] = {
+				["icon"] = 1,
+				["title"] = "hj36 WhisperGulch1 3263",
+				["desc"] = "3262:0 3264:0 ",
+			},
+			[55194226] = {
+				["icon"] = 1,
+				["title"] = "hj109 HowlingFjord55 3336",
+				["desc"] = "3337:0 3338:0 ",
+			},
+			[35922700] = {
+				["icon"] = 1,
+				["title"] = "hj42 HowlingFjord17 3269",
+				["desc"] = "3272:0 3268:0 3243:0 3271:0 3270:0 ",
+			},
+			[49274989] = {
+				["icon"] = 1,
+				["title"] = "hj123 Halgrind2 3350",
+				["desc"] = "3349:0 3351:0 ",
+			},
+			[48866972] = {
+				["icon"] = 1,
+				["title"] = "hj98 NewAgamand1 3325",
+				["desc"] = "3323:0 3324:0 3326:0 3327:0 ",
+			},
+			[41785533] = {
+				["icon"] = 1,
+				["title"] = "hj119 EmberClutch1 3346",
+				["desc"] = "3347:0 3353:0 3352:0 3344:0 ",
+			},
+			[71384526] = {
+				["icon"] = 1,
+				["title"] = "hj76 HowlingFjord32 3303",
+				["desc"] = "3297:0 3298:0 3304:0 ",
+			},
+			[44973568] = {
+				["icon"] = 1,
+				["title"] = "hj50 Skorn4 3277",
+				["desc"] = "3278:0 ",
+			},
+			[46034564] = {
+				["icon"] = 1,
+				["title"] = "hj112 HowlingFjord58 3339",
+				["desc"] = "3351:0 3341:0 3340:0 3338:0 ",
+			},
+			[68175506] = {
+				["icon"] = 1,
+				["title"] = "hj80 HowlingFjord35 3307",
+				["desc"] = "3304:0 3308:0 ",
+			},
+			[53680679] = {
+				["icon"] = 1,
+				["title"] = "hj11 HowlingFjord6 3238",
+				["desc"] = "3237:0 3239:0 3281:0 3223:0 ",
+			},
+			[50663358] = {
+				["icon"] = 1,
+				["title"] = "hj69 HowlingFjord27 3296",
+				["desc"] = "3295:0 3274:0 ",
+			},
+			[53145453] = {
+				["icon"] = 1,
+				["title"] = "hj104 HowlingFjord51 3331",
+				["desc"] = "3330:0 3332:0 ",
+			},
+			[57743732] = {
+				["icon"] = 1,
+				["title"] = "hj66 HowlingFjord26 3293",
+				["desc"] = "3294:0 3292:0 ",
+			},
+			[24673328] = {
+				["icon"] = 1,
+				["title"] = "hj28 HowlingFjord14 3255",
+				["desc"] = "3254:0 3256:0 3262:0 ",
+			},
+			[67345246] = {
+				["icon"] = 1,
+				["title"] = "hj81 Nifflevar2 3308",
+				["desc"] = "3307:0 3309:0 ",
+			},
+			[49366201] = {
+				["icon"] = 1,
+				["title"] = "hj100 HowlingFjord48 3327",
+				["desc"] = "3325:0 3328:0 3352:0 3330:0 ",
+			},
+			[57633038] = {
+				["icon"] = 1,
+				["title"] = "hj65 Baleheim3 3292",
+				["desc"] = "3283:0 3286:0 3295:0 3293:0 ",
+			},
+			[40580676] = {
+				["icon"] = 1,
+				["title"] = "hj20 Gjalerhorn1 3247",
+				["desc"] = "3246:0 ",
+			},
+			[59303910] = {
+				["icon"] = 1,
+				["title"] = "hj67 CauldrosIsle1 3294",
+				["desc"] = "3293:0 ",
+			},
+			[66275577] = {
+				["icon"] = 1,
+				["title"] = "hj82 Nifflevar3 3309",
+				["desc"] = "3304:0 3308:0 ",
+			},
+			[53947464] = {
+				["icon"] = 1,
+				["title"] = "hj93 ShieldHill1 3320",
+				["desc"] = "3324:0 3319:0 3323:0 ",
+			},
+			[63373793] = {
+				["icon"] = 1,
+				["title"] = "hj64 Baleheim2 3291",
+				["desc"] = "3290:0 3289:0 ",
+			},
+			[76624712] = {
+				["icon"] = 1,
+				["title"] = "hj75 IvaldsRuin2 3302",
+				["desc"] = "3299:0 3301:0 3303:0 3305:0 ",
+			},
+			[53683084] = {
+				["icon"] = 1,
+				["title"] = "hj68 CauldrosIsle2 3295",
+				["desc"] = "3292:0 3296:0 3282:0 ",
+			},
+			[52801666] = {
+				["icon"] = 1,
+				["title"] = "hj54 HowlingFjord21 3281",
+				["desc"] = "3280:0 3237:0 3282:0 3238:0 ",
+			},
+			[45413256] = {
+				["icon"] = 1,
+				["title"] = "hj49 Skorn3 3276",
+				["desc"] = "3275:0 3278:0 ",
+			},
+			[27583210] = {
+				["icon"] = 1,
+				["title"] = "hj26 HowlingFjord13 3253",
+				["desc"] = "3254:0 3270:0 3252:0 ",
+			},
+			[57226960] = {
+				["icon"] = 1,
+				["title"] = "hj102 NewAgamand2 3329",
+				["desc"] = "3319:0 3324:0 3328:0 ",
+			},
+			[58907773] = {
+				["icon"] = 1,
+				["title"] = "hj94 HowlingFjord45 3321",
+				["desc"] = "3319:0 3322:0 3320:0 ",
+			},
+			[58367337] = {
+				["icon"] = 1,
+				["title"] = "hj92 HowlingFjord44 3319",
+				["desc"] = "3321:0 3329:0 3320:0 3317:0 ",
+			},
+			[74755332] = {
+				["icon"] = 1,
+				["title"] = "hj78 Nifflevar1 3305",
+				["desc"] = "3310:0 3304:0 3302:0 ",
+			},
+			[47955317] = {
+				["icon"] = 1,
+				["title"] = "hj121 HowlingFjord64 3348",
+				["desc"] = "3347:0 3349:0 ",
+			},
+			[69116495] = {
+				["icon"] = 1,
+				["title"] = "hj84 HowlingFjord36 3311",
+				["desc"] = "3318:0 3314:0 3312:0 3317:0 3306:0 ",
+			},
+			[54386386] = {
+				["icon"] = 1,
+				["title"] = "hj101 HowlingFjord49 3328",
+				["desc"] = "3327:0 3329:0 ",
+			},
+			[44342619] = {
+				["icon"] = 1,
+				["title"] = "hj46 HowlingFjord19 3273",
+				["desc"] = "3275:0 3274:0 3272:0 3279:0 ",
+			},
+			[61321771] = {
+				["icon"] = 1,
+				["title"] = "hj8 FortWildervar2 3235",
+				["desc"] = "3234:0 3236:0 ",
+			},
+			[36043873] = {
+				["icon"] = 1,
+				["title"] = "hj39 WhisperGulch3 3266",
+				["desc"] = "3267:0 3265:0 ",
+			},
+			[23452450] = {
+				["icon"] = 1,
+				["title"] = "hj34 ChillmereCoast6 3261",
+				["desc"] = "3257:0 3259:0 3256:0 ",
+			},
+			[45645032] = {
+				["icon"] = 1,
+				["title"] = "hj124 Halgrind3 3351",
+				["desc"] = "3347:0 3339:0 3350:0 3341:0 ",
+			},
+			[78905008] = {
+				["icon"] = 1,
+				["title"] = "hj74 IvaldsRuin1 3301",
+				["desc"] = "3300:0 3302:0 3305:0 ",
+			},
+			[73786453] = {
+				["icon"] = 1,
+				["title"] = "hj85 HowlingFjord37 3312",
+				["desc"] = "3313:0 3311:0 3314:0 ",
+			},
+			[56634456] = {
+				["icon"] = 1,
+				["title"] = "hj110 HowlingFjord56 3337",
+				["desc"] = "3336:0 ",
+			},
+			[24521257] = {
+				["icon"] = 1,
+				["title"] = "hj23 HowlingFjord11 3250",
+				["desc"] = "3249:0 3251:0 3192:0 3188:0 ",
+			},
+			[55441285] = {
+				["icon"] = 1,
+				["title"] = "hj10 HowlingFjord5 3237",
+				["desc"] = "3281:0 3238:0 3240:0 ",
+			},
+			[73160541] = {
+				["icon"] = 1,
+				["title"] = "hj1 TheBrokenBluffs1 3228",
+				["desc"] = "3229:0 3227:0 ",
+			},
+			[43274109] = {
+				["icon"] = 1,
+				["title"] = "hj113 HowlingFjord59 3340",
+				["desc"] = "3341:0 3338:0 3339:0 ",
+			},
+			[48741320] = {
+				["icon"] = 1,
+				["title"] = "hj13 HowlingFjord7 3240",
+				["desc"] = "3239:0 3241:0 3279:0 ",
+			},
+			[72924065] = {
+				["icon"] = 1,
+				["title"] = "hj71 HowlingFjord29 3298",
+				["desc"] = "3299:0 3303:0 3297:0 ",
+			},
+			[68717440] = {
+				["icon"] = 1,
+				["title"] = "hj88 HowlingFjord40 3315",
+				["desc"] = "3316:0 3317:0 3314:0 ",
+			},
+			[30962884] = {
+				["icon"] = 1,
+				["title"] = "hj43 WestSpearTower1 3270",
+				["desc"] = "3253:0 3269:0 ",
+			},
+			[51194703] = {
+				["icon"] = 1,
+				["title"] = "hj108 Valgarde1 3335",
+				["desc"] = "3338:0 3332:0 3339:0 ",
+			},
+			[80494676] = {
+				["icon"] = 1,
+				["title"] = "hj73 HowlingFjord31 3300",
+				["desc"] = "3301:0 3299:0 ",
+			},
+			[38273230] = {
+				["icon"] = 1,
+				["title"] = "hj41 HowlingFjord16 3268",
+				["desc"] = "3267:0 3269:0 3272:0 ",
+			},
+			[26082024] = {
+				["icon"] = 1,
+				["title"] = "hj24 HowlingFjord12 3251",
+				["desc"] = "3252:0 3250:0 3271:0 3249:0 ",
+			},
+			[58422812] = {
+				["icon"] = 1,
+				["title"] = "hj56 NorthSpearTower1 3283",
+				["desc"] = "3292:0 3286:0 3236:0 3282:0 ",
+			},
+			[35481754] = {
+				["icon"] = 1,
+				["title"] = "hj17 Gjalerbron1 3244",
+				["desc"] = "3245:0 3243:0 3271:0 3269:0 ",
+			},
+			[40994557] = {
+				["icon"] = 1,
+				["title"] = "hj114 HowlingFjord60 3341",
+				["desc"] = "3342:0 3339:0 3345:0 3347:0 3340:0 ",
+			},
+			[50231909] = {
+				["icon"] = 1,
+				["title"] = "hj53 HowlingFjord20 3280",
+				["desc"] = "3281:0 3279:0 3241:0 ",
+			},
+			[58361928] = {
+				["icon"] = 1,
+				["title"] = "hj9 HowlingFjord4 3236",
+				["desc"] = "3235:0 3237:0 3281:0 3282:0 3283:0 ",
+			},
+			[43943008] = {
+				["icon"] = 1,
+				["title"] = "hj48 Skorn2 3275",
+				["desc"] = "3273:0 3276:0 3274:0 ",
+			},
+			[71081713] = {
+				["icon"] = 1,
+				["title"] = "hj3 HowlingFjord2 3230",
+				["desc"] = "3233:0 3232:0 3229:0 ",
+			},
+			[42341526] = {
+				["icon"] = 1,
+				["title"] = "hj15 HowlingFjord9 3242",
+				["desc"] = "3241:0 3243:0 ",
+			},
+			[66091694] = {
+				["icon"] = 1,
+				["title"] = "hj6 HowlingFjord3 3233",
+				["desc"] = "3234:0 3230:0 3285:0 ",
+			},
+			[62232404] = {
+				["icon"] = 1,
+				["title"] = "hj57 HowlingFjord22 3284",
+				["desc"] = "3285:0 3286:0 3235:0 ",
+			},
+			[58106135] = {
+				["icon"] = 1,
+				["title"] = "hj107 HowlingFjord54 3334",
+				["desc"] = "3333:0 ",
+			},
+			[70805257] = {
+				["icon"] = 1,
+				["title"] = "hj77 HowlingFjord33 3304",
+				["desc"] = "3305:0 3303:0 3310:0 3307:0 ",
+			},
+			[69114277] = {
+				["icon"] = 1,
+				["title"] = "hj70 HowlingFjord28 3297",
+				["desc"] = "3303:0 3289:0 3298:0 3290:0 ",
+			},
+			[46571685] = {
+				["icon"] = 1,
+				["title"] = "hj14 HowlingFjord8 3241",
+				["desc"] = "3240:0 3280:0 3242:0 ",
+			},
+			[67196258] = {
+				["icon"] = 1,
+				["title"] = "hj91 HowlingFjord43 3318",
+				["desc"] = "3311:0 3309:0 3307:0 ",
+			},
+			[31773957] = {
+				["icon"] = 1,
+				["title"] = "hj37 HowlingFjord15 3264",
+				["desc"] = "3265:0 3263:0 ",
+			},
+			[21242253] = {
+				["icon"] = 1,
+				["title"] = "hj30 ChillmereCoast2 3257",
+				["desc"] = "3261:0 3259:0 3258:0 ",
+			},
+			[37902091] = {
+				["icon"] = 1,
+				["title"] = "hj16 HowlingFjord10 3243",
+				["desc"] = "3244:0 3272:0 3269:0 3242:0 ",
+			},
+			[68602957] = {
+				["icon"] = 1,
+				["title"] = "hj61 HowlingFjord25 3288",
+				["desc"] = "3232:0 3287:0 3289:0 ",
+			},
+			[63241579] = {
+				["icon"] = 1,
+				["title"] = "hj7 FortWildervar1 3234",
+				["desc"] = "3235:0 3233:0 3284:0 ",
+			},
+			[70946816] = {
+				["icon"] = 1,
+				["title"] = "hj87 HowlingFjord39 3314",
+				["desc"] = "3311:0 3312:0 3315:0 3317:0 ",
+			},
+			[28573828] = {
+				["icon"] = 1,
+				["title"] = "hj35 ChillmereCoast7 3262",
+				["desc"] = "3263:0 3255:0 ",
 			},
 		},
 		["SwampOfSorrows"] = {
@@ -7284,15 +7159,15 @@ HandyNotes_HandyNotesDB = {
 				["icon"] = 1,
 				["desc"] = "830:0 834:0 ",
 			},
-			[8333199] = {
-				["title"] = "MistyValley 817",
-				["icon"] = 1,
-				["desc"] = "816:0 818:0 ",
-			},
 			[12466150] = {
 				["title"] = "IthariusCaveOutside 814",
 				["icon"] = 1,
 				["desc"] = "813:0 815:0 816:0 ",
+			},
+			[8333199] = {
+				["title"] = "MistyValley 817",
+				["icon"] = 1,
+				["desc"] = "816:0 818:0 ",
 			},
 			[90842707] = {
 				["title"] = "SSNE2 823",
@@ -7571,20 +7446,20 @@ HandyNotes_HandyNotesDB = {
 				["icon"] = 1,
 				["desc"] = "1680:0 1684:0 1687:0 ",
 			},
-			[78225149] = {
-				["title"] = "StonetalonE7 1654",
-				["icon"] = 1,
-				["desc"] = "153:0 1655:0 ",
-			},
-			[31511415] = {
-				["title"] = "StonetalonN5 1692",
-				["icon"] = 1,
-				["desc"] = "1691:0 155:0 39:0 1694:0 ",
-			},
 			[58208949] = {
 				["title"] = "StonetalonSE18 1639",
 				["icon"] = 1,
 				["desc"] = "1638:0 ",
+			},
+			[82339656] = {
+				["title"] = "STMExitE 1621",
+				["icon"] = 1,
+				["desc"] = "1533:0 1620:0 1622:0 ",
+			},
+			[78225149] = {
+				["title"] = "StonetalonE7 1654",
+				["icon"] = 1,
+				["desc"] = "153:0 1655:0 ",
 			},
 			[45933833] = {
 				["title"] = "StonetalonC25 1684",
@@ -7611,15 +7486,15 @@ HandyNotes_HandyNotesDB = {
 				["icon"] = 1,
 				["desc"] = "1637:0 1639:0 ",
 			},
-			[38395424] = {
-				["title"] = "StonetalonC17 1676",
+			[44694776] = {
+				["title"] = "StonetalonC23 1682",
 				["icon"] = 1,
-				["desc"] = "1675:0 1697:0 ",
+				["desc"] = "1681:0 1683:0 ",
 			},
-			[65335412] = {
-				["title"] = "StonetalonE2 1649",
+			[75529148] = {
+				["title"] = "StonetalonSE9 1630",
 				["icon"] = 1,
-				["desc"] = "1647:0 1648:0 152:0 1650:0 1651:0 1655:0 ",
+				["desc"] = "1623:0 1631:0 ",
 			},
 			[79708567] = {
 				["title"] = "StonetalonSE5 1626",
@@ -7651,20 +7526,20 @@ HandyNotes_HandyNotesDB = {
 				["icon"] = 1,
 				["desc"] = "152:0 1647:0 1649:0 1651:0 ",
 			},
-			[44765985] = {
-				["title"] = "StonetalonC4 1663",
+			[59357582] = {
+				["title"] = "StonetalonSE22 1643",
 				["icon"] = 1,
-				["desc"] = "45:0 1664:0 ",
+				["desc"] = "1642:0 1644:0 1646:0 ",
 			},
 			[77148635] = {
 				["title"] = "StonetalonSE6 1627",
 				["icon"] = 1,
 				["desc"] = "1626:0 1628:0 1629:0 ",
 			},
-			[59357582] = {
-				["title"] = "StonetalonSE22 1643",
+			[44765985] = {
+				["title"] = "StonetalonC4 1663",
 				["icon"] = 1,
-				["desc"] = "1642:0 1644:0 1646:0 ",
+				["desc"] = "45:0 1664:0 ",
 			},
 			[36924670] = {
 				["title"] = "StonetalonW2 1696",
@@ -7676,20 +7551,20 @@ HandyNotes_HandyNotesDB = {
 				["icon"] = 1,
 				["desc"] = "1669:0 1698:0 1699:0 1700:0 1701:0 1702:0 ",
 			},
-			[75529148] = {
-				["title"] = "StonetalonSE9 1630",
+			[65335412] = {
+				["title"] = "StonetalonE2 1649",
 				["icon"] = 1,
-				["desc"] = "1623:0 1631:0 ",
+				["desc"] = "1647:0 1648:0 152:0 1650:0 1651:0 1655:0 ",
 			},
 			[34236113] = {
 				["title"] = "StonetalonW4 1698",
 				["icon"] = 1,
 				["desc"] = "1669:0 1697:0 1702:0 1703:0 ",
 			},
-			[44694776] = {
-				["title"] = "StonetalonC23 1682",
+			[38395424] = {
+				["title"] = "StonetalonC17 1676",
 				["icon"] = 1,
-				["desc"] = "1681:0 1683:0 ",
+				["desc"] = "1675:0 1697:0 ",
 			},
 			[73124340] = {
 				["title"] = "StonetalonE6 1653",
@@ -7701,10 +7576,10 @@ HandyNotes_HandyNotesDB = {
 				["icon"] = 1,
 				["desc"] = "1698:0 1701:0 1703:0 ",
 			},
-			[82339656] = {
-				["title"] = "STMExitE 1621",
+			[31511415] = {
+				["title"] = "StonetalonN5 1692",
 				["icon"] = 1,
-				["desc"] = "1533:0 1620:0 1622:0 ",
+				["desc"] = "1691:0 155:0 39:0 1694:0 ",
 			},
 			[37826772] = {
 				["title"] = "StonetalonC10 1669",
@@ -7972,10 +7847,10 @@ HandyNotes_HandyNotesDB = {
 				["icon"] = 1,
 				["desc"] = "564:0 566:0 567:0 568:0 ",
 			},
-			[57724119] = {
-				["title"] = "CauldronRamp2Bottom 578",
+			[31493418] = {
+				["title"] = "ThoriumPointRampBottom 589",
 				["icon"] = 1,
-				["desc"] = "577:0 579:0 ",
+				["desc"] = "587:0 585:0 590:0 ",
 			},
 			[60143820] = {
 				["title"] = "CauldronRamp2Mid 579",
@@ -7987,10 +7862,10 @@ HandyNotes_HandyNotesDB = {
 				["icon"] = 1,
 				["desc"] = "573:0 575:0 ",
 			},
-			[31493418] = {
-				["title"] = "ThoriumPointRampBottom 589",
+			[57724119] = {
+				["title"] = "CauldronRamp2Bottom 578",
 				["icon"] = 1,
-				["desc"] = "587:0 585:0 590:0 ",
+				["desc"] = "577:0 579:0 ",
 			},
 			[24004627] = {
 				["title"] = "FirewatchRidgeS 588",
@@ -8002,10 +7877,10 @@ HandyNotes_HandyNotesDB = {
 				["icon"] = 1,
 				["desc"] = "565:0 569:0 567:0 564:0 566:0 ",
 			},
-			[44282282] = {
-				["title"] = "SlagPit3 583",
+			[38154468] = {
+				["title"] = "SlagPit2 582",
 				["icon"] = 1,
-				["desc"] = "582:0 584:0 ",
+				["desc"] = "581:0 583:0 ",
 			},
 			[63073899] = {
 				["title"] = "CauldronRamp2Top 580",
@@ -8017,15 +7892,15 @@ HandyNotes_HandyNotesDB = {
 				["icon"] = 1,
 				["desc"] = "561:0 564:0 566:0 593:0 ",
 			},
-			[38154468] = {
-				["title"] = "SlagPit2 582",
-				["icon"] = 1,
-				["desc"] = "581:0 583:0 ",
-			},
 			[78065729] = {
 				["title"] = "SGexitEmid 593",
 				["icon"] = 1,
 				["desc"] = "563:0 594:0 ",
+			},
+			[44282282] = {
+				["title"] = "SlagPit3 583",
+				["icon"] = 1,
+				["desc"] = "582:0 584:0 ",
 			},
 			[23883389] = {
 				["title"] = "FirewatchRidgeBottom 587",
@@ -8093,153 +7968,6 @@ HandyNotes_HandyNotesDB = {
 				["desc"] = "591:0 ",
 			},
 		},
-		["Hilsbrad"] = {
-			[30894217] = {
-				["icon"] = 1,
-				["title"] = "HillsbradFieldsC 354",
-				["desc"] = "352:0 353:0 356:0 355:0 ",
-			},
-			[81514277] = {
-				["title"] = "DurnholdeInsideDeep 375",
-				["icon"] = 1,
-				["desc"] = "374:0 ",
-			},
-			[49166386] = {
-				["icon"] = 1,
-				["title"] = "WesternStrandE 362",
-				["desc"] = "361:0 363:0 20:0 ",
-			},
-			[24697166] = {
-				["icon"] = 1,
-				["title"] = "WesternStrandSW 359",
-				["desc"] = "358:0 360:0 ",
-			},
-			[70537763] = {
-				["title"] = "DunGarok 367",
-				["icon"] = 1,
-				["desc"] = "366:0 368:0 376:0 ",
-			},
-			[47323434] = {
-				["title"] = "DarrowHillW 385",
-				["icon"] = 1,
-				["desc"] = "346:0 355:0 356:0 384:0 20:0 ",
-			},
-			[72086795] = {
-				["title"] = "DunGarokRoad 368",
-				["icon"] = 1,
-				["desc"] = "364:0 366:0 367:0 369:0 373:0 ",
-			},
-			[37563924] = {
-				["icon"] = 1,
-				["title"] = "HillsbradFieldsE 355",
-				["desc"] = "354:0 356:0 348:0 385:0 ",
-			},
-			[78184306] = {
-				["title"] = "DurnholdeInside 374",
-				["icon"] = 1,
-				["desc"] = "373:0 375:0 ",
-			},
-			[59827421] = {
-				["title"] = "EasternStrandC 365",
-				["icon"] = 1,
-				["desc"] = "364:0 366:0 ",
-			},
-			[74795015] = {
-				["title"] = "DurnholdeS 373",
-				["icon"] = 1,
-				["desc"] = "376:0 374:0 368:0 369:0 383:0 ",
-			},
-			[63095998] = {
-				["title"] = "NethanderStead 376",
-				["icon"] = 1,
-				["desc"] = "364:0 367:0 373:0 383:0 20:0 ",
-			},
-			[58036623] = {
-				["title"] = "EasternStrandW 364",
-				["icon"] = 1,
-				["desc"] = "363:0 365:0 368:0 376:0 ",
-			},
-			[63574161] = {
-				["title"] = "HFH_bridge 383",
-				["icon"] = 1,
-				["desc"] = "377:0 376:0 373:0 384:0 ",
-			},
-			[36404874] = {
-				["icon"] = 1,
-				["title"] = "HillsbradFieldsSRoad 356",
-				["desc"] = "20:0 358:0 360:0 354:0 355:0 361:0 385:0 357:0 ",
-			},
-			[33107296] = {
-				["icon"] = 1,
-				["title"] = "WesternStrandS 360",
-				["desc"] = "359:0 356:0 361:0 ",
-			},
-			[74293272] = {
-				["title"] = "DurnholdeN 377",
-				["icon"] = 1,
-				["desc"] = "372:0 378:0 383:0 ",
-			},
-			[24794864] = {
-				["icon"] = 1,
-				["title"] = "SouthPointTower 357",
-				["desc"] = "325:0 356:0 358:0 ",
-			},
-			[87124661] = {
-				["title"] = "HillsbradFoothillsExitE",
-				["icon"] = 1,
-				["desc"] = "",
-			},
-			[66228023] = {
-				["title"] = "EasternStrandS 366",
-				["icon"] = 1,
-				["desc"] = "365:0 367:0 368:0 ",
-			},
-			[80605554] = {
-				["title"] = "HillsbradFoothillsExitSE 369",
-				["icon"] = 1,
-				["desc"] = "370:0 368:0 373:0 410:0 ",
-			},
-			[73852049] = {
-				["title"] = "DurnholdeNN 378",
-				["icon"] = 1,
-				["desc"] = "377:0 21:0 ",
-			},
-			[83633360] = {
-				["title"] = "DurnholdeNNE 372",
-				["icon"] = 1,
-				["desc"] = "371:0 377:0 386:0 ",
-			},
-			[36907042] = {
-				["icon"] = 1,
-				["title"] = "WesternStrandS 361",
-				["desc"] = "362:0 360:0 356:0 ",
-			},
-			[87083671] = {
-				["title"] = "DurnholdeNE 371",
-				["icon"] = 1,
-				["desc"] = "372:0 370:0 ",
-			},
-			[51866442] = {
-				["title"] = "SouthshoreS 363",
-				["icon"] = 1,
-				["desc"] = "362:0 364:0 20:0 ",
-			},
-			[54353394] = {
-				["title"] = "DarrowHillE 384",
-				["icon"] = 1,
-				["desc"] = "21:0 383:0 385:0 20:0 ",
-			},
-			[63790994] = {
-				["title"] = "TarrenMillN 379",
-				["icon"] = 1,
-				["desc"] = "21:0 381:0 ",
-			},
-			[24806464] = {
-				["icon"] = 1,
-				["title"] = "WesternStrandW 358",
-				["desc"] = "356:0 359:0 357:0 ",
-			},
-		},
 		["Netherstorm"] = {
 			[66134007] = {
 				["icon"] = 1,
@@ -8276,10 +8004,10 @@ HandyNotes_HandyNotesDB = {
 				["title"] = "ne15 TownSquare1 2664",
 				["desc"] = "2663:0 2665:0 2662:0 ",
 			},
-			[26364430] = {
+			[39426424] = {
 				["icon"] = 1,
-				["title"] = "ne43 TrelleumMine1 2692",
-				["desc"] = "2693:0 2691:0 ",
+				["title"] = "ne52 Netherstorm13 2701",
+				["desc"] = "2700:0 2659:0 2702:0 2658:0 ",
 			},
 			[27695723] = {
 				["icon"] = 1,
@@ -8291,10 +8019,10 @@ HandyNotes_HandyNotesDB = {
 				["title"] = "ne23 VoidwindPlateau1 2672",
 				["desc"] = "2679:0 2671:0 2673:0 ",
 			},
-			[39426424] = {
+			[26364430] = {
 				["icon"] = 1,
-				["title"] = "ne52 Netherstorm13 2701",
-				["desc"] = "2700:0 2659:0 2702:0 2658:0 ",
+				["title"] = "ne43 TrelleumMine1 2692",
+				["desc"] = "2693:0 2691:0 ",
 			},
 			[42655998] = {
 				["icon"] = 1,
@@ -8321,15 +8049,15 @@ HandyNotes_HandyNotesDB = {
 				["title"] = "ne7 Netherstorm4 2656",
 				["desc"] = "2653:0 2657:0 2652:0 2655:0 ",
 			},
-			[49172239] = {
+			[33943710] = {
 				["icon"] = 1,
-				["title"] = "ne35 Netherstorm8 2684",
-				["desc"] = "2683:0 2682:0 2685:0 ",
+				["title"] = "ne41 TulumansLanding1 2690",
+				["desc"] = "2694:0 2691:0 2689:0 ",
 			},
-			[45315114] = {
+			[68973384] = {
 				["icon"] = 1,
-				["title"] = "ne48 Eco-DomeMidrealm1 2697",
-				["desc"] = "2698:0 2700:0 2696:0 ",
+				["title"] = "ne26 CelestialRidge1 2675",
+				["desc"] = "2674:0 ",
 			},
 			[61253246] = {
 				["icon"] = 1,
@@ -8341,10 +8069,10 @@ HandyNotes_HandyNotesDB = {
 				["title"] = "ne4 ManaforgeBnaar1 2653",
 				["desc"] = "2652:0 2656:0 2651:0 2654:0 ",
 			},
-			[33943710] = {
+			[49172239] = {
 				["icon"] = 1,
-				["title"] = "ne41 TulumansLanding1 2690",
-				["desc"] = "2694:0 2691:0 2689:0 ",
+				["title"] = "ne35 Netherstorm8 2684",
+				["desc"] = "2683:0 2682:0 2685:0 ",
 			},
 			[51536529] = {
 				["icon"] = 1,
@@ -8356,10 +8084,10 @@ HandyNotes_HandyNotesDB = {
 				["title"] = "ne5 ManaforgeBnaar2 2654",
 				["desc"] = "2655:0 2653:0 ",
 			},
-			[43827633] = {
+			[55532019] = {
 				["icon"] = 1,
-				["title"] = "ne11 TheCrumblingWaste1 2660",
-				["desc"] = "2659:0 2661:0 ",
+				["title"] = "ne33 RuinsofFarahlon2 2682",
+				["desc"] = "2683:0 2681:0 2684:0 ",
 			},
 			[42503208] = {
 				["icon"] = 1,
@@ -8376,25 +8104,25 @@ HandyNotes_HandyNotesDB = {
 				["title"] = "ne29 VoidwindPlateau4 2678",
 				["desc"] = "2680:0 2677:0 2679:0 ",
 			},
-			[68973384] = {
+			[45315114] = {
 				["icon"] = 1,
-				["title"] = "ne26 CelestialRidge1 2675",
-				["desc"] = "2674:0 ",
+				["title"] = "ne48 Eco-DomeMidrealm1 2697",
+				["desc"] = "2698:0 2700:0 2696:0 ",
 			},
 			[55172597] = {
 				["icon"] = 1,
 				["title"] = "ne32 RuinsofFarahlon1 2681",
 				["desc"] = "2682:0 2683:0 2677:0 ",
 			},
-			[55157824] = {
+			[42642496] = {
 				["icon"] = 1,
-				["title"] = "ne16 SunfuryHold1 2665",
-				["desc"] = "2666:0 2663:0 2664:0 ",
+				["title"] = "ne36 Netherstorm9 2685",
+				["desc"] = "2686:0 2695:0 2688:0 ",
 			},
-			[38603157] = {
+			[43827633] = {
 				["icon"] = 1,
-				["title"] = "ne40 Netherstorm11 2689",
-				["desc"] = "2695:0 2694:0 2688:0 2690:0 ",
+				["title"] = "ne11 TheCrumblingWaste1 2660",
+				["desc"] = "2659:0 2661:0 ",
 			},
 			[25924147] = {
 				["icon"] = 1,
@@ -8456,30 +8184,30 @@ HandyNotes_HandyNotesDB = {
 				["title"] = "ne45 Eco-DomeSkyperch1 2694",
 				["desc"] = "2689:0 2695:0 2696:0 2690:0 ",
 			},
-			[55532019] = {
+			[38603157] = {
 				["icon"] = 1,
-				["title"] = "ne33 RuinsofFarahlon2 2682",
-				["desc"] = "2683:0 2681:0 2684:0 ",
+				["title"] = "ne40 Netherstorm11 2689",
+				["desc"] = "2695:0 2694:0 2688:0 2690:0 ",
 			},
-			[57466369] = {
+			[30534265] = {
 				["icon"] = 1,
-				["title"] = "ne19 ManaforgeDuro1 2668",
-				["desc"] = "2669:0 2667:0 2699:0 ",
+				["title"] = "ne42 ManaforgeAra1 2691",
+				["desc"] = "2692:0 2690:0 ",
 			},
 			[34337343] = {
 				["icon"] = 1,
 				["title"] = "ne9 Netherstorm5 2658",
 				["desc"] = "2659:0 2655:0 2701:0 ",
 			},
-			[42642496] = {
+			[55157824] = {
 				["icon"] = 1,
-				["title"] = "ne36 Netherstorm9 2685",
-				["desc"] = "2686:0 2695:0 2688:0 ",
+				["title"] = "ne16 SunfuryHold1 2665",
+				["desc"] = "2666:0 2663:0 2664:0 ",
 			},
-			[30534265] = {
+			[57466369] = {
 				["icon"] = 1,
-				["title"] = "ne42 ManaforgeAra1 2691",
-				["desc"] = "2692:0 2690:0 ",
+				["title"] = "ne19 ManaforgeDuro1 2668",
+				["desc"] = "2669:0 2667:0 2699:0 ",
 			},
 			[50796039] = {
 				["icon"] = 1,
@@ -8491,20 +8219,289 @@ HandyNotes_HandyNotesDB = {
 				["title"] = "ne14 Netherstorm6 2663",
 				["desc"] = "2662:0 2664:0 2665:0 ",
 			},
-			[53282038] = {
-				["icon"] = 1,
-				["title"] = "ne34 RuinsofFarahlon3 2683",
-				["desc"] = "2682:0 2684:0 2681:0 ",
-			},
 			[62456113] = {
 				["icon"] = 1,
 				["title"] = "ne20 TheVortexFields1 2669",
 				["desc"] = "2671:0 2670:0 2668:0 ",
 			},
+			[53282038] = {
+				["icon"] = 1,
+				["title"] = "ne34 RuinsofFarahlon3 2683",
+				["desc"] = "2682:0 2684:0 2681:0 ",
+			},
 			[22575564] = {
 				["icon"] = 1,
 				["title"] = "ne1 Netherstorm1 2650",
 				["desc"] = "2651:0 2631:0 ",
+			},
+		},
+		["Hilsbrad"] = {
+			[30894217] = {
+				["icon"] = 1,
+				["title"] = "HillsbradFieldsC 354",
+				["desc"] = "352:0 353:0 356:0 355:0 ",
+			},
+			[81514277] = {
+				["title"] = "DurnholdeInsideDeep 375",
+				["icon"] = 1,
+				["desc"] = "374:0 ",
+			},
+			[49166386] = {
+				["icon"] = 1,
+				["title"] = "WesternStrandE 362",
+				["desc"] = "361:0 363:0 20:0 ",
+			},
+			[24697166] = {
+				["icon"] = 1,
+				["title"] = "WesternStrandSW 359",
+				["desc"] = "358:0 360:0 ",
+			},
+			[74795015] = {
+				["title"] = "DurnholdeS 373",
+				["icon"] = 1,
+				["desc"] = "376:0 374:0 368:0 369:0 383:0 ",
+			},
+			[47323434] = {
+				["title"] = "DarrowHillW 385",
+				["icon"] = 1,
+				["desc"] = "346:0 355:0 356:0 384:0 20:0 ",
+			},
+			[36404874] = {
+				["icon"] = 1,
+				["title"] = "HillsbradFieldsSRoad 356",
+				["desc"] = "20:0 358:0 360:0 354:0 355:0 361:0 385:0 357:0 ",
+			},
+			[37563924] = {
+				["icon"] = 1,
+				["title"] = "HillsbradFieldsE 355",
+				["desc"] = "354:0 356:0 348:0 385:0 ",
+			},
+			[78184306] = {
+				["title"] = "DurnholdeInside 374",
+				["icon"] = 1,
+				["desc"] = "373:0 375:0 ",
+			},
+			[59827421] = {
+				["title"] = "EasternStrandC 365",
+				["icon"] = 1,
+				["desc"] = "364:0 366:0 ",
+			},
+			[70537763] = {
+				["title"] = "DunGarok 367",
+				["icon"] = 1,
+				["desc"] = "366:0 368:0 376:0 ",
+			},
+			[63095998] = {
+				["title"] = "NethanderStead 376",
+				["icon"] = 1,
+				["desc"] = "364:0 367:0 373:0 383:0 20:0 ",
+			},
+			[58036623] = {
+				["title"] = "EasternStrandW 364",
+				["icon"] = 1,
+				["desc"] = "363:0 365:0 368:0 376:0 ",
+			},
+			[63574161] = {
+				["title"] = "HFH_bridge 383",
+				["icon"] = 1,
+				["desc"] = "377:0 376:0 373:0 384:0 ",
+			},
+			[72086795] = {
+				["title"] = "DunGarokRoad 368",
+				["icon"] = 1,
+				["desc"] = "364:0 366:0 367:0 369:0 373:0 ",
+			},
+			[33107296] = {
+				["icon"] = 1,
+				["title"] = "WesternStrandS 360",
+				["desc"] = "359:0 356:0 361:0 ",
+			},
+			[74293272] = {
+				["title"] = "DurnholdeN 377",
+				["icon"] = 1,
+				["desc"] = "372:0 378:0 383:0 ",
+			},
+			[63790994] = {
+				["title"] = "TarrenMillN 379",
+				["icon"] = 1,
+				["desc"] = "21:0 381:0 ",
+			},
+			[73852049] = {
+				["title"] = "DurnholdeNN 378",
+				["icon"] = 1,
+				["desc"] = "377:0 21:0 ",
+			},
+			[66228023] = {
+				["title"] = "EasternStrandS 366",
+				["icon"] = 1,
+				["desc"] = "365:0 367:0 368:0 ",
+			},
+			[80605554] = {
+				["title"] = "HillsbradFoothillsExitSE 369",
+				["icon"] = 1,
+				["desc"] = "370:0 368:0 373:0 410:0 ",
+			},
+			[87124661] = {
+				["title"] = "HillsbradFoothillsExitE",
+				["icon"] = 1,
+				["desc"] = "",
+			},
+			[83633360] = {
+				["title"] = "DurnholdeNNE 372",
+				["icon"] = 1,
+				["desc"] = "371:0 377:0 386:0 ",
+			},
+			[36907042] = {
+				["icon"] = 1,
+				["title"] = "WesternStrandS 361",
+				["desc"] = "362:0 360:0 356:0 ",
+			},
+			[87083671] = {
+				["title"] = "DurnholdeNE 371",
+				["icon"] = 1,
+				["desc"] = "372:0 370:0 ",
+			},
+			[51866442] = {
+				["title"] = "SouthshoreS 363",
+				["icon"] = 1,
+				["desc"] = "362:0 364:0 20:0 ",
+			},
+			[54353394] = {
+				["title"] = "DarrowHillE 384",
+				["icon"] = 1,
+				["desc"] = "21:0 383:0 385:0 20:0 ",
+			},
+			[24794864] = {
+				["icon"] = 1,
+				["title"] = "SouthPointTower 357",
+				["desc"] = "325:0 356:0 358:0 ",
+			},
+			[24806464] = {
+				["icon"] = 1,
+				["title"] = "WesternStrandW 358",
+				["desc"] = "356:0 359:0 357:0 ",
+			},
+		},
+		["EasternPlaguelands"] = {
+			[27692109] = {
+				["icon"] = 1,
+				["title"] = "WP - PlaguewoodCenter (242)",
+				["desc"] = "",
+			},
+			[24717827] = {
+				["icon"] = 1,
+				["title"] = "Undercroft (247)",
+				["desc"] = "",
+			},
+			[4514786] = {
+				["icon"] = 1,
+				["title"] = "WP - ThondorilRiverSouth (244)",
+				["desc"] = "",
+			},
+			[47254613] = {
+				["title"] = "WP - BlackwoodLake (235)",
+				["icon"] = 1,
+				["desc"] = "",
+			},
+			[47712958] = {
+				["icon"] = 1,
+				["title"] = "EPL - hubN1 (236)",
+				["desc"] = "",
+			},
+			[37192505] = {
+				["icon"] = 1,
+				["title"] = "WP - PlaguewoodEast (240)",
+				["desc"] = "",
+			},
+			[72287492] = {
+				["icon"] = 1,
+				["title"] = "TyrshandEntrance 253",
+				["desc"] = "251:0 252:0 254:0 ",
+			},
+			[75395564] = {
+				["title"] = "WP - LHC (234)",
+				["icon"] = 1,
+				["desc"] = "",
+			},
+			[44686930] = {
+				["icon"] = 1,
+				["title"] = "EPL_SRoad (249)",
+				["desc"] = "",
+			},
+			[28643498] = {
+				["icon"] = 1,
+				["title"] = "WP - PlaguewoodSouth (241)",
+				["desc"] = "",
+			},
+			[66960958] = {
+				["icon"] = 1,
+				["title"] = "WP - MazraAlor (239)",
+				["desc"] = "",
+			},
+			[65382845] = {
+				["icon"] = 1,
+				["title"] = "WP - Northdale (237)",
+				["desc"] = "",
+			},
+			[66416290] = {
+				["icon"] = 1,
+				["title"] = "PestilentScar 252",
+				["desc"] = "234:0 250:0 251:0 253:0 ",
+			},
+			[7966621] = {
+				["icon"] = 1,
+				["title"] = "ThondorilRiverBridge 255",
+				["desc"] = "183:0 245:0 246:0 256:0 ",
+			},
+			[62977621] = {
+				["icon"] = 1,
+				["title"] = "ScarletBaseCamp 251",
+				["desc"] = "250:0 252:0 253:0 ",
+			},
+			[29775687] = {
+				["icon"] = 1,
+				["title"] = "EPL_hubSW2 (248)",
+				["desc"] = "",
+			},
+			[36934500] = {
+				["title"] = "WP - The Fungal Vale",
+				["icon"] = 1,
+				["desc"] = "",
+			},
+			[4113646] = {
+				["icon"] = 1,
+				["title"] = "WP - TerrorwebTunnelWest (243)",
+				["desc"] = "",
+			},
+			[18847043] = {
+				["icon"] = 1,
+				["title"] = "EPL_hubSWRoad (246)",
+				["desc"] = "",
+			},
+			[33888513] = {
+				["icon"] = 1,
+				["title"] = "Darrowshire 2369",
+				["desc"] = "230:0 ",
+			},
+			[14056058] = {
+				["icon"] = 1,
+				["title"] = "EPL_hubSW (245)",
+				["desc"] = "",
+			},
+			[56286064] = {
+				["icon"] = 1,
+				["title"] = "CorinsCrossing (250)",
+				["desc"] = "",
+			},
+			[60571711] = {
+				["icon"] = 1,
+				["title"] = "WP - ZulMasharEntrance (238)",
+				["desc"] = "",
+			},
+			[80397793] = {
+				["icon"] = 1,
+				["title"] = "Tyrshand 254",
+				["desc"] = "253:0 ",
 			},
 		},
 		["Duskwood"] = {
@@ -8663,15 +8660,15 @@ HandyNotes_HandyNotesDB = {
 				["icon"] = 1,
 				["desc"] = "746:0 751:0 757:0 758:0 763:0 ",
 			},
-			[25813454] = {
-				["title"] = "DawningWoodCatacombs4 762",
-				["icon"] = 1,
-				["desc"] = "756:0 761:0 ",
-			},
 			[32922595] = {
 				["title"] = "DuskwoodNW2 764",
 				["icon"] = 1,
 				["desc"] = "763:0 756:0 765:0 793:0 ",
+			},
+			[25813454] = {
+				["title"] = "DawningWoodCatacombs4 762",
+				["icon"] = 1,
+				["desc"] = "756:0 761:0 ",
 			},
 			[79597260] = {
 				["title"] = "TranquilGardensCemetery 782",
@@ -8698,15 +8695,15 @@ HandyNotes_HandyNotesDB = {
 				["icon"] = 1,
 				["desc"] = "760:0 762:0 ",
 			},
-			[53017423] = {
-				["title"] = "YorgenFarmsteadE 774",
-				["icon"] = 1,
-				["desc"] = "767:0 773:0 776:0 ",
-			},
 			[17973286] = {
 				["title"] = "RHCemetaryN 758",
 				["icon"] = 1,
 				["desc"] = "752:0 757:0 756:0 ",
+			},
+			[53017423] = {
+				["title"] = "YorgenFarmsteadE 774",
+				["icon"] = 1,
+				["desc"] = "767:0 773:0 776:0 ",
 			},
 			[20376041] = {
 				["title"] = "RavenHillReal 14",
@@ -8757,128 +8754,6 @@ HandyNotes_HandyNotesDB = {
 				["title"] = "TwilightGroveEntrance 795",
 				["icon"] = 1,
 				["desc"] = "767:0 796:0 ",
-			},
-		},
-		["EasternPlaguelands"] = {
-			[27692109] = {
-				["icon"] = 1,
-				["title"] = "WP - PlaguewoodCenter (242)",
-				["desc"] = "",
-			},
-			[24717827] = {
-				["icon"] = 1,
-				["title"] = "Undercroft (247)",
-				["desc"] = "",
-			},
-			[4514786] = {
-				["icon"] = 1,
-				["title"] = "WP - ThondorilRiverSouth (244)",
-				["desc"] = "",
-			},
-			[47254613] = {
-				["title"] = "WP - BlackwoodLake (235)",
-				["icon"] = 1,
-				["desc"] = "",
-			},
-			[47712958] = {
-				["icon"] = 1,
-				["title"] = "EPL - hubN1 (236)",
-				["desc"] = "",
-			},
-			[37192505] = {
-				["icon"] = 1,
-				["title"] = "WP - PlaguewoodEast (240)",
-				["desc"] = "",
-			},
-			[72287492] = {
-				["icon"] = 1,
-				["title"] = "TyrshandEntrance 253",
-				["desc"] = "251:0 252:0 254:0 ",
-			},
-			[75395564] = {
-				["title"] = "WP - LHC (234)",
-				["icon"] = 1,
-				["desc"] = "",
-			},
-			[44686930] = {
-				["icon"] = 1,
-				["title"] = "EPL_SRoad (249)",
-				["desc"] = "",
-			},
-			[28643498] = {
-				["icon"] = 1,
-				["title"] = "WP - PlaguewoodSouth (241)",
-				["desc"] = "",
-			},
-			[66960958] = {
-				["icon"] = 1,
-				["title"] = "WP - MazraAlor (239)",
-				["desc"] = "",
-			},
-			[65382845] = {
-				["icon"] = 1,
-				["title"] = "WP - Northdale (237)",
-				["desc"] = "",
-			},
-			[66416290] = {
-				["icon"] = 1,
-				["title"] = "PestilentScar 252",
-				["desc"] = "234:0 250:0 251:0 253:0 ",
-			},
-			[7966621] = {
-				["icon"] = 1,
-				["title"] = "ThondorilRiverBridge 255",
-				["desc"] = "183:0 245:0 246:0 256:0 ",
-			},
-			[62977621] = {
-				["icon"] = 1,
-				["title"] = "ScarletBaseCamp 251",
-				["desc"] = "250:0 252:0 253:0 ",
-			},
-			[29775687] = {
-				["icon"] = 1,
-				["title"] = "EPL_hubSW2 (248)",
-				["desc"] = "",
-			},
-			[36934500] = {
-				["title"] = "WP - The Fungal Vale",
-				["icon"] = 1,
-				["desc"] = "",
-			},
-			[18847043] = {
-				["icon"] = 1,
-				["title"] = "EPL_hubSWRoad (246)",
-				["desc"] = "",
-			},
-			[33888513] = {
-				["icon"] = 1,
-				["title"] = "Darrowshire 2369",
-				["desc"] = "230:0 ",
-			},
-			[4113646] = {
-				["icon"] = 1,
-				["title"] = "WP - TerrorwebTunnelWest (243)",
-				["desc"] = "",
-			},
-			[14056058] = {
-				["icon"] = 1,
-				["title"] = "EPL_hubSW (245)",
-				["desc"] = "",
-			},
-			[56286064] = {
-				["icon"] = 1,
-				["title"] = "CorinsCrossing (250)",
-				["desc"] = "",
-			},
-			[60571711] = {
-				["icon"] = 1,
-				["title"] = "WP - ZulMasharEntrance (238)",
-				["desc"] = "",
-			},
-			[80397793] = {
-				["icon"] = 1,
-				["title"] = "Tyrshand 254",
-				["desc"] = "253:0 ",
 			},
 		},
 		["ThousandNeedles"] = {
@@ -8967,30 +8842,30 @@ HandyNotes_HandyNotesDB = {
 				["title"] = "ThousandNeedlesE5 2138",
 				["desc"] = "117:0 118:0 121:0 122:0 123:0 ",
 			},
-			[29472241] = {
+			[26594794] = {
 				["icon"] = 1,
-				["title"] = "ThousandNeedlesW25 2044",
-				["desc"] = "2043:0 2045:0 ",
+				["title"] = "ThousandNeedlesW36 2055",
+				["desc"] = "2050:0 2054:0 2056:0 2087:0 2088:0 ",
 			},
 			[14213354] = {
 				["icon"] = 1,
 				["title"] = "ThousandNeedlesW39 2058",
 				["desc"] = "2030:0 2059:0 ",
 			},
-			[26594794] = {
+			[29472241] = {
 				["icon"] = 1,
-				["title"] = "ThousandNeedlesW36 2055",
-				["desc"] = "2050:0 2054:0 2056:0 2087:0 2088:0 ",
+				["title"] = "ThousandNeedlesW25 2044",
+				["desc"] = "2043:0 2045:0 ",
 			},
-			[32712759] = {
+			[58525056] = {
 				["icon"] = 1,
-				["title"] = "DarkcloudPinnacle3 2070",
-				["desc"] = "2069:0 2071:0 ",
+				["title"] = "ThousandNeedlesC44 2122",
+				["desc"] = "2120:0 2123:0 2125:0 ",
 			},
-			[19442186] = {
+			[10902279] = {
 				["icon"] = 1,
-				["title"] = "ThousandNeedlesW9 2028",
-				["desc"] = "2026:0 2027:0 2033:0 2037:0 ",
+				["title"] = "ThousandNeedlesW2 2021",
+				["desc"] = "40:0 2022:0 2030:0 ",
 			},
 			[35424345] = {
 				["icon"] = 1,
@@ -9012,10 +8887,10 @@ HandyNotes_HandyNotesDB = {
 				["title"] = "ThousandNeedlesC40 2118",
 				["desc"] = "2109:0 2117:0 2119:0 ",
 			},
-			[58525056] = {
+			[30802784] = {
 				["icon"] = 1,
-				["title"] = "ThousandNeedlesC44 2122",
-				["desc"] = "2120:0 2123:0 2125:0 ",
+				["title"] = "ThousandNeedlesW28 2047",
+				["desc"] = "2045:0 2046:0 2051:0 ",
 			},
 			[18863327] = {
 				["icon"] = 1,
@@ -9057,15 +8932,15 @@ HandyNotes_HandyNotesDB = {
 				["title"] = "WeazelsCraterReal 122",
 				["desc"] = "121:0 2133:0 2134:0 2136:0 117:0 2138:0 ",
 			},
-			[14312083] = {
+			[18394160] = {
 				["icon"] = 1,
-				["title"] = "ThousandNeedlesW6 2025",
-				["desc"] = "2022:0 2026:0 2027:0 ",
+				["title"] = "ThousandNeedlesW48 2067",
+				["desc"] = "2066:0 ",
 			},
-			[69485740] = {
+			[24272694] = {
 				["icon"] = 1,
-				["title"] = "ThousandNeedlesC55 2133",
-				["desc"] = "121:0 2130:0 2132:0 122:0 2134:0 ",
+				["title"] = "ThousandNeedlesW22 2041",
+				["desc"] = "2037:0 2042:0 ",
 			},
 			[42774635] = {
 				["icon"] = 1,
@@ -9082,20 +8957,20 @@ HandyNotes_HandyNotesDB = {
 				["title"] = "ThousandNeedlesW26 2045",
 				["desc"] = "2044:0 2047:0 2081:0 ",
 			},
-			[13083833] = {
+			[11233697] = {
 				["icon"] = 1,
-				["title"] = "ThousandNeedlesW45 2064",
-				["desc"] = "2062:0 2065:0 ",
+				["title"] = "ThousandNeedlesW43 2062",
+				["desc"] = "2059:0 2060:0 2061:0 2063:0 2064:0 ",
 			},
 			[44896030] = {
 				["icon"] = 1,
 				["title"] = "ThousandNeedlesC28 2106",
 				["desc"] = "2093:0 2107:0 2108:0 ",
 			},
-			[18394160] = {
+			[14312083] = {
 				["icon"] = 1,
-				["title"] = "ThousandNeedlesW48 2067",
-				["desc"] = "2066:0 ",
+				["title"] = "ThousandNeedlesW6 2025",
+				["desc"] = "2022:0 2026:0 2027:0 ",
 			},
 			[51434888] = {
 				["icon"] = 1,
@@ -9107,10 +8982,10 @@ HandyNotes_HandyNotesDB = {
 				["title"] = "ThousandNeedlesW30 2049",
 				["desc"] = "2048:0 2050:0 2054:0 ",
 			},
-			[24272694] = {
+			[69485740] = {
 				["icon"] = 1,
-				["title"] = "ThousandNeedlesW22 2041",
-				["desc"] = "2037:0 2042:0 ",
+				["title"] = "ThousandNeedlesC55 2133",
+				["desc"] = "121:0 2130:0 2132:0 122:0 2134:0 ",
 			},
 			[29184114] = {
 				["icon"] = 1,
@@ -9132,30 +9007,30 @@ HandyNotes_HandyNotesDB = {
 				["title"] = "ThousandNeedlesW40 2059",
 				["desc"] = "2058:0 2060:0 2062:0 2061:0 ",
 			},
-			[11233697] = {
+			[13083833] = {
 				["icon"] = 1,
-				["title"] = "ThousandNeedlesW43 2062",
-				["desc"] = "2059:0 2060:0 2061:0 2063:0 2064:0 ",
+				["title"] = "ThousandNeedlesW45 2064",
+				["desc"] = "2062:0 2065:0 ",
 			},
-			[13462809] = {
+			[87126715] = {
 				["icon"] = 1,
-				["title"] = "ThousandNeedlesW11 2030",
-				["desc"] = "2021:0 2029:0 2031:0 2058:0 ",
+				["title"] = "ThousandNeedlesE3 2136",
+				["desc"] = "122:0 2134:0 2135:0 117:0 2137:0 ",
 			},
 			[29775137] = {
 				["icon"] = 1,
 				["title"] = "ThousandNeedlesC10 2088",
 				["desc"] = "2055:0 2089:0 ",
 			},
-			[70025411] = {
-				["icon"] = 1,
-				["title"] = "ThousandNeedlesC54 2132",
-				["desc"] = "2129:0 2133:0 2134:0 ",
-			},
 			[49185861] = {
 				["icon"] = 1,
 				["title"] = "ThousandNeedlesC30 2108",
 				["desc"] = "2106:0 2109:0 2119:0 ",
+			},
+			[70025411] = {
+				["icon"] = 1,
+				["title"] = "ThousandNeedlesC54 2132",
+				["desc"] = "2129:0 2133:0 2134:0 ",
 			},
 			[12141010] = {
 				["icon"] = 1,
@@ -9177,10 +9052,10 @@ HandyNotes_HandyNotesDB = {
 				["title"] = "ThousandNeedlesC50 2128",
 				["desc"] = "2127:0 2129:0 2130:0 ",
 			},
-			[33722531] = {
+			[14753261] = {
 				["icon"] = 1,
-				["title"] = "ThousandNeedlesC3 2081",
-				["desc"] = "2045:0 2082:0 ",
+				["title"] = "ThousandNeedlesW12 2031",
+				["desc"] = "2030:0 2032:0 2035:0 ",
 			},
 			[38904103] = {
 				["icon"] = 1,
@@ -9202,20 +9077,20 @@ HandyNotes_HandyNotesDB = {
 				["title"] = "ThousandNeedlesC32 2110",
 				["desc"] = "2097:0 2111:0 2112:0 ",
 			},
-			[15152590] = {
-				["icon"] = 1,
-				["title"] = "ThousandNeedlesW10 2029",
-				["desc"] = "2027:0 2030:0 2033:0 ",
-			},
-			[44305139] = {
-				["icon"] = 1,
-				["title"] = "ThousandNeedlesC25 2103",
-				["desc"] = "2102:0 2104:0 ",
-			},
 			[31633024] = {
 				["icon"] = 1,
 				["title"] = "ThousandNeedlesW32 2051",
 				["desc"] = "2047:0 2052:0 2079:0 2080:0 ",
+			},
+			[38152665] = {
+				["icon"] = 1,
+				["title"] = "DarkcloudPinnacle7 2074",
+				["desc"] = "2073:0 ",
+			},
+			[15152590] = {
+				["icon"] = 1,
+				["title"] = "ThousandNeedlesW10 2029",
+				["desc"] = "2027:0 2030:0 2033:0 ",
 			},
 			[48134742] = {
 				["icon"] = 1,
@@ -9227,10 +9102,10 @@ HandyNotes_HandyNotesDB = {
 				["title"] = "ThousandNeedlesC35 2113",
 				["desc"] = "2111:0 2112:0 2114:0 ",
 			},
-			[86538313] = {
+			[40054503] = {
 				["icon"] = 1,
-				["title"] = "ThousandNeedlesE4 2137",
-				["desc"] = "117:0 123:0 2136:0 ",
+				["title"] = "ThousandNeedlesC16 2094",
+				["desc"] = "2084:0 2086:0 2095:0 2097:0 119:0 ",
 			},
 			[61225973] = {
 				["icon"] = 1,
@@ -9277,10 +9152,10 @@ HandyNotes_HandyNotesDB = {
 				["title"] = "ThousandNeedlesW18 2037",
 				["desc"] = "2028:0 2036:0 2041:0 2043:0 ",
 			},
-			[31214692] = {
+			[35113103] = {
 				["icon"] = 1,
-				["title"] = "ThousandNeedlesC9 2087",
-				["desc"] = "2054:0 2055:0 2089:0 ",
+				["title"] = "DarkcloudPinnacle4 2071",
+				["desc"] = "2070:0 2072:0 115:0 ",
 			},
 			[11113101] = {
 				["icon"] = 1,
@@ -9312,10 +9187,10 @@ HandyNotes_HandyNotesDB = {
 				["title"] = "ThousandNeedlesC6 2084",
 				["desc"] = "2083:0 2085:0 2094:0 119:0 ",
 			},
-			[41814971] = {
+			[31214692] = {
 				["icon"] = 1,
-				["title"] = "ThousandNeedlesC26 2104",
-				["desc"] = "2103:0 41:0 ",
+				["title"] = "ThousandNeedlesC9 2087",
+				["desc"] = "2054:0 2055:0 2089:0 ",
 			},
 			[54744676] = {
 				["icon"] = 1,
@@ -9362,10 +9237,10 @@ HandyNotes_HandyNotesDB = {
 				["title"] = "ThousandNeedlesC12 2090",
 				["desc"] = "2086:0 2089:0 2091:0 ",
 			},
-			[35113103] = {
+			[41814971] = {
 				["icon"] = 1,
-				["title"] = "DarkcloudPinnacle4 2071",
-				["desc"] = "2070:0 2072:0 115:0 ",
+				["title"] = "ThousandNeedlesC26 2104",
+				["desc"] = "2103:0 41:0 ",
 			},
 			[45665526] = {
 				["icon"] = 1,
@@ -9387,20 +9262,20 @@ HandyNotes_HandyNotesDB = {
 				["title"] = "ThousandNeedlesC2 2080",
 				["desc"] = "2051:0 2079:0 2082:0 ",
 			},
-			[40054503] = {
+			[86538313] = {
 				["icon"] = 1,
-				["title"] = "ThousandNeedlesC16 2094",
-				["desc"] = "2084:0 2086:0 2095:0 2097:0 119:0 ",
+				["title"] = "ThousandNeedlesE4 2137",
+				["desc"] = "117:0 123:0 2136:0 ",
 			},
 			[40435799] = {
 				["icon"] = 1,
 				["title"] = "ThousandNeedlesC15 2093",
 				["desc"] = "2092:0 2096:0 2106:0 ",
 			},
-			[38152665] = {
+			[44305139] = {
 				["icon"] = 1,
-				["title"] = "DarkcloudPinnacle7 2074",
-				["desc"] = "2073:0 ",
+				["title"] = "ThousandNeedlesC25 2103",
+				["desc"] = "2102:0 2104:0 ",
 			},
 			[40635000] = {
 				["icon"] = 1,
@@ -9422,35 +9297,35 @@ HandyNotes_HandyNotesDB = {
 				["title"] = "ThousandNeedlesW13 2032",
 				["desc"] = "2031:0 2033:0 2034:0 ",
 			},
-			[14753261] = {
+			[33722531] = {
 				["icon"] = 1,
-				["title"] = "ThousandNeedlesW12 2031",
-				["desc"] = "2030:0 2032:0 2035:0 ",
+				["title"] = "ThousandNeedlesC3 2081",
+				["desc"] = "2045:0 2082:0 ",
 			},
 			[37223235] = {
 				["icon"] = 1,
 				["title"] = "DarkcloudPinnacle5 2072",
 				["desc"] = "2071:0 2073:0 2076:0 ",
 			},
-			[87126715] = {
+			[13462809] = {
 				["icon"] = 1,
-				["title"] = "ThousandNeedlesE3 2136",
-				["desc"] = "122:0 2134:0 2135:0 117:0 2137:0 ",
+				["title"] = "ThousandNeedlesW11 2030",
+				["desc"] = "2021:0 2029:0 2031:0 2058:0 ",
 			},
 			[57055649] = {
 				["icon"] = 1,
 				["title"] = "ThousandNeedlesC46 2124",
 				["desc"] = "2121:0 2125:0 2126:0 ",
 			},
-			[28795132] = {
-				["icon"] = 1,
-				["title"] = "ThousandNeedlesW37 2056",
-				["desc"] = "2055:0 116:0 ",
-			},
 			[29193419] = {
 				["icon"] = 1,
 				["title"] = "ThousandNeedlesW33 2052",
 				["desc"] = "2046:0 2048:0 2051:0 2053:0 ",
+			},
+			[28795132] = {
+				["icon"] = 1,
+				["title"] = "ThousandNeedlesW37 2056",
+				["desc"] = "2055:0 116:0 ",
 			},
 			[38533117] = {
 				["icon"] = 1,
@@ -9477,20 +9352,20 @@ HandyNotes_HandyNotesDB = {
 				["title"] = "ThousandNeedlesW20 2039",
 				["desc"] = "2035:0 2038:0 2050:0 ",
 			},
-			[30802784] = {
+			[32712759] = {
 				["icon"] = 1,
-				["title"] = "ThousandNeedlesW28 2047",
-				["desc"] = "2045:0 2046:0 2051:0 ",
+				["title"] = "DarkcloudPinnacle3 2070",
+				["desc"] = "2069:0 2071:0 ",
 			},
 			[10231480] = {
 				["icon"] = 1,
 				["title"] = "ThousandNeedlesW1 2020",
 				["desc"] = "40:0 2019:0 2022:0 2024:0 ",
 			},
-			[10902279] = {
+			[19442186] = {
 				["icon"] = 1,
-				["title"] = "ThousandNeedlesW2 2021",
-				["desc"] = "40:0 2022:0 2030:0 ",
+				["title"] = "ThousandNeedlesW9 2028",
+				["desc"] = "2026:0 2027:0 2033:0 2037:0 ",
 			},
 			[67145075] = {
 				["icon"] = 1,
@@ -9498,141 +9373,56 @@ HandyNotes_HandyNotesDB = {
 				["desc"] = "2127:0 2128:0 2132:0 ",
 			},
 		},
-		["BlastedLands"] = {
-			[48274308] = {
+		["Azeroth"] = {
+			[47286952] = {
+				["title"] = "BRM_BS1 628",
 				["icon"] = 1,
-				["title"] = "DreadmaulPost 841",
-				["desc"] = "840:0 196:0 842:0 856:0 ",
+				["desc"] = "627:0 622:0 629:0 ",
 			},
-			[59432610] = {
+			[47216891] = {
+				["title"] = "BRM_chain3 625",
 				["icon"] = 1,
-				["title"] = "BLE1 845",
-				["desc"] = "196:0 846:0 850:0 ",
+				["desc"] = "624:0 626:0 ",
 			},
-			[67012951] = {
+			[47407061] = {
+				["title"] = "BRM_BS3 630",
 				["icon"] = 1,
-				["title"] = "BLE2Inside 851",
-				["desc"] = "850:0 ",
+				["desc"] = "629:0 631:0 637:0 639:0 641:0 ",
 			},
-			[43971568] = {
+			[47216878] = {
+				["title"] = "BRM_SG3 622",
 				["icon"] = 1,
-				["title"] = "DreadmaulHoldEntrance 836",
-				["desc"] = "835:0 837:0 838:0 ",
+				["desc"] = "570:0 623:0 628:0 ",
 			},
-			[44413144] = {
+			[47436880] = {
+				["title"] = "BRM_chain1 623",
 				["icon"] = 1,
-				["title"] = "BLW1 840",
-				["desc"] = "835:0 841:0 842:0 ",
+				["desc"] = "622:0 624:0 627:0 ",
 			},
-			[39253086] = {
+			[47326842] = {
+				["title"] = "BRM_SG2",
 				["icon"] = 1,
-				["title"] = "BLAltarOfStormsTop 844",
-				["desc"] = "843:0 ",
+				["desc"] = "",
 			},
-			[58471769] = {
+			[47326919] = {
+				["title"] = "BRM_chain2 624",
 				["icon"] = 1,
-				["title"] = "NethergardeOutside 846",
-				["desc"] = "834:0 845:0 847:0 ",
+				["desc"] = "623:0 625:0 ",
 			},
-			[63874772] = {
+			[47096836] = {
+				["title"] = "BRM_chain4 626",
 				["icon"] = 1,
-				["title"] = "BLSE 853",
-				["desc"] = "852:0 854:0 855:0 ",
+				["desc"] = "625:0 ",
 			},
-			[46081983] = {
+			[47616920] = {
+				["title"] = "BRM_BRS1 627",
 				["icon"] = 1,
-				["title"] = "BLNW1 835",
-				["desc"] = "834:0 836:0 839:0 840:0 ",
+				["desc"] = "623:0 628:0 ",
 			},
-			[39533648] = {
+			[47386978] = {
+				["title"] = "BRM_BS2 629",
 				["icon"] = 1,
-				["title"] = "BLAltarOfStormsMid 843",
-				["desc"] = "842:0 844:0 ",
-			},
-			[46105149] = {
-				["icon"] = 1,
-				["title"] = "BLS3 856",
-				["desc"] = "855:0 841:0 842:0 857:0 ",
-			},
-			[52261096] = {
-				["icon"] = 1,
-				["title"] = "BLExitN 834",
-				["desc"] = "831:0 835:0 839:0 846:0 ",
-			},
-			[61573905] = {
-				["icon"] = 1,
-				["title"] = "BLE3 852",
-				["desc"] = "196:0 850:0 853:0 854:0 ",
-			},
-			[55005953] = {
-				["icon"] = 1,
-				["title"] = "BLS4H 2370",
-				["desc"] = "855:0 ",
-			},
-			[65572443] = {
-				["icon"] = 1,
-				["title"] = "NethergardeInside3 849",
-				["desc"] = "848:0 ",
-			},
-			[51295369] = {
-				["icon"] = 1,
-				["title"] = "BLS2 855",
-				["desc"] = "853:0 854:0 856:0 2370:0 ",
-			},
-			[51850553] = {
-				["title"] = "SSExitSS 831",
-				["icon"] = 1,
-				["desc"] = "830:0 834:0 ",
-			},
-			[55474662] = {
-				["icon"] = 1,
-				["title"] = "BLS1 854",
-				["desc"] = "196:0 852:0 853:0 855:0 ",
-			},
-			[66021910] = {
-				["icon"] = 1,
-				["title"] = "NethergardeInside1 848",
-				["desc"] = "847:0 849:0 ",
-			},
-			[42306005] = {
-				["icon"] = 1,
-				["title"] = "TaintedScar1 857",
-				["desc"] = "856:0 ",
-			},
-			[49602301] = {
-				["icon"] = 1,
-				["title"] = "BLNW2 839",
-				["desc"] = "835:0 834:0 196:0 ",
-			},
-			[64733332] = {
-				["icon"] = 1,
-				["title"] = "BLE2 850",
-				["desc"] = "845:0 851:0 852:0 ",
-			},
-			[43691108] = {
-				["icon"] = 1,
-				["title"] = "DreadmaulHoldRight 837",
-				["desc"] = "836:0 838:0 ",
-			},
-			[53392817] = {
-				["icon"] = 1,
-				["title"] = "BLC1 196",
-				["desc"] = "839:0 841:0 845:0 852:0 854:0 ",
-			},
-			[62651980] = {
-				["icon"] = 1,
-				["title"] = "NethergardeInside1 847",
-				["desc"] = "846:0 848:0 ",
-			},
-			[44104186] = {
-				["icon"] = 1,
-				["title"] = "BLAltarOfStormsBottom 842",
-				["desc"] = "840:0 841:0 843:0 856:0 ",
-			},
-			[41011313] = {
-				["icon"] = 1,
-				["title"] = "DreadmaulHoldLeft 838",
-				["desc"] = "836:0 837:0 ",
+				["desc"] = "628:0 630:0 ",
 			},
 		},
 		["Ashenvale"] = {
@@ -10239,183 +10029,348 @@ HandyNotes_HandyNotesDB = {
 				["desc"] = "990:0 ",
 			},
 		},
-		["Azeroth"] = {
-			[47286952] = {
-				["title"] = "BRM_BS1 628",
+		["BlastedLands"] = {
+			[48274308] = {
 				["icon"] = 1,
-				["desc"] = "627:0 622:0 629:0 ",
+				["title"] = "DreadmaulPost 841",
+				["desc"] = "840:0 196:0 842:0 856:0 ",
 			},
-			[47216891] = {
-				["title"] = "BRM_chain3 625",
+			[59432610] = {
 				["icon"] = 1,
-				["desc"] = "624:0 626:0 ",
+				["title"] = "BLE1 845",
+				["desc"] = "196:0 846:0 850:0 ",
 			},
-			[47407061] = {
-				["title"] = "BRM_BS3 630",
+			[67012951] = {
 				["icon"] = 1,
-				["desc"] = "629:0 631:0 637:0 639:0 641:0 ",
+				["title"] = "BLE2Inside 851",
+				["desc"] = "850:0 ",
 			},
-			[47216878] = {
-				["title"] = "BRM_SG3 622",
+			[43971568] = {
 				["icon"] = 1,
-				["desc"] = "570:0 623:0 628:0 ",
+				["title"] = "DreadmaulHoldEntrance 836",
+				["desc"] = "835:0 837:0 838:0 ",
 			},
-			[47436880] = {
-				["title"] = "BRM_chain1 623",
+			[44413144] = {
 				["icon"] = 1,
-				["desc"] = "622:0 624:0 627:0 ",
+				["title"] = "BLW1 840",
+				["desc"] = "835:0 841:0 842:0 ",
 			},
-			[47326842] = {
-				["title"] = "BRM_SG2",
+			[39253086] = {
 				["icon"] = 1,
-				["desc"] = "",
+				["title"] = "BLAltarOfStormsTop 844",
+				["desc"] = "843:0 ",
 			},
-			[47326919] = {
-				["title"] = "BRM_chain2 624",
+			[58471769] = {
 				["icon"] = 1,
-				["desc"] = "623:0 625:0 ",
+				["title"] = "NethergardeOutside 846",
+				["desc"] = "834:0 845:0 847:0 ",
 			},
-			[47096836] = {
-				["title"] = "BRM_chain4 626",
+			[63874772] = {
 				["icon"] = 1,
-				["desc"] = "625:0 ",
+				["title"] = "BLSE 853",
+				["desc"] = "852:0 854:0 855:0 ",
 			},
-			[47616920] = {
-				["title"] = "BRM_BRS1 627",
+			[46081983] = {
 				["icon"] = 1,
-				["desc"] = "623:0 628:0 ",
+				["title"] = "BLNW1 835",
+				["desc"] = "834:0 836:0 839:0 840:0 ",
 			},
-			[47386978] = {
-				["title"] = "BRM_BS2 629",
+			[39533648] = {
 				["icon"] = 1,
-				["desc"] = "628:0 630:0 ",
+				["title"] = "BLAltarOfStormsMid 843",
+				["desc"] = "842:0 844:0 ",
+			},
+			[46105149] = {
+				["icon"] = 1,
+				["title"] = "BLS3 856",
+				["desc"] = "855:0 841:0 842:0 857:0 ",
+			},
+			[52261096] = {
+				["icon"] = 1,
+				["title"] = "BLExitN 834",
+				["desc"] = "831:0 835:0 839:0 846:0 ",
+			},
+			[61573905] = {
+				["icon"] = 1,
+				["title"] = "BLE3 852",
+				["desc"] = "196:0 850:0 853:0 854:0 ",
+			},
+			[55005953] = {
+				["icon"] = 1,
+				["title"] = "BLS4H 2370",
+				["desc"] = "855:0 ",
+			},
+			[65572443] = {
+				["icon"] = 1,
+				["title"] = "NethergardeInside3 849",
+				["desc"] = "848:0 ",
+			},
+			[51295369] = {
+				["icon"] = 1,
+				["title"] = "BLS2 855",
+				["desc"] = "853:0 854:0 856:0 2370:0 ",
+			},
+			[51850553] = {
+				["title"] = "SSExitSS 831",
+				["icon"] = 1,
+				["desc"] = "830:0 834:0 ",
+			},
+			[55474662] = {
+				["icon"] = 1,
+				["title"] = "BLS1 854",
+				["desc"] = "196:0 852:0 853:0 855:0 ",
+			},
+			[66021910] = {
+				["icon"] = 1,
+				["title"] = "NethergardeInside1 848",
+				["desc"] = "847:0 849:0 ",
+			},
+			[42306005] = {
+				["icon"] = 1,
+				["title"] = "TaintedScar1 857",
+				["desc"] = "856:0 ",
+			},
+			[49602301] = {
+				["icon"] = 1,
+				["title"] = "BLNW2 839",
+				["desc"] = "835:0 834:0 196:0 ",
+			},
+			[64733332] = {
+				["icon"] = 1,
+				["title"] = "BLE2 850",
+				["desc"] = "845:0 851:0 852:0 ",
+			},
+			[43691108] = {
+				["icon"] = 1,
+				["title"] = "DreadmaulHoldRight 837",
+				["desc"] = "836:0 838:0 ",
+			},
+			[53392817] = {
+				["icon"] = 1,
+				["title"] = "BLC1 196",
+				["desc"] = "839:0 841:0 845:0 852:0 854:0 ",
+			},
+			[62651980] = {
+				["icon"] = 1,
+				["title"] = "NethergardeInside1 847",
+				["desc"] = "846:0 848:0 ",
+			},
+			[44104186] = {
+				["icon"] = 1,
+				["title"] = "BLAltarOfStormsBottom 842",
+				["desc"] = "840:0 841:0 843:0 856:0 ",
+			},
+			[41011313] = {
+				["icon"] = 1,
+				["title"] = "DreadmaulHoldLeft 838",
+				["desc"] = "836:0 837:0 ",
 			},
 		},
-		["Elwynn"] = {
-			[67366118] = {
-				["title"] = "StoneCairnLakeSW 701",
+		["Wetlands"] = {
+			[60902582] = {
+				["title"] = "DaggerforgeHill 446",
 				["icon"] = 1,
-				["desc"] = "89:0 700:0 708:0 698:0 705:0 706:0 707:0 797:0 ",
+				["desc"] = "445:0 448:0 449:0 ",
 			},
-			[68063979] = {
-				["title"] = "StoneCairnLakeNW 700",
+			[88685250] = {
+				["title"] = "DragonmawGatesI1 452",
 				["icon"] = 1,
-				["desc"] = "699:0 701:0 797:0 ",
+				["desc"] = "451:0 453:0 ",
 			},
-			[76148510] = {
-				["title"] = "ElwynnHubS1 695",
+			[79167244] = {
+				["title"] = "DragonmawGatesI3 454",
 				["icon"] = 1,
-				["desc"] = "705:0 704:0 694:0 696:0 706:0 ",
+				["desc"] = "92:0 453:0 ",
 			},
-			[96397263] = {
-				["title"] = "RedridgeExitW1 693",
+			[50361676] = {
+				["title"] = "DunModrCamp 444",
 				["icon"] = 1,
-				["desc"] = "692:0 674:0 694:0 696:0 ",
+				["desc"] = "443:0 6:0 445:0 ",
 			},
-			[94868171] = {
-				["title"] = "RedridgeExitW2 694",
+			[35484282] = {
+				["title"] = "WhelgarsEntrance 468",
 				["icon"] = 1,
-				["desc"] = "692:0 674:0 693:0 695:0 792:0 ",
+				["desc"] = "467:0 469:0 470:0 ",
 			},
-			[82946331] = {
-				["title"] = "EastvaleLC1 697",
+			[22605207] = {
+				["title"] = "BlueChannelMarsh 473",
 				["icon"] = 1,
-				["desc"] = "696:0 698:0 699:0 ",
+				["desc"] = "467:0 474:0 476:0 ",
 			},
-			[50422681] = {
-				["title"] = "EchoRidgeMineInside 711",
+			[37294436] = {
+				["title"] = "WhelgarsRamp 470",
 				["icon"] = 1,
-				["desc"] = "70:0 ",
+				["desc"] = "468:0 471:0 ",
 			},
-			[82897431] = {
-				["title"] = "ElwynnHubE1 696",
+			[44212591] = {
+				["title"] = "IronbeardsTomb 462",
 				["icon"] = 1,
-				["desc"] = "693:0 697:0 698:0 704:0 695:0 ",
+				["desc"] = "445:0 447:0 461:0 463:0 464:0 ",
 			},
-			[73767256] = {
-				["title"] = "ElwynnHubE3 705",
+			[55658364] = {
+				["title"] = "DunAlgazMid5 484",
 				["icon"] = 1,
-				["desc"] = "704:0 695:0 701:0 706:0 707:0 ",
+				["desc"] = "483:0 485:0 ",
 			},
-			[51998074] = {
-				["title"] = "ElwynnHubS2 716",
+			[57085477] = {
+				["title"] = "WL_hubS1 455",
 				["icon"] = 1,
-				["desc"] = "71:0 707:0 ",
+				["desc"] = "447:0 448:0 449:0 456:0 457:0 ",
 			},
-			[62054795] = {
-				["title"] = "JasperlodeMineInside2 703",
+			[68953572] = {
+				["title"] = "RaptorRidge 450",
 				["icon"] = 1,
-				["desc"] = "702:0 ",
+				["desc"] = "449:0 451:0 ",
 			},
-			[61165154] = {
-				["title"] = "JasperlodeMineInside1 702",
+			[79084731] = {
+				["title"] = "DragonmawGates 451",
 				["icon"] = 1,
-				["desc"] = "89:0 703:0 ",
+				["desc"] = "449:0 450:0 452:0 ",
 			},
-			[78255876] = {
-				["title"] = "StoneCairnLakeSE 698",
+			[32791634] = {
+				["title"] = "BaradinBayN 464",
 				["icon"] = 1,
-				["desc"] = "696:0 697:0 699:0 701:0 797:0 ",
+				["desc"] = "462:0 463:0 465:0 466:0 ",
 			},
-			[69537942] = {
-				["title"] = "BrackwellPumpkinPatch 706",
+			[65264621] = {
+				["title"] = "WL_hubE1 449",
 				["icon"] = 1,
-				["desc"] = "705:0 701:0 695:0 707:0 ",
+				["desc"] = "446:0 448:0 450:0 451:0 455:0 456:0 ",
 			},
-			[59437215] = {
-				["title"] = "ElwynnHubC1 707",
+			[56514016] = {
+				["title"] = "Greenwarden 448",
 				["icon"] = 1,
-				["desc"] = "89:0 708:0 701:0 705:0 706:0 716:0 ",
+				["desc"] = "446:0 447:0 449:0 455:0 458:0 ",
 			},
-			[49236611] = {
-				["title"] = "CrystalLakeW 709",
+			[50322866] = {
+				["title"] = "Wetlands_hubN1 445",
 				["icon"] = 1,
-				["desc"] = "708:0 710:0 7:0 ",
+				["desc"] = "444:0 446:0 447:0 461:0 462:0 ",
 			},
-			[37878333] = {
-				["title"] = "FargodeepMineOutside 714",
+			[35282789] = {
+				["title"] = "MosshideWest 463",
 				["icon"] = 1,
-				["desc"] = "7:0 71:0 72:0 715:0 ",
+				["desc"] = "461:0 462:0 464:0 465:0 466:0 467:0 ",
 			},
-			[75957233] = {
-				["title"] = "ElwynnHubE2 704",
+			[34205053] = {
+				["title"] = "WhelgarsBottom 469",
 				["icon"] = 1,
-				["desc"] = "696:0 705:0 695:0 ",
+				["desc"] = "468:0 ",
 			},
-			[46155160] = {
-				["title"] = "NorthshireExit 710",
+			[50186974] = {
+				["title"] = "DunAlgazMid3 482",
 				["icon"] = 1,
-				["desc"] = "709:0 16:0 13:0 7:0 ",
+				["desc"] = "481:0 483:0 ",
 			},
-			[25289205] = {
-				["title"] = "ForestsEdgeS 713",
+			[17472915] = {
+				["title"] = "BaradinBayW 466",
 				["icon"] = 1,
-				["desc"] = "72:0 88:0 717:0 ",
+				["desc"] = "464:0 463:0 465:0 474:0 475:0 476:0 ",
 			},
-			[56416587] = {
-				["title"] = "CrystalLakeE 708",
+			[50328238] = {
+				["title"] = "DunAlgazMid4 483",
 				["icon"] = 1,
-				["desc"] = "89:0 701:0 707:0 709:0 ",
+				["desc"] = "482:0 5:0 484:0 ",
 			},
-			[25613688] = {
-				["title"] = "TradeDistrict 712",
+			[87776564] = {
+				["title"] = "DragonmawGatesI2 453",
 				["icon"] = 1,
-				["desc"] = "16:0 ",
+				["desc"] = "452:0 454:0 ",
 			},
-			[22367848] = {
-				["title"] = "ElwynnExitW 717",
+			[23192088] = {
+				["title"] = "BaradinBayNW 465",
 				["icon"] = 1,
-				["desc"] = "7:0 88:0 72:0 713:0 718:0 ",
+				["desc"] = "464:0 463:0 466:0 474:0 ",
 			},
-			[80684392] = {
-				["title"] = "StoneCairnLakeNE 699",
+			[37144801] = {
+				["title"] = "WhelgarsRampTop 471",
 				["icon"] = 1,
-				["desc"] = "700:0 697:0 698:0 797:0 ",
+				["desc"] = "470:0 472:0 ",
 			},
-			[74035018] = {
-				["title"] = "HeroesVigil 797",
+			[38385159] = {
+				["title"] = "WhelgarsCave 472",
 				["icon"] = 1,
-				["desc"] = "698:0 699:0 700:0 701:0 ",
+				["desc"] = "471:0 ",
+			},
+			[31533846] = {
+				["title"] = "WhelgarsOutside 467",
+				["icon"] = 1,
+				["desc"] = "461:0 463:0 468:0 473:0 474:0 ",
+			},
+			[48076701] = {
+				["title"] = "DunAlgazMid2 481",
+				["icon"] = 1,
+				["desc"] = "480:0 482:0 ",
+			},
+			[49823824] = {
+				["title"] = "WL_hubC1 447",
+				["icon"] = 1,
+				["desc"] = "445:0 448:0 455:0 461:0 462:0 ",
+			},
+			[4645748] = {
+				["title"] = "MenethilBayN 478",
+				["icon"] = 1,
+				["desc"] = "11:0 ",
+			},
+			[6016390] = {
+				["title"] = "MenethilBayS 477",
+				["icon"] = 1,
+				["desc"] = "11:0 ",
+			},
+			[22043585] = {
+				["title"] = "BluegillMarsh 474",
+				["icon"] = 1,
+				["desc"] = "465:0 466:0 467:0 473:0 475:0 476:0 ",
+			},
+			[54596435] = {
+				["title"] = "ThelgenRock 457",
+				["icon"] = 1,
+				["desc"] = "455:0 456:0 479:0 ",
+			},
+			[51181198] = {
+				["title"] = "ThandolSpanS 443",
+				["icon"] = 1,
+				["desc"] = "441:0 444:0 ",
+			},
+			[49594917] = {
+				["title"] = "AngerfangEnampmentE 458",
+				["icon"] = 1,
+				["desc"] = "448:0 459:0 ",
+			},
+			[41783770] = {
+				["title"] = "WL_hubW1 461",
+				["icon"] = 1,
+				["desc"] = "445:0 447:0 459:0 462:0 463:0 467:0 ",
+			},
+			[64176406] = {
+				["title"] = "MosshideFen 456",
+				["icon"] = 1,
+				["desc"] = "449:0 455:0 457:0 ",
+			},
+			[16064301] = {
+				["title"] = "MenethilHarborRoad 476",
+				["icon"] = 1,
+				["desc"] = "11:0 466:0 473:0 474:0 475:0 ",
+			},
+			[48707055] = {
+				["title"] = "DunAlgazMid1 480",
+				["icon"] = 1,
+				["desc"] = "479:0 481:0 ",
+			},
+			[12973825] = {
+				["title"] = "BaradinBayS 475",
+				["icon"] = 1,
+				["desc"] = "466:0 474:0 476:0 ",
+			},
+			[39154755] = {
+				["title"] = "AngerfangEnampmentTop 460",
+				["icon"] = 1,
+				["desc"] = "459:0 ",
+			},
+			[43424327] = {
+				["title"] = "AngerfangEnampmentW 459",
+				["icon"] = 1,
+				["desc"] = "458:0 460:0 461:0 ",
 			},
 		},
 		["Mulgore"] = {
@@ -10529,10 +10484,10 @@ HandyNotes_HandyNotesDB = {
 				["title"] = "Mulgore54 1868",
 				["desc"] = "1867:0 93:0 ",
 			},
-			[56567238] = {
+			[55241786] = {
 				["icon"] = 1,
-				["title"] = "Mulgore55 1869",
-				["desc"] = "1815:0 1816:0 1817:0 1819:0 1820:0 ",
+				["title"] = "Mulgore43 1857",
+				["desc"] = "1855:0 1856:0 1858:0 1860:0 1861:0 ",
 			},
 			[57476127] = {
 				["icon"] = 1,
@@ -10549,10 +10504,10 @@ HandyNotes_HandyNotesDB = {
 				["title"] = "Mulgore50 1864",
 				["desc"] = "1862:0 1863:0 1865:0 1866:0 ",
 			},
-			[55241786] = {
+			[56567238] = {
 				["icon"] = 1,
-				["title"] = "Mulgore43 1857",
-				["desc"] = "1855:0 1856:0 1858:0 1860:0 1861:0 ",
+				["title"] = "Mulgore55 1869",
+				["desc"] = "1815:0 1816:0 1817:0 1819:0 1820:0 ",
 			},
 			[56338725] = {
 				["icon"] = 1,
@@ -10589,10 +10544,10 @@ HandyNotes_HandyNotesDB = {
 				["title"] = "Mulgore5 1819",
 				["desc"] = "26:0 1817:0 1820:0 1869:0 ",
 			},
-			[60847693] = {
+			[44528149] = {
 				["icon"] = 1,
-				["title"] = "Mulgore20 1834",
-				["desc"] = "1833:0 1835:0 1837:0 ",
+				["title"] = "Mulgore11 1825",
+				["desc"] = "1824:0 27:0 1842:0 ",
 			},
 			[56253189] = {
 				["icon"] = 1,
@@ -10659,10 +10614,10 @@ HandyNotes_HandyNotesDB = {
 				["title"] = "Mulgore39 1853",
 				["desc"] = "1851:0 1854:0 1856:0 1855:0 ",
 			},
-			[44528149] = {
+			[60847693] = {
 				["icon"] = 1,
-				["title"] = "Mulgore11 1825",
-				["desc"] = "1824:0 27:0 1842:0 ",
+				["title"] = "Mulgore20 1834",
+				["desc"] = "1833:0 1835:0 1837:0 ",
 			},
 			[60664972] = {
 				["icon"] = 1,
@@ -10973,10 +10928,10 @@ HandyNotes_HandyNotesDB = {
 				["title"] = "FelwoodRoad17 1140",
 				["desc"] = "1139:0 1141:0 1181:0 ",
 			},
-			[60730898] = {
+			[40248548] = {
 				["icon"] = 1,
-				["title"] = "FelpawVillage1194",
-				["desc"] = "",
+				["title"] = "JadefireGlen4 1153",
+				["desc"] = "1150:0 1154:0 ",
 			},
 			[55712182] = {
 				["icon"] = 1,
@@ -10993,35 +10948,35 @@ HandyNotes_HandyNotesDB = {
 				["title"] = "FelwoodSide2_1 1157",
 				["desc"] = "1126:0 1128:0 1149:0 ",
 			},
-			[42111757] = {
+			[60730898] = {
 				["icon"] = 1,
-				["title"] = "JadefireRun2 1188",
-				["desc"] = "1139:0 1187:0 1189:0 ",
+				["title"] = "FelpawVillage1194",
+				["desc"] = "",
 			},
 			[57242037] = {
 				["icon"] = 1,
 				["title"] = "IrontreeCavern1 1184",
 				["desc"] = "149:0 1185:0 1186:0 ",
 			},
-			[47738388] = {
+			[50081419] = {
 				["icon"] = 1,
-				["title"] = "FelwoodRoad1 1124",
-				["desc"] = "1119:0 1122:0 1123:0 1125:0 1149:0 ",
+				["title"] = "FelwoodRoad19 1142",
+				["desc"] = "1141:0 1143:0 1181:0 149:0 ",
 			},
 			[56801438] = {
 				["icon"] = 1,
 				["title"] = "FelwoodRoad21 1144",
 				["desc"] = "1143:0 1145:0 1190:0 ",
 			},
-			[50081419] = {
+			[47738388] = {
 				["icon"] = 1,
-				["title"] = "FelwoodRoad19 1142",
-				["desc"] = "1141:0 1143:0 1181:0 149:0 ",
+				["title"] = "FelwoodRoad1 1124",
+				["desc"] = "1119:0 1122:0 1123:0 1125:0 1149:0 ",
 			},
-			[47147363] = {
+			[43298907] = {
 				["icon"] = 1,
-				["title"] = "FelwoodSide1_2 1156",
-				["desc"] = "1126:0 1155:0 ",
+				["title"] = "JadefireGlen2 1151",
+				["desc"] = "1150:0 ",
 			},
 			[38764186] = {
 				["icon"] = 1,
@@ -11038,10 +10993,10 @@ HandyNotes_HandyNotesDB = {
 				["title"] = "FelwoodRoad10 1133",
 				["desc"] = "1132:0 1134:0 1162:0 ",
 			},
-			[43298907] = {
+			[47147363] = {
 				["icon"] = 1,
-				["title"] = "JadefireGlen2 1151",
-				["desc"] = "1150:0 ",
+				["title"] = "FelwoodSide1_2 1156",
+				["desc"] = "1126:0 1155:0 ",
 			},
 			[51528485] = {
 				["icon"] = 1,
@@ -11058,10 +11013,10 @@ HandyNotes_HandyNotesDB = {
 				["title"] = "BloodvenomPost 1164",
 				["desc"] = "150:0 1163:0 ",
 			},
-			[40248548] = {
+			[42111757] = {
 				["icon"] = 1,
-				["title"] = "JadefireGlen4 1153",
-				["desc"] = "1150:0 1154:0 ",
+				["title"] = "JadefireRun2 1188",
+				["desc"] = "1139:0 1187:0 1189:0 ",
 			},
 			[40234847] = {
 				["icon"] = 1,
@@ -11130,35 +11085,35 @@ HandyNotes_HandyNotesDB = {
 				["icon"] = 1,
 				["desc"] = "312:0 ",
 			},
-			[55714984] = {
-				["title"] = "DeepElemMineFork 312",
+			[45982853] = {
+				["title"] = "SPF_hubC1 302",
 				["icon"] = 1,
-				["desc"] = "313:0 314:0 317:0 318:0 ",
+				["desc"] = "201:0 299:0 303:0 304:0 ",
 			},
 			[64652332] = {
 				["title"] = "FenrisKeep 311",
 				["icon"] = 1,
 				["desc"] = "307:0 ",
 			},
-			[35131412] = {
-				["title"] = "SkitteringDark 300",
+			[55647750] = {
+				["title"] = "SPF_hubS3 326",
 				["icon"] = 1,
-				["desc"] = "299:0 301:0 ",
+				["desc"] = "318:0 323:0 325:0 ",
 			},
-			[45982853] = {
-				["title"] = "SPF_hubC1 302",
+			[55714984] = {
+				["title"] = "DeepElemMineFork 312",
 				["icon"] = 1,
-				["desc"] = "201:0 299:0 303:0 304:0 ",
+				["desc"] = "313:0 314:0 317:0 318:0 ",
 			},
-			[57823580] = {
-				["title"] = "DecrepitFerry 306",
+			[65574401] = {
+				["title"] = "AmberhillMurlocCamp 322",
 				["icon"] = 1,
-				["desc"] = "304:0 305:0 307:0 ",
+				["desc"] = "321:0 ",
 			},
-			[68930088] = {
-				["title"] = "TH_exitS 297",
+			[44117323] = {
+				["title"] = "PyrewoodVillage 324",
 				["icon"] = 1,
-				["desc"] = "278:0 285:0 287:0 298:0 ",
+				["desc"] = "323:0 ",
 			},
 			[37372976] = {
 				["title"] = "NorthTidesHollow 301",
@@ -11170,20 +11125,20 @@ HandyNotes_HandyNotesDB = {
 				["icon"] = 1,
 				["desc"] = "323:0 ",
 			},
+			[68930088] = {
+				["title"] = "TH_exitS 297",
+				["icon"] = 1,
+				["desc"] = "278:0 285:0 287:0 298:0 ",
+			},
 			[45352109] = {
 				["title"] = "DeadField 299",
 				["icon"] = 1,
 				["desc"] = "201:0 300:0 301:0 302:0 303:0 200:0 ",
 			},
-			[65951196] = {
-				["title"] = "ShiningStrandN 298",
+			[50917134] = {
+				["title"] = "SPF_hubS2 323",
 				["icon"] = 1,
-				["desc"] = "297:0 200:0 ",
-			},
-			[49852615] = {
-				["title"] = "SPF_hubC2 303",
-				["icon"] = 1,
-				["desc"] = "201:0 299:0 302:0 200:0 305:0 ",
+				["desc"] = "317:0 318:0 319:0 324:0 326:0 327:0 ",
 			},
 			[51955259] = {
 				["title"] = "SPF_hubC6 315",
@@ -11205,20 +11160,20 @@ HandyNotes_HandyNotesDB = {
 				["icon"] = 1,
 				["desc"] = "315:0 317:0 312:0 319:0 323:0 326:0 ",
 			},
-			[80262859] = {
-				["title"] = "FenrisIsleE 309",
-				["icon"] = 1,
-				["desc"] = "308:0 310:0 ",
-			},
 			[46725341] = {
 				["title"] = "OlsensFarthing 316",
 				["icon"] = 1,
 				["desc"] = "315:0 ",
 			},
-			[66093435] = {
-				["title"] = "FenrisIsle 307",
+			[80262859] = {
+				["title"] = "FenrisIsleE 309",
 				["icon"] = 1,
-				["desc"] = "306:0 308:0 311:0 ",
+				["desc"] = "308:0 310:0 ",
+			},
+			[64897892] = {
+				["title"] = "SPF_exitSE 325",
+				["icon"] = 1,
+				["desc"] = "319:0 326:0 357:0 ",
 			},
 			[60796423] = {
 				["title"] = "AmberhillEntrance 319",
@@ -11240,35 +11195,35 @@ HandyNotes_HandyNotesDB = {
 				["icon"] = 1,
 				["desc"] = "319:0 ",
 			},
-			[64897892] = {
-				["title"] = "SPF_exitSE 325",
+			[66093435] = {
+				["title"] = "FenrisIsle 307",
 				["icon"] = 1,
-				["desc"] = "319:0 326:0 357:0 ",
+				["desc"] = "306:0 308:0 311:0 ",
 			},
 			[65615638] = {
 				["title"] = "AmberhillFarms 321",
 				["icon"] = 1,
 				["desc"] = "322:0 319:0 ",
 			},
-			[50917134] = {
-				["title"] = "SPF_hubS2 323",
+			[49852615] = {
+				["title"] = "SPF_hubC2 303",
 				["icon"] = 1,
-				["desc"] = "317:0 318:0 319:0 324:0 326:0 327:0 ",
+				["desc"] = "201:0 299:0 302:0 200:0 305:0 ",
 			},
-			[44117323] = {
-				["title"] = "PyrewoodVillage 324",
+			[65951196] = {
+				["title"] = "ShiningStrandN 298",
 				["icon"] = 1,
-				["desc"] = "323:0 ",
+				["desc"] = "297:0 200:0 ",
 			},
-			[65574401] = {
-				["title"] = "AmberhillMurlocCamp 322",
+			[57823580] = {
+				["title"] = "DecrepitFerry 306",
 				["icon"] = 1,
-				["desc"] = "321:0 ",
+				["desc"] = "304:0 305:0 307:0 ",
 			},
-			[55647750] = {
-				["title"] = "SPF_hubS3 326",
+			[35131412] = {
+				["title"] = "SkitteringDark 300",
 				["icon"] = 1,
-				["desc"] = "318:0 323:0 325:0 ",
+				["desc"] = "299:0 301:0 ",
 			},
 		},
 		["Aszhara"] = {
@@ -11944,20 +11899,20 @@ HandyNotes_HandyNotesDB = {
 				["icon"] = 1,
 				["desc"] = "2854:0 2856:0 2878:0 2873:0 ",
 			},
-			[60064056] = {
-				["title"] = "ic45 TheBombardment1 2837",
+			[47515989] = {
+				["title"] = "ic84 TheConflagration1 2876",
 				["icon"] = 1,
-				["desc"] = "2851:0 2835:0 2836:0 2838:0 2887:0 ",
+				["desc"] = "2875:0 2877:0 2873:0 2880:0 ",
 			},
 			[84117728] = {
 				["title"] = "ic40 ValleyofEchoes3 2832",
 				["icon"] = 1,
 				["desc"] = "2831:0 2795:0 2796:0 ",
 			},
-			[74182354] = {
-				["title"] = "ic31 ArgentTournamentGrounds1 2823",
+			[48973230] = {
+				["title"] = "ic53 Aldurthar:TheDesolationGate8 2845",
 				["icon"] = 1,
-				["desc"] = "2824:0 ",
+				["desc"] = "2844:0 2846:0 ",
 			},
 			[47743879] = {
 				["title"] = "ic61 TheValleyofFallenHeroes2 2853",
@@ -11969,15 +11924,15 @@ HandyNotes_HandyNotesDB = {
 				["icon"] = 1,
 				["desc"] = "2810:0 2808:0 2807:0 ",
 			},
-			[48973230] = {
-				["title"] = "ic53 Aldurthar:TheDesolationGate8 2845",
-				["icon"] = 1,
-				["desc"] = "2844:0 2846:0 ",
-			},
 			[63213636] = {
 				["title"] = "ic94 Icecrown7 2886",
 				["icon"] = 1,
 				["desc"] = "2887:0 2821:0 ",
+			},
+			[74182354] = {
+				["title"] = "ic31 ArgentTournamentGrounds1 2823",
+				["icon"] = 1,
+				["desc"] = "2824:0 ",
 			},
 			[42036376] = {
 				["title"] = "ic87 TheConflagration2 2879",
@@ -11994,10 +11949,10 @@ HandyNotes_HandyNotesDB = {
 				["icon"] = 1,
 				["desc"] = "2840:0 ",
 			},
-			[66674647] = {
-				["title"] = "ic43 TheValleyofLostHope2 2835",
+			[54293504] = {
+				["title"] = "ic51 Aldurthar:TheDesolationGate6 2843",
 				["icon"] = 1,
-				["desc"] = "2836:0 2887:0 2833:0 ",
+				["desc"] = "2842:0 2841:0 ",
 			},
 			[47077579] = {
 				["title"] = "ic91 CathedralofDarkness1 2883",
@@ -12009,20 +11964,20 @@ HandyNotes_HandyNotesDB = {
 				["icon"] = 1,
 				["desc"] = "2886:0 2822:0 2820:0 ",
 			},
-			[47884736] = {
-				["title"] = "ic82 TheValleyofFallenHeroes4 2874",
+			[45147709] = {
+				["title"] = "ic92 CathedralofDarkness2 2884",
 				["icon"] = 1,
-				["desc"] = "2873:0 2853:0 2875:0 2852:0 ",
+				["desc"] = "2883:0 ",
 			},
 			[57223316] = {
 				["title"] = "ic46 Aldurthar:TheDesolationGate1 2838",
 				["icon"] = 1,
 				["desc"] = "2837:0 2839:0 2851:0 ",
 			},
-			[54293504] = {
-				["title"] = "ic51 Aldurthar:TheDesolationGate6 2843",
+			[66674647] = {
+				["title"] = "ic43 TheValleyofLostHope2 2835",
 				["icon"] = 1,
-				["desc"] = "2842:0 2841:0 ",
+				["desc"] = "2836:0 2887:0 2833:0 ",
 			},
 			[58836878] = {
 				["title"] = "ic80 Malykriss:TheVileHold5 2872",
@@ -12039,15 +11994,15 @@ HandyNotes_HandyNotesDB = {
 				["icon"] = 1,
 				["desc"] = "2832:0 2796:0 2797:0 ",
 			},
-			[44552074] = {
-				["title"] = "ic58 TheShadowVault2 2850",
+			[76363477] = {
+				["title"] = "ic25 SilentVigil1 2817",
 				["icon"] = 1,
-				["desc"] = "2849:0 ",
+				["desc"] = "2818:0 2816:0 ",
 			},
-			[45147709] = {
-				["title"] = "ic92 CathedralofDarkness2 2884",
+			[47884736] = {
+				["title"] = "ic82 TheValleyofFallenHeroes4 2874",
 				["icon"] = 1,
-				["desc"] = "2883:0 ",
+				["desc"] = "2873:0 2853:0 2875:0 2852:0 ",
 			},
 			[86017742] = {
 				["title"] = "ic39 TheArgentVanguard6 2831",
@@ -12059,15 +12014,15 @@ HandyNotes_HandyNotesDB = {
 				["icon"] = 1,
 				["desc"] = "2798:0 2795:0 2794:0 ",
 			},
-			[41303171] = {
-				["title"] = "ic55 WeepingQuarry1 2847",
-				["icon"] = 1,
-				["desc"] = "2846:0 2849:0 2848:0 ",
-			},
 			[59652071] = {
 				["title"] = "ic35 DeathspeakersWatch2 2827",
 				["icon"] = 1,
 				["desc"] = "2826:0 ",
+			},
+			[41303171] = {
+				["title"] = "ic55 WeepingQuarry1 2847",
+				["icon"] = 1,
+				["desc"] = "2846:0 2849:0 2848:0 ",
 			},
 			[50343376] = {
 				["title"] = "ic52 Aldurthar:TheDesolationGate7 2844",
@@ -12124,10 +12079,10 @@ HandyNotes_HandyNotesDB = {
 				["icon"] = 1,
 				["desc"] = "2868:0 2870:0 2872:0 ",
 			},
-			[76363477] = {
-				["title"] = "ic25 SilentVigil1 2817",
+			[44552074] = {
+				["title"] = "ic58 TheShadowVault2 2850",
 				["icon"] = 1,
-				["desc"] = "2818:0 2816:0 ",
+				["desc"] = "2849:0 ",
 			},
 			[70115070] = {
 				["title"] = "ic42 Icecrown3 2834",
@@ -12149,10 +12104,10 @@ HandyNotes_HandyNotesDB = {
 				["icon"] = 1,
 				["desc"] = "2863:0 2860:0 ",
 			},
-			[47515989] = {
-				["title"] = "ic84 TheConflagration1 2876",
+			[60064056] = {
+				["title"] = "ic45 TheBombardment1 2837",
 				["icon"] = 1,
-				["desc"] = "2875:0 2877:0 2873:0 2880:0 ",
+				["desc"] = "2851:0 2835:0 2836:0 2838:0 2887:0 ",
 			},
 			[38204992] = {
 				["title"] = "ic64 Icecrown5 2856",
@@ -12246,20 +12201,20 @@ HandyNotes_HandyNotesDB = {
 				["title"] = "t18 FirewingPoint1 2466",
 				["desc"] = "2465:0 2469:0 2467:0 ",
 			},
-			[36444642] = {
+			[20275574] = {
 				["icon"] = 1,
-				["title"] = "t9 TheBoneWastes1 2457",
-				["desc"] = "2456:0 2455:0 2450:0 2458:0 2748:0 ",
+				["title"] = "t23 TerokkarForest8 2471",
+				["desc"] = "2470:0 2420:0 ",
 			},
 			[57284268] = {
 				["icon"] = 1,
 				["title"] = "t15 RaastokGlade1 2463",
 				["desc"] = "2462:0 2464:0 2467:0 ",
 			},
-			[20275574] = {
+			[36444642] = {
 				["icon"] = 1,
-				["title"] = "t23 TerokkarForest8 2471",
-				["desc"] = "2470:0 2420:0 ",
+				["title"] = "t9 TheBoneWastes1 2457",
+				["desc"] = "2456:0 2455:0 2450:0 2458:0 2748:0 ",
 			},
 			[52802301] = {
 				["icon"] = 1,
@@ -12423,25 +12378,25 @@ HandyNotes_HandyNotesDB = {
 				["title"] = "z4 AngoroshGrounds1 2512",
 				["desc"] = "2513:0 2511:0 2514:0 ",
 			},
-			[49636375] = {
+			[72814096] = {
 				["icon"] = 1,
-				["title"] = "z23 FeralfenVillage1 2531",
-				["desc"] = "2532:0 2530:0 2526:0 ",
+				["title"] = "z38 Zangarmarsh21 2546",
+				["desc"] = "2548:0 2547:0 2544:0 ",
 			},
-			[59816952] = {
+			[66009084] = {
 				["icon"] = 1,
-				["title"] = "z25 Zangarmarsh12 2533",
-				["desc"] = "2532:0 2534:0 2553:0 ",
+				["title"] = "z28 Zangarmarsh15 2536",
+				["desc"] = "2535:0 2428:0 ",
 			},
 			[68003872] = {
 				["icon"] = 1,
 				["title"] = "z40 Zangarmarsh23 2548",
 				["desc"] = "2546:0 2547:0 2549:0 2613:0 ",
 			},
-			[66009084] = {
+			[59816952] = {
 				["icon"] = 1,
-				["title"] = "z28 Zangarmarsh15 2536",
-				["desc"] = "2535:0 2428:0 ",
+				["title"] = "z25 Zangarmarsh12 2533",
+				["desc"] = "2532:0 2534:0 2553:0 ",
 			},
 			[27412337] = {
 				["icon"] = 1,
@@ -12468,40 +12423,40 @@ HandyNotes_HandyNotesDB = {
 				["title"] = "z30 Zangarmarsh17 2538",
 				["desc"] = "2539:0 2537:0 2747:0 ",
 			},
-			[84955439] = {
+			[74977609] = {
 				["icon"] = 1,
-				["title"] = "z35 SwampratPost1 2543",
-				["desc"] = "2544:0 2542:0 2541:0 ",
+				["title"] = "z47 DarkcrestShore1 2555",
+				["desc"] = "2537:0 2539:0 2535:0 ",
+			},
+			[28065609] = {
+				["icon"] = 1,
+				["title"] = "z11 Zangarmarsh7 2519",
+				["desc"] = "2523:0 2529:0 2527:0 2518:0 ",
 			},
 			[51115076] = {
 				["icon"] = 1,
 				["title"] = "z18 TwinSpireRuins1 2526",
 				["desc"] = "2551:0 2530:0 2531:0 ",
 			},
-			[39136315] = {
-				["icon"] = 1,
-				["title"] = "z20 Zangarmarsh10 2528",
-				["desc"] = "2529:0 2527:0 2530:0 ",
-			},
 			[45783505] = {
 				["icon"] = 1,
 				["title"] = "z44 Zangarmarsh24 2552",
 				["desc"] = "2509:0 2525:0 2551:0 ",
 			},
-			[74977609] = {
+			[84955439] = {
 				["icon"] = 1,
-				["title"] = "z47 DarkcrestShore1 2555",
-				["desc"] = "2537:0 2539:0 2535:0 ",
+				["title"] = "z35 SwampratPost1 2543",
+				["desc"] = "2544:0 2542:0 2541:0 ",
 			},
 			[35183975] = {
 				["icon"] = 1,
 				["title"] = "z16 Zangarmarsh8 2524",
 				["desc"] = "2522:0 2525:0 2523:0 ",
 			},
-			[28065609] = {
+			[39136315] = {
 				["icon"] = 1,
-				["title"] = "z11 Zangarmarsh7 2519",
-				["desc"] = "2523:0 2529:0 2527:0 2518:0 ",
+				["title"] = "z20 Zangarmarsh10 2528",
+				["desc"] = "2529:0 2527:0 2530:0 ",
 			},
 			[55236461] = {
 				["icon"] = 1,
@@ -12513,10 +12468,10 @@ HandyNotes_HandyNotesDB = {
 				["title"] = "z2 Zangarmarsh1 2510",
 				["desc"] = "2511:0 2509:0 2524:0 ",
 			},
-			[72814096] = {
+			[49636375] = {
 				["icon"] = 1,
-				["title"] = "z38 Zangarmarsh21 2546",
-				["desc"] = "2548:0 2547:0 2544:0 ",
+				["title"] = "z23 FeralfenVillage1 2531",
+				["desc"] = "2532:0 2530:0 2526:0 ",
 			},
 			[81387726] = {
 				["icon"] = 1,
@@ -12544,398 +12499,293 @@ HandyNotes_HandyNotesDB = {
 				["desc"] = "2526:0 2550:0 2525:0 ",
 			},
 		},
-		["BladesEdgeMountains"] = {
-			[55512460] = {
+		["ShadowmoonValley"] = {
+			[61703013] = {
 				["icon"] = 1,
-				["title"] = "be24 BloodmaulCamp1 2636",
-				["desc"] = "2635:0 2637:0 2638:0 ",
+				["title"] = "sv24 ShadowmoonValley10 2498",
+				["desc"] = "2497:0 2499:0 2500:0 ",
 			},
-			[68984340] = {
+			[39655415] = {
 				["icon"] = 1,
-				["title"] = "be15 RazaansLanding1 2627",
-				["desc"] = "2632:0 2628:0 2629:0 2625:0 ",
+				["title"] = "sv14 WildhammerStronghold2 2487",
+				["desc"] = "2486:0 2488:0 2485:0 ",
 			},
-			[42508392] = {
+			[24443904] = {
 				["icon"] = 1,
-				["title"] = "be32 DraenethystMine1 2644",
-				["desc"] = "2643:0 ",
+				["title"] = "sv3 LegionHold2 2476",
+				["desc"] = "2475:0 2477:0 ",
 			},
-			[51847309] = {
+			[40923271] = {
 				["icon"] = 1,
-				["title"] = "be3 JaggedRidge1 2615",
-				["desc"] = "2616:0 2614:0 ",
+				["title"] = "sv29 ShadowmoonValley12 2503",
+				["desc"] = "2484:0 2483:0 2502:0 ",
 			},
-			[29849384] = {
+			[51952740] = {
 				["icon"] = 1,
-				["title"] = "be37 BladeToothCanyon1 2649",
-				["desc"] = "2648:0 2509:0 ",
+				["title"] = "sv26 ShadowmoonValley11 2500",
+				["desc"] = "2499:0 2501:0 2502:0 ",
 			},
-			[38547646] = {
+			[30123128] = {
 				["icon"] = 1,
-				["title"] = "be33 TheLivingGrove1 2645",
-				["desc"] = "2647:0 2643:0 2646:0 ",
+				["title"] = "sv6 ShadowmoonVillage2 2479",
+				["desc"] = "2478:0 ",
 			},
-			[68857438] = {
+			[24143038] = {
 				["icon"] = 1,
-				["title"] = "be6 ScalewingShelf1 2618",
-				["desc"] = "2617:0 2619:0 ",
+				["title"] = "sv2 LegionHold1 2475",
+				["desc"] = "2474:0 2477:0 2476:0 ",
 			},
-			[66653834] = {
+			[37942989] = {
 				["icon"] = 1,
-				["title"] = "be20 BladedGulch3 2632",
-				["desc"] = "2633:0 2627:0 2629:0 ",
+				["title"] = "sv11 SkethlonWreckage1 2484",
+				["desc"] = "2503:0 2483:0 2504:0 2502:0 ",
 			},
-			[75702293] = {
+			[44655297] = {
 				["icon"] = 1,
-				["title"] = "be18 BladedGulch2 2630",
-				["desc"] = "2631:0 2629:0 ",
+				["title"] = "sv15 ShadowmoonValley5 2488",
+				["desc"] = "2487:0 2505:0 2489:0 ",
 			},
-			[32319188] = {
+			[46044500] = {
 				["icon"] = 1,
-				["title"] = "be36 BladesEdgeMountains2 2648",
-				["desc"] = "2649:0 2647:0 ",
+				["title"] = "sv31 MagmaFields2 2505",
+				["desc"] = "2488:0 2485:0 ",
 			},
-			[59772988] = {
+			[46616028] = {
 				["icon"] = 1,
-				["title"] = "be23 DaggermawCanyon1 2635",
-				["desc"] = "2634:0 2636:0 2633:0 ",
+				["title"] = "sv16 ShadowmoonValley6 2489",
+				["desc"] = "2490:0 2491:0 2492:0 2488:0 ",
 			},
-			[61292096] = {
+			[37114985] = {
 				["icon"] = 1,
-				["title"] = "be25 DaggermawCanyon2 2637",
-				["desc"] = "2636:0 ",
+				["title"] = "sv13 WildhammerStronghold1 2486",
+				["desc"] = "2487:0 2485:0 2482:0 ",
 			},
-			[75937044] = {
+			[55633175] = {
 				["icon"] = 1,
-				["title"] = "be10 VekhaarStand1 2622",
-				["desc"] = "2620:0 2624:0 2623:0 2621:0 ",
+				["title"] = "sv25 AltarofShatar1 2499",
+				["desc"] = "2500:0 2498:0 ",
 			},
-			[71263431] = {
+			[30333318] = {
 				["icon"] = 1,
-				["title"] = "be17 BladedGulch1 2629",
-				["desc"] = "2632:0 2627:0 2630:0 ",
+				["title"] = "sv5 ShadowmoonVillage1 2478",
+				["desc"] = "2479:0 2477:0 2483:0 ",
 			},
-			[75536300] = {
+			[64974385] = {
 				["icon"] = 1,
-				["title"] = "be8 MokNathalVillage1 2620",
-				["desc"] = "2622:0 2619:0 2621:0 ",
+				["title"] = "sv22 ShadowmoonValley8 2496",
+				["desc"] = "2497:0 2495:0 ",
 			},
-			[58285803] = {
+			[18762460] = {
 				["icon"] = 1,
-				["title"] = "be14 BladespireOutpost1 2626",
-				["desc"] = "2616:0 2625:0 ",
+				["title"] = "sv1 ShadowmoonValley1 2474",
+				["desc"] = "2475:0 2469:0 ",
 			},
-			[39604934] = {
+			[45416765] = {
 				["icon"] = 1,
-				["title"] = "be29 BladespireHold1 2641",
-				["desc"] = "2640:0 2639:0 ",
+				["title"] = "sv17 EclipsePoint1 2490",
+				["desc"] = "2489:0 ",
 			},
-			[52959460] = {
+			[52635906] = {
 				["icon"] = 1,
-				["title"] = "be2 BladesRun2 2614",
-				["desc"] = "2613:0 2615:0 ",
+				["title"] = "sv18 ShadowmoonValley7 2492",
+				["desc"] = "2490:0 2493:0 ",
 			},
-			[45056517] = {
+			[36283810] = {
 				["icon"] = 1,
-				["title"] = "be30 BloodmaulRavine1 2642",
-				["desc"] = "2640:0 2643:0 ",
+				["title"] = "sv30 ShadowmoonValley13 2504",
+				["desc"] = "2483:0 2485:0 2482:0 ",
 			},
-			[54123728] = {
+			[38124256] = {
 				["icon"] = 1,
-				["title"] = "be26 DaggermawCanyon3 2638",
-				["desc"] = "2636:0 2639:0 ",
+				["title"] = "sv12 MagmaFields1 2485",
+				["desc"] = "2482:0 2504:0 2486:0 ",
 			},
-			[69026376] = {
+			[29614524] = {
 				["icon"] = 1,
-				["title"] = "be7 ScalewingShelf2 2619",
-				["desc"] = "2620:0 2618:0 2625:0 ",
+				["title"] = "sv7 IllidariPoint1 2480",
+				["desc"] = "2481:0 2482:0 2478:0 2477:0 ",
 			},
-			[43997560] = {
+			[31055241] = {
 				["icon"] = 1,
-				["title"] = "be31 BloodmaulRavine2 2643",
-				["desc"] = "2645:0 2644:0 2642:0 ",
+				["title"] = "sv8 IllidariPoint2 2481",
+				["desc"] = "2480:0 2482:0 ",
 			},
-			[37168116] = {
+			[60995294] = {
 				["icon"] = 1,
-				["title"] = "be35 BladesEdgeMountains1 2647",
-				["desc"] = "2645:0 2646:0 2648:0 ",
+				["title"] = "sv21 DragonmawFortress1 2495",
+				["desc"] = "2493:0 2496:0 2494:0 ",
 			},
-			[37106925] = {
+			[47082358] = {
 				["icon"] = 1,
-				["title"] = "be34 Sylvanaar1 2646",
-				["desc"] = "2645:0 2647:0 ",
+				["title"] = "sv27 CoilskarCistern1 2501",
+				["desc"] = "2502:0 2500:0 ",
 			},
-			[78117384] = {
+			[35203333] = {
 				["icon"] = 1,
-				["title"] = "be12 VeilVekh2 2624",
-				["desc"] = "2623:0 2622:0 2621:0 ",
+				["title"] = "sv10 ShadowmoonValley4 2483",
+				["desc"] = "2504:0 2478:0 2484:0 ",
 			},
-			[61503867] = {
+			[51495743] = {
 				["icon"] = 1,
-				["title"] = "be21 Evergrove1 2633",
-				["desc"] = "2632:0 2635:0 2634:0 ",
+				["title"] = "sv17 EclipsePoint1 2491",
+				["desc"] = "2492:0 2493:0 2489:0 ",
 			},
-			[81472887] = {
+			[57685766] = {
 				["icon"] = 1,
-				["title"] = "be19 BrokenWilds1 2631",
-				["desc"] = "2630:0 2650:0 ",
+				["title"] = "sv19 ThePathofConquest1 2493",
+				["desc"] = "2492:0 2491:0 2495:0 ",
 			},
-			[65095391] = {
+			[62743666] = {
 				["icon"] = 1,
-				["title"] = "be13 RazorRidge2 2625",
-				["desc"] = "2626:0 2619:0 2627:0 ",
+				["title"] = "sv23 ShadowmoonValley9 2497",
+				["desc"] = "2498:0 2496:0 ",
 			},
-			[62697865] = {
+			[27773363] = {
 				["icon"] = 1,
-				["title"] = "be5 SingingRidge1 2617",
-				["desc"] = "2618:0 2616:0 ",
+				["title"] = "sv4 ShadowmoonValley2 2477",
+				["desc"] = "2475:0 2478:0 2480:0 ",
 			},
-			[76177680] = {
+			[34544297] = {
 				["icon"] = 1,
-				["title"] = "be11 VeilVekh1 2623",
-				["desc"] = "2624:0 2622:0 2620:0 ",
+				["title"] = "sv9 ShadowmoonValley3 2482",
+				["desc"] = "2485:0 2504:0 2480:0 2486:0 ",
 			},
-			[44555524] = {
+			[67406069] = {
 				["icon"] = 1,
-				["title"] = "be28 BladespireGrounds1 2640",
-				["desc"] = "2642:0 2641:0 2639:0 ",
+				["title"] = "sv20 NetherwingFields1 2494",
+				["desc"] = "2495:0 2493:0 ",
 			},
-			[46854398] = {
+			[43282699] = {
 				["icon"] = 1,
-				["title"] = "be27 ChurningGulch1 2639",
-				["desc"] = "2640:0 2641:0 2638:0 ",
-			},
-			[59107023] = {
-				["icon"] = 1,
-				["title"] = "be4 RazorRidge1 2616",
-				["desc"] = "2626:0 2615:0 2617:0 ",
-			},
-			[71346968] = {
-				["icon"] = 1,
-				["title"] = "be9 DeathsDoor1 2621",
-				["desc"] = "2622:0 2623:0 2620:0 ",
-			},
-			[52409875] = {
-				["icon"] = 1,
-				["title"] = "be1 BladesRun1 2613",
-				["desc"] = "2614:0 2548:0 ",
-			},
-			[75314080] = {
-				["icon"] = 1,
-				["title"] = "be16 ForgeCamp:Anger1 2628",
-				["desc"] = "2627:0 ",
-			},
-			[63092638] = {
-				["icon"] = 1,
-				["title"] = "be22 RuuanWeald1 2634",
-				["desc"] = "2633:0 2635:0 ",
+				["title"] = "sv28 CoilskarPoint1 2502",
+				["desc"] = "2501:0 2484:0 ",
 			},
 		},
-		["Wetlands"] = {
-			[60902582] = {
-				["title"] = "DaggerforgeHill 446",
+		["Elwynn"] = {
+			[67366118] = {
+				["title"] = "StoneCairnLakeSW 701",
 				["icon"] = 1,
-				["desc"] = "445:0 448:0 449:0 ",
+				["desc"] = "89:0 700:0 708:0 698:0 705:0 706:0 707:0 797:0 ",
 			},
-			[88685250] = {
-				["title"] = "DragonmawGatesI1 452",
+			[68063979] = {
+				["title"] = "StoneCairnLakeNW 700",
 				["icon"] = 1,
-				["desc"] = "451:0 453:0 ",
+				["desc"] = "699:0 701:0 797:0 ",
 			},
-			[79167244] = {
-				["title"] = "DragonmawGatesI3 454",
+			[76148510] = {
+				["title"] = "ElwynnHubS1 695",
 				["icon"] = 1,
-				["desc"] = "92:0 453:0 ",
+				["desc"] = "705:0 704:0 694:0 696:0 706:0 ",
 			},
-			[50361676] = {
-				["title"] = "DunModrCamp 444",
+			[96397263] = {
+				["title"] = "RedridgeExitW1 693",
 				["icon"] = 1,
-				["desc"] = "443:0 6:0 445:0 ",
+				["desc"] = "692:0 674:0 694:0 696:0 ",
 			},
-			[35484282] = {
-				["title"] = "WhelgarsEntrance 468",
+			[94868171] = {
+				["title"] = "RedridgeExitW2 694",
 				["icon"] = 1,
-				["desc"] = "467:0 469:0 470:0 ",
+				["desc"] = "692:0 674:0 693:0 695:0 792:0 ",
 			},
-			[22605207] = {
-				["title"] = "BlueChannelMarsh 473",
+			[82946331] = {
+				["title"] = "EastvaleLC1 697",
 				["icon"] = 1,
-				["desc"] = "467:0 474:0 476:0 ",
+				["desc"] = "696:0 698:0 699:0 ",
 			},
-			[37294436] = {
-				["title"] = "WhelgarsRamp 470",
+			[50422681] = {
+				["title"] = "EchoRidgeMineInside 711",
 				["icon"] = 1,
-				["desc"] = "468:0 471:0 ",
+				["desc"] = "70:0 ",
 			},
-			[44212591] = {
-				["title"] = "IronbeardsTomb 462",
+			[82897431] = {
+				["title"] = "ElwynnHubE1 696",
 				["icon"] = 1,
-				["desc"] = "445:0 447:0 461:0 463:0 464:0 ",
+				["desc"] = "693:0 697:0 698:0 704:0 695:0 ",
 			},
-			[55658364] = {
-				["title"] = "DunAlgazMid5 484",
+			[73767256] = {
+				["title"] = "ElwynnHubE3 705",
 				["icon"] = 1,
-				["desc"] = "483:0 485:0 ",
+				["desc"] = "704:0 695:0 701:0 706:0 707:0 ",
 			},
-			[57085477] = {
-				["title"] = "WL_hubS1 455",
+			[51998074] = {
+				["title"] = "ElwynnHubS2 716",
 				["icon"] = 1,
-				["desc"] = "447:0 448:0 449:0 456:0 457:0 ",
+				["desc"] = "71:0 707:0 ",
 			},
-			[68953572] = {
-				["title"] = "RaptorRidge 450",
+			[62054795] = {
+				["title"] = "JasperlodeMineInside2 703",
 				["icon"] = 1,
-				["desc"] = "449:0 451:0 ",
+				["desc"] = "702:0 ",
 			},
-			[79084731] = {
-				["title"] = "DragonmawGates 451",
+			[61165154] = {
+				["title"] = "JasperlodeMineInside1 702",
 				["icon"] = 1,
-				["desc"] = "449:0 450:0 452:0 ",
+				["desc"] = "89:0 703:0 ",
 			},
-			[32791634] = {
-				["title"] = "BaradinBayN 464",
+			[78255876] = {
+				["title"] = "StoneCairnLakeSE 698",
 				["icon"] = 1,
-				["desc"] = "462:0 463:0 465:0 466:0 ",
+				["desc"] = "696:0 697:0 699:0 701:0 797:0 ",
 			},
-			[65264621] = {
-				["title"] = "WL_hubE1 449",
+			[69537942] = {
+				["title"] = "BrackwellPumpkinPatch 706",
 				["icon"] = 1,
-				["desc"] = "446:0 448:0 450:0 451:0 455:0 456:0 ",
+				["desc"] = "705:0 701:0 695:0 707:0 ",
 			},
-			[56514016] = {
-				["title"] = "Greenwarden 448",
+			[59437215] = {
+				["title"] = "ElwynnHubC1 707",
 				["icon"] = 1,
-				["desc"] = "446:0 447:0 449:0 455:0 458:0 ",
+				["desc"] = "89:0 708:0 701:0 705:0 706:0 716:0 ",
 			},
-			[50322866] = {
-				["title"] = "Wetlands_hubN1 445",
+			[49236611] = {
+				["title"] = "CrystalLakeW 709",
 				["icon"] = 1,
-				["desc"] = "444:0 446:0 447:0 461:0 462:0 ",
+				["desc"] = "708:0 710:0 7:0 ",
 			},
-			[35282789] = {
-				["title"] = "MosshideWest 463",
+			[37878333] = {
+				["title"] = "FargodeepMineOutside 714",
 				["icon"] = 1,
-				["desc"] = "461:0 462:0 464:0 465:0 466:0 467:0 ",
+				["desc"] = "7:0 71:0 72:0 715:0 ",
 			},
-			[34205053] = {
-				["title"] = "WhelgarsBottom 469",
+			[75957233] = {
+				["title"] = "ElwynnHubE2 704",
 				["icon"] = 1,
-				["desc"] = "468:0 ",
+				["desc"] = "696:0 705:0 695:0 ",
 			},
-			[17472915] = {
-				["title"] = "BaradinBayW 466",
+			[46155160] = {
+				["title"] = "NorthshireExit 710",
 				["icon"] = 1,
-				["desc"] = "464:0 463:0 465:0 474:0 475:0 476:0 ",
+				["desc"] = "709:0 16:0 13:0 7:0 ",
 			},
-			[50186974] = {
-				["title"] = "DunAlgazMid3 482",
+			[25289205] = {
+				["title"] = "ForestsEdgeS 713",
 				["icon"] = 1,
-				["desc"] = "481:0 483:0 ",
+				["desc"] = "72:0 88:0 717:0 ",
 			},
-			[50328238] = {
-				["title"] = "DunAlgazMid4 483",
+			[56416587] = {
+				["title"] = "CrystalLakeE 708",
 				["icon"] = 1,
-				["desc"] = "482:0 5:0 484:0 ",
+				["desc"] = "89:0 701:0 707:0 709:0 ",
 			},
-			[87776564] = {
-				["title"] = "DragonmawGatesI2 453",
+			[25613688] = {
+				["title"] = "TradeDistrict 712",
 				["icon"] = 1,
-				["desc"] = "452:0 454:0 ",
+				["desc"] = "16:0 ",
 			},
-			[23192088] = {
-				["title"] = "BaradinBayNW 465",
+			[22367848] = {
+				["title"] = "ElwynnExitW 717",
 				["icon"] = 1,
-				["desc"] = "464:0 463:0 466:0 474:0 ",
+				["desc"] = "7:0 88:0 72:0 713:0 718:0 ",
 			},
-			[37144801] = {
-				["title"] = "WhelgarsRampTop 471",
+			[80684392] = {
+				["title"] = "StoneCairnLakeNE 699",
 				["icon"] = 1,
-				["desc"] = "470:0 472:0 ",
+				["desc"] = "700:0 697:0 698:0 797:0 ",
 			},
-			[48707055] = {
-				["title"] = "DunAlgazMid1 480",
+			[74035018] = {
+				["title"] = "HeroesVigil 797",
 				["icon"] = 1,
-				["desc"] = "479:0 481:0 ",
-			},
-			[31533846] = {
-				["title"] = "WhelgarsOutside 467",
-				["icon"] = 1,
-				["desc"] = "461:0 463:0 468:0 473:0 474:0 ",
-			},
-			[48076701] = {
-				["title"] = "DunAlgazMid2 481",
-				["icon"] = 1,
-				["desc"] = "480:0 482:0 ",
-			},
-			[49823824] = {
-				["title"] = "WL_hubC1 447",
-				["icon"] = 1,
-				["desc"] = "445:0 448:0 455:0 461:0 462:0 ",
-			},
-			[4645748] = {
-				["title"] = "MenethilBayN 478",
-				["icon"] = 1,
-				["desc"] = "11:0 ",
-			},
-			[6016390] = {
-				["title"] = "MenethilBayS 477",
-				["icon"] = 1,
-				["desc"] = "11:0 ",
-			},
-			[22043585] = {
-				["title"] = "BluegillMarsh 474",
-				["icon"] = 1,
-				["desc"] = "465:0 466:0 467:0 473:0 475:0 476:0 ",
-			},
-			[54596435] = {
-				["title"] = "ThelgenRock 457",
-				["icon"] = 1,
-				["desc"] = "455:0 456:0 479:0 ",
-			},
-			[51181198] = {
-				["title"] = "ThandolSpanS 443",
-				["icon"] = 1,
-				["desc"] = "441:0 444:0 ",
-			},
-			[49594917] = {
-				["title"] = "AngerfangEnampmentE 458",
-				["icon"] = 1,
-				["desc"] = "448:0 459:0 ",
-			},
-			[41783770] = {
-				["title"] = "WL_hubW1 461",
-				["icon"] = 1,
-				["desc"] = "445:0 447:0 459:0 462:0 463:0 467:0 ",
-			},
-			[64176406] = {
-				["title"] = "MosshideFen 456",
-				["icon"] = 1,
-				["desc"] = "449:0 455:0 457:0 ",
-			},
-			[16064301] = {
-				["title"] = "MenethilHarborRoad 476",
-				["icon"] = 1,
-				["desc"] = "11:0 466:0 473:0 474:0 475:0 ",
-			},
-			[38385159] = {
-				["title"] = "WhelgarsCave 472",
-				["icon"] = 1,
-				["desc"] = "471:0 ",
-			},
-			[12973825] = {
-				["title"] = "BaradinBayS 475",
-				["icon"] = 1,
-				["desc"] = "466:0 474:0 476:0 ",
-			},
-			[39154755] = {
-				["title"] = "AngerfangEnampmentTop 460",
-				["icon"] = 1,
-				["desc"] = "459:0 ",
-			},
-			[43424327] = {
-				["title"] = "AngerfangEnampmentW 459",
-				["icon"] = 1,
-				["desc"] = "458:0 460:0 461:0 ",
+				["desc"] = "698:0 699:0 700:0 701:0 ",
 			},
 		},
 		["Hellfire"] = {
@@ -13054,10 +12904,10 @@ HandyNotes_HandyNotesDB = {
 				["title"] = "hf33 ExpeditionPoint1 2588",
 				["desc"] = "2589:0 2585:0 2586:0 ",
 			},
-			[23454960] = {
+			[29746924] = {
 				["icon"] = 1,
-				["title"] = "hf6 HellfirePeninsula2 2561",
-				["desc"] = "2562:0 2560:0 2558:0 ",
+				["title"] = "hf10 HellfirePeninsula4 2565",
+				["desc"] = "2563:0 2566:0 2564:0 ",
 			},
 			[50297167] = {
 				["icon"] = 1,
@@ -13079,60 +12929,60 @@ HandyNotes_HandyNotesDB = {
 				["title"] = "hf48 BrokenHill1 2603",
 				["desc"] = "2607:0 2606:0 2602:0 2604:0 ",
 			},
-			[53102691] = {
+			[40303107] = {
 				["icon"] = 1,
-				["title"] = "hf25 InvasionPoint:Annihilator1 2580",
-				["desc"] = "2579:0 ",
+				["title"] = "hf18 PoolsofAggonar2 2573",
+				["desc"] = "2572:0 ",
 			},
 			[28758144] = {
 				["icon"] = 1,
 				["title"] = "hf9 HaaleshiGorge1 2564",
 				["desc"] = "2566:0 2565:0 ",
 			},
-			[40303107] = {
-				["icon"] = 1,
-				["title"] = "hf18 PoolsofAggonar2 2573",
-				["desc"] = "2572:0 ",
-			},
 			[49466082] = {
 				["icon"] = 1,
 				["title"] = "hf47 HellfirePeninsula19 2602",
 				["desc"] = "2608:0 2603:0 2597:0 ",
 			},
-			[27656225] = {
+			[53102691] = {
 				["icon"] = 1,
-				["title"] = "hf8 FalconWatch1 2563",
-				["desc"] = "2565:0 2567:0 2562:0 ",
-			},
-			[45884431] = {
-				["icon"] = 1,
-				["title"] = "hf19 HellfirePeninsula9 2574",
-				["desc"] = "2572:0 2575:0 ",
+				["title"] = "hf25 InvasionPoint:Annihilator1 2580",
+				["desc"] = "2579:0 ",
 			},
 			[79107729] = {
 				["icon"] = 1,
 				["title"] = "hf32 VoidRidge2 2587",
 				["desc"] = "2586:0 ",
 			},
+			[45884431] = {
+				["icon"] = 1,
+				["title"] = "hf19 HellfirePeninsula9 2574",
+				["desc"] = "2572:0 2575:0 ",
+			},
+			[27656225] = {
+				["icon"] = 1,
+				["title"] = "hf8 FalconWatch1 2563",
+				["desc"] = "2565:0 2567:0 2562:0 ",
+			},
 			[50518299] = {
 				["icon"] = 1,
 				["title"] = "hf38 TheWarpFields1 2593",
 				["desc"] = "2592:0 2594:0 2597:0 ",
-			},
-			[78116782] = {
-				["icon"] = 1,
-				["title"] = "hf31 VoidRidge1 2586",
-				["desc"] = "2587:0 2585:0 2588:0 ",
 			},
 			[62684939] = {
 				["icon"] = 1,
 				["title"] = "hf57 ThePathofGlory3 2612",
 				["desc"] = "2611:0 2600:0 2581:0 ",
 			},
-			[32222812] = {
+			[78116782] = {
 				["icon"] = 1,
-				["title"] = "hf16 MagharPost1 2571",
-				["desc"] = "2570:0 ",
+				["title"] = "hf31 VoidRidge1 2586",
+				["desc"] = "2587:0 2585:0 2588:0 ",
+			},
+			[52653403] = {
+				["icon"] = 1,
+				["title"] = "hf22 Thrallmar1 2577",
+				["desc"] = "2575:0 2579:0 ",
 			},
 			[61018073] = {
 				["icon"] = 1,
@@ -13179,10 +13029,10 @@ HandyNotes_HandyNotesDB = {
 				["title"] = "hf50 TheOverlook1 2605",
 				["desc"] = "2604:0 2606:0 ",
 			},
-			[52653403] = {
+			[32222812] = {
 				["icon"] = 1,
-				["title"] = "hf22 Thrallmar1 2577",
-				["desc"] = "2575:0 2579:0 ",
+				["title"] = "hf16 MagharPost1 2571",
+				["desc"] = "2570:0 ",
 			},
 			[49062924] = {
 				["icon"] = 1,
@@ -13209,10 +13059,10 @@ HandyNotes_HandyNotesDB = {
 				["title"] = "hf41 RazorthornTrail2 2596",
 				["desc"] = "2594:0 2595:0 ",
 			},
-			[29746924] = {
+			[23454960] = {
 				["icon"] = 1,
-				["title"] = "hf10 HellfirePeninsula4 2565",
-				["desc"] = "2563:0 2566:0 2564:0 ",
+				["title"] = "hf6 HellfirePeninsula2 2561",
+				["desc"] = "2562:0 2560:0 2558:0 ",
 			},
 			[44428101] = {
 				["icon"] = 1,
@@ -13336,20 +13186,20 @@ HandyNotes_HandyNotesDB = {
 				["title"] = "sb36 SholazarBasin18 2785",
 				["desc"] = "2791:0 2792:0 2784:0 ",
 			},
-			[31858111] = {
+			[65024662] = {
 				["icon"] = 1,
-				["title"] = "sb2 ThePathoftheLifewarden1 2750",
-				["desc"] = "2749:0 2751:0 2764:0 ",
-			},
-			[48386296] = {
-				["icon"] = 1,
-				["title"] = "sb42 WildgrowthMangal7 2791",
-				["desc"] = "2790:0 2792:0 ",
+				["title"] = "sb27 TheAvalanche2 2776",
+				["desc"] = "2773:0 2775:0 2787:0 ",
 			},
 			[75276055] = {
 				["icon"] = 1,
 				["title"] = "sb22 FrenzyheartRiver1 2771",
 				["desc"] = "2772:0 2770:0 2773:0 ",
+			},
+			[48386296] = {
+				["icon"] = 1,
+				["title"] = "sb42 WildgrowthMangal7 2791",
+				["desc"] = "2790:0 2792:0 ",
 			},
 			[51285973] = {
 				["icon"] = 1,
@@ -13431,10 +13281,10 @@ HandyNotes_HandyNotesDB = {
 				["title"] = "sb5 SholazarBasin2 2753",
 				["desc"] = "2755:0 2759:0 2752:0 ",
 			},
-			[65024662] = {
+			[31858111] = {
 				["icon"] = 1,
-				["title"] = "sb27 TheAvalanche2 2776",
-				["desc"] = "2773:0 2775:0 2787:0 ",
+				["title"] = "sb2 ThePathoftheLifewarden1 2750",
+				["desc"] = "2749:0 2751:0 2764:0 ",
 			},
 			[69346652] = {
 				["icon"] = 1,
@@ -13442,1132 +13292,1072 @@ HandyNotes_HandyNotesDB = {
 				["desc"] = "2769:0 2771:0 2773:0 ",
 			},
 		},
-		["Tirisfal"] = {
-			[37226746] = {
-				["title"] = "UndeadStartE 296",
+		["Hinterlands"] = {
+			[32847489] = {
+				["title"] = "ShadraAlorS 395",
 				["icon"] = 1,
-				["desc"] = "295:0 4:0 ",
+				["desc"] = "393:0 394:0 396:0 ",
 			},
-			[32054671] = {
-				["title"] = "CrusadersOutpost 293",
+			[28295459] = {
+				["title"] = "QuelDanilS 388",
 				["icon"] = 1,
-				["desc"] = "288:0 292:0 ",
+				["desc"] = "55:0 82:0 387:0 389:0 390:0 391:0 392:0 ",
 			},
-			[58793167] = {
-				["title"] = "GarrensHaunt 280",
+			[57714300] = {
+				["title"] = "SkulkRock 399",
 				["icon"] = 1,
-				["desc"] = "279:0 281:0 284:0 ",
+				["desc"] = "397:0 398:0 401:0 404:0 ",
 			},
-			[75306741] = {
-				["title"] = "TG_hubSE 275",
+			[72796664] = {
+				["title"] = "OverlookCliffsRampTop 405",
 				["icon"] = 1,
-				["desc"] = "273:0 276:0 277:0 ",
+				["desc"] = "403:0 406:0 ",
 			},
-			[46383772] = {
-				["title"] = "AgamandMillsEntrance 289",
+			[46164167] = {
+				["title"] = "AgolWatha 397",
 				["icon"] = 1,
-				["desc"] = "288:0 290:0 291:0 ",
+				["desc"] = "390:0 398:0 399:0 ",
 			},
-			[66202995] = {
-				["title"] = "NorthCoastC 283",
+			[82365195] = {
+				["title"] = "OverlookCliffsEnd 408",
 				["icon"] = 1,
-				["desc"] = "282:0 284:0 ",
+				["desc"] = "406:0 ",
 			},
-			[74682672] = {
-				["title"] = "NorthCoastE 282",
+			[31544895] = {
+				["title"] = "QuelDanil 389",
 				["icon"] = 1,
-				["desc"] = "281:0 283:0 ",
+				["desc"] = "388:0 390:0 392:0 ",
 			},
-			[53455741] = {
-				["title"] = "ColdHearthManor 285",
+			[32225852] = {
+				["title"] = "HiriWatha 392",
 				["icon"] = 1,
-				["desc"] = "278:0 18:0 286:0 287:0 297:0 ",
+				["desc"] = "389:0 390:0 388:0 393:0 ",
 			},
-			[85257012] = {
-				["title"] = "Bulwark 273",
+			[32686870] = {
+				["title"] = "ShadraAlorW 396",
 				["icon"] = 1,
-				["desc"] = "267:0 274:0 275:0 276:0 ",
+				["desc"] = "393:0 395:0 394:0 ",
 			},
-			[65373994] = {
-				["title"] = "BrightwaterLake 281",
+			[79335727] = {
+				["title"] = "OverlookCliffsRampBottom 406",
 				["icon"] = 1,
-				["desc"] = "2:0 279:0 280:0 282:0 284:0 ",
+				["desc"] = "405:0 407:0 408:0 ",
 			},
-			[69076000] = {
-				["title"] = "TG_hubC2 277",
+			[23855761] = {
+				["title"] = "ZunWatha 387",
 				["icon"] = 1,
-				["desc"] = "2:0 275:0 276:0 ",
+				["desc"] = "55:0 82:0 388:0 391:0 ",
 			},
-			[57635117] = {
-				["title"] = "BrillEntrance 278",
+			[26256487] = {
+				["title"] = "BogensLedge 391",
 				["icon"] = 1,
-				["desc"] = "2:0 279:0 285:0 297:0 ",
+				["desc"] = "387:0 388:0 393:0 ",
 			},
-			[43605420] = {
-				["title"] = "TG_hubC1 286",
+			[33805199] = {
+				["title"] = "HL_hubW 390",
 				["icon"] = 1,
-				["desc"] = "285:0 287:0 288:0 292:0 294:0 ",
+				["desc"] = "388:0 389:0 392:0 393:0 397:0 398:0 ",
 			},
-			[76706002] = {
-				["title"] = "BalnirFarmstead 276",
+			[60583873] = {
+				["title"] = "SeradaneBridge 404",
 				["icon"] = 1,
-				["desc"] = "273:0 275:0 277:0 ",
+				["desc"] = "399:0 401:0 409:0 ",
 			},
-			[40745444] = {
-				["title"] = "UndeadStartExit 294",
+			[35856338] = {
+				["title"] = "ShadraAlorEntrance 393",
 				["icon"] = 1,
-				["desc"] = "288:0 286:0 292:0 295:0 ",
+				["desc"] = "391:0 392:0 390:0 395:0 394:0 396:0 398:0 400:0 ",
 			},
-			[43533145] = {
-				["title"] = "AgamandMillsW 290",
+			[7036016] = {
+				["title"] = "HinterlandsEntrance 386",
 				["icon"] = 1,
-				["desc"] = "289:0 291:0 ",
+				["desc"] = "372:0 55:0 ",
 			},
-			[58532832] = {
-				["title"] = "NorthCoastW 284",
+			[60985286] = {
+				["title"] = "HL_hubC 401",
 				["icon"] = 1,
-				["desc"] = "280:0 281:0 283:0 ",
+				["desc"] = "398:0 399:0 402:0 403:0 404:0 ",
 			},
-			[43184616] = {
-				["title"] = "TG_hubNE 288",
+			[70846278] = {
+				["title"] = "OverlookCliffsS 403",
 				["icon"] = 1,
-				["desc"] = "286:0 289:0 292:0 293:0 294:0 ",
+				["desc"] = "401:0 402:0 405:0 ",
 			},
-			[51556771] = {
-				["title"] = "CrusadersOutpost 287",
+			[49125260] = {
+				["title"] = "CreepingRun 398",
 				["icon"] = 1,
-				["desc"] = "286:0 285:0 297:0 ",
+				["desc"] = "393:0 397:0 390:0 399:0 400:0 401:0 ",
 			},
-			[53412867] = {
-				["title"] = "AgamandMillsE 291",
+			[45306290] = {
+				["title"] = "AltarOfZul 400",
 				["icon"] = 1,
-				["desc"] = "289:0 290:0 ",
+				["desc"] = "393:0 398:0 ",
 			},
-			[35975007] = {
-				["title"] = "SollidenFarmstead 292",
+			[35857141] = {
+				["title"] = "ShadraAlorE 394",
 				["icon"] = 1,
-				["desc"] = "286:0 288:0 293:0 294:0 ",
+				["desc"] = "393:0 395:0 396:0 ",
 			},
-			[35735894] = {
-				["title"] = "UndeadStartEnd 295",
+			[63282767] = {
+				["title"] = "Seradane 409",
 				["icon"] = 1,
-				["desc"] = "294:0 83:0 4:0 296:0 ",
+				["desc"] = "404:0 ",
 			},
-			[55604108] = {
-				["title"] = "GarrensHauntGraves 279",
+			[67146561] = {
+				["title"] = "JinthaAlor 402",
 				["icon"] = 1,
-				["desc"] = "2:0 278:0 280:0 281:0 ",
+				["desc"] = "401:0 403:0 ",
 			},
-			[54837287] = {
-				["title"] = "TH_exitS 297",
+			[74217109] = {
+				["title"] = "RevantuskOutside 407",
 				["icon"] = 1,
-				["desc"] = "278:0 285:0 287:0 298:0 ",
+				["desc"] = "406:0 179:0 ",
 			},
 		},
-		["HowlingFjord"] = {
-			[55535887] = {
+		["ShattrathCity"] = {
+			[74961251] = {
 				["icon"] = 1,
-				["title"] = "hj106 HowlingFjord53 3333",
-				["desc"] = "3332:0 3334:0 ",
+				["title"] = "t26 ShattrathCity1 2747",
+				["desc"] = "2538:0 2455:0 2450:0 ",
 			},
-			[62538101] = {
+			[79425738] = {
 				["icon"] = 1,
-				["title"] = "hj95 ShieldHill2 3322",
-				["desc"] = "3321:0 ",
+				["title"] = "t2 ShattrathCity2 2450",
+				["desc"] = "2455:0 2449:0 2456:0 2747:0 ",
 			},
-			[38743845] = {
+			[57214635] = {
 				["icon"] = 1,
-				["title"] = "hj40 WhisperGulch4 3267",
-				["desc"] = "3266:0 3268:0 3342:0 ",
-			},
-			[48097370] = {
-				["icon"] = 1,
-				["title"] = "hj96 ShieldHill3 3323",
-				["desc"] = "3325:0 3320:0 3326:0 ",
-			},
-			[49200991] = {
-				["icon"] = 1,
-				["title"] = "hj12 CampWinterhoof1 3239",
-				["desc"] = "3240:0 3238:0 3237:0 ",
-			},
-			[46532922] = {
-				["icon"] = 1,
-				["title"] = "hj47 Skorn1 3274",
-				["desc"] = "3275:0 3273:0 3279:0 3296:0 ",
-			},
-			[53126949] = {
-				["icon"] = 1,
-				["title"] = "hj97 HowlingFjord46 3324",
-				["desc"] = "3329:0 3320:0 3325:0 ",
-			},
-			[70946816] = {
-				["icon"] = 1,
-				["title"] = "hj87 HowlingFjord39 3314",
-				["desc"] = "3311:0 3312:0 3315:0 3317:0 ",
-			},
-			[28573828] = {
-				["icon"] = 1,
-				["title"] = "hj35 ChillmereCoast7 3262",
-				["desc"] = "3263:0 3255:0 ",
-			},
-			[34215098] = {
-				["icon"] = 1,
-				["title"] = "hj117 WestguardKeep1 3344",
-				["desc"] = "3345:0 3343:0 3346:0 ",
-			},
-			[36371159] = {
-				["icon"] = 1,
-				["title"] = "hj19 Gjalerbron3 3246",
-				["desc"] = "3248:0 3245:0 3247:0 ",
-			},
-			[72035864] = {
-				["icon"] = 1,
-				["title"] = "hj79 HowlingFjord34 3306",
-				["desc"] = "3310:0 3312:0 3311:0 ",
-			},
-			[76184255] = {
-				["icon"] = 1,
-				["title"] = "hj72 HowlingFjord30 3299",
-				["desc"] = "3302:0 3298:0 3303:0 3300:0 ",
-			},
-			[50044186] = {
-				["icon"] = 1,
-				["title"] = "hj111 HowlingFjord57 3338",
-				["desc"] = "3335:0 3336:0 3339:0 3340:0 ",
-			},
-			[44915390] = {
-				["icon"] = 1,
-				["title"] = "hj120 EmberClutch2 3347",
-				["desc"] = "3351:0 3348:0 3346:0 3341:0 3352:0 3353:0 ",
-			},
-			[33674036] = {
-				["icon"] = 1,
-				["title"] = "hj38 WhisperGulch2 3265",
-				["desc"] = "3264:0 3266:0 ",
-			},
-			[69332271] = {
-				["icon"] = 1,
-				["title"] = "hj5 GiantsRun2 3232",
-				["desc"] = "3231:0 3288:0 3230:0 3285:0 ",
-			},
-			[28281385] = {
-				["icon"] = 1,
-				["title"] = "hj22 Rivenwood1 3249",
-				["desc"] = "3250:0 3271:0 3251:0 3248:0 3244:0 ",
-			},
-			[51245407] = {
-				["icon"] = 1,
-				["title"] = "hj122 Halgrind1 3349",
-				["desc"] = "3348:0 ",
-			},
-			[53835848] = {
-				["icon"] = 1,
-				["title"] = "hj103 HowlingFjord50 3330",
-				["desc"] = "3331:0 3328:0 3327:0 ",
-			},
-			[38634977] = {
-				["icon"] = 1,
-				["title"] = "hj118 HowlingFjord63 3345",
-				["desc"] = "3342:0 3341:0 3344:0 ",
-			},
-			[67283851] = {
-				["icon"] = 1,
-				["title"] = "hj62 GiantsRun3 3289",
-				["desc"] = "3290:0 3291:0 3297:0 3287:0 3288:0 ",
-			},
-			[61633015] = {
-				["icon"] = 1,
-				["title"] = "hj59 HowlingFjord23 3286",
-				["desc"] = "3292:0 3283:0 3284:0 3287:0 ",
-			},
-			[67196258] = {
-				["icon"] = 1,
-				["title"] = "hj91 HowlingFjord43 3318",
-				["desc"] = "3311:0 3309:0 3307:0 ",
-			},
-			[44846728] = {
-				["icon"] = 1,
-				["title"] = "hj99 HowlingFjord47 3326",
-				["desc"] = "3352:0 3325:0 3323:0 ",
-			},
-			[46571685] = {
-				["icon"] = 1,
-				["title"] = "hj14 HowlingFjord8 3241",
-				["desc"] = "3240:0 3280:0 3242:0 ",
-			},
-			[40132506] = {
-				["icon"] = 1,
-				["title"] = "hj45 HowlingFjord18 3272",
-				["desc"] = "3273:0 3243:0 3269:0 3268:0 ",
-			},
-			[64937055] = {
-				["icon"] = 1,
-				["title"] = "hj90 HowlingFjord42 3317",
-				["desc"] = "3311:0 3316:0 3319:0 ",
-			},
-			[44545952] = {
-				["icon"] = 1,
-				["title"] = "hj125 HowlingFjord65 3352",
-				["desc"] = "3347:0 3353:0 3326:0 3327:0 ",
-			},
-			[54732325] = {
-				["icon"] = 1,
-				["title"] = "hj55 TheTwistedGlade1 3282",
-				["desc"] = "3279:0 3295:0 3236:0 3283:0 3281:0 ",
-			},
-			[34481475] = {
-				["icon"] = 1,
-				["title"] = "hj18 Gjalerbron2 3245",
-				["desc"] = "3248:0 3244:0 3246:0 3249:0 ",
-			},
-			[18332042] = {
-				["icon"] = 1,
-				["title"] = "hj31 ChillmereCoast3 3258",
-				["desc"] = "3257:0 3259:0 3260:0 ",
-			},
-			[54535092] = {
-				["icon"] = 1,
-				["title"] = "hj105 HowlingFjord52 3332",
-				["desc"] = "3331:0 3335:0 3333:0 ",
-			},
-			[76936409] = {
-				["icon"] = 1,
-				["title"] = "hj86 HowlingFjord38 3313",
-				["desc"] = "3312:0 3311:0 3306:0 ",
-			},
-			[21141453] = {
-				["icon"] = 1,
-				["title"] = "hj33 ChillmereCoast5 3260",
-				["desc"] = "3259:0 3188:0 3258:0 ",
-			},
-			[62232404] = {
-				["icon"] = 1,
-				["title"] = "hj57 HowlingFjord22 3284",
-				["desc"] = "3285:0 3286:0 3235:0 ",
-			},
-			[21752852] = {
-				["icon"] = 1,
-				["title"] = "hj29 ChillmereCoast1 3256",
-				["desc"] = "3261:0 3257:0 3255:0 ",
-			},
-			[37564370] = {
-				["icon"] = 1,
-				["title"] = "hj115 HowlingFjord61 3342",
-				["desc"] = "3343:0 3341:0 3267:0 3345:0 ",
-			},
-			[73402417] = {
-				["icon"] = 1,
-				["title"] = "hj4 GiantsRun1 3231",
-				["desc"] = "3232:0 3230:0 3288:0 ",
-			},
-			[64984100] = {
-				["icon"] = 1,
-				["title"] = "hj63 Baleheim1 3290",
-				["desc"] = "3291:0 3289:0 3297:0 ",
-			},
-			[40586045] = {
-				["icon"] = 1,
-				["title"] = "hj126 EmberSpearTower1 3353",
-				["desc"] = "3352:0 3346:0 3347:0 ",
-			},
-			[33801191] = {
-				["icon"] = 1,
-				["title"] = "hj21 Gjalerbron4 3248",
-				["desc"] = "3245:0 3246:0 3249:0 ",
-			},
-			[63962193] = {
-				["icon"] = 1,
-				["title"] = "hj58 TheFrozenGlade1 3285",
-				["desc"] = "3284:0 3234:0 3235:0 3232:0 ",
-			},
-			[58106135] = {
-				["icon"] = 1,
-				["title"] = "hj107 HowlingFjord54 3334",
-				["desc"] = "3333:0 ",
-			},
-			[26843238] = {
-				["icon"] = 1,
-				["title"] = "hj27 HowlingFjord14 3254",
-				["desc"] = "3253:0 3255:0 ",
-			},
-			[53680679] = {
-				["icon"] = 1,
-				["title"] = "hj11 HowlingFjord6 3238",
-				["desc"] = "3237:0 3239:0 3281:0 3223:0 ",
-			},
-			[49242405] = {
-				["icon"] = 1,
-				["title"] = "hj52 Skorn6 3279",
-				["desc"] = "3280:0 3282:0 3274:0 3273:0 ",
-			},
-			[74771343] = {
-				["icon"] = 1,
-				["title"] = "hj2 HowlingFjord1 3229",
-				["desc"] = "3230:0 3228:0 ",
-			},
-			[66707344] = {
-				["icon"] = 1,
-				["title"] = "hj89 HowlingFjord41 3316",
-				["desc"] = "3315:0 3317:0 3311:0 ",
-			},
-			[27914039] = {
-				["icon"] = 1,
-				["title"] = "hj36 WhisperGulch1 3263",
-				["desc"] = "3262:0 3264:0 ",
-			},
-			[55194226] = {
-				["icon"] = 1,
-				["title"] = "hj109 HowlingFjord55 3336",
-				["desc"] = "3337:0 3338:0 ",
-			},
-			[35922700] = {
-				["icon"] = 1,
-				["title"] = "hj42 HowlingFjord17 3269",
-				["desc"] = "3272:0 3268:0 3243:0 3271:0 3270:0 ",
-			},
-			[49274989] = {
-				["icon"] = 1,
-				["title"] = "hj123 Halgrind2 3350",
-				["desc"] = "3349:0 3351:0 ",
-			},
-			[44973568] = {
-				["icon"] = 1,
-				["title"] = "hj50 Skorn4 3277",
-				["desc"] = "3278:0 ",
-			},
-			[26142446] = {
-				["icon"] = 1,
-				["title"] = "hj25 ApothecaryCamp1 3252",
-				["desc"] = "3251:0 3271:0 3270:0 3253:0 ",
-			},
-			[71384526] = {
-				["icon"] = 1,
-				["title"] = "hj76 HowlingFjord32 3303",
-				["desc"] = "3297:0 3298:0 3304:0 ",
-			},
-			[48866972] = {
-				["icon"] = 1,
-				["title"] = "hj98 NewAgamand1 3325",
-				["desc"] = "3323:0 3324:0 3326:0 3327:0 ",
-			},
-			[40580676] = {
-				["icon"] = 1,
-				["title"] = "hj20 Gjalerhorn1 3247",
-				["desc"] = "3246:0 ",
-			},
-			[59303910] = {
-				["icon"] = 1,
-				["title"] = "hj67 CauldrosIsle1 3294",
-				["desc"] = "3293:0 ",
-			},
-			[41785533] = {
-				["icon"] = 1,
-				["title"] = "hj119 EmberClutch1 3346",
-				["desc"] = "3347:0 3353:0 3352:0 3344:0 ",
-			},
-			[50663358] = {
-				["icon"] = 1,
-				["title"] = "hj69 HowlingFjord27 3296",
-				["desc"] = "3295:0 3274:0 ",
-			},
-			[53145453] = {
-				["icon"] = 1,
-				["title"] = "hj104 HowlingFjord51 3331",
-				["desc"] = "3330:0 3332:0 ",
-			},
-			[57743732] = {
-				["icon"] = 1,
-				["title"] = "hj66 HowlingFjord26 3293",
-				["desc"] = "3294:0 3292:0 ",
-			},
-			[24673328] = {
-				["icon"] = 1,
-				["title"] = "hj28 HowlingFjord14 3255",
-				["desc"] = "3254:0 3256:0 3262:0 ",
-			},
-			[67345246] = {
-				["icon"] = 1,
-				["title"] = "hj81 Nifflevar2 3308",
-				["desc"] = "3307:0 3309:0 ",
-			},
-			[49366201] = {
-				["icon"] = 1,
-				["title"] = "hj100 HowlingFjord48 3327",
-				["desc"] = "3325:0 3328:0 3352:0 3330:0 ",
-			},
-			[57633038] = {
-				["icon"] = 1,
-				["title"] = "hj65 Baleheim3 3292",
-				["desc"] = "3283:0 3286:0 3295:0 3293:0 ",
-			},
-			[46034564] = {
-				["icon"] = 1,
-				["title"] = "hj112 HowlingFjord58 3339",
-				["desc"] = "3351:0 3341:0 3340:0 3338:0 ",
-			},
-			[76624712] = {
-				["icon"] = 1,
-				["title"] = "hj75 IvaldsRuin2 3302",
-				["desc"] = "3299:0 3301:0 3303:0 3305:0 ",
-			},
-			[66275577] = {
-				["icon"] = 1,
-				["title"] = "hj82 Nifflevar3 3309",
-				["desc"] = "3304:0 3308:0 ",
-			},
-			[58907773] = {
-				["icon"] = 1,
-				["title"] = "hj94 HowlingFjord45 3321",
-				["desc"] = "3319:0 3322:0 3320:0 ",
-			},
-			[63373793] = {
-				["icon"] = 1,
-				["title"] = "hj64 Baleheim2 3291",
-				["desc"] = "3290:0 3289:0 ",
-			},
-			[68175506] = {
-				["icon"] = 1,
-				["title"] = "hj80 HowlingFjord35 3307",
-				["desc"] = "3304:0 3308:0 ",
-			},
-			[48741320] = {
-				["icon"] = 1,
-				["title"] = "hj13 HowlingFjord7 3240",
-				["desc"] = "3239:0 3241:0 3279:0 ",
-			},
-			[54386386] = {
-				["icon"] = 1,
-				["title"] = "hj101 HowlingFjord49 3328",
-				["desc"] = "3327:0 3329:0 ",
-			},
-			[44342619] = {
-				["icon"] = 1,
-				["title"] = "hj46 HowlingFjord19 3273",
-				["desc"] = "3275:0 3274:0 3272:0 3279:0 ",
-			},
-			[27583210] = {
-				["icon"] = 1,
-				["title"] = "hj26 HowlingFjord13 3253",
-				["desc"] = "3254:0 3270:0 3252:0 ",
-			},
-			[57226960] = {
-				["icon"] = 1,
-				["title"] = "hj102 NewAgamand2 3329",
-				["desc"] = "3319:0 3324:0 3328:0 ",
-			},
-			[53947464] = {
-				["icon"] = 1,
-				["title"] = "hj93 ShieldHill1 3320",
-				["desc"] = "3324:0 3319:0 3323:0 ",
-			},
-			[58367337] = {
-				["icon"] = 1,
-				["title"] = "hj92 HowlingFjord44 3319",
-				["desc"] = "3321:0 3329:0 3320:0 3317:0 ",
-			},
-			[72924065] = {
-				["icon"] = 1,
-				["title"] = "hj71 HowlingFjord29 3298",
-				["desc"] = "3299:0 3303:0 3297:0 ",
-			},
-			[47955317] = {
-				["icon"] = 1,
-				["title"] = "hj121 HowlingFjord64 3348",
-				["desc"] = "3347:0 3349:0 ",
-			},
-			[69116495] = {
-				["icon"] = 1,
-				["title"] = "hj84 HowlingFjord36 3311",
-				["desc"] = "3318:0 3314:0 3312:0 3317:0 3306:0 ",
-			},
-			[52801666] = {
-				["icon"] = 1,
-				["title"] = "hj54 HowlingFjord21 3281",
-				["desc"] = "3280:0 3237:0 3282:0 3238:0 ",
-			},
-			[45413256] = {
-				["icon"] = 1,
-				["title"] = "hj49 Skorn3 3276",
-				["desc"] = "3275:0 3278:0 ",
-			},
-			[61321771] = {
-				["icon"] = 1,
-				["title"] = "hj8 FortWildervar2 3235",
-				["desc"] = "3234:0 3236:0 ",
-			},
-			[55441285] = {
-				["icon"] = 1,
-				["title"] = "hj10 HowlingFjord5 3237",
-				["desc"] = "3281:0 3238:0 3240:0 ",
-			},
-			[23452450] = {
-				["icon"] = 1,
-				["title"] = "hj34 ChillmereCoast6 3261",
-				["desc"] = "3257:0 3259:0 3256:0 ",
-			},
-			[45645032] = {
-				["icon"] = 1,
-				["title"] = "hj124 Halgrind3 3351",
-				["desc"] = "3347:0 3339:0 3350:0 3341:0 ",
-			},
-			[78905008] = {
-				["icon"] = 1,
-				["title"] = "hj74 IvaldsRuin1 3301",
-				["desc"] = "3300:0 3302:0 3305:0 ",
-			},
-			[73786453] = {
-				["icon"] = 1,
-				["title"] = "hj85 HowlingFjord37 3312",
-				["desc"] = "3313:0 3311:0 3314:0 ",
-			},
-			[73160541] = {
-				["icon"] = 1,
-				["title"] = "hj1 TheBrokenBluffs1 3228",
-				["desc"] = "3229:0 3227:0 ",
-			},
-			[24521257] = {
-				["icon"] = 1,
-				["title"] = "hj23 HowlingFjord11 3250",
-				["desc"] = "3249:0 3251:0 3192:0 3188:0 ",
-			},
-			[36043873] = {
-				["icon"] = 1,
-				["title"] = "hj39 WhisperGulch3 3266",
-				["desc"] = "3267:0 3265:0 ",
-			},
-			[56634456] = {
-				["icon"] = 1,
-				["title"] = "hj110 HowlingFjord56 3337",
-				["desc"] = "3336:0 ",
-			},
-			[43274109] = {
-				["icon"] = 1,
-				["title"] = "hj113 HowlingFjord59 3340",
-				["desc"] = "3341:0 3338:0 3339:0 ",
-			},
-			[53683084] = {
-				["icon"] = 1,
-				["title"] = "hj68 CauldrosIsle2 3295",
-				["desc"] = "3292:0 3296:0 3282:0 ",
-			},
-			[74755332] = {
-				["icon"] = 1,
-				["title"] = "hj78 Nifflevar1 3305",
-				["desc"] = "3310:0 3304:0 3302:0 ",
-			},
-			[68717440] = {
-				["icon"] = 1,
-				["title"] = "hj88 HowlingFjord40 3315",
-				["desc"] = "3316:0 3317:0 3314:0 ",
-			},
-			[58422812] = {
-				["icon"] = 1,
-				["title"] = "hj56 NorthSpearTower1 3283",
-				["desc"] = "3292:0 3286:0 3236:0 3282:0 ",
-			},
-			[38273230] = {
-				["icon"] = 1,
-				["title"] = "hj41 HowlingFjord16 3268",
-				["desc"] = "3267:0 3269:0 3272:0 ",
-			},
-			[30962884] = {
-				["icon"] = 1,
-				["title"] = "hj43 WestSpearTower1 3270",
-				["desc"] = "3253:0 3269:0 ",
-			},
-			[51194703] = {
-				["icon"] = 1,
-				["title"] = "hj108 Valgarde1 3335",
-				["desc"] = "3338:0 3332:0 3339:0 ",
-			},
-			[26082024] = {
-				["icon"] = 1,
-				["title"] = "hj24 HowlingFjord12 3251",
-				["desc"] = "3252:0 3250:0 3271:0 3249:0 ",
-			},
-			[80494676] = {
-				["icon"] = 1,
-				["title"] = "hj73 HowlingFjord31 3300",
-				["desc"] = "3301:0 3299:0 ",
-			},
-			[35481754] = {
-				["icon"] = 1,
-				["title"] = "hj17 Gjalerbron1 3244",
-				["desc"] = "3245:0 3243:0 3271:0 3269:0 ",
-			},
-			[40994557] = {
-				["icon"] = 1,
-				["title"] = "hj114 HowlingFjord60 3341",
-				["desc"] = "3342:0 3339:0 3345:0 3347:0 3340:0 ",
-			},
-			[50231909] = {
-				["icon"] = 1,
-				["title"] = "hj53 HowlingFjord20 3280",
-				["desc"] = "3281:0 3279:0 3241:0 ",
-			},
-			[58361928] = {
-				["icon"] = 1,
-				["title"] = "hj9 HowlingFjord4 3236",
-				["desc"] = "3235:0 3237:0 3281:0 3282:0 3283:0 ",
-			},
-			[43943008] = {
-				["icon"] = 1,
-				["title"] = "hj48 Skorn2 3275",
-				["desc"] = "3273:0 3276:0 3274:0 ",
-			},
-			[71081713] = {
-				["icon"] = 1,
-				["title"] = "hj3 HowlingFjord2 3230",
-				["desc"] = "3233:0 3232:0 3229:0 ",
-			},
-			[42341526] = {
-				["icon"] = 1,
-				["title"] = "hj15 HowlingFjord9 3242",
-				["desc"] = "3241:0 3243:0 ",
-			},
-			[66091694] = {
-				["icon"] = 1,
-				["title"] = "hj6 HowlingFjord3 3233",
-				["desc"] = "3234:0 3230:0 3285:0 ",
-			},
-			[65313338] = {
-				["icon"] = 1,
-				["title"] = "hj60 HowlingFjord24 3287",
-				["desc"] = "3291:0 3289:0 3290:0 3288:0 3286:0 ",
-			},
-			[34884287] = {
-				["icon"] = 1,
-				["title"] = "hj116 HowlingFjord62 3343",
-				["desc"] = "3342:0 3344:0 ",
-			},
-			[70805257] = {
-				["icon"] = 1,
-				["title"] = "hj77 HowlingFjord33 3304",
-				["desc"] = "3305:0 3303:0 3310:0 3307:0 ",
-			},
-			[69114277] = {
-				["icon"] = 1,
-				["title"] = "hj70 HowlingFjord28 3297",
-				["desc"] = "3303:0 3289:0 3298:0 3290:0 ",
-			},
-			[29722120] = {
-				["icon"] = 1,
-				["title"] = "hj44 SteelGate1 3271",
-				["desc"] = "3251:0 3252:0 3269:0 3249:0 3244:0 ",
-			},
-			[46963632] = {
-				["icon"] = 1,
-				["title"] = "hj51 Skorn5 3278",
-				["desc"] = "3277:0 3276:0 ",
-			},
-			[31773957] = {
-				["icon"] = 1,
-				["title"] = "hj37 HowlingFjord15 3264",
-				["desc"] = "3265:0 3263:0 ",
-			},
-			[21242253] = {
-				["icon"] = 1,
-				["title"] = "hj30 ChillmereCoast2 3257",
-				["desc"] = "3261:0 3259:0 3258:0 ",
-			},
-			[37902091] = {
-				["icon"] = 1,
-				["title"] = "hj16 HowlingFjord10 3243",
-				["desc"] = "3244:0 3272:0 3269:0 3242:0 ",
-			},
-			[68602957] = {
-				["icon"] = 1,
-				["title"] = "hj61 HowlingFjord25 3288",
-				["desc"] = "3232:0 3287:0 3289:0 ",
-			},
-			[72775560] = {
-				["icon"] = 1,
-				["title"] = "hj83 Nifflevar4 3310",
-				["desc"] = "3306:0 3305:0 3304:0 ",
-			},
-			[22741912] = {
-				["icon"] = 1,
-				["title"] = "hj32 ChillmereCoast4 3259",
-				["desc"] = "3257:0 3260:0 3258:0 3261:0 ",
-			},
-			[63241579] = {
-				["icon"] = 1,
-				["title"] = "hj7 FortWildervar1 3234",
-				["desc"] = "3235:0 3233:0 3284:0 ",
+				["title"] = "t1 ShattrathCity1 2449",
+				["desc"] = "2450:0 ",
 			},
 		},
-		["UngoroCrater"] = {
-			[33722230] = {
-				["title"] = "Ungoro23 2243",
+		["Feralas"] = {
+			[49234794] = {
 				["icon"] = 1,
-				["desc"] = "2242:0 2244:0 2271:0 ",
+				["title"] = "FeralasC3 1945",
+				["desc"] = "1944:0 1946:0 ",
 			},
-			[38463027] = {
-				["title"] = "Ungoro54 2274",
+			[70275426] = {
 				["icon"] = 1,
-				["desc"] = "2271:0 2273:0 2275:0 ",
+				["title"] = "FeralasE8 1981",
+				["desc"] = "1971:0 1975:0 1978:0 1993:0 1994:0 ",
 			},
-			[45126364] = {
-				["title"] = "Ungoro44 2264",
+			[85764224] = {
 				["icon"] = 1,
-				["desc"] = "2262:0 2263:0 2265:0 2276:0 ",
+				["title"] = "FeralasE39 2012",
+				["desc"] = "2011:0 2013:0 2015:0 ",
 			},
-			[51484573] = {
-				["title"] = "Ungoro62 2282",
+			[54593301] = {
 				["icon"] = 1,
-				["desc"] = "2281:0 2283:0 ",
+				["title"] = "FeralasN16 1928",
+				["desc"] = "131:0 ",
 			},
-			[47178690] = {
-				["title"] = "Ungoro11 2231",
+			[41322598] = {
 				["icon"] = 1,
-				["desc"] = "2229:0 ",
+				["title"] = "FeralasN6 1918",
+				["desc"] = "1917:0 1919:0 1923:0 ",
 			},
-			[34543808] = {
-				["title"] = "Ungoro53 2273",
+			[27344624] = {
 				["icon"] = 1,
-				["desc"] = "2240:0 2241:0 2242:0 2274:0 2275:0 ",
+				["title"] = "SardorIsle2 1941",
+				["desc"] = "58:0 132:0 1940:0 ",
 			},
-			[47855309] = {
-				["title"] = "Ungoro57 2277",
+			[61835569] = {
 				["icon"] = 1,
-				["desc"] = "2276:0 2278:0 2286:0 ",
+				["title"] = "FeralasC23 1965",
+				["desc"] = "1964:0 1966:0 ",
 			},
-			[41757688] = {
-				["title"] = "Ungoro12 2232",
+			[40341437] = {
 				["icon"] = 1,
-				["desc"] = "2228:0 2229:0 2233:0 2234:0 2262:0 ",
+				["title"] = "FeralasN4 1916",
+				["desc"] = "1915:0 1917:0 1920:0 ",
 			},
-			[43147126] = {
-				["title"] = "Ungoro42 2262",
+			[65574725] = {
 				["icon"] = 1,
-				["desc"] = "2229:0 2232:0 2234:0 2263:0 2264:0 ",
+				["title"] = "FeralasC30 1972",
+				["desc"] = "1968:0 1973:0 ",
 			},
-			[44151146] = {
-				["title"] = "Ungoro25 2245",
+			[48402370] = {
 				["icon"] = 1,
-				["desc"] = "111:0 2244:0 2246:0 ",
+				["title"] = "FeralasN10 1922",
+				["desc"] = "1919:0 1923:0 1925:0 1926:0 ",
 			},
-			[63292468] = {
-				["title"] = "Ungoro31 2251",
+			[89284116] = {
 				["icon"] = 1,
-				["desc"] = "112:0 2249:0 2252:0 2253:0 2269:0 2270:0 ",
+				["title"] = "FeralasE46 2019",
+				["desc"] = "40:0 2014:0 2016:0 2018:0 2020:0 ",
 			},
-			[20573957] = {
-				["title"] = "Ungoro19 2239",
+			[60305920] = {
 				["icon"] = 1,
-				["desc"] = "2238:0 ",
+				["title"] = "FeralasC22 1964",
+				["desc"] = "1953:0 1956:0 1957:0 1961:0 1965:0 ",
 			},
-			[40664480] = {
-				["title"] = "Ungoro55 2275",
+			[72136335] = {
 				["icon"] = 1,
-				["desc"] = "2240:0 2271:0 2273:0 2274:0 2276:0 ",
+				["title"] = "FeralasE12 1985",
+				["desc"] = "1984:0 ",
 			},
-			[47434986] = {
-				["title"] = "Ungoro28 2278",
+			[59375362] = {
 				["icon"] = 1,
-				["desc"] = "2277:0 ",
+				["title"] = "FeralasC10 1952",
+				["desc"] = "1949:0 1951:0 1966:0 ",
 			},
-			[50777703] = {
-				["title"] = "Ungoro9 2229",
+			[61285294] = {
 				["icon"] = 1,
-				["desc"] = "2227:0 2228:0 2230:0 2231:0 2232:0 2261:0 2262:0 2265:0 ",
+				["title"] = "FeralasC24 1966",
+				["desc"] = "1949:0 1952:0 1965:0 1967:0 ",
 			},
-			[25554453] = {
-				["title"] = "Ungoro18 2238",
+			[39183639] = {
 				["icon"] = 1,
-				["desc"] = "2236:0 2239:0 2240:0 ",
+				["title"] = "FeralasCoast2 1933",
+				["desc"] = "1932:0 1934:0 1939:0 ",
 			},
-			[49725359] = {
-				["title"] = "Ungoro66 2286",
+			[45986625] = {
 				["icon"] = 1,
-				["desc"] = "2277:0 2287:0 ",
+				["title"] = "FeralasCoast7 1938",
+				["desc"] = "1937:0 ",
 			},
-			[54728601] = {
-				["title"] = "Ungoro6 2226",
+			[76586657] = {
 				["icon"] = 1,
-				["desc"] = "2225:0 2227:0 2228:0 2261:0 ",
+				["title"] = "FeralasE16 1989",
+				["desc"] = "1988:0 ",
 			},
-			[45265292] = {
-				["title"] = "Ungoro56 2276",
+			[81094031] = {
 				["icon"] = 1,
-				["desc"] = "2263:0 2264:0 2275:0 2277:0 ",
+				["title"] = "FeralasE35 2008",
+				["desc"] = "2003:0 2007:0 2010:0 2017:0 ",
 			},
-			[60143630] = {
-				["title"] = "Ungoro49 2269",
+			[47874290] = {
 				["icon"] = 1,
-				["desc"] = "2249:0 2251:0 2253:0 2268:0 2270:0 ",
+				["title"] = "FeralasC1 1943",
+				["desc"] = "1931:0 1944:0 ",
 			},
-			[50054803] = {
-				["title"] = "Ungoro63 2283",
+			[78584234] = {
 				["icon"] = 1,
-				["desc"] = "2282:0 2284:0 2285:0 ",
+				["title"] = "FeralasE25 1998",
+				["desc"] = "1997:0 2003:0 ",
 			},
-			[25865640] = {
-				["title"] = "Ungoro16 2236",
+			[68605465] = {
 				["icon"] = 1,
-				["desc"] = "2235:0 2237:0 2238:0 ",
+				["title"] = "FeralasE5 1978",
+				["desc"] = "1974:0 1979:0 1981:0 1982:0 ",
 			},
-			[70723519] = {
-				["title"] = "Ungoro33 2253",
+			[71426373] = {
 				["icon"] = 1,
-				["desc"] = "2251:0 2252:0 2254:0 2267:0 2269:0 ",
+				["title"] = "FeralasE10 1983",
+				["desc"] = "1982:0 1984:0 1994:0 ",
 			},
-			[53095081] = {
-				["title"] = "Ungoro67 2287",
+			[58546970] = {
 				["icon"] = 1,
-				["desc"] = "2286:0 2288:0 ",
+				["title"] = "FeralasC20 1962",
+				["desc"] = "1961:0 1963:0 ",
 			},
-			[52924545] = {
-				["title"] = "Ungoro61 2281",
+			[62236872] = {
 				["icon"] = 1,
-				["desc"] = "2280:0 2282:0 ",
+				["title"] = "FeralasC18 1960",
+				["desc"] = "1959:0 1961:0 ",
 			},
-			[28672111] = {
-				["title"] = "Ungoro69 2289",
+			[85603736] = {
 				["icon"] = 1,
-				["desc"] = "2242:0 2290:0 ",
+				["title"] = "FeralasE44 2017",
+				["desc"] = "2008:0 2018:0 ",
 			},
-			[46231383] = {
-				["title"] = "Ungoro27 2247",
+			[53505539] = {
 				["icon"] = 1,
-				["desc"] = "2244:0 2246:0 2248:0 ",
+				["title"] = "FeralasC12 1954",
+				["desc"] = "1953:0 1955:0 ",
 			},
-			[67467382] = {
-				["title"] = "Ungoro40 2260",
+			[55255138] = {
 				["icon"] = 1,
-				["desc"] = "2223:0 2225:0 2259:0 2261:0 2266:0 ",
+				["title"] = "FeralasC9 1951",
+				["desc"] = "1947:0 1950:0 1952:0 1953:0 ",
 			},
-			[75404468] = {
-				["title"] = "Ungoro34 2254",
+			[87754137] = {
 				["icon"] = 1,
-				["desc"] = "2253:0 2255:0 2256:0 2267:0 ",
+				["title"] = "FeralasE43 2016",
+				["desc"] = "2015:0 2019:0 ",
 			},
-			[31622706] = {
-				["title"] = "Ungoro22 2242",
+			[37781899] = {
 				["icon"] = 1,
-				["desc"] = "2241:0 2243:0 2273:0 2289:0 ",
+				["title"] = "FeralasN5 1917",
+				["desc"] = "1916:0 1918:0 ",
 			},
-			[34767351] = {
-				["title"] = "Ungoro14 2234",
+			[82654128] = {
 				["icon"] = 1,
-				["desc"] = "2232:0 2233:0 2235:0 2262:0 2263:0 ",
+				["title"] = "FeralasE37 2010",
+				["desc"] = "2008:0 2009:0 2011:0 ",
 			},
-			[36366316] = {
-				["title"] = "Ungoro43 2263",
+			[85904572] = {
 				["icon"] = 1,
-				["desc"] = "2234:0 2235:0 2262:0 2264:0 2276:0 ",
+				["title"] = "FeralasE40 2013",
+				["desc"] = "2009:0 2012:0 2014:0 ",
 			},
-			[42651583] = {
-				["title"] = "Ungoro24 2244",
+			[52034710] = {
 				["icon"] = 1,
-				["desc"] = "2243:0 2245:0 2247:0 ",
+				["title"] = "FeralasC6 1948",
+				["desc"] = "1947:0 1949:0 ",
 			},
-			[46922921] = {
-				["title"] = "Ungoro51 2271",
+			[63885039] = {
 				["icon"] = 1,
-				["desc"] = "2243:0 2248:0 2249:0 2270:0 2272:0 2274:0 2275:0 ",
+				["title"] = "FeralasC26 1968",
+				["desc"] = "1967:0 1969:0 1972:0 ",
 			},
-			[76395269] = {
-				["title"] = "Ungoro36 2256",
+			[70494896] = {
 				["icon"] = 1,
-				["desc"] = "2254:0 2257:0 ",
+				["title"] = "FeralasE2 1975",
+				["desc"] = "1973:0 1974:0 1976:0 1981:0 1993:0 1994:0 1995:0 ",
 			},
-			[80273964] = {
-				["title"] = "Ungoro35 2255",
+			[83294513] = {
 				["icon"] = 1,
-				["desc"] = "2254:0 ",
+				["title"] = "FeralasE36 2009",
+				["desc"] = "2002:0 2010:0 2013:0 ",
 			},
-			[71148511] = {
-				["title"] = "Ungoro1 2221",
+			[46392120] = {
 				["icon"] = 1,
-				["desc"] = "2220:0 2222:0 ",
+				["title"] = "FeralasN7 1919",
+				["desc"] = "1918:0 1920:0 1922:0 ",
 			},
-			[51154075] = {
-				["title"] = "Ungoro52 2272",
+			[28217039] = {
 				["icon"] = 1,
-				["desc"] = "2268:0 2270:0 2271:0 2280:0 ",
+				["title"] = "ShalzarusLairInside 1942",
+				["desc"] = "140:0 ",
 			},
-			[45391203] = {
-				["title"] = "Ungoro26 2246",
+			[69524969] = {
 				["icon"] = 1,
-				["desc"] = "111:0 2245:0 2247:0 ",
+				["title"] = "FeralasE1 1974",
+				["desc"] = "1971:0 1973:0 1975:0 1978:0 2006:0 ",
 			},
-			[75586121] = {
-				["title"] = "Ungoro37 2257",
+			[53857296] = {
 				["icon"] = 1,
-				["desc"] = "2256:0 2258:0 2259:0 ",
+				["title"] = "FeralasC16 1958",
+				["desc"] = "1957:0 1959:0 ",
 			},
-			[53346382] = {
-				["title"] = "Ungoro45 2265",
+			[52986007] = {
 				["icon"] = 1,
-				["desc"] = "2229:0 2261:0 2264:0 2268:0 ",
+				["title"] = "FeralasC13 1955",
+				["desc"] = "1954:0 ",
 			},
-			[70629226] = {
-				["title"] = "TanarisExitSW 2220",
+			[51031081] = {
 				["icon"] = 1,
-				["desc"] = "2188:0 2221:0 ",
+				["title"] = "FeralasN9 1921",
+				["desc"] = "1914:0 1920:0 ",
 			},
-			[71157695] = {
-				["title"] = "Ungoro3 2223",
+			[58606679] = {
 				["icon"] = 1,
-				["desc"] = "2222:0 2224:0 2260:0 ",
+				["title"] = "19 1961",
+				["desc"] = "1957:0 1960:0 1962:0 1964:0 ",
 			},
-			[44980589] = {
-				["title"] = "MarshalsRefugeReal 111",
+			[33704380] = {
 				["icon"] = 1,
-				["desc"] = "2245:0 2246:0 ",
+				["title"] = "FeathermoonCoast 1939",
+				["desc"] = "58:0 1933:0 1935:0 ",
 			},
-			[68261591] = {
-				["title"] = "Ungoro30 2250",
+			[55635651] = {
 				["icon"] = 1,
-				["desc"] = "112:0 ",
+				["title"] = "FeralasC11 1953",
+				["desc"] = "1951:0 1954:0 1956:0 1964:0 ",
 			},
-			[72317904] = {
-				["title"] = "Ungoro2 2222",
+			[70563814] = {
 				["icon"] = 1,
-				["desc"] = "2221:0 2223:0 ",
+				["title"] = "FeralasE32 2005",
+				["desc"] = "1977:0 2006:0 ",
 			},
-			[20486028] = {
-				["title"] = "Ungoro17 2237",
+			[75355664] = {
 				["icon"] = 1,
-				["desc"] = "2236:0 ",
+				["title"] = "FeralasE18 1991",
+				["desc"] = "1984:0 136:0 1992:0 1994:0 ",
 			},
-			[50251825] = {
-				["title"] = "Ungoro28 2248",
+			[77344828] = {
 				["icon"] = 1,
-				["desc"] = "2247:0 2249:0 2270:0 2271:0 ",
+				["title"] = "FeralasE27 2000",
+				["desc"] = "1999:0 2001:0 ",
 			},
-			[27151035] = {
-				["title"] = "Ungoro71 2291",
+			[86684297] = {
 				["icon"] = 1,
-				["desc"] = "2290:0 2292:0 ",
+				["title"] = "FeralasE42 2015",
+				["desc"] = "2012:0 2016:0 ",
 			},
-			[57259255] = {
-				["title"] = "Ungoro7 2227",
+			[83774181] = {
 				["icon"] = 1,
-				["desc"] = "2226:0 2229:0 ",
+				["title"] = "FeralasE38 2011",
+				["desc"] = "2010:0 2012:0 ",
 			},
-			[51204974] = {
-				["title"] = "Ungoro65 2285",
+			[60687335] = {
 				["icon"] = 1,
-				["desc"] = "2283:0 ",
+				["title"] = "FeralasC17 1959",
+				["desc"] = "1958:0 1960:0 ",
 			},
-			[64806140] = {
-				["title"] = "Ungoro46 2266",
+			[78944490] = {
 				["icon"] = 1,
-				["desc"] = "2259:0 2260:0 2261:0 2267:0 ",
+				["title"] = "FeralasE29 2002",
+				["desc"] = "2001:0 2003:0 2009:0 ",
 			},
-			[63184985] = {
-				["title"] = "Ungoro47 2267",
+			[50364969] = {
 				["icon"] = 1,
-				["desc"] = "2253:0 2254:0 2266:0 2268:0 ",
+				["title"] = "FeralasC4 1946",
+				["desc"] = "1945:0 1947:0 ",
 			},
-			[59146967] = {
-				["title"] = "Ungoro41 2261",
+			[39171000] = {
 				["icon"] = 1,
-				["desc"] = "2225:0 2226:0 2229:0 2260:0 2265:0 2266:0 ",
+				["title"] = "FeralasN3 1915",
+				["desc"] = "1914:0 1916:0 1920:0 ",
 			},
-			[53884753] = {
-				["title"] = "Ungoro59 2279",
+			[48363308] = {
 				["icon"] = 1,
-				["desc"] = "2268:0 ",
+				["title"] = "FeralasN17 1929",
+				["desc"] = "1925:0 1930:0 ",
 			},
-			[43758155] = {
-				["title"] = "Ungoro10 2230",
+			[73415395] = {
 				["icon"] = 1,
-				["desc"] = "2229:0 ",
+				["title"] = "FeralasE19 1992",
+				["desc"] = "136:0 1991:0 1993:0 1994:0 1999:0 ",
 			},
-			[79895891] = {
-				["title"] = "Ungoro38 2258",
+			[46000443] = {
 				["icon"] = 1,
-				["desc"] = "2257:0 ",
+				["title"] = "FeralasN1 1913",
+				["desc"] = "1802:0 1914:0 ",
 			},
-			[69212273] = {
-				["title"] = "Ungoro32 2252",
+			[45931235] = {
 				["icon"] = 1,
-				["desc"] = "2251:0 2253:0 ",
+				["title"] = "FeralasN8 1920",
+				["desc"] = "1914:0 1915:0 1916:0 1919:0 1921:0 ",
 			},
-			[69577977] = {
-				["title"] = "Ungoro4 2224",
+			[65984910] = {
 				["icon"] = 1,
-				["desc"] = "2223:0 2225:0 ",
+				["title"] = "FeralasC28 1970",
+				["desc"] = "1969:0 1971:0 ",
 			},
-			[29776281] = {
-				["title"] = "Ungoro15 2235",
+			[75644948] = {
 				["icon"] = 1,
-				["desc"] = "2233:0 2234:0 2236:0 2240:0 2263:0 ",
+				["title"] = "FeralasE26 1999",
+				["desc"] = "1992:0 2000:0 ",
 			},
-			[64257775] = {
-				["title"] = "Ungoro5 2225",
+			[78636418] = {
 				["icon"] = 1,
-				["desc"] = "2224:0 2226:0 2260:0 2261:0 ",
+				["title"] = "FeralasE17 1990",
+				["desc"] = "1988:0 ",
 			},
-			[52984173] = {
-				["title"] = "Ungoro60 2280",
+			[44334363] = {
 				["icon"] = 1,
-				["desc"] = "2268:0 2272:0 2281:0 ",
+				["title"] = "FeralasCoast4 1935",
+				["desc"] = "1932:0 1936:0 1937:0 1939:0 1944:0 ",
 			},
-			[54453146] = {
-				["title"] = "Ungoro50 2270",
+			[78754744] = {
 				["icon"] = 1,
-				["desc"] = "2248:0 2249:0 2251:0 2268:0 2269:0 2271:0 2272:0 ",
+				["title"] = "FeralasE28 2001",
+				["desc"] = "2000:0 2002:0 ",
 			},
-			[27933459] = {
-				["title"] = "Ungoro21 2241",
+			[72964773] = {
 				["icon"] = 1,
-				["desc"] = "2240:0 2242:0 2273:0 ",
+				["title"] = "FeralasE22 1995",
+				["desc"] = "1975:0 1976:0 53:0 2006:0 ",
 			},
-			[30747810] = {
-				["title"] = "Ungoro13 2233",
+			[46272625] = {
 				["icon"] = 1,
-				["desc"] = "2232:0 2234:0 2235:0 ",
+				["title"] = "FeralasN12 1924",
+				["desc"] = "1923:0 1925:0 ",
 			},
-			[29774423] = {
-				["title"] = "Ungoro20 2240",
+			[48123884] = {
 				["icon"] = 1,
-				["desc"] = "2235:0 2238:0 2241:0 2273:0 2275:0 ",
+				["title"] = "FeralasN19 1931",
+				["desc"] = "1926:0 1930:0 1943:0 ",
 			},
-			[55251736] = {
-				["title"] = "Ungoro29 2249",
+			[69604367] = {
 				["icon"] = 1,
-				["desc"] = "2248:0 112:0 2251:0 2269:0 2270:0 2271:0 ",
+				["title"] = "FeralasE3 1976",
+				["desc"] = "1973:0 1975:0 1977:0 1995:0 2006:0 ",
 			},
-			[46108506] = {
-				["title"] = "Ungoro2228",
+			[59104756] = {
+				["icon"] = 1,
+				["title"] = "FeralasC7 1949",
+				["desc"] = "1948:0 1952:0 1966:0 ",
+			},
+			[57967168] = {
+				["icon"] = 1,
+				["title"] = "FeralasC21 1963",
+				["desc"] = "1962:0 ",
+			},
+			[48784517] = {
+				["icon"] = 1,
+				["title"] = "FeralasC2 1944",
+				["desc"] = "1935:0 1943:0 1945:0 ",
+			},
+			[67345583] = {
+				["icon"] = 1,
+				["title"] = "FeralasE6 1979",
+				["desc"] = "1978:0 1980:0 ",
+			},
+			[44582465] = {
+				["icon"] = 1,
+				["title"] = "FeralasN11 1923",
+				["desc"] = "1918:0 1922:0 1924:0 ",
+			},
+			[77336425] = {
+				["icon"] = 1,
+				["title"] = "FeralasE15 1988",
+				["desc"] = "1984:0 1989:0 1990:0 ",
+			},
+			[67994992] = {
+				["icon"] = 1,
+				["title"] = "FeralasC29 1971",
+				["desc"] = "1970:0 1974:0 1981:0 ",
+			},
+			[68454617] = {
+				["icon"] = 1,
+				["title"] = "FeralasC31 1973",
+				["desc"] = "1972:0 1974:0 1975:0 1976:0 ",
+			},
+			[53645199] = {
+				["icon"] = 1,
+				["title"] = "FeralasC8 1950",
+				["desc"] = "1936:0 1951:0 ",
+			},
+			[55315945] = {
+				["icon"] = 1,
+				["title"] = "FeralasC14 1956",
+				["desc"] = "1953:0 1957:0 1964:0 ",
+			},
+			[76663969] = {
+				["icon"] = 1,
+				["title"] = "FeralasE31 2004",
+				["desc"] = "2003:0 2006:0 137:0 ",
+			},
+			[46762830] = {
+				["icon"] = 1,
+				["title"] = "FeralasN13 1925",
+				["desc"] = "1922:0 1924:0 1929:0 ",
+			},
+			[46795472] = {
+				["icon"] = 1,
+				["title"] = "FeralasCoast6 1937",
+				["desc"] = "1935:0 1936:0 1938:0 ",
+			},
+			[68873983] = {
+				["icon"] = 1,
+				["title"] = "FeralasE4 1977",
+				["desc"] = "1976:0 2005:0 2006:0 ",
+			},
+			[89333934] = {
+				["icon"] = 1,
+				["title"] = "FeralasE45 2018",
+				["desc"] = "2017:0 2019:0 2023:0 ",
+			},
+			[72185705] = {
+				["icon"] = 1,
+				["title"] = "FeralasE21 1994",
+				["desc"] = "1975:0 1981:0 1982:0 1983:0 1991:0 1992:0 ",
+			},
+			[50443289] = {
+				["icon"] = 1,
+				["title"] = "FeralasN14 1926",
+				["desc"] = "1922:0 1927:0 1931:0 ",
+			},
+			[55476358] = {
+				["icon"] = 1,
+				["title"] = "FeralasC15 1957",
+				["desc"] = "1956:0 1958:0 1961:0 1964:0 ",
+			},
+			[34203187] = {
+				["icon"] = 1,
+				["title"] = "FeralasCoast3 1934",
+				["desc"] = "1933:0 ",
+			},
+			[49295138] = {
+				["icon"] = 1,
+				["title"] = "FeralasCoast5 1936",
+				["desc"] = "1935:0 1937:0 1950:0 ",
+			},
+			[44763780] = {
+				["icon"] = 1,
+				["title"] = "FeralasCoast1 1932",
+				["desc"] = "1930:0 1933:0 1935:0 ",
+			},
+			[78366256] = {
+				["icon"] = 1,
+				["title"] = "FeralasE14 1987",
+				["desc"] = "1984:0 ",
+			},
+			[47923741] = {
+				["icon"] = 1,
+				["title"] = "FeralasN18 1930",
+				["desc"] = "1929:0 1931:0 1932:0 ",
+			},
+			[44690810] = {
+				["icon"] = 1,
+				["title"] = "FeralasN2 1914",
+				["desc"] = "1913:0 1915:0 1920:0 1921:0 ",
+			},
+			[66995349] = {
+				["icon"] = 1,
+				["title"] = "FeralasE7 1980",
+				["desc"] = "1979:0 178:0 ",
+			},
+			[79534173] = {
+				["icon"] = 1,
+				["title"] = "FeralasE30 2003",
+				["desc"] = "1998:0 2002:0 2004:0 2007:0 2008:0 ",
+			},
+			[51983191] = {
+				["icon"] = 1,
+				["title"] = "FeralasN15 1927",
+				["desc"] = "1926:0 131:0 ",
+			},
+			[63135361] = {
+				["icon"] = 1,
+				["title"] = "FeralasC25 1967",
+				["desc"] = "1966:0 1968:0 ",
+			},
+			[71615085] = {
+				["icon"] = 1,
+				["title"] = "FeralasE20 1993",
+				["desc"] = "1975:0 1981:0 1992:0 ",
+			},
+			[65165007] = {
+				["icon"] = 1,
+				["title"] = "FeralasC27 1969",
+				["desc"] = "1968:0 1970:0 ",
+			},
+			[75006028] = {
+				["icon"] = 1,
+				["title"] = "FeralasE11 1984",
+				["desc"] = "1983:0 1985:0 1986:0 1987:0 1988:0 1991:0 ",
+			},
+			[68336006] = {
+				["icon"] = 1,
+				["title"] = "FeralasE9 1982",
+				["desc"] = "1978:0 1983:0 1994:0 ",
+			},
+			[76544337] = {
+				["icon"] = 1,
+				["title"] = "FeralasE24 1997",
+				["desc"] = "53:0 1998:0 ",
+			},
+			[79473755] = {
+				["icon"] = 1,
+				["title"] = "FeralasE34 2007",
+				["desc"] = "2003:0 137:0 2008:0 ",
+			},
+			[52735034] = {
+				["icon"] = 1,
+				["title"] = "FeralasC5 1947",
+				["desc"] = "1946:0 1948:0 1951:0 ",
+			},
+			[74536513] = {
+				["icon"] = 1,
+				["title"] = "FeralasE13 1986",
+				["desc"] = "1984:0 ",
+			},
+			[71694128] = {
+				["icon"] = 1,
+				["title"] = "FeralasE33 2006",
+				["desc"] = "1974:0 1976:0 1977:0 1995:0 2004:0 2005:0 137:0 ",
+			},
+			[75024565] = {
+				["icon"] = 1,
+				["title"] = "FeralasE23 1996",
+				["desc"] = "53:0 ",
+			},
+			[88094569] = {
+				["icon"] = 1,
+				["title"] = "FeralasE41 2014",
+				["desc"] = "2013:0 40:0 2019:0 ",
+			},
+			[31705413] = {
+				["icon"] = 1,
+				["title"] = "SardorIsle1 1940",
+				["desc"] = "58:0 132:0 1941:0 ",
+			},
+		},
+		["Silithus"] = {
+			[45542875] = {
+				["title"] = "Silithus25 2316",
+				["icon"] = 1,
+				["desc"] = "2313:0 ",
+			},
+			[56365247] = {
+				["title"] = "Silithus59 2350",
+				["icon"] = 1,
+				["desc"] = "177:0 2294:0 2295:0 2304:0 2348:0 2351:0 2352:0 2355:0 ",
+			},
+			[48623149] = {
+				["title"] = "Silithus2311",
 				["icon"] = 1,
 				["desc"] = "",
 			},
-			[30321034] = {
-				["title"] = "Ungoro70 2290",
+			[33198581] = {
+				["title"] = "Silithus48 2339",
 				["icon"] = 1,
-				["desc"] = "2289:0 2291:0 ",
+				["desc"] = "193:0 2337:0 2338:0 2340:0 ",
 			},
-			[71986676] = {
-				["title"] = "Ungoro39 2259",
+			[46262271] = {
+				["title"] = "Silithus23 2314",
 				["icon"] = 1,
-				["desc"] = "2257:0 2260:0 2266:0 ",
+				["desc"] = "2313:0 ",
 			},
-			[57594402] = {
-				["title"] = "Ungoro48 2268",
+			[38376188] = {
+				["title"] = "Silithus44 2335",
 				["icon"] = 1,
-				["desc"] = "2265:0 2267:0 2269:0 2270:0 2272:0 2279:0 2280:0 ",
+				["desc"] = "177:0 189:0 2324:0 2326:0 2336:0 2341:0 2342:0 2343:0 ",
 			},
-			[54055521] = {
-				["title"] = "Ungoro68 2288",
+			[50813775] = {
+				["title"] = "Silithus15 2306",
 				["icon"] = 1,
-				["desc"] = "2287:0 ",
+				["desc"] = "2305:0 188:0 2307:0 2308:0 2309:0 2310:0 ",
 			},
-			[49504568] = {
-				["title"] = "Ungoro64 2284",
+			[38961318] = {
+				["title"] = "Silithus12 2303",
 				["icon"] = 1,
-				["desc"] = "2283:0 ",
+				["desc"] = "2301:0 2302:0 ",
 			},
-		},
-		["Stormwind"] = {
-			[61966885] = {
-				["title"] = "TradeDistrict 712",
+			[62898190] = {
+				["title"] = "Silithus71 2362",
 				["icon"] = 1,
-				["desc"] = "16:0 ",
+				["desc"] = "2360:0 2363:0 2364:0 ",
+			},
+			[44258973] = {
+				["title"] = "Silithus54 2345",
+				["icon"] = 1,
+				["desc"] = "2344:0 ",
+			},
+			[18113235] = {
+				["title"] = "Silithus29 2320",
+				["icon"] = 1,
+				["desc"] = "2319:0 2321:0 134:0 ",
+			},
+			[58818520] = {
+				["title"] = "Silithus70 2361",
+				["icon"] = 1,
+				["desc"] = "2359:0 2360:0 2365:0 2366:0 ",
+			},
+			[53704151] = {
+				["title"] = "Silithus60 2351",
+				["icon"] = 1,
+				["desc"] = "2294:0 2304:0 2323:0 2350:0 ",
+			},
+			[41709120] = {
+				["title"] = "Silithus53 2344",
+				["icon"] = 1,
+				["desc"] = "193:0 2345:0 ",
+			},
+			[43826406] = {
+				["title"] = "Silithus52 2343",
+				["icon"] = 1,
+				["desc"] = "177:0 2324:0 2335:0 2342:0 2348:0 ",
+			},
+			[62795115] = {
+				["title"] = "Silithus62 2353",
+				["icon"] = 1,
+				["desc"] = "2294:0 2352:0 2354:0 2356:0 ",
+			},
+			[86361135] = {
+				["title"] = "Ungoro71",
+				["icon"] = 1,
+				["desc"] = "",
+			},
+			[32217678] = {
+				["title"] = "Silithus46 2337",
+				["icon"] = 1,
+				["desc"] = "135:0 2336:0 2338:0 2339:0 2340:0 ",
+			},
+			[48103977] = {
+				["title"] = "Silithus19 2310",
+				["icon"] = 1,
+				["desc"] = "2306:0 2309:0 2323:0 ",
+			},
+			[49213425] = {
+				["title"] = "Silithus16 2307",
+				["icon"] = 1,
+				["desc"] = "2306:0 ",
+			},
+			[40112386] = {
+				["title"] = "Silithus9 2300",
+				["icon"] = 1,
+				["desc"] = "2299:0 2301:0 2311:0 2317:0 2322:0 2323:0 ",
+			},
+			[47636691] = {
+				["title"] = "Silithus57 2348",
+				["icon"] = 1,
+				["desc"] = "177:0 2342:0 2343:0 2347:0 2349:0 2350:0 ",
+			},
+			[66867993] = {
+				["title"] = "Silithus67 2358",
+				["icon"] = 1,
+				["desc"] = "192:0 ",
+			},
+			[65327533] = {
+				["title"] = "Silithus72 2363",
+				["icon"] = 1,
+				["desc"] = "2362:0 ",
+			},
+			[55826235] = {
+				["title"] = "Silithus58 2349",
+				["icon"] = 1,
+				["desc"] = "177:0 2348:0 2355:0 2357:0 192:0 2359:0 ",
+			},
+			[46064207] = {
+				["title"] = "Silithus32 2323",
+				["icon"] = 1,
+				["desc"] = "177:0 189:0 2300:0 2310:0 2324:0 2351:0 ",
+			},
+			[51152731] = {
+				["title"] = "Silithus24 2315",
+				["icon"] = 1,
+				["desc"] = "2313:0 ",
+			},
+			[37166192] = {
+				["title"] = "Silithus40 2331",
+				["icon"] = 1,
+				["desc"] = "2328:0 ",
+			},
+			[48492592] = {
+				["title"] = "Silithus22 2313",
+				["icon"] = 1,
+				["desc"] = "2311:0 2314:0 2315:0 2316:0 ",
+			},
+			[51853672] = {
+				["title"] = "Silithus14 2305",
+				["icon"] = 1,
+				["desc"] = "2304:0 2306:0 188:0 ",
+			},
+			[24494280] = {
+				["title"] = "Silithus30 2321",
+				["icon"] = 1,
+				["desc"] = "2320:0 134:0 2322:0 2325:0 ",
+			},
+			[25951302] = {
+				["title"] = "Silithus27 2318",
+				["icon"] = 1,
+				["desc"] = "2317:0 2319:0 133:0 ",
+			},
+			[35378294] = {
+				["title"] = "Silithus49 2340",
+				["icon"] = 1,
+				["desc"] = "193:0 2337:0 2339:0 2341:0 ",
+			},
+			[72161484] = {
+				["title"] = "Silithus7 2298",
+				["icon"] = 1,
+				["desc"] = "2297:0 ",
+			},
+			[59825647] = {
+				["title"] = "Silithus64 2355",
+				["icon"] = 1,
+				["desc"] = "2349:0 2350:0 2356:0 2357:0 ",
+			},
+			[53341582] = {
+				["title"] = "Silithus8 2299",
+				["icon"] = 1,
+				["desc"] = "191:0 2296:0 2300:0 2304:0 2311:0 ",
+			},
+			[72731252] = {
+				["title"] = "Silithus6 2297",
+				["icon"] = 1,
+				["desc"] = "191:0 2298:0 ",
+			},
+			[40302807] = {
+				["title"] = "Silithus21 2312",
+				["icon"] = 1,
+				["desc"] = "2311:0 ",
+			},
+			[63135958] = {
+				["title"] = "Silithus66 2357",
+				["icon"] = 1,
+				["desc"] = "2349:0 2354:0 2355:0 192:0 ",
+			},
+			[42987130] = {
+				["title"] = "Silithus51 2342",
+				["icon"] = 1,
+				["desc"] = "2335:0 2336:0 2341:0 2343:0 2347:0 2348:0 ",
+			},
+			[20786357] = {
+				["title"] = "Silithus38 2329",
+				["icon"] = 1,
+				["desc"] = "2327:0 2332:0 ",
+			},
+			[60567944] = {
+				["title"] = "Silithus69 2360",
+				["icon"] = 1,
+				["desc"] = "2359:0 2361:0 2362:0 ",
+			},
+			[54333652] = {
+				["title"] = "Silithus13 2304",
+				["icon"] = 1,
+				["desc"] = "2294:0 2295:0 2296:0 2299:0 2305:0 2350:0 2351:0 ",
+			},
+			[44041801] = {
+				["title"] = "Silithus10 2301",
+				["icon"] = 1,
+				["desc"] = "2300:0 2302:0 2303:0 ",
+			},
+			[33356498] = {
+				["title"] = "Silithus45 2336",
+				["icon"] = 1,
+				["desc"] = "2326:0 2335:0 135:0 2337:0 2341:0 2342:0 ",
+			},
+			[26205797] = {
+				["title"] = "Silithus36 2327",
+				["icon"] = 1,
+				["desc"] = "2326:0 2328:0 2329:0 2330:0 ",
+			},
+			[18891956] = {
+				["title"] = "Silithus28 2319",
+				["icon"] = 1,
+				["desc"] = "2318:0 133:0 2320:0 134:0 ",
+			},
+			[51219392] = {
+				["title"] = "Silithus75 2366",
+				["icon"] = 1,
+				["desc"] = "2361:0 2367:0 ",
+			},
+			[40667601] = {
+				["title"] = "Silithus50 2341",
+				["icon"] = 1,
+				["desc"] = "193:0 2335:0 2336:0 2340:0 2342:0 2347:0 ",
+			},
+			[60864820] = {
+				["title"] = "Silithus61 2352",
+				["icon"] = 1,
+				["desc"] = "2294:0 2350:0 2353:0 ",
+			},
+			[60562249] = {
+				["title"] = "Silithus5 2296",
+				["icon"] = 1,
+				["desc"] = "191:0 2293:0 2295:0 2299:0 2304:0 2311:0 ",
+			},
+			[30465463] = {
+				["title"] = "Silithus35 2326",
+				["icon"] = 1,
+				["desc"] = "2325:0 2327:0 2335:0 2336:0 ",
+			},
+			[47883485] = {
+				["title"] = "Silithus18 2309",
+				["icon"] = 1,
+				["desc"] = "2306:0 2310:0 2311:0 ",
+			},
+			[63493518] = {
+				["title"] = "Silithus4 2295",
+				["icon"] = 1,
+				["desc"] = "191:0 2293:0 2294:0 2296:0 2304:0 2350:0 ",
+			},
+			[54787645] = {
+				["title"] = "Silithus68 2359",
+				["icon"] = 1,
+				["desc"] = "2349:0 2360:0 2361:0 2346:0 ",
+			},
+			[83541429] = {
+				["title"] = "Silithus1 2292",
+				["icon"] = 1,
+				["desc"] = "2291:0 184:0 ",
+			},
+			[44651184] = {
+				["title"] = "Silithus11 2302",
+				["icon"] = 1,
+				["desc"] = "2301:0 2303:0 ",
+			},
+			[63904736] = {
+				["title"] = "Silithus3 2294",
+				["icon"] = 1,
+				["desc"] = "2293:0 2295:0 2304:0 2350:0 2351:0 2352:0 2353:0 ",
+			},
+			[23546166] = {
+				["title"] = "Silithus42 2333",
+				["icon"] = 1,
+				["desc"] = "2330:0 ",
+			},
+			[50833364] = {
+				["title"] = "Silithus17 2308",
+				["icon"] = 1,
+				["desc"] = "2306:0 ",
+			},
+			[20165863] = {
+				["title"] = "Silithus43 2334",
+				["icon"] = 1,
+				["desc"] = "2330:0 ",
+			},
+			[33823618] = {
+				["title"] = "Silithus31 2322",
+				["icon"] = 1,
+				["desc"] = "134:0 189:0 2300:0 2317:0 2321:0 2325:0 ",
+			},
+			[30038485] = {
+				["title"] = "Silithus47 2338",
+				["icon"] = 1,
+				["desc"] = "135:0 2337:0 2339:0 ",
+			},
+			[72363294] = {
+				["title"] = "Silithus2 2293",
+				["icon"] = 1,
+				["desc"] = "184:0 2294:0 2295:0 2296:0 ",
+			},
+			[30054924] = {
+				["title"] = "Silithus34 2325",
+				["icon"] = 1,
+				["desc"] = "189:0 2321:0 2322:0 2326:0 ",
+			},
+			[64677405] = {
+				["title"] = "Silithus73 2364",
+				["icon"] = 1,
+				["desc"] = "2362:0 ",
+			},
+			[26756494] = {
+				["title"] = "Silithus37 2328",
+				["icon"] = 1,
+				["desc"] = "2327:0 2331:0 ",
+			},
+			[48058167] = {
+				["title"] = "Silithus56 2347",
+				["icon"] = 1,
+				["desc"] = "193:0 2341:0 2342:0 2348:0 ",
+			},
+			[63415603] = {
+				["title"] = "Silithus63 2354",
+				["icon"] = 1,
+				["desc"] = "2353:0 2356:0 2357:0 ",
+			},
+			[23625545] = {
+				["title"] = "Silithus39 2330",
+				["icon"] = 1,
+				["desc"] = "2327:0 2333:0 2334:0 ",
+			},
+			[60285273] = {
+				["title"] = "Silithus65 2356",
+				["icon"] = 1,
+				["desc"] = "2353:0 2354:0 2355:0 ",
+			},
+			[34591974] = {
+				["title"] = "Silithus26 2317",
+				["icon"] = 1,
+				["desc"] = "2300:0 2318:0 2322:0 ",
+			},
+			[44815255] = {
+				["title"] = "Silithus33 2324",
+				["icon"] = 1,
+				["desc"] = "177:0 189:0 2323:0 2335:0 2343:0 ",
+			},
+			[45358598] = {
+				["title"] = "Silithus74 2365",
+				["icon"] = 1,
+				["desc"] = "2361:0 ",
+			},
+			[61719949] = {
+				["title"] = "Silithus74 2365",
+				["icon"] = 1,
+				["desc"] = "2361:0 ",
+			},
+			[23837119] = {
+				["title"] = "Silithus41 2332",
+				["icon"] = 1,
+				["desc"] = "2329:0 ",
+			},
+			[44398606] = {
+				["title"] = "Silithus76 2367",
+				["icon"] = 1,
+				["desc"] = "2366:0 ",
+			},
+			[53648882] = {
+				["title"] = "Silithus55 2346",
+				["icon"] = 1,
+				["desc"] = "193:0 2359:0 ",
 			},
 		},
 		["DeadwindPass"] = {
@@ -14601,20 +14391,20 @@ HandyNotes_HandyNotesDB = {
 				["icon"] = 1,
 				["desc"] = "806:0 808:0 ",
 			},
-			[51425860] = {
-				["title"] = "TheViceW 800",
+			[26183458] = {
+				["title"] = "DuskwoodExitE 785",
 				["icon"] = 1,
-				["desc"] = "799:0 172:0 79:0 ",
+				["desc"] = "784:0 798:0 ",
 			},
 			[51704361] = {
 				["title"] = "DWPExitE 801",
 				["icon"] = 1,
 				["desc"] = "172:0 170:0 802:0 811:0 ",
 			},
-			[26183458] = {
-				["title"] = "DuskwoodExitE 785",
+			[51425860] = {
+				["title"] = "TheViceW 800",
 				["icon"] = 1,
-				["desc"] = "784:0 798:0 ",
+				["desc"] = "799:0 172:0 79:0 ",
 			},
 			[47452495] = {
 				["title"] = "DeadmansCrossingBottom 810",
@@ -14647,378 +14437,588 @@ HandyNotes_HandyNotesDB = {
 				["desc"] = "79:0 805:0 806:0 ",
 			},
 		},
-		["Dustwallow"] = {
-			[41691146] = {
+		["Tanaris"] = {
+			[39444794] = {
+				["title"] = "Tanaris37 2184",
 				["icon"] = 1,
-				["title"] = "BlackhoofVillage 1874",
-				["desc"] = "102:0 1875:0 ",
+				["desc"] = "2173:0 2174:0 2185:0 2186:0 2187:0 ",
 			},
-			[37986742] = {
+			[55627768] = {
+				["title"] = "Tanaris54 2201",
 				["icon"] = 1,
-				["title"] = "DustwallowS1 1909",
-				["desc"] = "103:0 108:0 1908:0 233:0 105:0 ",
+				["desc"] = "2199:0 ",
 			},
-			[54161238] = {
+			[66813793] = {
+				["title"] = "WavestriderBeachReal 113",
 				["icon"] = 1,
-				["title"] = "DustwallowCoastN12 1895",
-				["desc"] = "1896:0 1894:0 1899:0 1900:0 ",
+				["desc"] = "2157:0 2158:0 2159:0 2160:0 ",
 			},
-			[59546803] = {
+			[55784221] = {
+				["title"] = "Tanaris14 2161",
 				["icon"] = 1,
-				["title"] = "TidefuryCoveReal 104",
-				["desc"] = "106:0 1912:0 ",
+				["desc"] = "2148:0 2158:0 2160:0 2162:0 2163:0 2164:0 2165:0 ",
 			},
-			[57891843] = {
+			[37272433] = {
+				["title"] = "Tanaris22 2169",
 				["icon"] = 1,
-				["title"] = "DustwallowCoastN9 1892",
-				["desc"] = "1879:0 1890:0 1891:0 ",
+				["desc"] = "2167:0 2168:0 2170:0 2171:0 ",
 			},
-			[61723168] = {
+			[29925137] = {
+				["title"] = "Tanaris36 2183",
 				["icon"] = 1,
-				["title"] = "DustwallowCoastN3 1886",
-				["desc"] = "1885:0 1887:0 1897:0 ",
+				["desc"] = "2175:0 2182:0 2188:0 2189:0 2190:0 ",
 			},
-			[62294166] = {
+			[42655380] = {
+				["title"] = "Tanaris40 2187",
 				["icon"] = 1,
-				["title"] = "DustwallowN8 1882",
-				["desc"] = "109:0 54:0 1884:0 1912:0 ",
+				["desc"] = "2173:0 2184:0 2185:0 2186:0 ",
 			},
-			[64814071] = {
+			[56556461] = {
+				["title"] = "Tanaris57 2204",
 				["icon"] = 1,
-				["title"] = "DustwallowCoastN1 1884",
-				["desc"] = "1882:0 1885:0 ",
+				["desc"] = "2197:0 2199:0 2200:0 2205:0 2209:0 ",
 			},
-			[47851511] = {
+			[46532772] = {
+				["title"] = "Tanaris19 2166",
 				["icon"] = 1,
-				["title"] = "DustwallowN2 1876",
-				["desc"] = "1875:0 1877:0 ",
+				["desc"] = "2144:0 2145:0 2146:0 2165:0 2167:0 2170:0 2172:0 ",
 			},
-			[57143207] = {
+			[68474137] = {
+				["title"] = "Tanaris12 2159",
 				["icon"] = 1,
-				["title"] = "DustwallowN6 1880",
-				["desc"] = "110:0 1878:0 1879:0 1881:0 1887:0 ",
+				["desc"] = "113:0 2160:0 2210:0 ",
 			},
-			[33064124] = {
+			[67442309] = {
+				["title"] = "Tanaris8 2155",
 				["icon"] = 1,
-				["title"] = "DustwallowC1 1873",
-				["desc"] = "99:0 187:0 1903:0 1904:0 103:0 ",
+				["desc"] = "2153:0 2154:0 2156:0 ",
 			},
-			[59300957] = {
+			[57412472] = {
+				["title"] = "Tanaris2 2149",
 				["icon"] = 1,
-				["title"] = "DustwallowCoastN16 1899",
-				["desc"] = "1893:0 1895:0 1900:0 1901:0 ",
+				["desc"] = "2144:0 2148:0 2150:0 2151:0 2152:0 ",
 			},
-			[51442517] = {
+			[49562843] = {
+				["title"] = "GadgetzanA1 2145",
 				["icon"] = 1,
-				["title"] = "DustwallowN4 1878",
-				["desc"] = "101:0 110:0 1877:0 1879:0 1880:0 ",
+				["desc"] = "2143:0 2146:0 2165:0 2166:0 ",
 			},
-			[61922227] = {
+			[42442325] = {
+				["title"] = "Tanaris20 2167",
 				["icon"] = 1,
-				["title"] = "DustwallowCoastN5 1888",
-				["desc"] = "1889:0 1887:0 1897:0 1898:0 ",
+				["desc"] = "2166:0 2168:0 2169:0 2170:0 ",
 			},
-			[57317484] = {
+			[56806922] = {
+				["title"] = "Tanaris55 2202",
 				["icon"] = 1,
-				["title"] = "DustwallowS2 1910",
-				["desc"] = "106:0 107:0 ",
+				["desc"] = "2200:0 ",
 			},
-			[59081747] = {
+			[58786004] = {
+				["title"] = "Tanaris62 2209",
 				["icon"] = 1,
-				["title"] = "DustwallowCoastN7 1890",
-				["desc"] = "1889:0 1891:0 1892:0 1893:0 ",
+				["desc"] = "2163:0 2204:0 2205:0 2206:0 2208:0 ",
 			},
-			[62481799] = {
+			[32217652] = {
+				["title"] = "Tanaris46 2193",
 				["icon"] = 1,
-				["title"] = "DustwallowCoastN15 1898",
-				["desc"] = "1888:0 1889:0 1901:0 ",
+				["desc"] = "2192:0 114:0 2194:0 ",
 			},
-			[53075685] = {
+			[31156964] = {
+				["title"] = "Tanaris45 2192",
 				["icon"] = 1,
-				["title"] = "DustwallowC5 1906",
-				["desc"] = "1905:0 1907:0 105:0 ",
+				["desc"] = "2189:0 2190:0 2191:0 2193:0 2194:0 ",
 			},
-			[45671866] = {
+			[34644535] = {
+				["title"] = "Tanaris33 2180",
 				["icon"] = 1,
-				["title"] = "DustwallowN1 1875",
-				["desc"] = "101:0 102:0 1874:0 1876:0 1877:0 1902:0 ",
+				["desc"] = "2181:0 2179:0 ",
 			},
-			[64832767] = {
+			[56547060] = {
+				["title"] = "Tanaris53 2200",
 				["icon"] = 1,
-				["title"] = "DustwallowCoastN14 1897",
-				["desc"] = "1886:0 1887:0 1888:0 ",
+				["desc"] = "2199:0 2202:0 2203:0 2204:0 ",
 			},
-			[61572720] = {
+			[60334890] = {
+				["title"] = "Tanaris15 2162",
 				["icon"] = 1,
-				["title"] = "DustwallowCoastN4 1887",
-				["desc"] = "1880:0 1886:0 1888:0 1897:0 ",
+				["desc"] = "2160:0 2161:0 2163:0 2206:0 ",
 			},
-			[42113576] = {
+			[35323327] = {
+				["title"] = "Tanaris24 2171",
 				["icon"] = 1,
-				["title"] = "DustwallowC2 1903",
-				["desc"] = "1873:0 1902:0 1904:0 1905:0 ",
+				["desc"] = "2169:0 2170:0 2172:0 2174:0 2175:0 ",
 			},
-			[63390738] = {
+			[37523974] = {
+				["title"] = "Tanaris27 2174",
 				["icon"] = 1,
-				["title"] = "DustwallowCoastN18 1901",
-				["desc"] = "1898:0 1899:0 1900:0 ",
+				["desc"] = "2171:0 2172:0 2173:0 2175:0 2179:0 2182:0 2184:0 ",
 			},
-			[46734741] = {
+			[33596317] = {
+				["title"] = "Tanaris43 2190",
 				["icon"] = 1,
-				["title"] = "DustwallowC4 1905",
-				["desc"] = "1903:0 1904:0 1906:0 1907:0 ",
+				["desc"] = "2183:0 2185:0 2186:0 2189:0 2192:0 2194:0 ",
 			},
-			[54321639] = {
+			[51042951] = {
+				["title"] = "GadgetzanA2 2146",
 				["icon"] = 1,
-				["title"] = "DustwallowCoastN11 1894",
-				["desc"] = "1877:0 1891:0 1895:0 ",
+				["desc"] = "2145:0 52:0 2147:0 2148:0 2165:0 2166:0 ",
 			},
-			[60385592] = {
+			[40155863] = {
+				["title"] = "Tanaris39 2186",
 				["icon"] = 1,
-				["title"] = "DustwallowCoastS1 1912",
-				["desc"] = "104:0 1882:0 ",
+				["desc"] = "2184:0 2185:0 2187:0 2190:0 2194:0 2196:0 ",
 			},
-			[59260768] = {
+			[44514308] = {
+				["title"] = "Tanaris26 2173",
 				["icon"] = 1,
-				["title"] = "DustwallowCoastN17 1900",
-				["desc"] = "1573:0 1574:0 1895:0 1899:0 1901:0 ",
+				["desc"] = "2164:0 2165:0 2172:0 2174:0 2184:0 2187:0 ",
 			},
-			[52087441] = {
+			[66892741] = {
+				["title"] = "Tanaris9 2156",
 				["icon"] = 1,
-				["title"] = "OnyxiasLairReal 106",
-				["desc"] = "233:0 105:0 1910:0 1911:0 104:0 ",
+				["desc"] = "2153:0 2155:0 2157:0 ",
 			},
-			[45925669] = {
+			[35655038] = {
+				["title"] = "Tanaris35 2182",
 				["icon"] = 1,
-				["title"] = "DustwallowC6 1907",
-				["desc"] = "1904:0 1905:0 1906:0 103:0 105:0 ",
+				["desc"] = "2174:0 2179:0 2183:0 2185:0 ",
 			},
-			[63133703] = {
+			[52542795] = {
+				["title"] = "GadgetzanS 2147",
 				["icon"] = 1,
-				["title"] = "DustwallowCoastN2 1885",
-				["desc"] = "1884:0 1886:0 ",
+				["desc"] = "52:0 2144:0 2146:0 ",
 			},
-			[57051718] = {
+			[33114332] = {
+				["title"] = "Tanaris31 2178",
 				["icon"] = 1,
-				["title"] = "DustwallowCoastN8 1891",
-				["desc"] = "1890:0 1892:0 1893:0 1894:0 ",
+				["desc"] = "2175:0 ",
 			},
-			[43382597] = {
+			[33014674] = {
+				["title"] = "Tanaris32 2179",
 				["icon"] = 1,
-				["title"] = "DustwallowN9 1902",
-				["desc"] = "100:0 101:0 102:0 1875:0 1903:0 ",
+				["desc"] = "2174:0 2175:0 2180:0 2181:0 2182:0 ",
 			},
-			[40594606] = {
+			[66295801] = {
+				["title"] = "Tanaris60 2207",
 				["icon"] = 1,
-				["title"] = "DustwallowC3 1904",
-				["desc"] = "99:0 1873:0 1903:0 1905:0 1907:0 103:0 ",
+				["desc"] = "2206:0 2208:0 2371:0 ",
 			},
-			[34656277] = {
+			[27827041] = {
+				["title"] = "Tanaris44 2191",
 				["icon"] = 1,
-				["title"] = "DustwallowC7 1908",
-				["desc"] = "103:0 108:0 1909:0 ",
+				["desc"] = "2189:0 2192:0 ",
 			},
-			[66634555] = {
+			[60112262] = {
+				["title"] = "Tanaris4 2151",
 				["icon"] = 1,
-				["title"] = "TheramoreInn 1883",
-				["desc"] = "54:0 ",
+				["desc"] = "2149:0 2150:0 2152:0 ",
 			},
-			[57572198] = {
+			[43407359] = {
+				["title"] = "Tanaris48 2195",
 				["icon"] = 1,
-				["title"] = "DustwallowN5 1879",
-				["desc"] = "110:0 1877:0 1878:0 1880:0 1892:0 ",
+				["desc"] = "114:0 2194:0 2196:0 2197:0 2198:0 ",
 			},
-			[47028103] = {
+			[40442840] = {
+				["title"] = "Tanaris23 2170",
 				["icon"] = 1,
-				["title"] = "DustwallowS3 1911",
-				["desc"] = "106:0 107:0 233:0 ",
+				["desc"] = "2166:0 2167:0 2168:0 2169:0 2171:0 2172:0 ",
 			},
-			[57921503] = {
+			[55075079] = {
+				["title"] = "Tanaris16 2163",
 				["icon"] = 1,
-				["title"] = "DustwallowCoastN10 1893",
-				["desc"] = "1890:0 1891:0 1899:0 ",
+				["desc"] = "2161:0 2162:0 2164:0 2205:0 2209:0 ",
 			},
-			[60331842] = {
+			[50702343] = {
 				["icon"] = 1,
-				["title"] = "DustwallowCoastN6 1889",
-				["desc"] = "1888:0 1890:0 1898:0 ",
+				["title"] = "TanarisExitN2 2143",
+				["desc"] = "2142:0 2144:0 2145:0 ",
 			},
-			[51441824] = {
+			[31454507] = {
+				["title"] = "Tanaris34 2181",
 				["icon"] = 1,
-				["title"] = "DustwallowN3 1877",
-				["desc"] = "101:0 110:0 1875:0 1876:0 1878:0 1879:0 1894:0 ",
+				["desc"] = "2180:0 2179:0 ",
 			},
-			[28504717] = {
+			[70335315] = {
 				["icon"] = 1,
-				["title"] = "DWMExitW 1872",
-				["desc"] = "1596:0 99:0 ",
+				["title"] = "TanarisSpawnAll 2371",
+				["desc"] = "2207:0 ",
 			},
-			[59453636] = {
+			[64822370] = {
+				["title"] = "Tanaris6 2153",
 				["icon"] = 1,
-				["title"] = "DustwallowN7 1881",
-				["desc"] = "109:0 1880:0 ",
+				["desc"] = "2152:0 2154:0 2155:0 2156:0 2157:0 ",
+			},
+			[64463155] = {
+				["title"] = "Tanaris10 2157",
+				["icon"] = 1,
+				["desc"] = "2150:0 2152:0 2153:0 2156:0 2158:0 113:0 ",
+			},
+			[39487154] = {
+				["title"] = "Tanaris47 2194",
+				["icon"] = 1,
+				["desc"] = "114:0 2186:0 2190:0 2192:0 2193:0 2195:0 2196:0 ",
+			},
+			[59462844] = {
+				["title"] = "Tanaris3 2150",
+				["icon"] = 1,
+				["desc"] = "2148:0 2149:0 2151:0 2152:0 2157:0 2158:0 ",
+			},
+			[34513950] = {
+				["title"] = "Tanaris30 2177",
+				["icon"] = 1,
+				["desc"] = "2175:0 ",
+			},
+			[63984110] = {
+				["title"] = "Tanaris13 2160",
+				["icon"] = 1,
+				["desc"] = "113:0 2158:0 2159:0 2161:0 2162:0 ",
+			},
+			[27135856] = {
+				["title"] = "Tanaris41 2188",
+				["icon"] = 1,
+				["desc"] = "2183:0 2189:0 2220:0 ",
+			},
+			[72754813] = {
+				["title"] = "Tanaris71 2218",
+				["icon"] = 1,
+				["desc"] = "2215:0 ",
+			},
+			[35174371] = {
+				["title"] = "Tanaris29 2176",
+				["icon"] = 1,
+				["desc"] = "2175:0 ",
+			},
+			[51392550] = {
+				["title"] = "GadgetzanH1 2144",
+				["icon"] = 1,
+				["desc"] = "2143:0 52:0 2147:0 2148:0 2149:0 2166:0 ",
+			},
+			[71874360] = {
+				["title"] = "Tanaris64 2211",
+				["icon"] = 1,
+				["desc"] = "2210:0 2212:0 2213:0 2215:0 ",
+			},
+			[51544528] = {
+				["title"] = "Tanaris17 2164",
+				["icon"] = 1,
+				["desc"] = "2161:0 2163:0 2165:0 2173:0 ",
+			},
+			[60753437] = {
+				["title"] = "Tanaris11 2158",
+				["icon"] = 1,
+				["desc"] = "2148:0 2150:0 2152:0 2157:0 113:0 2160:0 2161:0 ",
+			},
+			[29656202] = {
+				["title"] = "Tanaris42 2189",
+				["icon"] = 1,
+				["desc"] = "2183:0 2188:0 2190:0 2191:0 2192:0 ",
+			},
+			[64246210] = {
+				["title"] = "Tanaris61 2208",
+				["icon"] = 1,
+				["desc"] = "2207:0 2209:0 ",
+			},
+			[44906558] = {
+				["title"] = "Tanaris49 2196",
+				["icon"] = 1,
+				["desc"] = "2186:0 2194:0 2195:0 2197:0 2198:0 ",
+			},
+			[50043603] = {
+				["title"] = "Tanaris18 2165",
+				["icon"] = 1,
+				["desc"] = "2145:0 2146:0 2148:0 2161:0 2164:0 2166:0 2172:0 2173:0 ",
+			},
+			[33304093] = {
+				["title"] = "Tanaris28 2175",
+				["icon"] = 1,
+				["desc"] = "2171:0 2174:0 2176:0 2177:0 2178:0 2179:0 2183:0 ",
+			},
+			[38992114] = {
+				["title"] = "Tanaris21 2168",
+				["icon"] = 1,
+				["desc"] = "2167:0 2169:0 2170:0 ",
+			},
+			[47937612] = {
+				["title"] = "Tanaris51 2198",
+				["icon"] = 1,
+				["desc"] = "2195:0 2196:0 2197:0 2199:0 ",
+			},
+			[62232627] = {
+				["title"] = "Tanaris5 2152",
+				["icon"] = 1,
+				["desc"] = "2149:0 2150:0 2151:0 2153:0 2157:0 2158:0 ",
+			},
+			[74364745] = {
+				["title"] = "Tanaris69 2216",
+				["icon"] = 1,
+				["desc"] = "2213:0 2215:0 ",
+			},
+			[52667350] = {
+				["title"] = "Tanaris52 2199",
+				["icon"] = 1,
+				["desc"] = "2197:0 2198:0 2200:0 2201:0 2204:0 ",
+			},
+			[49516557] = {
+				["title"] = "Tanaris50 2197",
+				["icon"] = 1,
+				["desc"] = "2195:0 2196:0 2198:0 2199:0 2204:0 2205:0 ",
+			},
+			[55392959] = {
+				["title"] = "Tanaris1 2148",
+				["icon"] = 1,
+				["desc"] = "2144:0 2146:0 2149:0 2150:0 2158:0 2161:0 2165:0 ",
+			},
+			[67161892] = {
+				["title"] = "Tanaris7 2154",
+				["icon"] = 1,
+				["desc"] = "2153:0 2155:0 ",
+			},
+			[42713387] = {
+				["title"] = "Tanaris25 2172",
+				["icon"] = 1,
+				["desc"] = "2165:0 2166:0 2170:0 2171:0 2173:0 2174:0 ",
+			},
+			[37015627] = {
+				["title"] = "Tanaris38 2185",
+				["icon"] = 1,
+				["desc"] = "2182:0 2184:0 2186:0 2187:0 2190:0 ",
+			},
+			[73594840] = {
+				["title"] = "Tanaris70 2217",
+				["icon"] = 1,
+				["desc"] = "2215:0 ",
+			},
+			[54677313] = {
+				["title"] = "Tanaris56 2203",
+				["icon"] = 1,
+				["desc"] = "2200:0 ",
+			},
+			[52605886] = {
+				["title"] = "Tanaris58 2205",
+				["icon"] = 1,
+				["desc"] = "2163:0 2197:0 2204:0 2209:0 ",
+			},
+			[61845568] = {
+				["title"] = "Tanaris59 2206",
+				["icon"] = 1,
+				["desc"] = "2162:0 2207:0 2209:0 ",
+			},
+			[51512209] = {
+				["icon"] = 1,
+				["title"] = "TanarisExitN1 2142",
+				["desc"] = "2141:0 2143:0 ",
+			},
+			[69934260] = {
+				["title"] = "Tanaris63 2210",
+				["icon"] = 1,
+				["desc"] = "2159:0 2211:0 ",
+			},
+			[75814528] = {
+				["title"] = "Tanaris67 2214",
+				["icon"] = 1,
+				["desc"] = "2213:0 ",
+			},
+			[73254576] = {
+				["title"] = "Tanaris68 2215",
+				["icon"] = 1,
+				["desc"] = "2211:0 2213:0 2216:0 2217:0 2218:0 2219:0 ",
+			},
+			[36677822] = {
+				["title"] = "UldumReal 114",
+				["icon"] = 1,
+				["desc"] = "2193:0 2194:0 2195:0 ",
+			},
+			[71314715] = {
+				["title"] = "Tanaris65 2212",
+				["icon"] = 1,
+				["desc"] = "2211:0 ",
+			},
+			[75164588] = {
+				["title"] = "Tanaris66 2213",
+				["icon"] = 1,
+				["desc"] = "2211:0 2214:0 2215:0 2216:0 ",
+			},
+			[72254665] = {
+				["title"] = "Tanaris72 2219",
+				["icon"] = 1,
+				["desc"] = "2215:0 ",
+			},
+			[26975148] = {
+				["title"] = "TanarisExitSW 2220",
+				["icon"] = 1,
+				["desc"] = "2188:0 2221:0 ",
 			},
 		},
-		["ShadowmoonValley"] = {
-			[30123128] = {
+		["Redridge"] = {
+			[66804283] = {
 				["icon"] = 1,
-				["title"] = "sv6 ShadowmoonVillage2 2479",
-				["desc"] = "2478:0 ",
+				["title"] = "StonewatchFork 687",
+				["desc"] = "686:0 685:0 688:0 689:0 690:0 ",
 			},
-			[34544297] = {
+			[3069586] = {
+				["title"] = "DuskwoodExitNE 792",
 				["icon"] = 1,
-				["title"] = "sv9 ShadowmoonValley3 2482",
-				["desc"] = "2485:0 2504:0 2480:0 2486:0 ",
+				["desc"] = "694:0 791:0 ",
 			},
-			[43282699] = {
+			[28711240] = {
 				["icon"] = 1,
-				["title"] = "sv28 CoilskarPoint1 2502",
-				["desc"] = "2501:0 2484:0 ",
+				["title"] = "RendersRockInside 662",
+				["desc"] = "75:0 ",
 			},
-			[40923271] = {
+			[33822356] = {
 				["icon"] = 1,
-				["title"] = "sv29 ShadowmoonValley12 2503",
-				["desc"] = "2484:0 2483:0 2502:0 ",
+				["title"] = "RedridgeCanyons1 667",
+				["desc"] = "664:0 668:0 670:0 ",
 			},
-			[51952740] = {
+			[40874755] = {
 				["icon"] = 1,
-				["title"] = "sv26 ShadowmoonValley11 2500",
-				["desc"] = "2499:0 2501:0 2502:0 ",
+				["title"] = "EverstillN 673",
+				["desc"] = "665:0 ",
 			},
-			[61703013] = {
+			[52807252] = {
 				["icon"] = 1,
-				["title"] = "sv24 ShadowmoonValley10 2498",
-				["desc"] = "2497:0 2499:0 2500:0 ",
+				["title"] = "RedridgeS3 677",
+				["desc"] = "676:0 675:0 678:0 679:0 691:0 ",
 			},
-			[39655415] = {
+			[80956179] = {
 				["icon"] = 1,
-				["title"] = "sv14 WildhammerStronghold2 2487",
-				["desc"] = "2486:0 2488:0 2485:0 ",
+				["title"] = "RedridgeE5 684",
+				["desc"] = "680:0 683:0 ",
 			},
-			[55633175] = {
+			[77356385] = {
 				["icon"] = 1,
-				["title"] = "sv25 AltarofShatar1 2499",
-				["desc"] = "2500:0 2498:0 ",
+				["title"] = "RedridgeE2 681",
+				["desc"] = "679:0 680:0 ",
 			},
-			[44655297] = {
+			[13935091] = {
 				["icon"] = 1,
-				["title"] = "sv15 ShadowmoonValley5 2488",
-				["desc"] = "2487:0 2505:0 2489:0 ",
+				["title"] = "RedridgeW 666",
+				["desc"] = "10:0 672:0 ",
 			},
-			[46044500] = {
+			[74378125] = {
 				["icon"] = 1,
-				["title"] = "sv31 MagmaFields2 2505",
-				["desc"] = "2488:0 2485:0 ",
+				["title"] = "RedridgeS4 679",
+				["desc"] = "677:0 680:0 681:0 ",
 			},
-			[46616028] = {
+			[21123874] = {
 				["icon"] = 1,
-				["title"] = "sv16 ShadowmoonValley6 2489",
-				["desc"] = "2490:0 2491:0 2492:0 2488:0 ",
+				["title"] = "RedridgeCanyons4 670",
+				["desc"] = "667:0 668:0 669:0 77:0 ",
 			},
-			[37114985] = {
+			[55274424] = {
 				["icon"] = 1,
-				["title"] = "sv13 WildhammerStronghold1 2486",
-				["desc"] = "2487:0 2485:0 2482:0 ",
+				["title"] = "AlthersMillCenter 690",
+				["desc"] = "687:0 663:0 ",
 			},
-			[52635906] = {
+			[40563624] = {
 				["icon"] = 1,
-				["title"] = "sv18 ShadowmoonValley7 2492",
-				["desc"] = "2490:0 2493:0 ",
+				["title"] = "RedridgeHub1 664",
+				["desc"] = "663:0 665:0 667:0 669:0 ",
 			},
-			[30333318] = {
+			[17331739] = {
 				["icon"] = 1,
-				["title"] = "sv5 ShadowmoonVillage1 2478",
-				["desc"] = "2479:0 2477:0 2483:0 ",
+				["title"] = "RethbanCavernsInside 671",
+				["desc"] = "77:0 ",
 			},
-			[27773363] = {
+			[26722000] = {
 				["icon"] = 1,
-				["title"] = "sv4 ShadowmoonValley2 2477",
-				["desc"] = "2475:0 2478:0 2480:0 ",
+				["title"] = "RedridgeCanyons2 668",
+				["desc"] = "667:0 669:0 670:0 ",
 			},
-			[18762460] = {
+			[43087004] = {
 				["icon"] = 1,
-				["title"] = "sv1 ShadowmoonValley1 2474",
-				["desc"] = "2475:0 2469:0 ",
+				["title"] = "RedridgeS2 676",
+				["desc"] = "675:0 677:0 ",
 			},
-			[45416765] = {
+			[33096413] = {
 				["icon"] = 1,
-				["title"] = "sv17 EclipsePoint1 2490",
-				["desc"] = "2489:0 ",
+				["title"] = "RedridgeBridgeS 672",
+				["desc"] = "665:0 666:0 674:0 675:0 ",
 			},
-			[37942989] = {
+			[87296163] = {
 				["icon"] = 1,
-				["title"] = "sv11 SkethlonWreckage1 2484",
-				["desc"] = "2503:0 2483:0 2504:0 2502:0 ",
+				["title"] = "RedridgeE4 683",
+				["desc"] = "680:0 682:0 74:0 684:0 ",
 			},
-			[36283810] = {
+			[80357155] = {
 				["icon"] = 1,
-				["title"] = "sv30 ShadowmoonValley13 2504",
-				["desc"] = "2483:0 2485:0 2482:0 ",
+				["title"] = "RedridgeE1 680",
+				["desc"] = "679:0 681:0 682:0 683:0 684:0 ",
 			},
-			[38124256] = {
+			[10637216] = {
 				["icon"] = 1,
-				["title"] = "sv12 MagmaFields1 2485",
-				["desc"] = "2482:0 2504:0 2486:0 ",
+				["title"] = "RedridgeExitW1 693",
+				["desc"] = "692:0 674:0 694:0 696:0 ",
 			},
-			[57685766] = {
+			[46312260] = {
 				["icon"] = 1,
-				["title"] = "sv19 ThePathofConquest1 2493",
-				["desc"] = "2492:0 2491:0 2495:0 ",
+				["title"] = "RedridgeExitN 661",
+				["desc"] = "660:0 75:0 663:0 ",
 			},
-			[31055241] = {
+			[59896103] = {
 				["icon"] = 1,
-				["title"] = "sv8 IllidariPoint2 2481",
-				["desc"] = "2480:0 2482:0 ",
+				["title"] = "EverstillE 691",
+				["desc"] = "677:0 ",
 			},
-			[60995294] = {
+			[28923943] = {
 				["icon"] = 1,
-				["title"] = "sv21 DragonmawFortress1 2495",
-				["desc"] = "2493:0 2496:0 2494:0 ",
+				["title"] = "RedridgeCanyons3 669",
+				["desc"] = "668:0 664:0 670:0 ",
 			},
-			[47082358] = {
+			[23477225] = {
 				["icon"] = 1,
-				["title"] = "sv27 CoilskarCistern1 2501",
-				["desc"] = "2502:0 2500:0 ",
+				["title"] = "ThreeCorners 674",
+				["desc"] = "672:0 675:0 692:0 693:0 694:0 ",
 			},
-			[35203333] = {
+			[48733997] = {
 				["icon"] = 1,
-				["title"] = "sv10 ShadowmoonValley4 2483",
-				["desc"] = "2504:0 2478:0 2484:0 ",
+				["title"] = "AlthersMillEntrance 663",
+				["desc"] = "661:0 664:0 690:0 ",
 			},
-			[51495743] = {
+			[69185456] = {
 				["icon"] = 1,
-				["title"] = "sv17 EclipsePoint1 2491",
-				["desc"] = "2492:0 2493:0 2489:0 ",
+				["title"] = "StonewatchTop 689",
+				["desc"] = "687:0 688:0 678:0 ",
 			},
-			[29614524] = {
+			[76793508] = {
 				["icon"] = 1,
-				["title"] = "sv7 IllidariPoint1 2480",
-				["desc"] = "2481:0 2482:0 2478:0 2477:0 ",
+				["title"] = "RedridgeNE 685",
+				["desc"] = "74:0 686:0 687:0 ",
 			},
-			[62743666] = {
+			[89037070] = {
 				["icon"] = 1,
-				["title"] = "sv23 ShadowmoonValley9 2497",
-				["desc"] = "2498:0 2496:0 ",
+				["title"] = "RedridgeE3 682",
+				["desc"] = "680:0 683:0 ",
 			},
-			[64974385] = {
+			[66196171] = {
 				["icon"] = 1,
-				["title"] = "sv22 ShadowmoonValley8 2496",
-				["desc"] = "2497:0 2495:0 ",
+				["title"] = "StonewatchS 678",
+				["desc"] = "677:0 689:0 ",
 			},
-			[24143038] = {
+			[17756201] = {
 				["icon"] = 1,
-				["title"] = "sv2 LegionHold1 2475",
-				["desc"] = "2474:0 2477:0 2476:0 ",
+				["title"] = "ThreeCornersCamp1 692",
+				["desc"] = "674:0 693:0 694:0 ",
 			},
-			[67406069] = {
+			[32867865] = {
 				["icon"] = 1,
-				["title"] = "sv20 NetherwingFields1 2494",
-				["desc"] = "2495:0 2493:0 ",
+				["title"] = "RedridgeS1 675",
+				["desc"] = "672:0 674:0 676:0 677:0 ",
 			},
-			[24443904] = {
+			[75535127] = {
 				["icon"] = 1,
-				["title"] = "sv3 LegionHold2 2476",
-				["desc"] = "2475:0 2477:0 ",
+				["title"] = "RedridgeE6 686",
+				["desc"] = "685:0 74:0 687:0 ",
+			},
+			[8928667] = {
+				["icon"] = 1,
+				["title"] = "RedridgeExitW2 694",
+				["desc"] = "692:0 674:0 693:0 695:0 792:0 ",
+			},
+			[32874922] = {
+				["icon"] = 1,
+				["title"] = "RedridgeBridgeN 665",
+				["desc"] = "664:0 10:0 672:0 673:0 ",
 			},
 		},
 		["Stranglethorn"] = {
@@ -15272,10 +15272,10 @@ HandyNotes_HandyNotesDB = {
 				["title"] = "SVNHubW2 882",
 				["desc"] = "881:0 883:0 ",
 			},
-			[29218865] = {
+			[39157964] = {
 				["icon"] = 1,
-				["title"] = "WildShoreShips1Left 953",
-				["desc"] = "952:0 ",
+				["title"] = "JagueroIsle2 958",
+				["desc"] = "950:0 957:0 ",
 			},
 			[19841231] = {
 				["icon"] = 1,
@@ -15352,80 +15352,80 @@ HandyNotes_HandyNotesDB = {
 				["title"] = "CrystalveinMine1 927",
 				["desc"] = "926:0 928:0 ",
 			},
+			[26475952] = {
+				["icon"] = 1,
+				["title"] = "SSavageCoast5 968",
+				["desc"] = "941:0 942:0 969:0 970:0 ",
+			},
 			[46313225] = {
 				["icon"] = 1,
 				["title"] = "BaliamahRuins 914",
 				["desc"] = "878:0 915:0 917:0 918:0 ",
-			},
-			[44344172] = {
-				["icon"] = 1,
-				["title"] = "ZulMamweW 920",
-				["desc"] = "917:0 919:0 ",
 			},
 			[47103780] = {
 				["icon"] = 1,
 				["title"] = "ZulMamweN 918",
 				["desc"] = "878:0 914:0 917:0 919:0 ",
 			},
-			[29587242] = {
-				["icon"] = 1,
-				["title"] = "BootyBayEntrance 961",
-				["desc"] = "36:0 962:0 967:0 ",
-			},
 			[22371775] = {
 				["icon"] = 1,
 				["title"] = "SavageCoastNW1 887",
 				["desc"] = "885:0 894:0 185:0 897:0 898:0 ",
+			},
+			[41508576] = {
+				["icon"] = 1,
+				["title"] = "JagueroIsle1 957",
+				["desc"] = "955:0 958:0 ",
 			},
 			[36992166] = {
 				["icon"] = 1,
 				["title"] = "SVNBridge2S 906",
 				["desc"] = "903:0 905:0 910:0 ",
 			},
-			[31072417] = {
-				["icon"] = 1,
-				["title"] = "SavageCoastW2 900",
-				["desc"] = "898:0 899:0 904:0 37:0 ",
-			},
 			[27971450] = {
 				["icon"] = 1,
 				["title"] = "ZulKundaE 884",
 				["desc"] = "883:0 885:0 889:0 899:0 ",
 			},
-			[13421509] = {
+			[31072417] = {
 				["icon"] = 1,
-				["title"] = "YojambaIsleW 895",
-				["desc"] = "185:0 ",
+				["title"] = "SavageCoastW2 900",
+				["desc"] = "898:0 899:0 904:0 37:0 ",
 			},
-			[21152316] = {
+			[23371113] = {
 				["icon"] = 1,
-				["title"] = "VileReefIsle 897",
-				["desc"] = "894:0 887:0 ",
+				["title"] = "ZulKunda4 891",
+				["desc"] = "888:0 889:0 890:0 892:0 893:0 ",
+			},
+			[33881585] = {
+				["icon"] = 1,
+				["title"] = "TkashiRuins 902",
+				["desc"] = "899:0 901:0 862:0 903:0 905:0 ",
 			},
 			[27294947] = {
 				["icon"] = 1,
 				["title"] = "GurubashiArenaOuterSW 938",
 				["desc"] = "935:0 937:0 939:0 940:0 ",
 			},
-			[25380897] = {
+			[30251692] = {
 				["icon"] = 1,
-				["title"] = "ZulKunda3 890",
-				["desc"] = "883:0 889:0 891:0 ",
+				["title"] = "SVNWHub1 899",
+				["desc"] = "898:0 884:0 900:0 901:0 902:0 903:0 ",
 			},
 			[23651558] = {
 				["icon"] = 1,
 				["title"] = "ZulKundaS 886",
 				["desc"] = "885:0 888:0 ",
 			},
-			[29625759] = {
+			[13421509] = {
 				["icon"] = 1,
-				["title"] = "STCHub4 942",
-				["desc"] = "935:0 943:0 968:0 ",
+				["title"] = "YojambaIsleW 895",
+				["desc"] = "185:0 ",
 			},
-			[30251692] = {
+			[25380897] = {
 				["icon"] = 1,
-				["title"] = "SVNWHub1 899",
-				["desc"] = "898:0 884:0 900:0 901:0 902:0 903:0 ",
+				["title"] = "ZulKunda3 890",
+				["desc"] = "883:0 889:0 891:0 ",
 			},
 			[29915422] = {
 				["icon"] = 1,
@@ -15477,15 +15477,15 @@ HandyNotes_HandyNotesDB = {
 				["title"] = "STCHub2 929",
 				["desc"] = "926:0 925:0 930:0 ",
 			},
-			[23371113] = {
+			[29625759] = {
 				["icon"] = 1,
-				["title"] = "ZulKunda4 891",
-				["desc"] = "888:0 889:0 890:0 892:0 893:0 ",
+				["title"] = "STCHub4 942",
+				["desc"] = "935:0 943:0 968:0 ",
 			},
-			[33881585] = {
+			[21152316] = {
 				["icon"] = 1,
-				["title"] = "TkashiRuins 902",
-				["desc"] = "899:0 901:0 862:0 903:0 905:0 ",
+				["title"] = "VileReefIsle 897",
+				["desc"] = "894:0 887:0 ",
 			},
 			[34352620] = {
 				["icon"] = 1,
@@ -15497,20 +15497,20 @@ HandyNotes_HandyNotesDB = {
 				["title"] = "SSavageCoast8 971",
 				["desc"] = "970:0 ",
 			},
-			[41508576] = {
+			[29587242] = {
 				["icon"] = 1,
-				["title"] = "JagueroIsle1 957",
-				["desc"] = "955:0 958:0 ",
+				["title"] = "BootyBayEntrance 961",
+				["desc"] = "36:0 962:0 967:0 ",
 			},
 			[49640794] = {
 				["icon"] = 1,
 				["title"] = "TheStockpile1 869",
 				["desc"] = "867:0 870:0 ",
 			},
-			[26475952] = {
+			[44344172] = {
 				["icon"] = 1,
-				["title"] = "SSavageCoast5 968",
-				["desc"] = "941:0 942:0 969:0 970:0 ",
+				["title"] = "ZulMamweW 920",
+				["desc"] = "917:0 919:0 ",
 			},
 			[38572357] = {
 				["icon"] = 1,
@@ -15547,10 +15547,10 @@ HandyNotes_HandyNotesDB = {
 				["title"] = "WildShore2 949",
 				["desc"] = "948:0 950:0 962:0 ",
 			},
-			[39157964] = {
+			[29218865] = {
 				["icon"] = 1,
-				["title"] = "JagueroIsle2 958",
-				["desc"] = "950:0 957:0 ",
+				["title"] = "WildShoreShips1Left 953",
+				["desc"] = "952:0 ",
 			},
 			[48600548] = {
 				["icon"] = 1,
@@ -15801,13 +15801,13 @@ HandyNotes_HandyNotesDB = {
 		},
 		["Phi - AzerothCore"] = {
 		},
-		["Bluev - AzerothCore"] = {
+		["Arch - Trinity"] = {
 		},
 		["Pyro - Trinity"] = {
 		},
-		["Blues - AzerothCore"] = {
+		["Botty - Trinity"] = {
 		},
-		["Arch - Trinity"] = {
+		["Bluev - AzerothCore"] = {
 		},
 		["Red - AzerothCore"] = {
 		},
@@ -15839,7 +15839,7 @@ HandyNotes_HandyNotesDB = {
 		},
 		["Vim - Trinity"] = {
 		},
-		["Botty - Trinity"] = {
+		["Blues - AzerothCore"] = {
 		},
 		["Jonaz - Trinity"] = {
 		},

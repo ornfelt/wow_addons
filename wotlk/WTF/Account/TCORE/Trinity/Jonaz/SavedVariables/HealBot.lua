@@ -210,7 +210,7 @@ HealBot_Config = {
 	},
 	["FocusMonitor"] = {
 	},
-	["CurrentSpec"] = 2,
+	["CurrentSpec"] = 3,
 	["IgnoreFastDurDebuffs"] = 1,
 	["Current_Skin"] = "Standard",
 	["ShowDebuffWarning"] = 1,

@@ -45,9 +45,6 @@ MACRO 16777227 "a1" INV_Misc_QuestionMark
 #showtooltip conjure water
 /cast [target=arena1] counterspell
 END
-MACRO 16777217 "botf" Spell_Misc_EmotionHappy
-.npcbot command follow
-END
 MACRO 16777220 "botgroup" Spell_Arcane_TeleportOrgrimmar
 .npcbot spawn 70008
 .npcbot spawn 70063
@@ -63,16 +60,16 @@ END
 MACRO 16777218 "bots" Spell_Misc_EmotionSad
 .npcbot command stopfully
 END
-MACRO 16777233 "c" INV_Misc_QuestionMark
-#showtooltip combustion
-/cast combustion
-/use Potion of Speed
-END
 MACRO 16777230 "c" INV_Misc_QuestionMark
 #showtooltip counterspell
 /cast [nomod] counterspell
 /cast [mod:shift, target=focus] counterspell
 /cast [mod:ctrl, target=mouseover] counterspell
+END
+MACRO 16777233 "c" INV_Misc_QuestionMark
+#showtooltip combustion
+/cast combustion
+/use Potion of Speed
 END
 MACRO 16777235 "consumables" Spell_Arcane_Arcane01
 .additem 40211 200
@@ -111,9 +108,9 @@ MACRO 16777229 "gems" Spell_Arcane_Arcane01
 .additem 40153
 .additem 41285
 END
-MACRO 16777226 "p" INV_Misc_QuestionMark
-#showtooltip
-/cast [nopet][target=pet, dead] Summon Water Elemental; Freeze
+MACRO 16777217 "i" INV_Misc_QuestionMark
+#showtooltip ice block
+/cast !ice block
 END
 MACRO 16777231 "p" INV_Misc_QuestionMark
 #showtooltip polymorph
@@ -122,14 +119,18 @@ MACRO 16777231 "p" INV_Misc_QuestionMark
 /cast [mod:ctrl, target=mouseover] polymorph
 ///script print("hi from Lua!")
 END
-MACRO 16777232 "s" INV_Misc_QuestionMark
-#showtooltip spellsteal
-/cast [nomod] spellsteal
-/cast [mod:shift, target=focus] spellsteal
-/cast [mod:ctrl, target=mouseover] spellsteal
+MACRO 16777226 "p" INV_Misc_QuestionMark
+#showtooltip
+/cast [nopet][target=pet, dead] Summon Water Elemental; Freeze
 END
 MACRO 16777234 "s" INV_Misc_QuestionMark
 #showtooltip slow fall
 /cast [nomod] slow fall
 /cancelaura [mod:shift] slow fall
+END
+MACRO 16777232 "s" INV_Misc_QuestionMark
+#showtooltip spellsteal
+/cast [nomod] spellsteal
+/cast [mod:shift, target=focus] spellsteal
+/cast [mod:ctrl, target=mouseover] spellsteal
 END

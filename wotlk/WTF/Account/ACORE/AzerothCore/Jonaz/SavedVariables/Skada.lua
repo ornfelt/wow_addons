@@ -5,17 +5,35 @@ SkadaCharDB = {
 		["type"] = "none",
 		["mana"] = 275,
 		["overkill"] = 11008,
-		["endtime"] = 1752771474,
+		["damage"] = 11010,
 		["time"] = 6,
 		["mobname"] = "Master's Training Dummy",
-		["name"] = "Master's Training Dummy (2)",
+		["starttime"] = 1752771468,
 		["actors"] = {
+			["Master's Training Dummy"] = {
+				["id"] = "0xF130007F9B002231",
+				["damagedspells"] = {
+					["42842.16"] = {
+						["o_amt"] = 11008,
+						["sources"] = {
+							["Jonaz"] = {
+								["o_amt"] = 11008,
+								["amount"] = 11010,
+							},
+						},
+						["amount"] = 11010,
+					},
+				},
+				["class"] = "NEUTRAL",
+				["damaged"] = 11010,
+				["enemy"] = true,
+			},
 			["Jonaz"] = {
 				["damagespells"] = {
 					["42842.16"] = {
 						["c_amt"] = 11010,
-						["c_num"] = 1,
 						["c_max"] = 11010,
+						["count"] = 1,
 						["amount"] = 11010,
 						["o_amt"] = 11008,
 						["c_min"] = 11010,
@@ -25,7 +43,7 @@ SkadaCharDB = {
 								["amount"] = 11010,
 							},
 						},
-						["count"] = 1,
+						["c_num"] = 1,
 					},
 				},
 				["last"] = 75093.701,
@@ -40,13 +58,8 @@ SkadaCharDB = {
 						["u"] = 6,
 						["n"] = 1,
 					},
-					["75473.1"] = {
-						["u"] = 6,
-						["n"] = 1,
-					},
-					["43020.64"] = {
-						["u"] = 6,
-						["n"] = 1,
+					["-57669.8"] = {
+						["u"] = 5,
 					},
 					["-42842.16"] = {
 						["u"] = 5,
@@ -58,66 +71,71 @@ SkadaCharDB = {
 						},
 						["n"] = 1,
 					},
+					["43020.64"] = {
+						["u"] = 6,
+						["n"] = 1,
+					},
 					["42995.64"] = {
 						["u"] = 6,
 						["n"] = 1,
 					},
-					["-57669.8"] = {
-						["u"] = 5,
+					["75473.1"] = {
+						["u"] = 6,
+						["n"] = 1,
 					},
 				},
-				["timespent"] = {
-					["Master's Training Dummy"] = 3.5,
-				},
+				["damage"] = 11010,
 				["role"] = "DAMAGER",
 				["manaspells"] = {
 					["-57669.8"] = 275,
 				},
-				["spec"] = 64,
-				["mana"] = 275,
-				["overkill"] = 11008,
 				["time"] = 3.5,
-				["damage"] = 11010,
-			},
-			["Master's Training Dummy"] = {
-				["damagedspells"] = {
-					["42842.16"] = {
-						["o_amt"] = 11008,
-						["sources"] = {
-							["Jonaz"] = {
-								["o_amt"] = 11008,
-								["amount"] = 11010,
-							},
-						},
-						["amount"] = 11010,
-					},
+				["overkill"] = 11008,
+				["mana"] = 275,
+				["spec"] = 64,
+				["timespent"] = {
+					["Master's Training Dummy"] = 3.5,
 				},
-				["id"] = "0xF130007F9B002231",
-				["class"] = "NEUTRAL",
-				["damaged"] = 11010,
-				["enemy"] = true,
 			},
 		},
-		["starttime"] = 1752771468,
-		["damage"] = 11010,
+		["name"] = "Master's Training Dummy (2)",
+		["endtime"] = 1752771474,
 	}, -- [1]
 	{
 		["actors"] = {
+			["Master's Training Dummy"] = {
+				["id"] = "0xF130007F9B002231",
+				["damagedspells"] = {
+					["42842.16"] = {
+						["o_amt"] = 5342,
+						["sources"] = {
+							["Jonaz"] = {
+								["o_amt"] = 5342,
+								["amount"] = 5344,
+							},
+						},
+						["amount"] = 5344,
+					},
+				},
+				["class"] = "NEUTRAL",
+				["damaged"] = 5344,
+				["enemy"] = true,
+			},
 			["Jonaz"] = {
 				["damagespells"] = {
 					["42842.16"] = {
 						["n_max"] = 5344,
-						["n_num"] = 1,
-						["count"] = 1,
-						["amount"] = 5344,
-						["o_amt"] = 5342,
-						["n_min"] = 5344,
 						["targets"] = {
 							["Master's Training Dummy"] = {
 								["o_amt"] = 5342,
 								["amount"] = 5344,
 							},
 						},
+						["count"] = 1,
+						["amount"] = 5344,
+						["o_amt"] = 5342,
+						["n_min"] = 5344,
+						["n_num"] = 1,
 						["n_amt"] = 5344,
 					},
 				},
@@ -133,7 +151,10 @@ SkadaCharDB = {
 						["u"] = 6,
 						["n"] = 1,
 					},
-					["-42842.16"] = {
+					["-57669.8"] = {
+						["u"] = 5,
+					},
+					["-12579.16"] = {
 						["u"] = 5,
 						["t"] = {
 							["Master's Training Dummy"] = {
@@ -147,7 +168,11 @@ SkadaCharDB = {
 						["u"] = 6,
 						["n"] = 1,
 					},
-					["-12579.16"] = {
+					["42995.64"] = {
+						["u"] = 6,
+						["n"] = 1,
+					},
+					["-42842.16"] = {
 						["u"] = 5,
 						["t"] = {
 							["Master's Training Dummy"] = {
@@ -157,66 +182,44 @@ SkadaCharDB = {
 						},
 						["n"] = 1,
 					},
-					["42995.64"] = {
-						["u"] = 6,
-						["n"] = 1,
-					},
-					["-57669.8"] = {
-						["u"] = 5,
-					},
 				},
-				["timespent"] = {
-					["Master's Training Dummy"] = 3.5,
-				},
+				["damage"] = 5344,
 				["role"] = "DAMAGER",
 				["manaspells"] = {
 					["-57669.8"] = 275,
 				},
-				["spec"] = 64,
-				["mana"] = 275,
-				["overkill"] = 5342,
 				["time"] = 3.5,
-				["damage"] = 5344,
-			},
-			["Master's Training Dummy"] = {
-				["damagedspells"] = {
-					["42842.16"] = {
-						["o_amt"] = 5342,
-						["sources"] = {
-							["Jonaz"] = {
-								["o_amt"] = 5342,
-								["amount"] = 5344,
-							},
-						},
-						["amount"] = 5344,
-					},
+				["overkill"] = 5342,
+				["mana"] = 275,
+				["spec"] = 64,
+				["timespent"] = {
+					["Master's Training Dummy"] = 3.5,
 				},
-				["id"] = "0xF130007F9B002231",
-				["class"] = "NEUTRAL",
-				["damaged"] = 5344,
-				["enemy"] = true,
 			},
 		},
 		["type"] = "none",
 		["mana"] = 275,
 		["overkill"] = 5342,
-		["endtime"] = 1752771456,
+		["damage"] = 5344,
 		["time"] = 6,
 		["mobname"] = "Master's Training Dummy",
-		["name"] = "Master's Training Dummy",
-		["edamaged"] = 5344,
 		["starttime"] = 1752771450,
-		["damage"] = 5344,
+		["edamaged"] = 5344,
+		["name"] = "Master's Training Dummy",
+		["endtime"] = 1752771456,
 	}, -- [2]
 	{
 		["starttime"] = 1752771432,
 		["type"] = "none",
 		["overkill"] = 199399,
-		["damage"] = 199400,
+		["endtime"] = 1752771438,
 		["name"] = "Expert's Training Dummy",
 		["mobname"] = "Expert's Training Dummy",
+		["edamaged"] = 199400,
+		["time"] = 6,
 		["actors"] = {
 			["Expert's Training Dummy"] = {
+				["id"] = "0xF130007F9A00222F",
 				["damagedspells"] = {
 					["44425.64"] = {
 						["o_amt"] = 199399,
@@ -229,7 +232,6 @@ SkadaCharDB = {
 						["amount"] = 199400,
 					},
 				},
-				["id"] = "0xF130007F9A00222F",
 				["class"] = "NEUTRAL",
 				["damaged"] = 199400,
 				["enemy"] = true,
@@ -238,8 +240,8 @@ SkadaCharDB = {
 				["damagespells"] = {
 					["44425.64"] = {
 						["c_amt"] = 199400,
-						["c_num"] = 1,
 						["c_max"] = 199400,
+						["count"] = 1,
 						["amount"] = 199400,
 						["o_amt"] = 199399,
 						["c_min"] = 199400,
@@ -249,7 +251,7 @@ SkadaCharDB = {
 								["amount"] = 199400,
 							},
 						},
-						["count"] = 1,
+						["c_num"] = 1,
 					},
 				},
 				["last"] = 75057.14200000001,
@@ -279,17 +281,15 @@ SkadaCharDB = {
 				},
 				["role"] = "DAMAGER",
 				["time"] = 3.5,
+				["damage"] = 199400,
+				["overkill"] = 199399,
+				["spec"] = 64,
 				["timespent"] = {
 					["Expert's Training Dummy"] = 3.5,
 				},
-				["spec"] = 64,
-				["overkill"] = 199399,
-				["damage"] = 199400,
 			},
 		},
-		["time"] = 6,
-		["edamaged"] = 199400,
-		["endtime"] = 1752771438,
+		["damage"] = 199400,
 	}, -- [3]
 	{
 		["edamaged"] = 248226,
@@ -306,40 +306,41 @@ SkadaCharDB = {
 		["absorb"] = 19021,
 		["totaldamaged"] = 45903,
 		["interrupt"] = 4,
-		["type"] = "arena",
-		["mobname"] = "Nagrand Arena",
+		["starttime"] = 1752771319,
+		["ccdone"] = 11,
 		["overkill"] = 22164,
 		["etotaldamaged"] = 263968,
 		["heal"] = 15602,
 		["name"] = "Nagrand Arena",
-		["ccdone"] = 11,
+		["mobname"] = "Nagrand Arena",
 		["actors"] = {
 			["Mardant"] = {
 				["damagespells"] = {
 					["6603.1"] = {
 						["total"] = 27688,
 						["targets"] = {
+							["Jonaz"] = {
+								["total"] = 26331,
+								["amount"] = 15855,
+							},
 							["Water Elemental <Jonaz>"] = {
 								["amount"] = 1357,
-							},
-							["Jonaz"] = {
-								["amount"] = 15855,
-								["total"] = 26331,
 							},
 						},
 						["amount"] = 17212,
 					},
 				},
 				["totaldamage"] = 27688,
-				["damage"] = 17212,
+				["enemy"] = true,
+				["id"] = "0xF130011EAD000002",
 				["damagedspells"] = {
 					["42917.16"] = {
-						["amount"] = 4592,
 						["sources"] = {
 							["Jonaz"] = {
 								["amount"] = 4592,
 							},
 						},
+						["amount"] = 4592,
 					},
 					["42914.16"] = {
 						["o_amt"] = 810,
@@ -352,55 +353,54 @@ SkadaCharDB = {
 						["amount"] = 26776,
 					},
 					["116.16"] = {
-						["amount"] = 75,
 						["sources"] = {
 							["Jonaz"] = {
 								["amount"] = 75,
 							},
 						},
+						["amount"] = 75,
 					},
 					["44781.64"] = {
-						["amount"] = 4592,
 						["sources"] = {
 							["Jonaz"] = {
 								["amount"] = 4592,
 							},
 						},
+						["amount"] = 4592,
 					},
 					["33395.16"] = {
-						["amount"] = 161,
 						["sources"] = {
 							["Jonaz"] = {
 								["amount"] = 161,
 							},
 						},
-					},
-					["5019.1"] = {
-						["amount"] = 4383,
-						["sources"] = {
-							["Tai'jin"] = {
-								["amount"] = 4383,
-							},
-						},
-					},
-					["42842.16"] = {
-						["amount"] = 54632,
-						["sources"] = {
-							["Jonaz"] = {
-								["amount"] = 54632,
-							},
-						},
+						["amount"] = 161,
 					},
 					["42859.4"] = {
-						["amount"] = 1440,
 						["sources"] = {
 							["Thurston"] = {
 								["amount"] = 1440,
 							},
 						},
+						["amount"] = 1440,
+					},
+					["42842.16"] = {
+						["sources"] = {
+							["Jonaz"] = {
+								["amount"] = 54632,
+							},
+						},
+						["amount"] = 54632,
+					},
+					["5019.1"] = {
+						["sources"] = {
+							["Tai'jin"] = {
+								["amount"] = 4383,
+							},
+						},
+						["amount"] = 4383,
 					},
 					["42873.4"] = {
-						["amount"] = 14119,
 						["sources"] = {
 							["Thurston"] = {
 								["amount"] = 2005,
@@ -409,20 +409,20 @@ SkadaCharDB = {
 								["amount"] = 12114,
 							},
 						},
+						["amount"] = 14119,
 					},
 					["42931.16"] = {
-						["amount"] = 3284,
 						["sources"] = {
 							["Jonaz"] = {
 								["amount"] = 3284,
 							},
 						},
+						["amount"] = 3284,
 					},
 				},
-				["id"] = "0xF130011EAD000002",
 				["class"] = "MONSTER",
 				["damaged"] = 114054,
-				["enemy"] = true,
+				["damage"] = 17212,
 			},
 			["Voidwalker"] = {
 				["damagespells"] = {
@@ -438,11 +438,9 @@ SkadaCharDB = {
 						["amount"] = 1299,
 					},
 				},
-				["enemy"] = true,
-				["id"] = "0xF130011366000006",
+				["damage"] = 1299,
 				["damagedspells"] = {
 					["25228.32"] = {
-						["amount"] = 3631,
 						["sources"] = {
 							["Jonaz"] = {
 								["amount"] = 253,
@@ -454,30 +452,23 @@ SkadaCharDB = {
 								["amount"] = 813,
 							},
 						},
+						["amount"] = 3631,
 					},
 					["33395.16"] = {
-						["amount"] = 18,
 						["sources"] = {
 							["Jonaz"] = {
 								["amount"] = 18,
 							},
 						},
+						["amount"] = 18,
 					},
 					["42859.4"] = {
-						["amount"] = 4036,
 						["sources"] = {
 							["Thurston"] = {
 								["amount"] = 4036,
 							},
 						},
-					},
-					["42842.16"] = {
-						["amount"] = 12029,
-						["sources"] = {
-							["Jonaz"] = {
-								["amount"] = 12029,
-							},
-						},
+						["amount"] = 4036,
 					},
 					["42891.4"] = {
 						["o_amt"] = 15010,
@@ -489,19 +480,28 @@ SkadaCharDB = {
 						},
 						["amount"] = 18131,
 					},
+					["42842.16"] = {
+						["sources"] = {
+							["Jonaz"] = {
+								["amount"] = 12029,
+							},
+						},
+						["amount"] = 12029,
+					},
 				},
+				["id"] = "0xF130011366000006",
 				["class"] = "PET",
 				["damaged"] = 37845,
-				["damage"] = 1299,
+				["enemy"] = true,
 			},
 			["Thurston"] = {
 				["ccdonespells"] = {
 					["-12826.64"] = {
-						["n"] = 2,
 						["t"] = {
 							["Mardant"] = 1,
 							["Caedmos"] = 1,
 						},
+						["n"] = 2,
 					},
 				},
 				["last"] = 75014.00600000001,
@@ -528,36 +528,36 @@ SkadaCharDB = {
 						},
 						["count"] = 1,
 						["amount"] = 1396,
-						["c_num"] = 1,
-						["c_max"] = 1396,
 						["c_min"] = 1396,
-					},
-					["6603.1"] = {
-						["n_amt"] = 782,
-						["sources"] = {
-							["Voidwalker"] = {
-								["amount"] = 639,
-							},
-							["Maximillian"] = {
-								["amount"] = 143,
-							},
-						},
-						["count"] = 3,
-						["amount"] = 782,
-						["dod_n"] = 1,
-						["n_min"] = 143,
-						["n_num"] = 2,
-						["n_max"] = 639,
+						["c_max"] = 1396,
+						["c_num"] = 1,
 					},
 					["47864.32"] = {
-						["count"] = 3,
+						["imm_n"] = 3,
 						["sources"] = {
 							["Maximillian"] = {
 								["amount"] = 0,
 							},
 						},
-						["imm_n"] = 3,
+						["count"] = 3,
 						["amount"] = 0,
+					},
+					["6603.1"] = {
+						["n_min"] = 143,
+						["sources"] = {
+							["Maximillian"] = {
+								["amount"] = 143,
+							},
+							["Voidwalker"] = {
+								["amount"] = 639,
+							},
+						},
+						["count"] = 3,
+						["amount"] = 782,
+						["n_max"] = 639,
+						["dod_n"] = 1,
+						["n_num"] = 2,
+						["n_amt"] = 782,
 					},
 				},
 				["class"] = "MAGE",
@@ -584,13 +584,13 @@ SkadaCharDB = {
 								["u"] = 1,
 								["n"] = 1,
 							},
-							["Maximillian"] = {
-								["u"] = 7,
-								["n"] = 1,
-							},
 							["Caedmos"] = {
 								["u"] = 28,
 								["n"] = 4,
+							},
+							["Maximillian"] = {
+								["u"] = 7,
+								["n"] = 1,
 							},
 						},
 						["n"] = 7,
@@ -598,13 +598,13 @@ SkadaCharDB = {
 					["-7321.16"] = {
 						["u"] = 63,
 						["t"] = {
-							["Voidwalker"] = {
-								["u"] = 29,
-								["n"] = 2,
-							},
 							["Maximillian"] = {
 								["u"] = 8,
 								["n"] = 1,
+							},
+							["Voidwalker"] = {
+								["u"] = 29,
+								["n"] = 2,
 							},
 						},
 						["n"] = 3,
@@ -622,21 +622,21 @@ SkadaCharDB = {
 						["t"] = {
 							["Maximillian"] = {
 								["u"] = 37,
-								["n"] = 3,
 								["r"] = 4,
+								["n"] = 3,
+							},
+							["Caedmos"] = {
+								["u"] = 21,
+								["r"] = 6,
+								["n"] = 3,
 							},
 							["Voidwalker"] = {
 								["u"] = 1,
 								["n"] = 1,
 							},
-							["Caedmos"] = {
-								["u"] = 21,
-								["n"] = 3,
-								["r"] = 6,
-							},
 						},
-						["n"] = 7,
 						["r"] = 10,
+						["n"] = 7,
 					},
 					["48068.2"] = {
 						["u"] = 15,
@@ -659,55 +659,52 @@ SkadaCharDB = {
 					["-47610.20"] = {
 						["u"] = 79,
 						["t"] = {
-							["Maximillian"] = {
-								["u"] = 35,
-								["n"] = 2,
-								["r"] = 1,
-							},
 							["Caedmos"] = {
 								["u"] = 8,
-								["n"] = 1,
 								["r"] = 3,
+								["n"] = 1,
+							},
+							["Maximillian"] = {
+								["u"] = 35,
+								["r"] = 1,
+								["n"] = 2,
 							},
 						},
-						["n"] = 3,
 						["r"] = 4,
+						["n"] = 3,
 					},
 					["-42891.4"] = {
 						["u"] = 12,
 						["t"] = {
 							["Caedmos"] = {
 								["u"] = 12,
-								["n"] = 1,
 								["r"] = 1,
+								["n"] = 1,
 							},
 						},
-						["n"] = 1,
 						["r"] = 1,
+						["n"] = 1,
 					},
 					["48161.2"] = {
 						["u"] = 79,
 						["n"] = 1,
 					},
-					["42995.64"] = {
-						["u"] = 79,
-						["n"] = 2,
+					["47753.2"] = {
+						["u"] = 12,
+						["n"] = 1,
 					},
 					["47930.2"] = {
 						["u"] = 7,
 						["n"] = 1,
 					},
-					["43015.64"] = {
-						["u"] = 79,
-						["n"] = 2,
+					["63944.2"] = {
+						["u"] = 62,
+						["r"] = 2,
+						["n"] = 1,
 					},
-					["60803.64"] = {
-						["u"] = 16,
-						["n"] = 2,
-					},
-					["48169.32"] = {
-						["u"] = 79,
-						["n"] = 2,
+					["48108.1"] = {
+						["u"] = 77,
+						["n"] = 4,
 					},
 					["-55360.4"] = {
 						["u"] = 12,
@@ -719,6 +716,10 @@ SkadaCharDB = {
 						},
 						["n"] = 1,
 					},
+					["48169.32"] = {
+						["u"] = 79,
+						["n"] = 2,
+					},
 					["28682.4"] = {
 						["u"] = 21,
 						["n"] = 1,
@@ -727,18 +728,17 @@ SkadaCharDB = {
 						["u"] = 79,
 						["n"] = 1,
 					},
-					["48108.1"] = {
-						["u"] = 77,
-						["n"] = 4,
+					["60803.64"] = {
+						["u"] = 16,
+						["n"] = 2,
 					},
-					["63944.2"] = {
-						["u"] = 62,
-						["n"] = 1,
-						["r"] = 2,
+					["43015.64"] = {
+						["u"] = 79,
+						["n"] = 2,
 					},
-					["47753.2"] = {
-						["u"] = 12,
-						["n"] = 1,
+					["42995.64"] = {
+						["u"] = 79,
+						["n"] = 2,
 					},
 					["12043.1"] = {
 						["u"] = 5,
@@ -758,8 +758,8 @@ SkadaCharDB = {
 						["c_num"] = 2,
 						["targets"] = {
 							["Caedmos"] = {
-								["amount"] = 1204,
 								["total"] = 1792,
+								["amount"] = 1204,
 							},
 						},
 						["count"] = 3,
@@ -774,50 +774,36 @@ SkadaCharDB = {
 						["c_num"] = 3,
 						["n_max"] = 3753,
 						["targets"] = {
-							["Maximillian"] = {
-								["amount"] = 16899,
-								["total"] = 18419,
-							},
 							["Caedmos"] = {
-								["amount"] = 1874,
 								["total"] = 6567,
+								["amount"] = 1874,
+							},
+							["Maximillian"] = {
+								["total"] = 18419,
+								["amount"] = 16899,
 							},
 						},
 						["c_min"] = 1374,
 						["amount"] = 18773,
-						["count"] = 5,
 						["n_min"] = 500,
-						["n_num"] = 2,
 						["n_amt"] = 4253,
+						["n_num"] = 2,
+						["count"] = 5,
 					},
-					["-47610.20"] = {
-						["c_amt"] = 986,
-						["total"] = 2133,
-						["c_max"] = 341,
-						["c_num"] = 3,
-						["n_max"] = 237,
+					["55362.4"] = {
+						["c_amt"] = 2563,
+						["count"] = 1,
+						["amount"] = 2563,
+						["c_max"] = 2563,
+						["c_min"] = 2563,
 						["targets"] = {
 							["Maximillian"] = {
-								["amount"] = 1526,
-								["total"] = 1570,
-							},
-							["Caedmos"] = {
-								["amount"] = 563,
+								["amount"] = 2563,
 							},
 						},
-						["count"] = 8,
-						["amount"] = 2089,
-						["n_min"] = 178,
-						["n_amt"] = 1103,
-						["n_num"] = 5,
-						["c_min"] = 319,
+						["c_num"] = 1,
 					},
 					["6603.1.The Brewmaiden"] = {
-						["n_amt"] = 37,
-						["n_num"] = 1,
-						["count"] = 2,
-						["amount"] = 37,
-						["dod_n"] = 1,
 						["n_min"] = 37,
 						["targets"] = {
 							["Mardant"] = {
@@ -827,24 +813,29 @@ SkadaCharDB = {
 								["amount"] = 37,
 							},
 						},
+						["count"] = 2,
+						["amount"] = 37,
 						["n_max"] = 37,
+						["dod_n"] = 1,
+						["n_num"] = 1,
+						["n_amt"] = 37,
 					},
 					["-12654.4"] = {
 						["n_max"] = 2726,
 						["total"] = 13717,
 						["count"] = 11,
 						["amount"] = 13169,
-						["n_num"] = 11,
-						["n_min"] = 71,
 						["targets"] = {
-							["Maximillian"] = {
-								["amount"] = 7007,
-								["total"] = 7555,
-							},
 							["Caedmos"] = {
 								["amount"] = 6162,
 							},
+							["Maximillian"] = {
+								["total"] = 7555,
+								["amount"] = 7007,
+							},
 						},
+						["n_min"] = 71,
+						["n_num"] = 11,
 						["n_amt"] = 13169,
 					},
 					["42891.4"] = {
@@ -857,70 +848,21 @@ SkadaCharDB = {
 								["o_amt"] = 15010,
 								["amount"] = 18131,
 							},
+							["Caedmos"] = {
+								["amount"] = 15612,
+							},
 							["Maximillian"] = {
 								["o_amt"] = 4781,
 								["amount"] = 11944,
 							},
-							["Caedmos"] = {
-								["amount"] = 15612,
-							},
 						},
-						["count"] = 4,
+						["n_min"] = 5371,
 						["c_min"] = 10241,
 						["amount"] = 45687,
 						["o_amt"] = 19791,
-						["n_min"] = 5371,
-						["n_num"] = 1,
 						["n_amt"] = 5371,
-					},
-					["5019.1"] = {
-						["c_amt"] = 1367,
-						["total"] = 2835,
-						["c_max"] = 711,
-						["c_num"] = 2,
-						["n_max"] = 566,
-						["targets"] = {
-							["Maximillian"] = {
-								["amount"] = 2382,
-								["total"] = 2835,
-							},
-						},
+						["n_num"] = 1,
 						["count"] = 4,
-						["amount"] = 2382,
-						["n_min"] = 449,
-						["n_amt"] = 1015,
-						["n_num"] = 2,
-						["c_min"] = 656,
-					},
-					["-55360.4"] = {
-						["c_amt"] = 2562,
-						["c_max"] = 1281,
-						["c_num"] = 2,
-						["n_max"] = 854,
-						["targets"] = {
-							["Maximillian"] = {
-								["amount"] = 4270,
-							},
-						},
-						["count"] = 4,
-						["amount"] = 4270,
-						["n_min"] = 854,
-						["n_amt"] = 1708,
-						["n_num"] = 2,
-						["c_min"] = 1281,
-					},
-					["25228.32"] = {
-						["n_max"] = 1520,
-						["count"] = 7,
-						["amount"] = 2565,
-						["n_num"] = 7,
-						["n_min"] = 44,
-						["targets"] = {
-							["Voidwalker"] = {
-								["amount"] = 2565,
-							},
-						},
-						["n_amt"] = 2565,
 					},
 					["42859.4"] = {
 						["c_amt"] = 10563,
@@ -934,19 +876,68 @@ SkadaCharDB = {
 							["Voidwalker"] = {
 								["amount"] = 4036,
 							},
-							["Maximillian"] = {
-								["amount"] = 2308,
-							},
 							["Caedmos"] = {
 								["amount"] = 6807,
+							},
+							["Maximillian"] = {
+								["amount"] = 2308,
 							},
 						},
 						["c_min"] = 1939,
 						["amount"] = 14591,
-						["count"] = 7,
 						["n_min"] = 1291,
-						["n_num"] = 3,
 						["n_amt"] = 4028,
+						["n_num"] = 3,
+						["count"] = 7,
+					},
+					["25228.32"] = {
+						["n_max"] = 1520,
+						["count"] = 7,
+						["amount"] = 2565,
+						["targets"] = {
+							["Voidwalker"] = {
+								["amount"] = 2565,
+							},
+						},
+						["n_min"] = 44,
+						["n_num"] = 7,
+						["n_amt"] = 2565,
+					},
+					["-55360.4"] = {
+						["c_amt"] = 2562,
+						["c_max"] = 1281,
+						["c_num"] = 2,
+						["n_max"] = 854,
+						["targets"] = {
+							["Maximillian"] = {
+								["amount"] = 4270,
+							},
+						},
+						["count"] = 4,
+						["amount"] = 4270,
+						["c_min"] = 1281,
+						["n_amt"] = 1708,
+						["n_num"] = 2,
+						["n_min"] = 854,
+					},
+					["5019.1"] = {
+						["c_amt"] = 1367,
+						["total"] = 2835,
+						["c_max"] = 711,
+						["c_num"] = 2,
+						["n_max"] = 566,
+						["targets"] = {
+							["Maximillian"] = {
+								["total"] = 2835,
+								["amount"] = 2382,
+							},
+						},
+						["count"] = 4,
+						["amount"] = 2382,
+						["c_min"] = 656,
+						["n_amt"] = 1015,
+						["n_num"] = 2,
+						["n_min"] = 449,
 					},
 					["42873.4"] = {
 						["c_amt"] = 2958,
@@ -963,26 +954,89 @@ SkadaCharDB = {
 						},
 						["c_min"] = 285,
 						["amount"] = 4963,
-						["count"] = 3,
 						["n_min"] = 2005,
-						["n_num"] = 1,
 						["n_amt"] = 2005,
+						["n_num"] = 1,
+						["count"] = 3,
 					},
-					["55362.4"] = {
-						["c_amt"] = 2563,
-						["count"] = 1,
-						["amount"] = 2563,
-						["c_num"] = 1,
-						["c_min"] = 2563,
+					["-47610.20"] = {
+						["c_amt"] = 986,
+						["total"] = 2133,
+						["c_max"] = 341,
+						["c_num"] = 3,
+						["n_max"] = 237,
 						["targets"] = {
+							["Caedmos"] = {
+								["amount"] = 563,
+							},
 							["Maximillian"] = {
-								["amount"] = 2563,
+								["total"] = 1570,
+								["amount"] = 1526,
 							},
 						},
-						["c_max"] = 2563,
+						["count"] = 8,
+						["amount"] = 2089,
+						["c_min"] = 319,
+						["n_amt"] = 1103,
+						["n_num"] = 5,
+						["n_min"] = 178,
 					},
 				},
 				["mana"] = 1300,
+				["interruptspells"] = {
+					["2139.64"] = {
+						["spells"] = {
+							["6215.32"] = 1,
+							["59172.4"] = 1,
+						},
+						["count"] = 2,
+						["targets"] = {
+							["Maximillian"] = 2,
+						},
+					},
+				},
+				["id"] = "0xF130011EB0000005",
+				["interrupt"] = 2,
+				["healspells"] = {
+					["-68269.8.The Brewmaiden"] = {
+						["n_max"] = 139,
+						["count"] = 5,
+						["amount"] = 667,
+						["targets"] = {
+							["Thurston"] = {
+								["amount"] = 278,
+							},
+							["The Brewmaiden <Thurston>"] = {
+								["amount"] = 389,
+							},
+						},
+						["n_min"] = 111,
+						["n_num"] = 5,
+						["n_amt"] = 667,
+					},
+				},
+				["overkill"] = 19791,
+				["ccdone"] = 2,
+				["heal"] = 667,
+				["manaspells"] = {
+					["29077.64"] = 1300,
+				},
+				["petdamage"] = 37,
+				["totaldamage"] = 120139,
+				["cctakenspells"] = {
+					["-15487.32"] = {
+						["sources"] = {
+							["Caedmos"] = 1,
+						},
+						["n"] = 1,
+					},
+					["-6215.32"] = {
+						["sources"] = {
+							["Maximillian"] = 1,
+						},
+						["n"] = 1,
+					},
+				},
 				["dispelspells"] = {
 					["475.64"] = {
 						["spells"] = {
@@ -995,62 +1049,8 @@ SkadaCharDB = {
 					},
 					["30449.64"] = {
 						["spells"] = {
-							["48169.32"] = 1,
 							["48068.2"] = 1,
-						},
-						["count"] = 2,
-						["targets"] = {
-							["Maximillian"] = 2,
-						},
-					},
-				},
-				["id"] = "0xF130011EB0000005",
-				["cctakenspells"] = {
-					["-15487.32"] = {
-						["n"] = 1,
-						["sources"] = {
-							["Caedmos"] = 1,
-						},
-					},
-					["-6215.32"] = {
-						["n"] = 1,
-						["sources"] = {
-							["Maximillian"] = 1,
-						},
-					},
-				},
-				["healspells"] = {
-					["-68269.8.The Brewmaiden"] = {
-						["n_max"] = 139,
-						["count"] = 5,
-						["amount"] = 667,
-						["n_num"] = 5,
-						["n_min"] = 111,
-						["targets"] = {
-							["Thurston"] = {
-								["amount"] = 278,
-							},
-							["The Brewmaiden <Thurston>"] = {
-								["amount"] = 389,
-							},
-						},
-						["n_amt"] = 667,
-					},
-				},
-				["overkill"] = 19791,
-				["totaldamage"] = 120139,
-				["heal"] = 667,
-				["manaspells"] = {
-					["29077.64"] = 1300,
-				},
-				["ccdone"] = 2,
-				["petdamage"] = 37,
-				["interrupt"] = 2,
-				["interruptspells"] = {
-					["2139.64"] = {
-						["spells"] = {
-							["59172.4"] = 1,
-							["6215.32"] = 1,
+							["48169.32"] = 1,
 						},
 						["count"] = 2,
 						["targets"] = {
@@ -1061,8 +1061,8 @@ SkadaCharDB = {
 				["timespent"] = {
 					["Mardant"] = 3.57,
 					["Voidwalker"] = 16.77,
-					["Maximillian"] = 17.6,
 					["Caedmos"] = 20.49,
+					["Maximillian"] = 17.6,
 				},
 			},
 			["Tai'jin"] = {
@@ -1075,8 +1075,8 @@ SkadaCharDB = {
 						["abs_n"] = 1,
 						["sources"] = {
 							["Maximillian"] = {
-								["amount"] = 0,
 								["total"] = 1675,
+								["amount"] = 0,
 							},
 						},
 					},
@@ -1087,10 +1087,61 @@ SkadaCharDB = {
 						["abs_n"] = 1,
 						["sources"] = {
 							["Maximillian"] = {
-								["amount"] = 0,
 								["total"] = 3754,
+								["amount"] = 0,
 							},
 						},
+					},
+					["-47811.4"] = {
+						["total"] = 1168,
+						["count"] = 1,
+						["amount"] = 0,
+						["abs_n"] = 1,
+						["sources"] = {
+							["Maximillian"] = {
+								["total"] = 1168,
+								["amount"] = 0,
+							},
+						},
+					},
+					["5019.1"] = {
+						["c_amt"] = 1398,
+						["total"] = 3654,
+						["c_max"] = 1398,
+						["c_num"] = 1,
+						["n_max"] = 662,
+						["c_min"] = 1398,
+						["sources"] = {
+							["Maximillian"] = {
+								["total"] = 919,
+								["amount"] = 0,
+							},
+							["Caedmos"] = {
+								["total"] = 2735,
+								["amount"] = 2060,
+							},
+						},
+						["count"] = 4,
+						["amount"] = 2060,
+						["abs_n"] = 2,
+						["n_amt"] = 662,
+						["n_num"] = 1,
+						["n_min"] = 662,
+					},
+					["48127.32"] = {
+						["sources"] = {
+							["Caedmos"] = {
+								["total"] = 2720,
+								["amount"] = 2366,
+							},
+						},
+						["total"] = 2720,
+						["count"] = 1,
+						["amount"] = 2366,
+						["n_min"] = 2366,
+						["n_amt"] = 2366,
+						["n_num"] = 1,
+						["n_max"] = 2366,
 					},
 					["59172.4"] = {
 						["sources"] = {
@@ -1104,57 +1155,6 @@ SkadaCharDB = {
 						["n_min"] = 4213,
 						["n_num"] = 1,
 						["n_amt"] = 4213,
-					},
-					["5019.1"] = {
-						["c_amt"] = 1398,
-						["total"] = 3654,
-						["c_max"] = 1398,
-						["c_num"] = 1,
-						["n_max"] = 662,
-						["n_min"] = 662,
-						["sources"] = {
-							["Caedmos"] = {
-								["amount"] = 2060,
-								["total"] = 2735,
-							},
-							["Maximillian"] = {
-								["amount"] = 0,
-								["total"] = 919,
-							},
-						},
-						["c_min"] = 1398,
-						["amount"] = 2060,
-						["n_amt"] = 662,
-						["abs_n"] = 2,
-						["n_num"] = 1,
-						["count"] = 4,
-					},
-					["48127.32"] = {
-						["n_max"] = 2366,
-						["sources"] = {
-							["Caedmos"] = {
-								["amount"] = 2366,
-								["total"] = 2720,
-							},
-						},
-						["count"] = 1,
-						["amount"] = 2366,
-						["n_amt"] = 2366,
-						["n_min"] = 2366,
-						["n_num"] = 1,
-						["total"] = 2720,
-					},
-					["-47811.4"] = {
-						["total"] = 1168,
-						["count"] = 1,
-						["amount"] = 0,
-						["abs_n"] = 1,
-						["sources"] = {
-							["Maximillian"] = {
-								["amount"] = 0,
-								["total"] = 1168,
-							},
-						},
 					},
 				},
 				["class"] = "PRIEST",
@@ -1187,12 +1187,12 @@ SkadaCharDB = {
 					["-48135.2"] = {
 						["u"] = 66,
 						["t"] = {
-							["Maximillian"] = {
-								["u"] = 7,
-								["n"] = 1,
-							},
 							["Caedmos"] = {
 								["u"] = 4,
+								["n"] = 1,
+							},
+							["Maximillian"] = {
+								["u"] = 7,
 								["n"] = 1,
 							},
 						},
@@ -1200,19 +1200,19 @@ SkadaCharDB = {
 					},
 					["61792.1"] = {
 						["u"] = 15,
-						["n"] = 1,
 						["r"] = 1,
+						["n"] = 1,
 					},
 					["-6788.2"] = {
 						["u"] = 92,
 						["t"] = {
-							["Jonaz"] = {
-								["u"] = 13,
-								["n"] = 1,
-							},
 							["Tai'jin"] = {
 								["u"] = 43,
 								["n"] = 2,
+							},
+							["Jonaz"] = {
+								["u"] = 13,
+								["n"] = 1,
 							},
 						},
 						["n"] = 3,
@@ -1229,8 +1229,8 @@ SkadaCharDB = {
 						["u"] = 3,
 						["n"] = 1,
 					},
-					["48068.2"] = {
-						["u"] = 10,
+					["47753.2"] = {
+						["u"] = 12,
 						["n"] = 1,
 					},
 					["6346.2"] = {
@@ -1255,16 +1255,16 @@ SkadaCharDB = {
 					},
 					["63944.2"] = {
 						["u"] = 62,
-						["n"] = 1,
 						["r"] = 2,
-					},
-					["47753.2"] = {
-						["u"] = 12,
 						["n"] = 1,
 					},
 					["42995.64"] = {
 						["u"] = 79,
 						["n"] = 3,
+					},
+					["48068.2"] = {
+						["u"] = 10,
+						["n"] = 1,
 					},
 				},
 				["dispel"] = 20,
@@ -1277,33 +1277,29 @@ SkadaCharDB = {
 						["n_max"] = 243,
 						["count"] = 9,
 						["amount"] = 813,
-						["n_num"] = 9,
-						["n_min"] = 22,
 						["targets"] = {
 							["Voidwalker"] = {
 								["amount"] = 813,
 							},
 						},
+						["n_min"] = 22,
+						["n_num"] = 9,
 						["n_amt"] = 813,
 					},
-					["48135.2"] = {
-						["total"] = 4002,
-						["n_max"] = 185,
+					["48158.32"] = {
+						["c_amt"] = 3879,
+						["c_max"] = 3879,
+						["count"] = 1,
+						["amount"] = 3879,
+						["o_amt"] = 1563,
+						["c_min"] = 3879,
 						["targets"] = {
-							["Maximillian"] = {
-								["amount"] = 0,
-								["total"] = 3817,
-							},
 							["Caedmos"] = {
-								["amount"] = 185,
+								["o_amt"] = 1563,
+								["amount"] = 3879,
 							},
 						},
-						["count"] = 2,
-						["amount"] = 185,
-						["n_amt"] = 185,
-						["n_min"] = 185,
-						["n_num"] = 1,
-						["abs_n"] = 1,
+						["c_num"] = 1,
 					},
 					["-48135.2"] = {
 						["c_amt"] = 439,
@@ -1312,21 +1308,21 @@ SkadaCharDB = {
 						["c_num"] = 5,
 						["n_max"] = 88,
 						["targets"] = {
-							["Maximillian"] = {
-								["amount"] = 528,
-								["total"] = 880,
-							},
 							["Caedmos"] = {
 								["amount"] = 175,
 							},
+							["Maximillian"] = {
+								["total"] = 880,
+								["amount"] = 528,
+							},
 						},
-						["c_min"] = 12,
+						["n_min"] = 88,
 						["count"] = 10,
 						["amount"] = 703,
-						["abs_n"] = 2,
-						["n_min"] = 88,
-						["n_num"] = 3,
 						["n_amt"] = 264,
+						["abs_n"] = 2,
+						["n_num"] = 3,
+						["c_min"] = 12,
 					},
 					["5019.1"] = {
 						["c_amt"] = 4448,
@@ -1339,8 +1335,8 @@ SkadaCharDB = {
 								["amount"] = 4383,
 							},
 							["Maximillian"] = {
-								["amount"] = 3737,
 								["total"] = 4925,
+								["amount"] = 3737,
 							},
 							["Caedmos"] = {
 								["amount"] = 159,
@@ -1348,25 +1344,10 @@ SkadaCharDB = {
 						},
 						["count"] = 10,
 						["amount"] = 8279,
-						["n_min"] = 371,
+						["c_min"] = 159,
 						["n_amt"] = 3831,
 						["n_num"] = 5,
-						["c_min"] = 159,
-					},
-					["48158.32"] = {
-						["c_amt"] = 3879,
-						["c_num"] = 1,
-						["c_max"] = 3879,
-						["amount"] = 3879,
-						["o_amt"] = 1563,
-						["c_min"] = 3879,
-						["targets"] = {
-							["Caedmos"] = {
-								["o_amt"] = 1563,
-								["amount"] = 3879,
-							},
-						},
-						["count"] = 1,
+						["n_min"] = 371,
 					},
 					["48127.32"] = {
 						["c_amt"] = 393,
@@ -1375,54 +1356,57 @@ SkadaCharDB = {
 						["c_num"] = 1,
 						["n_max"] = 2142,
 						["targets"] = {
-							["Maximillian"] = {
-								["amount"] = 2142,
-								["total"] = 4301,
-							},
 							["Caedmos"] = {
 								["amount"] = 393,
 							},
+							["Maximillian"] = {
+								["total"] = 4301,
+								["amount"] = 2142,
+							},
 						},
-						["n_amt"] = 2142,
 						["c_min"] = 393,
-						["amount"] = 2535,
-						["abs_n"] = 1,
-						["n_min"] = 2142,
-						["n_num"] = 1,
 						["count"] = 3,
+						["amount"] = 2535,
+						["n_min"] = 2142,
+						["abs_n"] = 1,
+						["n_num"] = 1,
+						["n_amt"] = 2142,
+					},
+					["48135.2"] = {
+						["total"] = 4002,
+						["n_max"] = 185,
+						["targets"] = {
+							["Caedmos"] = {
+								["amount"] = 185,
+							},
+							["Maximillian"] = {
+								["total"] = 3817,
+								["amount"] = 0,
+							},
+						},
+						["count"] = 2,
+						["amount"] = 185,
+						["n_amt"] = 185,
+						["n_min"] = 185,
+						["n_num"] = 1,
+						["abs_n"] = 1,
 					},
 				},
 				["absorb"] = 9567,
 				["totaldamaged"] = 17184,
 				["id"] = "0xF130011EAF000004",
-				["dispelspells"] = {
-					["988.2"] = {
-						["spells"] = {
-							["54371.1"] = 1,
-							["48441.8"] = 1,
-							["63321.4"] = 2,
-							["48469.8"] = 2,
-							["22812.8"] = 1,
-							["48301.32"] = 1,
-							["61188.1"] = 1,
-							["48068.2"] = 1,
-							["132.32"] = 1,
-							["47811.4"] = 1,
-							["48169.32"] = 1,
-							["48161.2"] = 1,
-							["48073.2"] = 2,
-							["60319.1"] = 1,
-							["48443.8"] = 1,
-							["16886.8"] = 1,
-							["47891.32"] = 1,
+				["cctakenspells"] = {
+					["-10890.32"] = {
+						["sources"] = {
+							["Caedmos"] = 1,
 						},
-						["count"] = 20,
-						["targets"] = {
-							["Mardant"] = 4,
-							["Maximillian"] = 12,
-							["Caedmos"] = 2,
-							["Tai'jin"] = 2,
+						["n"] = 1,
+					},
+					["-6215.32"] = {
+						["sources"] = {
+							["Maximillian"] = 2,
 						},
+						["n"] = 2,
 					},
 				},
 				["healspells"] = {
@@ -1430,13 +1414,13 @@ SkadaCharDB = {
 						["n_max"] = 716,
 						["count"] = 1,
 						["amount"] = 716,
-						["n_num"] = 1,
-						["n_min"] = 716,
 						["targets"] = {
 							["Tai'jin"] = {
 								["amount"] = 716,
 							},
 						},
+						["n_min"] = 716,
+						["n_num"] = 1,
 						["n_amt"] = 716,
 					},
 					["48071.2"] = {
@@ -1454,13 +1438,13 @@ SkadaCharDB = {
 								["amount"] = 1878,
 							},
 						},
-						["count"] = 2,
+						["n_min"] = 1878,
 						["c_min"] = 2135,
 						["amount"] = 4013,
 						["o_amt"] = 5748,
-						["n_min"] = 1878,
-						["n_num"] = 1,
 						["n_amt"] = 1878,
+						["n_num"] = 1,
+						["count"] = 2,
 					},
 					["56160.2"] = {
 						["c_amt"] = 4312,
@@ -1468,21 +1452,21 @@ SkadaCharDB = {
 						["c_num"] = 2,
 						["n_max"] = 1636,
 						["targets"] = {
-							["Jonaz"] = {
-								["amount"] = 2914,
-							},
 							["Tai'jin"] = {
 								["o_amt"] = 1056,
 								["amount"] = 3034,
 							},
+							["Jonaz"] = {
+								["amount"] = 2914,
+							},
 						},
-						["count"] = 3,
+						["n_min"] = 1636,
 						["c_min"] = 1398,
 						["amount"] = 5948,
 						["o_amt"] = 1056,
-						["n_min"] = 1636,
-						["n_num"] = 1,
 						["n_amt"] = 1636,
+						["n_num"] = 1,
+						["count"] = 3,
 					},
 					["-48068.2"] = {
 						["c_amt"] = 0,
@@ -1499,75 +1483,91 @@ SkadaCharDB = {
 								["amount"] = 2546,
 							},
 						},
-						["n_min"] = 97,
 						["c_min"] = 0,
+						["count"] = 8,
 						["amount"] = 3793,
 						["o_amt"] = 6968,
 						["n_amt"] = 3793,
 						["n_num"] = 7,
-						["count"] = 8,
+						["n_min"] = 97,
 					},
 					["-70772.2"] = {
 						["n_max"] = 465,
-						["n_num"] = 3,
-						["count"] = 3,
-						["amount"] = 465,
-						["o_amt"] = 930,
-						["n_min"] = 465,
 						["targets"] = {
 							["Tai'jin"] = {
 								["o_amt"] = 930,
 								["amount"] = 465,
 							},
 						},
+						["count"] = 3,
+						["amount"] = 465,
+						["o_amt"] = 930,
+						["n_min"] = 465,
+						["n_num"] = 3,
 						["n_amt"] = 465,
 					},
 				},
 				["overkill"] = 1563,
-				["totaldamage"] = 23910,
+				["mana"] = 1015,
 				["heal"] = 14935,
 				["manaspells"] = {
 					["63654.2"] = 451,
 					["47755.2"] = 564,
 				},
+				["overheal"] = 14702,
 				["absorbspells"] = {
 					["47753.2"] = {
 						["n_max"] = 794,
 						["count"] = 3,
 						["amount"] = 1697,
-						["n_num"] = 3,
-						["n_min"] = 228,
 						["targets"] = {
-							["Jonaz"] = 1022,
 							["Tai'jin"] = 675,
+							["Jonaz"] = 1022,
 						},
+						["n_min"] = 228,
+						["n_num"] = 3,
 						["n_amt"] = 1697,
 					},
 					["48066.2"] = {
 						["n_max"] = 3754,
 						["count"] = 5,
 						["amount"] = 7870,
-						["n_num"] = 5,
-						["n_min"] = 354,
 						["targets"] = {
 							["Tai'jin"] = 7870,
 						},
+						["n_min"] = 354,
+						["n_num"] = 5,
 						["n_amt"] = 7870,
 					},
 				},
-				["overheal"] = 14702,
-				["mana"] = 1015,
-				["cctakenspells"] = {
-					["-10890.32"] = {
-						["n"] = 1,
-						["sources"] = {
-							["Caedmos"] = 1,
+				["totaldamage"] = 23910,
+				["dispelspells"] = {
+					["988.2"] = {
+						["spells"] = {
+							["54371.1"] = 1,
+							["48441.8"] = 1,
+							["63321.4"] = 2,
+							["48469.8"] = 2,
+							["22812.8"] = 1,
+							["48301.32"] = 1,
+							["61188.1"] = 1,
+							["47891.32"] = 1,
+							["47811.4"] = 1,
+							["132.32"] = 1,
+							["48169.32"] = 1,
+							["48443.8"] = 1,
+							["48073.2"] = 2,
+							["60319.1"] = 1,
+							["48161.2"] = 1,
+							["16886.8"] = 1,
+							["48068.2"] = 1,
 						},
-					},
-					["-6215.32"] = {
-						["n"] = 2,
-						["sources"] = {
-							["Maximillian"] = 2,
+						["count"] = 20,
+						["targets"] = {
+							["Mardant"] = 4,
+							["Maximillian"] = 12,
+							["Caedmos"] = 2,
+							["Tai'jin"] = 2,
 						},
 					},
 				},
@@ -1576,8 +1576,8 @@ SkadaCharDB = {
 					["Voidwalker"] = 12.82,
 					["Tai'jin"] = 9.51,
 					["Jonaz"] = 4.6,
-					["Maximillian"] = 7,
 					["Caedmos"] = 7.12,
+					["Maximillian"] = 7,
 				},
 			},
 			["Maximillian"] = {
@@ -1592,28 +1592,32 @@ SkadaCharDB = {
 						},
 						["amount"] = 8146,
 					},
-					["59172.4"] = {
+					["-47811.4"] = {
+						["total"] = 1168,
 						["targets"] = {
 							["Tai'jin"] = {
-								["amount"] = 4213,
+								["total"] = 1168,
+								["amount"] = 0,
 							},
 						},
-						["amount"] = 4213,
+						["amount"] = 0,
 					},
-					["-47864.32"] = {
+					["47811.4"] = {
+						["total"] = 1675,
 						["targets"] = {
-							["Thurston"] = {
-								["amount"] = 210,
+							["Tai'jin"] = {
+								["total"] = 1675,
+								["amount"] = 0,
 							},
 						},
-						["amount"] = 210,
+						["amount"] = 0,
 					},
 					["47838.4"] = {
 						["total"] = 3754,
 						["targets"] = {
 							["Tai'jin"] = {
-								["amount"] = 0,
 								["total"] = 3754,
+								["amount"] = 0,
 							},
 						},
 						["amount"] = 0,
@@ -1633,31 +1637,27 @@ SkadaCharDB = {
 								["amount"] = 1396,
 							},
 							["Tai'jin"] = {
-								["amount"] = 0,
 								["total"] = 919,
+								["amount"] = 0,
 							},
 						},
 						["amount"] = 1396,
 					},
-					["47811.4"] = {
-						["total"] = 1675,
+					["-47864.32"] = {
 						["targets"] = {
-							["Tai'jin"] = {
-								["amount"] = 0,
-								["total"] = 1675,
+							["Thurston"] = {
+								["amount"] = 210,
 							},
 						},
-						["amount"] = 0,
+						["amount"] = 210,
 					},
-					["-47811.4"] = {
-						["total"] = 1168,
+					["59172.4"] = {
 						["targets"] = {
 							["Tai'jin"] = {
-								["amount"] = 0,
-								["total"] = 1168,
+								["amount"] = 4213,
 							},
 						},
-						["amount"] = 0,
+						["amount"] = 4213,
 					},
 				},
 				["id"] = "0xF130011EAE000003",
@@ -1666,70 +1666,15 @@ SkadaCharDB = {
 				["enemy"] = true,
 				["totaldamage"] = 21624,
 				["overkill"] = 274,
+				["totaldamaged"] = 66780,
 				["damagedspells"] = {
-					["-47610.20"] = {
-						["total"] = 1570,
+					["55362.4"] = {
 						["sources"] = {
 							["Thurston"] = {
-								["amount"] = 1526,
-								["total"] = 1570,
+								["amount"] = 2563,
 							},
 						},
-						["amount"] = 1526,
-					},
-					["47610.20"] = {
-						["total"] = 18419,
-						["sources"] = {
-							["Thurston"] = {
-								["amount"] = 16899,
-								["total"] = 18419,
-							},
-						},
-						["amount"] = 16899,
-					},
-					["31707.16"] = {
-						["total"] = 1266,
-						["sources"] = {
-							["Jonaz"] = {
-								["amount"] = 1013,
-								["total"] = 1266,
-							},
-						},
-						["amount"] = 1013,
-					},
-					["48127.32"] = {
-						["total"] = 4301,
-						["sources"] = {
-							["Tai'jin"] = {
-								["amount"] = 2142,
-								["total"] = 4301,
-							},
-						},
-						["amount"] = 2142,
-					},
-					["5019.1"] = {
-						["total"] = 7760,
-						["sources"] = {
-							["Thurston"] = {
-								["amount"] = 2382,
-								["total"] = 2835,
-							},
-							["Tai'jin"] = {
-								["amount"] = 3737,
-								["total"] = 4925,
-							},
-						},
-						["amount"] = 6119,
-					},
-					["-12654.4"] = {
-						["total"] = 7555,
-						["sources"] = {
-							["Thurston"] = {
-								["amount"] = 7007,
-								["total"] = 7555,
-							},
-						},
-						["amount"] = 7007,
+						["amount"] = 2563,
 					},
 					["42891.4"] = {
 						["o_amt"] = 4781,
@@ -1741,91 +1686,311 @@ SkadaCharDB = {
 						},
 						["amount"] = 11944,
 					},
-					["33395.16"] = {
-						["total"] = 127,
+					["31707.16"] = {
+						["total"] = 1266,
 						["sources"] = {
 							["Jonaz"] = {
-								["amount"] = 0,
-								["total"] = 127,
+								["total"] = 1266,
+								["amount"] = 1013,
 							},
 						},
-						["amount"] = 0,
+						["amount"] = 1013,
 					},
-					["-55360.4"] = {
-						["amount"] = 4270,
-						["sources"] = {
-							["Thurston"] = {
-								["amount"] = 4270,
-							},
-						},
-					},
-					["-48135.2"] = {
-						["total"] = 880,
+					["48127.32"] = {
+						["total"] = 4301,
 						["sources"] = {
 							["Tai'jin"] = {
-								["amount"] = 528,
-								["total"] = 880,
+								["total"] = 4301,
+								["amount"] = 2142,
 							},
 						},
-						["amount"] = 528,
+						["amount"] = 2142,
 					},
 					["42859.4"] = {
-						["amount"] = 2308,
 						["sources"] = {
 							["Thurston"] = {
 								["amount"] = 2308,
 							},
 						},
+						["amount"] = 2308,
+					},
+					["-12654.4"] = {
+						["total"] = 7555,
+						["sources"] = {
+							["Thurston"] = {
+								["total"] = 7555,
+								["amount"] = 7007,
+							},
+						},
+						["amount"] = 7007,
 					},
 					["48135.2"] = {
 						["total"] = 3817,
 						["sources"] = {
 							["Tai'jin"] = {
-								["amount"] = 0,
 								["total"] = 3817,
+								["amount"] = 0,
 							},
 						},
 						["amount"] = 0,
 					},
-					["55362.4"] = {
-						["amount"] = 2563,
+					["-48135.2"] = {
+						["total"] = 880,
 						["sources"] = {
-							["Thurston"] = {
-								["amount"] = 2563,
+							["Tai'jin"] = {
+								["total"] = 880,
+								["amount"] = 528,
 							},
 						},
+						["amount"] = 528,
+					},
+					["-55360.4"] = {
+						["sources"] = {
+							["Thurston"] = {
+								["amount"] = 4270,
+							},
+						},
+						["amount"] = 4270,
+					},
+					["33395.16"] = {
+						["total"] = 127,
+						["sources"] = {
+							["Jonaz"] = {
+								["total"] = 127,
+								["amount"] = 0,
+							},
+						},
+						["amount"] = 0,
+					},
+					["5019.1"] = {
+						["total"] = 7760,
+						["sources"] = {
+							["Thurston"] = {
+								["total"] = 2835,
+								["amount"] = 2382,
+							},
+							["Tai'jin"] = {
+								["total"] = 4925,
+								["amount"] = 3737,
+							},
+						},
+						["amount"] = 6119,
+					},
+					["47610.20"] = {
+						["total"] = 18419,
+						["sources"] = {
+							["Thurston"] = {
+								["total"] = 18419,
+								["amount"] = 16899,
+							},
+						},
+						["amount"] = 16899,
+					},
+					["-47610.20"] = {
+						["total"] = 1570,
+						["sources"] = {
+							["Thurston"] = {
+								["total"] = 1570,
+								["amount"] = 1526,
+							},
+						},
+						["amount"] = 1526,
 					},
 				},
-				["totaldamaged"] = 66780,
 				["damage"] = 14108,
+			},
+			["Caedmos"] = {
+				["damagespells"] = {
+					["5019.1"] = {
+						["total"] = 2735,
+						["targets"] = {
+							["Tai'jin"] = {
+								["total"] = 2735,
+								["amount"] = 2060,
+							},
+						},
+						["amount"] = 2060,
+					},
+					["48135.2"] = {
+						["o_amt"] = 434,
+						["targets"] = {
+							["The Brewmaiden <Thurston>"] = {
+								["o_amt"] = 434,
+								["amount"] = 3426,
+							},
+						},
+						["amount"] = 3426,
+					},
+					["48127.32"] = {
+						["total"] = 5603,
+						["targets"] = {
+							["Tai'jin"] = {
+								["total"] = 2720,
+								["amount"] = 2366,
+							},
+							["The Brewmaiden <Thurston>"] = {
+								["amount"] = 2883,
+							},
+						},
+						["amount"] = 5249,
+					},
+					["-48160.32"] = {
+						["targets"] = {
+							["The Brewmaiden <Thurston>"] = {
+								["amount"] = 7366,
+							},
+						},
+						["amount"] = 7366,
+					},
+				},
+				["id"] = "0xF130011EAC000001",
+				["class"] = "MONSTER",
+				["damaged"] = 40008,
+				["enemy"] = true,
+				["totaldamage"] = 19130,
+				["totaldamaged"] = 45289,
+				["overkill"] = 434,
+				["damagedspells"] = {
+					["-42891.4"] = {
+						["total"] = 1792,
+						["sources"] = {
+							["Thurston"] = {
+								["total"] = 1792,
+								["amount"] = 1204,
+							},
+						},
+						["amount"] = 1204,
+					},
+					["48158.32"] = {
+						["o_amt"] = 1563,
+						["sources"] = {
+							["Tai'jin"] = {
+								["o_amt"] = 1563,
+								["amount"] = 3879,
+							},
+						},
+						["amount"] = 3879,
+					},
+					["47610.20"] = {
+						["total"] = 6567,
+						["sources"] = {
+							["Thurston"] = {
+								["total"] = 6567,
+								["amount"] = 1874,
+							},
+						},
+						["amount"] = 1874,
+					},
+					["48127.32"] = {
+						["sources"] = {
+							["Tai'jin"] = {
+								["amount"] = 393,
+							},
+						},
+						["amount"] = 393,
+					},
+					["42891.4"] = {
+						["sources"] = {
+							["Thurston"] = {
+								["amount"] = 15612,
+							},
+						},
+						["amount"] = 15612,
+					},
+					["-12654.4"] = {
+						["sources"] = {
+							["Thurston"] = {
+								["amount"] = 6162,
+							},
+						},
+						["amount"] = 6162,
+					},
+					["48135.2"] = {
+						["sources"] = {
+							["Tai'jin"] = {
+								["amount"] = 185,
+							},
+						},
+						["amount"] = 185,
+					},
+					["5019.1"] = {
+						["sources"] = {
+							["Tai'jin"] = {
+								["amount"] = 159,
+							},
+						},
+						["amount"] = 159,
+					},
+					["-48135.2"] = {
+						["sources"] = {
+							["Tai'jin"] = {
+								["amount"] = 175,
+							},
+						},
+						["amount"] = 175,
+					},
+					["6603.1"] = {
+						["sources"] = {
+							["Thurston"] = {
+								["amount"] = 37,
+							},
+						},
+						["amount"] = 37,
+					},
+					["42859.4"] = {
+						["sources"] = {
+							["Thurston"] = {
+								["amount"] = 6807,
+							},
+						},
+						["amount"] = 6807,
+					},
+					["42873.4"] = {
+						["sources"] = {
+							["Thurston"] = {
+								["amount"] = 2958,
+							},
+						},
+						["amount"] = 2958,
+					},
+					["-47610.20"] = {
+						["sources"] = {
+							["Thurston"] = {
+								["amount"] = 563,
+							},
+						},
+						["amount"] = 563,
+					},
+				},
+				["damage"] = 18101,
 			},
 			["Jonaz"] = {
 				["ccdonespells"] = {
 					["-33395.16.Water Elemental"] = {
-						["n"] = 3,
 						["t"] = {
 							["Mardant"] = 1,
 							["Voidwalker"] = 1,
 							["Maximillian"] = 1,
 						},
+						["n"] = 3,
 					},
 					["-55021.64"] = {
-						["n"] = 2,
 						["t"] = {
 							["Mardant"] = 2,
 						},
+						["n"] = 2,
 					},
 					["-42917.16"] = {
-						["n"] = 3,
 						["t"] = {
 							["Mardant"] = 3,
 						},
+						["n"] = 3,
 					},
 					["-44572.16"] = {
-						["n"] = 1,
 						["t"] = {
 							["Mardant"] = 1,
 						},
+						["n"] = 1,
 					},
 				},
 				["last"] = 75017.711,
@@ -1837,8 +2002,8 @@ SkadaCharDB = {
 						["c_num"] = 8,
 						["sources"] = {
 							["Mardant"] = {
-								["amount"] = 15855,
 								["total"] = 26331,
+								["amount"] = 15855,
 							},
 						},
 						["c_min"] = 123,
@@ -1863,16 +2028,16 @@ SkadaCharDB = {
 						["t"] = {
 							["Mardant"] = {
 								["u"] = 263,
-								["n"] = 7,
 								["r"] = 1,
+								["n"] = 7,
 							},
 							["Voidwalker"] = {
 								["u"] = 11,
 								["n"] = 1,
 							},
 						},
-						["n"] = 8,
 						["r"] = 1,
+						["n"] = 8,
 					},
 					["1953.64"] = {
 						["u"] = 45,
@@ -1942,20 +2107,18 @@ SkadaCharDB = {
 						["u"] = 35,
 						["n"] = 1,
 					},
-					["-116.16"] = {
-						["u"] = 4,
+					["-44572.16"] = {
+						["u"] = 5,
 						["t"] = {
 							["Mardant"] = {
-								["u"] = 4,
+								["u"] = 5,
 								["n"] = 1,
-								["r"] = 1,
 							},
 						},
 						["n"] = 1,
-						["r"] = 1,
 					},
-					["47753.2"] = {
-						["u"] = 7,
+					["42995.64"] = {
+						["u"] = 79,
 						["n"] = 1,
 					},
 					["75473.1"] = {
@@ -1982,42 +2145,44 @@ SkadaCharDB = {
 						},
 						["n"] = 4,
 					},
+					["-57669.8"] = {
+						["u"] = 68,
+					},
 					["-12579.16"] = {
 						["u"] = 79,
 						["t"] = {
 							["Mardant"] = {
 								["u"] = 79,
-								["n"] = 2,
 								["r"] = 34,
+								["n"] = 2,
 							},
 							["Voidwalker"] = {
 								["u"] = 15,
 								["n"] = 1,
 							},
 						},
-						["n"] = 3,
 						["r"] = 34,
-					},
-					["-57669.8"] = {
-						["u"] = 68,
+						["n"] = 3,
 					},
 					["63944.2"] = {
 						["u"] = 62,
-						["n"] = 1,
 						["r"] = 1,
-					},
-					["42995.64"] = {
-						["u"] = 79,
 						["n"] = 1,
 					},
-					["-44572.16"] = {
-						["u"] = 5,
+					["47753.2"] = {
+						["u"] = 7,
+						["n"] = 1,
+					},
+					["-116.16"] = {
+						["u"] = 4,
 						["t"] = {
 							["Mardant"] = {
-								["u"] = 5,
+								["u"] = 4,
+								["r"] = 1,
 								["n"] = 1,
 							},
 						},
+						["r"] = 1,
 						["n"] = 1,
 					},
 				},
@@ -2026,38 +2191,41 @@ SkadaCharDB = {
 						["n_max"] = 5170,
 						["count"] = 2,
 						["amount"] = 6699,
-						["n_num"] = 2,
-						["n_min"] = 1529,
 						["targets"] = {
 							["Jonaz"] = 6699,
 						},
+						["n_min"] = 1529,
+						["n_num"] = 2,
 						["n_amt"] = 6699,
 					},
 					["43020.64"] = {
 						["c_amt"] = 2755,
 						["count"] = 1,
 						["amount"] = 2755,
-						["c_num"] = 1,
+						["c_max"] = 2755,
 						["c_min"] = 2755,
 						["targets"] = {
 							["Jonaz"] = 2755,
 						},
-						["c_max"] = 2755,
+						["c_num"] = 1,
 					},
 				},
 				["role"] = "DAMAGER",
 				["time"] = 60.94,
 				["cctaken"] = 2,
 				["totaldamaged"] = 26331,
-				["dispelspells"] = {
-					["30449.64"] = {
-						["spells"] = {
-							["48161.2"] = 1,
-						},
-						["count"] = 1,
-						["targets"] = {
+				["cctakenspells"] = {
+					["-8983.1"] = {
+						["sources"] = {
 							["Mardant"] = 1,
 						},
+						["n"] = 1,
+					},
+					["-33786.8"] = {
+						["sources"] = {
+							["Mardant"] = 1,
+						},
+						["n"] = 1,
 					},
 				},
 				["damage"] = 119539,
@@ -2085,149 +2253,23 @@ SkadaCharDB = {
 						},
 						["count"] = 3,
 						["amount"] = 4592,
-						["n_min"] = 776,
+						["c_min"] = 1692,
 						["n_amt"] = 776,
 						["n_num"] = 1,
-						["c_min"] = 1692,
+						["n_min"] = 776,
 					},
 					["25228.32.Water Elemental"] = {
 						["n_max"] = 253,
 						["count"] = 1,
 						["amount"] = 253,
-						["n_num"] = 1,
-						["n_min"] = 253,
 						["targets"] = {
 							["Voidwalker"] = {
 								["amount"] = 253,
 							},
 						},
-						["n_amt"] = 253,
-					},
-					["33395.16.Water Elemental"] = {
-						["r_amt"] = 19,
-						["n_max"] = 161,
-						["targets"] = {
-							["Mardant"] = {
-								["amount"] = 161,
-							},
-							["Voidwalker"] = {
-								["amount"] = 18,
-							},
-							["Maximillian"] = {
-								["amount"] = 0,
-								["total"] = 127,
-							},
-						},
-						["n_min"] = 18,
-						["count"] = 3,
-						["amount"] = 179,
-						["n_amt"] = 179,
-						["abs_n"] = 1,
-						["n_num"] = 2,
-						["total"] = 306,
-					},
-					["44781.64"] = {
-						["c_amt"] = 4592,
-						["r_amt"] = 510,
-						["count"] = 1,
-						["amount"] = 4592,
-						["c_num"] = 1,
-						["c_min"] = 4592,
-						["targets"] = {
-							["Mardant"] = {
-								["amount"] = 4592,
-							},
-						},
-						["c_max"] = 4592,
-					},
-					["42914.16"] = {
-						["c_amt"] = 22997,
-						["r_amt"] = 4228,
-						["c_max"] = 4647,
-						["c_num"] = 6,
-						["n_max"] = 811,
-						["targets"] = {
-							["Mardant"] = {
-								["o_amt"] = 810,
-								["amount"] = 26776,
-							},
-						},
-						["n_min"] = 468,
-						["c_min"] = 1713,
-						["amount"] = 26776,
-						["o_amt"] = 810,
-						["n_amt"] = 3779,
-						["n_num"] = 6,
-						["count"] = 12,
-					},
-					["42842.16"] = {
-						["c_amt"] = 49520,
-						["r_amt"] = 14330,
-						["c_max"] = 12029,
-						["c_num"] = 5,
-						["n_max"] = 5286,
-						["targets"] = {
-							["Mardant"] = {
-								["amount"] = 54632,
-							},
-							["Voidwalker"] = {
-								["amount"] = 12029,
-							},
-						},
-						["c_min"] = 8142,
-						["amount"] = 66661,
-						["count"] = 9,
-						["n_min"] = 3703,
-						["n_num"] = 4,
-						["n_amt"] = 17141,
-					},
-					["116.16"] = {
-						["c_amt"] = 75,
-						["r_amt"] = 25,
-						["count"] = 2,
-						["amount"] = 75,
-						["c_num"] = 2,
-						["c_min"] = 35,
-						["targets"] = {
-							["Mardant"] = {
-								["amount"] = 75,
-							},
-						},
-						["c_max"] = 40,
-					},
-					["31707.16.Water Elemental"] = {
-						["total"] = 1266,
-						["n_max"] = 1013,
-						["targets"] = {
-							["Maximillian"] = {
-								["amount"] = 1013,
-								["total"] = 1266,
-							},
-						},
-						["count"] = 1,
-						["amount"] = 1013,
-						["n_min"] = 1013,
-						["n_amt"] = 1013,
+						["n_min"] = 253,
 						["n_num"] = 1,
-						["r_amt"] = 316,
-					},
-					["42873.4"] = {
-						["c_amt"] = 6779,
-						["r_amt"] = 2238,
-						["c_max"] = 3790,
-						["c_num"] = 2,
-						["n_max"] = 1916,
-						["targets"] = {
-							["Mardant"] = {
-								["amount"] = 12114,
-							},
-						},
-						["c_min"] = 2989,
-						["amount"] = 12114,
-						["count"] = 5,
-						["n_min"] = 1535,
-						["n_num"] = 3,
-						["n_amt"] = 5335,
+						["n_amt"] = 253,
 					},
 					["42931.16"] = {
 						["c_amt"] = 2129,
@@ -2246,13 +2288,152 @@ SkadaCharDB = {
 						["res_n"] = 1,
 						["count"] = 3,
 						["amount"] = 3284,
-						["n_min"] = 1155,
+						["c_min"] = 2129,
 						["n_amt"] = 1155,
 						["n_num"] = 1,
-						["c_min"] = 2129,
+						["n_min"] = 1155,
+					},
+					["44781.64"] = {
+						["c_amt"] = 4592,
+						["r_amt"] = 510,
+						["count"] = 1,
+						["amount"] = 4592,
+						["c_max"] = 4592,
+						["c_min"] = 4592,
+						["targets"] = {
+							["Mardant"] = {
+								["amount"] = 4592,
+							},
+						},
+						["c_num"] = 1,
+					},
+					["42914.16"] = {
+						["c_amt"] = 22997,
+						["r_amt"] = 4228,
+						["c_max"] = 4647,
+						["c_num"] = 6,
+						["n_max"] = 811,
+						["targets"] = {
+							["Mardant"] = {
+								["o_amt"] = 810,
+								["amount"] = 26776,
+							},
+						},
+						["c_min"] = 1713,
+						["count"] = 12,
+						["amount"] = 26776,
+						["o_amt"] = 810,
+						["n_amt"] = 3779,
+						["n_num"] = 6,
+						["n_min"] = 468,
+					},
+					["42842.16"] = {
+						["c_amt"] = 49520,
+						["r_amt"] = 14330,
+						["c_max"] = 12029,
+						["c_num"] = 5,
+						["n_max"] = 5286,
+						["targets"] = {
+							["Mardant"] = {
+								["amount"] = 54632,
+							},
+							["Voidwalker"] = {
+								["amount"] = 12029,
+							},
+						},
+						["c_min"] = 8142,
+						["amount"] = 66661,
+						["n_min"] = 3703,
+						["n_amt"] = 17141,
+						["n_num"] = 4,
+						["count"] = 9,
+					},
+					["116.16"] = {
+						["c_amt"] = 75,
+						["r_amt"] = 25,
+						["count"] = 2,
+						["amount"] = 75,
+						["c_max"] = 40,
+						["c_min"] = 35,
+						["targets"] = {
+							["Mardant"] = {
+								["amount"] = 75,
+							},
+						},
+						["c_num"] = 2,
+					},
+					["31707.16.Water Elemental"] = {
+						["total"] = 1266,
+						["n_max"] = 1013,
+						["targets"] = {
+							["Maximillian"] = {
+								["total"] = 1266,
+								["amount"] = 1013,
+							},
+						},
+						["count"] = 1,
+						["amount"] = 1013,
+						["r_amt"] = 316,
+						["n_amt"] = 1013,
+						["n_num"] = 1,
+						["n_min"] = 1013,
+					},
+					["42873.4"] = {
+						["c_amt"] = 6779,
+						["r_amt"] = 2238,
+						["c_max"] = 3790,
+						["c_num"] = 2,
+						["n_max"] = 1916,
+						["targets"] = {
+							["Mardant"] = {
+								["amount"] = 12114,
+							},
+						},
+						["c_min"] = 2989,
+						["amount"] = 12114,
+						["n_min"] = 1535,
+						["n_amt"] = 5335,
+						["n_num"] = 3,
+						["count"] = 5,
+					},
+					["33395.16.Water Elemental"] = {
+						["r_amt"] = 19,
+						["n_max"] = 161,
+						["targets"] = {
+							["Mardant"] = {
+								["amount"] = 161,
+							},
+							["Voidwalker"] = {
+								["amount"] = 18,
+							},
+							["Maximillian"] = {
+								["total"] = 127,
+								["amount"] = 0,
+							},
+						},
+						["total"] = 306,
+						["count"] = 3,
+						["amount"] = 179,
+						["abs_n"] = 1,
+						["n_amt"] = 179,
+						["n_num"] = 2,
+						["n_min"] = 18,
 					},
 				},
 				["absorb"] = 9454,
+				["dispel"] = 1,
+				["totaldamage"] = 119919,
+				["interrupt"] = 2,
+				["spec"] = 64,
+				["petdamage"] = 1445,
+				["overkill"] = 810,
+				["id"] = "0x0000000000000010",
+				["class"] = "MAGE",
+				["manaspells"] = {
+					["-57669.8"] = 3740,
+				},
+				["ccdone"] = 9,
+				["pettotaldamage"] = 1825,
 				["interruptspells"] = {
 					["2139.64"] = {
 						["spells"] = {
@@ -2264,29 +2445,13 @@ SkadaCharDB = {
 						},
 					},
 				},
-				["pettotaldamage"] = 1825,
-				["interrupt"] = 2,
-				["spec"] = 64,
-				["ccdone"] = 9,
-				["overkill"] = 810,
-				["id"] = "0x0000000000000010",
-				["class"] = "MAGE",
-				["manaspells"] = {
-					["-57669.8"] = 3740,
-				},
-				["petdamage"] = 1445,
-				["totaldamage"] = 119919,
-				["dispel"] = 1,
-				["cctakenspells"] = {
-					["-33786.8"] = {
-						["n"] = 1,
-						["sources"] = {
-							["Mardant"] = 1,
+				["dispelspells"] = {
+					["30449.64"] = {
+						["spells"] = {
+							["48161.2"] = 1,
 						},
-					},
-					["-8983.1"] = {
-						["n"] = 1,
-						["sources"] = {
+						["count"] = 1,
+						["targets"] = {
 							["Mardant"] = 1,
 						},
 					},
@@ -2296,174 +2461,9 @@ SkadaCharDB = {
 					["Voidwalker"] = 2.19,
 				},
 			},
-			["Caedmos"] = {
-				["damagespells"] = {
-					["-48160.32"] = {
-						["targets"] = {
-							["The Brewmaiden <Thurston>"] = {
-								["amount"] = 7366,
-							},
-						},
-						["amount"] = 7366,
-					},
-					["5019.1"] = {
-						["total"] = 2735,
-						["targets"] = {
-							["Tai'jin"] = {
-								["amount"] = 2060,
-								["total"] = 2735,
-							},
-						},
-						["amount"] = 2060,
-					},
-					["48127.32"] = {
-						["total"] = 5603,
-						["targets"] = {
-							["The Brewmaiden <Thurston>"] = {
-								["amount"] = 2883,
-							},
-							["Tai'jin"] = {
-								["amount"] = 2366,
-								["total"] = 2720,
-							},
-						},
-						["amount"] = 5249,
-					},
-					["48135.2"] = {
-						["o_amt"] = 434,
-						["targets"] = {
-							["The Brewmaiden <Thurston>"] = {
-								["o_amt"] = 434,
-								["amount"] = 3426,
-							},
-						},
-						["amount"] = 3426,
-					},
-				},
-				["id"] = "0xF130011EAC000001",
-				["class"] = "MONSTER",
-				["damaged"] = 40008,
-				["enemy"] = true,
-				["totaldamage"] = 19130,
-				["totaldamaged"] = 45289,
-				["damagedspells"] = {
-					["-42891.4"] = {
-						["total"] = 1792,
-						["sources"] = {
-							["Thurston"] = {
-								["amount"] = 1204,
-								["total"] = 1792,
-							},
-						},
-						["amount"] = 1204,
-					},
-					["48127.32"] = {
-						["amount"] = 393,
-						["sources"] = {
-							["Tai'jin"] = {
-								["amount"] = 393,
-							},
-						},
-					},
-					["47610.20"] = {
-						["total"] = 6567,
-						["sources"] = {
-							["Thurston"] = {
-								["amount"] = 1874,
-								["total"] = 6567,
-							},
-						},
-						["amount"] = 1874,
-					},
-					["48158.32"] = {
-						["o_amt"] = 1563,
-						["sources"] = {
-							["Tai'jin"] = {
-								["o_amt"] = 1563,
-								["amount"] = 3879,
-							},
-						},
-						["amount"] = 3879,
-					},
-					["48135.2"] = {
-						["amount"] = 185,
-						["sources"] = {
-							["Tai'jin"] = {
-								["amount"] = 185,
-							},
-						},
-					},
-					["-12654.4"] = {
-						["amount"] = 6162,
-						["sources"] = {
-							["Thurston"] = {
-								["amount"] = 6162,
-							},
-						},
-					},
-					["42891.4"] = {
-						["amount"] = 15612,
-						["sources"] = {
-							["Thurston"] = {
-								["amount"] = 15612,
-							},
-						},
-					},
-					["42859.4"] = {
-						["amount"] = 6807,
-						["sources"] = {
-							["Thurston"] = {
-								["amount"] = 6807,
-							},
-						},
-					},
-					["6603.1"] = {
-						["amount"] = 37,
-						["sources"] = {
-							["Thurston"] = {
-								["amount"] = 37,
-							},
-						},
-					},
-					["-48135.2"] = {
-						["amount"] = 175,
-						["sources"] = {
-							["Tai'jin"] = {
-								["amount"] = 175,
-							},
-						},
-					},
-					["5019.1"] = {
-						["amount"] = 159,
-						["sources"] = {
-							["Tai'jin"] = {
-								["amount"] = 159,
-							},
-						},
-					},
-					["42873.4"] = {
-						["amount"] = 2958,
-						["sources"] = {
-							["Thurston"] = {
-								["amount"] = 2958,
-							},
-						},
-					},
-					["-47610.20"] = {
-						["amount"] = 563,
-						["sources"] = {
-							["Thurston"] = {
-								["amount"] = 563,
-							},
-						},
-					},
-				},
-				["overkill"] = 434,
-				["damage"] = 18101,
-			},
 		},
 		["edamage"] = 50720,
-		["starttime"] = 1752771319,
+		["type"] = "arena",
 		["endtime"] = 1752771398,
 	}, -- [4]
 	[0] = {
@@ -2480,20 +2480,20 @@ SkadaCharDB = {
 				["id"] = "0x0000000000000010",
 				["spec"] = 64,
 				["overkill"] = 223728,
-				["role"] = "DAMAGER",
-				["petdamage"] = 1445,
-				["ccdone"] = 9,
-				["class"] = "MAGE",
-				["interrupt"] = 2,
-				["time"] = 60.26,
 				["totaldamaged"] = 26331,
+				["time"] = 60.26,
+				["ccdone"] = 9,
+				["interrupt"] = 2,
+				["class"] = "MAGE",
+				["petdamage"] = 1445,
+				["role"] = "DAMAGER",
 			},
 			["Thurston"] = {
-				["interrupt"] = 2,
-				["role"] = "DAMAGER",
-				["ccdone"] = 2,
 				["id"] = "0xF130011EB0000005",
 				["mana"] = 1300,
+				["role"] = "DAMAGER",
+				["interrupt"] = 2,
+				["class"] = "MAGE",
 				["damaged"] = 2388,
 				["overkill"] = 19791,
 				["dispel"] = 4,
@@ -2501,25 +2501,25 @@ SkadaCharDB = {
 				["time"] = 58.43,
 				["petdamage"] = 37,
 				["cctaken"] = 2,
+				["ccdone"] = 2,
 				["heal"] = 667,
-				["class"] = "MAGE",
 				["damage"] = 112293,
 			},
 			["Tai'jin"] = {
 				["overheal"] = 14702,
 				["absorb"] = 9567,
-				["role"] = "NONE",
+				["totaldamage"] = 23910,
 				["id"] = "0xF130011EAF000004",
 				["class"] = "PRIEST",
 				["damaged"] = 8639,
 				["overkill"] = 1563,
 				["dispel"] = 20,
-				["totaldamage"] = 23910,
+				["role"] = "NONE",
 				["time"] = 51.16,
-				["totaldamaged"] = 17184,
+				["heal"] = 14935,
 				["cctaken"] = 3,
 				["mana"] = 1015,
-				["heal"] = 14935,
+				["totaldamaged"] = 17184,
 				["damage"] = 16394,
 			},
 		},
@@ -2537,7 +2537,7 @@ SkadaCharDB = {
 		["heal"] = 15602,
 		["name"] = "Total",
 		["ccdone"] = 11,
-		["totaldamaged"] = 45903,
 		["overheal"] = 14702,
+		["totaldamaged"] = 45903,
 	},
 }

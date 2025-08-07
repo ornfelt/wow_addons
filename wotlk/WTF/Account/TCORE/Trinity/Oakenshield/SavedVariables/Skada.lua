@@ -63,13 +63,13 @@ SkadaCharDB = {
 						},
 						["amount"] = 1996,
 					},
-					["10605.8"] = {
+					["30016.1"] = {
 						["sources"] = {
-							["Javad"] = {
-								["amount"] = 1228,
+							["Oakenshield"] = {
+								["amount"] = 340,
 							},
 						},
-						["amount"] = 1228,
+						["amount"] = 340,
 					},
 					["10207.4"] = {
 						["o_amt"] = 170,
@@ -81,13 +81,18 @@ SkadaCharDB = {
 						},
 						["amount"] = 533,
 					},
-					["10230.16"] = {
+					["6603.1"] = {
+						["o_amt"] = 219,
 						["sources"] = {
-							["Bink"] = {
-								["amount"] = 117,
+							["Oakenshield"] = {
+								["o_amt"] = 219,
+								["amount"] = 346,
+							},
+							["Umbrua"] = {
+								["amount"] = 1222,
 							},
 						},
-						["amount"] = 117,
+						["amount"] = 1568,
 					},
 					["46968.1"] = {
 						["sources"] = {
@@ -113,26 +118,21 @@ SkadaCharDB = {
 						},
 						["amount"] = 1939,
 					},
-					["6603.1"] = {
-						["o_amt"] = 219,
+					["10230.16"] = {
 						["sources"] = {
-							["Oakenshield"] = {
-								["o_amt"] = 219,
-								["amount"] = 346,
-							},
-							["Umbrua"] = {
-								["amount"] = 1222,
+							["Bink"] = {
+								["amount"] = 117,
 							},
 						},
-						["amount"] = 1568,
+						["amount"] = 117,
 					},
-					["30016.1"] = {
+					["10605.8"] = {
 						["sources"] = {
-							["Oakenshield"] = {
-								["amount"] = 340,
+							["Javad"] = {
+								["amount"] = 1228,
 							},
 						},
-						["amount"] = 340,
+						["amount"] = 1228,
 					},
 					["29228.4"] = {
 						["sources"] = {
@@ -473,19 +473,6 @@ SkadaCharDB = {
 						},
 						["amount"] = 1638,
 					},
-					["-29228.4"] = {
-						["o_amt"] = 36,
-						["sources"] = {
-							["Javad"] = {
-								["o_amt"] = 36,
-								["amount"] = 423,
-							},
-							["Umbrua"] = {
-								["amount"] = 320,
-							},
-						},
-						["amount"] = 743,
-					},
 					["10605.8"] = {
 						["o_amt"] = 271,
 						["sources"] = {
@@ -499,6 +486,14 @@ SkadaCharDB = {
 						},
 						["amount"] = 7266,
 					},
+					["30016.1"] = {
+						["sources"] = {
+							["Oakenshield"] = {
+								["amount"] = 290,
+							},
+						},
+						["amount"] = 290,
+					},
 					["10230.16"] = {
 						["sources"] = {
 							["Bink"] = {
@@ -507,13 +502,18 @@ SkadaCharDB = {
 						},
 						["amount"] = 101,
 					},
-					["30016.1"] = {
+					["-29228.4"] = {
+						["o_amt"] = 36,
 						["sources"] = {
-							["Oakenshield"] = {
-								["amount"] = 290,
+							["Javad"] = {
+								["o_amt"] = 36,
+								["amount"] = 423,
+							},
+							["Umbrua"] = {
+								["amount"] = 320,
 							},
 						},
-						["amount"] = 290,
+						["amount"] = 743,
 					},
 					["10207.4"] = {
 						["sources"] = {
@@ -564,7 +564,7 @@ SkadaCharDB = {
 				["class"] = "PRIEST",
 				["healspells"] = {
 					["-25315.2"] = {
-						["n_amt"] = 7765,
+						["n_max"] = 626,
 						["targets"] = {
 							["Javad"] = {
 								["o_amt"] = 1419,
@@ -578,9 +578,9 @@ SkadaCharDB = {
 						["count"] = 25,
 						["amount"] = 7765,
 						["o_amt"] = 5305,
-						["n_max"] = 626,
-						["n_num"] = 25,
 						["n_min"] = 103,
+						["n_num"] = 25,
+						["n_amt"] = 7765,
 					},
 					["10917.2"] = {
 						["c_amt"] = 1021,
@@ -593,13 +593,13 @@ SkadaCharDB = {
 								["amount"] = 7745,
 							},
 						},
-						["count"] = 6,
 						["c_min"] = 1021,
+						["count"] = 6,
 						["amount"] = 7745,
 						["o_amt"] = 2606,
-						["n_min"] = 864,
-						["n_num"] = 5,
 						["n_amt"] = 6724,
+						["n_num"] = 5,
+						["n_min"] = 864,
 					},
 					["56160.2"] = {
 						["c_amt"] = 421,
@@ -616,8 +616,8 @@ SkadaCharDB = {
 						},
 						["c_min"] = 421,
 						["amount"] = 721,
-						["n_amt"] = 300,
 						["n_min"] = 300,
+						["n_amt"] = 300,
 						["n_num"] = 1,
 						["count"] = 2,
 					},
@@ -718,9 +718,9 @@ SkadaCharDB = {
 						["count"] = 5,
 						["amount"] = 1615,
 						["c_min"] = 560,
-						["n_min"] = 50,
-						["n_num"] = 4,
 						["n_amt"] = 1055,
+						["n_num"] = 4,
+						["n_min"] = 50,
 					},
 				},
 				["role"] = "NONE",
@@ -778,8 +778,8 @@ SkadaCharDB = {
 						},
 						["c_min"] = 572,
 						["amount"] = 3210,
-						["n_amt"] = 2638,
 						["n_min"] = 224,
+						["n_amt"] = 2638,
 						["n_num"] = 10,
 						["count"] = 11,
 					},
@@ -834,21 +834,21 @@ SkadaCharDB = {
 						["abs_n"] = 2,
 					},
 					["15242.4"] = {
-						["r_amt"] = 74,
 						["sources"] = {
 							["Hellfire Imp"] = {
 								["amount"] = 673,
 							},
 						},
+						["r_amt"] = 74,
 						["count"] = 1,
 						["amount"] = 673,
 						["n_min"] = 673,
-						["n_max"] = 673,
-						["n_num"] = 1,
 						["n_amt"] = 673,
+						["n_num"] = 1,
+						["n_max"] = 673,
 					},
 					["11978.1"] = {
-						["n_min"] = 15,
+						["dod_n"] = 1,
 						["sources"] = {
 							["Shadowmoon Adept"] = {
 								["amount"] = 90,
@@ -856,10 +856,10 @@ SkadaCharDB = {
 						},
 						["count"] = 7,
 						["amount"] = 90,
-						["dod_n"] = 1,
-						["n_max"] = 15,
-						["n_num"] = 6,
+						["n_min"] = 15,
 						["n_amt"] = 90,
+						["n_num"] = 6,
+						["n_max"] = 15,
 					},
 					["30832.1"] = {
 						["sources"] = {
@@ -1050,7 +1050,7 @@ SkadaCharDB = {
 				["spec"] = 73,
 				["healspells"] = {
 					["18817.32"] = {
-						["n_amt"] = 0,
+						["n_max"] = 0,
 						["targets"] = {
 							["Oakenshield"] = {
 								["o_amt"] = 33,
@@ -1060,17 +1060,17 @@ SkadaCharDB = {
 						["count"] = 1,
 						["amount"] = 0,
 						["o_amt"] = 33,
-						["n_max"] = 0,
-						["n_num"] = 1,
 						["n_min"] = 0,
+						["n_num"] = 1,
+						["n_amt"] = 0,
 					},
 				},
 				["overkill"] = 525,
+				["heal"] = 0,
 				["ragespells"] = {
 					["34846.1"] = 30,
 					["23602.1"] = 130,
 				},
-				["heal"] = 0,
 				["sundertargets"] = {
 					["Laughing Skull Rogue"] = 1,
 					["Laughing Skull Enforcer"] = 3,
@@ -1080,7 +1080,7 @@ SkadaCharDB = {
 				["totaldamaged"] = 16637,
 				["damagespells"] = {
 					["18817.32"] = {
-						["n_amt"] = 33,
+						["n_max"] = 33,
 						["count"] = 1,
 						["amount"] = 33,
 						["targets"] = {
@@ -1088,9 +1088,9 @@ SkadaCharDB = {
 								["amount"] = 33,
 							},
 						},
-						["n_max"] = 33,
-						["n_num"] = 1,
 						["n_min"] = 33,
+						["n_num"] = 1,
+						["n_amt"] = 33,
 					},
 					["46968.1"] = {
 						["c_amt"] = 6570,
@@ -1110,8 +1110,8 @@ SkadaCharDB = {
 						},
 						["c_min"] = 1092,
 						["amount"] = 8217,
-						["n_amt"] = 1647,
 						["n_min"] = 546,
+						["n_amt"] = 1647,
 						["n_num"] = 3,
 						["count"] = 9,
 					},
@@ -1126,13 +1126,13 @@ SkadaCharDB = {
 								["amount"] = 4948,
 							},
 						},
-						["count"] = 3,
 						["c_min"] = 2522,
+						["count"] = 3,
 						["amount"] = 4948,
 						["o_amt"] = 306,
-						["n_min"] = 1163,
-						["n_num"] = 2,
 						["n_amt"] = 2426,
+						["n_num"] = 2,
+						["n_min"] = 1163,
 					},
 					["30016.1"] = {
 						["c_amt"] = 3092,
@@ -1156,9 +1156,9 @@ SkadaCharDB = {
 						["count"] = 12,
 						["amount"] = 5302,
 						["c_min"] = 610,
-						["n_min"] = 290,
-						["n_num"] = 7,
 						["n_amt"] = 2210,
+						["n_num"] = 7,
+						["n_min"] = 290,
 					},
 					["6603.1"] = {
 						["c_amt"] = 3180,
@@ -1222,9 +1222,9 @@ SkadaCharDB = {
 						["count"] = 34,
 						["amount"] = 10825,
 						["c_min"] = 490,
-						["n_min"] = 215,
-						["n_num"] = 25,
 						["n_amt"] = 6257,
+						["n_num"] = 25,
+						["n_min"] = 215,
 					},
 					["23925.1"] = {
 						["c_amt"] = 4542,
@@ -1245,9 +1245,9 @@ SkadaCharDB = {
 						["count"] = 6,
 						["amount"] = 5639,
 						["c_min"] = 1072,
-						["n_min"] = 542,
-						["n_num"] = 2,
 						["n_amt"] = 1097,
+						["n_num"] = 2,
+						["n_min"] = 542,
 					},
 					["59653.1"] = {
 						["c_amt"] = 58,
@@ -1274,9 +1274,9 @@ SkadaCharDB = {
 						["count"] = 71,
 						["amount"] = 3039,
 						["c_min"] = 58,
-						["n_min"] = 35,
-						["n_num"] = 70,
 						["n_amt"] = 2981,
+						["n_num"] = 70,
+						["n_min"] = 35,
 					},
 				},
 				["sunder"] = 11,
@@ -1307,31 +1307,17 @@ SkadaCharDB = {
 				["interrupt"] = 2,
 				["class"] = "MAGE",
 				["auras"] = {
-					["-12654.4"] = {
-						["u"] = 91,
+					["-33041.4"] = {
+						["u"] = 4,
 						["t"] = {
-							["Laughing Skull Rogue"] = {
-								["u"] = 3,
+							["Hellfire Imp"] = {
+								["u"] = 4,
 								["n"] = 1,
-							},
-							["Laughing Skull Enforcer"] = {
-								["u"] = 2,
-								["n"] = 1,
-							},
-							["Shadowmoon Warlock"] = {
-								["u"] = 3,
-								["r"] = 1,
-								["n"] = 1,
-							},
-							["Shadowmoon Adept"] = {
-								["u"] = 11,
-								["n"] = 2,
 							},
 						},
-						["r"] = 1,
-						["n"] = 5,
+						["n"] = 1,
 					},
-					["10958.32"] = {
+					["27841.2"] = {
 						["u"] = 87,
 						["n"] = 1,
 					},
@@ -1367,7 +1353,7 @@ SkadaCharDB = {
 						},
 						["n"] = 2,
 					},
-					["10157.64"] = {
+					["10220.16"] = {
 						["u"] = 87,
 						["n"] = 1,
 					},
@@ -1385,15 +1371,29 @@ SkadaCharDB = {
 						},
 						["n"] = 2,
 					},
-					["-33041.4"] = {
-						["u"] = 4,
+					["-12654.4"] = {
+						["u"] = 91,
 						["t"] = {
-							["Hellfire Imp"] = {
-								["u"] = 4,
+							["Laughing Skull Rogue"] = {
+								["u"] = 3,
 								["n"] = 1,
 							},
+							["Laughing Skull Enforcer"] = {
+								["u"] = 2,
+								["n"] = 1,
+							},
+							["Shadowmoon Warlock"] = {
+								["u"] = 3,
+								["r"] = 1,
+								["n"] = 1,
+							},
+							["Shadowmoon Adept"] = {
+								["u"] = 11,
+								["n"] = 2,
+							},
 						},
-						["n"] = 1,
+						["r"] = 1,
+						["n"] = 5,
 					},
 					["-12826.64"] = {
 						["u"] = 38,
@@ -1405,8 +1405,14 @@ SkadaCharDB = {
 						},
 						["n"] = 3,
 					},
-					["10220.16"] = {
-						["u"] = 87,
+					["-25306.4"] = {
+						["u"] = 2,
+						["t"] = {
+							["Laughing Skull Enforcer"] = {
+								["u"] = 2,
+								["n"] = 1,
+							},
+						},
 						["n"] = 1,
 					},
 					["-22959.4"] = {
@@ -1445,17 +1451,11 @@ SkadaCharDB = {
 						["u"] = 87,
 						["n"] = 1,
 					},
-					["-25306.4"] = {
-						["u"] = 2,
-						["t"] = {
-							["Laughing Skull Enforcer"] = {
-								["u"] = 2,
-								["n"] = 1,
-							},
-						},
+					["10157.64"] = {
+						["u"] = 87,
 						["n"] = 1,
 					},
-					["27841.2"] = {
+					["10958.32"] = {
 						["u"] = 87,
 						["n"] = 1,
 					},
@@ -1470,9 +1470,9 @@ SkadaCharDB = {
 				["damagespells"] = {
 					["25306.4"] = {
 						["c_amt"] = 5068,
-						["count"] = 2,
 						["c_max"] = 3058,
-						["c_num"] = 2,
+						["count"] = 2,
+						["amount"] = 5068,
 						["o_amt"] = 819,
 						["c_min"] = 2010,
 						["targets"] = {
@@ -1484,10 +1484,10 @@ SkadaCharDB = {
 								["amount"] = 2010,
 							},
 						},
-						["amount"] = 5068,
+						["c_num"] = 2,
 					},
 					["10199.4"] = {
-						["n_amt"] = 1818,
+						["n_max"] = 1048,
 						["targets"] = {
 							["Shadowmoon Adept"] = {
 								["o_amt"] = 414,
@@ -1500,9 +1500,9 @@ SkadaCharDB = {
 						["count"] = 2,
 						["amount"] = 1818,
 						["o_amt"] = 414,
-						["n_max"] = 1048,
-						["n_num"] = 2,
 						["n_min"] = 770,
+						["n_num"] = 2,
+						["n_amt"] = 1818,
 					},
 					["18809.4"] = {
 						["c_amt"] = 6234,
@@ -1520,21 +1520,8 @@ SkadaCharDB = {
 						},
 						["c_num"] = 2,
 					},
-					["-25306.4"] = {
-						["n_amt"] = 21,
-						["count"] = 1,
-						["amount"] = 21,
-						["targets"] = {
-							["Laughing Skull Enforcer"] = {
-								["amount"] = 21,
-							},
-						},
-						["n_max"] = 21,
-						["n_num"] = 1,
-						["n_min"] = 21,
-					},
 					["33041.4"] = {
-						["n_amt"] = 656,
+						["n_max"] = 656,
 						["count"] = 1,
 						["amount"] = 656,
 						["targets"] = {
@@ -1542,9 +1529,22 @@ SkadaCharDB = {
 								["amount"] = 656,
 							},
 						},
-						["n_max"] = 656,
-						["n_num"] = 1,
 						["n_min"] = 656,
+						["n_num"] = 1,
+						["n_amt"] = 656,
+					},
+					["-25306.4"] = {
+						["n_max"] = 21,
+						["count"] = 1,
+						["amount"] = 21,
+						["targets"] = {
+							["Laughing Skull Enforcer"] = {
+								["amount"] = 21,
+							},
+						},
+						["n_min"] = 21,
+						["n_num"] = 1,
+						["n_amt"] = 21,
 					},
 					["10161.16"] = {
 						["c_amt"] = 3860,
@@ -1564,26 +1564,29 @@ SkadaCharDB = {
 						},
 						["c_min"] = 958,
 						["amount"] = 4860,
-						["n_amt"] = 1000,
 						["n_min"] = 485,
+						["n_amt"] = 1000,
 						["n_num"] = 2,
 						["count"] = 6,
 					},
-					["-44457.4"] = {
-						["n_amt"] = 1146,
-						["count"] = 5,
-						["amount"] = 1146,
+					["10230.16"] = {
+						["n_max"] = 117,
+						["count"] = 2,
+						["amount"] = 218,
 						["targets"] = {
-							["Laughing Skull Enforcer"] = {
-								["amount"] = 1146,
+							["Hellfire Imp"] = {
+								["amount"] = 117,
+							},
+							["Laughing Skull Rogue"] = {
+								["amount"] = 101,
 							},
 						},
-						["n_max"] = 261,
-						["n_num"] = 5,
-						["n_min"] = 208,
+						["n_min"] = 101,
+						["n_num"] = 2,
+						["n_amt"] = 218,
 					},
 					["-12654.4"] = {
-						["n_amt"] = 629,
+						["n_max"] = 160,
 						["count"] = 4,
 						["amount"] = 629,
 						["targets"] = {
@@ -1597,9 +1600,9 @@ SkadaCharDB = {
 								["amount"] = 320,
 							},
 						},
-						["n_max"] = 160,
-						["n_num"] = 4,
 						["n_min"] = 151,
+						["n_num"] = 4,
+						["n_amt"] = 629,
 					},
 					["10207.4"] = {
 						["c_amt"] = 2352,
@@ -1625,29 +1628,26 @@ SkadaCharDB = {
 								["amount"] = 1155,
 							},
 						},
-						["count"] = 11,
 						["c_min"] = 756,
+						["count"] = 11,
 						["amount"] = 6512,
 						["o_amt"] = 170,
-						["n_min"] = 464,
-						["n_num"] = 8,
 						["n_amt"] = 4160,
+						["n_num"] = 8,
+						["n_min"] = 464,
 					},
-					["10230.16"] = {
-						["n_amt"] = 218,
-						["count"] = 2,
-						["amount"] = 218,
+					["-44457.4"] = {
+						["n_max"] = 261,
+						["count"] = 5,
+						["amount"] = 1146,
 						["targets"] = {
-							["Hellfire Imp"] = {
-								["amount"] = 117,
-							},
-							["Laughing Skull Rogue"] = {
-								["amount"] = 101,
+							["Laughing Skull Enforcer"] = {
+								["amount"] = 1146,
 							},
 						},
-						["n_max"] = 117,
-						["n_num"] = 2,
-						["n_min"] = 101,
+						["n_min"] = 208,
+						["n_num"] = 5,
+						["n_amt"] = 1146,
 					},
 				},
 				["interruptspells"] = {
@@ -1697,7 +1697,6 @@ SkadaCharDB = {
 				},
 				["id"] = "0xF13001127C000189",
 				["class"] = "SHAMAN",
-				["overkill"] = 3088,
 				["auras"] = {
 					["63283.4"] = {
 						["u"] = 87,
@@ -1782,6 +1781,7 @@ SkadaCharDB = {
 						["n"] = 1,
 					},
 				},
+				["overkill"] = 3088,
 				["dispel"] = 3,
 				["role"] = "NONE",
 				["time"] = 75.48999999999998,
@@ -1808,13 +1808,13 @@ SkadaCharDB = {
 								["amount"] = 7677,
 							},
 						},
-						["count"] = 10,
 						["c_min"] = 2115,
+						["count"] = 10,
 						["amount"] = 16537,
 						["o_amt"] = 1415,
-						["n_min"] = 1002,
-						["n_num"] = 5,
 						["n_amt"] = 5456,
+						["n_num"] = 5,
+						["n_min"] = 1002,
 					},
 					["45300.8"] = {
 						["c_amt"] = 1596,
@@ -1830,7 +1830,7 @@ SkadaCharDB = {
 						["c_num"] = 2,
 					},
 					["26363.8"] = {
-						["n_amt"] = 397,
+						["n_max"] = 397,
 						["count"] = 1,
 						["amount"] = 397,
 						["targets"] = {
@@ -1838,15 +1838,15 @@ SkadaCharDB = {
 								["amount"] = 397,
 							},
 						},
-						["n_max"] = 397,
-						["n_num"] = 1,
 						["n_min"] = 397,
+						["n_num"] = 1,
+						["n_amt"] = 397,
 					},
 					["45294.8"] = {
 						["c_amt"] = 2065,
-						["count"] = 2,
 						["c_max"] = 1065,
-						["c_num"] = 2,
+						["count"] = 2,
+						["amount"] = 2065,
 						["o_amt"] = 967,
 						["c_min"] = 1000,
 						["targets"] = {
@@ -1858,7 +1858,7 @@ SkadaCharDB = {
 								["amount"] = 1065,
 							},
 						},
-						["amount"] = 2065,
+						["c_num"] = 2,
 					},
 					["10605.8"] = {
 						["c_amt"] = 11311,
@@ -1881,13 +1881,13 @@ SkadaCharDB = {
 								["amount"] = 8042,
 							},
 						},
-						["count"] = 16,
 						["c_min"] = 861,
+						["count"] = 16,
 						["amount"] = 18037,
 						["o_amt"] = 388,
-						["n_min"] = 442,
-						["n_num"] = 9,
 						["n_amt"] = 6726,
+						["n_num"] = 9,
+						["n_min"] = 442,
 					},
 					["29228.4"] = {
 						["c_amt"] = 8826,
@@ -1910,13 +1910,13 @@ SkadaCharDB = {
 								["amount"] = 5888,
 							},
 						},
-						["count"] = 10,
 						["c_min"] = 1334,
+						["count"] = 10,
 						["amount"] = 11994,
 						["o_amt"] = 195,
-						["n_min"] = 707,
-						["n_num"] = 4,
 						["n_amt"] = 3168,
+						["n_num"] = 4,
+						["n_min"] = 707,
 					},
 					["-29228.4"] = {
 						["r_amt"] = 75,
@@ -2277,16 +2277,16 @@ SkadaCharDB = {
 								["amount"] = 4271,
 							},
 						},
-						["count"] = 9,
 						["c_min"] = 2113,
+						["count"] = 9,
 						["amount"] = 13606,
 						["o_amt"] = 631,
-						["n_min"] = 989,
-						["n_num"] = 6,
 						["n_amt"] = 6842,
+						["n_num"] = 6,
+						["n_min"] = 989,
 					},
 					["-29228.4"] = {
-						["n_amt"] = 1514,
+						["n_max"] = 185,
 						["count"] = 9,
 						["amount"] = 1514,
 						["targets"] = {
@@ -2303,9 +2303,9 @@ SkadaCharDB = {
 								["amount"] = 516,
 							},
 						},
-						["n_max"] = 185,
-						["n_num"] = 9,
 						["n_min"] = 160,
+						["n_num"] = 9,
+						["n_amt"] = 1514,
 					},
 					["6603.1"] = {
 						["c_amt"] = 1222,
@@ -2321,7 +2321,7 @@ SkadaCharDB = {
 						["c_num"] = 1,
 					},
 					["26363.8"] = {
-						["n_amt"] = 1005,
+						["n_max"] = 533,
 						["count"] = 2,
 						["amount"] = 1005,
 						["targets"] = {
@@ -2332,9 +2332,9 @@ SkadaCharDB = {
 								["amount"] = 472,
 							},
 						},
-						["n_max"] = 533,
-						["n_num"] = 2,
 						["n_min"] = 472,
+						["n_num"] = 2,
+						["n_amt"] = 1005,
 					},
 					["29228.4"] = {
 						["c_amt"] = 5834,
@@ -2362,9 +2362,9 @@ SkadaCharDB = {
 						["count"] = 10,
 						["amount"] = 7854,
 						["c_min"] = 865,
-						["n_min"] = 492,
-						["n_num"] = 4,
 						["n_amt"] = 2020,
+						["n_num"] = 4,
+						["n_min"] = 492,
 					},
 					["10605.8"] = {
 						["c_amt"] = 1552,
@@ -2379,13 +2379,13 @@ SkadaCharDB = {
 								["amount"] = 2208,
 							},
 						},
-						["mis_n"] = 1,
 						["count"] = 6,
+						["c_min"] = 1552,
 						["amount"] = 4716,
 						["n_min"] = 396,
 						["n_amt"] = 3164,
 						["n_num"] = 4,
-						["c_min"] = 1552,
+						["mis_n"] = 1,
 					},
 				},
 				["last"] = 119308.152,
@@ -2485,7 +2485,7 @@ SkadaCharDB = {
 			["Bink"] = {
 				["damagespells"] = {
 					["-44457.4"] = {
-						["n_amt"] = 208,
+						["n_max"] = 208,
 						["count"] = 1,
 						["amount"] = 208,
 						["targets"] = {
@@ -2493,9 +2493,9 @@ SkadaCharDB = {
 								["amount"] = 208,
 							},
 						},
-						["n_max"] = 208,
-						["n_num"] = 1,
 						["n_min"] = 208,
+						["n_num"] = 1,
+						["n_amt"] = 208,
 					},
 					["10199.4"] = {
 						["c_amt"] = 1071,
@@ -2514,7 +2514,7 @@ SkadaCharDB = {
 						["count"] = 1,
 					},
 					["10207.4"] = {
-						["n_amt"] = 430,
+						["n_max"] = 430,
 						["count"] = 1,
 						["amount"] = 430,
 						["targets"] = {
@@ -2522,21 +2522,21 @@ SkadaCharDB = {
 								["amount"] = 430,
 							},
 						},
-						["n_max"] = 430,
-						["n_num"] = 1,
 						["n_min"] = 430,
+						["n_num"] = 1,
+						["n_amt"] = 430,
 					},
 				},
 				["auras"] = {
-					["10220.16"] = {
-						["u"] = 11,
-						["n"] = 1,
-					},
 					["10157.64"] = {
 						["u"] = 11,
 						["n"] = 1,
 					},
 					["27841.2"] = {
+						["u"] = 11,
+						["n"] = 1,
+					},
+					["10958.32"] = {
 						["u"] = 11,
 						["n"] = 1,
 					},
@@ -2558,6 +2558,10 @@ SkadaCharDB = {
 						["u"] = 11,
 						["n"] = 1,
 					},
+					["10220.16"] = {
+						["u"] = 11,
+						["n"] = 1,
+					},
 					["-22959.4"] = {
 						["u"] = 1,
 						["t"] = {
@@ -2568,24 +2572,20 @@ SkadaCharDB = {
 						},
 						["n"] = 1,
 					},
-					["10958.32"] = {
-						["u"] = 11,
-						["n"] = 1,
-					},
 				},
 				["manaspells"] = {
 					["29077.64"] = 66,
 				},
-				["mana"] = 66,
-				["id"] = "0xF1300112A9000187",
 				["class"] = "MAGE",
+				["id"] = "0xF1300112A9000187",
+				["mana"] = 66,
 				["overkill"] = 194,
 				["damage"] = 1709,
 			},
 			["Umbrua"] = {
 				["damagespells"] = {
 					["15208.8"] = {
-						["n_amt"] = 1090,
+						["n_max"] = 1090,
 						["count"] = 1,
 						["amount"] = 1090,
 						["targets"] = {
@@ -2593,12 +2593,12 @@ SkadaCharDB = {
 								["amount"] = 1090,
 							},
 						},
-						["n_max"] = 1090,
-						["n_num"] = 1,
 						["n_min"] = 1090,
+						["n_num"] = 1,
+						["n_amt"] = 1090,
 					},
 					["29228.4"] = {
-						["n_amt"] = 492,
+						["n_max"] = 492,
 						["count"] = 1,
 						["amount"] = 492,
 						["targets"] = {
@@ -2606,12 +2606,12 @@ SkadaCharDB = {
 								["amount"] = 492,
 							},
 						},
-						["n_max"] = 492,
-						["n_num"] = 1,
 						["n_min"] = 492,
+						["n_num"] = 1,
+						["n_amt"] = 492,
 					},
 					["-29228.4"] = {
-						["n_amt"] = 144,
+						["n_max"] = 144,
 						["r_amt"] = 16,
 						["count"] = 1,
 						["amount"] = 144,
@@ -2620,9 +2620,9 @@ SkadaCharDB = {
 								["amount"] = 144,
 							},
 						},
-						["n_max"] = 144,
-						["n_num"] = 1,
 						["n_min"] = 144,
+						["n_num"] = 1,
+						["n_amt"] = 144,
 					},
 				},
 				["last"] = 119209.815,
@@ -2682,17 +2682,17 @@ SkadaCharDB = {
 			["Javad"] = {
 				["damagespells"] = {
 					["29228.4"] = {
+						["mis_n"] = 1,
 						["count"] = 1,
 						["targets"] = {
 							["Laughing Skull Rogue"] = {
 								["amount"] = 0,
 							},
 						},
-						["mis_n"] = 1,
 						["amount"] = 0,
 					},
 					["15208.8"] = {
-						["n_amt"] = 981,
+						["n_max"] = 981,
 						["count"] = 1,
 						["amount"] = 981,
 						["targets"] = {
@@ -2700,9 +2700,9 @@ SkadaCharDB = {
 								["amount"] = 981,
 							},
 						},
-						["n_max"] = 981,
-						["n_num"] = 1,
 						["n_min"] = 981,
+						["n_num"] = 1,
+						["n_amt"] = 981,
 					},
 				},
 				["last"] = 119209.683,
@@ -2899,10 +2899,10 @@ SkadaCharDB = {
 						},
 						["count"] = 1,
 						["amount"] = 238,
-						["n_amt"] = 238,
 						["n_max"] = 238,
-						["n_num"] = 1,
 						["n_min"] = 238,
+						["n_num"] = 1,
+						["n_amt"] = 238,
 					},
 				},
 				["class"] = "WARRIOR",
@@ -2951,7 +2951,7 @@ SkadaCharDB = {
 				["spec"] = 73,
 				["healspells"] = {
 					["58879.32.Spirit Wolf"] = {
-						["n_amt"] = 403,
+						["n_max"] = 403,
 						["targets"] = {
 							["Umbrua"] = {
 								["o_amt"] = 2448,
@@ -2965,9 +2965,9 @@ SkadaCharDB = {
 						["count"] = 10,
 						["amount"] = 403,
 						["o_amt"] = 4493,
-						["n_max"] = 403,
-						["n_num"] = 10,
 						["n_min"] = 0,
+						["n_num"] = 10,
+						["n_amt"] = 403,
 					},
 				},
 				["heal"] = 403,
@@ -2991,9 +2991,9 @@ SkadaCharDB = {
 						["count"] = 6,
 						["amount"] = 1845,
 						["c_min"] = 580,
-						["n_min"] = 212,
-						["n_num"] = 5,
 						["n_amt"] = 1265,
+						["n_num"] = 5,
+						["n_min"] = 212,
 					},
 					["11581.1"] = {
 						["c_amt"] = 446,
@@ -3034,12 +3034,12 @@ SkadaCharDB = {
 						["count"] = 2,
 						["amount"] = 384,
 						["c_min"] = 240,
-						["n_min"] = 144,
-						["n_num"] = 1,
 						["n_amt"] = 144,
+						["n_num"] = 1,
+						["n_min"] = 144,
 					},
 					["59653.1"] = {
-						["n_amt"] = 35,
+						["n_max"] = 35,
 						["count"] = 1,
 						["amount"] = 35,
 						["targets"] = {
@@ -3047,9 +3047,9 @@ SkadaCharDB = {
 								["amount"] = 35,
 							},
 						},
-						["n_max"] = 35,
-						["n_num"] = 1,
 						["n_min"] = 35,
+						["n_num"] = 1,
+						["n_amt"] = 35,
 					},
 				},
 				["timespent"] = {
@@ -3096,10 +3096,10 @@ SkadaCharDB = {
 						},
 						["count"] = 1,
 						["amount"] = 50,
-						["n_amt"] = 50,
 						["n_max"] = 50,
-						["n_num"] = 1,
 						["n_min"] = 50,
+						["n_num"] = 1,
+						["n_amt"] = 50,
 					},
 					["3391.1.6603"] = {
 						["total"] = 1162,
@@ -3112,13 +3112,13 @@ SkadaCharDB = {
 						},
 						["count"] = 4,
 						["amount"] = 877,
-						["n_amt"] = 877,
 						["n_min"] = 275,
-						["n_num"] = 3,
 						["abs_n"] = 1,
+						["n_num"] = 3,
+						["n_amt"] = 877,
 					},
 					["11978.1"] = {
-						["n_min"] = 15,
+						["dod_n"] = 1,
 						["sources"] = {
 							["Shadowmoon Adept"] = {
 								["amount"] = 60,
@@ -3126,10 +3126,10 @@ SkadaCharDB = {
 						},
 						["count"] = 5,
 						["amount"] = 60,
-						["dod_n"] = 1,
-						["n_max"] = 15,
-						["n_num"] = 4,
+						["n_min"] = 15,
 						["n_amt"] = 60,
+						["n_num"] = 4,
+						["n_max"] = 15,
 					},
 					["6603.1"] = {
 						["c_amt"] = 1118,
@@ -3322,15 +3322,12 @@ SkadaCharDB = {
 				["damage"] = 37752,
 				["rage"] = 110,
 				["overheal"] = 11611,
-				["ragespells"] = {
-					["34846.1"] = 45,
-					["23602.1"] = 65,
-				},
+				["heal"] = 2408,
 				["id"] = "0x0000000000000013",
 				["spec"] = 73,
 				["healspells"] = {
 					["58879.32.Spirit Wolf"] = {
-						["n_amt"] = 2408,
+						["n_max"] = 654,
 						["targets"] = {
 							["Umbrua"] = {
 								["o_amt"] = 6849,
@@ -3344,12 +3341,12 @@ SkadaCharDB = {
 						["count"] = 36,
 						["amount"] = 2408,
 						["o_amt"] = 11578,
-						["n_max"] = 654,
-						["n_num"] = 36,
 						["n_min"] = 0,
+						["n_num"] = 36,
+						["n_amt"] = 2408,
 					},
 					["18817.32"] = {
-						["n_amt"] = 0,
+						["n_max"] = 0,
 						["targets"] = {
 							["Oakenshield"] = {
 								["o_amt"] = 33,
@@ -3359,19 +3356,22 @@ SkadaCharDB = {
 						["count"] = 1,
 						["amount"] = 0,
 						["o_amt"] = 33,
-						["n_max"] = 0,
-						["n_num"] = 1,
 						["n_min"] = 0,
+						["n_num"] = 1,
+						["n_amt"] = 0,
 					},
 				},
 				["overkill"] = 640,
-				["ccdone"] = 3,
-				["heal"] = 2408,
+				["petdamage"] = 4664,
+				["ragespells"] = {
+					["34846.1"] = 45,
+					["23602.1"] = 65,
+				},
 				["sundertargets"] = {
 					["Shadowmoon Adept"] = 6,
 					["Laughing Skull Enforcer"] = 9,
 				},
-				["petdamage"] = 4664,
+				["ccdone"] = 3,
 				["totaldamaged"] = 9188,
 				["damagespells"] = {
 					["6603.1.Spirit Wolf"] = {
@@ -3389,12 +3389,12 @@ SkadaCharDB = {
 						},
 						["dod_n"] = 2,
 						["mis_n"] = 1,
-						["count"] = 21,
+						["c_min"] = 436,
 						["amount"] = 4664,
 						["n_amt"] = 4228,
 						["n_min"] = 202,
 						["n_num"] = 17,
-						["c_min"] = 436,
+						["count"] = 21,
 					},
 					["11581.1"] = {
 						["c_amt"] = 5372,
@@ -3414,16 +3414,16 @@ SkadaCharDB = {
 								["amount"] = 3946,
 							},
 						},
-						["count"] = 19,
 						["c_min"] = 446,
+						["count"] = 19,
 						["amount"] = 7362,
 						["o_amt"] = 640,
-						["n_min"] = 226,
-						["n_num"] = 8,
 						["n_amt"] = 1990,
+						["n_num"] = 8,
+						["n_min"] = 226,
 					},
 					["25288.1"] = {
-						["n_amt"] = 7298,
+						["n_max"] = 1249,
 						["b_amt"] = 30,
 						["count"] = 6,
 						["amount"] = 7298,
@@ -3435,9 +3435,9 @@ SkadaCharDB = {
 								["amount"] = 2487,
 							},
 						},
-						["n_max"] = 1249,
-						["n_num"] = 6,
 						["n_min"] = 1169,
+						["n_num"] = 6,
+						["n_amt"] = 7298,
 					},
 					["30016.1"] = {
 						["c_amt"] = 3112,
@@ -3455,9 +3455,9 @@ SkadaCharDB = {
 						["count"] = 15,
 						["amount"] = 6623,
 						["c_min"] = 526,
-						["n_min"] = 282,
-						["n_num"] = 10,
 						["n_amt"] = 3511,
+						["n_num"] = 10,
+						["n_min"] = 282,
 					},
 					["6603.1"] = {
 						["c_amt"] = 3962,
@@ -3480,15 +3480,15 @@ SkadaCharDB = {
 						["g_num"] = 5,
 						["g_min"] = 116,
 						["g_max"] = 163,
-						["count"] = 39,
+						["c_min"] = 274,
 						["amount"] = 7952,
 						["n_amt"] = 3260,
 						["n_min"] = 103,
 						["n_num"] = 22,
-						["c_min"] = 274,
+						["count"] = 39,
 					},
 					["18817.32"] = {
-						["n_amt"] = 33,
+						["n_max"] = 33,
 						["count"] = 1,
 						["amount"] = 33,
 						["targets"] = {
@@ -3496,12 +3496,12 @@ SkadaCharDB = {
 								["amount"] = 33,
 							},
 						},
-						["n_max"] = 33,
-						["n_num"] = 1,
 						["n_min"] = 33,
+						["n_num"] = 1,
+						["n_amt"] = 33,
 					},
 					["23925.1"] = {
-						["n_max"] = 601,
+						["n_min"] = 547,
 						["targets"] = {
 							["Hellfire Imp"] = {
 								["amount"] = 547,
@@ -3515,10 +3515,10 @@ SkadaCharDB = {
 						},
 						["count"] = 5,
 						["amount"] = 2259,
-						["n_min"] = 547,
-						["n_amt"] = 2259,
-						["n_num"] = 4,
+						["n_max"] = 601,
 						["dod_n"] = 1,
+						["n_num"] = 4,
+						["n_amt"] = 2259,
 					},
 					["59653.1"] = {
 						["c_amt"] = 58,
@@ -3539,9 +3539,9 @@ SkadaCharDB = {
 						["count"] = 35,
 						["amount"] = 1561,
 						["c_min"] = 58,
-						["n_min"] = 35,
-						["n_num"] = 34,
 						["n_amt"] = 1503,
+						["n_num"] = 34,
+						["n_min"] = 35,
 					},
 				},
 				["sunder"] = 15,
@@ -3667,9 +3667,9 @@ SkadaCharDB = {
 				["damagespells"] = {
 					["25306.4"] = {
 						["c_amt"] = 6569,
-						["count"] = 2,
 						["c_max"] = 4303,
-						["c_num"] = 2,
+						["count"] = 2,
+						["amount"] = 6569,
 						["o_amt"] = 1630,
 						["c_min"] = 2266,
 						["targets"] = {
@@ -3678,7 +3678,7 @@ SkadaCharDB = {
 								["amount"] = 6569,
 							},
 						},
-						["amount"] = 6569,
+						["c_num"] = 2,
 					},
 					["10199.4"] = {
 						["c_amt"] = 1774,
@@ -3696,76 +3696,13 @@ SkadaCharDB = {
 						},
 						["c_min"] = 1774,
 						["amount"] = 2492,
-						["n_amt"] = 718,
 						["n_min"] = 718,
+						["n_amt"] = 718,
 						["n_num"] = 1,
 						["count"] = 2,
 					},
-					["10161.16"] = {
-						["c_amt"] = 954,
-						["count"] = 1,
-						["amount"] = 954,
-						["c_max"] = 954,
-						["c_min"] = 954,
-						["targets"] = {
-							["Shadowmoon Adept"] = {
-								["amount"] = 954,
-							},
-						},
-						["c_num"] = 1,
-					},
-					["-12654.4"] = {
-						["n_amt"] = 3840,
-						["targets"] = {
-							["Shadowmoon Adept"] = {
-								["o_amt"] = 111,
-								["amount"] = 2868,
-							},
-							["Laughing Skull Enforcer"] = {
-								["o_amt"] = 270,
-								["amount"] = 972,
-							},
-						},
-						["count"] = 12,
-						["amount"] = 3840,
-						["o_amt"] = 381,
-						["n_max"] = 661,
-						["n_num"] = 12,
-						["n_min"] = 132,
-					},
-					["10230.16"] = {
-						["n_amt"] = 97,
-						["count"] = 1,
-						["amount"] = 97,
-						["targets"] = {
-							["Shadowmoon Adept"] = {
-								["amount"] = 97,
-							},
-						},
-						["n_max"] = 97,
-						["n_num"] = 1,
-						["n_min"] = 97,
-					},
-					["44461.4"] = {
-						["n_amt"] = 2513,
-						["targets"] = {
-							["Hellfire Imp"] = {
-								["amount"] = 471,
-							},
-							["Shadowmoon Adept"] = {
-								["o_amt"] = 394,
-								["amount"] = 2042,
-							},
-						},
-						["count"] = 5,
-						["amount"] = 2513,
-						["o_amt"] = 394,
-						["n_max"] = 525,
-						["n_num"] = 5,
-						["n_min"] = 471,
-					},
 					["42213.16"] = {
-						["n_amt"] = 909,
+						["n_max"] = 303,
 						["targets"] = {
 							["Shadowmoon Adept"] = {
 								["o_amt"] = 6,
@@ -3779,59 +3716,9 @@ SkadaCharDB = {
 						["count"] = 3,
 						["amount"] = 909,
 						["o_amt"] = 77,
-						["n_max"] = 303,
-						["n_num"] = 3,
 						["n_min"] = 303,
-					},
-					["-44457.4"] = {
-						["n_amt"] = 1935,
-						["r_amt"] = 25,
-						["count"] = 8,
-						["amount"] = 1935,
-						["targets"] = {
-							["Shadowmoon Adept"] = {
-								["amount"] = 1935,
-							},
-						},
-						["n_max"] = 258,
-						["n_num"] = 8,
-						["n_min"] = 232,
-					},
-					["-18809.4"] = {
-						["n_amt"] = 473,
-						["count"] = 5,
-						["amount"] = 473,
-						["targets"] = {
-							["Shadowmoon Adept"] = {
-								["amount"] = 473,
-							},
-						},
-						["n_max"] = 96,
-						["n_num"] = 5,
-						["n_min"] = 89,
-					},
-					["10207.4"] = {
-						["c_amt"] = 2952,
-						["r_amt"] = 216,
-						["c_max"] = 811,
-						["c_num"] = 4,
-						["n_max"] = 743,
-						["targets"] = {
-							["Shadowmoon Adept"] = {
-								["o_amt"] = 303,
-								["amount"] = 3708,
-							},
-							["Laughing Skull Enforcer"] = {
-								["amount"] = 2616,
-							},
-						},
-						["count"] = 10,
-						["c_min"] = 663,
-						["amount"] = 6324,
-						["o_amt"] = 303,
-						["n_min"] = 388,
-						["n_num"] = 6,
-						["n_amt"] = 3372,
+						["n_num"] = 3,
+						["n_amt"] = 909,
 					},
 					["18809.4"] = {
 						["c_amt"] = 7858,
@@ -3848,19 +3735,128 @@ SkadaCharDB = {
 						},
 						["c_min"] = 2241,
 						["amount"] = 9329,
-						["n_amt"] = 1471,
 						["n_min"] = 1471,
+						["n_amt"] = 1471,
 						["n_num"] = 1,
 						["count"] = 4,
+					},
+					["10230.16"] = {
+						["n_max"] = 97,
+						["count"] = 1,
+						["amount"] = 97,
+						["targets"] = {
+							["Shadowmoon Adept"] = {
+								["amount"] = 97,
+							},
+						},
+						["n_min"] = 97,
+						["n_num"] = 1,
+						["n_amt"] = 97,
+					},
+					["44461.4"] = {
+						["n_max"] = 525,
+						["targets"] = {
+							["Hellfire Imp"] = {
+								["amount"] = 471,
+							},
+							["Shadowmoon Adept"] = {
+								["o_amt"] = 394,
+								["amount"] = 2042,
+							},
+						},
+						["count"] = 5,
+						["amount"] = 2513,
+						["o_amt"] = 394,
+						["n_min"] = 471,
+						["n_num"] = 5,
+						["n_amt"] = 2513,
+					},
+					["10161.16"] = {
+						["c_amt"] = 954,
+						["count"] = 1,
+						["amount"] = 954,
+						["c_max"] = 954,
+						["c_min"] = 954,
+						["targets"] = {
+							["Shadowmoon Adept"] = {
+								["amount"] = 954,
+							},
+						},
+						["c_num"] = 1,
+					},
+					["-44457.4"] = {
+						["n_max"] = 258,
+						["r_amt"] = 25,
+						["count"] = 8,
+						["amount"] = 1935,
+						["targets"] = {
+							["Shadowmoon Adept"] = {
+								["amount"] = 1935,
+							},
+						},
+						["n_min"] = 232,
+						["n_num"] = 8,
+						["n_amt"] = 1935,
+					},
+					["-18809.4"] = {
+						["n_max"] = 96,
+						["count"] = 5,
+						["amount"] = 473,
+						["targets"] = {
+							["Shadowmoon Adept"] = {
+								["amount"] = 473,
+							},
+						},
+						["n_min"] = 89,
+						["n_num"] = 5,
+						["n_amt"] = 473,
+					},
+					["10207.4"] = {
+						["c_amt"] = 2952,
+						["r_amt"] = 216,
+						["c_max"] = 811,
+						["c_num"] = 4,
+						["n_max"] = 743,
+						["targets"] = {
+							["Shadowmoon Adept"] = {
+								["o_amt"] = 303,
+								["amount"] = 3708,
+							},
+							["Laughing Skull Enforcer"] = {
+								["amount"] = 2616,
+							},
+						},
+						["c_min"] = 663,
+						["count"] = 10,
+						["amount"] = 6324,
+						["o_amt"] = 303,
+						["n_amt"] = 3372,
+						["n_num"] = 6,
+						["n_min"] = 388,
+					},
+					["-12654.4"] = {
+						["n_max"] = 661,
+						["targets"] = {
+							["Shadowmoon Adept"] = {
+								["o_amt"] = 111,
+								["amount"] = 2868,
+							},
+							["Laughing Skull Enforcer"] = {
+								["o_amt"] = 270,
+								["amount"] = 972,
+							},
+						},
+						["count"] = 12,
+						["amount"] = 3840,
+						["o_amt"] = 381,
+						["n_min"] = 132,
+						["n_num"] = 12,
+						["n_amt"] = 3840,
 					},
 				},
 				["interrupt"] = 2,
 				["class"] = "MAGE",
 				["auras"] = {
-					["27841.2"] = {
-						["u"] = 79,
-						["n"] = 1,
-					},
 					["-22959.4"] = {
 						["u"] = 248,
 						["t"] = {
@@ -3874,6 +3870,10 @@ SkadaCharDB = {
 							},
 						},
 						["n"] = 9,
+					},
+					["10958.32"] = {
+						["u"] = 79,
+						["n"] = 1,
 					},
 					["-7321.16"] = {
 						["u"] = 7,
@@ -3983,7 +3983,7 @@ SkadaCharDB = {
 						},
 						["n"] = 1,
 					},
-					["10958.32"] = {
+					["27841.2"] = {
 						["u"] = 79,
 						["n"] = 1,
 					},
@@ -4176,13 +4176,16 @@ SkadaCharDB = {
 						},
 						["amount"] = 3708,
 					},
-					["30016.1"] = {
+					["-29228.4"] = {
 						["sources"] = {
-							["Oakenshield"] = {
-								["amount"] = 2416,
+							["Javad"] = {
+								["amount"] = 459,
+							},
+							["Umbrua"] = {
+								["amount"] = 1170,
 							},
 						},
-						["amount"] = 2416,
+						["amount"] = 1629,
 					},
 					["44461.4"] = {
 						["o_amt"] = 394,
@@ -4202,16 +4205,13 @@ SkadaCharDB = {
 						},
 						["amount"] = 7858,
 					},
-					["-29228.4"] = {
+					["30016.1"] = {
 						["sources"] = {
-							["Javad"] = {
-								["amount"] = 459,
-							},
-							["Umbrua"] = {
-								["amount"] = 1170,
+							["Oakenshield"] = {
+								["amount"] = 2416,
 							},
 						},
-						["amount"] = 1629,
+						["amount"] = 2416,
 					},
 					["25288.1"] = {
 						["sources"] = {
@@ -4293,16 +4293,16 @@ SkadaCharDB = {
 								["amount"] = 7745,
 							},
 						},
-						["count"] = 12,
 						["c_min"] = 1992,
+						["count"] = 12,
 						["amount"] = 18429,
 						["o_amt"] = 1900,
-						["n_min"] = 980,
-						["n_num"] = 7,
 						["n_amt"] = 7566,
+						["n_num"] = 7,
+						["n_min"] = 980,
 					},
 					["-29228.4"] = {
-						["n_amt"] = 1229,
+						["n_max"] = 166,
 						["count"] = 8,
 						["amount"] = 1229,
 						["targets"] = {
@@ -4313,9 +4313,9 @@ SkadaCharDB = {
 								["amount"] = 770,
 							},
 						},
-						["n_max"] = 166,
-						["n_num"] = 8,
 						["n_min"] = 141,
+						["n_num"] = 8,
+						["n_amt"] = 1229,
 					},
 					["10605.8"] = {
 						["c_amt"] = 8957,
@@ -4335,8 +4335,8 @@ SkadaCharDB = {
 						},
 						["c_min"] = 1267,
 						["amount"] = 13579,
-						["n_amt"] = 4622,
 						["n_min"] = 485,
+						["n_amt"] = 4622,
 						["n_num"] = 5,
 						["count"] = 10,
 					},
@@ -4357,12 +4357,12 @@ SkadaCharDB = {
 						["count"] = 8,
 						["amount"] = 8463,
 						["c_min"] = 1334,
-						["n_min"] = 755,
-						["n_num"] = 5,
 						["n_amt"] = 4072,
+						["n_num"] = 5,
+						["n_min"] = 755,
 					},
 					["45294.8"] = {
-						["n_amt"] = 1480,
+						["n_max"] = 535,
 						["count"] = 3,
 						["amount"] = 1480,
 						["targets"] = {
@@ -4373,9 +4373,9 @@ SkadaCharDB = {
 								["amount"] = 976,
 							},
 						},
-						["n_max"] = 535,
-						["n_num"] = 3,
 						["n_min"] = 441,
+						["n_num"] = 3,
+						["n_amt"] = 1480,
 					},
 				},
 				["last"] = 119194.362,
@@ -4510,16 +4510,16 @@ SkadaCharDB = {
 						},
 						["amount"] = 601,
 					},
-					["10605.8"] = {
+					["-29228.4"] = {
 						["sources"] = {
 							["Javad"] = {
-								["amount"] = 7032,
+								["amount"] = 770,
 							},
 							["Umbrua"] = {
-								["amount"] = 2845,
+								["amount"] = 500,
 							},
 						},
-						["amount"] = 9877,
+						["amount"] = 1270,
 					},
 					["10199.4"] = {
 						["sources"] = {
@@ -4537,16 +4537,16 @@ SkadaCharDB = {
 						},
 						["amount"] = 1471,
 					},
-					["-29228.4"] = {
+					["10605.8"] = {
 						["sources"] = {
 							["Javad"] = {
-								["amount"] = 770,
+								["amount"] = 7032,
 							},
 							["Umbrua"] = {
-								["amount"] = 500,
+								["amount"] = 2845,
 							},
 						},
-						["amount"] = 1270,
+						["amount"] = 9877,
 					},
 					["-12654.4"] = {
 						["o_amt"] = 270,
@@ -4646,10 +4646,10 @@ SkadaCharDB = {
 				["overheal"] = 13213,
 				["absorb"] = 1727,
 				["id"] = "0xF13001124E000188",
-				["mana"] = 500,
+				["class"] = "PRIEST",
 				["healspells"] = {
 					["-25315.2"] = {
-						["n_amt"] = 8238,
+						["n_max"] = 626,
 						["targets"] = {
 							["Umbrua"] = {
 								["o_amt"] = 2870,
@@ -4671,9 +4671,9 @@ SkadaCharDB = {
 						["count"] = 35,
 						["amount"] = 8238,
 						["o_amt"] = 10397,
-						["n_max"] = 626,
-						["n_num"] = 35,
 						["n_min"] = 15,
+						["n_num"] = 35,
+						["n_amt"] = 8238,
 					},
 					["10917.2"] = {
 						["c_amt"] = 2086,
@@ -4690,16 +4690,16 @@ SkadaCharDB = {
 								["amount"] = 2762,
 							},
 						},
-						["count"] = 3,
 						["c_min"] = 937,
+						["count"] = 3,
 						["amount"] = 3699,
 						["o_amt"] = 2816,
-						["n_min"] = 1613,
-						["n_num"] = 1,
 						["n_amt"] = 1613,
+						["n_num"] = 1,
+						["n_min"] = 1613,
 					},
 					["56160.2"] = {
-						["n_amt"] = 300,
+						["n_max"] = 300,
 						["count"] = 1,
 						["amount"] = 300,
 						["targets"] = {
@@ -4707,9 +4707,9 @@ SkadaCharDB = {
 								["amount"] = 300,
 							},
 						},
-						["n_max"] = 300,
-						["n_num"] = 1,
 						["n_min"] = 300,
+						["n_num"] = 1,
+						["n_amt"] = 300,
 					},
 				},
 				["auras"] = {
@@ -4776,15 +4776,15 @@ SkadaCharDB = {
 				},
 				["absorbspells"] = {
 					["10901.2"] = {
-						["n_amt"] = 1727,
+						["n_max"] = 327,
 						["count"] = 7,
 						["amount"] = 1727,
 						["targets"] = {
 							["Oakenshield"] = 1727,
 						},
-						["n_max"] = 327,
-						["n_num"] = 7,
 						["n_min"] = 45,
+						["n_num"] = 7,
+						["n_amt"] = 1727,
 					},
 				},
 				["role"] = "NONE",
@@ -4794,7 +4794,7 @@ SkadaCharDB = {
 				["manaspells"] = {
 					["28760.1"] = 500,
 				},
-				["class"] = "PRIEST",
+				["mana"] = 500,
 				["timespent"] = {
 					["Oakenshield"] = 14.18,
 				},
@@ -4884,16 +4884,16 @@ SkadaCharDB = {
 								["amount"] = 6925,
 							},
 						},
-						["count"] = 10,
 						["c_min"] = 2286,
+						["count"] = 10,
 						["amount"] = 14887,
 						["o_amt"] = 1005,
-						["n_min"] = 964,
-						["n_num"] = 7,
 						["n_amt"] = 7939,
+						["n_num"] = 7,
+						["n_min"] = 964,
 					},
 					["-29228.4"] = {
-						["n_amt"] = 1670,
+						["n_max"] = 180,
 						["r_amt"] = 34,
 						["count"] = 10,
 						["amount"] = 1670,
@@ -4905,12 +4905,12 @@ SkadaCharDB = {
 								["amount"] = 500,
 							},
 						},
-						["n_max"] = 180,
-						["n_num"] = 10,
 						["n_min"] = 138,
+						["n_num"] = 10,
+						["n_amt"] = 1670,
 					},
 					["26363.8"] = {
-						["n_amt"] = 1462,
+						["n_max"] = 509,
 						["r_amt"] = 49,
 						["count"] = 3,
 						["amount"] = 1462,
@@ -4922,9 +4922,9 @@ SkadaCharDB = {
 								["amount"] = 1018,
 							},
 						},
-						["n_max"] = 509,
-						["n_num"] = 3,
 						["n_min"] = 444,
+						["n_num"] = 3,
+						["n_amt"] = 1462,
 					},
 					["29228.4"] = {
 						["c_amt"] = 2033,
@@ -4942,8 +4942,8 @@ SkadaCharDB = {
 						},
 						["c_min"] = 952,
 						["amount"] = 4597,
-						["n_amt"] = 2564,
 						["n_min"] = 492,
+						["n_amt"] = 2564,
 						["n_num"] = 5,
 						["count"] = 7,
 					},
@@ -4965,13 +4965,13 @@ SkadaCharDB = {
 								["amount"] = 6597,
 							},
 						},
-						["count"] = 11,
 						["c_min"] = 831,
+						["count"] = 11,
 						["amount"] = 11881,
 						["o_amt"] = 279,
-						["n_min"] = 504,
-						["n_num"] = 7,
 						["n_amt"] = 6344,
+						["n_num"] = 7,
+						["n_min"] = 504,
 					},
 				},
 				["interruptspells"] = {
@@ -5018,11 +5018,11 @@ SkadaCharDB = {
 		["actors"] = {
 			["Bink"] = {
 				["overkill"] = 4382,
-				["class"] = "PET",
-				["ccdone"] = 8,
-				["id"] = "0xF1300112A9000187",
 				["mana"] = 1142,
+				["ccdone"] = 8,
 				["interrupt"] = 4,
+				["class"] = "PET",
+				["id"] = "0xF1300112A9000187",
 				["damage"] = 64306,
 			},
 			["Javad"] = {
@@ -5060,19 +5060,19 @@ SkadaCharDB = {
 			},
 			["Oakenshield"] = {
 				["overheal"] = 16137,
-				["totaldamaged"] = 26063,
-				["spec"] = 73,
-				["id"] = "0x0000000000000013",
+				["class"] = "WARRIOR",
 				["sunder"] = 27,
+				["id"] = "0x0000000000000013",
+				["spec"] = 73,
 				["damaged"] = 22721,
 				["overkill"] = 1165,
-				["heal"] = 2811,
 				["role"] = "TANK",
+				["heal"] = 2811,
 				["time"] = 150.53,
-				["petdamage"] = 6509,
-				["rage"] = 270,
 				["ccdone"] = 14,
-				["class"] = "WARRIOR",
+				["rage"] = 270,
+				["petdamage"] = 6509,
+				["totaldamaged"] = 26063,
 				["damage"] = 86786,
 			},
 		},

@@ -45,22 +45,19 @@ MACRO 16777227 "a1" INV_Misc_QuestionMark
 #showtooltip conjure water
 /cast [target=arena1] counterspell
 END
-MACRO 16777217 "botf" Spell_Misc_EmotionHappy
-.npcbot command follow
-END
 MACRO 16777218 "bots" Spell_Misc_EmotionSad
 .npcbot command stopfully
+END
+MACRO 16777233 "c" INV_Misc_QuestionMark
+#showtooltip icy veins
+/cast  icy veins
+/use Potion of Speed
 END
 MACRO 16777230 "c" INV_Misc_QuestionMark
 #showtooltip counterspell
 /cast [nomod] counterspell
 /cast [mod:shift, target=focus] counterspell
 /cast [mod:ctrl, target=mouseover] counterspell
-END
-MACRO 16777233 "c" INV_Misc_QuestionMark
-#showtooltip combustion
-/cast combustion
-/use Potion of Speed
 END
 MACRO 16777234 "consumables" Spell_Arcane_Arcane01
 .additem 40211 200
@@ -97,6 +94,10 @@ MACRO 16777229 "gems" Spell_Arcane_Arcane01
 .additem 40155
 .additem 40153
 .additem 41285
+END
+MACRO 16777237 "i" INV_Misc_QuestionMark
+#showtooltip ice block
+/cast !ice block
 END
 MACRO 16777226 "p" INV_Misc_QuestionMark
 #showtooltip

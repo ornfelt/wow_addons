@@ -16,8 +16,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [1]
@@ -29,8 +29,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [2]
@@ -42,8 +42,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [3]
@@ -55,8 +55,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [4]
@@ -68,8 +68,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [5]
@@ -81,8 +81,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [6]
@@ -94,8 +94,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [7]
@@ -107,8 +107,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [8]
@@ -120,8 +120,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [9]
@@ -133,8 +133,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [10]
@@ -146,8 +146,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [11]
@@ -159,8 +159,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [12]
@@ -172,8 +172,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [13]
@@ -185,8 +185,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [14]
@@ -198,8 +198,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [15]
@@ -211,8 +211,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [16]
@@ -224,8 +224,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [17]
@@ -237,8 +237,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [18]
@@ -250,8 +250,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [19]
@@ -263,8 +263,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [20]
@@ -276,8 +276,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [21]
@@ -289,8 +289,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [22]
@@ -302,8 +302,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [23]
@@ -315,8 +315,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [24]
@@ -328,8 +328,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [25]
@@ -341,8 +341,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [26]
@@ -354,8 +354,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [27]
@@ -367,8 +367,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [28]
@@ -380,8 +380,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [29]
@@ -393,8 +393,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [30]
@@ -406,8 +406,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [31]
@@ -419,8 +419,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [32]
@@ -432,8 +432,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [33]
@@ -445,8 +445,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [34]
@@ -458,8 +458,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [35]
@@ -471,8 +471,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [36]
@@ -484,8 +484,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [37]
@@ -497,8 +497,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [38]
@@ -510,8 +510,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [39]
@@ -523,8 +523,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [40]
@@ -536,8 +536,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [41]
@@ -549,8 +549,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [42]
@@ -562,8 +562,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [43]
@@ -575,8 +575,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [44]
@@ -588,8 +588,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [45]
@@ -601,8 +601,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [46]
@@ -614,8 +614,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [47]
@@ -627,8 +627,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [48]
@@ -640,8 +640,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [49]
@@ -666,8 +666,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [1]
@@ -679,8 +679,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [2]
@@ -692,8 +692,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [3]
@@ -705,8 +705,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [4]
@@ -718,8 +718,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [5]
@@ -731,8 +731,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [6]
@@ -744,8 +744,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [7]
@@ -757,8 +757,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [8]
@@ -770,8 +770,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [9]
@@ -783,8 +783,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [10]
@@ -796,8 +796,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [11]
@@ -809,8 +809,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [12]
@@ -822,8 +822,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [13]
@@ -835,8 +835,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [14]
@@ -848,8 +848,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [15]
@@ -861,8 +861,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [16]
@@ -874,8 +874,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [17]
@@ -887,8 +887,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [18]
@@ -900,8 +900,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [19]
@@ -913,8 +913,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [20]
@@ -926,8 +926,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [21]
@@ -939,8 +939,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [22]
@@ -952,8 +952,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [23]
@@ -965,8 +965,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [24]
@@ -978,8 +978,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [25]
@@ -991,8 +991,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [26]
@@ -1004,8 +1004,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [27]
@@ -1017,8 +1017,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [28]
@@ -1030,8 +1030,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [29]
@@ -1043,8 +1043,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [30]
@@ -1056,8 +1056,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [31]
@@ -1069,8 +1069,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [32]
@@ -1082,8 +1082,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [33]
@@ -1095,8 +1095,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [34]
@@ -1108,8 +1108,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [35]
@@ -1121,8 +1121,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [36]
@@ -1134,8 +1134,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [37]
@@ -1147,8 +1147,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [38]
@@ -1160,8 +1160,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [39]
@@ -1173,8 +1173,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [40]
@@ -1186,8 +1186,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [41]
@@ -1199,8 +1199,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [42]
@@ -1212,8 +1212,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [43]
@@ -1225,8 +1225,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [44]
@@ -1238,8 +1238,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [45]
@@ -1251,8 +1251,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [46]
@@ -1264,8 +1264,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [47]
@@ -1277,8 +1277,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [48]
@@ -1290,8 +1290,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [49]
@@ -1316,8 +1316,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [1]
@@ -1329,8 +1329,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [2]
@@ -1342,8 +1342,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [3]
@@ -1355,8 +1355,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [4]
@@ -1368,8 +1368,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [5]
@@ -1381,8 +1381,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [6]
@@ -1394,8 +1394,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [7]
@@ -1407,8 +1407,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [8]
@@ -1420,8 +1420,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [9]
@@ -1433,8 +1433,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [10]
@@ -1446,8 +1446,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [11]
@@ -1459,8 +1459,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [12]
@@ -1472,8 +1472,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [13]
@@ -1485,8 +1485,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [14]
@@ -1498,8 +1498,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [15]
@@ -1511,8 +1511,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [16]
@@ -1524,8 +1524,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [17]
@@ -1537,8 +1537,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [18]
@@ -1550,8 +1550,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [19]
@@ -1563,8 +1563,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [20]
@@ -1576,8 +1576,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [21]
@@ -1589,8 +1589,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [22]
@@ -1602,8 +1602,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [23]
@@ -1615,8 +1615,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [24]
@@ -1628,8 +1628,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [25]
@@ -1641,8 +1641,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [26]
@@ -1654,8 +1654,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [27]
@@ -1667,8 +1667,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [28]
@@ -1680,8 +1680,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [29]
@@ -1693,8 +1693,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [30]
@@ -1706,8 +1706,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [31]
@@ -1719,8 +1719,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [32]
@@ -1732,8 +1732,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [33]
@@ -1745,8 +1745,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [34]
@@ -1758,8 +1758,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [35]
@@ -1771,8 +1771,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [36]
@@ -1784,8 +1784,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [37]
@@ -1797,8 +1797,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [38]
@@ -1810,8 +1810,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [39]
@@ -1823,8 +1823,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [40]
@@ -1836,8 +1836,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [41]
@@ -1849,8 +1849,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [42]
@@ -1862,8 +1862,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [43]
@@ -1875,8 +1875,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [44]
@@ -1888,8 +1888,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [45]
@@ -1901,8 +1901,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [46]
@@ -1914,8 +1914,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [47]
@@ -1927,8 +1927,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [48]
@@ -1940,8 +1940,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [49]
@@ -1966,8 +1966,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [1]
@@ -1979,8 +1979,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [2]
@@ -1992,8 +1992,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [3]
@@ -2005,8 +2005,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [4]
@@ -2018,8 +2018,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [5]
@@ -2031,8 +2031,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [6]
@@ -2044,8 +2044,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [7]
@@ -2057,8 +2057,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [8]
@@ -2070,8 +2070,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [9]
@@ -2083,8 +2083,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [10]
@@ -2096,8 +2096,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [11]
@@ -2109,8 +2109,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [12]
@@ -2122,8 +2122,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [13]
@@ -2135,8 +2135,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [14]
@@ -2148,8 +2148,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [15]
@@ -2161,8 +2161,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [16]
@@ -2174,8 +2174,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [17]
@@ -2187,8 +2187,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [18]
@@ -2200,8 +2200,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [19]
@@ -2213,8 +2213,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [20]
@@ -2226,8 +2226,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [21]
@@ -2239,8 +2239,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [22]
@@ -2252,8 +2252,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [23]
@@ -2265,8 +2265,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [24]
@@ -2278,8 +2278,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [25]
@@ -2291,8 +2291,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [26]
@@ -2304,8 +2304,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [27]
@@ -2317,8 +2317,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [28]
@@ -2330,8 +2330,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [29]
@@ -2343,8 +2343,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [30]
@@ -2356,8 +2356,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [31]
@@ -2369,8 +2369,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [32]
@@ -2382,8 +2382,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [33]
@@ -2395,8 +2395,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [34]
@@ -2408,8 +2408,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [35]
@@ -2421,8 +2421,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [36]
@@ -2434,8 +2434,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [37]
@@ -2447,8 +2447,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [38]
@@ -2460,8 +2460,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [39]
@@ -2473,8 +2473,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [40]
@@ -2486,8 +2486,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [41]
@@ -2499,8 +2499,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [42]
@@ -2512,8 +2512,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [43]
@@ -2525,8 +2525,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [44]
@@ -2538,8 +2538,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [45]
@@ -2551,8 +2551,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [46]
@@ -2564,8 +2564,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [47]
@@ -2577,8 +2577,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [48]
@@ -2590,8 +2590,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [49]
@@ -2616,8 +2616,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [1]
@@ -2629,8 +2629,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [2]
@@ -2642,8 +2642,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [3]
@@ -2655,8 +2655,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [4]
@@ -2668,8 +2668,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [5]
@@ -2681,8 +2681,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [6]
@@ -2694,8 +2694,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [7]
@@ -2707,8 +2707,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [8]
@@ -2720,8 +2720,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [9]
@@ -2733,8 +2733,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [10]
@@ -2746,8 +2746,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [11]
@@ -2759,8 +2759,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [12]
@@ -2772,8 +2772,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [13]
@@ -2785,8 +2785,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [14]
@@ -2798,8 +2798,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [15]
@@ -2811,8 +2811,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [16]
@@ -2824,8 +2824,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [17]
@@ -2837,8 +2837,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [18]
@@ -2850,8 +2850,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [19]
@@ -2863,8 +2863,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [20]
@@ -2876,8 +2876,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [21]
@@ -2889,8 +2889,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [22]
@@ -2902,8 +2902,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [23]
@@ -2915,8 +2915,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [24]
@@ -2928,8 +2928,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [25]
@@ -2941,8 +2941,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [26]
@@ -2954,8 +2954,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [27]
@@ -2967,8 +2967,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [28]
@@ -2980,8 +2980,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [29]
@@ -2993,8 +2993,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [30]
@@ -3006,8 +3006,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [31]
@@ -3019,8 +3019,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [32]
@@ -3032,8 +3032,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [33]
@@ -3045,8 +3045,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [34]
@@ -3058,8 +3058,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [35]
@@ -3071,8 +3071,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [36]
@@ -3084,8 +3084,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [37]
@@ -3097,8 +3097,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [38]
@@ -3110,8 +3110,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [39]
@@ -3123,8 +3123,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [40]
@@ -3136,8 +3136,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [41]
@@ -3149,8 +3149,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [42]
@@ -3162,8 +3162,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [43]
@@ -3175,8 +3175,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [44]
@@ -3188,8 +3188,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [45]
@@ -3201,8 +3201,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [46]
@@ -3214,8 +3214,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [47]
@@ -3227,8 +3227,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [48]
@@ -3240,8 +3240,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [49]
@@ -3266,8 +3266,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [1]
@@ -3279,8 +3279,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [2]
@@ -3292,8 +3292,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [3]
@@ -3305,8 +3305,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [4]
@@ -3318,8 +3318,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [5]
@@ -3331,8 +3331,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [6]
@@ -3344,8 +3344,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [7]
@@ -3357,8 +3357,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [8]
@@ -3370,8 +3370,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [9]
@@ -3383,8 +3383,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [10]
@@ -3396,8 +3396,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [11]
@@ -3409,8 +3409,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [12]
@@ -3422,8 +3422,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [13]
@@ -3435,8 +3435,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [14]
@@ -3448,8 +3448,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [15]
@@ -3461,8 +3461,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [16]
@@ -3474,8 +3474,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [17]
@@ -3487,8 +3487,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [18]
@@ -3500,8 +3500,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [19]
@@ -3513,8 +3513,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [20]
@@ -3526,8 +3526,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [21]
@@ -3539,8 +3539,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [22]
@@ -3552,8 +3552,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [23]
@@ -3565,8 +3565,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [24]
@@ -3578,8 +3578,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [25]
@@ -3591,8 +3591,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [26]
@@ -3604,8 +3604,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [27]
@@ -3617,8 +3617,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [28]
@@ -3630,8 +3630,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [29]
@@ -3643,8 +3643,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [30]
@@ -3656,8 +3656,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [31]
@@ -3669,8 +3669,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [32]
@@ -3682,8 +3682,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [33]
@@ -3695,8 +3695,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [34]
@@ -3708,8 +3708,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [35]
@@ -3721,8 +3721,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [36]
@@ -3734,8 +3734,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [37]
@@ -3747,8 +3747,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [38]
@@ -3760,8 +3760,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [39]
@@ -3773,8 +3773,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [40]
@@ -3786,8 +3786,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [41]
@@ -3799,8 +3799,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [42]
@@ -3812,8 +3812,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [43]
@@ -3825,8 +3825,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [44]
@@ -3838,8 +3838,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [45]
@@ -3851,8 +3851,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [46]
@@ -3864,8 +3864,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [47]
@@ -3877,8 +3877,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [48]
@@ -3890,8 +3890,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [49]
@@ -3916,8 +3916,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [1]
@@ -3929,8 +3929,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [2]
@@ -3942,8 +3942,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [3]
@@ -3955,8 +3955,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [4]
@@ -3968,8 +3968,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [5]
@@ -3981,8 +3981,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [6]
@@ -3994,8 +3994,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [7]
@@ -4007,8 +4007,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [8]
@@ -4020,8 +4020,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [9]
@@ -4033,8 +4033,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [10]
@@ -4046,8 +4046,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [11]
@@ -4059,8 +4059,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [12]
@@ -4072,8 +4072,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [13]
@@ -4085,8 +4085,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [14]
@@ -4098,8 +4098,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [15]
@@ -4111,8 +4111,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [16]
@@ -4124,8 +4124,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [17]
@@ -4137,8 +4137,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [18]
@@ -4150,8 +4150,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [19]
@@ -4163,8 +4163,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [20]
@@ -4176,8 +4176,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [21]
@@ -4189,8 +4189,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [22]
@@ -4202,8 +4202,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [23]
@@ -4215,8 +4215,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [24]
@@ -4228,8 +4228,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [25]
@@ -4241,8 +4241,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [26]
@@ -4254,8 +4254,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [27]
@@ -4267,8 +4267,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [28]
@@ -4280,8 +4280,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [29]
@@ -4293,8 +4293,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [30]
@@ -4306,8 +4306,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [31]
@@ -4319,8 +4319,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [32]
@@ -4332,8 +4332,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [33]
@@ -4345,8 +4345,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [34]
@@ -4358,8 +4358,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [35]
@@ -4371,8 +4371,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [36]
@@ -4384,8 +4384,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [37]
@@ -4397,8 +4397,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [38]
@@ -4410,8 +4410,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [39]
@@ -4423,8 +4423,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [40]
@@ -4436,8 +4436,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [41]
@@ -4449,8 +4449,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [42]
@@ -4462,8 +4462,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [43]
@@ -4475,8 +4475,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [44]
@@ -4488,8 +4488,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [45]
@@ -4501,8 +4501,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [46]
@@ -4514,8 +4514,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [47]
@@ -4527,8 +4527,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [48]
@@ -4540,8 +4540,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [49]
@@ -4566,8 +4566,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [1]
@@ -4579,8 +4579,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [2]
@@ -4592,8 +4592,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [3]
@@ -4605,8 +4605,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [4]
@@ -4618,8 +4618,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [5]
@@ -4631,8 +4631,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [6]
@@ -4644,8 +4644,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [7]
@@ -4657,8 +4657,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [8]
@@ -4670,8 +4670,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [9]
@@ -4683,8 +4683,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [10]
@@ -4696,8 +4696,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [11]
@@ -4709,8 +4709,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [12]
@@ -4722,8 +4722,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [13]
@@ -4735,8 +4735,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [14]
@@ -4748,8 +4748,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [15]
@@ -4761,8 +4761,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [16]
@@ -4774,8 +4774,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [17]
@@ -4787,8 +4787,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [18]
@@ -4800,8 +4800,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [19]
@@ -4813,8 +4813,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [20]
@@ -4826,8 +4826,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [21]
@@ -4839,8 +4839,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [22]
@@ -4852,8 +4852,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [23]
@@ -4865,8 +4865,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [24]
@@ -4878,8 +4878,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [25]
@@ -4891,8 +4891,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [26]
@@ -4904,8 +4904,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [27]
@@ -4917,8 +4917,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [28]
@@ -4930,8 +4930,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [29]
@@ -4943,8 +4943,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [30]
@@ -4956,8 +4956,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [31]
@@ -4969,8 +4969,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [32]
@@ -4982,8 +4982,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [33]
@@ -4995,8 +4995,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [34]
@@ -5008,8 +5008,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [35]
@@ -5021,8 +5021,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [36]
@@ -5034,8 +5034,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [37]
@@ -5047,8 +5047,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [38]
@@ -5060,8 +5060,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [39]
@@ -5073,8 +5073,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [40]
@@ -5086,8 +5086,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [41]
@@ -5099,8 +5099,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [42]
@@ -5112,8 +5112,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [43]
@@ -5125,8 +5125,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [44]
@@ -5138,8 +5138,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [45]
@@ -5151,8 +5151,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [46]
@@ -5164,8 +5164,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [47]
@@ -5177,8 +5177,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [48]
@@ -5190,8 +5190,8 @@ TellMeWhen_Settings = {
 					["Unit"] = "player",
 					["OnlyMine"] = false,
 					["Name"] = "",
-					["CooldownType"] = "spell",
 					["BuffShowWhen"] = "present",
+					["CooldownType"] = "spell",
 					["Type"] = "",
 					["Enabled"] = false,
 				}, -- [49]

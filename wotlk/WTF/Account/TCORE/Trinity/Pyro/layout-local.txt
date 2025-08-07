@@ -10,6 +10,6 @@ Frame: HealBot_Action
 FrameLevel: 12
 Anchor: CENTER
 X: -268
-Y: 7
+Y: 22
 W: 136
-H: 64
+H: 34

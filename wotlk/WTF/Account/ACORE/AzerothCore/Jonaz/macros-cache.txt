@@ -45,9 +45,6 @@ MACRO 16777227 "a1" INV_Misc_QuestionMark
 #showtooltip conjure water
 /cast [target=arena1] counterspell
 END
-MACRO 16777217 "botf" Spell_Misc_EmotionHappy
-.npcbot command follow
-END
 MACRO 16777218 "bots" Spell_Misc_EmotionSad
 .npcbot command stopfully
 END
@@ -97,6 +94,10 @@ MACRO 16777229 "gems" Spell_Arcane_Arcane01
 .additem 40155
 .additem 40153
 .additem 41285
+END
+MACRO 16777238 "i" INV_Misc_QuestionMark
+#showtooltip ice block
+/cast !ice block
 END
 MACRO 16777226 "p" INV_Misc_QuestionMark
 #showtooltip

@@ -12,3 +12,4 @@ DBM-VoA: disabled
 DBM-WorldEvents: disabled
 DBM-Party-WotLK: disabled
 DBM-Core: disabled
+Cartographer: enabled

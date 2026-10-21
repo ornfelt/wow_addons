@@ -10,6 +10,6 @@ Frame: TutorialFrame
 FrameLevel: 4
 Anchor: CENTER
 X: -246
-Y: 107
+Y: 21
 W: 230
 H: 128

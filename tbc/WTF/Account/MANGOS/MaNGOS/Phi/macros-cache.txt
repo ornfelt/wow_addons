@@ -1,0 +1,90 @@
+MACRO 16777222 "1" INV_Misc_QuestionMark
+#showtooltip hemorrhage
+/cast [nomod] hemorrhage
+/cast [mod:alt, target=arena1] blind
+END
+MACRO 16777223 "2" INV_Misc_QuestionMark
+#showtooltip sinister strike
+/cast [nomod] sinister strike
+/cast [mod:alt, target=arena2] blind
+END
+MACRO 16777224 "3" INV_Misc_QuestionMark
+#showtooltip cheap shot
+/cast [nomod] cheap shot
+/cast [mod:alt, target=arena3] blind
+END
+MACRO 16777225 "a1" INV_Misc_QuestionMark
+#showtooltip kick
+/cast [target=arena1] shadowstep
+/cast [target=arena1] kick
+END
+MACRO 16777226 "a2" INV_Misc_QuestionMark
+#showtooltip feint
+/cast [nomod] feint
+/cast [mod:alt, target=arena1] shadowstep
+/cast [mod:alt, target=arena1] kick
+END
+MACRO 16777227 "a3" INV_Misc_QuestionMark
+#showtooltip kick
+/cast [target=arena3] shadowstep
+/cast [target=arena3] kick
+END
+MACRO 16777228 "b" INV_Misc_QuestionMark
+#showtooltip blind
+/cast [nomod] blind
+/cast [mod:shift, target=focus] blind
+/cast [mod:ctrl, target=mouseover] blind
+END
+MACRO 16777229 "fs" INV_Misc_QuestionMark
+#showtooltip shadowstep
+/cast [target=focus] shadowstep
+/cast [target=focus] kick
+END
+MACRO 16777230 "g" INV_Misc_QuestionMark
+#showtooltip gouge
+/cast [nomod] gouge
+/cast [mod:shift, target=focus] gouge
+/cast [mod:ctrl, target=mouseover] gouge
+END
+MACRO 16777221 "go_fly" Ability_Mount_NetherdrakePurple
+.additem 32858
+.go creature 72539 
+END
+MACRO 16777218 "go_train" Ability_Hunter_BeastTraining
+#.go creature Miles Dexter
+.go xyz 1419.80 55.70 -62.19 0
+END
+MACRO 16777231 "k" INV_Misc_QuestionMark
+#showtooltip kick
+/cast [nomod] kick
+/cast [mod:shift, target=focus] kick
+/cast [mod:ctrl, target=mouseover] kick
+END
+MACRO 16777220 "m" INV_Misc_QuestionMark
+#showtooltip Horn of the Swift Gray Wolf
+/cancelform
+/stopcasting
+/cancelaura ice block
+/cancelaura levitate
+/cancelaura Sentry totem
+/petfollow
+/use 4 1
+END
+MACRO 16777219 "mount" Ability_Mount_BlackDireWolf
+/s Adding mount
+/script local f=UnitFactionGroup("player") if f=="Alliance" then SendChatMessage(".additem 18767", "SAY") else SendChatMessage(".additem 18798", "SAY") end
+END
+MACRO 16777232 "ms" INV_Misc_QuestionMark
+#showtooltip shadowstep
+/cast [target=mouseover] shadowstep
+END
+MACRO 16777233 "s" INV_Misc_QuestionMark
+#showtooltip sap
+/cast [nomod] sap
+/cast [mod:shift, target=focus] sap
+/cast [mod:ctrl, target=mouseover] sap
+END
+MACRO 16777234 "s" INV_Misc_QuestionMark
+#showtooltip Stealth
+/cast !Stealth
+END

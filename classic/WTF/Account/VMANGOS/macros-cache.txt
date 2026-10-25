@@ -116,10 +116,11 @@ MACRO 8 ".additemsham1" Spell_Nature_Lightning
 .additem 23664
 .additem 21376
 .additem 23050
-.additem 19682
 .additem 21374
 .additem 5176
 .additem 5177
+.additem 8952 100
+.additem 8079 100
 END
 MACRO 9 ".additemsham2" Spell_Nature_Lightning
 .additem 23021
@@ -185,6 +186,7 @@ MACRO 2 "mageitems2" Spell_Frost_ChillingArmor
 .additem 18849
 .additem 22589
 .additem 18842
+.additem 17056 100
 END
 MACRO 4 "ranadd" Ability_Creature_Cursed_04
 .bot ranadd

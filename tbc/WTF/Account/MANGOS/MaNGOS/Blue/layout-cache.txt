@@ -3,6 +3,13 @@ Frame: ChatFrame2
 FrameLevel: 4
 Anchor: BOTTOMLEFT
 X: 32
-Y: 95
+Y: 130
 W: 430
 H: 96
+Frame: LootFrame
+FrameLevel: 0
+Anchor: TOPLEFT
+X: 0
+Y: -104
+W: 256
+H: 256

@@ -1,102 +1,37 @@
-MACRO 16 ".additemdru1" Ability_Druid_TravelForm
-.additem 23035
-.additem 21608
-.additem 22983
-.additem 23050
-.additem 21838
-END
-MACRO 17 ".additemdru2" Ability_Druid_TravelForm
-.additem 21186
-.additem 21585
-.additem 22730
-.additem 23070
-.additem 21600
-.additem 21709
-.additem 23031
-.additem 23207
-.additem 23046
-.additem 22800
-.additem 23197
-.additem 18795
-END
-MACRO 10 ".additemhunt1" Ability_Hunter_BeastTaming
-.additem 22438
-.additem 19377
-.additem 22439
-.additem 21710
-.additem 22436
-.additem 22443
-.additem 16463
-END
-MACRO 11 ".additemhunt2" Ability_Hunter_BeastTaming
-.additem 22442
-.additem 22437
-.additem 22440
-.additem 23067
-.additem 22961
-.additem 13965
-.additem 23041
-.additem 22802
-.additem 23014
-.additem 22812
-.additem 18714
-.additem 18713
-.additem 22441
-.additem 12654 200
-.additem 18042 200
-.additem 4599 200
-END
-MACRO 12 ".additempri1" Spell_Holy_Heal02
-.additem 17966
-.additem 17966
-.additem 17966
-.additem 17966
-.additem 22514
-.additem 23036
-.additem 22515
-.additem 22960
-.additem 22512
-.additem 22519
-.additem 22517
-END
-MACRO 13 ".additempri2" Spell_Holy_Heal
-.additem 22513
-.additem 21582
-.additem 22518
-.additem 22516
-.additem 23061
-.additem 22939
-.additem 23027
-.additem 23047
-.additem 23048
-.additem 23056
-.additem 22801
-.additem 23009
-END
 MACRO 14 ".additemrog1" Ability_Stealth
-.additem 19346
-.additem 19019
-.additem 22478
-.additem 19377
-.additem 22479
-.additem 23045
-.additem 22476
-.additem 22483
-.additem 22481
-.additem 21586
-.additem 22477
+.additem 35033
+.additem 32235
+.additem 35035
+.additem 35036
+.additem 35032
+.additem 35034
+.additem 33923
+.additem 29994
+.additem 32323
+.additem 33881
+.additem 33891
+.additem 30040
+.additem 33892
+.additem 29301
+.additem 32497
+.additem 33919
+.additem 33831
 END
 MACRO 15 ".additemrog2" Ability_Stealth
-.additem 22480
-.additem 23060
-.additem 23038
-.additem 23041
-.additem 22954
-.additem 23054
-.additem 23577
-.additem 22802
-.additem 21126
-.additem 22812
+.additem 37865
+.additem 37864
+.additem 32837
+.additem 35101
+.additem 32838
+.additem 35095
+.additem 33756
+.additem 35108
+.additem 32409
+.additem 32194 3
+.additem 32220 3
+.additem 32212 2
+.additem 5140 100
+.additem 27658 100
 END
 MACRO 8 ".additemsham1" Spell_Nature_Lightning
 .additem 35050
@@ -129,17 +64,21 @@ MACRO 9 ".additemsham2" Spell_Nature_Lightning
 .additem 29988
 .additem 37864
 END
-MACRO 5 "battlebotallywsg" Ability_Warrior_Charge
-.battlebot add warsong alliance
-END
-MACRO 6 "battlebothordews" Ability_Warrior_Charge
-.battlebot add warsong horde
-END
 MACRO 19 "botattack" Ability_DualWield
 .partybot attackstart
 END
 MACRO 18 "botr" Spell_Shadow_SacrificialShield
 .partybot remove
+END
+MACRO 20 "equip" Ability_Rogue_ShadowStrikes
+#showtooltip
+/equipslot [mod:shift] 16 Brutal Gladiator's Slicer
+/equipslot [mod:shift] 17 Brutal Gladiator's Shiv
+/equipslot [nomod] 16 item:32837
+/equipslot [nomod] 17 item:32838
+END
+MACRO 23 "focus" INV_Misc_QuestionMark
+/focus [target=mouseover]
 END
 MACRO 3 "learn" Ability_Creature_Cursed_05
 .learn 33388
@@ -183,6 +122,31 @@ MACRO 2 "mageitems2" Spell_Frost_ChillingArmor
 .additem 29988
 .additem 37864
 END
-MACRO 4 "ranadd" Ability_Creature_Cursed_04
-.bot ranadd
+MACRO 22 "waritems1" Ability_Warrior_SavageBlow
+.additem 35068
+.additem 35135
+.additem 35070
+.additem 33484
+.additem 35066
+.additem 35176
+.additem 35067
+.additem 35161
+.additem 35069
+.additem 35146
+.additem 35131
+.additem 33919
+.additem 37864
+.additem 34576
+.additem 34989
+.additem 34247
+.additem 35108
+END
+MACRO 21 "waritems2" Ability_Warrior_SavageBlow
+.additem 32409 1
+.additem 32217 5
+.additem 32193 4
+.additem 32211 2
+.additem 35094
+.additem 32375
+.additem 27658 100
 END

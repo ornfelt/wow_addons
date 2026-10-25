@@ -1,6 +1,3 @@
-MACRO 16777225 "focus" INV_Misc_QuestionMark
-/focus [target=mouseover]
-END
 MACRO 16777218 "go" Ability_Hunter_BeastCall
 #.go creature 63167 
 .go xyz -3972.17 -11927.50 -0.75 530

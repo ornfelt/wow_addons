@@ -1,0 +1,51 @@
+MACRO 16777222 "equip" Ability_Hunter_SwiftStrike
+#showtooltip
+/equipslot [nomod] 16 item:34247
+/equipslot [mod:shift] 16 item:32837
+/equipslot [mod:shift] 17 item:32838
+END
+MACRO 16777223 "equip2" Ability_Warrior_DefensiveStance
+#showtooltip
+/equipslot 16 item:32837
+/equipslot 17 item:35094
+END
+MACRO 16777225 "equip3" Ability_Warrior_ShieldReflection
+#showtooltip
+/equipslot 16 item:32837
+/equipslot 17 item:32375
+END
+MACRO 16777220 "go_fly" Ability_Mount_NetherdrakePurple
+.additem 32858
+.go creature 72610
+END
+MACRO 16777217 "go_train" Ability_Hunter_BeastTraining
+#.go creature Wu Shen
+.go xyz -8689.32 323.23 109.52 0
+END
+MACRO 16777227 "i" INV_Misc_QuestionMark
+#showtooltip intervene
+/cast [target=mouseover] intervene
+END
+MACRO 16777219 "m" INV_Misc_QuestionMark
+#showtooltip Reins of the Swift Mistsaber
+/cancelform
+/stopcasting
+/cancelaura ice block
+/cancelaura levitate
+/cancelaura Sentry totem
+/petfollow
+/use 4 1
+END
+MACRO 16777218 "mount" Ability_Mount_BlackPanther
+/s Adding mount
+/script local f=UnitFactionGroup("player") if f=="Alliance" then SendChatMessage(".additem 18767", "SAY") else SendChatMessage(".additem 18798", "SAY") end
+END
+MACRO 16777226 "p" INV_Misc_QuestionMark
+#showtooltip pummel
+/cast [nomod] pummel
+/cast [mod:shift, target=focus] pummel
+/cast [mod:ctrl, target=mouseover] pummel
+END
+MACRO 16777224 "shift_test" INV_Misc_QuestionMark
+/run DEFAULT_CHAT_FRAME:AddMessage(IsShiftKeyDown() and "SHIFT DETECTED" or "NO SHIFT")
+END

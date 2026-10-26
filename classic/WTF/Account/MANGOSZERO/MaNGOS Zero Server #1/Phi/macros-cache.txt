@@ -1,6 +1,46 @@
+MACRO 16777224 "b" Spell_Shadow_MindSteal
+/script SpellStopCasting()
+/script if IsControlKeyDown() and UnitExists("mouseover") then TargetUnit("mouseover"); CastSpellByName("Blind"); TargetLastTarget(); else CastSpellByName("Blind"); end
+END
+MACRO 16777226 "equip" Ability_Parry
+/script E=function(i,n)for b=0,4 do for s=1,GetContainerNumSlots(b)do local l=GetContainerItemLink(b,s)if l and strfind(l,"item:"..i..":")then PickupContainerItem(b,s);PickupInventoryItem(n);PickupContainerItem(b,s);return end end end end
+END
+MACRO 16777227 "equip2" Ability_Parry
+/script if not E then UseAction(44) end
+/script if IsShiftKeyDown() then E(19019,16) else E(19346,16) end
+/script if IsShiftKeyDown() then E(23577,17) else E(18805,17) end
+END
+MACRO 16777228 "equip3" Ability_Parry
+/script if not E then UseAction(44) end
+/script E(18816,16)
+/script E(18805,17)
+END
+MACRO 16777222 "g" Ability_Gouge
+/script SpellStopCasting()
+/script if IsControlKeyDown() and UnitExists("mouseover") then TargetUnit("mouseover"); CastSpellByName("Gouge"); TargetLastTarget(); else CastSpellByName("Gouge"); end
+END
+MACRO 16777221 "go" Ability_Hunter_BeastCall
+#.go creature Zachariah Post
+.go xyz 2250.37 328.10 35.27 0
+END
+MACRO 16777220 "go_bg" Ability_DualWield
+.go creature 4765
+END
+MACRO 16777219 "go_train" Ability_Hunter_BeastTraining
+#.go creature Miles Dexter
+.go xyz 1420.65 56.85 -62.28 0
+END
+MACRO 16777225 "k" Ability_Kick
+/script SpellStopCasting()
+/script if IsControlKeyDown() and UnitExists("mouseover") then TargetUnit("mouseover"); CastSpellByName("Kick"); TargetLastTarget(); else CastSpellByName("Kick"); end
+END
 MACRO 16777217 "mount" Ability_Mount_WhiteDireWolf
 /s Adding mount
 /script local f=UnitFactionGroup("player") if f=="Alliance" then SendChatMessage(".additem 18767", "SAY") else SendChatMessage(".additem 18798", "SAY") end
+END
+MACRO 16777223 "s" Ability_Sap
+/script SpellStopCasting()
+/script if IsControlKeyDown() and UnitExists("mouseover") then TargetUnit("mouseover"); CastSpellByName("Sap"); TargetLastTarget(); else CastSpellByName("Sap"); end
 END
 MACRO 16777218 "test" Ability_Ambush
 /script local f=UnitFactionGroup("player") if f=="Alliance" then SendChatMessage("Hello from the Alliance!", "SAY") else SendChatMessage("Horde here!", "SAY") end

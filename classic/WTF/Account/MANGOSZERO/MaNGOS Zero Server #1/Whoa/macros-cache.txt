@@ -1,16 +1,57 @@
 MACRO 16777221 "altweps" Ability_Repair
+.additem 19019
+.additem 22691
+.additem 17182
+.additem 19364
+.additem 21134
+.additem 12784
+.additem 19169
+.additem 19323
+.additem 23054
+.additem 18348
+.additem 17068
+.additem 23221
+.additem 19352
 .additem 22808
 .additem 19351
 .additem 22798
 .additem 18822
-.additem 19334
-.additem 22815
-.additem 17076
-.additem 17182
+END
+MACRO 16777225 "c" Ability_Warrior_Charge
+/script if UnitExists("mouseover") and UnitCanAttack("player","mouseover") then TargetUnit("mouseover"); CastSpellByName("Charge"); TargetLastTarget(); else CastSpellByName("Charge"); end
+END
+MACRO 16777226 "equip" Ability_DualWield
+/script E=function(i,n)for b=0,4 do for s=1,GetContainerNumSlots(b)do local l=GetContainerItemLink(b,s)if l and strfind(l,"item:"..i..":")then PickupContainerItem(b,s);PickupInventoryItem(n);PickupContainerItem(b,s);return end end end end
+END
+MACRO 16777227 "equip2" Ability_DualWield
+/script if not E then UseAction(44) end
+/script if IsShiftKeyDown() then E(17182,16) else E(19019,16);E(23577,17) end
+END
+MACRO 16777228 "equip3" Ability_DualWield
+/script if not E then UseAction(44) end
+/script E(19019,16)
+/script E(23043,17)
+END
+MACRO 16777229 "equip4" Ability_DualWield
+/script if not E then UseAction(44) end
+/script E(18348,16)
+/script E(1168,17)
+END
+MACRO 16777222 "go_train" Ability_Hunter_BeastTraining
+#.go creature Wu Shen
+.go xyz -8688.47 323.39 109.43 0
+END
+MACRO 16777223 "i" Ability_GolemThunderClap
+/script SpellStopCasting()
+/script if IsControlKeyDown() and UnitExists("mouseover") then TargetUnit("mouseover"); CastSpellByName("Intimidating Shout"); TargetLastTarget(); else CastSpellByName("Intimidating Shout"); end
 END
 MACRO 16777217 "mount" Ability_Mount_PinkTiger
 /s Adding mount
 /script local f=UnitFactionGroup("player") if f=="Alliance" then SendChatMessage(".additem 18767", "SAY") else SendChatMessage(".additem 18798", "SAY") end
+END
+MACRO 16777224 "p" Ability_Kick
+/script SpellStopCasting()
+/script if IsControlKeyDown() and UnitExists("mouseover") then TargetUnit("mouseover"); CastSpellByName("Pummel"); TargetLastTarget(); else CastSpellByName("Pummel"); end
 END
 MACRO 16777218 "test" Ability_Ambush
 /script local f=UnitFactionGroup("player") if f=="Alliance" then SendChatMessage("Hello from the Alliance!", "SAY") else SendChatMessage("Horde here!", "SAY") end
@@ -35,4 +76,9 @@ MACRO 16777220 "war2" Ability_Rogue_Ambush
 .additem 23038
 .additem 23041
 .additem 22954
+.additem 12654 200
+.additem 1168
+.additem 23043
+.additem 22818
+.additem 20452 100
 END

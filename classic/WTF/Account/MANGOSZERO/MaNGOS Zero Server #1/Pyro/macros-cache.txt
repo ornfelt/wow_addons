@@ -1,3 +1,7 @@
+MACRO 16777222 "c" Spell_Frost_IceShock
+/script SpellStopCasting()
+/script if IsControlKeyDown() and UnitExists("mouseover") then TargetUnit("mouseover"); CastSpellByName("Counterspell"); TargetLastTarget(); else CastSpellByName("Counterspell"); end
+END
 MACRO 16777219 "go" Ability_Hunter_BeastCall
 #.go creature Milli Featherwhistle
 .go xyz -5451.60 -617.32 394.54 0
@@ -12,6 +16,16 @@ END
 MACRO 16777217 "mount" Ability_Mount_PinkTiger
 /s Adding mount
 /script local f=UnitFactionGroup("player") if f=="Alliance" then SendChatMessage(".additem 18767", "SAY") else SendChatMessage(".additem 18798", "SAY") end
+END
+MACRO 16777223 "p" Spell_Nature_Polymorph
+/script SpellStopCasting()
+/script if IsControlKeyDown() and UnitExists("mouseover") then TargetUnit("mouseover"); CastSpellByName("Polymorph"); TargetLastTarget(); else CastSpellByName("Polymorph"); end
+END
+MACRO 16777224 "s" Spell_Magic_FeatherFall
+/script if IsShiftKeyDown() then for i=0,31 do local b=GetPlayerBuff(i,"HELPFUL"); if b<0 then break end; if GetPlayerBuffTexture(b)=="Interface\\Icons\\Spell_Magic_FeatherFall" then CancelPlayerBuff(b);break end end else CastSpellByName("Slow Fall") end
+END
+MACRO 16777225 "stest" Spell_Magic_FeatherFall
+/script for i=0,31 do local b=GetPlayerBuff(i,"HELPFUL"); if b<0 then break end; DEFAULT_CHAT_FRAME:AddMessage(GetPlayerBuffTexture(b) or "nil"); end
 END
 MACRO 16777218 "test" Ability_Ambush
 /script local f=UnitFactionGroup("player") if f=="Alliance" then SendChatMessage("Hello from the Alliance!", "SAY") else SendChatMessage("Horde here!", "SAY") end

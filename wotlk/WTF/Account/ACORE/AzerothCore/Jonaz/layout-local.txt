@@ -1,11 +1,11 @@
 Version: 1
 Frame: WorldMapFrame
 FrameLevel: 87
-Anchor: TOPLEFT
+Anchor: TOP
 X: 0
 Y: 0
-W: 1437
-H: 808
+W: 1024
+H: 768
 Frame: HealBot_Action
 FrameLevel: 12
 Anchor: LEFT

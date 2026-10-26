@@ -1,0 +1,62 @@
+MACRO 16777217 "waritems1" Ability_Warrior_SavageBlow
+.additem 51543
+.additem 54581
+.additem 51545
+.additem 47545
+.additem 47546
+.additem 51541
+.additem 50670
+.additem 51364
+.additem 51542
+.additem 50620
+.additem 51362
+.additem 51544
+.additem 54578
+.additem 50618
+.additem 50402
+.additem 51377
+.additem 51378
+END
+MACRO 16777218 "waritems2" Ability_Warrior_SavageBlow
+.additem 50363
+.additem 54590
+.additem 49623
+.additem 50735
+.additem 50733
+.additem 43421
+.additem 43423
+.additem 43417
+.additem 50730
+.additem 50709
+.additem 40343
+.additem 49888
+.additem 49919
+.additem 39769
+.additem 19019
+.additem 50737
+.additem 50738
+END
+MACRO 16777219 "waritems3" Ability_Warrior_SavageBlow
+.additem 50046
+.additem 51533
+.additem 50729
+.additem 44457
+.additem 38975
+.additem 44815
+.additem 38953
+.additem 39006
+.additem 44493 2
+.additem 38949 2
+.additem 41398
+.additem 49110
+.additem 40117 15
+.additem 40127 15
+.additem 40111 10
+.additem 40125 5
+END
+MACRO 16777220 "waritems4" Ability_Warrior_SavageBlow
+.additem 44069
+.additem 44067
+.additem 38374
+.additem 41611
+END

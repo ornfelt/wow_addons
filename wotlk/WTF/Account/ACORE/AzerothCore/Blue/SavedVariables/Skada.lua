@@ -8,17 +8,17 @@ SkadaCharDB = {
 			["Turak"] = {
 				["damagespells"] = {
 					["6603.1"] = {
-						["n_max"] = 103,
+						["n_min"] = 103,
 						["count"] = 1,
 						["amount"] = 103,
 						["n_num"] = 1,
-						["n_min"] = 103,
+						["n_amt"] = 103,
 						["targets"] = {
 							["Zombie Captain"] = {
 								["amount"] = 103,
 							},
 						},
-						["n_amt"] = 103,
+						["n_max"] = 103,
 					},
 					["6603.1.Treant"] = {
 						["c_amt"] = 5568,
@@ -33,9 +33,9 @@ SkadaCharDB = {
 						["c_min"] = 794,
 						["amount"] = 8329,
 						["count"] = 12,
-						["n_min"] = 422,
-						["n_num"] = 6,
 						["n_amt"] = 2761,
+						["n_num"] = 6,
+						["n_min"] = 422,
 					},
 					["48461.8"] = {
 						["c_amt"] = 1621,
@@ -51,17 +51,17 @@ SkadaCharDB = {
 						["c_max"] = 1621,
 					},
 					["48463.64"] = {
-						["n_max"] = 535,
+						["n_min"] = 535,
 						["count"] = 1,
 						["amount"] = 535,
 						["n_num"] = 1,
-						["n_min"] = 535,
+						["n_amt"] = 535,
 						["targets"] = {
 							["Zombie Captain"] = {
 								["amount"] = 535,
 							},
 						},
-						["n_amt"] = 535,
+						["n_max"] = 535,
 					},
 				},
 				["last"] = 756436.97,
@@ -118,19 +118,19 @@ SkadaCharDB = {
 						["u"] = 14,
 						["n"] = 1,
 					},
-					["16886.8"] = {
-						["u"] = 3,
-						["n"] = 1,
-					},
 					["24858.1"] = {
 						["u"] = 14,
 						["n"] = 1,
 					},
-					["70721.32"] = {
-						["u"] = 6,
+					["16886.8"] = {
+						["u"] = 3,
 						["n"] = 1,
 					},
 					["17057.1"] = {
+						["u"] = 6,
+						["n"] = 1,
+					},
+					["70721.32"] = {
 						["u"] = 6,
 						["n"] = 1,
 					},
@@ -168,28 +168,28 @@ SkadaCharDB = {
 					},
 				},
 				["class"] = "DRUID",
-				["role"] = "NONE",
+				["ragespells"] = {
+					["17057.1"] = 10,
+				},
 				["time"] = 4.41,
 				["petdamage"] = 8329,
 				["rage"] = 10,
 				["manaspells"] = {
 					["53506.1"] = 140,
 				},
-				["ragespells"] = {
-					["17057.1"] = 10,
-				},
+				["role"] = "NONE",
 				["damage"] = 10588,
 			},
 			["Blue"] = {
 				["damagespells"] = {
 					["64695.8.Earthbind Totem"] = {
-						["imm_n"] = 1,
-						["count"] = 1,
 						["targets"] = {
 							["Zombie Captain"] = {
 								["amount"] = 0,
 							},
 						},
+						["imm_n"] = 1,
+						["count"] = 1,
 						["amount"] = 0,
 					},
 					["49233.4"] = {
@@ -218,9 +218,9 @@ SkadaCharDB = {
 						["c_min"] = 10797,
 						["amount"] = 16660,
 						["count"] = 2,
-						["n_min"] = 5863,
-						["n_num"] = 1,
 						["n_amt"] = 5863,
+						["n_num"] = 1,
+						["n_min"] = 5863,
 					},
 					["49231.8"] = {
 						["c_amt"] = 17400,
@@ -247,8 +247,8 @@ SkadaCharDB = {
 						},
 						["count"] = 4,
 						["amount"] = 6733,
-						["n_min"] = 955,
 						["n_amt"] = 955,
+						["n_min"] = 955,
 						["n_num"] = 1,
 						["c_min"] = 1909,
 					},
@@ -266,27 +266,27 @@ SkadaCharDB = {
 						["c_max"] = 26748,
 					},
 					["3600.8.Earthbind Totem"] = {
-						["imm_n"] = 3,
-						["count"] = 3,
 						["targets"] = {
 							["Zombie Captain"] = {
 								["amount"] = 0,
 							},
 						},
+						["imm_n"] = 3,
+						["count"] = 3,
 						["amount"] = 0,
 					},
 					["6603.1"] = {
-						["n_max"] = 607,
+						["n_min"] = 545,
 						["count"] = 2,
 						["amount"] = 1152,
 						["n_num"] = 2,
-						["n_min"] = 545,
+						["n_amt"] = 1152,
 						["targets"] = {
 							["Zombie Captain"] = {
 								["amount"] = 1152,
 							},
 						},
-						["n_amt"] = 1152,
+						["n_max"] = 607,
 					},
 					["-49233.4"] = {
 						["c_amt"] = 3068,
@@ -301,35 +301,35 @@ SkadaCharDB = {
 						["c_min"] = 1534,
 						["amount"] = 4631,
 						["count"] = 4,
-						["n_min"] = 734,
-						["n_num"] = 2,
 						["n_amt"] = 1563,
+						["n_num"] = 2,
+						["n_min"] = 734,
 					},
 					["54043.2"] = {
-						["n_max"] = 301,
+						["n_min"] = 245,
 						["count"] = 5,
 						["amount"] = 1318,
 						["n_num"] = 5,
-						["n_min"] = 245,
+						["n_amt"] = 1318,
 						["targets"] = {
 							["Zombie Captain"] = {
 								["amount"] = 1318,
 							},
 						},
-						["n_amt"] = 1318,
+						["n_max"] = 301,
 					},
 					["49271.8"] = {
-						["n_max"] = 5581,
+						["n_min"] = 5581,
 						["count"] = 1,
 						["amount"] = 5581,
 						["n_num"] = 1,
-						["n_min"] = 5581,
+						["n_amt"] = 5581,
 						["targets"] = {
 							["Zombie Captain"] = {
 								["amount"] = 5581,
 							},
 						},
-						["n_amt"] = 5581,
+						["n_max"] = 5581,
 					},
 				},
 				["last"] = 756438.816,
@@ -342,10 +342,10 @@ SkadaCharDB = {
 						},
 						["count"] = 5,
 						["amount"] = 1369,
-						["n_max"] = 349,
 						["n_min"] = 228,
-						["n_num"] = 5,
 						["n_amt"] = 1369,
+						["n_num"] = 5,
+						["n_max"] = 349,
 					},
 				},
 				["spec"] = 262,
@@ -355,10 +355,8 @@ SkadaCharDB = {
 						["u"] = 16,
 						["n"] = 2,
 					},
-					["71199.8"] = {
-						["u"] = 13,
-						["n"] = 1,
-						["r"] = 3,
+					["-57669.8"] = {
+						["u"] = 14,
 					},
 					["-49233.4"] = {
 						["u"] = 9,
@@ -372,8 +370,10 @@ SkadaCharDB = {
 						["n"] = 1,
 						["r"] = 1,
 					},
-					["-57669.8"] = {
-						["u"] = 14,
+					["71199.8"] = {
+						["u"] = 13,
+						["n"] = 1,
+						["r"] = 3,
 					},
 					["24907.8"] = {
 						["u"] = 14,
@@ -510,9 +510,9 @@ SkadaCharDB = {
 						["c_min"] = 1964,
 						["amount"] = 2997,
 						["count"] = 2,
-						["n_min"] = 1033,
-						["n_num"] = 1,
 						["n_amt"] = 1033,
+						["n_num"] = 1,
+						["n_min"] = 1033,
 					},
 					["6603.1"] = {
 						["c_amt"] = 650,
@@ -527,48 +527,48 @@ SkadaCharDB = {
 						["c_min"] = 650,
 						["amount"] = 1559,
 						["count"] = 3,
-						["n_min"] = 453,
-						["n_num"] = 2,
 						["n_amt"] = 909,
+						["n_num"] = 2,
+						["n_min"] = 453,
 					},
 					["-47465.1"] = {
-						["n_max"] = 289,
+						["n_min"] = 289,
 						["count"] = 1,
 						["amount"] = 289,
 						["n_num"] = 1,
-						["n_min"] = 289,
+						["n_amt"] = 289,
 						["targets"] = {
 							["Zombie Captain"] = {
 								["amount"] = 289,
 							},
 						},
-						["n_amt"] = 289,
+						["n_max"] = 289,
 					},
 					["57755.1"] = {
-						["n_max"] = 895,
+						["n_min"] = 895,
 						["count"] = 1,
 						["amount"] = 895,
 						["n_num"] = 1,
-						["n_min"] = 895,
+						["n_amt"] = 895,
 						["targets"] = {
 							["Zombie Captain"] = {
 								["amount"] = 895,
 							},
 						},
-						["n_amt"] = 895,
+						["n_max"] = 895,
 					},
 					["-12721.1"] = {
-						["n_max"] = 30,
+						["n_min"] = 30,
 						["count"] = 6,
 						["amount"] = 180,
 						["n_num"] = 6,
-						["n_min"] = 30,
+						["n_amt"] = 180,
 						["targets"] = {
 							["Zombie Captain"] = {
 								["amount"] = 180,
 							},
 						},
-						["n_amt"] = 180,
+						["n_max"] = 30,
 					},
 				},
 				["ragespells"] = {
@@ -590,8 +590,8 @@ SkadaCharDB = {
 						},
 						["count"] = 2,
 						["amount"] = 1618,
-						["n_min"] = 392,
 						["n_amt"] = 392,
+						["n_min"] = 392,
 						["n_num"] = 1,
 						["c_min"] = 1226,
 					},
@@ -607,23 +607,23 @@ SkadaCharDB = {
 						},
 						["count"] = 4,
 						["amount"] = 1309,
-						["n_min"] = 211,
 						["n_amt"] = 783,
+						["n_min"] = 211,
 						["n_num"] = 3,
 						["c_min"] = 526,
 					},
 					["-53742.2"] = {
-						["n_max"] = 244,
+						["n_min"] = 41,
 						["count"] = 3,
 						["amount"] = 447,
 						["n_num"] = 3,
-						["n_min"] = 41,
+						["n_amt"] = 447,
 						["targets"] = {
 							["Zombie Captain"] = {
 								["amount"] = 447,
 							},
 						},
-						["n_amt"] = 447,
+						["n_max"] = 244,
 					},
 					["53739.2"] = {
 						["c_amt"] = 78,
@@ -637,8 +637,8 @@ SkadaCharDB = {
 						},
 						["count"] = 3,
 						["amount"] = 165,
-						["n_min"] = 18,
 						["n_amt"] = 87,
+						["n_min"] = 18,
 						["n_num"] = 2,
 						["c_min"] = 78,
 					},
@@ -661,12 +661,12 @@ SkadaCharDB = {
 				["class"] = "PALADIN",
 				["healspells"] = {
 					["-20267.2"] = {
-						["n_max"] = 462,
+						["n_min"] = 0,
 						["n_num"] = 17,
 						["count"] = 17,
 						["amount"] = 1083,
 						["o_amt"] = 2751,
-						["n_min"] = 0,
+						["n_amt"] = 1083,
 						["targets"] = {
 							["Angela"] = {
 								["o_amt"] = 480,
@@ -701,14 +701,14 @@ SkadaCharDB = {
 								["amount"] = 0,
 							},
 						},
-						["n_amt"] = 1083,
+						["n_max"] = 462,
 					},
 				},
 				["auras"] = {
 					["-57669.8"] = {
 						["u"] = 13,
 					},
-					["53736.2"] = {
+					["54043.2"] = {
 						["u"] = 16,
 						["n"] = 1,
 					},
@@ -742,7 +742,7 @@ SkadaCharDB = {
 						},
 						["n"] = 1,
 					},
-					["54043.2"] = {
+					["53736.2"] = {
 						["u"] = 16,
 						["n"] = 1,
 					},
@@ -766,7 +766,7 @@ SkadaCharDB = {
 						},
 						["n"] = 2,
 					},
-					["31884.2"] = {
+					["48469.8"] = {
 						["u"] = 16,
 						["n"] = 1,
 					},
@@ -793,7 +793,7 @@ SkadaCharDB = {
 						["n"] = 1,
 						["r"] = 3,
 					},
-					["48469.8"] = {
+					["31884.2"] = {
 						["u"] = 16,
 						["n"] = 1,
 					},
@@ -996,9 +996,9 @@ SkadaCharDB = {
 		["mana"] = 3337,
 		["damaged"] = 1369,
 		["overheal"] = 2751,
-		["name"] = "Zombie Captain",
-		["heal"] = 1083,
 		["time"] = 16,
+		["heal"] = 1083,
+		["name"] = "Zombie Captain",
 		["mobname"] = "Zombie Captain",
 		["starttime"] = 1754374840,
 		["edamage"] = 1369,

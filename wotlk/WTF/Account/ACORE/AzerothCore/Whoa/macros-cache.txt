@@ -1,0 +1,100 @@
+MACRO 16777221 "consumables" Ability_Warrior_Charge
+.additem 40211 20
+.additem 22463
+.additem 22450 12
+.additem 22449 20
+.additem 22446 16
+.additem 22824 3
+.additem 22445 80
+.additem 44164
+.additem 45802
+.additem 44175
+.additem 44177
+.additem 52021 200
+.additem 42994 100
+END
+MACRO 16777222 "equip" INV_Misc_QuestionMark
+#showtooltip
+/equipslot [nomod] 16 item:50730
+/equipslot [mod:shift] 16 item:50046
+/equipslot [mod:shift] 17 item:50729
+END
+MACRO 16777223 "equip2" INV_Misc_QuestionMark
+#showtooltip
+/equipslot 16 item:19019
+/equipslot 17 item:51533
+END
+MACRO 16777227 "i" INV_Misc_QuestionMark
+#showtooltip intimidating shout
+/cast [nomod] intimidating shout
+/cast [mod:shift, target=focus] intimidating shout
+/cast [mod:ctrl, target=mouseover] intimidating shout
+END
+MACRO 16777225 "mc" INV_Misc_QuestionMark
+#showtooltip charge
+/cast [target=mouseover,help,nodead][help,nodead] charge
+END
+MACRO 16777224 "mi" INV_Misc_QuestionMark
+#showtooltip Intervene
+/cast [target=mouseover,help,nodead][help,nodead] Intervene
+END
+MACRO 16777226 "p" INV_Misc_QuestionMark
+#showtooltip pummel
+/cast [nomod] pummel
+/cast [mod:shift, target=focus] pummel
+/cast [mod:ctrl, target=mouseover] pummel
+END
+MACRO 16777217 "waritems1" Ability_Warrior_SavageBlow
+.additem 51543
+.additem 54581
+.additem 51545
+.additem 47545
+.additem 51541
+.additem 51364
+.additem 51542
+.additem 51362
+.additem 51544
+.additem 54578
+.additem 50618
+.additem 51377
+.additem 50693
+END
+MACRO 16777218 "waritems2" Ability_Warrior_SavageBlow
+.additem 50363
+.additem 54590
+.additem 49623
+.additem 50733
+.additem 43421
+.additem 43423
+.additem 43417
+.additem 50730
+.additem 50709
+.additem 40343
+.additem 49888
+.additem 39769
+.additem 19019
+END
+MACRO 16777219 "waritems3" Ability_Warrior_SavageBlow
+.additem 50046
+.additem 51533
+.additem 50729
+.additem 44457
+.additem 38975
+.additem 44815
+.additem 38953
+.additem 39006
+.additem 44493 2
+.additem 38949 2
+.additem 41398
+.additem 49110
+.additem 40117 15
+.additem 40127 15
+.additem 40111 10
+.additem 40125 5
+END
+MACRO 16777220 "waritems4" Ability_Warrior_SavageBlow
+.additem 44069
+.additem 44067
+.additem 38374
+.additem 41611
+END

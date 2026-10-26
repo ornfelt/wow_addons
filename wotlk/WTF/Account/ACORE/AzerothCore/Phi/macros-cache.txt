@@ -47,6 +47,10 @@ MACRO 16777235 "consumables" Spell_Arcane_Arcane01
 .additem 45802
 .additem 44175
 .additem 44177
+.additem 43231 40
+.additem 43233 40
+.additem 43235 40
+.additem 3775 40
 END
 MACRO 16777217 "d" INV_Misc_QuestionMark
 #showtooltip shadow dance
@@ -66,6 +70,9 @@ MACRO 16777228 "enchants" Spell_Arcane_Arcane01
 .additem 44463
 .additem 38981
 .additem 41167
+.additem 45764
+.additem 42968
+.additem 42971
 END
 MACRO 16777234 "fs" INV_Misc_QuestionMark
 #showtooltip shadowstep

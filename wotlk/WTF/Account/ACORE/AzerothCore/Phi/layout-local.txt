@@ -16,8 +16,8 @@ H: 1
 Frame: HealBot_Action
 FrameLevel: 12
 Anchor: CENTER
-X: -277
-Y: 87
+X: -221
+Y: -37
 W: 136
 H: 34
 Frame: TellMeWhen_Group1

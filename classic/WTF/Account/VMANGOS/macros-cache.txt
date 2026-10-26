@@ -81,33 +81,39 @@ MACRO 13 ".additempri2" Spell_Holy_Heal
 .additem 23009
 END
 MACRO 14 ".additemrog1" Ability_Stealth
-.additem 17966
-.additem 17966
-.additem 17966
-.additem 17966
 .additem 19346
 .additem 19019
-.additem 22478
-.additem 19377
-.additem 22479
-.additem 23045
-.additem 22476
-.additem 22483
-.additem 22481
-.additem 21586
-.additem 22477
-END
-MACRO 15 ".additemrog2" Ability_Stealth
-.additem 22480
-.additem 23060
-.additem 23038
-.additem 23041
-.additem 22954
 .additem 23054
 .additem 23577
 .additem 22802
 .additem 21126
 .additem 22812
+.additem 16908
+.additem 16823
+.additem 13340
+.additem 16820
+.additem 16825
+.additem 16826
+.additem 16827
+.additem 16909
+.additem 16824
+END
+MACRO 15 ".additemrog2" Ability_Stealth
+.additem 18404
+.additem 17063
+.additem 18821
+.additem 11815
+.additem 13965
+.additem 17075
+.additem 18832
+.additem 18816
+.additem 18805
+.additem 17069
+.additem 12654 200
+.additem 2928 100
+.additem 3371 100
+.additem 2930 100
+.additem 20452 100
 END
 MACRO 8 ".additemsham1" Spell_Nature_Lightning
 .additem 19375

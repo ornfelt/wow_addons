@@ -106,19 +106,19 @@ SkadaCharDB = {
 			["Jonaz"] = {
 				["damagespells"] = {
 					["42842.16"] = {
-						["n_amt"] = 5344,
+						["n_min"] = 5344,
 						["n_num"] = 1,
 						["count"] = 1,
 						["amount"] = 5344,
 						["o_amt"] = 5342,
-						["n_max"] = 5344,
+						["n_amt"] = 5344,
 						["targets"] = {
 							["Master's Training Dummy"] = {
 								["o_amt"] = 5342,
 								["amount"] = 5344,
 							},
 						},
-						["n_min"] = 5344,
+						["n_max"] = 5344,
 					},
 				},
 				["last"] = 75075.45,
@@ -351,11 +351,11 @@ SkadaCharDB = {
 						},
 						["amount"] = 26776,
 					},
-					["33395.16"] = {
-						["amount"] = 161,
+					["42842.16"] = {
+						["amount"] = 54632,
 						["sources"] = {
 							["Jonaz"] = {
-								["amount"] = 161,
+								["amount"] = 54632,
 							},
 						},
 					},
@@ -367,11 +367,11 @@ SkadaCharDB = {
 							},
 						},
 					},
-					["42842.16"] = {
-						["amount"] = 54632,
+					["116.16"] = {
+						["amount"] = 75,
 						["sources"] = {
 							["Jonaz"] = {
-								["amount"] = 54632,
+								["amount"] = 75,
 							},
 						},
 					},
@@ -383,11 +383,11 @@ SkadaCharDB = {
 							},
 						},
 					},
-					["116.16"] = {
-						["amount"] = 75,
+					["33395.16"] = {
+						["amount"] = 161,
 						["sources"] = {
 							["Jonaz"] = {
-								["amount"] = 75,
+								["amount"] = 161,
 							},
 						},
 					},
@@ -514,10 +514,10 @@ SkadaCharDB = {
 						},
 						["count"] = 1,
 						["amount"] = 210,
-						["n_amt"] = 210,
-						["n_max"] = 210,
-						["n_num"] = 1,
 						["n_min"] = 210,
+						["n_amt"] = 210,
+						["n_num"] = 1,
+						["n_max"] = 210,
 					},
 					["5019.1"] = {
 						["c_amt"] = 1396,
@@ -830,12 +830,12 @@ SkadaCharDB = {
 						["n_max"] = 37,
 					},
 					["-12654.4"] = {
-						["n_amt"] = 13169,
+						["n_min"] = 71,
 						["total"] = 13717,
 						["count"] = 11,
 						["amount"] = 13169,
 						["n_num"] = 11,
-						["n_max"] = 2726,
+						["n_amt"] = 13169,
 						["targets"] = {
 							["Maximillian"] = {
 								["amount"] = 7007,
@@ -845,7 +845,7 @@ SkadaCharDB = {
 								["amount"] = 6162,
 							},
 						},
-						["n_min"] = 71,
+						["n_max"] = 2726,
 					},
 					["42891.4"] = {
 						["c_amt"] = 40316,
@@ -910,17 +910,17 @@ SkadaCharDB = {
 						["c_min"] = 1281,
 					},
 					["25228.32"] = {
-						["n_amt"] = 2565,
+						["n_min"] = 44,
 						["count"] = 7,
 						["amount"] = 2565,
 						["n_num"] = 7,
-						["n_max"] = 1520,
+						["n_amt"] = 2565,
 						["targets"] = {
 							["Voidwalker"] = {
 								["amount"] = 2565,
 							},
 						},
-						["n_min"] = 44,
+						["n_max"] = 1520,
 					},
 					["42859.4"] = {
 						["c_amt"] = 10563,
@@ -1021,11 +1021,11 @@ SkadaCharDB = {
 				},
 				["healspells"] = {
 					["-68269.8.The Brewmaiden"] = {
-						["n_amt"] = 667,
+						["n_min"] = 111,
 						["count"] = 5,
 						["amount"] = 667,
 						["n_num"] = 5,
-						["n_max"] = 139,
+						["n_amt"] = 667,
 						["targets"] = {
 							["Thurston"] = {
 								["amount"] = 278,
@@ -1034,7 +1034,7 @@ SkadaCharDB = {
 								["amount"] = 389,
 							},
 						},
-						["n_min"] = 111,
+						["n_max"] = 139,
 					},
 				},
 				["overkill"] = 19791,
@@ -1100,10 +1100,10 @@ SkadaCharDB = {
 						},
 						["count"] = 1,
 						["amount"] = 4213,
-						["n_amt"] = 4213,
-						["n_max"] = 4213,
-						["n_num"] = 1,
 						["n_min"] = 4213,
+						["n_amt"] = 4213,
+						["n_num"] = 1,
+						["n_max"] = 4213,
 					},
 					["5019.1"] = {
 						["c_amt"] = 1398,
@@ -1274,17 +1274,17 @@ SkadaCharDB = {
 				["damage"] = 16394,
 				["damagespells"] = {
 					["25228.32"] = {
-						["n_amt"] = 813,
+						["n_min"] = 22,
 						["count"] = 9,
 						["amount"] = 813,
 						["n_num"] = 9,
-						["n_max"] = 243,
+						["n_amt"] = 813,
 						["targets"] = {
 							["Voidwalker"] = {
 								["amount"] = 813,
 							},
 						},
-						["n_min"] = 22,
+						["n_max"] = 243,
 					},
 					["48135.2"] = {
 						["total"] = 4002,
@@ -1300,10 +1300,10 @@ SkadaCharDB = {
 						},
 						["count"] = 2,
 						["amount"] = 185,
-						["abs_n"] = 1,
-						["n_amt"] = 185,
-						["n_num"] = 1,
 						["n_min"] = 185,
+						["abs_n"] = 1,
+						["n_num"] = 1,
+						["n_amt"] = 185,
 					},
 					["-48135.2"] = {
 						["c_amt"] = 439,
@@ -1427,17 +1427,17 @@ SkadaCharDB = {
 				},
 				["healspells"] = {
 					["56131.2"] = {
-						["n_amt"] = 716,
+						["n_min"] = 716,
 						["count"] = 1,
 						["amount"] = 716,
 						["n_num"] = 1,
-						["n_max"] = 716,
+						["n_amt"] = 716,
 						["targets"] = {
 							["Tai'jin"] = {
 								["amount"] = 716,
 							},
 						},
-						["n_min"] = 716,
+						["n_max"] = 716,
 					},
 					["48071.2"] = {
 						["c_amt"] = 2135,
@@ -1508,19 +1508,19 @@ SkadaCharDB = {
 						["count"] = 8,
 					},
 					["-70772.2"] = {
-						["n_amt"] = 465,
+						["n_min"] = 465,
 						["n_num"] = 3,
 						["count"] = 3,
 						["amount"] = 465,
 						["o_amt"] = 930,
-						["n_max"] = 465,
+						["n_amt"] = 465,
 						["targets"] = {
 							["Tai'jin"] = {
 								["o_amt"] = 930,
 								["amount"] = 465,
 							},
 						},
-						["n_min"] = 465,
+						["n_max"] = 465,
 					},
 				},
 				["overkill"] = 1563,
@@ -1532,27 +1532,27 @@ SkadaCharDB = {
 				},
 				["absorbspells"] = {
 					["47753.2"] = {
-						["n_amt"] = 1697,
+						["n_min"] = 228,
 						["count"] = 3,
 						["amount"] = 1697,
 						["n_num"] = 3,
-						["n_max"] = 794,
+						["n_amt"] = 1697,
 						["targets"] = {
 							["Jonaz"] = 1022,
 							["Tai'jin"] = 675,
 						},
-						["n_min"] = 228,
+						["n_max"] = 794,
 					},
 					["48066.2"] = {
-						["n_amt"] = 7870,
+						["n_min"] = 354,
 						["count"] = 5,
 						["amount"] = 7870,
 						["n_num"] = 5,
-						["n_max"] = 3754,
+						["n_amt"] = 7870,
 						["targets"] = {
 							["Tai'jin"] = 7870,
 						},
-						["n_min"] = 354,
+						["n_max"] = 3754,
 					},
 				},
 				["overheal"] = 14702,
@@ -2023,15 +2023,15 @@ SkadaCharDB = {
 				},
 				["absorbspells"] = {
 					["43039.16"] = {
-						["n_amt"] = 6699,
+						["n_min"] = 1529,
 						["count"] = 2,
 						["amount"] = 6699,
 						["n_num"] = 2,
-						["n_max"] = 5170,
+						["n_amt"] = 6699,
 						["targets"] = {
 							["Jonaz"] = 6699,
 						},
-						["n_min"] = 1529,
+						["n_max"] = 5170,
 					},
 					["43020.64"] = {
 						["c_amt"] = 2755,
@@ -2063,13 +2063,13 @@ SkadaCharDB = {
 				["damage"] = 119539,
 				["damagespells"] = {
 					["12494.16"] = {
-						["count"] = 1,
 						["targets"] = {
 							["Mardant"] = {
 								["amount"] = 0,
 							},
 						},
 						["imm_n"] = 1,
+						["count"] = 1,
 						["amount"] = 0,
 					},
 					["42917.16"] = {
@@ -2091,17 +2091,17 @@ SkadaCharDB = {
 						["c_min"] = 1692,
 					},
 					["25228.32.Water Elemental"] = {
-						["n_amt"] = 253,
+						["n_min"] = 253,
 						["count"] = 1,
 						["amount"] = 253,
 						["n_num"] = 1,
-						["n_max"] = 253,
+						["n_amt"] = 253,
 						["targets"] = {
 							["Voidwalker"] = {
 								["amount"] = 253,
 							},
 						},
-						["n_min"] = 253,
+						["n_max"] = 253,
 					},
 					["33395.16.Water Elemental"] = {
 						["r_amt"] = 19,
@@ -2160,6 +2160,20 @@ SkadaCharDB = {
 						["n_num"] = 6,
 						["count"] = 12,
 					},
+					["116.16"] = {
+						["c_amt"] = 75,
+						["r_amt"] = 25,
+						["count"] = 2,
+						["amount"] = 75,
+						["c_num"] = 2,
+						["c_min"] = 35,
+						["targets"] = {
+							["Mardant"] = {
+								["amount"] = 75,
+							},
+						},
+						["c_max"] = 40,
+					},
 					["31707.16.Water Elemental"] = {
 						["total"] = 1266,
 						["n_max"] = 1013,
@@ -2196,20 +2210,6 @@ SkadaCharDB = {
 						["n_min"] = 3703,
 						["n_num"] = 4,
 						["n_amt"] = 17141,
-					},
-					["116.16"] = {
-						["c_amt"] = 75,
-						["r_amt"] = 25,
-						["count"] = 2,
-						["amount"] = 75,
-						["c_num"] = 2,
-						["c_min"] = 35,
-						["targets"] = {
-							["Mardant"] = {
-								["amount"] = 75,
-							},
-						},
-						["c_max"] = 40,
 					},
 					["42873.4"] = {
 						["c_amt"] = 6779,
@@ -2490,18 +2490,18 @@ SkadaCharDB = {
 			},
 			["Thurston"] = {
 				["interrupt"] = 2,
-				["heal"] = 667,
+				["totaldamage"] = 120139,
 				["ccdone"] = 2,
 				["id"] = "0xF130011EB0000005",
 				["mana"] = 1300,
 				["damaged"] = 2388,
 				["overkill"] = 19791,
 				["dispel"] = 4,
-				["role"] = "DAMAGER",
+				["heal"] = 667,
 				["time"] = 58.43,
 				["petdamage"] = 37,
 				["cctaken"] = 2,
-				["totaldamage"] = 120139,
+				["role"] = "DAMAGER",
 				["class"] = "MAGE",
 				["damage"] = 112293,
 			},

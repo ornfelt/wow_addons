@@ -492,11 +492,6 @@ CartographerDB = {
 								["title"] = "The Crossroads",
 								["icon"] = "POI",
 							},
-							[42439506] = {
-								["titleCol"] = 16744448,
-								["title"] = "Razor Hill",
-								["icon"] = "POI",
-							},
 							[12105765] = {
 								["titleCol"] = 16744448,
 								["title"] = "Orgrimmar",
@@ -505,6 +500,11 @@ CartographerDB = {
 							[78301077] = {
 								["titleCol"] = 16744448,
 								["title"] = "Ratchet",
+								["icon"] = "POI",
+							},
+							[42439506] = {
+								["titleCol"] = 16744448,
+								["title"] = "Razor Hill",
 								["icon"] = "POI",
 							},
 						},
@@ -717,9 +717,9 @@ CartographerDB = {
 							},
 						},
 						["Netherstorm"] = {
-							[65259747] = {
+							[67053330] = {
 								["titleCol"] = 16744448,
-								["title"] = "Area 52",
+								["title"] = "Cosmowrench",
 								["icon"] = "POI",
 							},
 							[66356659] = {
@@ -727,14 +727,14 @@ CartographerDB = {
 								["title"] = "Evergrove",
 								["icon"] = "POI",
 							},
-							[67053330] = {
-								["titleCol"] = 16744448,
-								["title"] = "Cosmowrench",
-								["icon"] = "POI",
-							},
 							[35968058] = {
 								["titleCol"] = 16744448,
 								["title"] = "The Stormspire",
+								["icon"] = "POI",
+							},
+							[65259747] = {
+								["titleCol"] = 16744448,
+								["title"] = "Area 52",
 								["icon"] = "POI",
 							},
 						},
@@ -1328,14 +1328,14 @@ CartographerDB = {
 							},
 						},
 						["Dragonblight"] = {
-							[74732372] = {
-								["titleCol"] = 16744448,
-								["title"] = "Moa'ki Harbor",
-								["icon"] = "POI",
-							},
 							[55618474] = {
 								["titleCol"] = 16744448,
 								["title"] = "Stars' Rest",
+								["icon"] = "POI",
+							},
+							[54251404] = {
+								["titleCol"] = 16744448,
+								["title"] = "Wyrmrest Temple",
 								["icon"] = "POI",
 							},
 							[62433944] = {
@@ -1343,9 +1343,9 @@ CartographerDB = {
 								["title"] = "Venomspite",
 								["icon"] = "POI",
 							},
-							[54251404] = {
+							[74732372] = {
 								["titleCol"] = 16744448,
-								["title"] = "Wyrmrest Temple",
+								["title"] = "Moa'ki Harbor",
 								["icon"] = "POI",
 							},
 						},

@@ -2,8 +2,8 @@ Version: 1
 Frame: LootFrame
 FrameLevel: 4
 Anchor: CENTER
-X: 33
-Y: -79
+X: 164
+Y: -43
 W: 256
 H: 256
 Frame: WorldMapFrame
@@ -22,8 +22,8 @@ W: 1
 H: 1
 Frame: HealBot_Action
 FrameLevel: 12
-Anchor: LEFT
-X: 322
-Y: 80
+Anchor: CENTER
+X: -221
+Y: -37
 W: 136
 H: 34

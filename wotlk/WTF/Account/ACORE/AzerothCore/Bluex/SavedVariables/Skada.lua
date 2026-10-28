@@ -464,535 +464,84 @@ SkadaCharDB = {
 				["damaged"] = 56454,
 				["enemy"] = true,
 			},
-			["Thotar"] = {
-				["ccdonespells"] = {
-					["-24394.1.Sporebat"] = {
-						["t"] = {
-							["Golhine"] = 1,
+			["Nether Ray"] = {
+				["damagespells"] = {
+					["53589.32"] = {
+						["targets"] = {
+							["Bluex"] = {
+								["amount"] = 1122,
+							},
 						},
-						["n"] = 1,
+						["amount"] = 1122,
 					},
-					["-60210.16"] = {
-						["t"] = {
-							["Bromos"] = 1,
-						},
-						["n"] = 1,
-					},
-				},
-				["last"] = 240655.744,
-				["damagedspells"] = {
 					["53508.1"] = {
-						["c_amt"] = 2054,
-						["c_max"] = 2054,
-						["c_num"] = 1,
-						["n_max"] = 1027,
-						["sources"] = {
-							["Nether Ray"] = {
+						["targets"] = {
+							["Thotar"] = {
 								["amount"] = 4356,
 							},
 						},
-						["c_min"] = 2054,
 						["amount"] = 4356,
-						["n_amt"] = 2302,
-						["n_min"] = 590,
-						["n_num"] = 3,
-						["count"] = 4,
-					},
-					["49052.1"] = {
-						["sources"] = {
-							["Ulfir"] = {
-								["amount"] = 1433,
-							},
-						},
-						["count"] = 1,
-						["amount"] = 1433,
-						["n_min"] = 1433,
-						["n_amt"] = 1433,
-						["n_num"] = 1,
-						["n_max"] = 1433,
 					},
 					["6603.1"] = {
-						["c_amt"] = 872,
-						["c_max"] = 872,
-						["c_num"] = 1,
-						["dod_n"] = 4,
-						["sources"] = {
-							["Nether Ray"] = {
+						["o_amt"] = 709,
+						["targets"] = {
+							["Tana"] = {
+								["amount"] = 450,
+							},
+							["Warp Stalker <Tana>"] = {
+								["amount"] = 381,
+							},
+							["Bluex"] = {
+								["amount"] = 3796,
+							},
+							["Thotar"] = {
 								["o_amt"] = 709,
 								["amount"] = 872,
 							},
 						},
-						["par_n"] = 3,
-						["amount"] = 872,
-						["o_amt"] = 709,
-						["c_min"] = 872,
-						["count"] = 8,
-					},
-					["49045.64"] = {
-						["c_amt"] = 3990,
-						["sources"] = {
-							["Ulfir"] = {
-								["amount"] = 3990,
-							},
-						},
-						["count"] = 2,
-						["amount"] = 3990,
-						["c_min"] = 3990,
-						["c_max"] = 3990,
-						["c_num"] = 1,
-						["mis_n"] = 1,
-					},
-					["49050.1"] = {
-						["c_amt"] = 8724,
-						["sources"] = {
-							["Ayanna"] = {
-								["amount"] = 3872,
-							},
-							["Ulfir"] = {
-								["amount"] = 4852,
-							},
-						},
-						["count"] = 2,
-						["amount"] = 8724,
-						["c_min"] = 3872,
-						["c_max"] = 4852,
-						["c_num"] = 2,
-					},
-					["75.1"] = {
-						["c_amt"] = 14524,
-						["c_max"] = 3134,
-						["c_num"] = 5,
-						["n_max"] = 1535,
-						["c_min"] = 2702,
-						["n_min"] = 1535,
-						["sources"] = {
-							["Ayanna"] = {
-								["amount"] = 8258,
-							},
-							["Ulfir"] = {
-								["amount"] = 7801,
-							},
-						},
-						["mis_n"] = 2,
-						["amount"] = 16059,
-						["def_n"] = 1,
-						["n_amt"] = 1535,
-						["n_num"] = 1,
-						["count"] = 9,
+						["amount"] = 5499,
 					},
 				},
-				["class"] = "HUNTER",
-				["damaged"] = 35434,
-				["auras"] = {
-					["6150.1"] = {
-						["u"] = 12,
-						["n"] = 1,
-					},
-					["-49050.1"] = {
-						["u"] = 34,
-						["t"] = {
-							["Nether Ray"] = {
-								["u"] = 5,
-								["n"] = 1,
-							},
-							["Golhine"] = {
-								["u"] = 10,
-								["n"] = 1,
-							},
-						},
-						["n"] = 2,
-					},
-					["61847.8"] = {
-						["u"] = 54,
-						["n"] = 1,
-					},
-					["58434.64"] = {
-						["u"] = 23,
-						["n"] = 2,
-					},
-					["20572.1"] = {
-						["u"] = 15,
-						["n"] = 1,
-					},
-					["57475.8"] = {
-						["u"] = 28,
-						["n"] = 1,
-					},
-					["-24394.1.Sporebat"] = {
-						["u"] = 3,
-						["t"] = {
-							["Golhine"] = {
-								["u"] = 3,
-								["n"] = 1,
-							},
-						},
-						["n"] = 1,
-					},
-					["-53598.8.Sporebat"] = {
-						["u"] = 6,
-						["t"] = {
-							["Sporebat"] = {
-								["u"] = 5,
-								["n"] = 1,
-							},
-							["Golhine"] = {
-								["u"] = 6,
-								["n"] = 1,
-							},
-						},
-						["n"] = 2,
-					},
-					["-14327.8"] = {
-						["u"] = 3,
-						["t"] = {
-							["Nether Ray"] = {
-								["u"] = 3,
-								["n"] = 1,
-							},
-						},
-						["n"] = 1,
-					},
-					["-53338.64"] = {
-						["u"] = 94,
-						["t"] = {
-							["Nether Ray"] = {
-								["u"] = 10,
-								["n"] = 1,
-							},
-							["Golhine"] = {
-								["u"] = 42,
-								["n"] = 1,
-							},
-						},
-						["n"] = 2,
-					},
-					["72412.1"] = {
-						["u"] = 9,
-						["n"] = 1,
-					},
-					["53434.1"] = {
-						["u"] = 57,
-						["n"] = 3,
-					},
-					["-58434.64"] = {
-						["u"] = 24,
-						["t"] = {
-							["Gimrizz"] = {
-								["u"] = 1,
-								["n"] = 1,
-							},
-							["Bromos"] = {
-								["u"] = 23,
-								["n"] = 2,
-							},
-							["Sporebat"] = {
-								["u"] = 1,
-								["n"] = 1,
-							},
-							["Voidwalker"] = {
-								["u"] = 5,
-								["n"] = 1,
-							},
-						},
-						["n"] = 5,
-					},
-					["19263.1"] = {
-						["u"] = 5,
-						["n"] = 1,
-					},
-					["24529.8"] = {
-						["u"] = 28,
-						["n"] = 1,
-					},
-					["-60210.16"] = {
-						["u"] = 5,
-						["t"] = {
-							["Bromos"] = {
-								["u"] = 5,
-								["n"] = 1,
-							},
-						},
-						["n"] = 1,
-					},
-					["67772.2"] = {
-						["u"] = 15,
-						["n"] = 1,
-					},
-					["34471.1"] = {
-						["u"] = 10,
-						["n"] = 1,
-					},
-				},
-				["role"] = "DAMAGER",
-				["time"] = 38.02999999999999,
-				["cctaken"] = 2,
-				["damage"] = 106082,
-				["damagespells"] = {
-					["58433.64"] = {
-						["c_amt"] = 17204,
-						["r_amt"] = 4262,
-						["c_max"] = 2119,
-						["c_num"] = 14,
-						["n_max"] = 963,
-						["targets"] = {
-							["Gimrizz"] = {
-								["total"] = 9810,
-								["amount"] = 6516,
-							},
-							["Bromos"] = {
-								["o_amt"] = 878,
-								["amount"] = 14388,
-							},
-							["Sporebat"] = {
-								["amount"] = 442,
-							},
-							["Voidwalker"] = {
-								["amount"] = 1459,
-							},
-						},
-						["total"] = 26099,
-						["c_min"] = 268,
-						["abs_n"] = 1,
-						["count"] = 26,
-						["amount"] = 22805,
-						["o_amt"] = 878,
-						["n_min"] = 96,
-						["n_num"] = 11,
-						["n_amt"] = 5601,
-					},
-					["49048.1"] = {
-						["c_amt"] = 4596,
-						["total"] = 7428,
-						["c_max"] = 4154,
-						["c_num"] = 2,
-						["n_max"] = 1794,
-						["targets"] = {
-							["Gimrizz"] = {
-								["total"] = 5192,
-								["amount"] = 4154,
-							},
-							["Voidwalker"] = {
-								["amount"] = 442,
-							},
-							["Golhine"] = {
-								["amount"] = 1794,
-							},
-						},
-						["c_min"] = 442,
-						["amount"] = 6390,
-						["n_amt"] = 1794,
-						["n_min"] = 1794,
-						["n_num"] = 1,
-						["count"] = 3,
-					},
-					["49045.64"] = {
-						["c_amt"] = 3260,
-						["r_amt"] = 1016,
-						["c_max"] = 3260,
-						["c_num"] = 1,
-						["n_max"] = 2133,
-						["targets"] = {
-							["Nether Ray"] = {
-								["amount"] = 2133,
-							},
-							["Golhine"] = {
-								["amount"] = 5080,
-							},
-						},
-						["count"] = 3,
-						["amount"] = 7213,
-						["c_min"] = 3260,
-						["n_min"] = 1820,
-						["n_num"] = 2,
-						["n_amt"] = 3953,
-					},
+				["enemy"] = true,
+				["overkill"] = 709,
+				["id"] = "0xF13001137100000C",
+				["damagedspells"] = {
 					["49050.1"] = {
-						["c_amt"] = 10974,
-						["count"] = 2,
-						["amount"] = 10974,
-						["c_max"] = 5912,
-						["c_min"] = 5062,
-						["targets"] = {
-							["Nether Ray"] = {
+						["sources"] = {
+							["Thotar"] = {
 								["amount"] = 5062,
 							},
-							["Golhine"] = {
-								["amount"] = 5912,
-							},
 						},
-						["c_num"] = 2,
+						["amount"] = 5062,
 					},
-					["6603.1.Sporebat"] = {
-						["n_min"] = 369,
-						["count"] = 8,
-						["amount"] = 5919,
-						["targets"] = {
-							["Sporebat"] = {
-								["amount"] = 5362,
-							},
-							["Golhine"] = {
-								["amount"] = 557,
+					["49045.64"] = {
+						["sources"] = {
+							["Thotar"] = {
+								["amount"] = 2133,
 							},
 						},
-						["n_amt"] = 5919,
-						["n_num"] = 8,
-						["n_max"] = 1407,
+						["amount"] = 2133,
 					},
-					["25228.32"] = {
-						["n_min"] = 147,
-						["r_amt"] = 42,
-						["count"] = 6,
-						["amount"] = 2623,
-						["targets"] = {
-							["Voidwalker"] = {
-								["amount"] = 2623,
+					["63900.8"] = {
+						["sources"] = {
+							["Ormak"] = {
+								["amount"] = 110,
 							},
 						},
-						["n_amt"] = 2623,
-						["n_num"] = 6,
-						["n_max"] = 1038,
-					},
-					["49052.1"] = {
-						["n_min"] = 1858,
-						["count"] = 1,
-						["amount"] = 1858,
-						["targets"] = {
-							["Golhine"] = {
-								["amount"] = 1858,
-							},
-						},
-						["n_amt"] = 1858,
-						["n_num"] = 1,
-						["n_max"] = 1858,
-					},
-					["63900.8.Sporebat"] = {
-						["n_min"] = 137,
-						["r_amt"] = 209,
-						["count"] = 2,
-						["amount"] = 1717,
-						["targets"] = {
-							["Sporebat"] = {
-								["amount"] = 137,
-							},
-							["Golhine"] = {
-								["amount"] = 1580,
-							},
-						},
-						["n_amt"] = 1717,
-						["n_num"] = 2,
-						["n_max"] = 1580,
-					},
-					["-53598.8.Sporebat"] = {
-						["n_min"] = 176,
-						["r_amt"] = 144,
-						["count"] = 2,
-						["amount"] = 1474,
-						["targets"] = {
-							["Sporebat"] = {
-								["amount"] = 176,
-							},
-							["Golhine"] = {
-								["amount"] = 1298,
-							},
-						},
-						["n_amt"] = 1474,
-						["n_num"] = 2,
-						["n_max"] = 1298,
+						["amount"] = 110,
 					},
 					["75.1"] = {
-						["c_amt"] = 27514,
-						["c_max"] = 4652,
-						["c_num"] = 7,
-						["n_max"] = 2260,
-						["targets"] = {
-							["Nether Ray"] = {
+						["sources"] = {
+							["Thotar"] = {
 								["amount"] = 5382,
 							},
-							["Golhine"] = {
-								["amount"] = 39727,
-							},
 						},
-						["count"] = 17,
-						["amount"] = 45109,
-						["c_min"] = 2606,
-						["n_min"] = 1167,
-						["n_num"] = 10,
-						["n_amt"] = 17595,
+						["amount"] = 5382,
 					},
 				},
-				["id"] = "0xF130011A0D00000A",
-				["healspells"] = {
-					["62801.32.Sporebat"] = {
-						["n_min"] = 378,
-						["count"] = 3,
-						["amount"] = 1134,
-						["targets"] = {
-							["Sporebat <Thotar>"] = {
-								["amount"] = 1134,
-							},
-						},
-						["n_amt"] = 1134,
-						["n_num"] = 3,
-						["n_max"] = 378,
-					},
-					["43185.1"] = {
-						["n_min"] = 2210,
-						["count"] = 1,
-						["amount"] = 2210,
-						["targets"] = {
-							["Thotar"] = {
-								["amount"] = 2210,
-							},
-						},
-						["n_amt"] = 2210,
-						["n_num"] = 1,
-						["n_max"] = 2210,
-					},
-					["-24529.8.Sporebat"] = {
-						["n_min"] = 291,
-						["count"] = 2,
-						["amount"] = 873,
-						["targets"] = {
-							["Sporebat <Thotar>"] = {
-								["amount"] = 873,
-							},
-						},
-						["n_amt"] = 873,
-						["n_num"] = 2,
-						["n_max"] = 582,
-					},
-				},
-				["overkill"] = 878,
-				["potionspells"] = {
-					["33447"] = 1,
-				},
-				["heal"] = 4217,
-				["potion"] = 1,
-				["petdamage"] = 9110,
-				["totaldamage"] = 110414,
-				["ccdone"] = 2,
-				["cctakenspells"] = {
-					["-5116.64"] = {
-						["sources"] = {
-							["Ayanna"] = 1,
-						},
-						["n"] = 1,
-					},
-					["-6215.32"] = {
-						["sources"] = {
-							["Gimrizz"] = 1,
-						},
-						["n"] = 1,
-					},
-				},
-				["timespent"] = {
-					["Sporebat"] = 2,
-					["Voidwalker"] = 0.31,
-					["Golhine"] = 22.12,
-					["Gimrizz"] = 0,
-					["Bromos"] = 6.69,
-					["Nether Ray"] = 6.909999999999999,
-				},
+				["class"] = "PET",
+				["damaged"] = 12687,
+				["damage"] = 10977,
 			},
 			["Sporebat"] = {
 				["damagespells"] = {
@@ -1023,6 +572,17 @@ SkadaCharDB = {
 						},
 						["amount"] = 11351,
 					},
+					["63900.8"] = {
+						["targets"] = {
+							["Sporebat <Thotar>"] = {
+								["amount"] = 134,
+							},
+							["Boar <Ormak>"] = {
+								["amount"] = 217,
+							},
+						},
+						["amount"] = 351,
+					},
 					["54043.2"] = {
 						["targets"] = {
 							["Boar <Ormak>"] = {
@@ -1036,17 +596,6 @@ SkadaCharDB = {
 							},
 						},
 						["amount"] = 3030,
-					},
-					["63900.8"] = {
-						["targets"] = {
-							["Sporebat <Thotar>"] = {
-								["amount"] = 134,
-							},
-							["Boar <Ormak>"] = {
-								["amount"] = 217,
-							},
-						},
-						["amount"] = 351,
 					},
 					["-53598.8"] = {
 						["targets"] = {
@@ -1248,9 +797,9 @@ SkadaCharDB = {
 						["count"] = 4,
 						["amount"] = 3796,
 						["c_min"] = 1144,
-						["n_min"] = 754,
-						["n_num"] = 2,
 						["n_amt"] = 1508,
+						["n_num"] = 2,
+						["n_min"] = 754,
 					},
 					["49045.64"] = {
 						["c_amt"] = 5703,
@@ -1270,19 +819,19 @@ SkadaCharDB = {
 						["c_max"] = 2531,
 						["c_num"] = 3,
 						["n_max"] = 1693,
-						["n_amt"] = 1693,
+						["n_min"] = 1693,
 						["sources"] = {
 							["Ulfir"] = {
 								["o_amt"] = 743,
 								["amount"] = 8729,
 							},
 						},
-						["count"] = 4,
+						["c_min"] = 2123,
 						["amount"] = 8729,
 						["o_amt"] = 743,
-						["n_min"] = 1693,
+						["n_amt"] = 1693,
 						["n_num"] = 1,
-						["c_min"] = 2123,
+						["count"] = 4,
 					},
 				},
 				["class"] = "SHAMAN",
@@ -1366,12 +915,12 @@ SkadaCharDB = {
 						},
 						["r_amt"] = 2066,
 						["mis_n"] = 1,
-						["count"] = 5,
+						["c_min"] = 3565,
 						["amount"] = 8586,
 						["n_amt"] = 5021,
 						["n_min"] = 1561,
 						["n_num"] = 3,
-						["c_min"] = 3565,
+						["count"] = 5,
 					},
 				},
 				["deathlog"] = {
@@ -1652,84 +1201,535 @@ SkadaCharDB = {
 				["damaged"] = 50166,
 				["damage"] = 9828,
 			},
-			["Nether Ray"] = {
-				["damagespells"] = {
-					["53589.32"] = {
-						["targets"] = {
-							["Bluex"] = {
-								["amount"] = 1122,
-							},
+			["Thotar"] = {
+				["ccdonespells"] = {
+					["-24394.1.Sporebat"] = {
+						["t"] = {
+							["Golhine"] = 1,
 						},
-						["amount"] = 1122,
+						["n"] = 1,
 					},
+					["-60210.16"] = {
+						["t"] = {
+							["Bromos"] = 1,
+						},
+						["n"] = 1,
+					},
+				},
+				["last"] = 240655.744,
+				["damagedspells"] = {
 					["53508.1"] = {
-						["targets"] = {
-							["Thotar"] = {
+						["c_amt"] = 2054,
+						["c_max"] = 2054,
+						["c_num"] = 1,
+						["n_max"] = 1027,
+						["sources"] = {
+							["Nether Ray"] = {
 								["amount"] = 4356,
 							},
 						},
+						["c_min"] = 2054,
 						["amount"] = 4356,
+						["n_min"] = 590,
+						["n_amt"] = 2302,
+						["n_num"] = 3,
+						["count"] = 4,
+					},
+					["49052.1"] = {
+						["sources"] = {
+							["Ulfir"] = {
+								["amount"] = 1433,
+							},
+						},
+						["count"] = 1,
+						["amount"] = 1433,
+						["n_min"] = 1433,
+						["n_amt"] = 1433,
+						["n_num"] = 1,
+						["n_max"] = 1433,
 					},
 					["6603.1"] = {
-						["o_amt"] = 709,
-						["targets"] = {
-							["Tana"] = {
-								["amount"] = 450,
-							},
-							["Warp Stalker <Tana>"] = {
-								["amount"] = 381,
-							},
-							["Bluex"] = {
-								["amount"] = 3796,
-							},
-							["Thotar"] = {
+						["c_amt"] = 872,
+						["c_max"] = 872,
+						["c_num"] = 1,
+						["dod_n"] = 4,
+						["sources"] = {
+							["Nether Ray"] = {
 								["o_amt"] = 709,
 								["amount"] = 872,
 							},
 						},
-						["amount"] = 5499,
-					},
-				},
-				["enemy"] = true,
-				["overkill"] = 709,
-				["id"] = "0xF13001137100000C",
-				["damagedspells"] = {
-					["49050.1"] = {
-						["sources"] = {
-							["Thotar"] = {
-								["amount"] = 5062,
-							},
-						},
-						["amount"] = 5062,
+						["par_n"] = 3,
+						["amount"] = 872,
+						["o_amt"] = 709,
+						["c_min"] = 872,
+						["count"] = 8,
 					},
 					["49045.64"] = {
+						["c_amt"] = 3990,
 						["sources"] = {
-							["Thotar"] = {
-								["amount"] = 2133,
+							["Ulfir"] = {
+								["amount"] = 3990,
 							},
 						},
-						["amount"] = 2133,
+						["count"] = 2,
+						["amount"] = 3990,
+						["c_min"] = 3990,
+						["c_max"] = 3990,
+						["c_num"] = 1,
+						["mis_n"] = 1,
 					},
-					["63900.8"] = {
+					["49050.1"] = {
+						["c_amt"] = 8724,
 						["sources"] = {
-							["Ormak"] = {
-								["amount"] = 110,
+							["Ayanna"] = {
+								["amount"] = 3872,
+							},
+							["Ulfir"] = {
+								["amount"] = 4852,
 							},
 						},
-						["amount"] = 110,
+						["count"] = 2,
+						["amount"] = 8724,
+						["c_min"] = 3872,
+						["c_max"] = 4852,
+						["c_num"] = 2,
 					},
 					["75.1"] = {
+						["c_amt"] = 14524,
+						["c_max"] = 3134,
+						["c_num"] = 5,
+						["n_max"] = 1535,
+						["c_min"] = 2702,
+						["n_min"] = 1535,
 						["sources"] = {
-							["Thotar"] = {
-								["amount"] = 5382,
+							["Ayanna"] = {
+								["amount"] = 8258,
+							},
+							["Ulfir"] = {
+								["amount"] = 7801,
 							},
 						},
-						["amount"] = 5382,
+						["mis_n"] = 2,
+						["amount"] = 16059,
+						["def_n"] = 1,
+						["n_amt"] = 1535,
+						["n_num"] = 1,
+						["count"] = 9,
 					},
 				},
-				["class"] = "PET",
-				["damaged"] = 12687,
-				["damage"] = 10977,
+				["class"] = "HUNTER",
+				["damaged"] = 35434,
+				["auras"] = {
+					["6150.1"] = {
+						["u"] = 12,
+						["n"] = 1,
+					},
+					["-49050.1"] = {
+						["u"] = 34,
+						["t"] = {
+							["Nether Ray"] = {
+								["u"] = 5,
+								["n"] = 1,
+							},
+							["Golhine"] = {
+								["u"] = 10,
+								["n"] = 1,
+							},
+						},
+						["n"] = 2,
+					},
+					["61847.8"] = {
+						["u"] = 54,
+						["n"] = 1,
+					},
+					["58434.64"] = {
+						["u"] = 23,
+						["n"] = 2,
+					},
+					["20572.1"] = {
+						["u"] = 15,
+						["n"] = 1,
+					},
+					["57475.8"] = {
+						["u"] = 28,
+						["n"] = 1,
+					},
+					["-24394.1.Sporebat"] = {
+						["u"] = 3,
+						["t"] = {
+							["Golhine"] = {
+								["u"] = 3,
+								["n"] = 1,
+							},
+						},
+						["n"] = 1,
+					},
+					["-53598.8.Sporebat"] = {
+						["u"] = 6,
+						["t"] = {
+							["Sporebat"] = {
+								["u"] = 5,
+								["n"] = 1,
+							},
+							["Golhine"] = {
+								["u"] = 6,
+								["n"] = 1,
+							},
+						},
+						["n"] = 2,
+					},
+					["-14327.8"] = {
+						["u"] = 3,
+						["t"] = {
+							["Nether Ray"] = {
+								["u"] = 3,
+								["n"] = 1,
+							},
+						},
+						["n"] = 1,
+					},
+					["-53338.64"] = {
+						["u"] = 94,
+						["t"] = {
+							["Nether Ray"] = {
+								["u"] = 10,
+								["n"] = 1,
+							},
+							["Golhine"] = {
+								["u"] = 42,
+								["n"] = 1,
+							},
+						},
+						["n"] = 2,
+					},
+					["72412.1"] = {
+						["u"] = 9,
+						["n"] = 1,
+					},
+					["53434.1"] = {
+						["u"] = 57,
+						["n"] = 3,
+					},
+					["-58434.64"] = {
+						["u"] = 24,
+						["t"] = {
+							["Gimrizz"] = {
+								["u"] = 1,
+								["n"] = 1,
+							},
+							["Bromos"] = {
+								["u"] = 23,
+								["n"] = 2,
+							},
+							["Sporebat"] = {
+								["u"] = 1,
+								["n"] = 1,
+							},
+							["Voidwalker"] = {
+								["u"] = 5,
+								["n"] = 1,
+							},
+						},
+						["n"] = 5,
+					},
+					["19263.1"] = {
+						["u"] = 5,
+						["n"] = 1,
+					},
+					["24529.8"] = {
+						["u"] = 28,
+						["n"] = 1,
+					},
+					["67772.2"] = {
+						["u"] = 15,
+						["n"] = 1,
+					},
+					["-60210.16"] = {
+						["u"] = 5,
+						["t"] = {
+							["Bromos"] = {
+								["u"] = 5,
+								["n"] = 1,
+							},
+						},
+						["n"] = 1,
+					},
+					["34471.1"] = {
+						["u"] = 10,
+						["n"] = 1,
+					},
+				},
+				["role"] = "DAMAGER",
+				["time"] = 38.02999999999999,
+				["cctaken"] = 2,
+				["damage"] = 106082,
+				["damagespells"] = {
+					["58433.64"] = {
+						["c_amt"] = 17204,
+						["r_amt"] = 4262,
+						["c_max"] = 2119,
+						["c_num"] = 14,
+						["n_max"] = 963,
+						["targets"] = {
+							["Gimrizz"] = {
+								["total"] = 9810,
+								["amount"] = 6516,
+							},
+							["Bromos"] = {
+								["o_amt"] = 878,
+								["amount"] = 14388,
+							},
+							["Sporebat"] = {
+								["amount"] = 442,
+							},
+							["Voidwalker"] = {
+								["amount"] = 1459,
+							},
+						},
+						["total"] = 26099,
+						["c_min"] = 268,
+						["abs_n"] = 1,
+						["count"] = 26,
+						["amount"] = 22805,
+						["o_amt"] = 878,
+						["n_amt"] = 5601,
+						["n_num"] = 11,
+						["n_min"] = 96,
+					},
+					["49048.1"] = {
+						["c_amt"] = 4596,
+						["total"] = 7428,
+						["c_max"] = 4154,
+						["c_num"] = 2,
+						["n_max"] = 1794,
+						["targets"] = {
+							["Gimrizz"] = {
+								["total"] = 5192,
+								["amount"] = 4154,
+							},
+							["Voidwalker"] = {
+								["amount"] = 442,
+							},
+							["Golhine"] = {
+								["amount"] = 1794,
+							},
+						},
+						["c_min"] = 442,
+						["amount"] = 6390,
+						["n_min"] = 1794,
+						["n_amt"] = 1794,
+						["n_num"] = 1,
+						["count"] = 3,
+					},
+					["49045.64"] = {
+						["c_amt"] = 3260,
+						["r_amt"] = 1016,
+						["c_max"] = 3260,
+						["c_num"] = 1,
+						["n_max"] = 2133,
+						["targets"] = {
+							["Nether Ray"] = {
+								["amount"] = 2133,
+							},
+							["Golhine"] = {
+								["amount"] = 5080,
+							},
+						},
+						["count"] = 3,
+						["amount"] = 7213,
+						["c_min"] = 3260,
+						["n_amt"] = 3953,
+						["n_num"] = 2,
+						["n_min"] = 1820,
+					},
+					["49050.1"] = {
+						["c_amt"] = 10974,
+						["count"] = 2,
+						["amount"] = 10974,
+						["c_max"] = 5912,
+						["c_min"] = 5062,
+						["targets"] = {
+							["Nether Ray"] = {
+								["amount"] = 5062,
+							},
+							["Golhine"] = {
+								["amount"] = 5912,
+							},
+						},
+						["c_num"] = 2,
+					},
+					["6603.1.Sporebat"] = {
+						["n_min"] = 369,
+						["count"] = 8,
+						["amount"] = 5919,
+						["targets"] = {
+							["Sporebat"] = {
+								["amount"] = 5362,
+							},
+							["Golhine"] = {
+								["amount"] = 557,
+							},
+						},
+						["n_amt"] = 5919,
+						["n_num"] = 8,
+						["n_max"] = 1407,
+					},
+					["25228.32"] = {
+						["n_min"] = 147,
+						["r_amt"] = 42,
+						["count"] = 6,
+						["amount"] = 2623,
+						["targets"] = {
+							["Voidwalker"] = {
+								["amount"] = 2623,
+							},
+						},
+						["n_amt"] = 2623,
+						["n_num"] = 6,
+						["n_max"] = 1038,
+					},
+					["49052.1"] = {
+						["n_min"] = 1858,
+						["count"] = 1,
+						["amount"] = 1858,
+						["targets"] = {
+							["Golhine"] = {
+								["amount"] = 1858,
+							},
+						},
+						["n_amt"] = 1858,
+						["n_num"] = 1,
+						["n_max"] = 1858,
+					},
+					["63900.8.Sporebat"] = {
+						["n_min"] = 137,
+						["r_amt"] = 209,
+						["count"] = 2,
+						["amount"] = 1717,
+						["targets"] = {
+							["Sporebat"] = {
+								["amount"] = 137,
+							},
+							["Golhine"] = {
+								["amount"] = 1580,
+							},
+						},
+						["n_amt"] = 1717,
+						["n_num"] = 2,
+						["n_max"] = 1580,
+					},
+					["-53598.8.Sporebat"] = {
+						["n_min"] = 176,
+						["r_amt"] = 144,
+						["count"] = 2,
+						["amount"] = 1474,
+						["targets"] = {
+							["Sporebat"] = {
+								["amount"] = 176,
+							},
+							["Golhine"] = {
+								["amount"] = 1298,
+							},
+						},
+						["n_amt"] = 1474,
+						["n_num"] = 2,
+						["n_max"] = 1298,
+					},
+					["75.1"] = {
+						["c_amt"] = 27514,
+						["c_max"] = 4652,
+						["c_num"] = 7,
+						["n_max"] = 2260,
+						["targets"] = {
+							["Nether Ray"] = {
+								["amount"] = 5382,
+							},
+							["Golhine"] = {
+								["amount"] = 39727,
+							},
+						},
+						["count"] = 17,
+						["amount"] = 45109,
+						["c_min"] = 2606,
+						["n_amt"] = 17595,
+						["n_num"] = 10,
+						["n_min"] = 1167,
+					},
+				},
+				["id"] = "0xF130011A0D00000A",
+				["healspells"] = {
+					["62801.32.Sporebat"] = {
+						["n_min"] = 378,
+						["count"] = 3,
+						["amount"] = 1134,
+						["targets"] = {
+							["Sporebat <Thotar>"] = {
+								["amount"] = 1134,
+							},
+						},
+						["n_amt"] = 1134,
+						["n_num"] = 3,
+						["n_max"] = 378,
+					},
+					["43185.1"] = {
+						["n_min"] = 2210,
+						["count"] = 1,
+						["amount"] = 2210,
+						["targets"] = {
+							["Thotar"] = {
+								["amount"] = 2210,
+							},
+						},
+						["n_amt"] = 2210,
+						["n_num"] = 1,
+						["n_max"] = 2210,
+					},
+					["-24529.8.Sporebat"] = {
+						["n_min"] = 291,
+						["count"] = 2,
+						["amount"] = 873,
+						["targets"] = {
+							["Sporebat <Thotar>"] = {
+								["amount"] = 873,
+							},
+						},
+						["n_amt"] = 873,
+						["n_num"] = 2,
+						["n_max"] = 582,
+					},
+				},
+				["overkill"] = 878,
+				["potionspells"] = {
+					["33447"] = 1,
+				},
+				["heal"] = 4217,
+				["potion"] = 1,
+				["petdamage"] = 9110,
+				["totaldamage"] = 110414,
+				["ccdone"] = 2,
+				["cctakenspells"] = {
+					["-5116.64"] = {
+						["sources"] = {
+							["Ayanna"] = 1,
+						},
+						["n"] = 1,
+					},
+					["-6215.32"] = {
+						["sources"] = {
+							["Gimrizz"] = 1,
+						},
+						["n"] = 1,
+					},
+				},
+				["timespent"] = {
+					["Sporebat"] = 2,
+					["Voidwalker"] = 0.31,
+					["Golhine"] = 22.12,
+					["Gimrizz"] = 0,
+					["Bromos"] = 6.69,
+					["Nether Ray"] = 6.909999999999999,
+				},
 			},
 			["Tana"] = {
 				["last"] = 240615.231,
@@ -1823,19 +1823,6 @@ SkadaCharDB = {
 						["count"] = 1,
 						["amount"] = 0,
 					},
-					["-53598.8"] = {
-						["sources"] = {
-							["Sporebat"] = {
-								["amount"] = 1137,
-							},
-						},
-						["count"] = 1,
-						["amount"] = 1137,
-						["n_min"] = 1137,
-						["n_amt"] = 1137,
-						["n_num"] = 1,
-						["n_max"] = 1137,
-					},
 					["6603.1"] = {
 						["c_amt"] = 3432,
 						["c_max"] = 1288,
@@ -1856,6 +1843,19 @@ SkadaCharDB = {
 						["n_amt"] = 450,
 						["n_num"] = 1,
 						["count"] = 5,
+					},
+					["-53598.8"] = {
+						["sources"] = {
+							["Sporebat"] = {
+								["amount"] = 1137,
+							},
+						},
+						["count"] = 1,
+						["amount"] = 1137,
+						["n_min"] = 1137,
+						["n_amt"] = 1137,
+						["n_num"] = 1,
+						["n_max"] = 1137,
 					},
 					["54043.2"] = {
 						["mis_n"] = 1,
@@ -2195,18 +2195,18 @@ SkadaCharDB = {
 						["c_num"] = 2,
 					},
 					["-63672.32"] = {
-						["r_amt"] = 88,
 						["sources"] = {
 							["Ayanna"] = {
 								["amount"] = 798,
 							},
 						},
+						["r_amt"] = 88,
 						["count"] = 1,
 						["amount"] = 798,
 						["n_min"] = 798,
-						["n_max"] = 798,
-						["n_num"] = 1,
 						["n_amt"] = 798,
+						["n_num"] = 1,
+						["n_max"] = 798,
 					},
 					["49048.1"] = {
 						["c_amt"] = 4016,
@@ -2462,9 +2462,9 @@ SkadaCharDB = {
 						["count"] = 5,
 						["amount"] = 11134,
 						["c_min"] = 3622,
-						["n_min"] = 1430,
-						["n_num"] = 4,
 						["n_amt"] = 7512,
+						["n_num"] = 4,
+						["n_min"] = 1430,
 					},
 					["-63672.32"] = {
 						["n_min"] = 691,
@@ -2518,9 +2518,9 @@ SkadaCharDB = {
 						["count"] = 3,
 						["amount"] = 4858,
 						["c_min"] = 668,
-						["n_min"] = 1942,
-						["n_num"] = 2,
 						["n_amt"] = 4190,
+						["n_num"] = 2,
+						["n_min"] = 1942,
 					},
 					["63900.8.Boar"] = {
 						["c_amt"] = 1339,
@@ -2549,9 +2549,9 @@ SkadaCharDB = {
 								["amount"] = 110,
 							},
 						},
-						["count"] = 10,
-						["abs_n"] = 1,
 						["c_min"] = 1339,
+						["abs_n"] = 1,
+						["count"] = 10,
 						["amount"] = 4914,
 						["n_min"] = 110,
 						["n_amt"] = 3575,
@@ -2606,13 +2606,13 @@ SkadaCharDB = {
 								["amount"] = 494,
 							},
 						},
-						["n_amt"] = 494,
-						["c_min"] = 1130,
-						["amount"] = 3150,
 						["n_min"] = 494,
+						["count"] = 4,
+						["amount"] = 3150,
+						["n_amt"] = 494,
 						["abs_n"] = 1,
 						["n_num"] = 1,
-						["count"] = 4,
+						["c_min"] = 1130,
 					},
 					["-49001.8"] = {
 						["c_amt"] = 1734,
@@ -2723,20 +2723,18 @@ SkadaCharDB = {
 								["amount"] = 9013,
 							},
 						},
-						["n_min"] = 1678,
 						["n_amt"] = 15671,
-						["count"] = 17,
+						["n_min"] = 1678,
+						["c_min"] = 3490,
 						["amount"] = 44501,
 						["o_amt"] = 1219,
 						["abs_n"] = 1,
 						["n_num"] = 8,
-						["c_min"] = 3490,
+						["count"] = 17,
 					},
 				},
 				["time"] = 42.60999999999999,
-				["manaspells"] = {
-					["34720.8"] = 691,
-				},
+				["potion"] = 1,
 				["deathlog"] = {
 					{
 						["log"] = {
@@ -2894,9 +2892,11 @@ SkadaCharDB = {
 					["33447"] = 1,
 				},
 				["heal"] = 6159,
-				["potion"] = 1,
-				["ccdone"] = 2,
+				["manaspells"] = {
+					["34720.8"] = 691,
+				},
 				["petdamage"] = 22640,
+				["ccdone"] = 2,
 				["role"] = "DAMAGER",
 				["dispelspells"] = {
 					["19801.8"] = {
@@ -3178,12 +3178,12 @@ SkadaCharDB = {
 								["amount"] = 1786,
 							},
 						},
-						["mis_n"] = 1,
+						["count"] = 7,
 						["amount"] = 6858,
 						["n_min"] = 832,
 						["n_amt"] = 1822,
 						["n_num"] = 2,
-						["count"] = 7,
+						["mis_n"] = 1,
 					},
 					["54043.2"] = {
 						["sources"] = {
@@ -3206,7 +3206,7 @@ SkadaCharDB = {
 						["c_max"] = 4262,
 						["c_num"] = 4,
 						["n_max"] = 1685,
-						["count"] = 5,
+						["c_min"] = 3572,
 						["sources"] = {
 							["Ulfir"] = {
 								["o_amt"] = 2933,
@@ -3216,12 +3216,12 @@ SkadaCharDB = {
 								["amount"] = 5947,
 							},
 						},
-						["c_min"] = 3572,
+						["count"] = 5,
 						["amount"] = 16981,
 						["o_amt"] = 2933,
-						["n_min"] = 1685,
-						["n_num"] = 1,
 						["n_amt"] = 1685,
+						["n_num"] = 1,
+						["n_min"] = 1685,
 					},
 				},
 				["class"] = "ROGUE",
@@ -3327,9 +3327,9 @@ SkadaCharDB = {
 						["count"] = 3,
 						["amount"] = 4427,
 						["c_min"] = 2442,
-						["n_min"] = 887,
-						["n_num"] = 2,
 						["n_amt"] = 1985,
+						["n_num"] = 2,
+						["n_min"] = 887,
 					},
 					["71433.1"] = {
 						["n_min"] = 448,
@@ -3343,6 +3343,20 @@ SkadaCharDB = {
 						["n_amt"] = 448,
 						["n_num"] = 1,
 						["n_max"] = 448,
+					},
+					["57981.8"] = {
+						["c_amt"] = 233,
+						["r_amt"] = 25,
+						["count"] = 1,
+						["amount"] = 233,
+						["c_max"] = 233,
+						["c_min"] = 233,
+						["targets"] = {
+							["Golhine"] = {
+								["amount"] = 233,
+							},
+						},
+						["c_num"] = 1,
 					},
 					["48660.1"] = {
 						["c_amt"] = 5492,
@@ -3359,24 +3373,10 @@ SkadaCharDB = {
 						},
 						["c_min"] = 2200,
 						["amount"] = 6365,
-						["n_amt"] = 873,
 						["n_min"] = 873,
+						["n_amt"] = 873,
 						["n_num"] = 1,
 						["count"] = 3,
-					},
-					["57981.8"] = {
-						["c_amt"] = 233,
-						["r_amt"] = 25,
-						["count"] = 1,
-						["amount"] = 233,
-						["c_max"] = 233,
-						["c_min"] = 233,
-						["targets"] = {
-							["Golhine"] = {
-								["amount"] = 233,
-							},
-						},
-						["c_num"] = 1,
 					},
 					["48668.1"] = {
 						["n_min"] = 2006,
@@ -3407,9 +3407,9 @@ SkadaCharDB = {
 						["count"] = 11,
 						["amount"] = 11009,
 						["c_min"] = 1348,
-						["n_min"] = 590,
-						["n_num"] = 9,
 						["n_amt"] = 8057,
+						["n_num"] = 9,
+						["n_min"] = 590,
 					},
 					["57975.8"] = {
 						["c_amt"] = 1347,
@@ -3428,9 +3428,9 @@ SkadaCharDB = {
 						["count"] = 6,
 						["amount"] = 2508,
 						["c_min"] = 380,
-						["n_min"] = 275,
-						["n_num"] = 3,
 						["n_amt"] = 1161,
+						["n_num"] = 3,
+						["n_min"] = 275,
 					},
 				},
 				["totaldamaged"] = 40748,
@@ -3568,13 +3568,13 @@ SkadaCharDB = {
 						["n_max"] = 3163,
 					},
 				},
-				["ccdone"] = 1,
+				["death"] = 1,
 				["potionspells"] = {
 					["33447"] = 1,
 				},
 				["heal"] = 3163,
 				["potion"] = 1,
-				["death"] = 1,
+				["ccdone"] = 1,
 				["interruptspells"] = {
 					["1766.1"] = {
 						["spells"] = {
@@ -3609,14 +3609,14 @@ SkadaCharDB = {
 		},
 		["overheal"] = 1361,
 		["interrupt"] = 1,
-		["mobname"] = "Nagrand Arena",
 		["ccdone"] = 5,
+		["mobname"] = "Nagrand Arena",
 		["overkill"] = 4452,
 		["etotaldamaged"] = 292955,
 		["heal"] = 17586,
-		["potion"] = 4,
-		["death"] = 4,
 		["name"] = "Nagrand Arena",
+		["death"] = 4,
+		["potion"] = 4,
 		["edamage"] = 217176,
 		["energy"] = 45,
 		["endtime"] = 1752937037,
@@ -3629,13 +3629,13 @@ SkadaCharDB = {
 				["id"] = "0xF130011A0C000009",
 				["class"] = "ROGUE",
 				["damaged"] = 35900,
-				["role"] = "DAMAGER",
-				["death"] = 1,
 				["heal"] = 3163,
-				["potion"] = 1,
+				["death"] = 1,
+				["role"] = "DAMAGER",
+				["time"] = 16.04,
 				["ccdone"] = 1,
 				["cctaken"] = 2,
-				["time"] = 16.04,
+				["potion"] = 1,
 				["energy"] = 45,
 				["damage"] = 26996,
 			},
@@ -3645,13 +3645,13 @@ SkadaCharDB = {
 				["class"] = "HUNTER",
 				["damaged"] = 35434,
 				["overkill"] = 878,
-				["petdamage"] = 9110,
-				["role"] = "DAMAGER",
-				["time"] = 37.02999999999999,
 				["ccdone"] = 2,
+				["role"] = "DAMAGER",
+				["potion"] = 1,
+				["petdamage"] = 9110,
 				["cctaken"] = 2,
 				["heal"] = 4217,
-				["potion"] = 1,
+				["time"] = 37.02999999999999,
 				["damage"] = 106082,
 			},
 			["Tana"] = {
@@ -3711,11 +3711,11 @@ SkadaCharDB = {
 		["overkill"] = 4452,
 		["totaldamaged"] = 165597,
 		["heal"] = 17586,
-		["name"] = "Total",
+		["potion"] = 4,
 		["death"] = 4,
 		["starttime"] = 1752936916,
 		["ccdone"] = 5,
 		["energy"] = 45,
-		["potion"] = 4,
+		["name"] = "Total",
 	},
 }

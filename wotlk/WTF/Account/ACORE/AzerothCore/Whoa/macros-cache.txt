@@ -24,6 +24,10 @@ MACRO 16777223 "equip2" INV_Misc_QuestionMark
 /equipslot 16 item:19019
 /equipslot 17 item:51533
 END
+MACRO 16777228 "equip3" INV_Misc_QuestionMark
+#showtooltip
+/equipslot 16 item:49623
+END
 MACRO 16777227 "i" INV_Misc_QuestionMark
 #showtooltip intimidating shout
 /cast [nomod] intimidating shout
@@ -73,9 +77,9 @@ MACRO 16777218 "waritems2" Ability_Warrior_SavageBlow
 .additem 49888
 .additem 39769
 .additem 19019
+.additem 50046
 END
 MACRO 16777219 "waritems3" Ability_Warrior_SavageBlow
-.additem 50046
 .additem 51533
 .additem 50729
 .additem 44457
@@ -86,7 +90,7 @@ MACRO 16777219 "waritems3" Ability_Warrior_SavageBlow
 .additem 44493 2
 .additem 38949 2
 .additem 41398
-.additem 49110
+.additem 49110 2
 .additem 40117 15
 .additem 40127 15
 .additem 40111 10
@@ -97,4 +101,7 @@ MACRO 16777220 "waritems4" Ability_Warrior_SavageBlow
 .additem 44067
 .additem 38374
 .additem 41611
+.additem 23577
+.additem 32837
+.additem 32838
 END

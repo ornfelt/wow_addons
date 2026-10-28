@@ -1657,6 +1657,18 @@ Healbot_Config_Skins = {
 		["Group"] = 1,
 		["Light"] = 1,
 	},
+	["ShowRaidIconStar"] = {
+		["Ranged"] = 1,
+		["Square"] = 1,
+		["Standard"] = 1,
+		["Vivid"] = 1,
+		["Alterac Valley"] = 1,
+		["Magic"] = 1,
+		["Fluid"] = 1,
+		["Raid"] = 1,
+		["Group"] = 1,
+		["Light"] = 1,
+	},
 	["HighLightActiveBarInCombat"] = {
 		["Ranged"] = 0,
 		["Square"] = 0,
@@ -1668,18 +1680,6 @@ Healbot_Config_Skins = {
 		["Raid"] = 0,
 		["Group"] = 0,
 		["Light"] = 0,
-	},
-	["headtxtcolg"] = {
-		["Ranged"] = 1,
-		["Square"] = 1,
-		["Standard"] = 1,
-		["Vivid"] = 1,
-		["Alterac Valley"] = 1,
-		["Magic"] = 1,
-		["Fluid"] = 1,
-		["Raid"] = 1,
-		["Group"] = 1,
-		["Light"] = 1,
 	},
 	["borcolb"] = {
 		["Ranged"] = 0.2,
@@ -1861,7 +1861,7 @@ Healbot_Config_Skins = {
 		["Group"] = "Casting #s to heal #n for #h",
 		["Light"] = "Casting #s to heal #n for #h",
 	},
-	["ShowRaidIconStar"] = {
+	["headtxtcolg"] = {
 		["Ranged"] = 1,
 		["Square"] = 1,
 		["Standard"] = 1,

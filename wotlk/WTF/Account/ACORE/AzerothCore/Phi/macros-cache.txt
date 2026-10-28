@@ -67,12 +67,22 @@ MACRO 16777228 "enchants" Spell_Arcane_Arcane01
 .additem 38374
 .additem 38986
 .additem 38953
-.additem 44463
-.additem 38981
 .additem 41167
 .additem 45764
 .additem 42968
 .additem 42971
+END
+MACRO 16777242 "equip" Ability_MeleeDamage
+#showtooltip
+/equipslot [nomod] 16 item:50736
+/equipslot [nomod] 17 item:50621
+/equipslot [mod:shift] 16 item:32837
+/equipslot [mod:shift] 17 item:32838
+END
+MACRO 16777243 "equip2" Ability_MeleeDamage
+#showtooltip
+/equipslot 16 item:32837
+/equipslot 17 item:19019
 END
 MACRO 16777234 "fs" INV_Misc_QuestionMark
 #showtooltip shadowstep
@@ -114,12 +124,4 @@ MACRO 16777232 "s" INV_Misc_QuestionMark
 /cast [nomod] sap
 /cast [mod:shift, target=focus] sap
 /cast [mod:ctrl, target=mouseover] sap
-END
-MACRO 16777236 "s" INV_Misc_QuestionMark
-#showtooltip sap
-/cast sap
-END
-MACRO 16777218 "wp" INV_Misc_QuestionMark
-.npcb list spawned
-/hnnew
 END

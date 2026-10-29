@@ -1,1 +1,13 @@
 *.bak
+
+# written by the client: MD5s of the account data cache files, rewritten at every logout
+cache.md5
+
+# saved variables rewritten every session (any expansion, account or character)
+**/SavedVariables/!Questie.lua
+**/SavedVariables/Blizzard_BattlefieldMinimap.lua
+**/SavedVariables/DPSMate.lua
+**/SavedVariables/Blizzard_CombatLog.lua
+**/SavedVariables/Blizzard_TrainerUI.lua
+**/SavedVariables/Blizzard_TimeManager.lua
+**/SavedVariables/CharSetupHelper.lua

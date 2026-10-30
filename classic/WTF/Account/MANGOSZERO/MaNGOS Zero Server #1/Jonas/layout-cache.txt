@@ -10,7 +10,7 @@ X: 398
 Y: -256
 Frame: DPSMate_DPSMate
 FrameLevel: 1
-X: 1149
-Y: -586
-W: 235
-H: 152
+X: 1135
+Y: -594
+W: 262
+H: 149

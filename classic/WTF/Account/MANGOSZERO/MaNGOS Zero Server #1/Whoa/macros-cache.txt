@@ -10,7 +10,6 @@ MACRO 16777221 "altweps" Ability_Repair
 .additem 23054
 .additem 18348
 .additem 17068
-.additem 23221
 .additem 19352
 .additem 22808
 .additem 19351

@@ -9,8 +9,8 @@ FrameLevel: 4
 X: 398
 Y: -256
 Frame: DPSMate_DPSMate
-FrameLevel: 5
-X: 1176
-Y: -606
-W: 235
-H: 152
+FrameLevel: 1
+X: 1135
+Y: -594
+W: 262
+H: 149

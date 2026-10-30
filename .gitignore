@@ -11,3 +11,6 @@ cache.md5
 **/SavedVariables/Blizzard_TrainerUI.lua
 **/SavedVariables/Blizzard_TimeManager.lua
 **/SavedVariables/CharSetupHelper.lua
+
+# per-character camera settings, rewritten by the client every session
+camera-settings.txt

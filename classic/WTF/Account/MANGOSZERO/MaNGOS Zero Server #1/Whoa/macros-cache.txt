@@ -48,6 +48,9 @@ MACRO 16777217 "mount" Ability_Mount_PinkTiger
 /s Adding mount
 /script local f=UnitFactionGroup("player") if f=="Alliance" then SendChatMessage(".additem 18767", "SAY") else SendChatMessage(".additem 18798", "SAY") end
 END
+MACRO 16777230 "MountToggle" Ability_Mount_JungleTiger
+/script for i=0,31 do b=GetPlayerBuff(i,"HELPFUL")if b<0 then break end if strfind(GetPlayerBuffTexture(b),"Mount_")then CancelPlayerBuff(b)return end end UseContainerItem(4,1)
+END
 MACRO 16777224 "p" Ability_Kick
 /script SpellStopCasting()
 /script if IsControlKeyDown() and UnitExists("mouseover") then TargetUnit("mouseover"); CastSpellByName("Pummel"); TargetLastTarget(); else CastSpellByName("Pummel"); end

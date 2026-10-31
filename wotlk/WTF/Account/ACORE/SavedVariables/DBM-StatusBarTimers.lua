@@ -1,2 +1,0 @@
-
-DBT_AllPersistentOptions = nil

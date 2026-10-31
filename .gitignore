@@ -14,3 +14,6 @@ cache.md5
 
 # per-character camera settings, rewritten by the client every session
 camera-settings.txt
+
+# per-character chat window settings, rewritten by the client every session (and by account data sync)
+chat-cache.txt

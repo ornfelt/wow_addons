@@ -4,9 +4,9 @@ MACRO 16777222 "1" INV_Misc_QuestionMark
 /cast [mod:alt, target=arena1] blind
 END
 MACRO 16777223 "2" INV_Misc_QuestionMark
-#showtooltip sinister strike
-/cast [nomod] sinister strike
-/cast [mod:alt, target=arena2] blind
+#showtooltip [stealth,nomod] Ambush; Sinister Strike
+/cast [nomod,stealth] Ambush; [nomod] Sinister Strike
+/cast [mod:alt,target=arena2] Blind
 END
 MACRO 16777224 "3" INV_Misc_QuestionMark
 #showtooltip cheap shot
@@ -78,13 +78,13 @@ MACRO 16777232 "ms" INV_Misc_QuestionMark
 #showtooltip shadowstep
 /cast [target=mouseover] shadowstep
 END
+MACRO 16777234 "s" INV_Misc_QuestionMark
+#showtooltip Stealth
+/cast !Stealth
+END
 MACRO 16777233 "s" INV_Misc_QuestionMark
 #showtooltip sap
 /cast [nomod] sap
 /cast [mod:shift, target=focus] sap
 /cast [mod:ctrl, target=mouseover] sap
-END
-MACRO 16777234 "s" INV_Misc_QuestionMark
-#showtooltip Stealth
-/cast !Stealth
 END

@@ -293,7 +293,7 @@ end
 
 -- UNIT_LEVEL
 function lib:UNIT_LEVEL(unit)
-	if (UnitInParty(unit) or UnitInRaid(unit)) then
+	if unit and (UnitInParty(unit) or UnitInRaid(unit)) then
 		local guid = UnitGUID(unit)
 		local r = guid and self.roster[guid]
 		if (r) then
@@ -305,6 +305,7 @@ end
 
 -- UNIT_AURA
 function lib:UNIT_AURA(unit)
+	if not unit then return end -- seen in BGs/arenas: UnitGUID(nil) errors
 	local guid = UnitGUID(unit)
 	if (not UnitIsVisible(unit) or (self.wasOffline and self.wasOffline[guid])) then
 		if (not self.outOfSight) then

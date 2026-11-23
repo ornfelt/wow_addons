@@ -195,7 +195,7 @@ Skada:RegisterModule("Friendly Fire", function(L, P, _, C)
 
 		local valuetext = Skada:FormatValueCols(
 			mode_cols.Damage and Skada:FormatNumber(value),
-			mode_cols.sDPS and Skada:FormatNumber(value / actor:GetTime())
+			mode_cols.sDPS and Skada:FormatNumber(value / actor:GetTime(set))
 		)
 		return value, valuetext
 	end

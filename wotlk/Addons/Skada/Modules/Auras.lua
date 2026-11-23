@@ -34,6 +34,7 @@ do
 		aura = {}
 		tooltip_school = Skada.tooltip_school
 		Skada.RegisterCallback(self, "Skada_SetComplete", "Clean")
+		Skada.RegisterMessage(self, "COMBAT_PLAYER_LEAVE", "CombatLeave")
 
 		-- what can be cleaned?
 		player_clear = (band(main_flag, player_flag) ~= 0)
@@ -45,6 +46,7 @@ do
 
 	function main:OnDisable()
 		Skada.UnregisterAllCallbacks(self)
+		Skada.UnregisterAllMessages(self)
 	end
 
 	local function can_clear_actor(actor)
@@ -100,17 +102,25 @@ do
 		end
 	end
 
-	function main:Clean(_, set, curtime)
+	function main:Clean(_, set, curtime, maxtime)
 		wipe(aura) -- empty aura table first
 
 		local actors = set and set.actors
 		if not actors then return end
 
-		local maxtime = set and set:GetTime()
+		maxtime = maxtime or (set and set:GetTime())
 		curtime = curtime or Skada._time or time()
 
 		for _, actor in pairs(actors) do
 			clear_actor_table(actor, curtime, maxtime)
+		end
+	end
+
+	-- the total segment gets no Skada_SetComplete, so close its uptimes here.
+	function main:CombatLeave(_, _, curtime)
+		if Skada.profile.totalidc and Skada.total then
+			-- total time doesn't include this fight yet, so don't clamp.
+			self:Clean(nil, Skada.total, curtime, math.huge)
 		end
 	end
 end
@@ -132,6 +142,15 @@ local special_buffs = {
 do
 	local SpellSplit = Private.SpellSplit
 	local PercentToRGB = Private.PercentToRGB
+	local strbyte = string.byte
+
+	-- debuff spellstrings start with "-" (byte 45), buffs don't.
+	local function is_debuff_id(id)
+		if type(id) == "string" then
+			return strbyte(id, 1) == 45
+		end
+		return (SpellSplit(id) or 0) < 0
+	end
 
 	-- formats value texts
 	function format_valuetext(d, cols, count, maxtime, metadata, subview, no_order)
@@ -252,9 +271,9 @@ do
 			if not spells then return end
 
 			local count, uptime = 0, 0
+			local want_debuff = (auratype == "DEBUFF")
 			for id, spell in pairs(spells) do
-				local spellid = SpellSplit(id)
-				if (auratype == "BUFF" and spellid > 0) or (auratype == "DEBUFF" and spellid < 0) then
+				if is_debuff_id(id) == want_debuff then
 					count = count + 1
 					uptime = uptime + (spell.u or spell.uptime)
 				end
@@ -317,13 +336,10 @@ do
 		end
 
 		local nr = 0
+		local want_debuff = (auratype == "DEBUFF")
 		for id, spell in pairs(spells) do
-			local spellid = SpellSplit(id)
 			local spell_u = spell.u or spell.uptime
-			if
-				(auratype == "BUFF" and spellid > 0 and spell_u > 0) or
-				(auratype == "DEBUFF" and spellid < 0 and spell_u > 0)
-			then
+			if spell_u > 0 and is_debuff_id(id) == want_debuff then
 				nr = nr + 1
 
 				local d = win:spell(nr, id, false)

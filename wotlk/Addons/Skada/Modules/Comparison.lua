@@ -69,6 +69,7 @@ Skada:RegisterModule("Comparison", function(L, P)
 		if label == L["Critical Hits"] or label == L["Normal Hits"] or label == L["Glancing"] then
 			local set = win:GetSelectedSet()
 			local actor = set and set:GetActor(win.actorname, win.actorid)
+			if not actor then return end
 			local spell = actor.damagespells and actor.damagespells[win.spellid]
 			local otherid = win.otherid
 
@@ -402,7 +403,7 @@ Skada:RegisterModule("Comparison", function(L, P)
 			local b_amt1 = spell and spell.b_amt
 			local b_amt2 = ospell and ospell.b_amt
 			if (b_amt1 and b_amt1 > 0) or (b_amt2 and b_amt2 > 0) then
-				nr = add_detail_bar(win, nr, L["RESIST"], b_amt1, b_amt2, true)
+				nr = add_detail_bar(win, nr, L["BLOCK"], b_amt1, b_amt2, true)
 			end
 
 			-- overkill damage
@@ -446,10 +447,8 @@ Skada:RegisterModule("Comparison", function(L, P)
 		if actor.id == otherid then
 			win.title = uformat(L["%s's spells on %s"], classfmt(win.actorclass, win.actorname), classfmt(win.targetclass, win.targetname))
 
-			local total = targets[win.targetname] and targets[win.targetname].amount
-			if P.absdamage and targets[win.targetname].total then
-				total = targets[win.targetname].total
-			end
+			local tg = targets[win.targetname]
+			local total = tg and (P.absdamage and tg.total or tg.amount)
 
 			local spells = (total and total > 0) and actor.damagespells
 			if not spells then
@@ -481,10 +480,8 @@ Skada:RegisterModule("Comparison", function(L, P)
 		local otargets, _, oactor = set:GetActorDamageTargets(othername, otherid, C)
 
 		-- the compared actor
-		local total = targets[win.targetname] and targets[win.targetname].amount
-		if P.absdamage and targets[win.targetname].total then
-			total = targets[win.targetname].total
-		end
+		local tg = targets[win.targetname]
+		local total = tg and (P.absdamage and tg.total or tg.amount)
 
 		-- existing targets.
 		local spells = (total and total > 0) and actor.damagespells
@@ -540,10 +537,8 @@ Skada:RegisterModule("Comparison", function(L, P)
 
 		-- unexisting targets.
 		if not otargets then return end
-		total = otargets[win.targetname] and otargets[win.targetname].amount
-		if P.absdamage and otargets[win.targetname].total then
-			total = otargets[win.targetname].total
-		end
+		local otg = otargets[win.targetname]
+		total = otg and (P.absdamage and otg.total or otg.amount)
 
 		spells = (total and total > 0) and oactor.damagespells
 		if not spells then

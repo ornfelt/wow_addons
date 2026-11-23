@@ -56,6 +56,7 @@ Skada:RegisterModule("Deaths", function(L, P, _, _, M, O)
 	--------------------------------------------------------------------------
 
 	local data = {} -- holds what's to log
+	local dead = {} -- names of dead actors
 	local function log_deathlog(set, override)
 		if not set or (set == Skada.total and not P.totalidc) then return end
 
@@ -71,8 +72,7 @@ Skada:RegisterModule("Deaths", function(L, P, _, _, M, O)
 
 		-- seet actor maxhp if not already set
 		if not deathlog.hpm or deathlog.hpm == 0 then
-			_, _, deathlog.hpm = UnitHealthInfo(data.actorname, actor.id, "group")
-			deathlog.hpm = deathlog.hpm or 0
+			deathlog.hpm = data.hpm or 0
 		end
 
 		local log = new()
@@ -80,7 +80,7 @@ Skada:RegisterModule("Deaths", function(L, P, _, _, M, O)
 		log.src = data.srcName
 		log.cri = data.critical
 		log.time = Skada._Time or GetTime()
-		_, log.hp = UnitHealthInfo(data.actorname, actor.id, "group")
+		log.hp = data.hp
 
 		if data.amount then
 			deathlog.time = log.time
@@ -88,7 +88,7 @@ Skada:RegisterModule("Deaths", function(L, P, _, _, M, O)
 			log.rem = nil
 
 			if data.amount == true then -- instakill
-				log.amt = -log.hp
+				log.amt = -(log.hp or 0)
 				deathlog.id = log.id
 				deathlog.src = log.src
 			elseif data.amount ~= 0 then
@@ -126,6 +126,12 @@ Skada:RegisterModule("Deaths", function(L, P, _, _, M, O)
 		if #deathlog.log > M.deathlogevents then
 			del(tremove(deathlog.log))
 		end
+	end
+
+	-- reads the actor's health once per event, then logs to all sets
+	local function dispatch_deathlog(override)
+		_, data.hp, data.hpm = UnitHealthInfo(data.actorname, data.actorid, "group")
+		Skada:DispatchSets(log_deathlog, override)
 	end
 
 	local function log_death(set, actorname, actorid, actorflags)
@@ -183,7 +189,13 @@ Skada:RegisterModule("Deaths", function(L, P, _, _, M, O)
 		local misstypes = {RESIST = true, BLOCK = true, ABSORB = true}
 
 		function spell_damage(t)
-			if t.spellid and t.amount and not ignored_spells[t.spellid] then
+			-- taking damage means alive (no SPELL_RESURRECT for spirit healers)
+			if t.dstName and dead[t.dstName] then
+				dead[t.dstName] = nil
+			end
+
+			-- SPELL_INSTAKILL has no amount
+			if t.spellid and (t.amount or t.event == "SPELL_INSTAKILL") and not ignored_spells[t.spellid] then
 				data.srcName = t.srcName
 				data.actorid = t.dstGUID
 				data.actorname = t.dstName
@@ -204,7 +216,7 @@ Skada:RegisterModule("Deaths", function(L, P, _, _, M, O)
 					data.amount = 0 - data.amount
 				end
 
-				Skada:DispatchSets(log_deathlog)
+				dispatch_deathlog()
 			end
 		end
 
@@ -237,7 +249,7 @@ Skada:RegisterModule("Deaths", function(L, P, _, _, M, O)
 					data.absorbed = t.absorbed
 				end
 
-				Skada:DispatchSets(log_deathlog)
+				dispatch_deathlog()
 			end
 		end
 	end
@@ -258,6 +270,11 @@ Skada:RegisterModule("Deaths", function(L, P, _, _, M, O)
 		}, {__index = Skada.ignored_spells.heal})
 
 		function spell_heal(t)
+			-- being healed means alive
+			if t.dstName and dead[t.dstName] then
+				dead[t.dstName] = nil
+			end
+
 			-- no spell id or ignored healing spell? (Tables.lua)
 			if not t.spellid or ignored_spells[t.spellid] then return end
 			-- no spellstring or ignored healing spell? (top)
@@ -287,7 +304,7 @@ Skada:RegisterModule("Deaths", function(L, P, _, _, M, O)
 				data.overheal = t.overheal
 			end
 
-			Skada:DispatchSets(log_deathlog)
+			dispatch_deathlog()
 		end
 	end
 
@@ -295,9 +312,9 @@ Skada:RegisterModule("Deaths", function(L, P, _, _, M, O)
 	-- death and resurrect handlers
 	--------------------------------------------------------------------------
 
-	local dead = {}
 	local function unit_died(t)
-		if not UnitIsFeignDeath(t.dstName) then
+		-- already dead? (Spirit of Redemption fading fires UNIT_DIED again)
+		if not dead[t.dstName] and not UnitIsFeignDeath(t.dstName) then
 			dead[t.dstName] = true
 			Skada:DispatchSets(log_death, t.dstName, t.dstGUID, t.dstFlags)
 		end
@@ -308,6 +325,10 @@ Skada:RegisterModule("Deaths", function(L, P, _, _, M, O)
 				death_timers = del(death_timers)
 			end
 		end
+		-- the timer's own args table
+		if t.sor_args then
+			del(t)
+		end
 	end
 
 	local function sor_applied(t)
@@ -316,6 +337,7 @@ Skada:RegisterModule("Deaths", function(L, P, _, _, M, O)
 			args.dstGUID = t.dstGUID
 			args.dstName = t.dstName
 			args.dstFlags = t.dstFlags
+			args.sor_args = true
 
 			death_timers = death_timers or new()
 			death_timers[t.dstGUID] = Skada:ScheduleTimer(unit_died, 0.01, args)
@@ -349,8 +371,8 @@ Skada:RegisterModule("Deaths", function(L, P, _, _, M, O)
 			data.aura = nil
 			data.remove = nil
 
-			dead[data.actorid] = nil
-			Skada:DispatchSets(log_deathlog, true)
+			dead[data.actorname] = nil
+			dispatch_deathlog(true)
 		end
 	end
 
@@ -383,7 +405,7 @@ Skada:RegisterModule("Deaths", function(L, P, _, _, M, O)
 			data.absorbed = nil
 			data.critical = nil
 
-			Skada:DispatchSets(log_deathlog)
+			dispatch_deathlog()
 		end
 
 		function handle_debuff(t)
@@ -943,7 +965,7 @@ Skada:RegisterModule("Deaths", function(L, P, _, _, M, O)
 			(channel == "SELF") and announce_fmt1 or announce_fmt2,
 			log.src or L["Unknown"], -- source name
 			actorname or L["Unknown"], -- actor name
-			log.id and spellnames[abs(log.id)] or L["Unknown"], -- spell name
+			log.id and spellnames[log.id] or L["Unknown"], -- spell name
 			log.amt and Skada:FormatNumber(0 - log.amt, 1) or 0 -- spell amount
 		)
 

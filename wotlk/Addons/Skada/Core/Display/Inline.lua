@@ -12,8 +12,8 @@ Skada:RegisterDisplay("Inline Bar Display", "mod_inline_desc", function(L)
 	local SavePosition = Private.SavePosition
 	local RestorePosition = Private.RestorePosition
 
-	local mybars = {}
-	local barlibrary = {bars = {}, nextuuid = 1}
+	-- bars are pooled per window: frame.barpool (free) and frame.mybars (in use)
+	local barlibrary = {}
 	local leftmargin = 40
 	local ttactive = false
 
@@ -141,7 +141,9 @@ Skada:RegisterDisplay("Inline Bar Display", "mod_inline_desc", function(L)
 		local frame = window.frame
 
 		if not frame then
-			frame = CreateFrame("Frame", format("%sInlineWindow%s", folder, p.name), UIParent)
+			-- reuse the frame (and its children) if the window existed before.
+			local name = format("%sInlineWindow%s", folder, p.name)
+			frame = _G[name] or CreateFrame("Frame", name, UIParent)
 			frame:SetFrameLevel(1)
 
 			if p.height == 15 then
@@ -172,10 +174,10 @@ Skada:RegisterDisplay("Inline Bar Display", "mod_inline_desc", function(L)
 		frame:SetScript("OnDragStart", frameOnDragStart)
 		frame:SetScript("OnDragStop", frameOnDragStop)
 
-		local titlebg = CreateFrame("Frame", "$parentTitleBackground", frame)
+		local titlebg = frame.titlebg or CreateFrame("Frame", "$parentTitleBackground", frame)
 		titlebg.win = window
 
-		local title = frame:CreateFontString("frameTitle", "OVERLAY")
+		local title = frame.fstitle or frame:CreateFontString("frameTitle", "OVERLAY")
 		title:SetTextColor(self:GetFontColor(p))
 		title:SetFont(self:GetFont(p))
 		title:SetText(window.metadata.title or folder)
@@ -191,7 +193,7 @@ Skada:RegisterDisplay("Inline Bar Display", "mod_inline_desc", function(L)
 		titlebg:EnableMouse(true)
 		titlebg:SetScript("OnMouseDown", titleOnMouseDown)
 
-		local menu = CreateFrame("Button", "$parentMenuButton", frame)
+		local menu = frame.menu or CreateFrame("Button", "$parentMenuButton", frame)
 		menu:ClearAllPoints()
 		menu:SetWidth(12)
 		menu:SetHeight(12)
@@ -211,13 +213,24 @@ Skada:RegisterDisplay("Inline Bar Display", "mod_inline_desc", function(L)
 		frame.win = window
 		window.frame = frame
 
-		--create 20 barframes
-		local temp = 20
-		repeat
-			local bar = barlibrary:CreateBar(nil, window)
-			barlibrary.bars[temp] = bar
-			temp = temp - 1
-		until (temp < 1)
+		if not frame.barpool then
+			frame.barpool, frame.mybars, frame.nextuuid = {}, {}, 1
+
+			--create 20 barframes
+			local temp = 20
+			repeat
+				frame.barpool[temp] = barlibrary:CreateBar(window)
+				temp = temp - 1
+			until (temp < 1)
+		else
+			-- reused frame: its bars belong to the new window object.
+			for _, bar in pairs(frame.barpool) do
+				bar.win = window
+			end
+			for _, bar in pairs(frame.mybars) do
+				bar.win = window
+			end
+		end
 		self:Update(window)
 	end
 
@@ -244,9 +257,11 @@ Skada:RegisterDisplay("Inline Bar Display", "mod_inline_desc", function(L)
 		Skada:ShowTooltip(win, bar.valueid, bar.valuetext, bar, bar.class)
 	end
 
-	function barlibrary:CreateBar(uuid, win)
+	function barlibrary:CreateBar(win)
+		local frame = win.frame
 		local bar = {}
-		bar.uuid = uuid or self.nextuuid
+		bar.uuid = frame.nextuuid
+		frame.nextuuid = frame.nextuuid + 1
 		bar.inuse = false
 		bar.value = 0
 		bar.win = win
@@ -260,18 +275,15 @@ Skada:RegisterDisplay("Inline Bar Display", "mod_inline_desc", function(L)
 		bar.label:SetTextColor(mod:GetFontColor(win.db))
 		bar.label:SetJustifyH("LEFT")
 		bar.label:SetJustifyV("MIDDLE")
-		bar.bg:EnableMouse(true)
+		bar.bg:EnableMouse(not win.db.clickthrough)
 		bar.bg:SetScript("OnMouseDown", barOnMouseDown)
 		bar.bg:SetScript("OnEnter", barOnEnter)
 		bar.bg:SetScript("OnLeave", BarLeave)
 
-		if uuid then
-			self.nextuuid = self.nextuuid + 1
-		end
 		return bar
 	end
 
-	function barlibrary:Deposit(bar)
+	function barlibrary:Deposit(win, bar)
 		--strip the bar of variables
 		bar.inuse = false
 		bar.bg:Hide()
@@ -279,40 +291,28 @@ Skada:RegisterDisplay("Inline Bar Display", "mod_inline_desc", function(L)
 		bar.label:Hide()
 
 		--place it at the front of the queue
-		tinsert(barlibrary.bars, 1, bar)
+		tinsert(win.frame.barpool, 1, bar)
 	end
 
-	local Print = Private.Print
 	function barlibrary:Withdraw(win)
-		local db = win.db
+		local pool = win.frame.barpool
 
-		if #barlibrary.bars < 2 then
-			local replacement = {}
-			local uuid = 1
-			if #barlibrary.bars == 0 then
-				uuid = 1
-			elseif #barlibrary.bars < 2 then
-				uuid = barlibrary.bars[#barlibrary.bars].uuid + 1
-			else
-				uuid = 1
-				Print("\124c0033ff99SkadaInline\124r: THIS SHOULD NEVER HAPPEN")
-			end
-			replacement = self:CreateBar(uuid, win)
-			barlibrary.bars[#barlibrary.bars + 1] = replacement
+		if #pool < 2 then
+			pool[#pool + 1] = self:CreateBar(win)
 		end
 
-		barlibrary.bars[1].inuse = false
-		barlibrary.bars[1].value = 0
-		barlibrary.bars[1].label:SetJustifyH("LEFT")
-		mod:ApplySettings(win)
-		return tremove(barlibrary.bars, 1)
+		local bar = pool[1]
+		bar.inuse = false
+		bar.value = 0
+		bar.label:SetJustifyH("LEFT")
+		return tremove(pool, 1)
 	end
 
 	function mod:RecycleBar(bar)
 		bar.value = 0
 		bar.label:Hide()
 		bar.bg:Hide()
-		barlibrary:Deposit(bar)
+		barlibrary:Deposit(bar.win, bar)
 	end
 
 	function mod:GetBar(win)
@@ -335,9 +335,8 @@ Skada:RegisterDisplay("Inline Bar Display", "mod_inline_desc", function(L)
 			label = format("%s%s%s", label, (db.isonnewline and db.barfontsize * 2 < db.height) and "\n" or " - ", bardata.valuetext)
 		end
 
-		bar.label:SetFont(mod:GetFont(db))
+		-- font and color are set on creation and in ApplySettings.
 		bar.label:SetText(label)
-		bar.label:SetTextColor(mod:GetFontColor(db))
 		bar.class = bardata.class
 		bar.value = bardata.value
 		if bardata.ignore then
@@ -381,6 +380,7 @@ Skada:RegisterDisplay("Inline Bar Display", "mod_inline_desc", function(L)
 			end
 		end
 
+		local mybars = win.frame.mybars
 		local i = #mybars
 		while i > 0 do
 			mod:RecycleBar(tremove(mybars, i))
@@ -452,6 +452,15 @@ Skada:RegisterDisplay("Inline Bar Display", "mod_inline_desc", function(L)
 		end
 	end
 
+	-- applies font, color and mouse settings to the given bars
+	local function style_bars(bars, p)
+		for _, bar in pairs(bars) do
+			bar.label:SetFont(mod:GetFont(p))
+			bar.label:SetTextColor(mod:GetFontColor(p))
+			bar.bg:EnableMouse(not p.clickthrough)
+		end
+	end
+
 	function mod:ApplySettings(win)
 		if not win or not win.frame then return end
 
@@ -463,11 +472,8 @@ Skada:RegisterDisplay("Inline Bar Display", "mod_inline_desc", function(L)
 		f.fstitle:SetTextColor(self:GetFontColor(p))
 		f.fstitle:SetFont(self:GetFont(p))
 
-		for k, bar in pairs(mybars) do
-			bar.label:SetFont(self:GetFont(p))
-			bar.label:SetTextColor(self:GetFontColor(p))
-			bar.bg:EnableMouse(not p.clickthrough)
-		end
+		style_bars(f.mybars, p)
+		style_bars(f.barpool, p)
 		f.menu:SetPoint("BOTTOMLEFT", f, "BOTTOMLEFT", 6, p.height * 0.5 - 8)
 
 		f:SetClampedToScreen(p.clamped == true)
@@ -482,7 +488,11 @@ Skada:RegisterDisplay("Inline Bar Display", "mod_inline_desc", function(L)
 			f:SetHeight(p.height)
 			f.fstitle:SetTextColor(255, 255, 255, 1)
 			f.fstitle:SetFont(ElvUI[1]["media"].normFont, p.barfontsize, nil)
-			for k, bar in pairs(mybars) do
+			for k, bar in pairs(f.mybars) do
+				bar.label:SetFont(ElvUI[1]["media"].normFont, p.barfontsize, nil)
+				bar.label:SetTextColor(255, 255, 255, 1)
+			end
+			for k, bar in pairs(f.barpool) do
 				bar.label:SetFont(ElvUI[1]["media"].normFont, p.barfontsize, nil)
 				bar.label:SetTextColor(255, 255, 255, 1)
 			end

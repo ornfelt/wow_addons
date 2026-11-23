@@ -151,7 +151,7 @@ Skada:RegisterModule("Enemy Damage Taken", function(L, P, _, C)
 	end
 
 	local function start_custom_unit(unit, creatureId, guid, name, amount, overkill)
-		if unit.diff ~= nil and ((type(unit.diff == "table") and not unit.diff[get_instance_diff()]) or (type(unit.diff) ~= "table" and unit.diff ~= get_instance_diff())) then
+		if unit.diff ~= nil and ((type(unit.diff) == "table" and not unit.diff[get_instance_diff()]) or (type(unit.diff) ~= "table" and unit.diff ~= get_instance_diff())) then
 			ignored_units[guid] = true
 			return false
 		end
@@ -309,17 +309,9 @@ Skada:RegisterModule("Enemy Damage Taken", function(L, P, _, C)
 		e.damaged = (e.damaged or 0) + amount
 		set.edamaged = (set.edamaged or 0) + amount
 
-		if e.totaldamaged then
-			e.totaldamaged = e.totaldamaged + amount + absorbed
-		elseif absorbed > 0 then
-			e.totaldamaged = e.damaged + absorbed
-		end
-
-		if set.etotaldamaged then
-			set.etotaldamaged = set.etotaldamaged + amount + absorbed
-		elseif absorbed > 0 then
-			set.etotaldamaged = set.edamaged + absorbed
-		end
+		-- always accumulated (seeded from the plain amount) so sums stay consistent
+		e.totaldamaged = e.totaldamaged and (e.totaldamaged + amount + absorbed) or (e.damaged + absorbed)
+		set.etotaldamaged = set.etotaldamaged and (set.etotaldamaged + amount + absorbed) or (set.edamaged + absorbed)
 
 		local srcName = dmg.srcName
 		local spellid = dmg.spellid
@@ -685,7 +677,7 @@ Skada:RegisterModule("Enemy Damage Taken", function(L, P, _, C)
 
 		for actorname, actor in pairs(actors) do
 			if actor.enemy then
-				local dtps, amount = actor:GetDTPS(set, nil, not mode_cols.sDTPS)
+				local dtps, amount = actor:GetDTPS(set, not mode_cols.DTPS)
 				if amount and amount > 0 then
 					nr = nr + 1
 
@@ -892,17 +884,9 @@ Skada:RegisterModule("Enemy Damage Done", function(L, P, _, C)
 		e.damage = (e.damage or 0) + dmg.amount
 		set.edamage = (set.edamage or 0) + dmg.amount
 
-		if e.totaldamage then
-			e.totaldamage = e.totaldamage + dmg.amount + absorbed
-		elseif absorbed > 0 then
-			e.totaldamage = e.damage + absorbed
-		end
-
-		if set.etotaldamage then
-			set.etotaldamage = set.etotaldamage + dmg.amount + absorbed
-		elseif absorbed > 0 then
-			set.etotaldamage = set.edamage + absorbed
-		end
+		-- always accumulated (seeded from the plain amount) so sums stay consistent
+		e.totaldamage = e.totaldamage and (e.totaldamage + dmg.amount + absorbed) or (e.damage + absorbed)
+		set.etotaldamage = set.etotaldamage and (set.etotaldamage + dmg.amount + absorbed) or (set.edamage + absorbed)
 
 		local overkill = dmg.overkill or 0
 		if overkill > 0 then
@@ -1359,7 +1343,7 @@ Skada:RegisterModule("Enemy Healing Done", function(L, P)
 	end
 
 	local function spell_heal(t)
-		if t.spellid and not ignored_spells[t.spellid] then
+		if t.spellid and not ignored_spells[t.spellid] and not t:SourceIsFriendly() then
 			heal.actorid = t.srcGUID
 			heal.actorname = t.srcName
 			heal.actorflags = t.srcFlags
@@ -1432,9 +1416,19 @@ Skada:RegisterModule("Enemy Healing Done", function(L, P)
 	end
 
 	function mode:Update(win, set)
-		win.title = win.class and format("%s (%s)", win.title, L[win.class]) or L["Enemy Healing Done"]
+		win.title = win.class and format("%s (%s)", L["Enemy Healing Done"], L[win.class]) or L["Enemy Healing Done"]
 
-		local total = set and set:GetHeal(win.class, true)
+		local total = set and set:GetHeal(nil, true)
+		if total and win.class then
+			-- enemies store "heal", not "eheal", so filter by class here.
+			total = 0
+			for _, actor in pairs(set.actors) do
+				if actor.enemy and not actor.fake and actor.class == win.class and actor.heal then
+					total = total + actor.heal
+				end
+			end
+		end
+
 		if not total or total == 0 then
 			return
 		elseif win.metadata then
@@ -1445,7 +1439,7 @@ Skada:RegisterModule("Enemy Healing Done", function(L, P)
 		local actors = set.actors -- enemies
 
 		for actorname, actor in pairs(actors) do
-			if actor.enemy and not actor.fake then
+			if actor.enemy and not actor.fake and (not win.class or actor.class == win.class) then
 				local hps, amount = actor:GetHPS(set, nil, not mode_cols.HPS)
 				if amount and amount > 0 then
 					nr = nr + 1

@@ -89,7 +89,7 @@ Skada:RegisterModule("Healing", function(L, P)
 			if not spell.c_max or amount > spell.c_max then
 				spell.c_max = amount
 			end
-			if not spell.c_min or amount < spell.c_min then
+			if amount > 0 and (not spell.c_min or amount < spell.c_min) then
 				spell.c_min = amount
 			end
 		else
@@ -98,7 +98,7 @@ Skada:RegisterModule("Healing", function(L, P)
 			if not spell.n_max or amount > spell.n_max and amount > 0 then
 				spell.n_max = amount
 			end
-			if not spell.n_min or amount < spell.n_min and amount > 0 then
+			if amount > 0 and (not spell.n_min or amount < spell.n_min) then
 				spell.n_min = amount
 			end
 		end
@@ -253,7 +253,7 @@ Skada:RegisterModule("Healing", function(L, P)
 
 		for spellid, spell in pairs(spells) do
 			local tar = spell.targets and spell.targets[win.targetname]
-			local amount = tar and (actor.enemy and tar or tar.amount)
+			local amount = tar and tar.amount
 			if amount then
 				nr = nr + 1
 
@@ -729,7 +729,7 @@ Skada:RegisterModule("Total Healing", function(L)
 				nr = nr + 1
 
 				local d = win:spell(nr, spellid, true)
-				d.value = actor.enemy and tar or (tar.amount + (tar.o_amt or 0))
+				d.value = tar.amount + (tar.o_amt or 0)
 				format_valuetext(d, mode_cols, total, actortime and (d.value / actortime), win.metadata, true)
 			end
 		end
@@ -992,7 +992,7 @@ Skada:RegisterModule("Healing Taken", function(L, P)
 					nr = nr + 1
 
 					local d = win:spell(nr, spellid, true)
-					d.value = actor.enemy and tar or tar.amount
+					d.value = tar.amount
 					format_valuetext(d, mode_cols, total, actortime and (d.value / actortime), win.metadata, true)
 				end
 			end
@@ -1206,7 +1206,7 @@ Skada:RegisterModule("Healing Taken", function(L, P)
 		local total = 0
 
 		for _, source in pairs(sources) do
-			local spells = (not actor.enemy or self.arena) and source.absorbspells -- absorb spells
+			local spells = (not source.enemy or self.arena) and source.absorbspells -- absorb spells
 			if spells then
 				for spellid, spell in pairs(spells) do
 					local amount = spell.targets and spell.targets[name]
@@ -1248,7 +1248,7 @@ Skada:RegisterModule("Healing Taken", function(L, P)
 		return tbl, total, actor
 	end
 
-	get_actor_heal_spell_sources = function(self, name, id, spellid)
+	get_actor_heal_spell_sources = function(self, name, id, spellid, tbl)
 		local sources = spellid and self.actors
 		local actor = sources and self:GetActor(name, id)
 		if not actor then return end

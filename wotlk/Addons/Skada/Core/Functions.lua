@@ -1269,6 +1269,10 @@ do
 
 	local dummy_actor = {} -- used as fallback
 
+	-- [guid] = time of the next spec/role lookup for players still missing them
+	local SPEC_RETRY_DELAY = 5
+	local spec_retry = {}
+
 	-- attempts to find and actor
 	function Skada:FindActor(set, actorname, actorid, is_strict)
 		-- make sure we have all data
@@ -1405,16 +1409,21 @@ do
 
 		-- add more details to the actor...
 		if guidToClass[actor.id] then
-			if self.validclass[actor.class] then
-				-- missing spec?
-				if actor.spec == nil then
-					actor.spec = GetUnitSpec(actor.id)
-					actor.__mod = true
-				end
-				-- missing role?
-				if actor.role == nil or actor.role == "NONE" then
-					actor.role = GetUnitRole(actor.id)
-					actor.__mod = true
+			-- missing spec/role? (lookups scan the group, so failed ones are retried
+			-- at most every SPEC_RETRY_DELAY seconds instead of on every event)
+			if self.validclass[actor.class] and (actor.spec == nil or actor.role == nil or actor.role == "NONE") then
+				local now = Skada._Time or GetTime()
+				if not spec_retry[actor.id] or spec_retry[actor.id] <= now then
+					if actor.spec == nil then
+						actor.spec = GetUnitSpec(actor.id)
+						actor.__mod = true
+					end
+					if actor.role == nil or actor.role == "NONE" then
+						actor.role = GetUnitRole(actor.id)
+						actor.__mod = true
+					end
+					local missing = (actor.spec == nil or actor.role == nil or actor.role == "NONE")
+					spec_retry[actor.id] = missing and (now + SPEC_RETRY_DELAY) or nil
 				end
 			end
 
@@ -1435,9 +1444,6 @@ do
 			actor.__mod = nil
 			callbacks:Fire(actor.enemy and "Skada_GetEnemy" or "Skada_GetPlayer", actor, set)
 		end
-
-		-- trigger addon change status
-		self.changed = true
 
 		-- remove the __new key after binding the actor
 		if actor.__new then
@@ -1528,6 +1534,13 @@ do
 			end
 		end
 
+		-- pets whose owner lookup failed, so the roster/tooltip scan isn't
+		-- repeated on every event. wiped on combat end and roster/pet changes.
+		local no_owner = {}
+		function Private.ClearPetOwnerCache()
+			wipe(no_owner)
+		end
+
 		local function FixPetsHandler(guid, flag)
 			local guidOrClass = guid and guidToClass[guid]
 			if guidOrClass and guidToName[guidOrClass] then
@@ -1541,7 +1554,13 @@ do
 			end
 
 			-- no owner yet?
-			if not guid then return end
+			if not guid or no_owner[guid] then return end
+
+			-- a group member's pet is always friendly: skip hostile/neutral ones.
+			if flag and not Skada:IsFriendly(flag) then
+				no_owner[guid] = true
+				return
+			end
 
 			-- guess the pet from roster.
 			local ownerUnit = GetPetOwnerUnit(guid)
@@ -1557,6 +1576,24 @@ do
 				guidToOwner[guid] = ownerGUID
 				return ownerGUID, ownerName
 			end
+
+			no_owner[guid] = true
+		end
+
+		-- merged pet spell keys/names, cached per pet name to avoid a format() per event.
+		local pet_spellids, pet_spellnames = {}, {}
+		local function PetSpellKey(cache, fmt, spell, petname)
+			local t = cache[petname]
+			if not t then
+				t = {}
+				cache[petname] = t
+			end
+			local key = t[spell]
+			if not key then
+				key = format(fmt, spell, petname)
+				t[spell] = key
+			end
+			return key
 		end
 
 		local IsPlayer = Private.IsPlayer
@@ -1578,10 +1615,10 @@ do
 						action.actorflags = self:GetOwnerFlags(action.actorflags)
 					end
 					if action.spellid and action.petname then
-						action.spellid = format("%s.%s", action.spellid, action.petname)
+						action.spellid = PetSpellKey(pet_spellids, "%s.%s", action.spellid, action.petname)
 					end
 					if action.spellname and action.petname then
-						action.spellname = format("%s (%s)", action.spellname, action.petname)
+						action.spellname = PetSpellKey(pet_spellnames, "%s (%s)", action.spellname, action.petname)
 					end
 				else
 					action.actorname = format("%s <%s>", action.actorname, ownerName)
@@ -2012,10 +2049,38 @@ do
 	local DOT_EVENTS = {SPELL_PERIODIC_DAMAGE = true, SPELL_PERIODIC_MISSED = true}
 	local HOT_EVENTS = {SPELL_PERIODIC_HEAL = true--[[, SPELL_PERIODIC_ENERGIZE = true--]]}
 
+	-- events OnCombatEvent drops (Skada.ignored_events), except the cast
+	-- events it keeps while a segment is running (Core.lua spellcast_events).
+	local IGNORED_EVENTS = Skada.ignored_events
+	local SPELLCAST_EVENTS = {SPELL_CAST_START = true, SPELL_CAST_SUCCESS = true}
+
+	-- the only "Skada_SpellString" listener (Auras) caches applied/refreshed buffs.
+	local SPELLSTRING_EVENTS = {SPELL_AURA_APPLIED = true, SPELL_AURA_REFRESH = true}
+
+	-- cached spell strings: [is_dot_or_hot][school][spellid] = "[-]id.school"
+	local spellstrings = {[true] = {}, [false] = {}}
+	local function get_spellstring(spellid, school, negative)
+		local by_school = spellstrings[negative]
+		local t = by_school[school]
+		if not t then
+			t = {}
+			by_school[school] = t
+		end
+		local str = t[spellid]
+		if not str then
+			str = format(negative and "-%s.%s" or "%s.%s", spellid, school)
+			t[spellid] = str
+		end
+		return str
+	end
+
 	-- combat log handler
 	function Skada:ParseCombatLog(_, timestamp, event, ...)
 		-- disabled or test mode?
 		if self.disabled or self.testMode then return end
+
+		-- event nobody uses? skip the parsing altogether.
+		if IGNORED_EVENTS[event] and not (self.current and SPELLCAST_EVENTS[event]) then return end
 
 		local args = Handlers[event](ARGS, timestamp, event, ...)
 
@@ -2058,11 +2123,11 @@ do
 		end
 
 		if args.spellid and args.spellschool and not args.spellstring then
-			args.spellstring = format((args.is_dot or args.is_hot) and "-%s.%s" or "%s.%s", args.spellid, args.spellschool)
+			args.spellstring = get_spellstring(args.spellid, args.spellschool, (args.is_dot or args.is_hot) and true or false)
 		end
 
 		if args.extraspellid and args.extraschool and not args.extrastring then
-			args.extrastring = format("%s.%s", args.extraspellid, args.extraschool)
+			args.extrastring = get_spellstring(args.extraspellid, args.extraschool, false)
 		end
 
 		-- the event happens within the group?
@@ -2074,16 +2139,18 @@ do
 			return self:OnCombatEvent(args)
 		end
 
-		if args.spellstring then
-			callbacks:Fire("Skada_SpellString", args, args.spellid, args.spellstring)
+		if SPELLSTRING_EVENTS[event] then
+			if args.spellstring then
+				callbacks:Fire("Skada_SpellString", args, args.spellid, args.spellstring)
+			end
+
+			if args.extrastring then
+				callbacks:Fire("Skada_SpellString", args, args.extraspellid, args.extrastring)
+			end
 		end
 
-		if args.extrastring then
-			callbacks:Fire("Skada_SpellString", args, args.extraspellid, args.extrastring)
-		end
-
-		-- check first hit!
-		if self.profile.firsthit and not self.firsthit and TRIGGER_EVENTS[args.event] then
+		-- check first hit! (not once the segment's target is known to be no boss)
+		if self.profile.firsthit and not self.firsthit and TRIGGER_EVENTS[args.event] and not (self.current and self.current.gotboss == false) then
 			self:CheckFirstHit(args)
 		end
 

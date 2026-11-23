@@ -111,7 +111,7 @@ local function verify_set(mode, set)
 		for _, actor in pairs(actors) do
 			if actor.enemy and mode.AddEnemyAttributes then
 				mode:AddEnemyAttributes(actor, set)
-			elseif not actor.enemy and mode.mode.AddPlayerAttributes then
+			elseif not actor.enemy and mode.AddPlayerAttributes then
 				mode:AddPlayerAttributes(actor, set)
 			end
 		end
@@ -257,6 +257,27 @@ local function clean_sets(force)
 	local maxsets = 0
 	local sets = Skada.sets
 
+	-- battleground segments hold every player of both teams and get huge
+	-- (an Alterac Valley one is megabytes in the SavedVariables): keep fewer.
+	local pvpkeep = P.pvpsetstokeep
+	if pvpkeep and not force then
+		local numpvp = 0
+		for i = 1, #sets do
+			local set = sets[i]
+			if set and set.type == "pvp" and not set.keep then
+				numpvp = numpvp + 1
+			end
+		end
+		for i = #sets, 1, -1 do
+			if numpvp <= pvpkeep then break end
+			local set = sets[i]
+			if set and set.type == "pvp" and not set.keep then
+				delete_set(tremove(sets, i))
+				numpvp = numpvp - 1
+			end
+		end
+	end
+
 	for i = 1, #sets do
 		local set = sets[i]
 		if set then
@@ -318,13 +339,16 @@ do
 			dismiss_timers[guid] = nil
 
 			if not next(dismiss_timers) then
-				dismiss_timers[guid] = del(dismiss_timers[guid])
+				dismiss_timers = del(dismiss_timers)
 			end
 		end
 	end
 	function dismiss_pet(guid, delay)
 		if guid and guidToClass[guid] and not guidToName[guid] then
 			dismiss_timers = dismiss_timers or new()
+			if dismiss_timers[guid] then -- don't leave an older timer running
+				Skada:CancelTimer(dismiss_timers[guid], true)
+			end
 			dismiss_timers[guid] = Skada:ScheduleTimer(dismiss_handler, delay or 0.1, guid)
 		end
 	end
@@ -773,6 +797,9 @@ function Window:SetSelectedSet(set, step)
 	end
 end
 
+-- set while combat_start switches window modes: it updates all windows once at the end.
+local suppress_display_update = nil
+
 function Window:DisplayMode(mode)
 	if type(mode) ~= "table" then return end
 
@@ -804,7 +831,9 @@ function Window:DisplayMode(mode)
 		self.child:DisplayMode(mode)
 	end
 
-	Skada:UpdateDisplay()
+	if not suppress_display_update then
+		Skada:UpdateDisplay()
+	end
 end
 
 function Window:FilterClass(class)
@@ -1149,7 +1178,7 @@ function set_active(enable)
 		local db = win and win.db
 		if db and enable and not db.hidden and not win:IsShown() then
 			win:Show()
-		elseif db and not enable or not db.hidden and win:IsShown() then
+		elseif db and (not enable or db.hidden) and win:IsShown() then
 			win:Hide()
 		end
 	end
@@ -1767,12 +1796,23 @@ do
 	local UnitIterator = Skada.UnitIterator
 	local AddCombatant = Private.AddCombatant
 	local last_check_group = nil
+	local check_group_timer = nil
+	local CHECK_GROUP_THROTTLE = 0.5
+
+	local function check_group_delayed()
+		check_group_timer = nil
+		check_group()
+	end
 
 	function check_group()
 		-- throttle group check.
 		local checkTime = GetTime()
-		if not last_check_group or (checkTime - last_check_group) > 0.5 then
+		if last_check_group and (checkTime - last_check_group) <= CHECK_GROUP_THROTTLE then
+			-- throttled: run once more when the cooldown ends so the change isn't lost.
+			check_group_timer = check_group_timer or Skada:ScheduleTimer(check_group_delayed, CHECK_GROUP_THROTTLE - (checkTime - last_check_group) + 0.01)
+		else
 			last_check_group = checkTime -- update cooldown
+			Private.ClearPetOwnerCache() -- pets may have an owner in the group now
 
 			-- wipe tables
 			wipe(guidToUnit)
@@ -1933,6 +1973,7 @@ do
 	local groupUnits = Skada.Units.group
 
 	function Skada:UNIT_PET(owners)
+		Private.ClearPetOwnerCache() -- a new pet may now have a known owner
 		for owner in pairs(owners) do
 			local unit = groupUnits[owner] and format("%spet", owner)
 			local guid = unit and UnitGUID(unit)
@@ -2576,6 +2617,8 @@ function combat_end()
 	if not Skada.current then return end
 	Private.ClearTempUnits()
 	wipe(GetCreatureId) -- wipe cached creature IDs
+	Private.ClearUnitCaches() -- cached player/pet checks
+	Private.ClearPetOwnerCache() -- pets without a known owner
 
 	-- trigger events.
 	local curtime = time()
@@ -2806,10 +2849,7 @@ do
 	function Skada:UnregisterFromCL(func)
 		if type(func) ~= "function" then return end
 		for _, funcs in pairs(combatlog_events) do
-			if funcs[func] then
-				funcs[func] = nil
-				break
-			end
+			funcs[func] = nil -- a func can be registered for several events
 		end
 	end
 
@@ -2859,6 +2899,7 @@ do
 		Skada.inCombat = true
 		Skada:Wipe()
 
+		suppress_display_update = true -- one UpdateDisplay(true) below covers all windows
 		for i = 1, #windows do
 			local win = windows[i]
 			local db = win and win.db
@@ -2894,6 +2935,7 @@ do
 				win:Toggle()
 			end
 		end
+		suppress_display_update = nil
 
 		Skada:UpdateDisplay(true)
 

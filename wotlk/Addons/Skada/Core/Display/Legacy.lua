@@ -1310,7 +1310,7 @@ Skada:RegisterDisplay("Legacy Bar Display", "mod_bar_desc", function(L, P)
 		end
 
 		local function bar_order_reverse_sort(a, b)
-			return a and b and a.order and b.order and a.order < b.order
+			return a and b and a.order and b.order and a.order > b.order
 		end
 
 		local function bar_seticon(bar, db, data, icon)
@@ -1401,10 +1401,11 @@ Skada:RegisterDisplay("Legacy Bar Display", "mod_bar_desc", function(L, P)
 					end
 
 					bar.class = data.class
+					-- same result as SetValue + SetMaxValue, in one call
+					bar.maxValue = metadata.maxvalue or 1
 					bar:SetValue(data.value)
-					bar:SetMaxValue(metadata.maxvalue or 1)
 
-					if metadata.ordersort then
+					if metadata.ordersort or metadata.reversesort then
 						bar.order = i
 					end
 

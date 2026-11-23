@@ -150,10 +150,18 @@ Skada:RegisterModule("Threat", function(L, P, _, _, M, O)
 			win.title = self.unitName or win.title
 
 			-- reset stuff & check group
-			max_threat, nr = 0, 0
+			max_threat, nr, tank_threat = 0, 0, nil
 			GroupIterator(add_to_threattable, self.unitID, win)
 			if max_threat > 0 and self.db.showAggroBar then
 				add_to_threattable("AGGRO", nil, self.unitID, win)
+			end
+
+			-- drop rows left from the previous update (left group, dead pet...)
+			for i = nr + 1, #win.dataset do
+				local d = win.dataset[i]
+				if d then
+					d.id = nil
+				end
 			end
 
 			-- nothing was added.
@@ -220,6 +228,11 @@ Skada:RegisterModule("Threat", function(L, P, _, _, M, O)
 			tank_threat = nil
 			clear(threat_table)
 			self.unitID, self.unitName = nil, nil
+		end
+
+		-- cached actors keep their unit id, which shifts when the roster changes.
+		function mode:RosterUpdate()
+			clear(threat_table)
 		end
 	end
 
@@ -574,6 +587,7 @@ Skada:RegisterModule("Threat", function(L, P, _, _, M, O)
 
 			Skada.RegisterCallback(self, "Skada_ApplySettings", "ApplySettings")
 			Skada.RegisterMessage(self, "COMBAT_PLAYER_LEAVE", "CombatLeave")
+			Skada.RegisterMessage(self, "GROUP_ROSTER_UPDATE", "RosterUpdate")
 
 			Skada:AddFeed(L["Threat: Personal Threat"], add_threat_feed)
 			Skada:AddMode(self)

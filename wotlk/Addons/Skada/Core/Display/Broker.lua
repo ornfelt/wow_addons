@@ -179,13 +179,14 @@ Skada:RegisterDisplay("Data Text", "mod_broker_desc", function(L, P)
 	end
 
 	function mod:Update(win)
-		if win.obj then
-			win.obj.text = ""
-		end
-
 		local dataset = sortDataset(win)
 		local data = (#dataset > 0) and dataset[1]
-		if not data or not data.id then return end
+		if not data or not data.id then
+			if win.obj then
+				win.obj.text = ""
+			end
+			return
+		end
 
 		local label = format("%s - %s", formatLabel(win, data) or "", formatValue(win, data) or "")
 
@@ -195,6 +196,33 @@ Skada:RegisterDisplay("Data Text", "mod_broker_desc", function(L, P)
 		if win.db.useframe then
 			win.frame.title:SetText(label)
 		end
+	end
+
+	-- without "Use frame", the frame stays hidden and the window's
+	-- visibility is tracked here so the data text keeps updating.
+	local displayPrototype = Skada.displayPrototype
+
+	function mod:IsShown(win)
+		if win and win.frame and not win.db.useframe then
+			return win.brokershown and true or false, win.frame
+		end
+		return displayPrototype.IsShown(self, win)
+	end
+
+	function mod:Show(win)
+		if win and win.frame and not win.db.useframe then
+			win.brokershown = true
+			return
+		end
+		return displayPrototype.Show(self, win)
+	end
+
+	function mod:Hide(win)
+		if win and win.frame and not win.db.useframe then
+			win.brokershown = nil
+			return
+		end
+		return displayPrototype.Hide(self, win)
 	end
 
 	local fbackdrop = {}

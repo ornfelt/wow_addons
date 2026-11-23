@@ -332,6 +332,12 @@ Skada:RegisterModule("Absorbs", function(L, P, G)
 			return (a.ts > b.ts)
 		end
 
+		-- passive talent shields (points) are spent last
+		local a_passive, b_passive = (a.points ~= nil), (b.points ~= nil)
+		if a_passive ~= b_passive then
+			return a_passive
+		end
+
 		-- Twin Val'ky
 		if a_spellid == 65686 then
 			return false
@@ -571,8 +577,11 @@ Skada:RegisterModule("Absorbs", function(L, P, G)
 					-- Shadow Ward vs Shadow Damage
 					elseif WARLOCK_SHADOW_WARD[spellid] and band(spellschool, 0x20) ~= spellschool then
 						-- nothing
-					-- Anti-Magic, Spell Deflection, Savage Defense
-					elseif (spellid == 48707 or spellid == 49497 or spellid == 62606) and band(spellschool, 0x01) == spellschool then
+					-- Anti-Magic, Spell Deflection
+					elseif (spellid == 48707 or spellid == 49497) and band(spellschool, 0x01) == spellschool then
+						-- nothing
+					-- Savage Defense vs non-physical damage
+					elseif spellid == 62606 and band(spellschool, 0x01) ~= spellschool then
 						-- nothing
 					else
 						local shield = new()
@@ -587,6 +596,9 @@ Skada:RegisterModule("Absorbs", function(L, P, G)
 						shield.full = spell.full
 						shields_popped[#shields_popped + 1] = shield
 					end
+				elseif spell.ts < timestamp then
+					-- expired: drop the entry so later hits don't scan it again
+					sources[srcName] = del(spell)
 				end
 			end
 		end
@@ -625,8 +637,9 @@ Skada:RegisterModule("Absorbs", function(L, P, G)
 				local hppercent = UnitHealthInfo(dstName, t.dstGUID)
 				s.amount = (hppercent and hppercent <= 36) and floor(total * 0.0667 * s.points) or 0
 			elseif s and s.spellid == 31230 and s.points then -- Cheat Death
-				local _, _, hpmax = UnitHealthInfo(dstName, t.dstGUID)
-				s.amount = floor((hpmax or 0) * 0.1)
+				local _, hp, hpmax = UnitHealthInfo(dstName, t.dstGUID)
+				-- only triggers on a lethal hit
+				s.amount = (hp and total >= hp) and floor((hpmax or 0) * 0.1) or 0
 			elseif s and s.spellid == 25228 then -- Soul Link
 				s.amount = floor(total * 0.2)
 			elseif s and s.spellid == 62606 then -- Savage Defense
@@ -638,7 +651,9 @@ Skada:RegisterModule("Absorbs", function(L, P, G)
 		end
 
 		-- sort shields
-		tsort(shields_popped, shields_order_pred)
+		if #shields_popped > 1 then
+			tsort(shields_popped, shields_order_pred)
+		end
 
 		local prev_shield = nil
 		for i = #shields_popped, 0, -1 do
@@ -713,7 +728,7 @@ Skada:RegisterModule("Absorbs", function(L, P, G)
 	local function spell_damage(t)
 		local dstName = t.dstName and Skada:FixPetsName(t.dstGUID, t.dstName, t.dstFlags)
 		if dstName and shields[dstName] and t.absorbed and t.absorbed > 0 then
-			process_absorb(dstName, t, t.amount > t.absorbed)
+			process_absorb(dstName, t, t.amount > 0)
 		end
 	end
 
@@ -976,13 +991,18 @@ Skada:RegisterModule("Absorbs", function(L, P, G)
 
 		function mode:UnitBuff(_, args)
 			if not args.auras or not args.timestamp then return end
-			local curtime = args.Time or Skada._Time
+			local curtime = GetTime() -- aura.expires uses GetTime()
 
 			for _, aura in pairs(args.auras) do
 				if ABSORB_SPELLS[aura.id] then
 					local t = new()
 					t.event = "SPELL_AURA_APPLIED"
-					t.timestamp = args.timestamp + max(0, aura.expires - curtime)
+					-- handle_shield adds the duration, so we pass the aura's start time.
+					if aura.expires and aura.expires > 0 then
+						t.timestamp = args.timestamp + max(0, aura.expires - curtime) - ABSORB_SPELLS[aura.id].dur
+					else
+						t.timestamp = args.timestamp
+					end
 					t.srcGUID = aura.srcGUID
 					t.srcName = aura.srcName
 					t.srcFlags = aura.srcFlags
@@ -1029,6 +1049,7 @@ Skada:RegisterModule("Absorbs", function(L, P, G)
 		clear(shields)
 		clear(shield_amounts)
 		clear(shields_popped)
+		queued_amounts = clear(queued_amounts)
 		self.checked = nil
 	end
 
@@ -1256,7 +1277,7 @@ Skada:RegisterModule("Absorbs and Healing", function(L, P)
 		if spells then
 			for spellid, spell in pairs(spells) do
 				local amount = spell.targets and spell.targets[win.targetname]
-				amount = amount and (actor.enemy and amount or amount.amount)
+				amount = amount and amount.amount
 				if amount then
 					nr = nr + 1
 
@@ -1614,9 +1635,11 @@ Skada:RegisterModule("Healing Done By Spell", function(L, _, _, C)
 				tooltip:AddDoubleLine(L["Critical"], Skada:FormatPercent(spell.c_num, spell.count), 1, 1, 1)
 			end
 
-			if spell.min and spell.max then
-				tooltip:AddDoubleLine(L["Minimum"], Skada:FormatNumber(spell.min), 1, 1, 1)
-				tooltip:AddDoubleLine(L["Maximum"], Skada:FormatNumber(spell.max), 1, 1, 1)
+			local spell_min = (spell.n_min and spell.c_min) and min(spell.n_min, spell.c_min) or spell.n_min or spell.c_min
+			local spell_max = (spell.n_max and spell.c_max) and math.max(spell.n_max, spell.c_max) or spell.n_max or spell.c_max
+			if spell_min and spell_max then
+				tooltip:AddDoubleLine(L["Minimum"], Skada:FormatNumber(spell_min), 1, 1, 1)
+				tooltip:AddDoubleLine(L["Maximum"], Skada:FormatNumber(spell_max), 1, 1, 1)
 				tooltip:AddDoubleLine(L["Average"], Skada:FormatNumber(spell.amount / spell.count), 1, 1, 1)
 			end
 		end

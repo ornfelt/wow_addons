@@ -191,7 +191,11 @@ Skada:RegisterDisplay("Bar Display", "mod_bar_desc", function(L, P, G, _, _, O)
 
 			bargroup.win = window
 			bargroup:EnableMouse(true)
-			bargroup:HookScript("OnMouseDown", listOnMouseDown)
+			-- the bargroup is reused when the window is re-created, hook only once.
+			if not bargroup.listHooked then
+				bargroup:HookScript("OnMouseDown", listOnMouseDown)
+				bargroup.listHooked = true
+			end
 			bargroup:HideBarIcons()
 
 			bargroup.button:SetScript("OnClick", anchorOnClick)
@@ -208,11 +212,19 @@ Skada:RegisterDisplay("Bar Display", "mod_bar_desc", function(L, P, G, _, _, O)
 		end
 	end
 
+	-- sets the title text only if it changed
+	local function set_title_text(bargroup, text)
+		if bargroup.titleText ~= text then
+			bargroup.titleText = text
+			bargroup.button:SetText(text)
+		end
+	end
+
 	function mod:SetTitle(win, title)
 		local bargroup = win and win.bargroup
 		if not bargroup then return end
 
-		bargroup.button:SetText(title or win.title or win.metadata.title)
+		set_title_text(bargroup, title or win.title or win.metadata.title)
 
 		-- module icon
 		if not win.db.moduleicons then
@@ -585,10 +597,10 @@ Skada:RegisterDisplay("Bar Display", "mod_bar_desc", function(L, P, G, _, _, O)
 				end
 
 				GameTooltip:AddLine(bar.text, classcolors.unpack(bar.class))
-				if bar.role and bar.role ~= "NONE" then
+				if type(bar.role) == "string" and bar.role ~= "NONE" then
 					GameTooltip:AddDoubleLine(L["Role"], L[bar.role], 1, 1, 1)
 				end
-				if bar.spec then
+				if type(bar.spec) == "number" or type(bar.spec) == "string" then
 					GameTooltip:AddDoubleLine(L["Specialization"], L["SPEC_"..bar.spec], 1, 1, 1)
 				end
 				if bar.talent then
@@ -705,7 +717,7 @@ Skada:RegisterDisplay("Bar Display", "mod_bar_desc", function(L, P, G, _, _, O)
 		function mod:Update(win)
 			local bargroup = win and win.bargroup
 			if not bargroup then return end
-			bargroup.button:SetText(win.metadata.title)
+			set_title_text(bargroup, win.metadata.title)
 
 			local metadata = win.metadata
 			local dataset = win.dataset
@@ -742,6 +754,9 @@ Skada:RegisterDisplay("Bar Display", "mod_bar_desc", function(L, P, G, _, _, O)
 				end
 			end
 
+			-- bars are sorted once at the end
+			bargroup.deferSort = true
+
 			local nr = 1
 			for i = 0, #dataset do
 				local data = dataset[i]
@@ -758,8 +773,9 @@ Skada:RegisterDisplay("Bar Display", "mod_bar_desc", function(L, P, G, _, _, O)
 
 					if bar then
 						bar.class = data.class
+						-- same result as SetValue + SetMaxValue, in one call
+						bar.maxValue = metadata.maxvalue or 1
 						bar:SetValue(data.value)
-						bar:SetMaxValue(metadata.maxvalue or 1)
 
 						if data.changed and not bar.changed then
 							bar.changed = true
@@ -769,6 +785,21 @@ Skada:RegisterDisplay("Bar Display", "mod_bar_desc", function(L, P, G, _, _, O)
 							bar.changed = nil
 							bar_seticon(bar, db, data)
 							bar_setcolor(bar, db, data)
+						end
+
+						-- spec/role known after the bar was created? refresh icon.
+						if not data.ignore and not data.icon and (bar.spec ~= data.spec or bar.role ~= data.role) then
+							bar.role = data.role
+							bar.spec = data.spec
+							bar.talent = data.talent
+							if bargroup:IsIconShown() and (data.role or data.spec or data.talent) then
+								bar.iconFrame:EnableMouse(true)
+								bar.iconFrame:SetScript("OnEnter", iconOnEnter)
+								bar.iconFrame:SetScript("OnLeave", GameTooltip_Hide)
+							end
+							if not bar.changed then
+								bar_seticon(bar, db, data)
+							end
 						end
 					else
 						-- Initialization of bars.
@@ -911,6 +942,7 @@ Skada:RegisterDisplay("Bar Display", "mod_bar_desc", function(L, P, G, _, _, O)
 				bargroup:SetSortFunction(nil)
 			end
 
+			bargroup.deferSort = nil
 			bargroup:SortBars()
 		end
 	end

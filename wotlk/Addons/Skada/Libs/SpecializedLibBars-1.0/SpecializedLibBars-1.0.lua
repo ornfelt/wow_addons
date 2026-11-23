@@ -855,7 +855,8 @@ function barListPrototype:ShowAnchorIcon(icon)
 		self.button.icon:Show()
 		self:AdjustTitle()
 	end
-	if icon then
+	if icon and self.anchorIcon ~= icon then
+		self.anchorIcon = icon
 		self.button.icon:SetTexture(icon)
 	end
 end
@@ -865,6 +866,7 @@ function barListPrototype:HideAnchorIcon()
 	if not self.showAnchorIcon then return end
 
 	self.showAnchorIcon = nil
+	self.anchorIcon = nil
 	self.button.icon:SetTexture(nil)
 	self.button.icon:Hide()
 	self:AdjustTitle()
@@ -1029,7 +1031,10 @@ function barListPrototype:CreateBar(...)
 	else
 		bar:HideTimerLabel(bar)
 	end
-	self:SortBars()
+	-- the caller sorts once when it's done creating bars.
+	if not self.deferSort then
+		self:SortBars()
+	end
 	bar.ownerGroup = self
 	bar:SetParent(self)
 
@@ -1405,6 +1410,7 @@ function barListPrototype:SetTexture(tex)
 	for _, bar in pairs(bars[self]) do
 		bar.fg:SetTexture(self.texture)
 		bar.bg:SetTexture(self.texture)
+		bar.drawnamt = nil -- redraw value/texcoords
 	end
 end
 barPrototype.SetTexture = barListPrototype.SetTexture
@@ -1583,6 +1589,13 @@ do
 		end
 	end
 
+	-- precomputed anchor points: anchorPoints[side] = {side.."LEFT", side.."RIGHT"}
+	local anchorPoints = {
+		TOP = {"TOPLEFT", "TOPRIGHT"},
+		BOTTOM = {"BOTTOMLEFT", "BOTTOMRIGHT"}
+	}
+	local sortGen = 0 -- incremented every SortBars call, marks bars shown in this pass
+
 	function barListPrototype:SortBars()
 		local lastBar = self
 		local ct = 0
@@ -1593,7 +1606,6 @@ do
 		for _, bar in pairs(bars[self]) do
 			ct = ct + 1
 			values[ct] = bar
-			bar:Hide()
 			has_fixed = has_fixed or bar.fixed
 		end
 
@@ -1617,15 +1629,15 @@ do
 		local start = min(1 + offset, #values)
 		local stop = min(maxbars + offset, #values)
 
-		local from, to, fixnum
+		-- the last shown bar is always values[stop], whatever the direction
+		local from, to
+		local fixnum = stop
 		if growup then
 			from = "BOTTOM"
 			to = "TOP"
-			fixnum = start
 		else
 			from = "TOP"
 			to = "BOTTOM"
-			fixnum = stop
 		end
 
 		-- Fixed bar replaces the last bar
@@ -1641,6 +1653,9 @@ do
 		local showIcon = self.showIcon
 		local thickness = self.thickness
 		local shown = 0
+
+		sortGen = sortGen + 1
+		local gen = sortGen
 
 		for i = start, stop, 1 do
 			local origTo = to
@@ -1670,16 +1685,33 @@ do
 			end
 
 			if shown <= maxbars and v then
-				v:ClearAllPoints()
-				v:SetPoint(format("%sLEFT", from), lastBar, format("%sLEFT", to), x1, y1)
-				v:SetPoint(format("%sRIGHT", from), lastBar, format("%sRIGHT", to), x2, y2)
-				v:Show()
+				-- only re-anchor if the anchor or the offsets changed
+				if v.sortAnchor ~= lastBar or v.sortFrom ~= from or v.sortTo ~= to or v.sortX1 ~= x1 or v.sortX2 ~= x2 or v.sortY1 ~= y1 or v.sortY2 ~= y2 then
+					local pfrom, pto = anchorPoints[from], anchorPoints[to]
+					v:ClearAllPoints()
+					v:SetPoint(pfrom[1], lastBar, pto[1], x1, y1)
+					v:SetPoint(pfrom[2], lastBar, pto[2], x2, y2)
+					v.sortAnchor, v.sortFrom, v.sortTo = lastBar, from, to
+					v.sortX1, v.sortX2, v.sortY1, v.sortY2 = x1, x2, y1, y2
+				end
+				if not v:IsShown() then
+					v:Show()
+				end
+				v.sortGen = gen
 
 				shown = shown + 1
 				lastBar = v
 			end
 
 			to = origTo
+		end
+
+		-- hide bars that weren't shown in this pass
+		for i = 1, #values do
+			local v = values[i]
+			if v.sortGen ~= gen and v:IsShown() then
+				v:Hide()
+			end
 		end
 
 		self.lastBar = lastBar
@@ -1764,6 +1796,7 @@ do
 		self.fg:SetAllPoints()
 		self.fg.SetValue = self.fg.SetWidth
 		self.fg:SetValue(0)
+		self.drawnamt = nil -- reset SetValue cache
 
 		self.hg = self.hg or self:CreateTexture(nil, "ARTWORK")
 		self.hg:SetAllPoints()
@@ -1793,6 +1826,7 @@ do
 		self.label = self.label or self:CreateFontString(nil, "OVERLAY", "ChatFontNormal")
 		self.label:SetWordWrap(false)
 		self.label:SetText(text)
+		self.labelText = text -- SetLabel cache
 		self.label:ClearAllPoints()
 		self.label:SetPoint("LEFT", self, "LEFT", 3, 0)
 		self:ShowLabel()
@@ -1800,6 +1834,7 @@ do
 		self.timerLabel = self.timerLabel or self:CreateFontString(nil, "OVERLAY", "ChatFontNormal")
 		self.timerLabel:ClearAllPoints()
 		self.timerLabel:SetPoint("RIGHT", self, "RIGHT", -3, 0)
+		self.timerText = nil -- reset SetTimerLabel cache
 		self:SetTimerLabel("")
 		self:HideTimerLabel()
 
@@ -1834,6 +1869,7 @@ function barPrototype:OnBarReleased()
 	self:SetScript("OnUpdate", nil)
 	self:SetParent(UIParent)
 	self:ClearAllPoints()
+	self.sortAnchor = nil -- anchors cleared, SortBars must re-anchor
 	self:Hide()
 
 	local f, s, m = ChatFontNormal:GetFont()
@@ -1887,9 +1923,12 @@ function barPrototype:HideIcon()
 	end
 end
 
--- changes bar's label text
+-- changes bar's label text (only when it changed)
 function barPrototype:SetLabel(text)
-	self.label:SetText(text)
+	if self.labelText ~= text then
+		self.labelText = text
+		self.label:SetText(text)
+	end
 end
 
 -- returns bar's label text
@@ -1914,9 +1953,12 @@ function barPrototype:HideLabel()
 	end
 end
 
--- changes timer's text
+-- changes timer's text (only when it changed)
 function barPrototype:SetTimerLabel(text)
-	self.timerLabel:SetText(text)
+	if self.timerText ~= text then
+		self.timerText = text
+		self.timerLabel:SetText(text)
+	end
 end
 
 -- returns timer's text
@@ -1941,6 +1983,7 @@ end
 -- changes bar's foreground and background textures
 function barPrototype:SetTexture(texture)
 	self.fg:SetTexture(texture)
+	self.drawnamt = nil -- redraw value/texcoords
 	self.bg:SetTexture(texture)
 end
 
@@ -2076,11 +2119,19 @@ end
 do
 	local function SetTextureValue(self, amt, dist)
 		dist = max(0.0001, dist - (self.showIcon and self.thickness or 0))
+
+		-- already drawn like this? nothing to do.
+		local orientation = self.ownerGroup.orientation
+		if amt == self.drawnamt and dist == self.drawndist and orientation == self.drawnorientation then
+			return
+		end
+		self.drawnamt, self.drawndist, self.drawnorientation = amt, dist, orientation
+
 		self.fg:SetValue(amt * dist)
 
-		if self.ownerGroup.orientation == LEFT_TO_RIGHT then
+		if orientation == LEFT_TO_RIGHT then
 			self.fg:SetTexCoord(0, amt, 0, 1)
-		elseif self.ownerGroup.orientation == RIGHT_TO_LEFT then
+		elseif orientation == RIGHT_TO_LEFT then
 			self.fg:SetTexCoord(1 - amt, 1, 0, 1)
 		end
 	end
@@ -2107,6 +2158,13 @@ do
 	end
 
 	local function SetTextureTarget(self, amt, dist)
+		-- already there and not animating? no need to animate, only
+		-- redraw in case the size changed (no-op otherwise).
+		if amt == self.lastamt and self:GetScript("OnUpdate") ~= animate then
+			SetTextureValue(self, amt, dist)
+			return
+		end
+
 		self.targetamt = amt
 		self.targetdist = dist
 

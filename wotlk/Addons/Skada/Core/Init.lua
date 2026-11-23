@@ -281,7 +281,7 @@ do
 			free = function(t, no_recurse)
 				if not no_recurse then
 					for k, v in pairs(t) do
-						if type(v) == "table" and getmetatable(t) == "TempTable" then
+						if type(v) == "table" and getmetatable(v) == "TempTable" then
 							v:free()
 						end
 					end
@@ -1532,6 +1532,13 @@ do
 		local __t1 = Private.WeakTable() -- cached players
 		local __t2 = Private.WeakTable() -- cached pets
 
+		-- weak mode doesn't collect string (guid) keys, so these are wiped
+		-- on combat end; also drops results that went stale (roster changes).
+		function Private.ClearUnitCaches()
+			wipe(__t1)
+			wipe(__t2)
+		end
+
 		-- checks if the guid is a player (extra: helps IsPet)
 		function Private.IsPlayer(guid, name, flags)
 			-- already cached?
@@ -1836,8 +1843,13 @@ do
 	local tooltip_mt = {__index = setmetatable({}, window_mt)}
 
 	function Window.new(parent)
-		local win = next(window_bin) or {}
-		window_bin[win] = nil
+		local win = next(window_bin)
+		if win then
+			window_bin[win] = nil
+			wipe(win) -- don't inherit the old window's fields (class filter, child...)
+		else
+			win = {}
+		end
 
 		if parent then
 			win.super = parent
@@ -1882,6 +1894,7 @@ do
 			d.class = nil
 			d.role = nil
 			d.spec = nil
+			d.talent = nil
 			d.ignore = nil
 			d.reportlabel = nil
 			d.reportvalue = nil

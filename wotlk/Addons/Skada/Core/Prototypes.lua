@@ -325,14 +325,12 @@ do
 		if not tbl then
 			tbl = new()
 			tbl.amount = info.amount
-			tbl.total = info.total
+			tbl.total = info.total or info.amount
 			tbl.o_amt = info.o_amt
 			t[name] = tbl
 		else
 			tbl.amount = tbl.amount + info.amount
-			if info.total then
-				tbl.total = (tbl.total or 0) + info.total
-			end
+			tbl.total = tbl.total + (info.total or info.amount)
 			if info.o_amt then
 				tbl.o_amt = (tbl.o_amt or 0) + info.o_amt
 			end
@@ -418,15 +416,13 @@ do
 		if not tbl then
 			tbl = new()
 			tbl.amount = info.amount
-			tbl.total = info.total
+			tbl.total = info.total or info.amount
 			tbl.o_amt = info.o_amt -- nil for players
 			tbl.useful = info.useful -- nil for enemies
 			t[name] = tbl
 		else
 			tbl.amount = tbl.amount + info.amount
-			if info.total then
-				tbl.total = (tbl.total or 0) + info.total
-			end
+			tbl.total = tbl.total + (info.total or info.amount)
 			if info.o_amt then -- nil for players
 				tbl.o_amt = (tbl.o_amt or 0) + info.o_amt
 			end
@@ -596,7 +592,7 @@ end
 function actorPrototype:GetAbsorbHeal()
 	local total = self.heal
 	if self.absorb then
-		total = total and total + self.absorb
+		total = (total or 0) + self.absorb
 	end
 	return total or 0
 end
@@ -605,7 +601,7 @@ end
 function actorPrototype:GetAHPS(set, active, no_calc)
 	local total = self.heal
 	if self.absorb then
-		total = total and total + self.absorb
+		total = (total or 0) + self.absorb
 	end
 	if not total or total == 0 or no_calc then
 		return 0, total or 0

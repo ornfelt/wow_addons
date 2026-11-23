@@ -49,17 +49,9 @@ Skada:RegisterModule("Damage Taken", function(L, P)
 		-- add absorbed damage to total damage
 		local absorbed = dmg.absorbed or 0
 
-		if actor.totaldamaged then
-			actor.totaldamaged = actor.totaldamaged + dmg.amount + absorbed
-		elseif absorbed > 0 then
-			actor.totaldamaged = actor.damaged + absorbed
-		end
-
-		if set.totaldamaged then
-			set.totaldamaged = set.totaldamaged + dmg.amount + absorbed
-		elseif absorbed > 0 then
-			set.totaldamaged = set.damaged + absorbed
-		end
+		-- always accumulated (seeded from the plain amount) so sums stay consistent
+		actor.totaldamaged = actor.totaldamaged and (actor.totaldamaged + dmg.amount + absorbed) or (actor.damaged + absorbed)
+		set.totaldamaged = set.totaldamaged and (set.totaldamaged + dmg.amount + absorbed) or (set.damaged + absorbed)
 
 		-- saving this to total set may become a memory hog deluxe.
 		if set == Skada.total and not P.totalidc then return end
@@ -221,9 +213,10 @@ Skada:RegisterModule("Damage Taken", function(L, P)
 			tooltip:AddDoubleLine(L["Maximum"], Skada:FormatNumber(spellmax), 1, 1, 1)
 		end
 
-		if spell.count then
+		local hits = (spell.n_num or 0) + (spell.c_num or 0) + (spell.g_num or 0) + (spell.crushing or 0)
+		if hits > 0 then
 			local amount = P.absdamage and spell.total or spell.amount
-			tooltip:AddDoubleLine(L["Average"], Skada:FormatNumber(amount / spell.count), 1, 1, 1)
+			tooltip:AddDoubleLine(L["Average"], Skada:FormatNumber(amount / hits), 1, 1, 1)
 		end
 	end
 
@@ -976,22 +969,37 @@ Skada:RegisterModule("Avoidance & Mitigation", function(L)
 	function mode_breakdown:Update(win, set)
 		win.title = uformat(L["%s's details"], classfmt(win.actorclass, win.actorname))
 
-		local actor = win.actorid and C[win.actorid]
-		if not actor then
+		local actor = set and win.actorname and set:GetActor(win.actorname, win.actorid)
+		local spells = actor and actor.damagedspells
+		if not spells then return end
+
+		local total = 0
+		local data = clear(C)
+		for _, spell in pairs(spells) do
+			total = total + (spell.count or 0)
+			for k, v in pairs(missTypes) do
+				local num = spell[v] or spell[k]
+				if num then
+					data[k] = (data[k] or 0) + num
+				end
+			end
+		end
+
+		if total == 0 or not next(data) then
 			return
 		elseif win.metadata then
 			win.metadata.maxvalue = 0
 		end
 
 		local nr = 0
-		for event, count in pairs(actor.data) do
+		for event, count in pairs(data) do
 			nr = nr + 1
 
 			local d = win:nr(nr)
 			d.id = event
 			d.label = L[event]
-			d.value = 100 * count / actor.total
-			fmt_valuetext(d, mode_cols, actor.total, count, win.metadata)
+			d.value = 100 * count / total
+			fmt_valuetext(d, mode_cols, total, count, win.metadata)
 		end
 	end
 
@@ -1005,16 +1013,11 @@ Skada:RegisterModule("Avoidance & Mitigation", function(L)
 			win.metadata.maxvalue = 0
 		end
 
-		clear(C) -- used later
-
 		local nr = 0
 
 		local actors = set.actors
 		for actorname, actor in pairs(actors) do
 			if win:show_actor(actor, set, true) and actor.damagedspells then
-				local tmp = new()
-				tmp.name = actorname
-
 				local count, avoid = 0, 0
 				for _, spell in pairs(actor.damagedspells) do
 					count = count + (spell.count or 0)
@@ -1023,25 +1026,17 @@ Skada:RegisterModule("Avoidance & Mitigation", function(L)
 						local num = spell[v] or spell[k]
 						if num then
 							avoid = avoid + num
-							tmp.data = tmp.data or new()
-							tmp.data[k] = (tmp.data[k] or 0) + num
 						end
 					end
 				end
 
 				if avoid > 0 then
-					tmp.total = count
-					tmp.avoid = avoid
-					C[actor.id] = tmp
-
 					nr = nr + 1
 					local d = win:actor(nr, actor, actor.enemy, actorname)
 
 					d.value = 100 * avoid / count
 					fmt_valuetext(d, mode_cols, count, avoid, win.metadata)
 					win:color(d, set, actor.enemy)
-				elseif C[actor.id] then
-					C[actor.id] = del(C[actor.id])
 				end
 			end
 		end

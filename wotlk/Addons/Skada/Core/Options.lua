@@ -115,6 +115,7 @@ Skada.defaults = {
 		setformat = 3,
 		setslimit = 15,
 		setstokeep = 15,
+		pvpsetstokeep = 3,
 		smartwait = 3,
 		timemesure = 2,
 		tooltiprows = 3,
@@ -628,6 +629,15 @@ options.args.generaloptions = {
 					max = 25,
 					step = 1,
 					order = 210
+				},
+				pvpsetstokeep = {
+					type = "range",
+					name = L["Battleground segments to keep"],
+					desc = L["The number of battleground segments to keep, counted within the segments to keep. They hold every player of both teams and make the saved data large."],
+					min = 0,
+					max = 25,
+					step = 1,
+					order = 215
 				},
 				setslimit = {
 					type = "range",

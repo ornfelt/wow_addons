@@ -387,6 +387,14 @@ local function adapter(script, fn)
 			if not ok then skada_error(err) end
 		end
 	end
+	if script == "OnSizeChanged" then
+		-- 2.x passes the new size in UI units; take it from the frame (benilla's arg1 / arg2 are
+		-- fractions of the screen, which shrank the bar windows to nothing through SetLength)
+		return function()
+			local ok, err = pcall(fn, this, this:GetWidth(), this:GetHeight())
+			if not ok then skada_error(err) end
+		end
+	end
 	return function()
 		local ok, err = pcall(fn, this, arg1, arg2, arg3, arg4, arg5)
 		if not ok then skada_error(err) end
@@ -914,10 +922,20 @@ local function name_unit(name)
 	end
 end
 
+-- unit ids 2.x / 3.x added (1.12 has none of them; benilla raises an error for them)
+local NEWER_UNITS = {"^focus", "^arena", "^boss", "^vehicle"}
+local MISSING_UNIT = "raidpet40" -- a unit id 1.12 knows that does not exist outside a full raid
+
 local function unit_id(unit)
-	if type(unit) ~= "string" or strfind(unit, "^%l") then return unit end -- ids are lower case
+	if type(unit) ~= "string" then return unit end
+	if strfind(unit, "^%l") then -- ids are lower case
+		for i = 1, getn(NEWER_UNITS) do
+			if strfind(unit, NEWER_UNITS[i]) then return MISSING_UNIT end
+		end
+		return unit
+	end
 	local _, _, name = strfind(unit, "^([^%-]+)") -- "Name-Realm"
-	return name_unit(name) or "raidpet40" -- a unit id that does not exist (1.12 refuses unknown ones)
+	return name_unit(name) or MISSING_UNIT -- 1.12 refuses unknown names
 end
 env.SkadaUnitId = unit_id
 

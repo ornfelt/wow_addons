@@ -1,0 +1,63 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blizzard.com/wow/ui/
+..\FrameXML\UI.xsd">
+	<!--
+		Compat.xml - frame templates 3.x has and 2.4.3 has not (see Compat.lua).
+		OptionsListButtonTemplate: 3.3.5's OptionsFrameTemplates.xml, the tree buttons of AceGUI's
+		TreeGroup (Skada's options window). Its OnLoad is 3.3.5's OptionsListButton_OnLoad inlined;
+		AceGUI sets the click scripts itself.
+	-->
+	<Button name="OptionsListButtonTemplate" virtual="true">
+		<Size>
+			<AbsDimension x="175" y="18"/>
+		</Size>
+		<Frames>
+			<Button name="$parentToggle" hidden="true">
+				<Size>
+					<AbsDimension x="14" y="14"/>
+				</Size>
+				<Anchors>
+					<Anchor point="TOPRIGHT" relativeTo="$parent" relativePoint="TOPRIGHT">
+						<Offset>
+							<AbsDimension x="-6" y="-1"/>
+						</Offset>
+					</Anchor>
+				</Anchors>
+				<Scripts>
+					<OnLoad>
+						this:GetParent().toggle = this;
+						this:RegisterForClicks("LeftButtonUp", "RightButtonUp");
+					</OnLoad>
+				</Scripts>
+				<NormalTexture name="$parentNormalTexture" file="Interface\Buttons\UI-MinusButton-UP"/>
+				<PushedTexture name="$parentPushedTexture" file="Interface\Buttons\UI-MinusButton-DOWN"/>
+				<HighlightTexture name="$parentHighlightTexture" file="Interface\Buttons\UI-PlusButton-Hilight" alphaMode="ADD"/>
+			</Button>
+		</Frames>
+		<Scripts>
+			<OnLoad>
+				this.text = getglobal(this:GetName() .. "Text");
+				this.highlight = this:GetHighlightTexture();
+				this.highlight:SetVertexColor(0.196, 0.388, 0.8);
+				this.text:SetPoint("RIGHT", this:GetName() .. "Toggle", "LEFT", -2, 0);
+				this:RegisterForClicks("LeftButtonUp", "RightButtonUp");
+			</OnLoad>
+		</Scripts>
+		<ButtonText name="$parentText" justifyH="LEFT"/>
+		<NormalFont inherits="GameFontNormal" justifyH="LEFT"/>
+		<HighlightFont inherits="GameFontHighlight" justifyH="LEFT"/>
+		<HighlightTexture file="Interface\QuestFrame\UI-QuestLogTitleHighlight" alphaMode="ADD">
+			<Anchors>
+				<Anchor point="TOPLEFT">
+					<Offset>
+						<AbsDimension x="0" y="1"/>
+					</Offset>
+				</Anchor>
+				<Anchor point="BOTTOMRIGHT">
+					<Offset>
+						<AbsDimension x="0" y="1"/>
+					</Offset>
+				</Anchor>
+			</Anchors>
+		</HighlightTexture>
+	</Button>
+</Ui>

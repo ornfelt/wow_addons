@@ -388,8 +388,9 @@ local function adapter(script, fn)
 		end
 	end
 	if script == "OnSizeChanged" then
-		-- 2.x passes the new size in UI units; take it from the frame (benilla's arg1 / arg2 are
-		-- fractions of the screen, which shrank the bar windows to nothing through SetLength)
+		-- 2.x passes the new size in UI units; take it from the frame (1.12's arg1 / arg2 are
+		-- fractions of the screen - the real client, benilla and cenilla alike - which shrank the
+		-- bar windows to nothing through SetLength on benilla)
 		return function()
 			local ok, err = pcall(fn, this, this:GetWidth(), this:GetHeight())
 			if not ok then skada_error(err) end

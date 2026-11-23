@@ -5,6 +5,8 @@
 # versions and leftover companion addons such as SkadaImprovement), then copies the matching
 # dirs from the source. SavedVariables in WTF are left alone, so the addon keeps its settings.
 # The client dir comes from the env var wow_dir unless --wow-dir is given.
+# --reverse (or sync_addon_reverse.sh) syncs the other way: client -> repo, for testing an
+# addon changed in the client; git shows what changed and restores the repo copy.
 #
 # Usage examples:
 # sync Skada (default) into $wow_dir/Interface/AddOns:
@@ -13,7 +15,7 @@
 #   ./sync_addon.sh DBM-
 # only the dir named exactly Skada (other Skada* dirs in the client are kept):
 #   ./sync_addon.sh Skada --exact
-# other source AddOns dir (positional or named):
+# other repo AddOns dir (positional or named; the source, or the destination with --reverse):
 #   ./sync_addon.sh Skada /tmp/Skada-WoTLK
 #   ./sync_addon.sh --addon Skada --source /tmp/Skada-WoTLK
 # other client dir than $wow_dir:
@@ -24,6 +26,9 @@
 #   ./sync_addon.sh --show-cmd
 # case sensitive name match:
 #   ./sync_addon.sh Skada --case-sensitive
+# reverse: copy the client's Skada* dirs back into the repo (preview first):
+#   ./sync_addon.sh --reverse --dry-run
+#   ./sync_addon.sh --reverse
 
 set -euo pipefail
 shopt -s nullglob
@@ -52,6 +57,7 @@ exact=0
 case_sensitive=0
 dry_run=0
 show_cmd=0
+reverse=0
 positional=()
 
 while (($#)); do
@@ -63,6 +69,7 @@ while (($#)); do
         -c|--case-sensitive) case_sensitive=1; shift ;;
         -n|--dry-run)        dry_run=1; shift ;;
         --show-cmd)          show_cmd=1; shift ;;
+        -r|--reverse)        reverse=1; shift ;;
         -h|--help)           sed -n '2,/^$/p' "$0"; exit 0 ;;
         -*)                  write_err "Unknown option: $1"; exit 1 ;;
         *)                   positional+=("$1"); shift ;;
@@ -117,15 +124,16 @@ fi
 wow_dir_arg="$(cd "$wow_dir_arg" && pwd)"
 source_dir="$(cd "$source_dir" && pwd)"
 client_addons="$(find_ci "$(find_ci "$wow_dir_arg" Interface)" AddOns)"
+if ((reverse)); then from_dir="$client_addons"; to_dir="$source_dir"; else from_dir="$source_dir"; to_dir="$client_addons"; fi
 match_desc="'$addon'"; ((exact)) || match_desc="'$addon*'"
 if ((case_sensitive)); then match_desc+=" (case sensitive)"; else match_desc+=" (case insensitive)"; fi
 
-mapfile -t src_dirs < <(addon_dirs "$source_dir")
+mapfile -t src_dirs < <(addon_dirs "$from_dir")
 if ((${#src_dirs[@]} == 0)); then
-    write_err "No addon dir matching $match_desc in $source_dir - nothing removed."; exit 1
+    write_err "No addon dir matching $match_desc in $from_dir - nothing removed."; exit 1
 fi
-mapfile -t old_dirs < <(addon_dirs "$client_addons")
-addons_missing=0; [[ -d "$client_addons" ]] || addons_missing=1
+mapfile -t old_dirs < <(addon_dirs "$to_dir")
+dest_missing=0; [[ -d "$to_dir" ]] || dest_missing=1
 
 for d in "${src_dirs[@]}"; do
     [[ -f "$d/${d##*/}.toc" ]] || write_warn "warning: ${d##*/} has no ${d##*/}.toc - the client will not load it"
@@ -135,16 +143,16 @@ done
 if ((show_cmd)); then
     echo "# $invocation"
     for d in "${old_dirs[@]}"; do printf 'rm -rf %q\n' "$d"; done
-    ((addons_missing)) && printf 'mkdir -p %q\n' "$client_addons"
-    for d in "${src_dirs[@]}"; do printf 'cp -r %q %q/\n' "$d" "$client_addons"; done
+    ((dest_missing)) && printf 'mkdir -p %q\n' "$to_dir"
+    for d in "${src_dirs[@]}"; do printf 'cp -r %q %q/\n' "$d" "$to_dir"; done
     exit 0
 fi
 
 # --- sync --------------------------------------------------------------------
 prefix=""; ((dry_run)) && prefix="[dry run] "
 write_info "${prefix}Syncing $match_desc"
-write_info "  from $source_dir"
-write_info "  to   $client_addons"
+write_info "  from $from_dir"
+write_info "  to   $to_dir"
 
 declare -A old_versions=()
 for d in "${old_dirs[@]}"; do
@@ -154,9 +162,9 @@ for d in "${old_dirs[@]}"; do
     write_warn "${prefix}removed $name (${old_versions["${name,,}"]})"
 done
 
-if ((addons_missing)); then
-    write_warn "${prefix}creating missing $client_addons"
-    ((dry_run)) || mkdir -p "$client_addons"
+if ((dest_missing)); then
+    write_warn "${prefix}creating missing $to_dir"
+    ((dry_run)) || mkdir -p "$to_dir"
 fi
 
 file_count=0
@@ -165,7 +173,7 @@ for d in "${src_dirs[@]}"; do
     new_version="$(toc_version "$d")"
     files="$(find "$d" -type f | wc -l | tr -d ' ')"
     file_count=$((file_count + files))
-    ((dry_run)) || cp -r "$d" "$client_addons/"
+    ((dry_run)) || cp -r "$d" "$to_dir/"
     if [[ -n "${old_versions["${name,,}"]+x}" ]]; then
         change="${old_versions["${name,,}"]} -> $new_version"
     else
@@ -189,4 +197,10 @@ write_info_alt "${prefix}Done: removed ${#old_dirs[@]} dir(s), copied ${#src_dir
 if ((${#leftover[@]} > 0)); then
     write_info_alt "  cleaned up, not in the source: $(IFS=,; echo "${leftover[*]}" | sed 's/,/, /g')"
 fi
-((dry_run)) || write_info "Restart the client (or /reload if only files changed) to load it."
+if ((!dry_run)); then
+    if ((reverse)); then
+        write_info "Review with: git -C $(printf '%q' "$to_dir") status --short . (git restore / git clean -fd . undoes it)"
+    else
+        write_info "Restart the client (or /reload if only files changed) to load it."
+    fi
+fi

@@ -4,6 +4,8 @@
 # versions and leftover companion addons such as SkadaImprovement), then copies the matching
 # dirs from the source. SavedVariables in WTF are left alone, so the addon keeps its settings.
 # The client dir comes from the env var wow_dir unless -WowDir is given.
+# -Reverse (or sync_addon_reverse.ps1) syncs the other way: client -> repo, for testing an
+# addon changed in the client; git shows what changed and restores the repo copy.
 #
 # Usage examples:
 # sync Skada (default) into $env:wow_dir/Interface/AddOns:
@@ -12,7 +14,7 @@
 #   .\sync_addon.ps1 DBM-
 # only the dir named exactly Skada (other Skada* dirs in the client are kept):
 #   .\sync_addon.ps1 Skada -Exact
-# other source AddOns dir (positional or named):
+# other repo AddOns dir (positional or named; the source, or the destination with -Reverse):
 #   .\sync_addon.ps1 Skada C:\tmp\Skada-WoTLK
 #   .\sync_addon.ps1 -Addon Skada -Source C:\tmp\Skada-WoTLK
 # other client dir than $env:wow_dir:
@@ -23,6 +25,9 @@
 #   .\sync_addon.ps1 -ShowCmd
 # case sensitive name match:
 #   .\sync_addon.ps1 Skada -CaseSensitive
+# reverse: copy the client's Skada* dirs back into the repo (preview first):
+#   .\sync_addon.ps1 -Reverse -DryRun
+#   .\sync_addon.ps1 -Reverse
 
 [CmdletBinding()]
 param(
@@ -32,7 +37,8 @@ param(
     [switch]$Exact,
     [switch]$CaseSensitive,
     [switch]$DryRun,
-    [switch]$ShowCmd
+    [switch]$ShowCmd,
+    [switch]$Reverse
 )
 
 $ErrorActionPreference = 'Stop'
@@ -93,16 +99,17 @@ if (-not (Test-Path -LiteralPath $Source -PathType Container)) {
 $WowDir = (Resolve-Path -LiteralPath $WowDir).Path
 $Source = (Resolve-Path -LiteralPath $Source).Path
 $clientAddOns = Join-Path (Join-Path $WowDir 'Interface') 'AddOns'
+if ($Reverse) { $fromDir = $clientAddOns; $toDir = $Source } else { $fromDir = $Source; $toDir = $clientAddOns }
 $matchDesc = if ($Exact) { "'$Addon'" } else { "'$Addon*'" }
 $matchDesc += if ($CaseSensitive) { ' (case sensitive)' } else { ' (case insensitive)' }
 
-$srcDirs = Get-AddonDirs $Source
+$srcDirs = Get-AddonDirs $fromDir
 if ($srcDirs.Count -eq 0) {
-    Write-Err "No addon dir matching $matchDesc in $Source - nothing removed."
+    Write-Err "No addon dir matching $matchDesc in $fromDir - nothing removed."
     exit 1
 }
-$oldDirs = Get-AddonDirs $clientAddOns
-$addOnsMissing = -not (Test-Path -LiteralPath $clientAddOns -PathType Container)
+$oldDirs = Get-AddonDirs $toDir
+$destMissing = -not (Test-Path -LiteralPath $toDir -PathType Container)
 
 foreach ($d in $srcDirs) {
     if (-not (Test-Path -LiteralPath (Join-Path $d.FullName ($d.Name + '.toc')))) {
@@ -117,9 +124,9 @@ if ($ShowCmd) {
     }
     Write-Host "# $PSCommandPath $($given -join ' ')"
     foreach ($d in $oldDirs) { Write-Host "Remove-Item -LiteralPath $(Format-Literal $d.FullName) -Recurse -Force" }
-    if ($addOnsMissing) { Write-Host "New-Item -ItemType Directory -Force -Path $(Format-Literal $clientAddOns) | Out-Null" }
+    if ($destMissing) { Write-Host "New-Item -ItemType Directory -Force -Path $(Format-Literal $toDir) | Out-Null" }
     foreach ($d in $srcDirs) {
-        Write-Host "Copy-Item -LiteralPath $(Format-Literal $d.FullName) -Destination $(Format-Literal $clientAddOns) -Recurse"
+        Write-Host "Copy-Item -LiteralPath $(Format-Literal $d.FullName) -Destination $(Format-Literal $toDir) -Recurse"
     }
     exit 0
 }
@@ -127,8 +134,8 @@ if ($ShowCmd) {
 # --- sync --------------------------------------------------------------------
 $prefix = if ($DryRun) { '[dry run] ' } else { '' }
 Write-Info "${prefix}Syncing $matchDesc"
-Write-Info "  from $Source"
-Write-Info "  to   $clientAddOns"
+Write-Info "  from $fromDir"
+Write-Info "  to   $toDir"
 
 $oldVersions = @{}
 foreach ($d in $oldDirs) {
@@ -137,9 +144,9 @@ foreach ($d in $oldDirs) {
     Write-Warn "${prefix}removed $($d.Name) ($($oldVersions[$d.Name.ToLowerInvariant()]))"
 }
 
-if ($addOnsMissing) {
-    Write-Warn "${prefix}creating missing $clientAddOns"
-    if (-not $DryRun) { New-Item -ItemType Directory -Force -Path $clientAddOns | Out-Null }
+if ($destMissing) {
+    Write-Warn "${prefix}creating missing $toDir"
+    if (-not $DryRun) { New-Item -ItemType Directory -Force -Path $toDir | Out-Null }
 }
 
 $fileCount = 0
@@ -147,7 +154,7 @@ foreach ($d in $srcDirs) {
     $newVersion = Get-TocVersion $d.FullName
     $files = @(Get-ChildItem -LiteralPath $d.FullName -Recurse -File).Count
     $fileCount += $files
-    if (-not $DryRun) { Copy-Item -LiteralPath $d.FullName -Destination $clientAddOns -Recurse }
+    if (-not $DryRun) { Copy-Item -LiteralPath $d.FullName -Destination $toDir -Recurse }
     $key = $d.Name.ToLowerInvariant()
     $change = if ($oldVersions.ContainsKey($key)) { "$($oldVersions[$key]) -> $newVersion" } else { "new, $newVersion" }
     Write-Ok "${prefix}copied  $($d.Name) ($change, $files files)"
@@ -159,4 +166,7 @@ Write-InfoAlt "${prefix}Done: removed $($oldDirs.Count) dir(s), copied $($srcDir
 if ($leftover.Count -gt 0) {
     Write-InfoAlt "  cleaned up, not in the source: $(($leftover | ForEach-Object Name) -join ', ')"
 }
-if (-not $DryRun) { Write-Info 'Restart the client (or /reload if only files changed) to load it.' }
+if (-not $DryRun) {
+    if ($Reverse) { Write-Info "Review with: git -C $(Format-Literal $toDir) status --short . (git restore / git clean -fd . undoes it)" }
+    else { Write-Info 'Restart the client (or /reload if only files changed) to load it.' }
+}

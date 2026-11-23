@@ -39,7 +39,9 @@ end
 local function Tab_SetText(frame, text)
 	frame:_SetText(text)
 	local width = frame.obj.frame.width or frame.obj.frame:GetWidth() or 0
-	PanelTemplates_TabResize(0, frame, nil, width) -- TBC: 2.4.3 takes (padding, tab, ...)
+	-- TBC: 2.4.3 takes (padding, tab, absoluteSize, maxWidth, absoluteTextSize); the text's own width
+	-- (newer AceGUI's way), not its anchored width, which depends on the tab's and grows on some clients
+	PanelTemplates_TabResize(0, frame, nil, width, frame.text:GetStringWidth())
 end
 
 local function Tab_SetSelected(frame, selected)
@@ -254,7 +256,7 @@ local methods = {
 			end
 			
 			for i = starttab, endtab do
-				PanelTemplates_TabResize(padding + 4, tabs[i], nil, width) -- TBC: (padding, tab, ...)
+				PanelTemplates_TabResize(padding + 4, tabs[i], nil, width, tabs[i].text:GetStringWidth()) -- TBC: (padding, tab, ...)
 			end
 			starttab = endtab + 1
 		end

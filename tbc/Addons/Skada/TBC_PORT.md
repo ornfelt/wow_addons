@@ -19,7 +19,7 @@ Install / update the client copy with `tbc/sync_addon.ps1` (or `.sh`; env var `w
 | `Modules/Tweaks.lua` | 2.4.3's chat filter signature (`filter(msg)` with the `event` / `arg2` globals). Fury of Frostmourne name fallback. |
 | `Modules/Healthstone.lua` | Master Healthstone as the name to match (Fel Healthstone is 3.x). |
 | `Locales/enUS.lua` | Fallbacks for global strings 2.4.3 lacks (`MINIMUM`, `MAXIMUM`, `CRIT_ABBR`, `APPLY`, `ENEMY`, ...). |
-| `Libs/AceGUI-3.0/.../TabGroup.lua` | 2.4.3's `PanelTemplates_TabResize(padding, tab, ...)` argument order. |
+| `Libs/AceGUI-3.0/.../TabGroup.lua` | 2.4.3's `PanelTemplates_TabResize(padding, tab, ...)` argument order, and the text's own width as its `absoluteTextSize` (newer AceGUI's way: the anchored width depends on the tab's, which grew the tabs to 415 px on my_wow's client). |
 | `Libs/LibCompat-1.0/.../LibGroupTalents-1.0.lua` | `CHARACTER_POINTS_CHANGED` instead of `PLAYER_TALENT_UPDATE`, no glyph events. |
 | Left out | `Modules/Threat.lua` (no threat API in 2.4.3), `Modules/Failbot.lua` + `LibFail-1.0` (WotLK raid fails), `LibDualSpec-1.0` (no dual spec), `TaintLess.xml` (3.x taint fixes). |
 
@@ -42,3 +42,15 @@ Again on 2026-11-23 (later): an error sweep with screenshots (every mode and its
 and the total, the menus and a submenu, choosing a segment from the menu, the reset popup and its
 Cancel, the report window, all 31 options pages, reloads) and five real fights - 0 Lua errors, no
 error dialog. It found the empty menus above.
+
+## my_wow's TBC client (`Code2/Wow/tools/my_wow/c/wow`, 2026-11-23)
+
+Skada works on it with the same files. The fixes were in the client, not the addon (apart from the
+TabGroup width above, which is right on the real client too). The client was missing these addon APIs:
+`Region:SetParent` (AceGUI moves every widget into its window with it), `Frame:SetBackdrop(table)`,
+the resize methods, `CreateFont`, `GetSpellLink`, `string.split`, font object and shadow methods,
+blend mode / orientation methods, `EnableMouse()` / `GetCursorPosition(...)` argument forms,
+`SetPoint` to an unnamed frame. It also lacked loose addon files (`.tga` / `.blp` textures, `.ttf`
+fonts beside the MPQs), and it reset an addon's own metatable on a frame (LibBars' bar groups) every
+time the frame was handed back to Lua. Tested the same way as the real client (the sweep, a real
+fight, real mouse clicks on a bar): 0 Lua errors, and it looks like the real client.

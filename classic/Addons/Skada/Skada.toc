@@ -1,0 +1,34 @@
+## Interface: 11200
+## Title: Skada
+## Notes: Modular damage meter (classic 1.12 port of Skada-WoTLK).
+## Notes-deDE: Ein Damage-Meter.
+## Notes-esES: Un medidor de daño.
+## Notes-esMX: Un medidor de daño.
+## Notes-frFR: Un damage meter.
+## Notes-koKR: 데미지 미터 모듈입니다.
+## Notes-ruRU: Измеритель урона.
+## Notes-zhCN: 模块化伤害统计。
+## Notes-zhTW: 模組化的傷害統計。
+## OptionalDeps: Ace3, LibSharedMedia-3.0, LibDBIcon-1.0, AceGUI-3.0-SharedMediaWidgets, LibBossIDs-1.0
+## LoadOnDemand: 0
+## SavedVariables: SkadaDB
+## SavedVariablesPerCharacter: SkadaCharDB
+## DefaultState: enabled
+## Author: Kader (|cff808080bkader#5341|r)
+## Version: 1.8.87-classic
+## X-Date: 2024-03-23 @ 11:22 |cff808080UTC|r
+## X-Credits: Zarnivoop
+## X-Curse-Project-ID: 623633
+## X-Category: Combat
+## X-License: MIT/X
+
+Classic\Env.lua
+Classic\SpellData.lua
+Classic\BossData.lua
+Compat.lua
+Compat.xml
+Classic\CombatLog.lua
+Libs\Load.xml
+Locales\Load.xml
+Core\Load.xml
+Modules\Load.xml

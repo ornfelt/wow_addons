@@ -3,7 +3,7 @@ if not LibFail then return end
 
 local folder, Skada = ...
 local Private = Skada.Private
-Skada:RegisterModule("Fails", function(L, P, _, _, M)
+Skada:RegisterModule("Fails", function(L, P, _, _, M, O)
 	local mode = Skada:NewModule("Fails")
 	local mode_spell = mode:NewModule("Spell List")
 	local mode_spell_target = mode_spell:NewModule("Target List")
@@ -12,12 +12,13 @@ Skada:RegisterModule("Fails", function(L, P, _, _, M)
 
 	local pairs, tostring, format, UnitGUID = pairs, tostring, string.format, UnitGUID
 	local uformat, IsInGroup = Private.uformat, Skada.IsInGroup
+	local classfmt = Skada.classcolors.format
 	local tank_events, mode_cols
 
-	local function format_valuetext(d, columns, total, metadata, subview)
+	local function format_valuetext(d, total, metadata, subview)
 		d.valuetext = Skada:FormatValueCols(
-			columns.Count and d.value,
-			columns[subview and "sPercent" or "Percent"] and Skada:FormatPercent(d.value, total)
+			mode_cols.Count and d.value,
+			mode_cols[subview and "sPercent" or "Percent"] and Skada:FormatPercent(d.value, total)
 		)
 
 		if metadata and d.value > metadata.maxvalue then
@@ -72,18 +73,18 @@ Skada:RegisterModule("Fails", function(L, P, _, _, M)
 
 				local d = win:actor(nr, actor, actor.enemy, actorname)
 				d.value = actor.failspells[win.spellid]
-				format_valuetext(d, mode_cols, total, win.metadata, true)
+				format_valuetext(d, total, win.metadata, true)
 			end
 		end
 	end
 
-	function mode_spell:Enter(win, id, label)
-		win.actorid, win.actorname = id, label
-		win.title = format(L["%s's fails"], label)
+	function mode_spell:Enter(win, id, label, class)
+		win.actorid, win.actorname, win.actorclass = id, label, class
+		win.title = format(L["%s's fails"], classfmt(class, label))
 	end
 
 	function mode_spell:Update(win, set)
-		win.title = uformat(L["%s's fails"], win.actorname)
+		win.title = uformat(L["%s's fails"], classfmt(win.actorclass, win.actorname))
 
 		local actor = set and set:GetActor(win.actorname, win.actorid)
 		local total = actor and actor.fail
@@ -101,7 +102,7 @@ Skada:RegisterModule("Fails", function(L, P, _, _, M)
 
 			local d = win:spell(nr, spellid)
 			d.value = count
-			format_valuetext(d, mode_cols, total, win.metadata, true)
+			format_valuetext(d, total, win.metadata, true)
 		end
 	end
 
@@ -124,14 +125,19 @@ Skada:RegisterModule("Fails", function(L, P, _, _, M)
 
 				local d = win:actor(nr, actor, actor.enemy, actorname)
 				d.value = actor.fail
-				format_valuetext(d, mode_cols, total, win.metadata)
+				format_valuetext(d, total, win.metadata)
 			end
 		end
 	end
 
+	function mode_spell:GetSetSummary(set, win)
+		local actor = set and win and set:GetActor(win.actorname, win.actorid)
+		return actor and actor.fail
+	end
+
 	function mode:GetSetSummary(set, win)
 		if not set then return end
-		return set:GetTotal(win and win.class, nil, "fail") or 0
+		return set:GetTotal(win and win.class, nil, "fail")
 	end
 
 	function mode:AddToTooltip(set, tooltip)
@@ -148,7 +154,7 @@ Skada:RegisterModule("Fails", function(L, P, _, _, M)
 			filterclass = true,
 			click1 = mode_spell,
 			columns = {Count = true, Percent = false, sPercent = false},
-			icon = [[Interface\Icons\ability_creature_cursed_01]]
+			icon = [[Interface\ICONS\ability_creature_cursed_01]]
 		}
 
 		mode_cols = self.metadata.columns
@@ -180,10 +186,10 @@ Skada:RegisterModule("Fails", function(L, P, _, _, M)
 							type = "description",
 							name = mode.localeName,
 							fontSize = "large",
-							image = [[Interface\Icons\ability_creature_cursed_01]],
+							image = [[Interface\ICONS\ability_creature_cursed_01]],
 							imageWidth = 18,
 							imageHeight = 18,
-							imageCoords = {0.05, 0.95, 0.05, 0.95},
+							imageCoords = Skada.cropTable,
 							width = "full",
 							order = 0
 						},
@@ -228,7 +234,7 @@ Skada:RegisterModule("Fails", function(L, P, _, _, M)
 
 			M.ignoredfails = nil
 			M.failschannel = M.failschannel or "AUTO"
-			Skada.options.args.modules.args.failbot = get_options()
+			O.modules.args.failbot = get_options()
 		end
 	end
 

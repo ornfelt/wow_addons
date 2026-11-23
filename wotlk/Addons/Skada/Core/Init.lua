@@ -1,7 +1,9 @@
 local folder, ns = ...
 
 local GetAddOnMetadata = GetAddOnMetadata
+ns.author = GetAddOnMetadata(folder, "Author")
 ns.version = GetAddOnMetadata(folder, "Version")
+ns.date = GetAddOnMetadata(folder, "X-Date")
 ns.website = "https://github.com/bkader/Skada-WoTLK"
 ns.logo = [[Interface\ICONS\spell_lightning_lightningbolt01]]
 ns.revisited = true -- Skada-Revisited flag
@@ -18,6 +20,9 @@ local setmetatable, rawset, wipe = setmetatable, rawset, wipe
 local EmptyFunc = Multibar_EmptyFunc
 local Private, L = ns.Private, ns.Locale
 local _
+
+-- location of media files (textures, fonts...)
+ns.mediapath = format([[Interface\AddOns\%s\Media]], folder)
 
 -- options table
 ns.options = {
@@ -40,6 +45,9 @@ end
 ns.dummyTable = {} -- a dummy table used as fallback
 ns.cacheTable = {} -- primary cache table
 ns.cacheTable2 = {} -- secondary cache table
+
+-- table used to crop mode options images.
+ns.cropTable = {0.06, 0.94, 0.06, 0.94}
 
 -------------------------------------------------------------------------------
 -- flags/bitmasks
@@ -236,6 +244,21 @@ function Private.TablePool()
 		return t
 	end
 
+	-- deep copies a table.
+	pool.copy = function(orig)
+		local orig_type, copy = type(orig), nil
+		if orig_type == "table" then
+			copy = {}
+			for k, v in next, orig, nil do
+				copy[pool.copy(k)] = pool.copy(v)
+			end
+			setmetatable(copy, pool.copy(getmetatable(orig)))
+		else
+			copy = orig
+		end
+		return copy
+	end
+
 	return pool
 end
 
@@ -247,6 +270,7 @@ do
 	Private.newTable = tablePool.new
 	Private.delTable = tablePool.del
 	Private.clearTable = tablePool.clear
+	Private.copyTable = tablePool.copy
 end
 
 -- alternative table reuse
@@ -277,8 +301,12 @@ do
 	}
 
 	function Private.TempTable(...)
-		local t = next(tables) or setmetatable({}, table_mt)
-		if t then tables[t] = nil end
+		local t = next(tables)
+		if t then
+			tables[t] = nil
+		else
+			t = setmetatable({}, table_mt)
+		end
 		for i = 1, select("#", ...) do
 			t[i] = (select(i, ...))
 		end
@@ -293,7 +321,7 @@ function Private.RegisterClasses()
 	Private.RegisterClasses = nil
 
 	-- class, role and spec icons (sprite)
-	ns.classicons = [[Interface\AddOns\Skada\Media\Textures\icons]]
+	ns.classicons = format([[%s\Textures\icons]], ns.mediapath)
 	ns.roleicons = ns.classicons
 	ns.specicons = ns.classicons
 
@@ -328,35 +356,38 @@ function Private.RegisterClasses()
 	local P = ns.profile
 
 	-- some useful functions
-	classcolors.unpack = function(class)
-		local color = classcolors(class)
-		return color.r, color.g, color.b
-	end
-	classcolors.str = function(class)
-		local color = classcolors(class)
-		return color.colorStr
-	end
-	classcolors.format = function(class, text)
-		local color = classcolors(class)
-		return format("\124c%s%s\124r", color.colorStr, text)
-	end
-
-	-- returns class color or "arg" wrapped in class color
 	local classcolors_mt = {
-		__index = function(t, class)
-			local color = {r = 0.353, g = 0.067, b = 0.027, colorStr = "ff5a1107"} -- unknown
-			rawset(t, class, color)
-			return color
+		unpack = function(class) -- returns class RGB
+			local color = class and classcolors(class)
+			if not color then return end
+			return color.r, color.g, color.b
 		end,
-		__call = function(t, class)
-			local color = P.usecustomcolors and P.customcolors and P.customcolors[class] or t[class]
-			if not color.colorStr then
-				color.colorStr = RGBPercToHex(color.r, color.g, color.b, true)
-			end
-			return color
+		str = function(class) -- returns color string.
+			local color = class and classcolors(class)
+			return color and color.colorStr or "ffffffff"
+		end,
+		format = function(class, text) -- class colored text.
+			local color = class and classcolors(class)
+			return color and format("\124c%s%s\124r", color.colorStr or "ffffffff", text) or text
 		end
 	}
-	ns.classcolors = setmetatable(classcolors, classcolors_mt)
+
+	-- missing class? use uknown.
+	local unknown_classcolor = {r = 0.353, g = 0.067, b = 0.027, colorStr = "ff5a1107"}
+	setmetatable(classcolors_mt, {__index = function(t, class)
+		rawset(t, class, unknown_classcolor)
+		return unknown_classcolor
+	end})
+
+	setmetatable(classcolors, {
+		__index = classcolors_mt,
+		__call = function(t, class)
+			local color = P.usecustomcolors and P.customcolors and P.customcolors[class] or t[class]
+			color.colorStr = color.colorStr or RGBPercToHex(color.r, color.g, color.b, true)
+			return color
+		end
+	})
+	ns.classcolors = classcolors
 
 	-- common __call for coordinates
 	local coords__call = function(t, key)
@@ -659,35 +690,35 @@ function Private.RegisterMedias()
 	end
 
 	-- fonts
-	LSM:Register("font", "ABF", [[Interface\Addons\Skada\Media\Fonts\ABF.ttf]])
-	LSM:Register("font", "Accidental Presidency", [[Interface\Addons\Skada\Media\Fonts\Accidental Presidency.ttf]])
-	LSM:Register("font", "Adventure", [[Interface\Addons\Skada\Media\Fonts\Adventure.ttf]])
-	LSM:Register("font", "Diablo", [[Interface\Addons\Skada\Media\Fonts\Diablo.ttf]])
-	LSM:Register("font", "FORCED SQUARE", [[Interface\Addons\Skada\Media\Fonts\FORCED SQUARE.ttf]])
-	LSM:Register("font", "Hooge", [[Interface\Addons\Skada\Media\Fonts\Hooge.ttf]])
+	LSM:Register("font", "ABF", format([[%s\Fonts\ABF.ttf]], ns.mediapath))
+	LSM:Register("font", "Accidental Presidency", format([[%s\Fonts\Accidental Presidency.ttf]], ns.mediapath))
+	LSM:Register("font", "Adventure", format([[%s\Fonts\Adventure.ttf]], ns.mediapath))
+	LSM:Register("font", "Diablo", format([[%s\Fonts\Diablo.ttf]], ns.mediapath))
+	LSM:Register("font", "FORCED SQUARE", format([[%s\Fonts\FORCED SQUARE.ttf]], ns.mediapath))
+	LSM:Register("font", "Hooge", format([[%s\Fonts\Hooge.ttf]], ns.mediapath))
 
 	-- statusbars
-	LSM:Register("statusbar", "Aluminium", [[Interface\Addons\Skada\Media\Statusbar\Aluminium]])
-	LSM:Register("statusbar", "Armory", [[Interface\Addons\Skada\Media\Statusbar\Armory]])
-	LSM:Register("statusbar", "BantoBar", [[Interface\Addons\Skada\Media\Statusbar\BantoBar]])
-	LSM:Register("statusbar", "Flat", [[Interface\Addons\Skada\Media\Statusbar\Flat]])
-	LSM:Register("statusbar", "Gloss", [[Interface\Addons\Skada\Media\Statusbar\Gloss]])
-	LSM:Register("statusbar", "Graphite", [[Interface\Addons\Skada\Media\Statusbar\Graphite]])
-	LSM:Register("statusbar", "Grid", [[Interface\Addons\Skada\Media\Statusbar\Grid]])
-	LSM:Register("statusbar", "Healbot", [[Interface\Addons\Skada\Media\Statusbar\Healbot]])
-	LSM:Register("statusbar", "LiteStep", [[Interface\Addons\Skada\Media\Statusbar\LiteStep]])
-	LSM:Register("statusbar", "Minimalist", [[Interface\Addons\Skada\Media\Statusbar\Minimalist]])
-	LSM:Register("statusbar", "Otravi", [[Interface\Addons\Skada\Media\Statusbar\Otravi]])
-	LSM:Register("statusbar", "Outline", [[Interface\Addons\Skada\Media\Statusbar\Outline]])
-	LSM:Register("statusbar", "Round", [[Interface\Addons\Skada\Media\Statusbar\Round]])
-	LSM:Register("statusbar", "Serenity", [[Interface\AddOns\Skada\Media\Statusbar\Serenity]])
-	LSM:Register("statusbar", "Smooth", [[Interface\Addons\Skada\Media\Statusbar\Smooth]])
+	LSM:Register("statusbar", "Aluminium", format([[%s\Statusbar\Aluminium]], ns.mediapath))
+	LSM:Register("statusbar", "Armory", format([[%s\Statusbar\Armory]], ns.mediapath))
+	LSM:Register("statusbar", "BantoBar", format([[%s\Statusbar\BantoBar]], ns.mediapath))
+	LSM:Register("statusbar", "Flat", format([[%s\Statusbar\Flat]], ns.mediapath))
+	LSM:Register("statusbar", "Gloss", format([[%s\Statusbar\Gloss]], ns.mediapath))
+	LSM:Register("statusbar", "Graphite", format([[%s\Statusbar\Graphite]], ns.mediapath))
+	LSM:Register("statusbar", "Grid", format([[%s\Statusbar\Grid]], ns.mediapath))
+	LSM:Register("statusbar", "Healbot", format([[%s\Statusbar\Healbot]], ns.mediapath))
+	LSM:Register("statusbar", "LiteStep", format([[%s\Statusbar\LiteStep]], ns.mediapath))
+	LSM:Register("statusbar", "Minimalist", format([[%s\Statusbar\Minimalist]], ns.mediapath))
+	LSM:Register("statusbar", "Otravi", format([[%s\Statusbar\Otravi]], ns.mediapath))
+	LSM:Register("statusbar", "Outline", format([[%s\Statusbar\Outline]], ns.mediapath))
+	LSM:Register("statusbar", "Round", format([[%s\Statusbar\Round]], ns.mediapath))
+	LSM:Register("statusbar", "Serenity", format([[%s\Statusbar\Serenity]], ns.mediapath))
+	LSM:Register("statusbar", "Smooth", format([[%s\Statusbar\Smooth]], ns.mediapath))
 	LSM:Register("statusbar", "Solid", [[Interface\Buttons\WHITE8X8]])
-	LSM:Register("statusbar", "TukTex", [[Interface\Addons\Skada\Media\Statusbar\TukTex]])
+	LSM:Register("statusbar", "TukTex", format([[%s\Statusbar\TukTex]], ns.mediapath))
 
 	-- borders
-	LSM:Register("border", "Glow", [[Interface\Addons\Skada\Media\Border\Glow]])
-	LSM:Register("border", "Roth", [[Interface\Addons\Skada\Media\Border\Roth]])
+	LSM:Register("border", "Glow", format([[%s\Border\Glow]], ns.mediapath))
+	LSM:Register("border", "Roth", format([[%s\Border\Roth]], ns.mediapath))
 
 	-- sounds
 	LSM:Register("sound", "Cartoon FX", [[Sound\Doodad\Goblin_Lottery_Open03.wav]])
@@ -830,7 +861,7 @@ function Private.CheckDuplicate(value, tbl, key)
 		local is_array = (#tbl > 0)
 
 		for k, v in pairs(tbl) do
-			local val = is_array and v[key] or k
+			local val = is_array and type(v) == "table" and v[key] or k
 			if val == value and num == 0 then
 				num = 1
 			elseif val then
@@ -855,11 +886,16 @@ end
 do
 	-- we a fake frame/fontstring to escape the string
 	local escape_fs = nil
-	function Private.EscapeStr(str)
+	function Private.EscapeStr(str, plain)
 		escape_fs = escape_fs or UIParent:CreateFontString(nil, "ARTWORK", "ChatFontNormal")
 		escape_fs:SetText(str)
 		str = escape_fs:GetText()
 		escape_fs:SetText("")
+		if plain then
+			str = gsub(str, "|c%x%x%x%x%x%x%x%x", "")
+			str = gsub(str, "|c%x%x %x%x%x%x%x", "")
+			return gsub(str, "|r", "")
+		end
 		return str
 	end
 
@@ -1373,9 +1409,20 @@ do
 		[67545] = [[Interface\ICONS\spell_fire_flamebolt]] --> Empowered Fire
 	}
 
+	local strfind = string.find
+	-- used to split spell: [id].[school].[petname]
+	local function SpellSplit(spellid)
+		if type(spellid) == "string" and strfind(spellid, ".") then
+			local id, school, petname = strsplit(".", spellid, 3)
+			return tonumber(id), tonumber(school), petname
+		end
+		return spellid
+	end
+	Private.SpellSplit = SpellSplit
+
 	function Private.SpellInfo(spellid)
 		if spellid then
-			spellid = math_abs(spellid)
+			spellid = math_abs(SpellSplit(spellid))
 			local res1, res2, res3, res4, res5, res6, res7, res8, res9
 			if customSpells[spellid] then
 				res1, res3 = customSpells[spellid][1], customSpells[spellid][2]
@@ -1396,30 +1443,36 @@ do
 		end
 	end
 
-	local strfind = string.find
-	-- used to split spell: [id].[school].[petname]
-	function Private.SpellSplit(spellid)
-		if type(spellid) == "string" and strfind(spellid, ".") then
-			local id, school, petname = strsplit(".", spellid, 3)
-			return tonumber(id), tonumber(school), petname
-		end
-		return spellid
-	end
-
 	-- spell icon and name to speed up things
 	local SpellInfo = Private.SpellInfo
-	ns.spellnames = setmetatable({}, {__index = function(t, spellid)
-		local name, _, icon = SpellInfo(spellid)
-		ns.spellicons[spellid] = icon
-		t[spellid] = name
-		return name
-	end})
-	ns.spellicons = setmetatable({}, {__index = function(t, spellid)
-		local name, _, icon = SpellInfo(spellid)
-		ns.spellnames[spellid] = name
-		t[spellid] = icon
-		return icon
-	end})
+	ns.spellnames = setmetatable({}, {
+		__mode = "kv",
+		__index = function(t, spellid)
+			local name, _, icon = SpellInfo(spellid)
+			name = name or L["Unknown"]
+			icon = icon or [[Interface\ICONS\INV_Misc_QuestionMark]]
+			rawset(t, spellid, name)
+			rawset(ns.spellicons, spellid, icon)
+			return name
+		end,
+		__newindex = function(t, spellid, name)
+			rawset(t, spellid, name)
+		end
+	})
+	ns.spellicons = setmetatable({}, {
+		__mode = "kv",
+		__index = function(t, spellid)
+			local name, _, icon = SpellInfo(spellid)
+			name = name or L["Unknown"]
+			icon = icon or [[Interface\ICONS\INV_Misc_QuestionMark]]
+			rawset(t, spellid, icon)
+			rawset(ns.spellnames, spellid, name)
+			return icon
+		end,
+		__newindex = function(t, spellid, icon)
+			rawset(t, spellid, icon)
+		end
+	})
 end
 
 -------------------------------------------------------------------------------
@@ -1436,6 +1489,11 @@ do
 	local BITMASK_NPC = Private.BITMASK_NPC
 	local BITMASK_PLAYER = Private.BITMASK_PLAYER
 
+	ns.userGUID = UnitGUID("player")
+	_, ns.userClass = UnitClass("player")
+	ns.userName = UnitName("player")
+	ns.userRealm = gsub(GetRealmName(), "%s", "")
+
 	-- checks if the given guid/flags are those of a creature.
 	function Private.IsCreature(guid, flags)
 		if tonumber(guid) then
@@ -1444,16 +1502,29 @@ do
 		return (band(flags or 0, BITMASK_NPC) ~= 0)
 	end
 
+	-- used to protect tables
+	local table_mt = {__metatable = true}
+
+	-- players & pets [guid] = UnitID
+	local guidToUnit = setmetatable(Private.guidToUnit or {}, table_mt)
+	Private.guidToUnit = guidToUnit
+
 	-- players: [guid] = class / pets: [guid] = owner guid
-	local guidToClass = Private.guidToClass or {}
+	local guidToClass = setmetatable(Private.guidToClass or {}, table_mt)
 	Private.guidToClass = guidToClass
 
 	-- players only: [guid] = name
-	local guidToName = Private.guidToName or {}
+	local guidToName = setmetatable(Private.guidToName or {}, table_mt)
 	Private.guidToName = guidToName
 
 	-- pets only: [pet guid] = owner guid
-	local guidToOwner = Private.guidToOwner or {}
+	local guidToOwner = setmetatable(Private.guidToOwner or {}, {
+		__metatable = true,
+		__newindex = function(t, guid, owner)
+			rawset(guidToClass, guid, owner)
+			rawset(t, guid, owner)
+		end
+	})
 	Private.guidToOwner = guidToOwner
 
 	do
@@ -1472,33 +1543,33 @@ do
 			if guidToName[guid] then
 				__t1[guid] = 1
 				__t2[guid] = (__t2[guid] == nil) and false or __t2[guid]
-				return __t1[guid]
+				return 1
 			end
 
 			-- group pet?
 			if guidToClass[guid] then
 				__t1[guid] = false
 				__t2[guid] = __t2[guid] or 1
-				return __t1[guid]
+				return false
 			end
 
 			-- player by flgs?
 			if band(flags or 0, BITMASK_PLAYER) == BITMASK_PLAYER then
 				__t1[guid] = true
 				__t2[guid] = (__t2[guid] == nil) and false or __t2[guid]
-				return __t1[guid]
+				return true
 			end
 
 			-- player by UnitIsPlayer?
 			if name and UnitIsPlayer(name) then
 				__t1[guid] = true
 				__t2[guid] = (__t2[guid] == nil) and false or __t2[guid]
-				return __t1[guid]
+				return true
 			end
 
 			-- just set it to false
 			__t1[guid] = false
-			return __t1[guid]
+			return false
 		end
 
 		-- checks if the guid is a pet (extra: helps IsPlayer)
@@ -1512,25 +1583,26 @@ do
 			if guidToName[guid] then
 				__t2[guid] = false
 				__t1[guid] = 1
-				return __t2[guid]
+				return false
 			end
 
 			-- grouped pet?
 			if guidToClass[guid] then
 				__t2[guid] = 1
 				__t1[guid] = false
-				return __t2[guid]
+				return 1
 			end
 
 			-- ungrouped pet?
 			if band(flags or 0, BITMASK_PETS) ~= 0 then
-				__t2[guid] = (band(flags or 0, BITMASK_FRIENDLY) ~= 0) and 1 or true
+				local res = (band(flags or 0, BITMASK_FRIENDLY) ~= 0) and 1 or true
+				__t2[guid] = res
 				__t1[guid] = false
-				return __t2[guid]
+				return res
 			end
 
 			__t2[guid] = false
-			return __t2[guid]
+			return false
 		end
 	end
 
@@ -1549,18 +1621,20 @@ do
 	-- adds a combatant
 	function Private.AddCombatant(unit, ownerUnit)
 		local guid = UnitGUID(unit)
-		if guid and ownerUnit then
-			guidToClass[guid] = UnitGUID(ownerUnit)
-		elseif guid then
-			local _, class = UnitClass(unit)
-			guidToClass[guid] = class
-			guidToName[guid] = UnitFullName(unit)
-		end
-	end
+		if not guid then return end
+		guidToUnit[guid] = unit -- store the unit.
 
-	ns.userGUID = UnitGUID('player')
-	_, ns.userClass = UnitClass('player')
-	ns.userName = UnitFullName("player")
+		-- for pets...
+		if ownerUnit then
+			guidToOwner[guid] = UnitGUID(ownerUnit)
+			return
+		end
+
+		-- for players...
+		local _, class = UnitClass(unit)
+		guidToClass[guid] = class
+		guidToName[guid] = UnitFullName(unit)
+	end
 end
 
 -------------------------------------------------------------------------------
@@ -1707,6 +1781,40 @@ do
 end
 
 -------------------------------------------------------------------------------
+-- temporary flags check bypass
+
+do
+	local new = Private.newTable
+	local del = Private.delTable
+	local clear = Private.clearTable
+	local temp_units = nil
+
+	-- adds a temporary unit with optional info
+	function Private.AddTempUnit(guid, info)
+		if not guid then return end
+		temp_units = temp_units or new()
+		temp_units[guid] = info or true
+	end
+
+	-- deletes a temporary unit if found
+	function Private.DelTempUnit(guid)
+		if guid and temp_units and temp_units[guid] then
+			temp_units[guid] = del(temp_units[guid])
+		end
+	end
+
+	-- returns the temporary unit stored "info" or false
+	function Private.GetTempUnit(guid)
+		return guid and temp_units and temp_units[guid]
+	end
+
+	-- clears all store temporary units
+	function Private.ClearTempUnits()
+		temp_units = clear(temp_units)
+	end
+end
+
+-------------------------------------------------------------------------------
 -- window table
 do
 	local Window = {}
@@ -1717,32 +1825,46 @@ do
 
 	-- creates a new window
 	local new = Private.newTable
-	local window_mt = {__index = Window, __metatable = true}
-	function Window.new(tooltip)
-		local win = next(window_bin)
-		if win then
-			window_bin[win] = nil
-		else
-			win = setmetatable({}, window_mt)
+	local window_mt = {
+		__index = Window,
+		__newindex = function(self, key, value)
+			rawset(self, key, value)
+			if not self.ttwin or key == "ttwin" then return end
+			rawset(self.ttwin, key, value)
+		end
+	}
+	local tooltip_mt = {__index = setmetatable({}, window_mt)}
+
+	function Window.new(parent)
+		local win = next(window_bin) or {}
+		window_bin[win] = nil
+
+		if parent then
+			win.super = parent
+			win.dataset = new()
+			return setmetatable(win, tooltip_mt)
 		end
 
+		win.super = nil
 		win.dataset = new()
-		if not tooltip then
-			win.history = new()
-			win.metadata = new()
-		end
-		return win
+		win.history = new()
+		win.metadata = new()
+		return setmetatable(win, window_mt)
 	end
 
 	-- deletes a window and recycles its tables
 	local del = Private.delTable
 	function Window.del(win)
+		win.super = nil
 		win.dataset = del(win.dataset)
-		win.history = del(win.history)
-		win.metadata = del(win.metadata)
+		if not win.super then
+			win.history = del(win.history)
+			win.metadata = del(win.metadata)
+		end
 		if win.ttwin then -- tooltip
 			win.ttwin = Window.del(win.ttwin)
 		end
+		setmetatable(win, nil)
 		window_bin[win] = true
 		return nil -- assign input reference
 	end
@@ -1773,12 +1895,21 @@ do
 
 	-- wipes window's dataset table
 	function Window:reset()
+		self.title = nil -- reset title
 		if not self.dataset then return end
 		for i = #self.dataset, 0, -1 do
 			if self.dataset[i] then
 				wipe(self.dataset[i])
 			end
 		end
+	end
+
+	-- cleans window from what was set by modules.
+	function Window:clean()
+		self.actorid, self.actorname, self.actorclass = nil, nil, nil
+		self.otherid, self.othername, self.otherclass = nil, nil, nil
+		self.targetid, self.targetname, self.targetclass = nil, nil, nil
+		self.spellid, self.spellname = nil, nil
 	end
 
 	-- generates a spell dataset/bar.
@@ -1845,15 +1976,17 @@ do
 				d.class = actor.class or "ENEMY"
 				d.role = actor.role
 				d.spec = actor.spec
+				d.talent = actor.talent
 				return d
 			end
 
 			d.class = actor.class or "UNKNOWN"
 			d.role = actor.role
 			d.spec = actor.spec
+			d.talent = actor.talent
 
-			if actor.id and ns.validclass[d.class] then
-				d.text = ns:FormatName(actorname, actor.id)
+			if ns.validclass[d.class] then
+				d.text = ns:FormatName(d.label, actor.id)
 			end
 		end
 		return d

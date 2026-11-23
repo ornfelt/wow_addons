@@ -7,9 +7,12 @@ local setmetatable, wipe = setmetatable, wipe
 local next, time, GetTime = next, time, GetTime
 local _
 
+local UnitGUID, UnitClass, UnitFullName = UnitGUID, UnitClass, Private.UnitFullName
+local IsInGroup, IsInRaid = Skada.IsInGroup, Skada.IsInRaid
 local tablePool, TempTable = Skada.tablePool, Private.TempTable
 local new, del = Private.newTable, Private.delTable
 local L, callbacks = Skada.Locale, Skada.callbacks
+local guidToName, guidToClass, guidToOwner = Private.guidToName, Private.guidToClass, Private.guidToOwner
 
 -------------------------------------------------------------------------------
 -- debug function
@@ -27,14 +30,6 @@ end
 -- modules and display functions
 
 do
-	-- when modules are created w make sure to save
-	-- their english "name" then localize "moduleName"
-	local function on_module_created(self, module)
-		module.localeName = L[module.moduleName]
-		module.OnModuleCreated = module.OnModuleCreated or on_module_created
-	end
-	Skada.OnModuleCreated = on_module_created
-
 	local tconcat = table.concat
 	local function module_table(...)
 		local args = TempTable(...)
@@ -95,6 +90,7 @@ do
 	end
 
 	-- adds a module to the loadable modules table.
+	local unpack = unpack
 	function Skada:RegisterModule(...)
 		local module = module_table(...)
 		if not module then return end
@@ -106,12 +102,25 @@ do
 		-- add its check button
 		self.options.args.modules.args.blocked.args[module.name] = {
 			type = "toggle",
-			name = L[module.name],
+			name = function()
+				if module.deps and self:IsDisabled(unpack(module.deps)) then
+					return format("\124cffff0000%s\124r", L[module.name])
+				end
+				return L[module.name]
+			end,
 			desc = module.desc
 		}
 
 		-- return it so that RegisterDisplay changes order
 		return self.options.args.modules.args.blocked.args[module.name]
+	end
+
+	-- when modules are created w make sure to save
+	-- their english "name" then localize "moduleName"
+	function Skada:OnModuleCreated(module)
+		module.localeName = L[module.moduleName]
+		module.OnModuleCreated = module.OnModuleCreated or self.OnModuleCreated
+		module.isParent = (self == Skada)
 	end
 
 	do
@@ -126,20 +135,22 @@ do
 		end
 
 		local displays = Skada.displays
+		local display_with_totals = Skada.display_with_totals
 		local numorder = 80
 
 		-- adds a display system
-		function Skada:AddDisplaySystem(key, mod)
+		function Skada:AddDisplaySystem(key, mod, has_totals)
 			displays[key] = mod
 			if mod.description then
 				self.options.args.windows.args[format("%sdesc", key)] = {
 					type = "description",
 					name = format("\n\124cffffd700%s\124r:\n%s", mod.localeName, mod.description),
-					fontSize = "medium",
+					fontSize = "small",
 					order = numorder
 				}
 				numorder = numorder + 10
 			end
+			display_with_totals[key] = (has_totals == true)
 		end
 	end
 
@@ -154,14 +165,13 @@ do
 	end
 
 	-- loads registered modules
-	local unpack = unpack
 	function Skada:LoadModules(release)
 		-- loadable modules
 		if self.LoadableModules then
 			local mod = tremove(self.LoadableModules, 1)
 			while mod do
 				if mod.name and mod.func and not self:IsDisabled(mod.name) and not (mod.deps and self:IsDisabled(unpack(mod.deps))) then
-					mod.func(L, self.profile, self.global, self.cacheTable, self.profile.modules)
+					mod.func(L, self.profile, self.global, self.cacheTable, self.profile.modules, self.options.args)
 				end
 				mod = tremove(self.LoadableModules, 1)
 			end
@@ -209,7 +219,7 @@ do
 				elseif num >= 1e4 or num <= -1e4 then
 					return format("%.2f%s", num * 0.0001, symbol_10k)
 				elseif num >= 1e3 or num <= -1e3 then
-					return format("%.1f%s", num * 0.0001, symbol_1k)
+					return format("%.1f%s", num * 0.001, symbol_1k)
 				end
 				return format("%.0f", num)
 			end
@@ -268,13 +278,8 @@ end
 
 local Translit = LibStub("LibTranslit-1.0", true)
 function Skada:FormatName(name)
-	if self.profile.realmless then
-		name = gsub(name, ("%-.*"), "")
-	end
-	if self.profile.translit and Translit then
-		return Translit:Transliterate(name, "!")
-	end
-	return name
+	name = self.profile.realmless and gsub(name, ("%-.*"), "") or name
+	return self.profile.translit and Translit and Translit:Transliterate(name, "!") or name
 end
 
 do
@@ -288,8 +293,8 @@ do
 
 	function Private.SetValueFormat(bracket, separator)
 		format_2 = brackets[bracket or 1]
-		format_3 = "%s " .. format(format_2, separators[separator or 1])
-		format_2 = "%s " .. format_2
+		format_3 = format("%%s %s", format(format_2, separators[separator or 1]))
+		format_2 = format("%%s %s", format_2)
 	end
 
 	function Skada:FormatValueText(v1, b1, v2, b2, v3, b3)
@@ -335,7 +340,6 @@ end
 do
 	local tsort = table.sort
 	local SendChatMessage, BNSendWhisper = SendChatMessage, BNSendWhisper
-	local IsInGroup, IsInRaid = Skada.IsInGroup, Skada.IsInRaid
 	local Window, windows = Skada.Window, Skada.windows
 	local EscapeStr = Private.EscapeStr
 
@@ -345,13 +349,8 @@ do
 			return
 		end
 		if strlower(chan) == "auto" then
-			if not IsInGroup() then
-				return
-			elseif Skada.insType == "pvp" or Skada.insType == "arena" then
-				chan = "battleground"
-			else
-				chan = IsInRaid() and "raid" or "party"
-			end
+			if not IsInGroup() then return end
+			chan = (Skada.insType == "pvp" or Skada.insType == "arena") and "battleground" or IsInRaid() and "raid" or "party"
 		end
 
 		if not noescape then
@@ -370,6 +369,7 @@ do
 	end
 
 	local strrep = strrep or string.rep
+	local tinsert = table.insert
 	local SpellLink = Private.SpellLink
 
 	local function BuildReportTable(mode, firstline, dataset, maxlines, fmt, barid)
@@ -385,7 +385,12 @@ do
 				nr = nr + 1
 				local label = nil
 				if Skada.profile.reportlinks and (data.spellid or data.hyperlink) then
-					label = TempTable(EscapeStr(data.hyperlink or SpellLink(data.spellid) or data.reportlabel or data.label), "   ")
+					if data.reportlabel and data.spellid then
+						label = data.reportlabel:gsub(data.label, SpellLink(data.spellid))
+					else
+						label = data.hyperlink or SpellLink(data.spellid) or data.reportlabel or data.label
+					end
+					label = TempTable(EscapeStr(label), "   ")
 				else
 					label = TempTable(EscapeStr(data.reportlabel or data.label), "   ")
 				end
@@ -438,10 +443,17 @@ do
 		end
 	end
 
+	local strupper, strlower = string.upper, string.lower
+	local function camel_case(first, rest)
+		return format("%s%s", strupper(first), strlower(rest))
+	end
+
 	local GetChannelList = GetChannelList
 	local OpenExport = Private.ImportExport
 
 	function Skada:Report(channel, chantype, modename, setname, maxlines, window, barid)
+		if maxlines == 0 then return end
+
 		if chantype == "channel" then
 			local list = TempTable(GetChannelList())
 			for i = 1, #list * 0.5 do
@@ -463,7 +475,9 @@ do
 				return
 			end
 
-			mode = self:GetModule(modename or "Damage", true)
+			modename = modename and gsub(gsub(modename, "_", " "), "(%a)([%w_']*)", camel_case) or "Damage"
+			mode = self.modules[modename] or self.modules[strupper(modename)] or self.modules[strlower(modename)]
+			if not mode then return end
 			window = Window.new(true)
 			mode:Update(window, set)
 		elseif type(window) == "string" then
@@ -500,10 +514,13 @@ do
 		end
 
 		local title = (window and window.title) or mode.title or mode.localeName
+		if window.parentmode and title ~= window.parentmode.localeName then
+			title = format("%s - %s", window.parentmode.localeName, title)
+		end
 		local label = (modename == L["Improvement"]) and self.userName or Skada:GetSetLabel(set)
 		maxlines = maxlines or 10
 
-		local firstline = format(L["Skada: %s for %s:"], title, label)
+		local firstline = format(L["Skada: %s for %s:"], EscapeStr(title, true), label)
 		local temp = BuildReportTable(mode, firstline, dataset, maxlines, channel == "text", barid)
 
 		if channel == "text" then
@@ -568,7 +585,7 @@ do
 	local setPrototype = Skada.setPrototype
 	local playerPrototype = Skada.playerPrototype
 
-	local fakeSet, updateTimer = nil, nil
+	local fake_set, update_timer = nil, nil
 
 	-- there was no discrimination with classes and specs
 	-- the only reason this group composition was made is
@@ -599,7 +616,7 @@ do
 	end
 
 	local function generate_fake_data()
-		fakeSet = tablePool.acquireHash(
+		fake_set = tablePool.acquireHash(
 			"name", "Fake Fight",
 			"starttime", time() - 120,
 			"damage", 0,
@@ -636,14 +653,14 @@ do
 				"id", name, "name", name, "class", class, "role", role, "spec", spec,
 				"damage", damage, "heal", heal, "absorb", absorb
 			)
-			fakeSet.actors[name] = playerPrototype:Bind(actor)
+			fake_set.actors[name] = playerPrototype:Bind(actor)
 
-			fakeSet.damage = fakeSet.damage + damage
-			fakeSet.heal = fakeSet.heal + heal
-			fakeSet.absorb = fakeSet.absorb + absorb
+			fake_set.damage = fake_set.damage + damage
+			fake_set.heal = fake_set.heal + heal
+			fake_set.absorb = fake_set.absorb + absorb
 		end
 
-		return setPrototype:Bind(fakeSet)
+		return setPrototype:Bind(fake_set)
 	end
 
 	local function randomize_fake_data(set, coef)
@@ -688,20 +705,20 @@ do
 
 	function Skada:TestMode()
 		if InCombatLockdown() or IsGroupInCombat() then
-			fakeSet = del(fakeSet, true)
+			fake_set = del(fake_set, true)
 			self.testMode = nil
-			if updateTimer then
-				self:CancelTimer(updateTimer)
-				updateTimer = nil
+			if update_timer then
+				self:CancelTimer(update_timer)
+				update_timer = nil
 			end
 			return
 		end
 		self.testMode = not self.testMode
 		if not self.testMode then
-			fakeSet = del(fakeSet, true)
-			if updateTimer then
-				self:CancelTimer(updateTimer)
-				updateTimer = nil
+			fake_set = del(fake_set, true)
+			if update_timer then
+				self:CancelTimer(update_timer)
+				update_timer = nil
 			end
 			self.current = del(self.current, true)
 			return
@@ -709,39 +726,7 @@ do
 
 		self:Wipe()
 		self.current = generate_fake_data()
-		updateTimer = self:ScheduleRepeatingTimer(update_fake_data, self.profile.updatefrequency or 0.25, self)
-	end
-end
-
--------------------------------------------------------------------------------
--- temporary flags check bypass
-
-do
-	local clear = Private.clearTable
-	local temp_units = nil
-
-	-- adds a temporary unit with optional info
-	function Private.AddTempUnit(guid, info)
-		if not guid then return end
-		temp_units = temp_units or new()
-		temp_units[guid] = info or true
-	end
-
-	-- deletes a temporary unit if found
-	function Private.DelTempUnit(guid)
-		if guid and temp_units and temp_units[guid] then
-			temp_units[guid] = del(temp_units[guid])
-		end
-	end
-
-	-- returns the temporary unit stored "info" or false
-	function Private.GetTempUnit(guid)
-		return guid and temp_units and temp_units[guid]
-	end
-
-	-- clears all store temporary units
-	function Private.ClearTempUnits()
-		temp_units = clear(temp_units)
+		update_timer = update_timer or self:ScheduleRepeatingTimer(update_fake_data, self.profile.updatefrequency or 0.25, self)
 	end
 end
 
@@ -778,7 +763,6 @@ end
 
 do
 	local UnitIsConnected = UnitIsConnected
-	local IsInGroup, IsInRaid = Skada.IsInGroup, Skada.IsInRaid
 	local collectgarbage = collectgarbage
 
 	local function create_progress_window()
@@ -819,7 +803,7 @@ do
 		elem:SetPoint("TOPLEFT", frame.text, "BOTTOMLEFT", 20, -15)
 		elem:SetPoint("TOPRIGHT", frame.text, "BOTTOMRIGHT", -20, -15)
 		elem:SetHeight(5)
-		elem:SetStatusBarTexture([[Interface\AddOns\Skada\Media\Statusbar\Flat.tga]])
+		elem:SetStatusBarTexture(format([[%s\Statusbar\Flat.tga]], Skada.mediapath))
 		elem:SetStatusBarColor(0, 1, 0)
 		frame.bar = elem
 
@@ -880,6 +864,7 @@ do
 	end
 
 	-- "PURR" is a special key to whisper with progress window.
+	local serialize = Private.serialize
 	local function send_comm_message(self, channel, target, ...)
 		if target == self.userName then
 			return -- to yourself? really...
@@ -900,9 +885,9 @@ do
 		end
 
 		if channel == "PURR" then
-			self:SendCommMessage(folder, Private.serialize(true, ...), "WHISPER", target, "NORMAL", show_progress_window, self)
+			self:SendCommMessage(folder, serialize(true, ...), "WHISPER", target, "NORMAL", show_progress_window, self)
 		elseif channel then
-			self:SendCommMessage(folder, Private.serialize(true, ...), channel, target)
+			self:SendCommMessage(folder, serialize(true, ...), channel, target)
 		end
 	end
 
@@ -920,9 +905,10 @@ do
 		end
 	end
 
+	local deserialize = Private.deserialize
 	local function on_comm_received(self, prefix, message, channel, sender)
 		if prefix == folder and channel and sender and sender ~= self.userName then
-			dispatch_comm(sender, Private.deserialize(message, true))
+			dispatch_comm(sender, deserialize(message, true))
 		end
 	end
 
@@ -943,39 +929,39 @@ do
 	end
 
 	function Skada.AddComm(self, const, func)
-		if self and const then
-			Skada.comms = Skada.comms or {}
-			Skada.comms[const] = Skada.comms[const] or {}
-			Skada.comms[const][self] = Skada.comms[const][self] or {}
-			Skada.comms[const][self][func or const] = true
-		end
+		if not self or not const then return end
+
+		Skada.comms = Skada.comms or {}
+		Skada.comms[const] = Skada.comms[const] or {}
+		Skada.comms[const][self] = Skada.comms[const][self] or {}
+		Skada.comms[const][self][func or const] = true
 	end
 
 	function Skada.RemoveComm(self, func)
-		if self and Skada.comms then
-			for const, selfs in pairs(Skada.comms) do
-				if selfs[self] then
-					selfs[self][func] = nil
+		if not self or not Skada.comms then return end
 
-					-- remove the table if empty
-					if next(selfs[self]) == nil then
-						selfs[self] = nil
-					end
+		for const, selfs in pairs(Skada.comms) do
+			if selfs[self] then
+				selfs[self][func] = nil
 
-					break
+				-- remove the table if empty
+				if next(selfs[self]) == nil then
+					selfs[self] = nil
 				end
+
+				break
 			end
 		end
 	end
 
 	function Skada.RemoveAllComms(self)
-		if self and Skada.comms then
-			for const, selfs in pairs(Skada.comms) do
-				for _self in pairs(selfs) do
-					if self == _self then
-						selfs[self] = nil
-						break
-					end
+		if not self or not Skada.comms then return end
+
+		for const, selfs in pairs(Skada.comms) do
+			for _self in pairs(selfs) do
+				if self == _self then
+					selfs[self] = nil
+					break
 				end
 			end
 		end
@@ -999,7 +985,7 @@ do
 			elseif diff == 2 or diff == 4 then
 				return (dynDiff == 0) and "25n" or (dynDiff == 1) and "25h" or "NaN"
 			end
-		elseif insType then
+		elseif insType == "raid" then
 			if diff == 1 then
 				local comp_diff = GetRaidDifficulty()
 				if diff ~= comp_diff and (comp_diff == 2 or comp_diff == 4) then
@@ -1027,11 +1013,7 @@ end
 -- returns the selected set time.
 function Skada:GetSetTime(set)
 	local settime = set and set.time
-	if not settime then
-		return 0
-	end
-
-	return (settime >= 1) and settime or max(1, time() - set.starttime)
+	return not settime and 0 or (settime >= 1) and settime or max(1, time() - set.starttime)
 end
 
 -- returns the actor's active/effective time
@@ -1080,6 +1062,8 @@ end
 
 -- skada reset dialog
 do
+	local ConfirmDialog = Private.ConfirmDialog
+
 	local t = {timeout = 30, whileDead = 0}
 	local f = function() Skada:Reset(IsShiftKeyDown()) end
 
@@ -1091,7 +1075,7 @@ do
 			return
 		end
 
-		Private.ConfirmDialog(L["Do you want to reset Skada?\nHold SHIFT to reset all data."], f, t)
+		ConfirmDialog(L["Do you want to reset Skada?\nHold SHIFT to reset all data."], f, t)
 	end
 end
 
@@ -1160,6 +1144,8 @@ end
 -- reinstall the addon
 do
 	local ReloadUI = ReloadUI
+	local ConfirmDialog = Private.ConfirmDialog
+
 	local t = {timeout = 15, whileDead = 0}
 	local f = function()
 		if Skada.data.profiles then
@@ -1174,7 +1160,7 @@ do
 	end
 
 	function Skada:Reinstall()
-		Private.ConfirmDialog(L["Are you sure you want to reinstall Skada?"], f, t)
+		ConfirmDialog(L["Are you sure you want to reinstall Skada?"], f, t)
 	end
 end
 
@@ -1197,7 +1183,7 @@ function Skada:BigWigs(_, _, event, message)
 				end
 			end
 
-			self:Debug("COMBAT_BOSS_DEFEATED: BigWigs")
+			self:Debug("\124cffffbb00COMBAT_BOSS_DEFEATED\124r: BigWigs")
 			self:SendMessage("COMBAT_BOSS_DEFEATED", self.current)
 
 			self:StopSegment(L["Smart Stop"])
@@ -1225,7 +1211,7 @@ function Skada:DBM(_, mod, wipe)
 				end
 			end
 
-			self:Debug("COMBAT_BOSS_DEFEATED: DBM")
+			self:Debug("\124cffffbb00COMBAT_BOSS_DEFEATED\124r: DBM")
 			self:SendMessage("COMBAT_BOSS_DEFEATED", set)
 
 			self:StopSegment(L["Smart Stop"])
@@ -1239,6 +1225,11 @@ end
 
 -- memory usage check
 function Skada:CheckMemory()
+	if self.__memory_timer then
+		self:CancelTimer(self.__memory_timer, true)
+		self.__memory_timer = nil
+	end
+
 	if not self.profile.memorycheck then return end
 	UpdateAddOnMemoryUsage()
 	local memory = GetAddOnMemoryUsage(folder)
@@ -1247,17 +1238,30 @@ function Skada:CheckMemory()
 	end
 end
 
+-- clean garbage
+do
+	local InCombatLockdown = InCombatLockdown
+	local collectgarbage = collectgarbage
+	function Skada:CleanGarbage()
+		if self.__garbage_timer then
+			self:CancelTimer(self.__garbage_timer, true)
+			self.__garbage_timer = nil
+		end
+
+		if InCombatLockdown() then return end
+		collectgarbage("collect")
+		self:Debug("Garbage \124cffffbb00Cleaned\124r!")
+	end
+end
+
 -------------------------------------------------------------------------------
 -- player & enemies functions
 
 do
 	local UnitLevel = UnitLevel
-	local UnitClass = UnitClass
 	local GetUnitRole = Skada.GetUnitRole
 	local GetUnitSpec = Skada.GetUnitSpec
 	local GetUnitIdFromGUID = Skada.GetUnitIdFromGUID
-	local guidToClass = Private.guidToClass
-	local guidToName = Private.guidToName
 	local actorPrototype = Skada.actorPrototype
 	local playerPrototype = Skada.playerPrototype
 	local enemyPrototype = Skada.enemyPrototype
@@ -1323,8 +1327,8 @@ do
 			-- is it me? move on..
 			if actorid == self.userGUID then
 				actor.class = self.userClass
+				actor.spec, actor.talent = GetUnitSpec(self.userGUID)
 				actor.role = GetUnitRole(self.userGUID)
-				actor.spec = GetUnitSpec(self.userGUID)
 			end
 
 			-- actorflags:true => fake actor
@@ -1340,8 +1344,8 @@ do
 				if guidToName[actor.class] then
 					actor.class = "PET"
 				else
+					actor.spec, actor.talent = GetUnitSpec(actorid)
 					actor.role = GetUnitRole(actorid)
-					actor.spec = GetUnitSpec(actorid)
 				end
 			end
 
@@ -1380,7 +1384,7 @@ do
 			if not actor.class then
 				actor.enemy = true
 				actor.class = "UNKNOWN"
-				self:Debug(format("Unknown unit spotted: %s (%s)", actorname, actorid))
+				self:Debug(format("Unknown unit detected: \124cffffbb00%s\124r (%s)", actorname, actorid))
 			end
 
 			for _, mode in pairs(modes) do
@@ -1402,14 +1406,14 @@ do
 		-- add more details to the actor...
 		if guidToClass[actor.id] then
 			if self.validclass[actor.class] then
-				-- missing role?
-				if actor.role == nil or actor.role == "NONE" then
-					actor.role = GetUnitRole(actor.id)
-					actor.__mod = true
-				end
 				-- missing spec?
 				if actor.spec == nil then
 					actor.spec = GetUnitSpec(actor.id)
+					actor.__mod = true
+				end
+				-- missing role?
+				if actor.role == nil or actor.role == "NONE" then
+					actor.role = GetUnitRole(actor.id)
 					actor.__mod = true
 				end
 			end
@@ -1448,8 +1452,6 @@ end
 -- pet functions
 
 do
-	local guidToClass = Private.guidToClass
-	local guidToName = Private.guidToName
 	do
 		local GetPetOwnerFromTooltip
 		do
@@ -1460,11 +1462,11 @@ do
 				local ownerPatterns = {}
 				do
 					local i = 1
-					local title = _G["UNITNAME_SUMMON_TITLE" .. i]
+					local title = _G[format("UNITNAME_SUMMON_TITLE%s", i)]
 					while (title and title ~= "%s" and find(title, "%s")) do
 						ownerPatterns[#ownerPatterns + 1] = title
 						i = i + 1
-						title = _G["UNITNAME_SUMMON_TITLE" .. i]
+						title = _G[format("UNITNAME_SUMMON_TITLE%s", i)]
 					end
 				end
 
@@ -1506,12 +1508,12 @@ do
 
 				-- we only need to scan the 2nd line.
 				local text = _G["SkadaPetTooltipTextLeft2"] and _G["SkadaPetTooltipTextLeft2"]:GetText()
-				if text and text ~= "" then
-					for actorname, actor in pairs(actors) do
-						local name = not actor.enemy and gsub(actorname, "%-.*", "")
-						if name and ((LOCALE_ruRU and FindNameDeclension(text, name)) or ValidatePetOwner(text, name)) then
-							return actor.id, actorname
-						end
+				if not text or text == "" then return end
+
+				for actorname, actor in pairs(actors) do
+					local name = not actor.enemy and gsub(actorname, "%-.*", "")
+					if name and ((LOCALE_ruRU and FindNameDeclension(text, name)) or ValidatePetOwner(text, name)) then
+						return actor.id, actorname
 					end
 				end
 			end
@@ -1526,7 +1528,6 @@ do
 			end
 		end
 
-		local UnitGUID, UnitFullName = UnitGUID, Private.UnitFullName
 		local function FixPetsHandler(guid, flag)
 			local guidOrClass = guid and guidToClass[guid]
 			if guidOrClass and guidToName[guidOrClass] then
@@ -1535,26 +1536,26 @@ do
 
 			-- flag is provided and it is mine.
 			if guid and flag and Skada:IsMine(flag) then
-				guidToClass[guid] = Skada.userGUID
+				guidToOwner[guid] = Skada.userGUID
 				return Skada.userGUID, Skada.userName
 			end
 
 			-- no owner yet?
-			if guid then
-				-- guess the pet from roster.
-				local ownerUnit = GetPetOwnerUnit(guid)
-				if ownerUnit then
-					local ownerGUID = UnitGUID(ownerUnit)
-					guidToClass[guid] = UnitGUID(ownerUnit)
-					return ownerGUID, UnitFullName(ownerUnit)
-				end
+			if not guid then return end
 
-				-- guess the pet from tooltip.
-				local ownerGUID, ownerName = GetPetOwnerFromTooltip(guid)
-				if ownerGUID and ownerName then
-					guidToClass[guid] = ownerGUID
-					return ownerGUID, ownerName
-				end
+			-- guess the pet from roster.
+			local ownerUnit = GetPetOwnerUnit(guid)
+			if ownerUnit then
+				local ownerGUID = UnitGUID(ownerUnit)
+				guidToOwner[guid] = ownerGUID
+				return ownerGUID, UnitFullName(ownerUnit)
+			end
+
+			-- guess the pet from tooltip.
+			local ownerGUID, ownerName = GetPetOwnerFromTooltip(guid)
+			if ownerGUID and ownerName then
+				guidToOwner[guid] = ownerGUID
+				return ownerGUID, ownerName
 			end
 		end
 
@@ -1608,10 +1609,7 @@ do
 
 		function Skada:FixPetsName(guid, name, flags)
 			local _, ownerName = self:FixMyPets(guid, name, flags)
-			if ownerName and ownerName ~= name then
-				return format("%s <%s>", name, ownerName)
-			end
-			return name
+			return (name and ownerName and ownerName ~= name) and format("%s <%s>", name, ownerName) or name
 		end
 	end
 
@@ -1696,7 +1694,7 @@ do
 			if strsub(event, 1, len) == prefix then
 				local suffix_args = SUFFIXES[strsub(event, len + 2)]
 				if suffix_args then
-					args = args .. prefix_args .. suffix_args
+					args = format("%s%s%s", args, prefix_args, suffix_args)
 					break
 				end
 			end
@@ -1787,72 +1785,216 @@ do
 			local BITMASK_PETS = Private.BITMASK_PETS
 
 			function ARGS_MT.SourceInGroup(args, nopets)
-				if bit_band(args.srcFlags, BITMASK_GROUP) ~= 0 then
-					if nopets then
-						return (bit_band(args.srcFlags, BITMASK_PETS) == 0)
+				if args._srcInGroup == nil then
+					if guidToName[args.srcGUID] ~= nil then
+						args._srcInGroup = true
+						args._srcInGroupNopets = true
+						args._srcIsPet = false
+						args._srcIsGroupPet = false
+					else
+						args._srcInGroup = (bit_band(args.srcFlags, BITMASK_GROUP) ~= 0)
 					end
-					return true
 				end
-				return false
+
+				if args._srcInGroupNopets == nil then
+					if bit_band(args.srcFlags, BITMASK_PETS) == 0 then
+						args._srcInGroupNopets = args._srcInGroup
+						args._srcIsPet = false
+						args._srcIsGroupPet = false
+					else
+						args._srcInGroupNopets = false
+						args._srcIsPet = true
+						args._srcIsGroupPet = (guidToOwner[args.srcGUID] ~= nil)
+					end
+				end
+
+				if nopets then
+					return args._srcInGroupNopets
+				end
+				return args._srcInGroup
 			end
+
 			function ARGS_MT.DestInGroup(args, nopets)
-				if bit_band(args.dstFlags, BITMASK_GROUP) ~= 0 then
-					if nopets then
-						return (bit_band(args.dstFlags, BITMASK_PETS) == 0)
+				if args._dstInGroup == nil then
+					if guidToName[args.dstGUID] ~= nil then
+						args._dstInGroup = true
+						args._dstInGroupNopets = true
+						args._dstIsPet = false
+						args._dstIsGroupPet = false
+						args._dstIsOwnedPet = false
+					else
+						args._dstInGroup = (bit_band(args.dstFlags, BITMASK_GROUP) ~= 0)
 					end
-					return true
 				end
-				return false
+
+				if args._dstInGroupNopets == nil then
+					if bit_band(args.dstFlags, BITMASK_PETS) == 0 then
+						args._dstInGroupNopets = args._dstInGroup
+						args._dstIsPet = false
+						args._dstIsGroupPet = false
+						args._dstIsOwnedPet = false
+					else
+						args._dstInGroupNopets = false
+						args._dstIsPet = true
+						args._dstIsGroupPet = (guidToOwner[args.dstGUID] ~= nil)
+					end
+				end
+
+				if nopets then
+					return args._dstInGroupNopets
+				end
+				return args._dstInGroup
 			end
 
-			function ARGS_MT.SourceIsPet(args)
-				return (bit_band(args.srcFlags, BITMASK_PETS) ~= 0)
+			function ARGS_MT.IsGroupEvent(args, nopets)
+				return args:SourceInGroup(nopets) or args:DestInGroup(nopets)
 			end
 
-			-- checks whether the give guid/flags are pets
-			local guidToClass = Private.guidToClass
-			function ARGS_MT.DestIsPet(args, owner)
-				if owner then
-					if bit_band(args.srcFlags, BITMASK_GROUP) ~= 0 then
-						return true -- owner is a group member?
-					end
-					if bit_band(args.srcFlags, BITMASK_PETS) ~= 0 then
-						return true -- summoned by another pet?
-					end
-					if bit_band(args.dstFlags, BITMASK_PETS) ~= 0 and guidToClass[args.dstGUID] then
-						return true -- already known pet
-					end
+			function ARGS_MT.SourceIsPet(args, ingroup)
+				if args._srcIsPet == nil then
+					args._srcIsPet = (bit_band(args.srcFlags, BITMASK_PETS) ~= 0)
+				end
+
+				if not args._srcIsPet then
 					return false
+				elseif args._srcIsGroupPet == nil then
+					args._srcIsGroupPet = (guidToOwner[args.srcGUID] ~= nil)
 				end
-				return (bit_band(args.dstFlags, BITMASK_PETS) ~= 0)
+
+				if ingroup then
+					return args._srcIsGroupPet
+				end
+				return args._srcIsPet
+			end
+
+			-- owner=true? acts like "ingroup" (SourceIsPet)
+			function ARGS_MT.DestIsPet(args, owner)
+				if args._dstIsPet == nil then
+					args._dstIsPet = (bit_band(args.dstFlags, BITMASK_PETS) ~= 0)
+				end
+
+				if not args._dstIsPet then
+					return false
+				elseif owner == true then
+					if args._dstIsGroupPet == nil then
+						args._dstIsGroupPet = (guidToOwner[args.dstGUID] ~= nil)
+					end
+					return args._dstIsGroupPet
+				elseif owner then
+					if args._dstIsOwnedPet == nil then
+						args._dstIsOwnedPet = (bit_band(args.srcFlags, BITMASK_GROUP) ~= 0) -- owner is a group member?
+						args._dstIsOwnedPet = args._dstIsOwnedPet or (bit_band(args.srcFlags, BITMASK_PETS) ~= 0) -- summoned by another pet?
+						args._dstIsOwnedPet = args._dstIsOwnedPet or (guidToClass[args.dstGUID] ~= nil) -- already known pet
+					end
+					return args._dstIsOwnedPet
+				else
+					return args._dstIsPet
+				end
 			end
 		end
 
 		do -- source or destination are players
 			local BITMASK_PLAYER = Private.BITMASK_PLAYER
 			function ARGS_MT.SourceIsPlayer(args)
-				return (bit_band(args.srcFlags, BITMASK_PLAYER) == BITMASK_PLAYER)
+				if args._srcIsPlayer == nil then
+					args._srcIsPlayer = (guidToName[args.srcGUID] ~= nil) or (bit_band(args.srcFlags, BITMASK_PLAYER) == BITMASK_PLAYER)
+				end
+				return args._srcIsPlayer
 			end
 			function ARGS_MT.DestIsPlayer(args)
-				return (bit_band(args.dstFlags, BITMASK_PLAYER) == BITMASK_PLAYER)
+				if args._dstIsPlayer == nil then
+					args._dstIsPlayer = (guidToName[args.dstGUID] ~= nil) or (bit_band(args.dstFlags, BITMASK_PLAYER) == BITMASK_PLAYER)
+				end
+				return args._dstIsPlayer
+			end
+		end
+
+		do -- source or destination are bosses
+			local BossIDs = Skada.BossIDs
+			local GetCreatureId = Skada.GetCreatureId
+
+			function ARGS_MT.SourceIsBoss(args)
+				if args._srcIsBoss == nil then
+					args._srcIsBoss = BossIDs[GetCreatureId(args.srcGUID)] or false
+				end
+				return args._srcIsBoss
+			end
+			function ARGS_MT.DestIsBoss(args)
+				if args._dstIsBoss == nil then
+					args._dstIsBoss = BossIDs[GetCreatureId(args.dstGUID)] or false
+				end
+				return args._dstIsBoss
+			end
+			function ARGS_MT.IsBossEvent(args)
+				return args:SourceIsBoss() or args:DestIsBoss()
 			end
 		end
 
 		do -- source and destination reactions
 			local BITMASK_FRIENDLY = Private.BITMASK_FRIENDLY
 			function ARGS_MT.SourceIsFriendly(args)
-				return (bit_band(args.srcFlags, BITMASK_FRIENDLY) ~= 0)
+				if args._srcIsFriendly == nil then
+					args._srcIsFriendly = (bit_band(args.srcFlags, BITMASK_FRIENDLY) ~= 0)
+					if args._srcIsFriendly then
+						args._srcIsNeutral = false
+						args._srcIsHostile = false
+					end
+				end
+				return args._srcIsFriendly
 			end
 			function ARGS_MT.DestIsFriendly(args)
-				return (bit_band(args.dstFlags, BITMASK_FRIENDLY) ~= 0)
+				if args._dstIsFriendly == nil then
+					args._dstIsFriendly = (bit_band(args.dstFlags, BITMASK_FRIENDLY) ~= 0)
+					if args._dstIsFriendly then
+						args._dstIsNeutral = false
+						args._dstIsHostile = false
+					end
+				end
+				return args._dstIsFriendly
 			end
 
 			local BITMASK_NEUTRAL = Private.BITMASK_NEUTRAL
 			function ARGS_MT.SourceIsNeutral(args)
-				return (bit_band(args.srcFlags, BITMASK_NEUTRAL) ~= 0)
+				if args._srcIsNeutral == nil then
+					args._srcIsNeutral = (bit_band(args.srcFlags, BITMASK_NEUTRAL) ~= 0)
+					if args._srcIsNeutral then
+						args._srcIsFriendly = false
+						args._srcIsHostile = false
+					end
+				end
+				return args._srcIsNeutral
 			end
 			function ARGS_MT.DestIsNeutral(args)
-				return (bit_band(args.dstFlags, BITMASK_NEUTRAL) ~= 0)
+				if args._dstIsNeutral == nil then
+					args._dstIsNeutral = (bit_band(args.dstFlags, BITMASK_NEUTRAL) ~= 0)
+					if args._dstIsNeutral then
+						args._dstIsFriendly = false
+						args._dstIsHostile = false
+					end
+				end
+				return args._dstIsNeutral
+			end
+
+			local BITMASK_HOSTILE = Private.BITMASK_HOSTILE
+			function ARGS_MT.SourceIsHostile(args)
+				if args._srcIsHostile == nil then
+					args._srcIsHostile = (bit_band(args.srcFlags, BITMASK_HOSTILE) ~= 0)
+					if args._srcIsHostile then
+						args._srcIsFriendly = false
+						args._srcIsNeutral = false
+					end
+				end
+				return args._srcIsHostile
+			end
+			function ARGS_MT.DestIsHostile(args)
+				if args._dstIsHostile == nil then
+					args._dstIsHostile = (bit_band(args.dstFlags, BITMASK_HOSTILE) ~= 0)
+					if args._dstIsHostile then
+						args._dstIsFriendly = false
+						args._dstIsNeutral = false
+					end
+				end
+				return args._dstIsHostile
 			end
 		end
 
@@ -1862,7 +2004,13 @@ do
 
 	-- trigger events used for first hit check
 	-- Edit Skada\Core\Tables.lua <trigger_events>
-	local TRIGGERS = Skada.trigger_events
+	local TRIGGER_EVENTS = Skada.trigger_events
+
+	-- specific events used for specific reasons.
+	local SWING_EVENTS = {SWING_DAMAGE = true, SWING_MISSED = true}
+	local ENVIRONMENT_EVENTS = {ENVIRONMENTAL_DAMAGE = true, ENVIRONMENTAL_MISSED = true}
+	local DOT_EVENTS = {SPELL_PERIODIC_DAMAGE = true, SPELL_PERIODIC_MISSED = true}
+	local HOT_EVENTS = {SPELL_PERIODIC_HEAL = true--[[, SPELL_PERIODIC_ENERGIZE = true--]]}
 
 	-- combat log handler
 	function Skada:ParseCombatLog(_, timestamp, event, ...)
@@ -1876,19 +2024,19 @@ do
 			return -- queue for later!
 		end
 
-		if event == "SWING_DAMAGE" or event == "SWING_MISSED" then
+		if SWING_EVENTS[event] then
 			args.spellid = 6603
 			args.spellname = L["Melee"]
 			args.spellschool = 0x01
-		elseif (event == "ENVIRONMENTAL_DAMAGE" or event == "ENVIRONMENTAL_MISSED") and args.envtype then
+		elseif ENVIRONMENT_EVENTS[event] and args.envtype then
 			local envtype = strlower(args.envtype)
 			args.spellid = environment_ids[envtype]
 			args.spellname = environment_names[envtype]
 			args.spellschool = environment_schools[envtype]
 			args.srcName = L["Environment"]
-		elseif event == "SPELL_PERIODIC_DAMAGE" or event == "SPELL_PERIODIC_MISSED" or args.auratype == "DEBUFF" then
+		elseif DOT_EVENTS[event] or args.auratype == "DEBUFF" then
 			args.is_dot = true
-		elseif event == "SPELL_PERIODIC_HEAL" or event == "SPELL_PERIODIC_ENERGIZE" then
+		elseif HOT_EVENTS[event] then
 			args.is_hot = true
 		end
 
@@ -1911,24 +2059,34 @@ do
 
 		if args.spellid and args.spellschool and not args.spellstring then
 			args.spellstring = format((args.is_dot or args.is_hot) and "-%s.%s" or "%s.%s", args.spellid, args.spellschool)
-			if args:SourceInGroup() or args:DestInGroup() then
-				callbacks:Fire("Skada_SpellString", args, args.spellid, args.spellstring)
-			end
 		end
 
 		if args.extraspellid and args.extraschool and not args.extrastring then
 			args.extrastring = format("%s.%s", args.extraspellid, args.extraschool)
-			if args:SourceInGroup() or args:DestInGroup() then
-				callbacks:Fire("Skada_SpellString", args, args.extraspellid, args.extrastring)
-			end
+		end
+
+		-- the event happens within the group?
+		args.inside_event = args:IsGroupEvent()
+		self.LastEvent = args
+
+		-- not really? skip everything else...
+		if not args.inside_event then
+			return self:OnCombatEvent(args)
+		end
+
+		if args.spellstring then
+			callbacks:Fire("Skada_SpellString", args, args.spellid, args.spellstring)
+		end
+
+		if args.extrastring then
+			callbacks:Fire("Skada_SpellString", args, args.extraspellid, args.extrastring)
 		end
 
 		-- check first hit!
-		if self.profile.firsthit and TRIGGERS[args.event] and not self.firsthit and (args:SourceInGroup() or args:DestInGroup()) then
+		if self.profile.firsthit and not self.firsthit and TRIGGER_EVENTS[args.event] then
 			self:CheckFirstHit(args)
 		end
 
-		self.LastEvent = args
 		return self:OnCombatEvent(args)
 	end
 end
@@ -1937,9 +2095,8 @@ end
 -- group buffs scanner
 
 do
-	local UnitGUID, UnitIsDeadOrGhost, UnitBuff = UnitGUID, UnitIsDeadOrGhost, UnitBuff
-	local UnitIterator, UnitFullName = Skada.UnitIterator, Private.UnitFullName
-	local guidToClass, guidToName = Private.guidToClass, Private.guidToName
+	local UnitIsDeadOrGhost, UnitBuff = UnitIsDeadOrGhost, UnitBuff
+	local UnitIterator = Skada.UnitIterator
 	local actorflags = Private.DEFAULT_FLAGS
 	local clear = Private.clearTable
 
@@ -2011,9 +2168,7 @@ end
 -- first hit check
 
 do
-	local UnitExists, UnitClass = UnitExists, UnitClass
-	local UnitName, UnitFullName = UnitName, Private.UnitFullName
-	local SpellLink = Private.SpellLink or GetSpellLink
+	local UnitExists, SpellLink = UnitExists, Private.SpellLink or GetSpellLink
 	local IsPet, uformat = Private.IsPet, Private.uformat
 	local ignored_spells = Skada.ignored_spells.firsthit
 	local firsthit_fmt = {"%s (%s)", "%s (\124c%s%s\124r)", "\124c%s%s\124r", "\124c%s%s\124r (%s)"}
@@ -2035,7 +2190,7 @@ do
 				end
 
 				target_table = target_table or TempTable()
-				target_table:insert(uformat("%s > %s", UnitName(unit), target))
+				target_table:insert(uformat("%s > %s", UnitFullName(unit), target))
 			end
 		end
 
@@ -2100,7 +2255,7 @@ do
 				if t.targetline then
 					Skada:Print(t.targetline)
 				end
-				Skada:Debug("First Hit: Printed!")
+				Skada:Debug("\124cffffbb00First Hit\124r: Printed!")
 			end
 		end
 
@@ -2109,14 +2264,13 @@ do
 				return self:ClearFirstHit()
 			end
 
-			if firsthit_timer then return end
-			firsthit_timer = self:ScheduleTimer(PrintFirstHit, 0.5)
+			firsthit_timer = firsthit_timer or self:ScheduleTimer(PrintFirstHit, 0.5)
 		end
 
 		function Skada:ClearFirstHit()
 			if self.firsthit then
 				self.firsthit = self.firsthit:free()
-				self:Debug("First Hit: Cleared!")
+				self:Debug("\124cffffbb00First Hit\124r: Cleared!")
 			end
 			if firsthit_timer then
 				self:CancelTimer(firsthit_timer, true)
@@ -2130,6 +2284,7 @@ end
 -- smart stop
 
 do
+	local smartstop_timer = nil
 	-- list of creature IDs to be ignored
 	local ignored_creature = {
 		[37217] = true, -- ICC: Precious
@@ -2137,6 +2292,11 @@ do
 	}
 
 	local function SmartStop(set)
+		if smartstop_timer then
+			Skada:CancelTimer(smartstop_timer, true)
+			smartstop_timer = nil
+		end
+
 		if set.endtime then return end
 		Skada:StopSegment(L["Smart Stop"])
 		Skada:SetModes()
@@ -2152,7 +2312,11 @@ do
 			return
 		end
 
-		-- schedule smart stop.
-		self:ScheduleTimer(SmartStop, self.profile.smartwait or 3, set)
+		-- (re)schedule smart stop.
+		if smartstop_timer then
+			Skada:CancelTimer(smartstop_timer, true)
+			smartstop_timer = nil
+		end
+		smartstop_timer = self:ScheduleTimer(SmartStop, self.profile.smartwait or 3, set)
 	end
 end

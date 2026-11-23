@@ -5,7 +5,7 @@ local L = ns.Locale
 local setmetatable = setmetatable
 
 -------------------------------------------------------------------------------
--- ingoredSpells
+-- ingored spells
 -- a table of spells that are ignored per module.
 -- entries should be like so: [spellid] = true
 
@@ -59,7 +59,9 @@ local ignored_spells = {
 	-- friendfire = {},
 
 	-- [[ healing / enemy healing done modules ]] --
-	-- heal = {},
+	-- heal = {
+	-- 	[20267] = true, -- Judgement of Light
+	-- },
 
 	-- [[ interrupts module ]] --
 	-- interrupt = {},
@@ -82,7 +84,6 @@ local ignored_spells = {
 	-- [[ no active time spells ]] --
 	time = {
 		-- Retribution Aura
-		[7294] = true, -- Rank 1
 		[7294] = true, -- Rank 1
 		[10298] = true, -- Rank 2
 		[10299] = true, -- Rank 3
@@ -115,6 +116,12 @@ local ignored_spells = {
 		[47983] = true, -- Rank 7
 	}
 }
+
+-------------------------------------------------------------------------------
+-- ignored creautre ids (use creature ID: [cretureID] = true)
+-- a list of creature IDs of which CLEU <<DAMAGE>> events are ignored.
+
+local ignored_creatures = {}
 
 -------------------------------------------------------------------------------
 -- misc tables
@@ -440,6 +447,11 @@ do
 	--
 
 	local grouped_units = {
+		-- EXPERIMENTAL: instance bosses and trash grouped units.
+		-- IMPORTANT: only recorded to the total segment.
+		BOSS = true,
+		TRASH = true,
+
 		-- The Lich King: Important targets
 		[36597] = L["Important targets"], -- The Lich King
 		[36609] = L["Important targets"], -- Val'kyr Shadowguard
@@ -468,6 +480,10 @@ do
 		-- Halion: Halion and Inferno
 		[39863] = L["Halion and Inferno"], -- Halion
 		[40681] = L["Halion and Inferno"], -- Living Inferno
+
+		-- Anub'arak: Adds
+		[34605] = L["Adds"], -- Swarm Scarab
+		[34607] = L["Adds"], -- Nerubian Burrower
 	}
 
 	------------------------------------------------------
@@ -479,24 +495,31 @@ do
 	-- Useful in case you want to collect stuff done to units
 	-- at certain encounter phases for example.
 	--
-	-- table structure
+	-- table structure (all fields are optional and will be generated and cached by the addon)
+	--	start: 		when to start collecting (0.01 = 1%, default: 100%)
+	--	stop:		when to stop collecting (0.01 = 1%, default: 0%)
+	--	power:		whether to track the speficied power or health
+	--		0 - Mana
+	--		1 - Rage
+	--		2 - Focus
+	--		3 - Energy
+	--		4 - Happiness
+	--		5 - Runes
+	--		6 - Runic Power
+	--
 	-- 	name: 		name of the fake unit (optional)
 	-- 	text: 		text to use *format()* with (optional)
-	-- 	start: 		when to start collecting (1 = 100%)
-	-- 	stop: 		when to stop collecting (0.5 = 50%)
-	-- 	diff: 		table of allowed difficulties (omit for all)
-	-- 	power: 		which type of power to trach (omit for health)
 	-- 	values: 	table of difficulties to max health (optional)
+	-- 	diff: 		table of whitelisted difficulties (optional, default: all)
+	--		{["10h"] = true, ["25h"] = true}
 	--
 	-- **optional** fields will be generated and cached by the addon.
 	--
-
 	local custom_units = {
 		-- ICC: Lady Deathwhisper
 		[36855] = {
-			text = L["%s - Phase 2"],
-			start = 0,
-			power = 0
+			{text = L["%s - Phase 1"], start = 1, power = 0},
+			{text = L["%s - Phase 2"], start = 0, power = 0}
 		},
 
 		-- ICC: Professor Putricide
@@ -530,6 +553,11 @@ do
 		[34564] = {
 			text = L["%s - Phase 2"],
 			start = 0.3
+		},
+
+		-- Baltharus the Warborn
+		[39751] = {
+			text = L["%s (Main Boss)"]
 		}
 	}
 
@@ -655,11 +683,11 @@ ns.creature_to_boss = {
 	[36969] = 37540, -- Skybreaker Rifleman > The Skybreaker
 	[36978] = 37540, -- Skybreaker Mortar Soldier > The Skybreaker
 	[37116] = 37540, -- Skybreaker Sorcerer > The Skybreaker
-	[36791] = 36789, -- Blazing Skeleton
-	[37868] = 36789, -- Risen Archmage
-	[37886] = 36789, -- Gluttonous Abomination
-	[37934] = 36789, -- Blistering Zombie
-	[37985] = 36789, -- Dream Cloud
+	[36791] = 36789, -- Blazing Skeleton > Valithria Dreamwalker
+	[37868] = 36789, -- Risen Archmage > Valithria Dreamwalker
+	[37886] = 36789, -- Gluttonous Abomination > Valithria Dreamwalker
+	[37934] = 36789, -- Blistering Zombie > Valithria Dreamwalker
+	[37985] = 36789, -- Dream Cloud > Valithria Dreamwalker
 
 	-- [[ Naxxramas ]] --
 	[15930] = 15928, -- Feugen > Thaddius
@@ -684,15 +712,20 @@ ns.creature_to_boss = {
 }
 
 -- use LibBossIDs-1.0 as backup plan
-local LBI = LibStub("LibBossIDs-1.0", true)
-if LBI then setmetatable(ns.creature_to_boss, {__index = LBI.BossIDs}) end
+local LBI = LibStub("LibBossIDs-1.0")
+setmetatable(ns.creature_to_boss, {__index = LBI.BossIDs})
+ns.BossIDs = LBI.BossIDs -- needed for some CLEU stuff.
 
 -------------------------------------------------------------------------------
 
 -- ignored spells table
+local dummyTable = ns.dummyTable
 ns.ignored_spells = setmetatable(ignored_spells, {__index = function(t, key)
-	return ns.dummyTable
+	return dummyTable
 end})
+
+-- ignored creatures table
+ns.ignored_creatures = ignored_creatures
 
 -- miss type to table key
 ns.missTypes = {
@@ -728,9 +761,19 @@ ns.ignored_events = {
 -- events used to start combat in aggressive combat detection
 -- mode as well as boss encounter detection.
 ns.trigger_events = {
-	RANGE_DAMAGE = true,
-	SPELL_BUILDING_DAMAGE = true,
+	SWING_DAMAGE = true,
 	SPELL_DAMAGE = true,
-	SPELL_PERIODIC_DAMAGE = true,
-	SWING_DAMAGE = true
+	RANGE_DAMAGE = true,
+    DAMAGE_SHIELD = true,
+	SPELL_BUILDING_DAMAGE = true
+}
+
+-- local segment types used for set tooltips.
+ns.segment_types = {
+	arena = L["Arena"],
+	group = L["Group"],
+	none = L["None"],
+	party = L["Dungeon"],
+	pvp = L["Battleground"],
+	raid = L["Raid"]
 }

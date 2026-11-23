@@ -2,7 +2,7 @@ local _, Skada = ...
 local Private = Skada.Private
 
 local pairs, format, uformat = pairs, string.format, Private.uformat
-local GetSpellLink = Private.SpellLink or GetSpellLink
+local SpellLink = Private.SpellLink or GetSpellLink
 local new, clear = Private.newTable, Private.clearTable
 local cc_table = {} -- holds stuff from cleu
 
@@ -17,14 +17,15 @@ local function format_valuetext(d, columns, total, metadata, subview)
 	end
 end
 
--- ======= --
--- CC Done --
--- ======= --
+---------------------------------------------------------------------------
+-- CC Done Module
+
 Skada:RegisterModule("CC Done", function(L, P, _, C)
 	local mode = Skada:NewModule("CC Done")
 	local mode_spell = mode:NewModule("Spell List")
 	local mode_target = mode:NewModule("Target List")
 	local mode_source = mode_spell:NewModule("Source List")
+	local classfmt = Skada.classcolors.format
 	local cc_spells = Skada.extra_cc_spells -- extended list
 	local get_actor_cc_targets = nil
 	local get_cc_done_sources = nil
@@ -72,13 +73,13 @@ Skada:RegisterModule("CC Done", function(L, P, _, C)
 		end
 	end
 
-	function mode_spell:Enter(win, id, label)
-		win.actorid, win.actorname = id, label
-		win.title = uformat(L["%s's control spells"], label)
+	function mode_spell:Enter(win, id, label, class)
+		win.actorid, win.actorname, win.actorclass = id, label, class
+		win.title = uformat(L["%s's spells"], classfmt(class, label))
 	end
 
 	function mode_spell:Update(win, set)
-		win.title = uformat(L["%s's control spells"], win.actorname)
+		win.title = uformat(L["%s's spells"], classfmt(win.actorclass, win.actorname))
 
 		local actor = set and set:GetActor(win.actorname, win.actorid)
 		local total = actor and actor.ccdone
@@ -95,18 +96,18 @@ Skada:RegisterModule("CC Done", function(L, P, _, C)
 			nr = nr + 1
 
 			local d = win:spell(nr, spellid, false)
-			d.value = spell.n
+			d.value = spell.n or spell.count
 			format_valuetext(d, mode_cols, total, win.metadata, true)
 		end
 	end
 
-	function mode_target:Enter(win, id, label)
-		win.actorid, win.actorname = id, label
-		win.title = uformat(L["%s's control targets"], label)
+	function mode_target:Enter(win, id, label, class)
+		win.actorid, win.actorname, win.actorclass = id, label, class
+		win.title = uformat(L["%s's targets"], classfmt(class, label))
 	end
 
 	function mode_target:Update(win, set)
-		win.title = uformat(L["%s's control targets"], win.actorname)
+		win.title = uformat(L["%s's targets"], classfmt(win.actorclass, win.actorname))
 
 		local targets, total, actor = get_actor_cc_targets(set, win.actorname, win.actorid)
 		if not targets or not actor or total == 0 then
@@ -194,7 +195,7 @@ Skada:RegisterModule("CC Done", function(L, P, _, C)
 			click1 = mode_spell,
 			click2 = mode_target,
 			columns = {Count = true, Percent = false, sPercent = false},
-			icon = [[Interface\Icons\spell_frost_chainsofice]]
+			icon = [[Interface\ICONS\spell_frost_chainsofice]]
 		}
 
 		mode_cols = self.metadata.columns
@@ -227,15 +228,16 @@ Skada:RegisterModule("CC Done", function(L, P, _, C)
 		local actors = self.actors
 		for actorname, actor in pairs(actors) do
 			local spell = not actor.enemy and actor.ccdonespells and actor.ccdonespells[spellid]
-			if spell and spell.n then
+			local spell_n = spell and (spell.n or spell.count)
+			if spell_n then
 				tbl[actorname] = new()
 				tbl[actorname].id = actor.id
 				tbl[actorname].class = actor.class
 				tbl[actorname].role = actor.role
 				tbl[actorname].spec = actor.spec
 				tbl[actorname].enemy = actor.enemy
-				tbl[actorname].count = spell.n
-				total = total + spell.n
+				tbl[actorname].n = spell_n
+				total = total + spell_n
 			end
 		end
 
@@ -249,8 +251,9 @@ Skada:RegisterModule("CC Done", function(L, P, _, C)
 
 		tbl = clear(tbl or C)
 		for _, spell in pairs(spells) do
-			if spell.t then
-				for targetname, count in pairs(spell.t) do
+			local targets = spell.t or spell.targets
+			if targets then
+				for targetname, count in pairs(targets) do
 					local t = tbl[targetname]
 					if not t then
 						t = new()
@@ -268,14 +271,15 @@ Skada:RegisterModule("CC Done", function(L, P, _, C)
 	end
 end)
 
--- ======== --
--- CC Taken --
--- ======== --
+---------------------------------------------------------------------------
+-- CC Taken Module
+
 Skada:RegisterModule("CC Taken", function(L, P, _, C)
 	local mode = Skada:NewModule("CC Taken")
 	local mode_spell = mode:NewModule("Spell List")
 	local mode_source = mode:NewModule("Source List")
 	local mode_target = mode_spell:NewModule("Target List")
+	local classfmt = Skada.classcolors.format
 	local get_actor_cc_sources = nil
 	local get_cc_taken_targets = nil
 	local mode_cols = nil
@@ -334,13 +338,13 @@ Skada:RegisterModule("CC Taken", function(L, P, _, C)
 		end
 	end
 
-	function mode_spell:Enter(win, id, label)
-		win.actorid, win.actorname = id, label
-		win.title = uformat(L["%s's control spells"], label)
+	function mode_spell:Enter(win, id, label, class)
+		win.actorid, win.actorname, win.actorclass = id, label, class
+		win.title = uformat(L["%s's spells"], classfmt(class, label))
 	end
 
 	function mode_spell:Update(win, set)
-		win.title = uformat(L["%s's control spells"], win.actorname)
+		win.title = uformat(L["%s's spells"], classfmt(win.actorclass, win.actorname))
 
 		local actor = set and set:GetActor(win.actorname, win.actorid)
 		local total = actor and actor.cctaken
@@ -357,18 +361,18 @@ Skada:RegisterModule("CC Taken", function(L, P, _, C)
 			nr = nr + 1
 
 			local d = win:spell(nr, spellid, false)
-			d.value = spell.n
+			d.value = spell.n or spell.count
 			format_valuetext(d, mode_cols, total, win.metadata, true)
 		end
 	end
 
-	function mode_source:Enter(win, id, label)
-		win.actorid, win.actorname = id, label
-		win.title = uformat(L["%s's control sources"], label)
+	function mode_source:Enter(win, id, label, class)
+		win.actorid, win.actorname, win.actorclass = id, label, class
+		win.title = uformat(L["%s's sources"], classfmt(class, label))
 	end
 
 	function mode_source:Update(win, set)
-		win.title = uformat(L["%s's control sources"], win.actorname)
+		win.title = uformat(L["%s's sources"], classfmt(win.actorclass, win.actorname))
 
 		local sources, total, actor = get_actor_cc_sources(set, win.actorname, win.actorid)
 		if not sources or not actor or total == 0 then
@@ -456,7 +460,7 @@ Skada:RegisterModule("CC Taken", function(L, P, _, C)
 			click1 = mode_spell,
 			click2 = mode_source,
 			columns = {Count = true, Percent = false, sPercent = false},
-			icon = [[Interface\Icons\spell_magic_polymorphrabbit]]
+			icon = [[Interface\ICONS\spell_magic_polymorphrabbit]]
 		}
 
 		mode_cols = self.metadata.columns
@@ -489,15 +493,16 @@ Skada:RegisterModule("CC Taken", function(L, P, _, C)
 		local actors = self.actors
 		for actorname, actor in pairs(actors) do
 			local spell = not actor.enemy and actor.cctakenspells and actor.cctakenspells[spellid]
-			if spell and spell.n then
+			local spell_n = spell and (spell.n or spell.count)
+			if spell_n then
 				tbl[actorname] = new()
 				tbl[actorname].id = actor.id
 				tbl[actorname].class = actor.class
 				tbl[actorname].role = actor.role
 				tbl[actorname].spec = actor.spec
 				tbl[actorname].enemy = actor.enemy
-				tbl[actorname].count = spell.n
-				total = total + spell.n
+				tbl[actorname].n = spell_n
+				total = total + spell_n
 			end
 		end
 
@@ -530,13 +535,14 @@ Skada:RegisterModule("CC Taken", function(L, P, _, C)
 	end
 end)
 
--- ========= --
--- CC Breaks --
--- ========= --
-Skada:RegisterModule("CC Breaks", function(L, P, _, C, M)
+---------------------------------------------------------------------------
+-- CC Breaks Module
+
+Skada:RegisterModule("CC Breaks", function(L, P, _, C, M, O)
 	local mode = Skada:NewModule("CC Breaks")
 	local mode_spell = mode:NewModule("Spell List")
 	local mode_target = mode:NewModule("Target List")
+	local classfmt = Skada.classcolors.format
 	local cc_spells = Skada.cc_spells
 	local get_actor_cc_break_targets = nil
 	local mode_cols = nil
@@ -608,20 +614,20 @@ Skada:RegisterModule("CC Breaks", function(L, P, _, C, M)
 
 			-- Go ahead and announce it.
 			if t.extraspellid or t.extraspellname then
-				Skada:SendChat(format(L["%s on %s removed by %s's %s"], t.spellname, t.dstName, srcName, GetSpellLink(t.extraspellid or t.extraspellname)), "RAID", "preset")
+				Skada:SendChat(format(L["%s on %s removed by %s's %s"], t.spellname, t.dstName, srcName, SpellLink(t.extraspellid or t.extraspellname)), "RAID", "preset")
 			else
 				Skada:SendChat(format(L["%s on %s removed by %s"], t.spellname, t.dstName, srcName), "RAID", "preset")
 			end
 		end
 	end
 
-	function mode_spell:Enter(win, id, label)
-		win.actorid, win.actorname = id, label
-		win.title = uformat(L["%s's control spells"], label)
+	function mode_spell:Enter(win, id, label, class)
+		win.actorid, win.actorname, win.actorclass = id, label, class
+		win.title = uformat(L["%s's spells"], classfmt(class, label))
 	end
 
 	function mode_spell:Update(win, set)
-		win.title = uformat(L["%s's control spells"], win.actorname)
+		win.title = uformat(L["%s's spells"], classfmt(win.actorclass, win.actorname))
 
 		local actor = set and set:GetActor(win.actorname, win.actorid)
 		local total = actor and actor.ccbreak
@@ -638,18 +644,18 @@ Skada:RegisterModule("CC Breaks", function(L, P, _, C, M)
 			nr = nr + 1
 
 			local d = win:spell(nr, spellid, false)
-			d.value = spell.n
+			d.value = spell.n or spell.count
 			format_valuetext(d, mode_cols, total, win.metadata, true)
 		end
 	end
 
-	function mode_target:Enter(win, id, label)
-		win.actorid, win.actorname = id, label
-		win.title = uformat(L["%s's control targets"], label)
+	function mode_target:Enter(win, id, label, class)
+		win.actorid, win.actorname, win.actorclass = id, label, class
+		win.title = uformat(L["%s's targets"], classfmt(class, label))
 	end
 
 	function mode_target:Update(win, set)
-		win.title = uformat(L["%s's control targets"], win.actorname)
+		win.title = uformat(L["%s's targets"], classfmt(win.actorclass, win.actorname))
 
 		local targets, total, actor = get_actor_cc_break_targets(set, win.actorname, win.actorid)
 		if not targets or not actor or total == 0 then
@@ -710,7 +716,7 @@ Skada:RegisterModule("CC Breaks", function(L, P, _, C, M)
 			click1 = mode_spell,
 			click2 = mode_target,
 			columns = {Count = true, Percent = false, sPercent = false},
-			icon = [[Interface\Icons\spell_holy_sealofvalor]]
+			icon = [[Interface\ICONS\spell_holy_sealofvalor]]
 		}
 
 		mode_cols = self.metadata.columns
@@ -734,7 +740,7 @@ Skada:RegisterModule("CC Breaks", function(L, P, _, C, M)
 	end
 
 	function mode:OnInitialize()
-		Skada.options.args.modules.args.ccoptions = {
+		O.modules.args.ccoptions = {
 			type = "group",
 			name = self.localeName,
 			desc = format(L["Options for %s."], self.localeName),
@@ -743,10 +749,10 @@ Skada:RegisterModule("CC Breaks", function(L, P, _, C, M)
 					type = "description",
 					name = self.localeName,
 					fontSize = "large",
-					image = [[Interface\Icons\spell_holy_sealofvalor]],
+					image = [[Interface\ICONS\spell_holy_sealofvalor]],
 					imageWidth = 18,
 					imageHeight = 18,
-					imageCoords = {0.05, 0.95, 0.05, 0.95},
+					imageCoords = Skada.cropTable,
 					width = "full",
 					order = 0
 				},
@@ -779,8 +785,9 @@ Skada:RegisterModule("CC Breaks", function(L, P, _, C, M)
 
 		tbl = clear(tbl or C)
 		for _, spell in pairs(spells) do
-			if spell.t then
-				for targetname, count in pairs(spell.t) do
+			local targets = spell.t or spell.targets
+			if targets then
+				for targetname, count in pairs(targets) do
 					local t = tbl[targetname]
 					if not t then
 						t = new()

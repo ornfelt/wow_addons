@@ -1,7 +1,7 @@
 local folder, Skada = ...
 local Private = Skada.Private
 Skada:RegisterDisplay("Data Text", "mod_broker_desc", function(L, P)
-	local mod = Skada:NewModule("Data Text")
+	local mod = Skada:NewModule("Data Text", Skada.displayPrototype)
 	local LDB = LibStub:GetLibrary("LibDataBroker-1.1")
 
 	mod.SetTitle = Skada.EmptyFunc
@@ -19,10 +19,11 @@ Skada:RegisterDisplay("Data Text", "mod_broker_desc", function(L, P)
 	if not FONT_FLAGS then
 		FONT_FLAGS = {
 			[""] = L["None"],
-			["OUTLINE"] = L["Outline"],
-			["THICKOUTLINE"] = L["Thick outline"],
 			["MONOCHROME"] = L["Monochrome"],
-			["OUTLINEMONOCHROME"] = L["Outlined monochrome"]
+			["OUTLINE"] = L["Outline"],
+			["THICKOUTLINE"] = L["Thick Outline"],
+			["OUTLINEMONOCHROME"] = L["Outline & Monochrome"],
+			["THICKOUTLINEMONOCHROME"] = L["Thick Outline & Monochrome"]
 		}
 		Skada.fontFlags = FONT_FLAGS
 	end
@@ -131,7 +132,7 @@ Skada:RegisterDisplay("Data Text", "mod_broker_desc", function(L, P)
 			frame:SetWidth(p.width or 200)
 			frame:SetPoint("CENTER", 0, 0)
 
-			local title = frame:CreateFontString("frameTitle", 6)
+			local title = frame:CreateFontString("frameTitle", "OVERLAY")
 			title:SetPoint("CENTER", 0, 0)
 			frame.title = title
 
@@ -175,41 +176,6 @@ Skada:RegisterDisplay("Data Text", "mod_broker_desc", function(L, P)
 		end
 
 		mod:ApplySettings(win)
-	end
-
-	function mod:IsShown(win)
-		if win and win.frame and win.db.useframe then
-			return win.frame:IsShown() and true or false
-		end
-	end
-
-	function mod:Show(win)
-		if self:IsShown(win) == false then
-			win.frame:Show()
-		end
-	end
-
-	function mod:Hide(win)
-		if self:IsShown(win) == true then
-			win.frame:Hide()
-		end
-	end
-
-	function mod:Destroy(win)
-		if win and win.frame then
-			if win.obj then
-				if win.obj.text then
-					win.obj.text = " "
-				end
-				win.obj = nil
-			end
-			win.frame:Hide()
-			win.frame = nil
-		end
-	end
-
-	function mod:Wipe(win)
-		win.text = " "
 	end
 
 	function mod:Update(win)

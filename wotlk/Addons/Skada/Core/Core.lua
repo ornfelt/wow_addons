@@ -8,9 +8,9 @@ local DBI = LibStub("LibDBIcon-1.0", true)
 
 -- cache frequently used globals
 local _G = _G
-local pairs, type, tonumber, tostring, min, max = pairs, type, tonumber, tostring, math.min, math.max
+local next, pairs, type, tonumber, tostring, min, max = next, pairs, type, tonumber, tostring, math.min, math.max
 local strmatch, format, gsub, strlower, strfind = strmatch, string.format, string.gsub, string.lower, string.find
-local Private = ns.Private
+local Private, GetCreatureId = ns.Private, Skada.GetCreatureId
 local tsort, tremove, wipe, setmetatable = table.sort, Private.tremove, wipe, setmetatable
 local TempTable, new, del, copy = Private.TempTable, Private.newTable, Private.delTable, Private.tCopy
 local InCombatLockdown, IsGroupInCombat, IsGroupDead = InCombatLockdown, Skada.IsGroupInCombat, Skada.IsGroupDead
@@ -35,8 +35,8 @@ BINDING_HEADER_SKADA = folder
 BINDING_NAME_SKADA_TOGGLE = L["Toggle Windows"]
 BINDING_NAME_SKADA_SHOWHIDE = L["Show/Hide Windows"]
 BINDING_NAME_SKADA_RESET = L["Reset"]
-BINDING_NAME_SKADA_NEWSEGMENT = L["Start New Segment"]
-BINDING_NAME_SKADA_NEWPHASE = L["Start New Phase"]
+BINDING_NAME_SKADA_NEWSEGMENT = L["New Segment"]
+BINDING_NAME_SKADA_NEWPHASE = L["New Phase"]
 BINDING_NAME_SKADA_STOP = L["Stop"]
 
 -- things we need
@@ -48,12 +48,18 @@ local userClass = Skada.userClass
 local displays = ns.displays or {}
 ns.displays = displays
 
+-- displays that show totals
+local display_with_totals = ns.display_with_totals or {}
+ns.display_with_totals = display_with_totals
+
 -- update & tick timers
 local update_timer, tick_timer, toggle_timer, version_timer
+local roster_timer, bossdefeat_timer
 local check_version, convert_version
 local check_for_join_and_leave
 
 -- list of players, pets and vehicles
+local guidToUnit = Private.guidToUnit
 local guidToClass = Private.guidToClass
 local guidToName = Private.guidToName
 local guidToOwner = Private.guidToOwner
@@ -141,16 +147,13 @@ do
 	-- @param 	set 		the set to override/reuse
 	function create_set(setname, set)
 		if set then
-			Skada:Debug("Rused set for", setname, ">>", set, "<<")
 			set = clean_set(set)
 		else
 			set = next(recycle_bin)
 			if set then
-				Skada:Debug("Rused set for", setname, ">>", set, "<<")
 				recycle_bin[set] = nil
 			else
 				set = {}
-				Skada:Debug("Created set for", setname, ">>", set, "<<")
 			end
 		end
 
@@ -188,6 +191,10 @@ local function check_set_name(set)
 	end
 
 	if P.setnumber then
+		-- remove old data
+		if Skada.sets.version then
+			Skada.sets.sets, Skada.sets.version = nil, nil
+		end
 		setname = CheckDuplicate(setname, Skada.sets, "name")
 	end
 
@@ -211,7 +218,7 @@ local function process_set(set, curtime, mobname)
 
 	if not P.onlykeepbosses or set.gotboss then
 		set.mobname = mobname or set.mobname -- override name
-		if set.mobname ~= nil and curtime - set.starttime >= (P.minsetlength or 5) then
+		if set.mobname ~= nil and (P.inCombat or curtime - set.starttime >= (P.minsetlength or 5)) then
 			set.endtime = set.endtime and set.endtime > set.starttime and set.endtime or curtime
 			set.time = max(1, set.endtime - set.starttime)
 			set.name = check_set_name(set)
@@ -232,7 +239,7 @@ local function process_set(set, curtime, mobname)
 			callbacks:Fire("Skada_SetComplete", set, curtime)
 
 			tinsert(Skada.sets, 1, set)
-			Skada:Debug("Segment Saved:", set.name)
+			Skada:Debug(format("Segment Saved: \124cffffbb00%s\124r", set.name))
 		else
 			set = delete_set(set)
 		end
@@ -297,18 +304,28 @@ local function summon_pet(petGUID, ownerGUID)
 	local guidOrClass = guidToClass[ownerGUID]
 	ownerGUID = guidToClass[guidOrClass] and guidOrClass or ownerGUID
 	guidToOwner[petGUID] = ownerGUID
-	guidToClass[petGUID] = ownerGUID
 end
 
 local dismiss_pet
 do
+	local dismiss_timers = nil
 	local function dismiss_handler(guid)
 		guidToOwner[guid] = nil
 		guidToClass[guid] = nil
+
+		if dismiss_timers and dismiss_timers[guid] then
+			Skada:CancelTimer(dismiss_timers[guid], true)
+			dismiss_timers[guid] = nil
+
+			if not next(dismiss_timers) then
+				dismiss_timers[guid] = del(dismiss_timers[guid])
+			end
+		end
 	end
 	function dismiss_pet(guid, delay)
 		if guid and guidToClass[guid] and not guidToName[guid] then
-			Skada:ScheduleTimer(dismiss_handler, delay or 0.1, guid)
+			dismiss_timers = dismiss_timers or new()
+			dismiss_timers[guid] = Skada:ScheduleTimer(dismiss_handler, delay or 0.1, guid)
 		end
 	end
 end
@@ -510,7 +527,7 @@ end
 
 -- destroy a window
 function Window:Destroy()
-	if self.display then
+	if self.display and self.display.Destroy then
 		self.display:Destroy(self)
 	end
 
@@ -529,7 +546,7 @@ end
 -- change window display
 function Window:SetDisplay(name, isnew)
 	if name ~= self.db.display or self.display == nil then
-		if self.display then
+		if self.display and self.display.Destroy then
 			self.display:Destroy(self)
 		end
 
@@ -546,18 +563,22 @@ function Window:SetDisplay(name, isnew)
 end
 
 -- checks if the window can show total bar/text
-local function can_show_total(win, set)
-	if not P.showtotals and not win.db.showtotals then
+local function can_show_total(db, mode, set)
+	-- totals aren't show if:
+	--	[1] disabled globally or for the window
+	--	[2] the display doesn't support totals
+	--	[3] then mode doesn't show totals (missing GetSetSummary function)
+	--	[4] not a group segment or a total segment.
+	if
+		(not P.showtotals and not db.showtotals) -- [1]
+		or (not display_with_totals[db.display]) --  [2]
+		or (not mode or not mode.GetSetSummary) --  [3]
+		or (not set.type or set.type == "none" and set.name ~= L["Total"]) -- [4]
+	then
 		return false
-	elseif not win.selectedmode.GetSetSummary then
-		return false
-	elseif win.db.display ~= "bar" and win.db.display ~= "inline" then
-		return false
-	elseif not set.type or set.type == "none" and set.name ~= L["Total"] then
-		return false
-	else
-		return true
 	end
+
+	return true
 end
 
 -- tell window to update the display of its dataset, using its display provider.
@@ -574,7 +595,7 @@ function Window:UpdateDisplay()
 				Skada:Printf("Mode \124cffffbb00%s\124r does not have an Update function!", self.selectedmode.localeName or self.selectedmode.moduleName)
 			end
 
-			if can_show_total(self, set) then
+			if can_show_total(self.db, self.selectedmode, set) then
 				local value, valuetext = self.selectedmode:GetSetSummary(set, self)
 				if value or valuetext then
 					if not value then
@@ -620,6 +641,7 @@ function Window:UpdateDisplay()
 
 		self.metadata.ordersort = true
 		self.metadata.is_modelist = set and true or nil
+		self.metadata.is_setlist = nil
 	else
 		local nr = 1
 		local d = self:nr(nr)
@@ -650,6 +672,7 @@ function Window:UpdateDisplay()
 		end
 
 		self.metadata.ordersort = true
+		self.metadata.is_setlist = true
 	end
 
 	if not self.metadata.maxvalue then
@@ -687,14 +710,14 @@ end
 -- toggles window visibility
 function Window:Toggle()
 	if
-		P.hidden or
-		self.db.hidden or
-		((P.hidesolo or self.db.hideauto == 4) and not IsInGroup()) or
-		((P.hidepvp or self.db.hideauto == 7) and IsInPvP()) or
-		((P.showcombat or self.db.hideauto == 3) and not IsGroupInCombat()) or
-		((P.hidecombat or self.db.hideauto == 2) and IsGroupInCombat()) or
-		(self.db.hideauto == 5 and (Skada.insType == "raid" or Skada.insType == "party")) or
-		(self.db.hideauto == 6 and Skada.insType ~= "raid" and Skada.insType ~= "party")
+		P.hidden or -- all windows are hidden
+		self.db.hidden or -- this window is hidden
+		((P.hidesolo or self.db.hideauto == 4) and not IsInGroup()) or -- hide when solo & not in a group
+		((P.hidepvp or self.db.hideauto == 7) and IsInPvP()) or -- hide in pvp & not in pvp
+		((P.showcombat or self.db.hideauto == 3) and not IsGroupInCombat()) or -- show in combat & not in combat
+		((P.hidecombat or self.db.hideauto == 2) and IsGroupInCombat()) or -- hide in combat & in combat
+		(self.db.hideauto == 5 and (Skada.insType == "raid" or Skada.insType == "party")) or -- hide in instance & in instance
+		(self.db.hideauto == 6 and Skada.insType ~= "raid" and Skada.insType ~= "party") -- hide out of instance and not in instance
 	then
 		self:Hide()
 	else
@@ -704,7 +727,7 @@ end
 
 function Window:Wipe(changed)
 	self:reset()
-	if self.display then
+	if self.display and self.display.Wipe then
 		self.display:Wipe(self)
 	end
 
@@ -758,7 +781,10 @@ function Window:DisplayMode(mode)
 	self.selectedmode = mode
 	wipe(self.metadata)
 
-	if mode and self.parentmode ~= mode and Skada:GetModule(mode.moduleName, true) then
+	if mode.isParent then
+		self.parentmode = self.parentmode ~= mode and mode or self.parentmode
+		self:clean()
+	elseif not self.parentmode then
 		self.parentmode = mode
 	end
 
@@ -769,7 +795,6 @@ function Window:DisplayMode(mode)
 	end
 
 	self.changed = true
-	set_window_mode_title(self)
 
 	if self.child and (self.db.childmode == 1 or self.db.childmode == 3) then
 		if self.db.childmode == 1 and self.child.selectedset ~= self.selectedset then
@@ -782,13 +807,11 @@ function Window:DisplayMode(mode)
 	Skada:UpdateDisplay()
 end
 
-function Window:FilterClass(id, label)
+function Window:FilterClass(class)
 	if self.class then
 		self.class = nil
 	else
-		local set = self:GetSelectedSet()
-		local actor = set and set:GetActor(label, id)
-		self.class = actor and actor.class or nil
+		self.class = class
 	end
 
 	self:Wipe()
@@ -856,7 +879,10 @@ do
 		self.metadata.click = click_on_mode
 		self.metadata.maxvalue = 1
 		self.changed = true
-		self.display:SetTitle(self, self.metadata.title)
+
+		if self.display.SetTitle then
+			self.display:SetTitle(self, self.metadata.title)
+		end
 
 		if self.child then
 			if self.db.childmode == 1 or self.db.childmode == 3 then
@@ -893,7 +919,9 @@ do
 		self.selectedset = nil
 
 		self.metadata.title = L["Skada: Fights"]
-		self.display:SetTitle(self, self.metadata.title)
+		if self.display.SetTitle then
+			self.display:SetTitle(self, self.metadata.title)
+		end
 
 		self.metadata.click = click_on_set
 		self.metadata.maxvalue = 1
@@ -909,12 +937,17 @@ end
 
 function Window:RightClick(bar, button)
 	if self.selectedmode then
-		if self.class then
+		-- only remove class filter on parent mode.
+		if self.class and self.selectedmode == self.parentmode then
 			self.class = nil
 			self:Wipe()
 			self:UpdateDisplay()
 		elseif #self.history > 0 then
-			self:DisplayMode(tremove(self.history))
+			local prev_mode = tremove(self.history)
+			while prev_mode == self.selectedmode and #self.history > 0 do
+				prev_mode = tremove(self.history)
+			end
+			self:DisplayMode(prev_mode)
 		else
 			self.class = nil
 			self:DisplayModes(self.selectedset)
@@ -968,8 +1001,8 @@ function Skada:CreateWindow(name, db, display)
 		window.db.mode = "Damage"
 	end
 
-	window:SetDisplay(window.db.display, isnew)
-	if window.db.display and displays[window.db.display] then
+	window:SetDisplay(db.display, isnew)
+	if db.display and displays[db.display] then
 		window.display:Create(window, isnew)
 		windows[#windows + 1] = window
 		window:DisplaySets()
@@ -980,10 +1013,10 @@ function Skada:CreateWindow(name, db, display)
 			restore_view(window, window.db.set, window.db.mode)
 		end
 	else
-		self:Printf("Window \"\124cffffbb00%s\124r\" was not loaded because its display module, \"\124cff00ff00%s\124r\" was not found.", name, window.db.display or L["Unknown"])
+		self:Printf("Window \"\124cffffbb00%s\124r\" was not loaded because its display module, \"\124cff00ff00%s\124r\" was not found.", name, db.display or L["Unknown"])
 	end
 
-	ACR:NotifyChange(folder)
+	self:NotifyChange()
 	self:ApplySettings()
 	return window
 end
@@ -991,6 +1024,8 @@ end
 -- window deletion
 do
 	local function delete_window(name)
+		Skada:CloseMenus()
+
 		for i = 1, #windows do
 			local win = windows[i]
 			local db = win and win.db
@@ -1017,8 +1052,7 @@ do
 	function Skada:DeleteWindow(name, internal)
 		if internal then
 			delete_window(name)
-			ACR:NotifyChange(folder)
-			Skada:CloseMenus()
+			Skada:NotifyChange()
 			return
 		end
 
@@ -1031,8 +1065,7 @@ do
 				whileDead = 0,
 				hideOnEscape = 1,
 				OnAccept = function(self, data)
-					Skada:CloseMenus()
-					ACR:NotifyChange(folder)
+					Skada:NotifyChange()
 					return delete_window(data)
 				end
 			}
@@ -1065,7 +1098,7 @@ function Skada:ToggleWindow()
 		for i = 1, #windows do
 			local win = windows[i]
 			if win and win:IsShown() then
-				win.db.hidden = true
+				win.db.hidden = (P.showcombat ~= true)
 				win:Hide()
 			elseif win then
 				win.db.hidden = false
@@ -1082,21 +1115,14 @@ function Skada:ShowHide()
 end
 
 -- restores a view for the selected window
-function restore_view(win, theset, themode)
-	if theset and type(theset) == "string" and (theset == "current" or theset == "total" or theset == "last") then
-		win.selectedset = theset
-	elseif theset and type(theset) == "number" and theset <= #Skada.sets then
-		win.selectedset = theset
-	else
-		win.selectedset = "current"
-	end
+function restore_view(self, set, mode)
+	self.selectedset = (set == "current" or set == "total" or set == "last" or (type(set) == "number" and set <= #Skada.sets)) and set or "current"
+	self.changed = true
 
-	win.changed = true
-
-	if themode then
-		win:DisplayMode(find_mode(themode) or win.selectedset)
+	if mode then
+		self:DisplayMode(find_mode(mode) or self.selectedset)
 	else
-		win:DisplayModes(win.selectedset)
+		self:DisplayModes(self.selectedset)
 	end
 end
 
@@ -1151,37 +1177,36 @@ end
 do
 	-- scane modes to add column options
 	local function scan_for_columns(mode)
-		if type(mode) == "table" and not mode.scanned then
-			mode.scanned = true
+		if type(mode) ~= "table" or mode.scanned then return end
+		mode.scanned = true
 
-			if mode.metadata then
-				-- add columns if available
-				if mode.metadata.columns then
-					Skada:AddColumnOptions(mode)
-				end
+		if not mode.metadata then return end
 
-				-- scan for linked modes
-				if mode.metadata.click1 then
-					scan_for_columns(mode.metadata.click1)
-				end
-				if mode.metadata.click2 then
-					scan_for_columns(mode.metadata.click2)
-				end
-				if mode.metadata.click3 then
-					scan_for_columns(mode.metadata.click3)
-				end
-			end
+		-- add columns if available
+		if mode.metadata.columns then
+			Skada:AddColumnOptions(mode)
+		end
+
+		-- scan for click modes
+		if mode.metadata.click1 then -- any click
+			scan_for_columns(mode.metadata.click1)
+		end
+		if mode.metadata.click2 then -- shift-click
+			scan_for_columns(mode.metadata.click2)
+		end
+		if mode.metadata.click3 then -- ctrl-click
+			scan_for_columns(mode.metadata.click3)
 		end
 	end
 
 	local function reload_mode(self)
-		if self.metadata then
-			for i = 1, #windows do
-				local win = windows[i]
-				if win and win.selectedmode == self and win.metadata then
-					for key, value in pairs(self.metadata) do
-						win.metadata[key] = value
-					end
+		if not self.metadata then return end
+
+		for i = 1, #windows do
+			local win = windows[i]
+			if win and win.selectedmode == self and win.metadata then
+				for key, value in pairs(self.metadata) do
+					win.metadata[key] = value
 				end
 			end
 		end
@@ -1241,7 +1266,8 @@ end
 
 -- deletes a set
 function Skada:DeleteSet(set, index)
-	local sets = self.sets
+	local sets = index ~= "current" and index ~= "total" and self.sets
+	if not sets then return end
 
 	if not (set and index) then
 		for i = 1, #sets do
@@ -1354,7 +1380,7 @@ do
 	end
 
 	local white = HIGHLIGHT_FONT_COLOR
-	local function add_subview_lines(tooltip, win, mode, id, label)
+	local function add_subview_lines(tooltip, win, mode, id, label, class)
 		if not (type(mode) == "table" and mode.Update) then return end
 
 		local set = win and win:GetSelectedSet()
@@ -1362,11 +1388,11 @@ do
 
 		-- windows should have separate tooltip tables in order
 		-- to display different numbers for same spells for example.
-		win.ttwin = win.ttwin or Window.new(true)
+		win.ttwin = win.ttwin or Window.new(win)
 		win.ttwin:reset()
 
 		if mode.Enter then
-			mode:Enter(win.ttwin, id, label)
+			mode:Enter(win.ttwin, id, label, class)
 		end
 
 		-- tooltip title
@@ -1374,7 +1400,7 @@ do
 
 		-- mode:Update(win, set, info1)
 		if mode.Tooltip then
-			mode:Update(win.ttwin, set, mode:Tooltip(win.ttwin, set, id, label, tooltip))
+			mode:Update(win.ttwin, set, mode:Tooltip(win.ttwin, set, id, label, tooltip, class))
 		else
 			mode:Update(win.ttwin, set)
 		end
@@ -1396,14 +1422,13 @@ do
 
 				if data.color then
 					color = data.color
-				elseif Skada.validclass[data.class] then
+				elseif data.class and Skada.validclass[data.class] then
 					color = classcolors(data.class)
 				end
 
 				local title = data.text or data.label
-				if mode.metadata and mode.metadata.showspots then
-					title = format("\124cffffffff%d.\124r %s", nr, title)
-				end
+				title = (data.spellid and data.icon) and format("|T%s:16:16:0:0:64:64:6:58:6:58|t %s", data.icon, title) or title
+				title = (mode.metadata and mode.metadata.showspots) and format("\124cffffffff%d.\124r %s", nr, title) or title
 				tooltip:AddDoubleLine(title, data.valuetext, color.r, color.g, color.b)
 			elseif nr >= maxnr then
 				break -- no need to continue
@@ -1415,9 +1440,11 @@ do
 		end
 	end
 
-	local function add_submode_lines(mode, win, id, label, tooltip)
-		if mode and not Private.total_noclick(win.selectedset, mode) then
-			add_subview_lines(tooltip, win, mode, id, label)
+	local total_noclick = Private.total_noclick
+
+	local function add_submode_lines(mode, win, id, label, tooltip, class)
+		if mode and not total_noclick(win.selectedset, mode) then
+			add_subview_lines(tooltip, win, mode, id, label, class)
 		end
 	end
 
@@ -1425,65 +1452,104 @@ do
 	local function add_click_lines(mode, label, win, t, fmt)
 		if type(mode) == "function" then
 			t:AddLine(uformat(fmt, label))
-		elseif not Private.total_noclick(win.selectedset, mode) then
+		elseif not total_noclick(win.selectedset, mode) then
 			t:AddLine(format(fmt, label or mode.localeName))
 		end
 	end
 
-	function Skada:ShowTooltip(win, id, label, bar)
+	local date = date
+	local segment_types = Skada.segment_types
+
+	local function show_set_info(set, t)
+		if not set then return end
+
+		t:AddLine(set.name)
+
+		if set.diff then
+			t:AddDoubleLine(L["Type"], format("%s (%s)", segment_types[set.type] or set.type, set.diff), nil, nil, nil, 1, 1, 1)
+		else
+			t:AddDoubleLine(L["Type"], segment_types[set.type] or set.type, nil, nil, nil, 1, 1, 1)
+		end
+
+		if set.gotboss and set.success then
+			t:AddDoubleLine(L["BOSS"], set.mobname, nil, nil, nil, 0, 1, 0)
+		elseif set.gotboss then
+			t:AddDoubleLine(L["BOSS"], set.mobname, nil, nil, nil, 1, 0, 0)
+		elseif set.type == "pvp" or set.type == "arena" then
+			t:AddDoubleLine(L["Zone"], set.mobname, nil, nil, nil, 1, 1, 0)
+		else
+			t:AddDoubleLine(L["ENEMY"], set.mobname, nil, nil, nil, 1, 1, 1)
+		end
+
+		t:AddLine(" ")
+		t:AddDoubleLine(L["Start"], date("%x %X", set.starttime), nil, nil, nil, 1, 1, 1)
+		t:AddDoubleLine(L["End"], set.endtime and date("%x %X", set.endtime) or "??", nil, nil, nil, 1, 1, 1)
+		t:AddDoubleLine(L["Duration"], Skada:FormatTime(set.time, true), nil, nil, nil, 1, 1, 1)
+	end
+
+	function Skada:ShowTooltip(win, id, label, bar, class)
 		if self.testMode or not P.tooltips or (bar and bar.ignore) then return end
 
 		local md = win and win.metadata
 		local t = md and GameTooltip
 		if not t then return end
 
-		if md.is_modelist and P.informativetooltips then
-			t:ClearLines()
-			add_subview_lines(t, win, find_mode(id), id, label)
-			t:Show()
-		elseif md.click1 or md.click2 or md.click3 or md.filterclass or md.tooltip then
-			t:ClearLines()
-			local hasClick = md.click1 or md.click2 or md.click3 or md.filterclass or nil
-
-			if md.tooltip then
-				local numLines = t:NumLines()
-				md.tooltip(win, id, label, t)
-
-				if t:NumLines() ~= numLines and hasClick then
-					t:AddLine(" ")
-				end
+		if P.informativetooltips and (md.is_setlist or md.is_modelist) then
+			if md.is_modelist then
+				t:ClearLines()
+				add_subview_lines(t, win, find_mode(id), id, label)
+				t:Show()
+			elseif id ~= "total" and id ~= "current" then
+				t:ClearLines()
+				show_set_info(self:GetSet(id, true), t)
+				t:Show()
 			end
-
-			if P.informativetooltips then
-				add_submode_lines(md.click1, win, id, label, t)
-				add_submode_lines(md.click2, win, id, label, t)
-				add_submode_lines(md.click3, win, id, label, t)
-			end
-
-			if md.post_tooltip then
-				local numLines = t:NumLines()
-				md.post_tooltip(win, id, label, t)
-
-				if numLines > 0 and t:NumLines() ~= numLines and hasClick then
-					t:AddLine(" ")
-				end
-			end
-
-			if md.click1 then
-				add_click_lines(md.click1, md.click1_label, win, t, L["Click for \124cff00ff00%s\124r"])
-			end
-			if md.click2 then
-				add_click_lines(md.click2, md.click2_label, win, t, L["Shift-Click for \124cff00ff00%s\124r"])
-			end
-			if md.click3 then
-				add_click_lines(md.click3, md.click3_label, win, t, L["Control-Click for \124cff00ff00%s\124r"])
-			end
-			if md.filterclass then
-				t:AddLine(format(L["Alt-Click for \124cff00ff00%s\124r"], L["Toggle Class Filter"]))
-			end
-
-			t:Show()
+			return
 		end
+
+		local hasClick = md.click1 or md.click2 or md.click3 or md.filterclass
+		if not hasClick and not md.tooltip then return end
+
+		t:ClearLines()
+
+		if md.tooltip then
+			local numLines = t:NumLines()
+			md.tooltip(win, id, label, t)
+
+			if t:NumLines() ~= numLines and hasClick then
+				t:AddLine(" ")
+			end
+		end
+
+		if P.informativetooltips then
+			add_submode_lines(md.click1, win, id, label, t, class)
+			add_submode_lines(md.click2, win, id, label, t, class)
+			add_submode_lines(md.click3, win, id, label, t, class)
+		end
+
+		if md.post_tooltip then
+			local numLines = t:NumLines()
+			md.post_tooltip(win, id, label, t)
+
+			if numLines > 0 and t:NumLines() ~= numLines and hasClick then
+				t:AddLine(" ")
+			end
+		end
+
+		if md.click1 then
+			add_click_lines(md.click1, md.click1_label, win, t, L["Click for \124cff00ff00%s\124r"])
+		end
+		if md.click2 then
+			add_click_lines(md.click2, md.click2_label, win, t, L["Shift-Click for \124cff00ff00%s\124r"])
+		end
+		if md.click3 then
+			add_click_lines(md.click3, md.click3_label, win, t, L["Control-Click for \124cff00ff00%s\124r"])
+		end
+		if md.filterclass then
+			t:AddLine(format(L["Alt-Click for \124cff00ff00%s\124r"], L["Toggle Class Filter"]))
+		end
+
+		t:Show()
 	end
 end
 
@@ -1536,8 +1602,9 @@ local function generate_total()
 	ReloadUI()
 end
 
-local GetAddOnMetadata = GetAddOnMetadata
 local Print = Private.Print
+local report_channels, report_help
+local UnitExists, UnitName = UnitExists, UnitName
 local function slash_command(param)
 	local cmd, arg1, arg2, arg3 = Skada:GetArgs(param, 4)
 	cmd = (cmd and cmd ~= "") and strlower(cmd) or cmd
@@ -1581,11 +1648,14 @@ local function slash_command(param)
 		Skada:ProfileExport()
 	elseif cmd == "about" or cmd == "info" then
 		InterfaceOptionsFrame_OpenToCategory(folder)
-	elseif cmd == "version" or cmd == "checkversion" then
-		Skada:Printf("\124cffffbb00%s\124r: %s - \124cffffbb00%s\124r: %s", L["Version"], Skada.version, L["Date"], GetAddOnMetadata(folder, "X-Date"))
+	elseif cmd == "version" or cmd == "ver" or cmd == "checkversion" then
+		Skada:Printf("\124cffffbb00%s\124r: %s - \124cffffbb00%s\124r: %s", L["Version"], Skada.version, L["Date"], Skada.date)
 		check_version()
 	elseif cmd == "website" or cmd == "github" then
 		Skada:Printf("\124cffffbb00%s\124r", Skada.website)
+	elseif (cmd == "target" or cmd == "cid") and UnitExists("target") then
+		local guid = UnitGUID("target")
+		Skada:Printf("[\124cffffbb00%s\124r] %s (%s)", GetCreatureId(guid), UnitName("target"), guid)
 	elseif cmd == "timemesure" or cmd == "measure" then
 		if P.timemesure == 2 then
 			P.timemesure = 1
@@ -1620,11 +1690,21 @@ local function slash_command(param)
 		end
 
 		-- Sanity checks.
-		if chan and (chan == "say" or chan == "guild" or chan == "raid" or chan == "party" or chan == "officer") and (report_mode_name and find_mode(report_mode_name)) then
+		report_channels = report_channels or {self = true, say = true, yell = true, guild = true, officer = true, party = true, raid = true, auto = true}
+		if chan and report_channels[strlower(chan)] and report_mode_name then
 			Skada:Report(chan, "preset", report_mode_name, "current", num)
 		else
 			Skada:Print(L["Usage:"])
-			Skada:Printf("%-20s", "/skada report [channel] [mode] [lines]")
+			Skada:Printf("%-20s", "/skada report [\124cffffff33channel\124r] [\124cffffff33mode\124r] [\124cffffff33numlines\124r]")
+			if not report_help then
+				local temp = new()
+				for name in next, report_channels do
+					temp[#temp + 1] = name
+				end
+				report_help = format("\124cffffff33channel\124r: %s", table.concat(temp, ", "))
+				temp = del(temp)
+			end
+			Skada:Printf(report_help)
 		end
 	else
 		Skada:Print(L["Commands:"])
@@ -1663,12 +1743,9 @@ function Skada:PLAYER_ENTERING_WORLD()
 	userGUID = self.userGUID or UnitGUID("player")
 	self.userGUID = userGUID
 
-	self._Time = GetTime()
-	self._time = time()
-
-	Skada:CheckZone()
+	self:CheckZone()
 	if was_in_party == nil then
-		Skada:ScheduleTimer("UpdateRoster", 1)
+		roster_timer = self:ScheduleTimer("UpdateRoster", 1)
 	end
 
 	-- force reset for old structure
@@ -1678,6 +1755,12 @@ function Skada:PLAYER_ENTERING_WORLD()
 
 	tsort(modes, user_sort_func)
 	self:ApplySettings()
+end
+
+function Skada:PLAYER_LEAVING_WORLD()
+	if not self.inCombat then return end
+	P.inCombat = true
+	combat_end()
 end
 
 do
@@ -1692,6 +1775,7 @@ do
 			last_check_group = checkTime -- update cooldown
 
 			-- wipe tables
+			wipe(guidToUnit)
 			wipe(guidToClass)
 			wipe(guidToName)
 
@@ -1710,6 +1794,7 @@ do
 				if not guidToClass[ownerGUID] then
 					guidToOwner[petGUID] = nil
 					guidToClass[petGUID] = nil
+					guidToUnit[petGUID] = nil
 				end
 			end
 		end
@@ -1718,13 +1803,12 @@ end
 
 do
 	local IsInInstance = IsInInstance
-	local inInstance, instanceType, isininstance, isinpvp
 	local was_in_instance, was_in_pvp
 
 	function Skada:CheckZone()
-		inInstance, instanceType = IsInInstance()
-		isininstance = inInstance and (instanceType == "party" or instanceType == "raid")
-		isinpvp = IsInPvP()
+		local inInstance, instanceType = IsInInstance()
+		local isininstance = inInstance and (instanceType == "party" or instanceType == "raid") or false
+		local isinpvp = IsInPvP()
 
 		if isininstance and was_in_instance ~= nil and not was_in_instance and P.reset.instance ~= 1 and self:CanReset() then
 			if P.reset.instance == 3 then
@@ -1747,6 +1831,8 @@ do
 		elseif self.insType ~= instanceType then
 			self:SendMessage("ZONE_TYPE_CHANGED", instanceType, self.insType)
 		end
+
+		self.insDiff = isininstance and self:GetInstanceDiff() or nil
 		self.insType = instanceType
 
 		was_in_instance = (isininstance == true)
@@ -1773,7 +1859,8 @@ do
 	function Skada:VersionCheck(sender, version)
 		if sender and version then
 			version = convert_version(version)
-			local ver = convert_version(self.version)
+			local ver = self.version_num or convert_version(self.version)
+			self.version_num = ver
 			if not (version and ver) or self.versionChecked then
 				return
 			elseif version > ver then
@@ -1833,11 +1920,16 @@ do
 		end
 
 		Skada:SendMessage("GROUP_ROSTER_UPDATE")
+
+		if roster_timer then
+			Skada:CancelTimer(roster_timer, true)
+			roster_timer = nil
+		end
 	end
 end
 
 do
-	local UnitExists, UnitHasVehicleUI = UnitExists, UnitHasVehicleUI
+	local UnitHasVehicleUI = UnitHasVehicleUI
 	local groupUnits = Skada.Units.group
 
 	function Skada:UNIT_PET(owners)
@@ -1845,7 +1937,7 @@ do
 			local unit = groupUnits[owner] and format("%spet", owner)
 			local guid = unit and UnitGUID(unit)
 			if guid then
-				guidToClass[guid] = UnitGUID(owner)
+				guidToOwner[guid] = UnitGUID(owner)
 			end
 		end
 	end
@@ -1858,7 +1950,7 @@ do
 			local prefix, id, suffix = strmatch(unit, "([^%d]+)([%d]*)(.*)")
 			local vUnitId = format("%spet%s%s", prefix, id, suffix)
 			if UnitExists(vUnitId) then
-				guidToClass[UnitGUID(vUnitId)] = guid
+				guidToOwner[UnitGUID(vUnitId)] = guid
 				vehicles[guid] = UnitGUID(vUnitId)
 			end
 		elseif vehicles[guid] then
@@ -1972,6 +2064,7 @@ end
 -- format functions
 
 do
+	local date = date
 	local function set_label_format(name, starttime, endtime, fmt, dye)
 		fmt = max(1, min(8, fmt or P.setformat or 3))
 
@@ -2033,14 +2126,10 @@ do
 
 		if self.parentmode then
 			name = self.selectedmode.localeName or name
-			savemode = self.selectedmode.moduleName or savemode
+			savemode = self.parentmode.moduleName or savemode
 		end
 
-		-- save window settings for RestoreView after reload
 		self.db.set = self.selectedset
-		if self.history[1] then -- can't currently preserve a nested mode, use topmost one
-			savemode = self.history[1].moduleName or savemode
-		end
 		self.db.mode = savemode
 
 		if self.changed and self.title then
@@ -2070,25 +2159,22 @@ do
 		end
 
 		self.metadata.title = name
-		self.display:SetTitle(self, name)
+		if self.display.SetTitle then
+			self.display:SetTitle(self, name)
+		end
 	end
 end
 
-function restore_window_view(self, theset, themode)
+function restore_window_view(self, set, mode)
 	if self.history[1] then
-		-- clear history and title
 		wipe(self.history)
 		self.title = nil
-
-		-- all all stuff that were registered by modules
-		self.actorid, self.actorname = nil, nil
-		self.spellid, self.spellname = nil, nil
-		self.targetid, self.targetname = nil, nil
+		self:clean()
 	end
 
 	-- force menu to close and let Skada handle the rest
 	Skada:CloseMenus()
-	restore_view(self, theset or self.selectedset, themode or self.db.mode)
+	restore_view(self, set or self.selectedset, mode or self.db.mode)
 end
 
 -------------------------------------------------------------------------------
@@ -2151,6 +2237,10 @@ function Private.RefreshButton()
 	end
 end
 
+function Skada:NotifyChange()
+	ACR:NotifyChange(folder)
+end
+
 function Skada:ApplySettings(name, hidemenu)
 	if type(name) == "table" and name.db and name.db.name then
 		name = name.db.name
@@ -2198,11 +2288,34 @@ function Skada:ApplySettings(name, hidemenu)
 	Private.SetNumberFormat(P.numbersystem)
 	Private.SetValueFormat(P.brackets, P.separator)
 
-	-- unset the global combat flag.
-	if G.inCombat and not InCombatLockdown() and not IsGroupInCombat() then
-		G.inCombat = false
+	-- the player wasn't in combat?
+	if not P.inCombat then
+		Skada:UpdateDisplay(true)
+		return
 	end
 
+	-- reset the flag...
+	P.inCombat = false
+
+	-- no longer in combat?
+	if not InCombatLockdown() and not IsGroupInCombat() then
+		Skada:UpdateDisplay(true)
+		return
+	end
+
+	local set = Skada.sets[1] -- last fight
+	-- unexistent/old fight? nothing to do... (imho 15 sec is fair)
+	if not set or not set.endtime or Skada._time - set.endtime >= 15 then
+		Skada:UpdateDisplay(true)
+		return
+	end
+
+	-- reuse set and start combat.
+	set = tremove(Skada.sets, 1)
+	set.time, set.endtime = 0, nil
+	Skada.current = setPrototype:Bind(set)
+	Skada.total = setPrototype:Bind(Skada.sets[0])
+	combat_start()
 	Skada:UpdateDisplay(true)
 end
 
@@ -2218,6 +2331,10 @@ function Private.ReloadSettings()
 	-- refresh refrences
 	P = Skada.data.profile
 	G = Skada.data.global
+
+	-- global references
+	Skada.profile = Skada.data.profile
+	Skada.global = Skada.data.global
 
 	local wins = P.windows
 	for i = 1, #wins do
@@ -2290,7 +2407,7 @@ function Skada:OnInitialize()
 	P.setslimit = min(25, max(0, P.setslimit or 0))
 	P.timemesure = min(2, max(1, P.timemesure or 0))
 	P.totalflag = P.totalflag or 0x10
-	G.version, G.revision = nil, nil
+	G.version, G.revision, G.inCombat = nil, nil, nil
 
 	-- sets limit
 	self.maxsets = P.setstokeep + P.setslimit
@@ -2298,6 +2415,10 @@ function Skada:OnInitialize()
 
 	-- update references
 	classcolors = self.classcolors
+
+	-- assign times before loading modules.
+	self._Time = GetTime()
+	self._time = time()
 
 	-- early loading of modules
 	self:LoadModules()
@@ -2309,6 +2430,7 @@ end
 
 function Skada:OnEnable()
 	self:RegisterEvent("PLAYER_ENTERING_WORLD")
+	self:RegisterEvent("PLAYER_LEAVING_WORLD")
 	self:RegisterEvent("PLAYER_REGEN_DISABLED")
 	self:RegisterEvent("ZONE_CHANGED_NEW_AREA", "CheckZone")
 	self:RegisterBucketEvent("UNIT_PET", 0.2)
@@ -2334,25 +2456,23 @@ function Skada:OnEnable()
 	self:SetupStorage()
 
 	-- deprecated table structure.
-	if self.sets.version then
+	if self.sets.version or self.sets.sets then
 		self.sets.sets, self.sets.version = nil, nil
 		self:Debug("Fixed deprecated table structure!")
 	end
 
 	Private.ReloadSettings()
-	self:ScheduleTimer("CheckMemory", 3)
-	self:ScheduleTimer("CleanGarbage", 4)
-end
-
-local collectgarbage = collectgarbage
-function Skada:CleanGarbage()
-	if InCombatLockdown() then return end
-	collectgarbage("collect")
-	self:Debug("CleanGarbage")
+	self.__memory_timer = self:ScheduleTimer("CheckMemory", 3)
+	self.__garbage_timer = self:ScheduleTimer("CleanGarbage", 4)
 end
 
 -- called on boss defeat
 local function BossDefeated()
+	if bossdefeat_timer then
+		Skada:CancelTimer(bossdefeat_timer, true)
+		bossdefeat_timer = nil
+	end
+
 	local set = Skada.current
 	if not set or set.success then return end
 
@@ -2368,7 +2488,7 @@ local function BossDefeated()
 		end
 	end
 
-	Skada:Debug("COMBAT_BOSS_DEFEATED: Skada")
+	Skada:Debug("\124cffffbb00COMBAT_BOSS_DEFEATED\124r: Skada")
 	Skada:SendMessage("COMBAT_BOSS_DEFEATED", set)
 	Skada:SmartStop(set)
 end
@@ -2388,17 +2508,23 @@ function Skada:GetFeeds()
 	return feeds
 end
 
-function Skada:GetSet(s)
-	local set = nil
-	if s == "current" then
-		set = self.current or self.last or self.sets[1]
-	elseif s == "total" then
-		set = self.total
-	else
-		set = self.sets[s]
+function Skada:GetSet(id, unbound)
+	if id == "current" then
+		local set = self.current or self.last or self.sets[1]
+		return unbound and set or setPrototype:Bind(set)
+	elseif id == "total" then
+		return unbound and self.total or setPrototype:Bind(self.total)
+	elseif type(id) == "number" then
+		local set = self.sets[id]
+		return unbound and set or setPrototype:Bind(set)
 	end
 
-	return setPrototype:Bind(set)
+	for i = 1, #self.sets do
+		local set = self.sets[i]
+		if set and (tostring(set.starttime) == id or set.name == id) then
+			return unbound and set or setPrototype:Bind(set)
+		end
+	end
 end
 
 -------------------------------------------------------------------------------
@@ -2412,14 +2538,14 @@ function Skada:PLAYER_REGEN_ENABLED()
 	-- 	1. the segment was previously stopped.
 	-- 	2. the player and the group aren't in combat
 	if self.current.stopped or (not InCombatLockdown() and not IsGroupInCombat()) then
-		self:Debug("EndSegment: PLAYER_REGEN_ENABLED")
+		self:Debug("\124cffffbb00EndSegment\124r: PLAYER_REGEN_ENABLED")
 		combat_end()
 	end
 end
 
 function Skada:PLAYER_REGEN_DISABLED()
 	if not self.disabled and not self.current then
-		self:Debug("StartCombat: PLAYER_REGEN_DISABLED")
+		self:Debug("\124cffffbb00StartCombat\124r: PLAYER_REGEN_DISABLED")
 		combat_start()
 	end
 end
@@ -2449,6 +2575,7 @@ end
 function combat_end()
 	if not Skada.current then return end
 	Private.ClearTempUnits()
+	wipe(GetCreatureId) -- wipe cached creature IDs
 
 	-- trigger events.
 	local curtime = time()
@@ -2456,6 +2583,8 @@ function combat_end()
 	if Skada.current.gotboss then
 		Skada:SendMessage("COMBAT_ENCOUNTER_END", Skada.current, curtime)
 		Skada:ClearFirstHit()
+	elseif Skada.current.type == "pvp" then
+		Skada:SendMessage("COMBAT_PVP_END", nil, Skada.insType)
 	end
 
 	-- process segment
@@ -2491,14 +2620,13 @@ function combat_end()
 		end
 	end
 
-	if Skada.current.time and Skada.current.time >= P.minsetlength then
+	if Skada.current.time and (P.inCombat or Skada.current.time >= P.minsetlength) then
 		Skada.total.time = (Skada.total.time or 0) + Skada.current.time
 	end
 
 	Skada.last = Skada.current
 	Skada.current = nil
 	Skada.inCombat = false
-	G.inCombat = false
 	_targets = del(_targets)
 
 	clean_sets()
@@ -2520,6 +2648,9 @@ function combat_end()
 		Skada:CancelTimer(toggle_timer, true)
 		toggle_timer = nil
 	end
+
+	Skada._Time = GetTime()
+	Skada._time = time()
 end
 
 function Skada:StopSegment(msg, phase)
@@ -2654,29 +2785,45 @@ do
 
 	-- list of registered combat log event functions.
 	local combatlog_events = {}
+
+	-- register a func to cleu event(s).
 	function Skada:RegisterForCL(func, flags, ...)
-		if func and flags then
-			local index = 1
-			local event = select(index, ...)
+		if type(func) ~= "function" then return end
+		flags = flags or self.dummyTable -- allow empty flags
 
-			while event do
-				combatlog_events[event] = combatlog_events[event] or {}
-				combatlog_events[event][func] = flags
+		local index = 1
+		local event = select(index, ...)
+		while event do
+			combatlog_events[event] = combatlog_events[event] or {}
+			combatlog_events[event][func] = flags
 
-				index = index + 1
-				event = select(index, ...)
+			index = index + 1
+			event = select(index, ...)
+		end
+	end
+
+	-- unregisters a func from cleu event(s)
+	function Skada:UnregisterFromCL(func)
+		if type(func) ~= "function" then return end
+		for _, funcs in pairs(combatlog_events) do
+			if funcs[func] then
+				funcs[func] = nil
+				break
 			end
 		end
 	end
 
 	local function combat_tick()
+		Skada._time = time()
 		if not Skada.disabled and Skada.current and not InCombatLockdown() and not IsGroupInCombat() and Skada.insType ~= "pvp" and Skada.insType ~= "arena" then
-			Skada:Debug("EndSegment: combat tick")
+			Skada:Debug("\124cffffbb00EndSegment\124r: Combat Tick")
 			combat_end()
 		end
 	end
 
 	function combat_start()
+		Skada._time = time()
+
 		death_counter = 0
 		starting_members = GetNumGroupMembers()
 
@@ -2686,12 +2833,12 @@ do
 		end
 
 		if update_timer then
-			Skada:Debug("EndSegment: StartCombat")
+			Skada:Debug("\124cffffbb00EndSegment\124r: StartCombat")
 			combat_end()
 		end
 
 		if Skada.current == nil then
-			Skada:Debug("StartCombat: Segment Created!")
+			Skada:Debug("\124cffffbb00StartCombat\124r: Segment Created!")
 			Skada.current = create_set(L["Current"], tentative_set)
 		end
 		tentative_set = nil
@@ -2710,7 +2857,6 @@ do
 		end
 
 		Skada.inCombat = true
-		G.inCombat = true
 		Skada:Wipe()
 
 		for i = 1, #windows do
@@ -2718,22 +2864,24 @@ do
 			local db = win and win.db
 			if db then
 				-- combat mode switch
-				if db.modeincombat ~= "" then
-					local mymode = find_mode(db.modeincombat)
-
-					if mymode ~= nil then
-						if db.returnaftercombat then
-							if win.selectedset then
-								win.restore_set = win.selectedset
-							end
-							if win.selectedmode then
-								win.restore_mode = win.selectedmode.moduleName
-							end
+				local mymode = find_mode(db.modeincombat)
+				if mymode then
+					if db.returnaftercombat then
+						if win.selectedset then
+							win.restore_set = win.selectedset
 						end
-
-						win.selectedset = "current"
-						win:DisplayMode(mymode)
+						if win.selectedmode then
+							win.restore_mode = win.selectedmode.moduleName
+						end
 					end
+
+					win.selectedset = "current"
+				else
+					mymode = find_mode(db.mode)
+				end
+
+				if mymode then
+					win:DisplayMode(mymode)
 				end
 
 				-- combat switch to current
@@ -2749,18 +2897,33 @@ do
 
 		Skada:UpdateDisplay(true)
 
+		if update_timer then
+			Skada:CancelTimer(update_timer, true)
+			update_timer = nil
+		end
 		update_timer = Skada:ScheduleRepeatingTimer("UpdateDisplay", P.updatefrequency or 0.5)
+
+		if tick_timer then
+			Skada:CancelTimer(tick_timer, true)
+			tick_timer = nil
+		end
 		tick_timer = Skada:ScheduleRepeatingTimer(combat_tick, 1)
 
 		if P.tentativecombatstart then
+			if toggle_timer then
+				Skada:CancelTimer(toggle_timer, true)
+				toggle_timer = nil
+			end
 			toggle_timer = Skada:ScheduleTimer("Toggle", 0.1)
+		elseif toggle_timer then
+			Skada:CancelTimer(toggle_timer, true)
+			toggle_timer = nil
 		end
 	end
 
 	local bit_band = bit.band
 	local GetInstanceInfo = GetInstanceInfo
 	local GetBattlefieldArenaFaction = GetBattlefieldArenaFaction
-	local GetCreatureId = Skada.GetCreatureId
 	local BITMASK_CONTROL_PLAYER = COMBATLOG_OBJECT_CONTROL_PLAYER or 0x00000100
 
 	local function check_boss_fight(set, t, src_is_interesting, dst_is_interesting)
@@ -2779,12 +2942,14 @@ do
 				if bit_band(t.dstFlags or 0, BITMASK_CONTROL_PLAYER) ~= 0 then
 					set.type = "pvp"
 					set.gotboss = false
+					Skada:SendMessage("COMBAT_PVP_START", "pvp", Skada.insType)
 				end
 			elseif dst_is_interesting and not t:SourceIsFriendly() then
 				set.mobname = t.srcName
 				if bit_band(t.srcFlags or 0, BITMASK_CONTROL_PLAYER) ~= 0 then
 					set.type = "pvp"
 					set.gotboss = false
+					Skada:SendMessage("COMBAT_PVP_START", "pvp", Skada.insType)
 				end
 			end
 		end
@@ -2793,6 +2958,7 @@ do
 		if not set.type then
 			if Skada.insType == nil then Skada:CheckZone() end
 			set.type = (Skada.insType == "none" and IsInGroup()) and "group" or Skada.insType
+			set.diff = (set.type == "party" or set.type == "raid") and Skada.insDiff
 		end
 
 		-- don't go further for arena/pvp
@@ -2804,7 +2970,7 @@ do
 		if set.gotboss then
 			-- default boss defeated event? (no DBM/BigWigs)
 			if not Skada.bossmod and death_events[t.event] and set.gotboss == GetCreatureId(t.dstGUID) then
-				Skada:ScheduleTimer(BossDefeated, P.updatefrequency or 0.5)
+				bossdefeat_timer = bossdefeat_timer or Skada:ScheduleTimer(BossDefeated, 0.1)
 			end
 			return
 		end
@@ -2846,32 +3012,47 @@ do
 		end
 	end
 
+	local function check_cached_names(t)
+		t.srcName = t.srcName and t.srcGUID and guidToName[t.srcGUID] or t.srcName
+		t.dstName = t.dstName and t.dstGUID and guidToName[t.dstGUID] or t.dstName
+	end
+
 	local function tentative_handler()
 		tentative_set = Skada.current
 		Skada.current = nil
-		Skada:CancelTimer(tentative_timer, true)
-		tentative_timer = nil
 		tentative = nil
+		if tentative_timer then
+			Skada:CancelTimer(tentative_timer, true)
+			tentative_timer = nil
+		end
 	end
 
-	local next = next
+	local GetTempUnit = Private.GetTempUnit
+	local src_is_interesting = false
+	local dst_is_interesting = false
+
 	function Skada:OnCombatEvent(t)
 		-- ignored combat event?
 		if (not t.event or ignored_events[t.event]) and not (spellcast_events[t.event] and self.current) then return end
 
-		local src_is_interesting = nil
-		local dst_is_interesting = nil
+		src_is_interesting = false
+		dst_is_interesting = false
 
 		if not self.current and trigger_events[t.event] and t.srcName and t.dstName and t.srcGUID ~= t.dstGUID then
-			src_is_interesting = t:SourceInGroup()
+			src_is_interesting = t:SourceInGroup() or t:SourceIsPet(true)
 
 			if t.event ~= "SPELL_PERIODIC_DAMAGE" then
-				dst_is_interesting = t:DestInGroup()
+				dst_is_interesting = t:DestInGroup() or t:DestIsPet(true)
 			end
 
 			if src_is_interesting or dst_is_interesting then
 				self.current = create_set(L["Current"], tentative_set)
 				self.total = self.total or create_set(L["Total"])
+
+				if tentative_timer then
+					self:CancelTimer(tentative_timer, true)
+					tentative_timer = nil
+				end
 
 				tentative_timer = self:ScheduleTimer(tentative_handler, 1)
 				tentative = P.tentativecombatstart and 4 or 0
@@ -2881,11 +3062,11 @@ do
 		end
 
 		-- pet summons.
-		if t.event == "SPELL_SUMMON" and t:DestIsPet(true) then
+		if t.event == "SPELL_SUMMON" and t:SourceInGroup() and t:DestIsPet() then
 			summon_pet(t.dstGUID, t.srcGUID)
 		-- pet died?
 		elseif death_events[t.event] and guidToOwner[t.dstGUID] then
-			dismiss_pet(t.dstGUID)
+			dismiss_pet(t.dstGUID, 1)
 		end
 
 		-- current segment not created?
@@ -2900,7 +3081,7 @@ do
 		if self.current.stopped or not combatlog_events[t.event] then return end
 
 		self._Time = GetTime()
-		self._time = time()
+		check_cached_names(t)
 
 		for func, flags in next, combatlog_events[t.event] do
 			local fail = false
@@ -2922,14 +3103,14 @@ do
 			end
 
 			if not fail and (flags.src_is_interesting or flags.src_is_not_interesting) then
-				src_is_interesting = src_is_interesting or t:SourceInGroup() or Private.GetTempUnit(t.srcGUID)
+				src_is_interesting = t:SourceInGroup() or t:SourceIsPet(true) or GetTempUnit(t.srcGUID)
 				if (flags.src_is_interesting and not src_is_interesting) or (flags.src_is_not_interesting and src_is_interesting) then
 					fail = true
 				end
 			end
 
 			if not fail and (flags.dst_is_interesting or flags.dst_is_not_interesting) then
-				dst_is_interesting = dst_is_interesting or t:DestInGroup()
+				dst_is_interesting = t:DestInGroup() or t:DestIsPet(true)
 				if (flags.dst_is_interesting and not dst_is_interesting) or (flags.dst_is_not_interesting and dst_is_interesting) then
 					fail = true
 				end
@@ -2938,12 +3119,12 @@ do
 			if not fail then
 				if tentative ~= nil then
 					tentative = tentative + 1
-					self:Debug(format("Tentative: %s (%d)", t.event, tentative))
+					self:Debug(format("\124cffffbb00Tentative\124r: %s (%d)", t.event, tentative))
 					if tentative >= 5 then
 						self:CancelTimer(tentative_timer, true)
 						tentative_timer = nil
 						tentative = nil
-						self:Debug("StartCombat: tentative combat")
+						self:Debug("\124cffffbb00StartCombat\124r: tentative combat")
 						combat_start()
 					end
 				end

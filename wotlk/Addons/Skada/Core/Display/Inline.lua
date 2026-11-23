@@ -1,7 +1,7 @@
 local folder, Skada = ...
 local Private = Skada.Private
 Skada:RegisterDisplay("Inline Bar Display", "mod_inline_desc", function(L)
-	local mod = Skada:NewModule("Inline Bar Display")
+	local mod = Skada:NewModule("Inline Bar Display", Skada.displayPrototype)
 
 	local pairs, tostring, type = pairs, tostring, type
 	local format, strmatch = string.format, string.match
@@ -26,15 +26,16 @@ Skada:RegisterDisplay("Inline Bar Display", "mod_inline_desc", function(L)
 	if not FONT_FLAGS then
 		FONT_FLAGS = {
 			[""] = L["None"],
-			["OUTLINE"] = L["Outline"],
-			["THICKOUTLINE"] = L["Thick outline"],
 			["MONOCHROME"] = L["Monochrome"],
-			["OUTLINEMONOCHROME"] = L["Outlined monochrome"]
+			["OUTLINE"] = L["Outline"],
+			["THICKOUTLINE"] = L["Thick Outline"],
+			["OUTLINEMONOCHROME"] = L["Outline & Monochrome"],
+			["THICKOUTLINEMONOCHROME"] = L["Thick Outline & Monochrome"]
 		}
 		Skada.fontFlags = FONT_FLAGS
 	end
 
-	local buttonTexture = [[Interface\AddOns\Skada\Media\Textures\toolbar%s\config.blp]]
+	local buttonTexture = format([[%s\Textures\toolbar%%s\config]], Skada.mediapath)
 
 	local function BarLeave(bar)
 		if ttactive then
@@ -52,23 +53,23 @@ Skada:RegisterDisplay("Inline Bar Display", "mod_inline_desc", function(L)
 		end
 	end
 
-	local function onEnter(win, id, label, mode)
-		mode:Enter(win, id, label)
+	local function onEnter(win, id, label, class, mode)
+		mode:Enter(win, id, label, class)
 		if win.child and (win.db.childmode == 1 or win.db.childmode == 3) then
-			onEnter(win.child, id, label, mode)
+			onEnter(win.child, id, label, class, mode)
 		end
 	end
 
-	local function showmode(win, id, label, mode)
+	local function showmode(win, id, label, class, mode)
 		if Private.total_noclick(win.selectedset, mode) then return end
 
 		inserthistory(win)
 
 		if type(mode) == "function" then
-			mode(mode, win, id, label)
+			mode(win, id, label, class)
 		else
 			if mode.Enter then
-				onEnter(win, id, label, mode)
+				onEnter(win, id, label, class, mode)
 			end
 			win:DisplayMode(mode)
 		end
@@ -80,7 +81,7 @@ Skada:RegisterDisplay("Inline Bar Display", "mod_inline_desc", function(L)
 	local function BarClick(win, bar, button)
 		if Skada.testMode or bar.ignore then return end
 
-		local id, label = bar.valueid, bar.valuetext
+		local id, label, class = bar.valueid, bar.valuetext, bar.class
 
 		if button == "RightButton" and IsShiftKeyDown() then
 			Skada:OpenMenu(win)
@@ -89,13 +90,13 @@ Skada:RegisterDisplay("Inline Bar Display", "mod_inline_desc", function(L)
 		elseif button == "RightButton" then
 			win:RightClick(bar, button)
 		elseif button == "LeftButton" and win.metadata.click2 and IsShiftKeyDown() then
-			showmode(win, id, label, win.metadata.click2)
+			showmode(win, id, label, class, win.metadata.click2)
 		elseif button == "LeftButton" and win.metadata.filterclass and IsAltKeyDown() then
-			win:FilterClass(id, label)
+			win:FilterClass(class)
 		elseif button == "LeftButton" and win.metadata.click3 and IsControlKeyDown() then
-			showmode(win, id, label, win.metadata.click3)
+			showmode(win, id, label, class, win.metadata.click3)
 		elseif button == "LeftButton" and win.metadata.click1 then
-			showmode(win, id, label, win.metadata.click1)
+			showmode(win, id, label, class, win.metadata.click1)
 		end
 	end
 
@@ -174,7 +175,7 @@ Skada:RegisterDisplay("Inline Bar Display", "mod_inline_desc", function(L)
 		local titlebg = CreateFrame("Frame", "$parentTitleBackground", frame)
 		titlebg.win = window
 
-		local title = frame:CreateFontString("frameTitle", 6)
+		local title = frame:CreateFontString("frameTitle", "OVERLAY")
 		title:SetTextColor(self:GetFontColor(p))
 		title:SetFont(self:GetFont(p))
 		title:SetText(window.metadata.title or folder)
@@ -220,20 +221,27 @@ Skada:RegisterDisplay("Inline Bar Display", "mod_inline_desc", function(L)
 		self:Update(window)
 	end
 
-	function mod:Destroy(win)
-		if win and win.frame then
-			win.frame:Hide()
-			win.frame = nil
-		end
+	function mod:SetTitle(win, title)
+		local frame = win and win.frame
+		if not win then return end
+		frame.fstitle:SetText(title or win.title or win.metadata.title)
+		frame.barstartx = leftmargin + frame.fstitle:GetStringWidth() + 20
 	end
 
-	mod.Wipe = Skada.EmptyFunc
+	local function barOnMouseDown(self, button)
+		local bar = self.bar
+		local win = bar and bar.win
+		if not win then return end
+		BarClick(win, bar, button)
+	end
 
-	function mod:SetTitle(win, title)
-		if win and win.frame then
-			win.frame.fstitle:SetText(title)
-			win.frame.barstartx = leftmargin + win.frame.fstitle:GetStringWidth() + 20
-		end
+	local function barOnEnter(self, motion)
+		local bar = self.bar
+		local win = bar and bar.win
+		if not win then return end
+		ttactive = true
+		Skada:SetTooltipPosition(GameTooltip, win.frame, "inline", win)
+		Skada:ShowTooltip(win, bar.valueid, bar.valuetext, bar, bar.class)
 	end
 
 	function barlibrary:CreateBar(uuid, win)
@@ -245,18 +253,16 @@ Skada:RegisterDisplay("Inline Bar Display", "mod_inline_desc", function(L)
 
 		bar.bg = CreateFrame("Frame", format("$parentBackground%d", bar.uuid), win.frame)
 		bar.bg:SetFrameLevel(win.frame:GetFrameLevel() + 6)
+		bar.bg.bar = bar
+
 		bar.label = win.frame:CreateFontString(format("$parentLabel%d", bar.uuid))
 		bar.label:SetFont(mod:GetFont(win.db))
 		bar.label:SetTextColor(mod:GetFontColor(win.db))
 		bar.label:SetJustifyH("LEFT")
 		bar.label:SetJustifyV("MIDDLE")
 		bar.bg:EnableMouse(true)
-		bar.bg:SetScript("OnMouseDown", function(frame, button) BarClick(win, bar, button) end)
-		bar.bg:SetScript("OnEnter", function(frame, button)
-			ttactive = true
-			Skada:SetTooltipPosition(GameTooltip, win.frame, "inline", win)
-			Skada:ShowTooltip(win, bar.valueid, bar.valuetext, bar)
-		end)
+		bar.bg:SetScript("OnMouseDown", barOnMouseDown)
+		bar.bg:SetScript("OnEnter", barOnEnter)
 		bar.bg:SetScript("OnLeave", BarLeave)
 
 		if uuid then
@@ -332,6 +338,7 @@ Skada:RegisterDisplay("Inline Bar Display", "mod_inline_desc", function(L)
 		bar.label:SetFont(mod:GetFont(db))
 		bar.label:SetText(label)
 		bar.label:SetTextColor(mod:GetFontColor(db))
+		bar.class = bardata.class
 		bar.value = bardata.value
 		if bardata.ignore then
 			bar.ignore = true
@@ -415,24 +422,6 @@ Skada:RegisterDisplay("Inline Bar Display", "mod_inline_desc", function(L)
 		end
 	end
 
-	function mod:Show(win)
-		if self:IsShown(win) == false then
-			win.frame:Show()
-		end
-	end
-
-	function mod:Hide(win)
-		if self:IsShown(win) == true then
-			win.frame:Hide()
-		end
-	end
-
-	function mod:IsShown(win)
-		if win and win.frame then
-			return win.frame:IsShown() and true or false
-		end
-	end
-
 	function mod:OnMouseWheel(win, frame, direction)
 	end
 
@@ -481,7 +470,7 @@ Skada:RegisterDisplay("Inline Bar Display", "mod_inline_desc", function(L)
 		end
 		f.menu:SetPoint("BOTTOMLEFT", f, "BOTTOMLEFT", 6, p.height * 0.5 - 8)
 
-		f:SetClampedToScreen(p.clamped)
+		f:SetClampedToScreen(p.clamped == true)
 		f:EnableMouse(not p.clickthrough)
 		f:SetScale(p.scale)
 
@@ -622,13 +611,13 @@ Skada:RegisterDisplay("Inline Bar Display", "mod_inline_desc", function(L)
 				isusingclasscolors = {
 					type = "toggle",
 					name = L["Class Colors"],
-					desc = L["opt_isusingclasscolors_desc"],
+					desc = format(L["opt_isusingclasscolors_desc"], classcolors.format(Skada.userClass, Skada.userName), Skada.userName),
 					order = 80,
 				},
 				isonnewline = {
 					type = "toggle",
 					name = L["Put values on new line."],
-					desc = L["opt_isonnewline_desc"],
+					desc = format(L["opt_isonnewline_desc"], Skada.userName),
 					order = 90
 				},
 				clickthrough = {
@@ -679,6 +668,6 @@ Skada:RegisterDisplay("Inline Bar Display", "mod_inline_desc", function(L)
 		classcolors = classcolors or Skada.classcolors
 		self.name = L["Inline Bar Display"]
 		self.description = L["mod_inline_desc"]
-		Skada:AddDisplaySystem("inline", self)
+		Skada:AddDisplaySystem("inline", self, true)
 	end
 end)

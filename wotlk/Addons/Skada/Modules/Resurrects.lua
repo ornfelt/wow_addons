@@ -6,14 +6,15 @@ Skada:RegisterModule("Resurrects", function(L, P, _, C)
 
 	local pairs, format, uformat = pairs, string.format, Private.uformat
 	local new, clear = Private.newTable, Private.clearTable
-	local get_actor_ress_targets = nil
+	local classfmt = Skada.classcolors.format
 	local ress_spells = Skada.ress_spells
+	local get_actor_ress_targets = nil
 	local mode_cols = nil
 
-	local function format_valuetext(d, columns, total, metadata, subview)
+	local function format_valuetext(d, total, metadata, subview)
 		d.valuetext = Skada:FormatValueCols(
-			columns.Count and d.value,
-			columns[subview and "sPercent" or "Percent"] and Skada:FormatPercent(d.value, total)
+			mode_cols.Count and d.value,
+			mode_cols[subview and "sPercent" or "Percent"] and Skada:FormatPercent(d.value, total)
 		)
 
 		if metadata and d.value > metadata.maxvalue then
@@ -41,13 +42,13 @@ Skada:RegisterModule("Resurrects", function(L, P, _, C)
 		end
 	end
 
-	function mode_target:Enter(win, id, label)
-		win.actorid, win.actorname = id, label
-		win.title = format(L["%s's resurrect targets"], label)
+	function mode_target:Enter(win, id, label, class)
+		win.actorid, win.actorname, win.actorclass = id, label, class
+		win.title = format(L["%s's targets"], classfmt(class, label))
 	end
 
 	function mode_target:Update(win, set)
-		win.title = uformat(L["%s's resurrect targets"], win.actorname)
+		win.title = uformat(L["%s's targets"], classfmt(win.actorclass, win.actorname))
 		if not set or not win.actorname then return end
 
 		local targets, total, actor = get_actor_ress_targets(set, win.actorname, win.actorid)
@@ -63,12 +64,12 @@ Skada:RegisterModule("Resurrects", function(L, P, _, C)
 
 			local d = win:actor(nr, target, target.enemy, targetname)
 			d.value = target.count
-			format_valuetext(d, mode_cols, total, win.metadata, true)
+			format_valuetext(d, total, win.metadata, true)
 		end
 	end
 
 	function mode:Update(win, set)
-		win.title = L["Resurrects"]
+		win.title = win.class and format("%s (%s)", L["Resurrects"], L[win.class]) or L["Resurrects"]
 
 		local total = set and set:GetTotal(win.class, nil, "ress")
 		if not total or total == 0 then
@@ -86,7 +87,7 @@ Skada:RegisterModule("Resurrects", function(L, P, _, C)
 
 				local d = win:actor(nr, actor, actor.enemy, actorname)
 				d.value = actor.ress
-				format_valuetext(d, mode_cols, total, win.metadata)
+				format_valuetext(d, total, win.metadata)
 			end
 		end
 	end
@@ -102,7 +103,7 @@ Skada:RegisterModule("Resurrects", function(L, P, _, C)
 			filterclass = true,
 			click1 = mode_target,
 			columns = {Count = true, Percent = false, sPercent = false},
-			icon = [[Interface\Icons\spell_holy_resurrection]]
+			icon = [[Interface\ICONS\spell_holy_resurrection]]
 		}
 
 		mode_cols = self.metadata.columns
@@ -131,7 +132,7 @@ Skada:RegisterModule("Resurrects", function(L, P, _, C)
 	get_actor_ress_targets = function(self, name, id, tbl)
 		local actor = self:GetActor(name, id)
 		local total = actor and actor.ress
-		local targets = total and actor.restargets
+		local targets = total and actor.resstargets
 		if not targets then return end
 
 		tbl = clear(tbl or C)

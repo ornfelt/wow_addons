@@ -196,7 +196,7 @@ function Skada:OpenMenu(window)
 
 			-- start new segment
 			wipe(info)
-			info.text = L["Start New Segment"]
+			info.text = L["New Segment"]
 			info.func = function()
 				Skada:NewSegment()
 			end
@@ -206,7 +206,7 @@ function Skada:OpenMenu(window)
 
 			-- start new phase
 			wipe(info)
-			info.text = L["Start New Phase"]
+			info.text = L["New Phase"]
 			info.func = function()
 				Skada:NewPhase()
 			end
@@ -1104,7 +1104,7 @@ do
 			local list = TempTable(GetChannelList())
 			for i = 1, #list, 2 do
 				local channel = list[i + 1]
-				if type(channel) ~= "boolean" and not ignored_channels[channel] then
+				if channel and type(channel) ~= "boolean" and not ignored_channels[channel] then
 					channels[channel] = TempTable(format("%s: %d/%s", L["Channel"], list[i], channel), "channel")
 				end
 			end

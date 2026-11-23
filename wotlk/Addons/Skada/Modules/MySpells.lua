@@ -36,6 +36,11 @@ Skada:RegisterModule("My Spells", function(L, P)
 		tooltip:AddLine(format("%s - %s", userName, label))
 		tooltip_school(tooltip, id)
 
+		local cast = actor.GetSpellCast and actor:GetSpellCast(id)
+		if cast then
+			tooltip:AddDoubleLine(L["Casts"], cast, nil, nil, nil, 1, 1, 1)
+		end
+
 		if not spell.count or spell.count == 0 then return end
 
 		-- count stats
@@ -132,7 +137,7 @@ Skada:RegisterModule("My Spells", function(L, P)
 		self.metadata = {
 			showspots = true,
 			tooltip = spell_tooltip,
-			icon = [[Interface\Icons\spell_nature_lightning]]
+			icon = [[Interface\ICONS\spell_nature_lightning]]
 		}
 
 		userGUID = userGUID or Skada.userGUID

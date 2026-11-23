@@ -1,9 +1,10 @@
 local _, Skada = ...
 local Private = Skada.Private
-Skada:RegisterModule("Parry-Haste", function(L, P, _, _, M)
+Skada:RegisterModule("Parry-Haste", function(L, P, _, _, M, O)
 	local mode = Skada:NewModule("Parry-Haste")
 	local mode_target = mode:NewModule("Target List")
 	local pairs, format, uformat = pairs, string.format, Private.uformat
+	local classfmt = Skada.classcolors.format
 	local mode_cols = nil
 
 	local parrybosses = {
@@ -21,10 +22,10 @@ Skada:RegisterModule("Parry-Haste", function(L, P, _, _, M)
 		[33271] = true, -- General Vezax
 	}
 
-	local function format_valuetext(d, columns, total, metadata, subview)
+	local function format_valuetext(d, total, metadata, subview)
 		d.valuetext = Skada:FormatValueCols(
-			columns.Count and d.value,
-			columns[subview and "sPercent" or "Percent"] and Skada:FormatPercent(d.value, total)
+			mode_cols.Count and d.value,
+			mode_cols[subview and "sPercent" or "Percent"] and Skada:FormatPercent(d.value, total)
 		)
 
 		if metadata and d.value > metadata.maxvalue then
@@ -66,13 +67,13 @@ Skada:RegisterModule("Parry-Haste", function(L, P, _, _, M)
 		end
 	end
 
-	function mode_target:Enter(win, id, label)
-		win.actorid, win.actorname = id, label
-		win.title = format(L["%s's parry targets"], label)
+	function mode_target:Enter(win, id, label, class)
+		win.actorid, win.actorname, win.actorclass = id, label, class
+		win.title = format(L["%s's targets"], classfmt(class, label))
 	end
 
 	function mode_target:Update(win, set)
-		win.title = uformat(L["%s's parry targets"], win.actorname)
+		win.title = uformat(L["%s's targets"], classfmt(win.actorclass, win.actorname))
 		if not set or not win.actorname then return end
 
 		local actor = set:GetActor(win.actorname, win.actorid)
@@ -92,7 +93,7 @@ Skada:RegisterModule("Parry-Haste", function(L, P, _, _, M)
 			local d = win:actor(nr, targetname)
 			d.class = "BOSS" -- what else can it be?
 			d.value = count
-			format_valuetext(d, mode_cols, total, win.metadata, true)
+			format_valuetext(d, total, win.metadata, true)
 		end
 	end
 
@@ -115,7 +116,7 @@ Skada:RegisterModule("Parry-Haste", function(L, P, _, _, M)
 
 				local d = win:actor(nr, actor, actor.enemy, actorname)
 				d.value = actor.parry
-				format_valuetext(d, mode_cols, total, win.metadata)
+				format_valuetext(d, total, win.metadata)
 			end
 		end
 	end
@@ -132,7 +133,7 @@ Skada:RegisterModule("Parry-Haste", function(L, P, _, _, M)
 			filterclass = true,
 			click1 = mode_target,
 			columns = {Count = true, Percent = false, sPercent = false},
-			icon = [[Interface\Icons\ability_parry]]
+			icon = [[Interface\ICONS\ability_parry]]
 		}
 
 		mode_cols = self.metadata.columns
@@ -157,7 +158,7 @@ Skada:RegisterModule("Parry-Haste", function(L, P, _, _, M)
 	function mode:OnInitialize()
 		M.parrychannel = M.parrychannel or "AUTO"
 
-		Skada.options.args.modules.args.Parry = {
+		O.modules.args.Parry = {
 			type = "group",
 			name = self.localeName,
 			desc = format(L["Options for %s."], self.localeName),
@@ -166,10 +167,10 @@ Skada:RegisterModule("Parry-Haste", function(L, P, _, _, M)
 					type = "description",
 					name = self.localeName,
 					fontSize = "large",
-					image = [[Interface\Icons\ability_parry]],
+					image = [[Interface\ICONS\ability_parry]],
 					imageWidth = 18,
 					imageHeight = 18,
-					imageCoords = {0.05, 0.95, 0.05, 0.95},
+					imageCoords = Skada.cropTable,
 					width = "full",
 					order = 0
 				},

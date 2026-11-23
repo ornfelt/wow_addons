@@ -1,6 +1,6 @@
 local _, Skada = ...
 local Private = Skada.Private
-Skada:RegisterModule("Potions", function(L, P, G, C)
+Skada:RegisterModule("Potions", function(L, P, G, C, _, O)
 	local mode = Skada:NewModule("Potions")
 	local mode_spell = mode:NewModule("Spell List")
 	local mode_actor = mode_spell:NewModule("Target List")
@@ -8,15 +8,15 @@ Skada:RegisterModule("Potions", function(L, P, G, C)
 	local mode_cols = nil
 
 	local pairs, format, strsub, uformat = pairs, string.format, string.sub, Private.uformat
-	local GetItemInfo, classcolors = GetItemInfo, Skada.classcolors
+	local GetItemInfo, classcolors, classfmt = GetItemInfo, Skada.classcolors, Skada.classcolors.format
 	local new, del, clear = Private.newTable, Private.delTable, Private.clearTable
 	local prepotionStr, potionStr = "\124c%s%s\124r %s", "\124T%s:14:14:0:0:64:64:4:60:4:60\124t"
 	local potion_ids, prepotion = {}, {}
 
-	local function format_valuetext(d, columns, total, metadata, subview)
+	local function format_valuetext(d, total, metadata, subview)
 		d.valuetext = Skada:FormatValueCols(
-			columns.Count and d.value,
-			columns[subview and "sPercent" or "Percent"] and Skada:FormatPercent(d.value, total)
+			mode_cols.Count and d.value,
+			mode_cols[subview and "sPercent" or "Percent"] and Skada:FormatPercent(d.value, total)
 		)
 
 		if metadata and d.value > metadata.maxvalue then
@@ -114,24 +114,24 @@ Skada:RegisterModule("Potions", function(L, P, G, C)
 
 			local d = win:actor(nr, actor, actor.enemy, actorname)
 			d.value = actor.count
-			format_valuetext(d, mode_cols, total, win.metadata, true)
+			format_valuetext(d, total, win.metadata, true)
 		end
 	end
 
-	function mode_spell:Enter(win, id, label)
-		win.actorid, win.actorname = id, label
-		win.title = format(L["%s's used potions"], label)
+	function mode_spell:Enter(win, id, label, class)
+		win.actorid, win.actorname, win.actorclass = id, label, class
+		win.title = format(L["%s's potions"], classfmt(class, label))
 	end
 
 	local function request_potion(potionid)
 		if potionid and potionid ~= nil and potionid ~= "" and potionid ~= 0 and strsub(potionid, 1, 1) ~= "s" then
-			GameTooltip:SetHyperlink("item:" .. potionid .. ":0:0:0:0:0:0:0")
+			GameTooltip:SetHyperlink(format("item:%s:0:0:0:0:0:0:0", potionid))
 			GameTooltip:Hide()
 		end
 	end
 
 	function mode_spell:Update(win, set)
-		win.title = uformat(L["%s's used potions"], win.actorname)
+		win.title = uformat(L["%s's potions"], classfmt(win.actorclass, win.actorname))
 		if not set or not win.actorname then return end
 
 		local actor = Skada:FindActor(set, win.actorname, win.actorid, true)
@@ -161,7 +161,7 @@ Skada:RegisterModule("Potions", function(L, P, G, C)
 				d.icon = potionicon
 
 				d.value = count
-				format_valuetext(d, mode_cols, total, win.metadata, true)
+				format_valuetext(d, total, win.metadata, true)
 			end
 		end
 	end
@@ -185,7 +185,7 @@ Skada:RegisterModule("Potions", function(L, P, G, C)
 
 				local d = win:actor(nr, actor, actor.enemy, actorname)
 				d.value = actor.potion
-				format_valuetext(d, mode_cols, total, win.metadata)
+				format_valuetext(d, total, win.metadata)
 			end
 		end
 	end
@@ -204,7 +204,7 @@ Skada:RegisterModule("Potions", function(L, P, G, C)
 			filterclass = true,
 			click1 = mode_spell,
 			columns = {Count = true, Percent = false, sPercent = false},
-			icon = [[Interface\Icons\inv_potion_31]]
+			icon = [[Interface\ICONS\inv_potion_31]]
 		}
 
 		mode_cols = self.metadata.columns
@@ -227,7 +227,7 @@ Skada:RegisterModule("Potions", function(L, P, G, C)
 			Skada.RegisterCallback(self, "Skada_UnitBuffs", "UnitBuff")
 			Skada.RegisterMessage(self, "COMBAT_PLAYER_LEAVE", "CombatLeave")
 		else
-			Skada.UnregisterAllCallbacks(self)
+			Skada.UnregisterCallback(self, "Skada_UnitBuffs")
 			Skada.UnregisterAllMessages(self)
 		end
 	end
@@ -358,7 +358,7 @@ Skada:RegisterModule("Potions", function(L, P, G, C)
 			P.prepotion = true
 		end
 
-		Skada.options.args.tweaks.args.general.args.prepotion = {
+		O.tweaks.args.general.args.prepotion = {
 			type = "toggle",
 			name = L["Pre-potion"],
 			desc = L["Prints pre-potion after the end of the combat."],

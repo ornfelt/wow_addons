@@ -1,25 +1,27 @@
 local _, Skada = ...
 local Private = Skada.Private
-Skada:RegisterModule("Threat", function(L, P, _, _, M)
+Skada:RegisterModule("Threat", function(L, P, _, _, M, O)
 	local mode = Skada:NewModule("Threat")
 
-	local format, max = string.format, math.max
-	local UnitExists, UnitName, UnitFullName = UnitExists, UnitName, Private.UnitFullName
+	local format, max, select = string.format, math.max, select
+	local UnitExists, UnitName = UnitExists, UnitName
 	local UnitDetailedThreatSituation, InCombatLockdown = UnitDetailedThreatSituation, InCombatLockdown
 	local GroupIterator, GetUnitRole, GetUnitSpec = Skada.GroupIterator, Skada.GetUnitRole, Skada.GetUnitSpec
 	local PlaySoundFile = PlaySoundFile
 	local new, del, clear = Private.newTable, Private.delTable, Private.clearTable
 	local mode_cols = nil
 
-	local aggro_icon = [[Interface\Icons\ability_physical_taunt]]
+	local aggro_icon = [[Interface\ICONS\ability_physical_taunt]]
 
 	do
 		local CheckInteractDistance, ItemRefTooltip = CheckInteractDistance, ItemRefTooltip
 		local GetItemInfo, IsItemInRange = GetItemInfo, IsItemInRange
 		local UnitGUID, UnitClass = UnitGUID, UnitClass
-		local nr, max_threat, last_warn, my_percent = 0, 0, time(), nil
+		local UnitFullName, guidToClass = Private.UnitFullName, Private.guidToClass
+		local nr, max_threat, aggro_coef, my_percent = 0, 0, 1.1, nil
+		local last_warn, last_time = Skada._time, 0
 		local threat_table, we_should_warn = {}, false
-		local tank_threat, tank_value, ruby_acorn, queried
+		local tank_threat, ruby_acorn, queried
 
 		-- bar colors
 		local aggro_color = RED_FONT_COLOR
@@ -28,10 +30,6 @@ Skada:RegisterModule("Threat", function(L, P, _, _, M)
 		local function add_to_threattable(unit, owner, target, win)
 			if unit == "AGGRO" then
 				if not mode.db.showAggroBar or not tank_threat or tank_threat == 0 then return end
-
-				if not ruby_acorn then
-					ruby_acorn = GetItemInfo(37727)
-				end
 
 				nr = nr + 1
 				local d = win:nr(nr)
@@ -44,17 +42,19 @@ Skada:RegisterModule("Threat", function(L, P, _, _, M)
 				d.changed = nil
 				d.isTanking = nil
 
+				ruby_acorn = ruby_acorn or GetItemInfo(37727)
 				if ruby_acorn then
-					d.threat = tank_threat * (IsItemInRange(37727, target) == 1 and 1.1 or 1.3)
-					d.value = tank_value * (IsItemInRange(37727, target) == 1 and 1.1 or 1.3)
+					aggro_coef = (IsItemInRange(37727, target) == 1 and 1.1 or 1.3)
 				else
-					d.threat = tank_threat * (CheckInteractDistance(target, 3) and 1.1 or 1.3)
-					d.value = tank_value * (CheckInteractDistance(target, 3) and 1.1 or 1.3)
+					aggro_coef = (CheckInteractDistance(target, 3) and 1.1 or 1.3)
 					if not queried and not ItemRefTooltip:IsVisible() then
 						ItemRefTooltip:SetHyperlink("item:37727")
 						queried = true
 					end
 				end
+
+				d.threat = tank_threat * aggro_coef
+				d.value = max_threat * aggro_coef
 
 				return
 			end
@@ -74,9 +74,9 @@ Skada:RegisterModule("Threat", function(L, P, _, _, M)
 				if owner ~= nil then
 					actor.class = "PET"
 				else
-					_, actor.class = UnitClass(unit)
-					actor.role = GetUnitRole(guid)
+					actor.class = guidToClass[guid] or select(2, UnitClass(unit))
 					actor.spec = GetUnitSpec(guid)
+					actor.role = GetUnitRole(guid)
 				end
 
 				-- cache the actor.
@@ -118,8 +118,10 @@ Skada:RegisterModule("Threat", function(L, P, _, _, M)
 
 				if d.value > max_threat then
 					max_threat = d.value
+				end
+
+				if isTanking then
 					tank_threat = d.threat
-					tank_value = d.value
 				end
 			end
 		end
@@ -141,84 +143,109 @@ Skada:RegisterModule("Threat", function(L, P, _, _, M)
 		function mode:Update(win, set)
 			win.title = L["Threat"]
 
-			if Skada.inCombat and self.unitID and UnitExists(self.unitID) then
-				self.unitName = self.unitName or UnitName(self.unitID)
-				win.title = self.unitName or win.title
+			if not Skada.inCombat then return end -- not in combat
+			if not self.unitID or not UnitExists(self.unitID) then return end -- nothing targeted
 
-				-- reset stuff & check group
-				max_threat, nr = 0, 0
-				GroupIterator(add_to_threattable, self.unitID, win)
-				if max_threat > 0 and self.db.showAggroBar then
-					add_to_threattable("AGGRO", nil, self.unitID, win)
-				end
+			self.unitName = self.unitName or UnitName(self.unitID)
+			win.title = self.unitName or win.title
 
-				-- nothing was added.
-				if nr == 0 then return end
+			-- reset stuff & check group
+			max_threat, nr = 0, 0
+			GroupIterator(add_to_threattable, self.unitID, win)
+			if max_threat > 0 and self.db.showAggroBar then
+				add_to_threattable("AGGRO", nil, self.unitID, win)
+			end
 
-				-- If we are going by raw threat we got the max threat from above; otherwise it's always 100.
-				max_threat = self.db.rawvalue and max_threat or 100
+			-- nothing was added.
+			if nr == 0 then return end
 
-				if win.metadata then
-					win.metadata.maxvalue = max_threat
-				end
+			-- If we are going by raw threat we got the max threat from above; otherwise it's always 100.
+			max_threat = self.db.rawvalue and max_threat or 100
 
-				we_should_warn = false
-				-- We now have a a complete threat table.
-				-- Now we need to add valuetext.
-				for i = 1, #win.dataset do
-					local data = win.dataset[i]
-					if data and data.id == "AGGRO" then
-						if self.db.showAggroBar and tank_threat and tank_threat > 0 then
-							data.valuetext = Skada:FormatValueCols(
-								mode_cols.Threat and format_threatvalue(data.threat),
-								mode_cols.TPS and get_tps(data.threat),
-								mode_cols.Percent and Skada:FormatPercent(data.value, max(0.000001, max_threat))
-							)
+			if win.metadata then
+				win.metadata.maxvalue = max_threat
+			end
 
-							if win.metadata then
-								win.metadata.maxvalue = self.db.rawvalue and data.threat or data.value
-							end
-						else
-							data.id = nil
+			we_should_warn = false -- reset warning state
+
+			-- We now have a a complete threat table.
+			-- Now we need to add valuetext.
+			for i = 1, #win.dataset do
+				local data = win.dataset[i]
+				if data and data.id == "AGGRO" then
+					if self.db.showAggroBar and tank_threat and tank_threat > 0 then
+						data.valuetext = Skada:FormatValueCols(
+							mode_cols.Threat and format_threatvalue(data.threat),
+							mode_cols.TPS and get_tps(data.threat),
+							mode_cols.Percent and Skada:FormatPercent(data.value, max(0.000001, max_threat))
+						)
+
+						if win.metadata then
+							win.metadata.maxvalue = self.db.rawvalue and data.threat or data.value
 						end
-					elseif data and data.id then
-						if data.threat and data.threat > 0 then
-							-- Warn if this is ourselves and we are over the treshold.
-							local percent = 100 * data.value / max(0.000001, max_threat)
-							if data.id == Skada.userGUID then
-								my_percent = percent
-								if self.db.threshold and self.db.threshold < percent and (not data.isTanking or not self.db.notankwarnings) then
-									we_should_warn = (data.color == nil)
-								end
+					else
+						data.id = nil
+					end
+				elseif data and data.id then
+					if data.threat and data.threat > 0 then
+						-- Warn if this is ourselves and we are over the treshold.
+						local percent = 100 * data.value / max(0.000001, max_threat)
+						if data.id == Skada.userGUID then
+							my_percent = percent
+							if self.db.threshold and self.db.threshold < percent and (not data.isTanking or not self.db.notankwarnings) then
+								we_should_warn = (data.color == nil)
 							end
-
-							data.valuetext = Skada:FormatValueCols(
-								mode_cols.Threat and format_threatvalue(data.threat),
-								mode_cols.TPS and get_tps(data.threat),
-								mode_cols.Percent and Skada:FormatPercent(percent)
-							)
-						else
-							data.id = nil
 						end
+
+						data.valuetext = Skada:FormatValueCols(
+							mode_cols.Threat and format_threatvalue(data.threat),
+							mode_cols.TPS and get_tps(data.threat),
+							mode_cols.Percent and Skada:FormatPercent(percent)
+						)
+					else
+						data.id = nil
 					end
 				end
+			end
 
-				-- Warn
-				if we_should_warn and time() - last_warn > (self.db.frequency or 2) then
-					self:Warn(self.db.sound, self.db.flash, self.db.shake, my_percent and format(L["%d%% Threat"], my_percent) or L["High Threat"])
-					last_warn = time()
-				end
+			-- Warn
+			last_time = Skada._time or time()
+			if we_should_warn and last_time - last_warn > (self.db.frequency or 2) then
+				self:Warn(self.db.sound, self.db.flash, self.db.shake, my_percent and format(L["%d%% Threat"], my_percent) or L["High Threat"])
+				last_warn = last_time
 			end
 		end
 
 		function mode:CombatLeave()
-			tank_threat, tank_value = nil, nil
+			tank_threat = nil
 			clear(threat_table)
 			self.unitID, self.unitName = nil, nil
 		end
 	end
 
 	-- Shamelessly copied from Omen - thanks!
+	local function flasher_OnShow(self)
+		self.elapsed = 0
+		self:SetAlpha(0)
+	end
+
+	local function flasher_OnUpdate(self, elapsed)
+		elapsed = self.elapsed + elapsed
+		if elapsed < 2.6 then
+			local alpha = elapsed % 1.3
+			if alpha < 0.15 then
+				self:SetAlpha(alpha / 0.15)
+			elseif alpha < 0.9 then
+				self:SetAlpha(max(0, 1 - (alpha - 0.15) / 0.6))
+			else
+				self:SetAlpha(0)
+			end
+		else
+			self:Hide()
+		end
+		self.elapsed = elapsed
+	end
+
 	function mode:Flash()
 		if not self.FlashFrame then
 			local flasher = CreateFrame("Frame", "SkadaThreatFlashFrame")
@@ -231,26 +258,8 @@ Skada:RegisterModule("Threat", function(L, P, _, _, M)
 			flasher.texture:SetTexture([[Interface\FullScreenTextures\LowHealth]])
 			flasher.texture:SetAllPoints(UIParent)
 			flasher.texture:SetBlendMode("ADD")
-			flasher:SetScript("OnShow", function(self)
-				self.elapsed = 0
-				self:SetAlpha(0)
-			end)
-			flasher:SetScript("OnUpdate", function(self, elapsed)
-				elapsed = self.elapsed + elapsed
-				if elapsed < 2.6 then
-					local alpha = elapsed % 1.3
-					if alpha < 0.15 then
-						self:SetAlpha(alpha / 0.15)
-					elseif alpha < 0.9 then
-						self:SetAlpha(1 - (alpha - 0.15) / 0.6)
-					else
-						self:SetAlpha(0)
-					end
-				else
-					self:Hide()
-				end
-				self.elapsed = elapsed
-			end)
+			flasher:SetScript("OnShow", flasher_OnShow)
+			flasher:SetScript("OnUpdate", flasher_OnUpdate)
 			self.FlashFrame = flasher
 		end
 
@@ -258,43 +267,47 @@ Skada:RegisterModule("Threat", function(L, P, _, _, M)
 	end
 
 	-- Shamelessly copied from Omen (which copied from BigWigs) - thanks!
+	local function shaker_OnShow(self)
+		-- Store old worldframe positions, we need them all, people have frame modifiers for it
+		if not self.originalPoints then
+			self.originalPoints = {}
+			for i = 1, WorldFrame:GetNumPoints() do
+				self.originalPoints[#self.originalPoints + 1] = {WorldFrame:GetPoint(i)}
+			end
+		end
+		self.elapsed = 0
+	end
+
+	local function shaker_OnUpdate(self, elapsed)
+		elapsed = self.elapsed + elapsed
+		local x, y = 0, 0 -- Resets to original position if we're supposed to stop.
+		if elapsed >= 0.8 then
+			self:Hide()
+		else
+			x, y = random(-8, 8), random(-8, 8)
+		end
+		if WorldFrame:IsProtected() and InCombatLockdown() then
+			if not self.fail then
+				self.fail = true
+			end
+			self:Hide()
+		else
+			WorldFrame:ClearAllPoints()
+			for i = 1, #self.originalPoints do
+				local v = self.originalPoints[i]
+				WorldFrame:SetPoint(v[1], v[2], v[3], v[4] + x, v[5] + y)
+			end
+		end
+		self.elapsed = elapsed
+	end
+
 	function mode:Shake()
 		local shaker = self.ShakerFrame
 		if not shaker then
 			shaker = CreateFrame("Frame", "SkadaThreatShaker", UIParent)
 			shaker:Hide()
-			shaker:SetScript("OnShow", function(self)
-				-- Store old worldframe positions, we need them all, people have frame modifiers for it
-				if not self.originalPoints then
-					self.originalPoints = {}
-					for i = 1, WorldFrame:GetNumPoints() do
-						self.originalPoints[#self.originalPoints + 1] = {WorldFrame:GetPoint(i)}
-					end
-				end
-				self.elapsed = 0
-			end)
-			shaker:SetScript("OnUpdate", function(self, elapsed)
-				elapsed = self.elapsed + elapsed
-				local x, y = 0, 0 -- Resets to original position if we're supposed to stop.
-				if elapsed >= 0.8 then
-					self:Hide()
-				else
-					x, y = random(-8, 8), random(-8, 8)
-				end
-				if WorldFrame:IsProtected() and InCombatLockdown() then
-					if not shaker.fail then
-						shaker.fail = true
-					end
-					self:Hide()
-				else
-					WorldFrame:ClearAllPoints()
-					for i = 1, #self.originalPoints do
-						local v = self.originalPoints[i]
-						WorldFrame:SetPoint(v[1], v[2], v[3], v[4] + x, v[5] + y)
-					end
-				end
-				self.elapsed = elapsed
-			end)
+			shaker:SetScript("OnShow", shaker_OnShow)
+			shaker:SetScript("OnUpdate", shaker_OnUpdate)
 			self.ShakerFrame = shaker
 		end
 
@@ -345,7 +358,7 @@ Skada:RegisterModule("Threat", function(L, P, _, _, M)
 	-- Shamelessly copied from Omen - thanks!
 	function mode:Warn(sound, flash, shake, message)
 		if sound then
-			PlaySoundFile(Skada:MediaFetch("sound", self.db.soundfile))
+			PlaySoundFile(Skada:MediaFetch("sound", self.db.soundfile), "Master")
 		end
 		if flash then
 			self:Flash()
@@ -378,7 +391,7 @@ Skada:RegisterModule("Threat", function(L, P, _, _, M)
 					image = aggro_icon,
 					imageWidth = 18,
 					imageHeight = 18,
-					imageCoords = {0.05, 0.95, 0.05, 0.95},
+					imageCoords = Skada.cropTable,
 					width = "full",
 					order = 0
 				},
@@ -533,7 +546,7 @@ Skada:RegisterModule("Threat", function(L, P, _, _, M)
 			end
 
 			self.db = M.threat
-			Skada.options.args.modules.args.threat = opts
+			O.modules.args.threat = opts
 		end
 	end
 

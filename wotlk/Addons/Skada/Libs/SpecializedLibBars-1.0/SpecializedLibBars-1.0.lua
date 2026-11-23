@@ -2,9 +2,12 @@
 -- Specialized ( = enhanced) for Skada
 -- Note to self: don't forget to notify original author of changes
 -- in the unlikely event they end up being usable outside of Skada.
-local MAJOR, MINOR = "SpecializedLibBars-1.0", 90019
+-- Renaming the library (MAJOR) might break few things.
+
+local MAJOR, MINOR = "SpecializedLibBars-1.0", 90029
 local lib, oldminor = LibStub:NewLibrary(MAJOR, MINOR)
 if not lib then return end -- No Upgrade needed.
+local folder = ...
 
 -------------------------------------------------------------------------------
 -- library callbacks
@@ -20,8 +23,8 @@ local callbacks = lib.callbacks
 
 local GetTime = GetTime
 local min, max, floor = math.min, math.max, math.floor
-local tsort, tinsert, tremove, wipe = table.sort, tinsert, tremove, wipe
-local next, pairs, error, type = next, pairs, error, type
+local tsort, tinsert, tremove, wipe = table.sort, table.insert, table.remove, wipe
+local next, pairs, error, type, format = next, pairs, error, type, string.format
 local CreateFrame = CreateFrame
 local GameTooltip = GameTooltip
 local setmetatable = setmetatable
@@ -188,10 +191,15 @@ local posix = lib.listPosition
 local scrollspeed = 1
 local dummyTable = {}
 
-local ICON_LOCK = [[Interface\AddOns\Skada\Libs\SpecializedLibBars-1.0\lock.tga]]
-local ICON_UNLOCK = [[Interface\AddOns\Skada\Libs\SpecializedLibBars-1.0\unlock.tga]]
+local ICON_LOCK = ([[Interface\AddOns\%s\Libs\%s\lock.tga]]):format(folder, MAJOR)
+local ICON_UNLOCK = ([[Interface\AddOns\%s\Libs\%s\unlock.tga]]):format(folder, MAJOR)
 local ICON_RESIZE = [[Interface\CHATFRAME\UI-ChatIM-SizeGrabber-Up]]
 local ICON_STRETCH = [[Interface\MINIMAP\ROTATING-MINIMAPGUIDEARROW.blp]]
+
+lib.LEFT_TO_RIGHT = 1
+lib.RIGHT_TO_LEFT = 2
+local LEFT_TO_RIGHT = lib.LEFT_TO_RIGHT
+local RIGHT_TO_LEFT = lib.RIGHT_TO_LEFT
 
 -------------------------------------------------------------------------------
 -- local functions
@@ -256,15 +264,13 @@ do
 	end
 
 	local function listOnMouseDown(self, button)
-		if button == "LeftButton" and not self.locked then
-			anchorOnMouseDown(self.button, button)
-		end
+		if self.locked or button ~= "LeftButton" then return end
+		anchorOnMouseDown(self.button, button)
 	end
 
 	local function listOnMouseUp(self, button)
-		if button == "LeftButton" and not self.locked then
-			anchorOnMouseUp(self.button, button)
-		end
+		if self.locked or button ~= "LeftButton" then return end
+		anchorOnMouseUp(self.button, button)
 	end
 
 	local function listOnSizeChanged(self, width)
@@ -278,6 +284,7 @@ do
 		local maxbars = self:GetMaxBars()
 		local numbars = self:GetNumBars()
 		local offset = self:GetBarOffset()
+		direction = self.growup and (0 - direction) or direction
 
 		if direction == 1 and offset > 0 then
 			self:SetBarOffset(IsShiftKeyDown() and 0 or max(0, offset - (IsControlKeyDown() and maxbars or scrollspeed)))
@@ -308,14 +315,14 @@ do
 		end
 
 		if barLists[self] and barLists[self][name] then
-			error("A bar list named " .. name .. " already exists.")
+			error(format("A bar list named %s already exists.", name))
 		end
 
 		barLists[self] = barLists[self] or {}
 
-		orientation = orientation or 1
-		orientation = (orientation == "LEFT") and 1 or orientation
-		orientation = (orientation == "RIGHT") and 3 or orientation
+		orientation = orientation or LEFT_TO_RIGHT
+		orientation = (orientation == "LEFT") and LEFT_TO_RIGHT or orientation
+		orientation = (orientation == "RIGHT") and RIGHT_TO_LEFT or orientation
 
 		frameName = frameName:gsub("%W","")
 		local list = barListPrototype:Bind(createFrame("Frame", frameName, UIParent))
@@ -328,9 +335,9 @@ do
 		list.name = name
 		barLists[self][name] = list
 
-		local myfont = lib.defaultFont
+		local myfont = lib.defaultFont or _G["SkadaRevTitleFont"]
 		if not myfont then
-			myfont = CreateFont("MyTitleFont")
+			myfont = CreateFont("SkadaRevTitleFont")
 			myfont:CopyFontObject(ChatFontSmall)
 			lib.defaultFont = myfont
 		end
@@ -450,7 +457,7 @@ do
 		list:SetScript("OnMouseWheel", listOnMouseWheel)
 
 		list:SetOrientation(orientation)
-		list:SetReverseGrowth(nil, true)
+		list:SetReverseGrowth(nil, nil, true)
 		list:SetWidth(length)
 		list:SetHeight(height)
 
@@ -524,13 +531,12 @@ function lib:ReleaseBar(name)
 		end
 	end
 
-	if bar then
-		bar:OnBarReleased()
-		bars[self][bar.name] = nil
-		recycledBars[#recycledBars + 1] = bar
-		self.numBars = self.numBars - 1
-		callbacks:Fire("BarReleased", bar, bar.name, self.numBars)
-	end
+	if not bar then return end
+	bar:OnBarReleased()
+	bars[self][bar.name] = nil
+	recycledBars[#recycledBars + 1] = bar
+	self.numBars = self.numBars - 1
+	callbacks:Fire("BarReleased", bar, bar.name, self.numBars)
 end
 
 -- changes lists scroll speed
@@ -581,37 +587,33 @@ barListPrototype.SavePosition = SavePosition
 barListPrototype.RestorePosition = RestorePosition
 
 -- returns bar(s) height
-local function GetThickness(self)
+function barListPrototype:GetThickness()
 	return self.thickness
 end
-barListPrototype.GetThickness = GetThickness
-barPrototype.GetThickness = GetThickness
+barPrototype.GetThickness = barListPrototype.GetThickness
 
 -- returns bar's length/group width
-local function GetLength(self)
+function barListPrototype:GetLength()
 	return self.length
 end
-barListPrototype.GetLength = GetLength
-barPrototype.GetLength = GetLength
+barPrototype.GetLength = barListPrototype.GetLength
 
 -- changes size
-local function SetSize(self, width, height)
+function barListPrototype:SetSize(width, height)
 	self:SetWidth(width)
 	self:SetHeight(height)
 end
-barListPrototype.SetSize = SetSize
-barPrototype.SetSize = SetSize
+barPrototype.SetSize = barListPrototype.SetSize
 
 -- handles bar/group show/hide
-local function SetShown(self, show)
+function barListPrototype:SetShown(show)
 	if show and not self:IsShown() then
 		self:Show()
 	elseif not show and self:IsShown() then
 		self:Hide()
 	end
 end
-barListPrototype.SetShown = SetShown
-barPrototype.SetShown = SetShown
+barPrototype.SetShown = barListPrototype.SetShown
 
 -------------------------------------------------------------------------------
 -- bar lists/groups functions
@@ -658,23 +660,24 @@ end
 
 -- changes bars height
 function barListPrototype:SetThickness(thickness)
-	if thickness and self.thickness ~= thickness then
-		self.thickness = thickness
-		if bars[self] then
-			for _, bar in pairs(bars[self]) do
-				bar:SetThickness(self.thickness)
-			end
+	if not thickness or self.thickness == thickness then return end
+
+	self.thickness = thickness
+	if bars[self] then
+		for _, bar in pairs(bars[self]) do
+			bar:SetThickness(self.thickness)
 		end
-		self:UpdateOrientationLayout()
 	end
+	self:UpdateOrientationLayout()
 end
+barListPrototype.SetBarHeight = barListPrototype.SetThickness
 
 -- changes spacing between bars
 function barListPrototype:SetSpacing(spacing)
-	if spacing and self.spacing ~= spacing then
-		self.spacing = spacing
-		self:SortBars()
-	end
+	if not spacing or self.spacing == spacing then return end
+
+	self.spacing = spacing
+	self:SortBars()
 end
 
 -- returns the spacing between bars
@@ -684,31 +687,32 @@ end
 
 -- changes bars orientation
 function barListPrototype:SetOrientation(o)
-	if o and self.orientation ~= o then
-		if o ~= 1 and o ~= 2 then
-			error("orientation must be 1 or 2.")
-		end
+	if not o or self.orientation == 0 then return end
 
-		self.orientation = o
-		if bars[self] then
-			for _, bar in pairs(bars[self]) do
-				bar:SetOrientation(self.orientation)
-			end
-		end
-		self:UpdateOrientationLayout()
+	if o ~= LEFT_TO_RIGHT and o ~= RIGHT_TO_LEFT then
+		error(format("orientation must be %s or %s.", LEFT_TO_RIGHT, RIGHT_TO_LEFT))
 	end
+
+	self.orientation = o
+	if bars[self] then
+		for _, bar in pairs(bars[self]) do
+			bar:SetOrientation(self.orientation)
+		end
+	end
+	self:UpdateOrientationLayout()
 end
 
 -- returns bars orientation
 function barListPrototype:GetOrientation()
-	return self.orientation
+	return self.ownerGroup and self.ownerGroup.orientation or self.orientation
 end
+barPrototype.GetOrientation = barListPrototype.GetOrientation
 
 -- updates orientation layout
 function barListPrototype:UpdateOrientationLayout()
 	barListPrototype.super.SetWidth(self, self.length)
 	self.button:SetWidth(self.length)
-	self:SetReverseGrowth(self.growup, true)
+	self:SetReverseGrowth(self.growup, self.swaptitle, true)
 end
 
 -- barListPrototype:SetSmoothing - bars animation
@@ -717,37 +721,32 @@ function barListPrototype:SetSmoothing(smoothing)
 end
 
 -- changes group grow direction
-function barListPrototype:SetReverseGrowth(reverse, update)
+function barListPrototype:SetReverseGrowth(reverse, swaptitle, update)
 	if (self.growup == reverse) and update then return end -- only update if necessary
 
 	self.growup = reverse or nil
+	self.swaptitle = swaptitle or nil
 
 	self.button:ClearAllPoints()
 	self.resizeright:ClearAllPoints()
 	self.resizeleft:ClearAllPoints()
 	self.lockbutton:ClearAllPoints()
 
-	if self.growup then
+	if (self.growup and not self.swaptitle) or (self.swaptitle and not self.growup) then
 		self.button:SetPoint("BOTTOMLEFT", self, "BOTTOMLEFT")
 		self.button:SetPoint("BOTTOMRIGHT", self, "BOTTOMRIGHT")
-
 		self.resizeright.icon:SetTexCoord(0, 1, 1, 0)
 		self.resizeright:SetPoint("TOPRIGHT", self, "TOPRIGHT")
-
 		self.resizeleft.icon:SetTexCoord(1, 0, 1, 0)
 		self.resizeleft:SetPoint("TOPLEFT", self, "TOPLEFT")
-
 		self.lockbutton:SetPoint("TOP", self, "TOP", 0, -2)
 	else
 		self.button:SetPoint("TOPLEFT", self, "TOPLEFT")
 		self.button:SetPoint("TOPRIGHT", self, "TOPRIGHT")
-
 		self.resizeright.icon:SetTexCoord(0, 1, 0, 1)
 		self.resizeright:SetPoint("BOTTOMRIGHT", self, "BOTTOMRIGHT")
-
 		self.resizeleft.icon:SetTexCoord(1, 0, 0, 1)
 		self.resizeleft:SetPoint("BOTTOMLEFT", self, "BOTTOMLEFT")
-
 		self.lockbutton:SetPoint("BOTTOM", self, "BOTTOM", 0, 2)
 	end
 
@@ -761,13 +760,13 @@ end
 
 -- makes bars (un)clickable
 function barListPrototype:SetClickthrough(clickthrough)
-	if self.clickthrough ~= clickthrough then
-		self.clickthrough = clickthrough or nil
-		if bars[self] then
-			for _, bar in pairs(bars[self]) do
-				bar:EnableMouse(not self.clickthrough)
-			end
-		end
+	if self.clickthrough == clickthrough then return end
+
+	self.clickthrough = clickthrough or nil
+	if not bars[self] then return end
+
+	for _, bar in pairs(bars[self]) do
+		bar:EnableMouse(not self.clickthrough)
 	end
 end
 
@@ -794,7 +793,7 @@ do
 		end
 
 		-- Create button frame.
-		local btn = CreateFrame("Button", "$parent" .. title:gsub("%s+", "_"), self.button)
+		local btn = CreateFrame("Button", format("$parent%s", (index:gsub("^%l", string.upper)):gsub("%s+", "")), self.button)
 		btn:SetFrameLevel(self.button:GetFrameLevel() + 1)
 		btn:SetWidth(14)
 		btn:SetHeight(14)
@@ -863,21 +862,21 @@ end
 
 -- hides anchor icon
 function barListPrototype:HideAnchorIcon()
-	if self.showAnchorIcon then
-		self.showAnchorIcon = nil
-		self.button.icon:SetTexture(nil)
-		self.button.icon:Hide()
-		self:AdjustTitle()
-	end
+	if not self.showAnchorIcon then return end
+
+	self.showAnchorIcon = nil
+	self.button.icon:SetTexture(nil)
+	self.button.icon:Hide()
+	self:AdjustTitle()
 end
 
 -- adds an offset to bars starting point.
 function barListPrototype:SetDisplacement(startpoint)
-	if startpoint and self.startpoint ~= startpoint then
-		self.startpoint = startpoint
-		self:GuessMaxBars()
-		self:SortBars()
-	end
+	if not startpoint or self.startpoint == startpoint then return end
+
+	self.startpoint = startpoint
+	self:GuessMaxBars()
+	self:SortBars()
 end
 
 -- barListPrototype:SetAnchorMouseover - handles anchor mouseover
@@ -886,14 +885,13 @@ do
 		local p = self:GetParent()
 		listOnEnter(p)
 
-		if p.mouseover then
-			p:AdjustTitle(true)
+		if not p.mouseover then return end
 
-			for i = 1, #p.buttons do
-				local b = p.buttons[i]
-				if b and b.visible then
-					b:Show()
-				end
+		p:AdjustTitle(true)
+		for i = 1, #p.buttons do
+			local b = p.buttons[i]
+			if b and b.visible then
+				b:Show()
 			end
 		end
 	end
@@ -902,14 +900,13 @@ do
 		local p = self:GetParent()
 		listOnLeave(p)
 
-		if p.mouseover then
-			p:AdjustTitle()
+		if not p.mouseover then return end
 
-			for i = 1, #p.buttons do
-				local b = p.buttons[i]
-				if b and b.visible then
-					b:Hide()
-				end
+		p:AdjustTitle()
+		for i = 1, #p.buttons do
+			local b = p.buttons[i]
+			if b and b.visible then
+				b:Hide()
 			end
 		end
 	end
@@ -924,13 +921,13 @@ end
 
 -- adjusts anchor text
 function barListPrototype:AdjustTitle(nomouseover)
-	self.button.text:SetJustifyH(self.orientation == 2 and "RIGHT" or "LEFT")
+	self.button.text:SetJustifyH(self.orientation == RIGHT_TO_LEFT and "RIGHT" or "LEFT")
 	self.button.text:SetJustifyV("MIDDLE")
 
 	self.button.icon:ClearAllPoints()
 	self.button.text:ClearAllPoints()
 
-	if self.lastbtn and self.orientation == 2 then
+	if self.lastbtn and self.orientation == RIGHT_TO_LEFT then
 		if self.mouseover and not nomouseover then
 			self.button.text:SetPoint("LEFT", self.button, "LEFT", 5, 1)
 		else
@@ -966,11 +963,11 @@ function barListPrototype:AdjustButtons()
 			btn:ClearAllPoints()
 
 			if btn.visible then
-				if nr == 0 and self.orientation == 2 then
+				if nr == 0 and self.orientation == RIGHT_TO_LEFT then
 					btn:SetPoint("TOPLEFT", self.button, "TOPLEFT", 5, -(max(height - btn:GetHeight(), 0) / 2))
 				elseif nr == 0 then
 					btn:SetPoint("TOPRIGHT", self.button, "TOPRIGHT", -5, -(max(height - btn:GetHeight(), 0) / 2))
-				elseif self.orientation == 2 then
+				elseif self.orientation == RIGHT_TO_LEFT then
 					btn:SetPoint("TOPLEFT", self.lastbtn, "TOPRIGHT", spacing, 0)
 				else
 					btn:SetPoint("TOPRIGHT", self.lastbtn, "TOPLEFT", -spacing, 0)
@@ -994,21 +991,20 @@ end
 
 -- changes spacing between anchor buttons
 function barListPrototype:SetButtonsSpacing(spacing)
-	if self.btnspacing ~= spacing then
-		self.btnspacing = spacing or 1
-		self:AdjustButtons()
-	end
+	if self.btnspacing == spacing then return end
+	self.btnspacing = spacing or 1
+	self:AdjustButtons()
 end
 
 -- changes anchor buttons opacity
 function barListPrototype:SetButtonsOpacity(opacity)
-	if opacity and self.buttonsOpacity ~= opacity then
-		self.buttonsOpacity = opacity
-		for i = 1, #self.buttons do
-			local btn = self.buttons[i]
-			if btn then
-				btn:SetAlpha(opacity)
-			end
+	if not opacity or self.buttonsOpacity == opacity then return end
+
+	self.buttonsOpacity = opacity
+	for i = 1, #self.buttons do
+		local btn = self.buttons[i]
+		if btn then
+			btn:SetAlpha(opacity)
 		end
 	end
 end
@@ -1072,10 +1068,9 @@ function barListPrototype:SetBarBackgroundColor(r, g, b, a)
 		self.bgcolor[3] = b
 		self.bgcolor[4] = a or 1
 
-		if bars[self] then
-			for _, bar in pairs(bars[self]) do
-				bar.bg:SetVertexColor(self.bgcolor[1], self.bgcolor[2], self.bgcolor[3], self.bgcolor[4])
-			end
+		if not bars[self] then return end
+		for _, bar in pairs(bars[self]) do
+			bar.bg:SetVertexColor(self.bgcolor[1], self.bgcolor[2], self.bgcolor[3], self.bgcolor[4])
 		end
 	end
 end
@@ -1112,31 +1107,31 @@ do
 	local strfind = strfind or string.find
 	local function sizerOnMouseDown(self, button)
 		local p = self:GetParent()
-		if button == "LeftButton" and not p.isResizing then
-			p.isResizing = true
+		if p.isResizing or button ~= "LeftButton" then return end
 
-			self.direction = self.direction or strfind(self:GetName(), "Left") and "LEFT" or "RIGHT"
-			if IsShiftKeyDown() then
-				p:StartSizing(self.direction)
-			elseif IsAltKeyDown() then
-				p:StartSizing(p.growup and "TOP" or "BOTTOM")
-			else
-				p:StartSizing((p.growup and "TOP" or "BOTTOM") .. self.direction)
-			end
+		p.isResizing = true
+		self.direction = self.direction or strfind(self:GetName(), "Left") and "LEFT" or "RIGHT"
+
+		if IsShiftKeyDown() then
+			p:StartSizing(self.direction)
+		elseif IsAltKeyDown() then
+			p:StartSizing(p.growup and "TOP" or "BOTTOM")
+		else
+			p:StartSizing(format("%s%s", (p.growup and "TOP" or "BOTTOM"), self.direction))
 		end
 	end
 
 	local function sizerOnMouseUp(self, button)
 		local p = self:GetParent()
-		if button == "LeftButton" and p.isResizing then
-			p.isResizing = nil
-			local top, left = p:GetTop(), p:GetLeft()
-			p:StopMovingOrSizing()
-			p:SetLength(p:GetLength())
-			p:GuessMaxBars()
-			p:SortBars()
-			callbacks:Fire("WindowResized", p)
-		end
+		if button ~= "LeftButton" or not p.isResizing then return end
+
+		p.isResizing = nil
+		local top, left = p:GetTop(), p:GetLeft()
+		p:StopMovingOrSizing()
+		p:SetLength(p:GetLength())
+		p:GuessMaxBars()
+		p:SortBars()
+		callbacks:Fire("WindowResized", p)
 	end
 
 	local function sizerOnEnter(self)
@@ -1211,31 +1206,33 @@ do
 			self.resizeright:SetScript("OnEnter", nil)
 			self.resizeright:SetScript("OnLeave", nil)
 			self.resizeright:Hide()
-		else
-			-- window
-			self:SetScript("OnEnter", listOnEnter)
-			self:SetScript("OnLeave", listOnLeave)
 
-			-- lock button
-			self.lockbutton:SetScript("OnClick", lockOnClick)
-			self.lockbutton:SetScript("OnEnter", lockOnEnter)
-			self.lockbutton:SetScript("OnLeave", lockOnLeave)
-			self.lockbutton:Show()
-
-			-- left resizer
-			self.resizeleft:SetScript("OnMouseDown", sizerOnMouseDown)
-			self.resizeleft:SetScript("OnMouseUp", sizerOnMouseUp)
-			self.resizeleft:SetScript("OnEnter", sizerOnEnter)
-			self.resizeleft:SetScript("OnLeave", sizerOnLeave)
-			self.resizeleft:Show()
-
-			-- right resizer
-			self.resizeright:SetScript("OnMouseDown", sizerOnMouseDown)
-			self.resizeright:SetScript("OnMouseUp", sizerOnMouseUp)
-			self.resizeright:SetScript("OnEnter", sizerOnEnter)
-			self.resizeright:SetScript("OnLeave", sizerOnLeave)
-			self.resizeright:Show()
+			return
 		end
+
+		-- window
+		self:SetScript("OnEnter", listOnEnter)
+		self:SetScript("OnLeave", listOnLeave)
+
+		-- lock button
+		self.lockbutton:SetScript("OnClick", lockOnClick)
+		self.lockbutton:SetScript("OnEnter", lockOnEnter)
+		self.lockbutton:SetScript("OnLeave", lockOnLeave)
+		self.lockbutton:Show()
+
+		-- left resizer
+		self.resizeleft:SetScript("OnMouseDown", sizerOnMouseDown)
+		self.resizeleft:SetScript("OnMouseUp", sizerOnMouseUp)
+		self.resizeleft:SetScript("OnEnter", sizerOnEnter)
+		self.resizeleft:SetScript("OnLeave", sizerOnLeave)
+		self.resizeleft:Show()
+
+		-- right resizer
+		self.resizeright:SetScript("OnMouseDown", sizerOnMouseDown)
+		self.resizeright:SetScript("OnMouseUp", sizerOnMouseUp)
+		self.resizeright:SetScript("OnEnter", sizerOnEnter)
+		self.resizeright:SetScript("OnLeave", sizerOnLeave)
+		self.resizeright:Show()
 	end
 end
 
@@ -1266,15 +1263,14 @@ do
 
 	function stretchOnMouseDown(self, button)
 		local p = self:GetParent()
-		if button == "LeftButton" and p then
-			p.stretch_on = true
-			p:AddOnUpdate(listOnStretch)
-		end
+		if not p or button ~= "LeftButton" then return end
+		p.stretch_on = true
+		p:AddOnUpdate(listOnStretch)
 	end
 
 	function stretchOnMouseUp(self, button)
 		local p = self:GetParent()
-		if p and p.stretch_on then
+		if p and p.stretch_on and button == "LeftButton" then
 			p.stretch_off = true
 		end
 	end
@@ -1291,43 +1287,44 @@ do
 
 	function barListPrototype:SetDisableStretch(disable)
 		self.nostrech = disable or nil
+
 		if self.nostrech then
 			self.stretcher:SetScript("OnMouseDown", nil)
 			self.stretcher:SetScript("OnMouseUp", nil)
 			self.stretcher:SetScript("OnEnter", nil)
 			self.stretcher:SetScript("OnLeave", nil)
 			self.stretcher:Hide()
-		else
-			self.stretcher:SetScript("OnMouseDown", stretchOnMouseDown)
-			self.stretcher:SetScript("OnMouseUp", stretchOnMouseUp)
-			self.stretcher:SetScript("OnEnter", stretchOnEnter)
-			self.stretcher:SetScript("OnLeave", stretchOnLeave)
-			self.stretcher:Show()
+			return
 		end
+
+		self.stretcher:SetScript("OnMouseDown", stretchOnMouseDown)
+		self.stretcher:SetScript("OnMouseUp", stretchOnMouseUp)
+		self.stretcher:SetScript("OnEnter", stretchOnEnter)
+		self.stretcher:SetScript("OnLeave", stretchOnLeave)
+		self.stretcher:Show()
 	end
 end
 
 -- reverse group's stretch direction
 function barListPrototype:SetReverseStretch(stretchdown)
 	self.stretchdown = stretchdown or nil
-	if self.stretcher:IsShown() then
-		self.stretcher:ClearAllPoints()
-		if self.stretchdown then
-			self.stretcher:SetPoint("TOP", self, "BOTTOM")
-			self.stretcher.icon:SetTexCoord(0.219, 0.781, 0.781, 0)
-		else
-			self.stretcher:SetPoint("BOTTOMRIGHT", self, "TOPRIGHT")
-			self.stretcher.icon:SetTexCoord(0.219, 0.781, 0, 0.781)
-		end
+	if not self.stretcher:IsShown() then return end
+
+	self.stretcher:ClearAllPoints()
+	if self.stretchdown then
+		self.stretcher:SetPoint("TOP", self, "BOTTOM")
+		self.stretcher.icon:SetTexCoord(0.219, 0.781, 0.781, 0)
+	else
+		self.stretcher:SetPoint("BOTTOMRIGHT", self, "TOPRIGHT")
+		self.stretcher.icon:SetTexCoord(0.219, 0.781, 0, 0.781)
 	end
 end
 
 -- changes bars offset
 function barListPrototype:SetBarOffset(offset)
-	if self.offset ~= offset then
-		self.offset = offset
-		self:SortBars()
-	end
+	if self.offset == offset then return end
+	self.offset = offset
+	self:SortBars()
 end
 
 -- returns bars offset
@@ -1345,6 +1342,7 @@ function barListPrototype:SetLength(length)
 	end
 	self:UpdateOrientationLayout()
 end
+barListPrototype.SetBarWidth = barListPrototype.SetLength
 
 -- changes group height
 function barListPrototype:SetHeight(height)
@@ -1368,22 +1366,11 @@ function barListPrototype:GetSortFunction(func)
 	return self.sortFunc
 end
 
--- changes bars width
-function barListPrototype:SetBarWidth(width)
-	self:SetLength(width)
-end
-
--- changes bars height
-function barListPrototype:SetBarHeight(height)
-	self:SetThickness(height)
-end
-
 -- sets max bars
 function barListPrototype:SetMaxBars(num)
-	if self.maxBars ~= num then
-		self.maxBars = floor(num)
-		self:SortBars()
-	end
+	if not num or self.maxBars == num then return end
+	self.maxBars = floor(num)
+	self:SortBars()
 end
 
 -- returns max bars
@@ -1411,16 +1398,16 @@ end
 
 -- changes bars texture
 function barListPrototype:SetTexture(tex)
-	if self.texture ~= tex then
-		self.texture = tex
-		if bars[self] then
-			for _, bar in pairs(bars[self]) do
-				bar.fg:SetTexture(self.texture)
-				bar.bg:SetTexture(self.texture)
-			end
-		end
+	if self.texture == tex then return end
+	self.texture = tex
+
+	if not bars[self] then return end
+	for _, bar in pairs(bars[self]) do
+		bar.fg:SetTexture(self.texture)
+		bar.bg:SetTexture(self.texture)
 	end
 end
+barPrototype.SetTexture = barListPrototype.SetTexture
 
 -- changes labels and timerLabels fonts
 function barListPrototype:SetFont(font, size, outline, numFont, numSize, numOutline)
@@ -1464,20 +1451,18 @@ end
 -- show bar icons
 function barListPrototype:ShowBarIcons()
 	self.showIcon = true
-	if bars[self] then
-		for _, bar in pairs(bars[self]) do
-			bar:ShowIcon()
-		end
+	if not bars[self] then return end
+	for _, bar in pairs(bars[self]) do
+		bar:ShowIcon()
 	end
 end
 
 -- hide bar icons
 function barListPrototype:HideBarIcons()
 	self.showIcon = nil
-	if bars[self] then
-		for _, bar in pairs(bars[self]) do
-			bar:HideIcon()
-		end
+	if not bars[self] then return end
+	for _, bar in pairs(bars[self]) do
+		bar:HideIcon()
 	end
 end
 
@@ -1485,44 +1470,41 @@ end
 function barListPrototype:IsIconShown()
 	return self.showIcon
 end
+barPrototype.IsIconShown = barListPrototype.IsIconShown
 
 -- shows bar labels
 function barListPrototype:ShowLabel()
 	self.showLabel = true
-	if bars[self] then
-		for _, bar in pairs(bars[self]) do
-			bar:ShowLabel()
-		end
+	if not bars[self] then return end
+	for _, bar in pairs(bars[self]) do
+		bar:ShowLabel()
 	end
 end
 
 -- hides bar labesl
 function barListPrototype:HideLabel()
 	self.showLabel = nil
-	if bars[self] then
-		for _, bar in pairs(bars[self]) do
-			bar:HideLabel()
-		end
+	if not bars[self] then return end
+	for _, bar in pairs(bars[self]) do
+		bar:HideLabel()
 	end
 end
 
 -- shows bars timer labels
 function barListPrototype:ShowTimerLabel()
 	self.showTimerLabel = true
-	if bars[self] then
-		for _, bar in pairs(bars[self]) do
-			bar:ShowTimerLabel()
-		end
+	if not bars[self] then return end
+	for _, bar in pairs(bars[self]) do
+		bar:ShowTimerLabel()
 	end
 end
 
 -- hides bars timer labels
 function barListPrototype:HideTimerLabel()
 	self.showTimerLabel = nil
-	if bars[self] then
-		for _, bar in pairs(bars[self]) do
-			bar:HideTimerLabel()
-		end
+	if not bars[self] then return end
+	for _, bar in pairs(bars[self]) do
+		bar:HideTimerLabel()
 	end
 end
 
@@ -1535,11 +1517,10 @@ function barListPrototype:SetTextColor(r, g, b, a)
 		self.textcolor[3] = b or 1
 		self.textcolor[4] = a or 1
 
-		if bars[self] then
-			for _, bar in pairs(bars[self]) do
-				bar.label:SetTextColor(self.textcolor[1], self.textcolor[2], self.textcolor[3], self.textcolor[4])
-				bar.timerLabel:SetTextColor(self.textcolor[1], self.textcolor[2], self.textcolor[3], self.textcolor[4])
-			end
+		if not bars[self] then return end
+		for _, bar in pairs(bars[self]) do
+			bar.label:SetTextColor(self.textcolor[1], self.textcolor[2], self.textcolor[3], self.textcolor[4])
+			bar.timerLabel:SetTextColor(self.textcolor[1], self.textcolor[2], self.textcolor[3], self.textcolor[4])
 		end
 	end
 end
@@ -1555,15 +1536,14 @@ function barListPrototype:SetColor(r, g, b, a)
 		self.colors[3] = b
 		self.colors[4] = a
 
-		if bars[self] then
-			for _, bar in pairs(bars[self]) do
-				if bar.lockColor and alpha then
-					bar:SetColor(nil, nil, nil, a, bar.lockColor)
-				elseif bar.lockColor then
-					bar:UpdateColor()
-				else
-					bar:SetColor(r, g, b, a, bar.lockColor)
-				end
+		if not bars[self] then return end
+		for _, bar in pairs(bars[self]) do
+			if bar.lockColor and alpha then
+				bar:SetColor(nil, nil, nil, a, bar.lockColor)
+			elseif bar.lockColor then
+				bar:UpdateColor()
+			else
+				bar:SetColor(r, g, b, a, bar.lockColor)
 			end
 		end
 	end
@@ -1571,17 +1551,16 @@ end
 
 -- enables or disabled spark icon
 function barListPrototype:SetUseSpark(usespark)
-	if self.usespark ~= usespark then
-		self.usespark = usespark or nil
+	if self.usespark == usespark then return end
 
-		if bars[self] then
-			for _, bar in pairs(bars[self]) do
-				if self.usespark and not bar.spark:IsShown() then
-					bar.spark:Show()
-				elseif not self.usespark and bar.spark:IsShown() then
-					bar.spark:Hide()
-				end
-			end
+	self.usespark = usespark or nil
+	if not bars[self] then return end
+
+	for _, bar in pairs(bars[self]) do
+		if self.usespark and not bar.spark:IsShown() then
+			bar.spark:Show()
+		elseif not self.usespark and bar.spark:IsShown() then
+			bar.spark:Hide()
 		end
 	end
 end
@@ -1590,11 +1569,12 @@ end
 do
 	local values = {}
 
+	local tostring = tostring
 	local function sortFunc(a, b)
 		local apct, bpct = a.value / a.maxValue, b.value / b.maxValue
 		if apct == bpct then
 			if a.maxValue == b.maxValue then
-				return a.name > b.name
+				return tostring(a.name) > tostring(b.name)
 			else
 				return a.maxValue > b.maxValue
 			end
@@ -1608,15 +1588,13 @@ do
 		local ct = 0
 		local has_fixed = nil
 
-		if not bars[self] then
-			return
-		else
-			for _, bar in pairs(bars[self]) do
-				ct = ct + 1
-				values[ct] = bar
-				bar:Hide()
-				has_fixed = has_fixed or bar.fixed
-			end
+		if not bars[self] then return end
+
+		for _, bar in pairs(bars[self]) do
+			ct = ct + 1
+			values[ct] = bar
+			bar:Hide()
+			has_fixed = has_fixed or bar.fixed
 		end
 
 		for i = ct + 1, #values do
@@ -1631,27 +1609,22 @@ do
 		local orientation = self.orientation
 		local growup = self.growup
 		local spacing = self.spacing
-		local startpoint = self.button:IsVisible() and (self.button:GetHeight() + self.startpoint) or 0
+		local startpoint = (self.button:IsVisible() and not self.swaptitle) and (self.button:GetHeight() + self.startpoint) or 0
 
-		local from, to
 		local offset = self.offset
 		local y1, y2 = startpoint, startpoint
 		local maxbars = min(#values, self.maxBars)
+		local start = min(1 + offset, #values)
+		local stop = min(maxbars + offset, #values)
 
-		local start, stop, step, fixnum
+		local from, to, fixnum
 		if growup then
 			from = "BOTTOM"
 			to = "TOP"
-			start = min(#values, maxbars + offset)
-			stop = min(#values, 1 + offset)
-			step = -1
 			fixnum = start
 		else
 			from = "TOP"
 			to = "BOTTOM"
-			start = min(1 + offset, #values)
-			stop = min(maxbars + offset, #values)
-			step = 1
 			fixnum = stop
 		end
 
@@ -1669,7 +1642,7 @@ do
 		local thickness = self.thickness
 		local shown = 0
 
-		for i = start, stop, step do
+		for i = start, stop, 1 do
 			local origTo = to
 			local v = values[i]
 			if lastBar == self then
@@ -1689,7 +1662,7 @@ do
 
 			local x1, x2 = 0, 0 -- TODO: find a better way
 			if showIcon and lastBar == self then
-				if orientation == 1 then
+				if orientation == LEFT_TO_RIGHT then
 					x1 = thickness
 				else
 					x2 = -thickness
@@ -1698,8 +1671,8 @@ do
 
 			if shown <= maxbars and v then
 				v:ClearAllPoints()
-				v:SetPoint(from .. "LEFT", lastBar, to .. "LEFT", x1, y1)
-				v:SetPoint(from .. "RIGHT", lastBar, to .. "RIGHT", x2, y2)
+				v:SetPoint(format("%sLEFT", from), lastBar, format("%sLEFT", to), x1, y1)
+				v:SetPoint(format("%sRIGHT", from), lastBar, format("%sRIGHT", to), x2, y2)
 				v:Show()
 
 				shown = shown + 1
@@ -1728,23 +1701,23 @@ do
 
 	-- adds OnUpdate function
 	function barListPrototype:AddOnUpdate(func)
-		if type(func) == "function" then
-			self.updateFuncs = self.updateFuncs or new()
-			self.updateFuncs[func] = true
-			self:SetScript("OnUpdate", listOnUpdate)
-		end
+		if type(func) ~= "function" then return end
+		self.updateFuncs = self.updateFuncs or new()
+		self.updateFuncs[func] = true
+		self:SetScript("OnUpdate", listOnUpdate)
 	end
+	barPrototype.AddOnUpdate = barListPrototype.AddOnUpdate
 end
 
 -- removes OnUpdate function
 function barListPrototype:RemoveOnUpdate(func)
-	if self.updateFuncs then
-		self.updateFuncs[func] = nil
-		if next(self.updateFuncs) == nil then
-			self.updateFuncs = del(self.updateFuncs)
-		end
+	if not self.updateFuncs then return end
+	self.updateFuncs[func] = nil
+	if next(self.updateFuncs) == nil then
+		self.updateFuncs = del(self.updateFuncs)
 	end
 end
+barPrototype.RemoveOnUpdate = barListPrototype.RemoveOnUpdate
 
 -------------------------------------------------------------------------------
 -- bar functions
@@ -1754,9 +1727,8 @@ end
 do
 	local function barOnMouseDown(self, button)
 		local p = self:GetParent()
-		if p then
-			callbacks:Fire("BarClick", self, button)
-		end
+		if not p then return end
+		callbacks:Fire("BarClick", self, button)
 	end
 
 	local function barOnEnter(self, motion)
@@ -1777,7 +1749,7 @@ do
 		callbacks:Fire("BarLeave", self, motion)
 	end
 
-	local DEFAULT_ICON = [[Interface\Icons\INV_Misc_QuestionMark]]
+	local DEFAULT_ICON = [[Interface\ICONS\INV_Misc_QuestionMark]]
 	function lib.Create(self, text, value, maxVal, icon, orientation, length, thickness)
 		self:SetScript("OnMouseDown", barOnMouseDown)
 		self:SetScript("OnEnter", barOnEnter)
@@ -1789,6 +1761,9 @@ do
 		self.bg:SetVertexColor(0.3, 0.3, 0.3, 0.6)
 
 		self.fg = self.fg or self:CreateTexture(nil, "BORDER")
+		self.fg:SetAllPoints()
+		self.fg.SetValue = self.fg.SetWidth
+		self.fg:SetValue(0)
 
 		self.hg = self.hg or self:CreateTexture(nil, "ARTWORK")
 		self.hg:SetAllPoints()
@@ -1839,7 +1814,7 @@ do
 
 		self.length = length or 200
 		self.thickness = thickness or 15
-		self:SetOrientation(orientation or 1)
+		self:SetOrientation(orientation or LEFT_TO_RIGHT)
 
 		self.value = value or 1
 		self.maxValue = maxVal or self.value
@@ -1882,16 +1857,17 @@ end
 
 -- changes bar icon texture
 function barPrototype:SetIcon(icon, ...)
-	if icon then
-		self.icon:SetTexture(icon)
-		if self.showIcon then
-			self.iconFrame:Show()
-		end
-		if ... then
-			self.icon:SetTexCoord(...)
-		end
-	else
+	if not icon then
 		self.iconFrame:Hide()
+		return
+	end
+
+	self.icon:SetTexture(icon)
+	if self.showIcon then
+		self.iconFrame:Show()
+	end
+	if ... then
+		self.icon:SetTexCoord(...)
 	end
 end
 
@@ -1909,11 +1885,6 @@ function barPrototype:HideIcon()
 	if self.icon then
 		self.iconFrame:Hide()
 	end
-end
-
--- returns true if bar's icon is set to be shown
-function barPrototype:IsIconShown()
-	return self.showIcon
 end
 
 -- changes bar's label text
@@ -1995,9 +1966,8 @@ end
 
 -- updates bar's foreground color
 function barPrototype:UpdateColor()
-	if self.colors then
-		self.fg:SetVertexColor(self.colors[1], self.colors[2], self.colors[3], self.colors[4] or 1)
-	end
+	if not self.colors then return end
+	self.fg:SetVertexColor(self.colors[1], self.colors[2], self.colors[3], self.colors[4] or 1)
 end
 
 -- barPrototype:SetLength -- changes bar's width
@@ -2034,20 +2004,15 @@ function barPrototype:SetOrientation(o)
 	self:SetThickness(self.thickness)
 end
 
--- returns bar's orientation
-function barPrototype:GetOrientation()
-	return self.orientation
-end
-
 -- updates bar's orientation
 function barPrototype:UpdateOrientationLayout(orientation)
-	local t = nil
-	if orientation == 1 then
-		t = self.iconFrame
+	if orientation == LEFT_TO_RIGHT then
+		local t = self.iconFrame
 		t:ClearAllPoints()
 		t:SetPoint("RIGHT", self, "LEFT")
 
 		t = self.fg
+		t.SetValue = t.SetWidth
 		t:ClearAllPoints()
 		t:SetPoint("TOPLEFT", self, "TOPLEFT")
 		t:SetPoint("BOTTOMLEFT", self, "BOTTOMLEFT")
@@ -2072,12 +2037,13 @@ function barPrototype:UpdateOrientationLayout(orientation)
 		t:SetJustifyV("MIDDLE")
 
 		self.bg:SetTexCoord(0, 1, 0, 1)
-	elseif orientation == 2 then
-		t = self.iconFrame
+	elseif orientation == RIGHT_TO_LEFT then
+		local t = self.iconFrame
 		t:ClearAllPoints()
 		t:SetPoint("LEFT", self, "RIGHT")
 
 		t = self.fg
+		t.SetValue = t.SetWidth
 		t:ClearAllPoints()
 		t:SetPoint("TOPRIGHT", self, "TOPRIGHT")
 		t:SetPoint("BOTTOMRIGHT", self, "BOTTOMRIGHT")
@@ -2110,11 +2076,11 @@ end
 do
 	local function SetTextureValue(self, amt, dist)
 		dist = max(0.0001, dist - (self.showIcon and self.thickness or 0))
-		self.fg:SetWidth(amt * dist)
+		self.fg:SetValue(amt * dist)
 
-		if self.ownerGroup.orientation == 1 then
+		if self.ownerGroup.orientation == LEFT_TO_RIGHT then
 			self.fg:SetTexCoord(0, amt, 0, 1)
-		elseif self.ownerGroup.orientation == 2 then
+		elseif self.ownerGroup.orientation == RIGHT_TO_LEFT then
 			self.fg:SetTexCoord(1 - amt, 1, 0, 1)
 		end
 	end
@@ -2393,11 +2359,10 @@ do
 
 		local anchor, distance = getClosestAnchor(self, frame)
 		local maxDistance = (tonumber(tolerance) or DEFAULT_STICKY_TOLERANCE) ^ 2
+		if distance > maxDistance then return end
 
-		if distance <= maxDistance then
-			anchorFrame(self, frame, anchor, xOfs, yOfs)
-			return anchor, distance
-		end
+		anchorFrame(self, frame, anchor, xOfs, yOfs)
+		return anchor, distance
 	end
 
 	-- iterate through all registered frames, and try to stick to the nearest one
@@ -2406,10 +2371,10 @@ do
 		if not group then return end
 
 		local frame, anchor, id = getClosestFrame(self, group, tolerance)
-		if frame then
-			anchorFrame(self, frame, anchor, xOfs, yOfs)
-			return anchor, id, frame
-		end
+		if not frame then return end
+
+		anchorFrame(self, frame, anchor, xOfs, yOfs)
+		return anchor, id, frame
 	end
 
 	local function addFrame(groupName, id, frame)
@@ -2420,11 +2385,10 @@ do
 			group = lib._sticky[groupName]
 		end
 
-		if not group[id] then
-			group[id] = frame
-			callbacks:Fire("OnAddFrame", frame, groupName, id)
-			return true
-		end
+		if group[id] then return end
+		group[id] = frame
+		callbacks:Fire("OnAddFrame", frame, groupName, id)
+		return true
 	end
 
 	local function removeFrame(groupName, id)
@@ -2432,28 +2396,24 @@ do
 		if not group then return end
 
 		local frame = group[id]
-		if frame then
-			group[id] = nil
-			callbacks:Fire("OnRemoveFrame", frame, groupName, id)
+		if not frame then return end
 
-			-- free tables
-			if next(group) == nil then
-				lib._sticky[groupName] = del(group)
-			end
-			if next(lib._sticky) == nil then
-				lib._sticky = del(lib._sticky)
-			end
+		group[id] = nil
+		callbacks:Fire("OnRemoveFrame", frame, groupName, id)
 
-			return true
+		-- free tables
+		if next(group) == nil then
+			lib._sticky[groupName] = del(group)
 		end
+		if next(lib._sticky) == nil then
+			lib._sticky = del(lib._sticky)
+		end
+
+		return true
 	end
 
 	function barListPrototype:SetSticky(sticky, groupName)
-		if sticky then
-			addFrame(groupName, self.name, self)
-		else
-			removeFrame(groupName, self.name)
-		end
+		return sticky and addFrame(groupName, self.name, self) or removeFrame(groupName, self.name)
 	end
 end
 
@@ -2475,7 +2435,9 @@ do
 		"GetBarGroups",
 		"SetScrollSpeed",
 		"RegisterCallback",
-		"callbacks"
+		"callbacks",
+		"LEFT_TO_RIGHT",
+		"RIGHT_TO_LEFT"
 	}
 
 	function lib:Embed(target)

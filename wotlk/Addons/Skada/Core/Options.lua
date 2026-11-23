@@ -7,7 +7,8 @@ local ACR = LibStub("AceConfigRegistry-3.0")
 
 local min, max = math.min, math.max
 local next, format = next, format or string.format
-local del = Private.delTable
+local wipe, del = wipe, Private.delTable
+local ConfirmDialog = Private.ConfirmDialog
 local _
 
 -- references: windows, modes
@@ -102,6 +103,7 @@ Skada.defaults = {
 		memorycheck = true,
 		mergepets = true,
 		setnumber = true,
+		realmless = true,
 		showranks = true,
 		tooltips = true,
 		brackets = 1,
@@ -127,24 +129,28 @@ Skada.defaults = {
 		reset = {instance = 1, join = 3, leave = 1},
 		toast = {spawn_point = "BOTTOM", duration = 5, opacity = 0.75},
 		modulesBlocked = {
+			["Absorbed Damage"] = true,
 			["Avoidance & Mitigation"] = true,
 			["CC Breaks"] = true,
-			["Damage Done By Spell"] = true,
+			["Casts"] = true,
 			["DTPS"] = true,
+			["Damage Done By School"] = true,
+			["Damage Done By Spell"] = true,
 			["Enemy Buffs"] = true,
 			["Enemy Debuffs"] = true,
 			["Enemy Healing Done"] = true,
+			["HPS"] = true,
 			["Healing Done By Spell"] = true,
 			["Healing Taken"] = true,
 			["Healthstones"] = true,
-			["HPS"] = true,
-			["Total Healing"] = true,
 			["Improvement"] = true,
+			["Killing Blows"] = true,
 			["My Spells"] = true,
 			["Overhealing"] = true,
 			["Overkill"] = true,
 			["Player vs. Player"] = true,
 			["Themes"] = true,
+			["Total Healing"] = true,
 			["Useful Damage"] = true,
 			-- display systems
 			["Inline Bar Display"] = true,
@@ -227,6 +233,24 @@ options.set = function(info, value)
 end
 
 -- windows options
+local tremove = Private.tremove
+local function delete_all_windows()
+	local win = tremove(windows)
+	while win do
+		win:Destroy()
+		win = tremove(windows)
+	end
+
+	local wins = Skada.profile.windows
+	win = tremove(wins)
+	while win do
+		Skada.options.args.windows.args[win.name] = del(Skada.options.args.windows.args[win.name], true)
+		win = tremove(wins)
+	end
+	Skada:NotifyChange()
+	Skada:CleanGarbage()
+end
+
 options.args.windows = {
 	type = "group",
 	name = L["Windows"],
@@ -285,6 +309,16 @@ options.args.windows = {
 					end
 				}
 			}
+		},
+		delete = {
+			type = "execute",
+			name = L["Delete All Windows"],
+			width = "full",
+			order = 1,
+			disabled = function() return (not windows or #windows <= 0) end,
+			func = function()
+				ConfirmDialog(L["Are you sure you want to delete all windows?"], delete_all_windows)
+			end
 		}
 	}
 }
@@ -751,6 +785,7 @@ options.args.modules = {
 			inline = true,
 			order = 30,
 			get = function(info)
+				Skada.profile.modulesBlocked = Skada.profile.modulesBlocked or {}
 				return Skada.profile.modulesBlocked[info[#info]]
 			end,
 			set = function(info, value)
@@ -910,14 +945,14 @@ do
 					},
 					date = {
 						type = "description",
-						name = format("\n\124cffffd200%s\124r:  %s", L["Date"], GetAddOnMetadata(folder, "X-Date")),
+						name = format("\n\124cffffd200%s\124r:  %s", L["Date"], Skada.date),
 						fontSize = "medium",
 						width = "double",
 						order = 20
 					},
 					author = {
 						type = "description",
-						name = format("\n\124cffffd200%s\124r:  %s", L["Author"], GetAddOnMetadata(folder, "Author")),
+						name = format("\n\124cffffd200%s\124r:  %s", L["Author"], Skada.author),
 						fontSize = "medium",
 						width = "double",
 						order = 30
@@ -1054,8 +1089,22 @@ do
 		end
 	end
 
-	local modesList = nil
+	local modesList, modeValues
 	function Private.FrameOptions(db, include_dimensions)
+		if not modeValues then
+			modeValues = function()
+				if not modesList then
+					modesList = {[""] = L["None"]}
+					for i = 1, #modes do
+						if modes[i] then
+							modesList[modes[i].moduleName] = modes[i].localeName
+						end
+					end
+				end
+				return modesList
+			end
+		end
+
 		local obj = {
 			type = "group",
 			name = L["Window"],
@@ -1293,34 +1342,14 @@ do
 									name = L["Combat Mode"],
 									desc = L["opt_combatmode_desc"],
 									order = 10,
-									values = function()
-										if not modesList then
-											modesList = {[""] = L["None"]}
-											for i = 1, #modes do
-												if modes[i] then
-													modesList[modes[i].moduleName] = modes[i].localeName
-												end
-											end
-										end
-										return modesList
-									end
+									values = modeValues
 								},
 								wipemode = {
 									type = "select",
 									name = L["Wipe Mode"],
 									desc = L["opt_wipemode_desc"],
 									order = 20,
-									values = function()
-										if not modesList then
-											modesList = {[""] = L["None"]}
-											for i = 1, #modes do
-												if modes[i] then
-													modesList[modes[i].moduleName] = modes[i].localeName
-												end
-											end
-										end
-										return modesList
-									end
+									values = modeValues
 								},
 								returnaftercombat = {
 									type = "toggle",
@@ -1470,8 +1499,7 @@ end
 -- profile import, export and sharing
 
 do
-	local ipairs, strmatch, uformat = ipairs, strmatch, Private.uformat
-	local UnitName, GetRealmName, collectgarbage = UnitName, GetRealmName, collectgarbage
+	local ipairs, strmatch, uformat, collectgarbage = ipairs, strmatch, Private.uformat, collectgarbage
 	local serialize, deserialize = Private.serialize, Private.deserialize
 	local copy, open_window = Private.tCopy, Private.ImportExport
 	local serialize_profile = nil
@@ -1494,7 +1522,7 @@ do
 			end
 		end
 
-		name = name or format("%s - %s", UnitName("player"), GetRealmName())
+		name = name or Skada.userName
 
 		local n, i = name, 1
 		while ProfileExists(name) do
@@ -1542,7 +1570,7 @@ do
 			Private.ReloadSettings = Old_ReloadSettings
 			copy(Skada.profile, profile)
 			Private.ReloadSettings()
-			LibStub("AceConfigRegistry-3.0"):NotifyChange(folder)
+			Skada:NotifyChange()
 		end
 
 		Skada.data:SetProfile(profileName)
@@ -1584,7 +1612,7 @@ do
 				Share:Enable(false) -- disable receiving
 				Share.target = nil -- reset target
 			end
-			Private.ConfirmDialog(uformat(L["opt_profile_received"], sender), acceptfunc)
+			ConfirmDialog(uformat(L["opt_profile_received"], sender), acceptfunc)
 		end
 
 		function Share:Send(profileStr, target)

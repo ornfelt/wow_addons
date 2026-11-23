@@ -1,6 +1,6 @@
-local _, Skada = ...
+local folder, Skada = ...
 local Private = Skada.Private
-Skada:RegisterModule("Deaths", function(L, P, _, _, M)
+Skada:RegisterModule("Deaths", function(L, P, _, _, M, O)
 	local mode = Skada:NewModule("Deaths")
 	local mode_actor = mode:NewModule("Player's deaths")
 	local mode_deathlog = mode:NewModule("Death log")
@@ -14,11 +14,11 @@ Skada:RegisterModule("Deaths", function(L, P, _, _, M)
 	local max, floor, abs = math.max, math.floor, math.abs
 	local new, del, clear = Private.newTable, Private.delTable, Private.clearTable
 	local UnitIsFeignDeath, UnitHealthInfo = UnitIsFeignDeath, Skada.UnitHealthInfo
-	local GetSpellLink, SpellSplit = Private.SpellLink, Private.SpellSplit
-	local IsInGroup, IsInPvP = Skada.IsInGroup, Skada.IsInPvP
+	local IsInGroup, IsInPvP, spellnames = Skada.IsInGroup, Skada.IsInPvP, Skada.spellnames
 	local GetTime, time, date, wipe = GetTime, time, date, wipe
-	local spellnames, spellicons = Skada.spellnames, Skada.spellicons
+	local classfmt = Skada.classcolors.format
 	local mode_cols, submode_cols = nil, nil
+	local death_timers -- holds Spirit of Redemption scheduled death timers
 
 	--------------------------------------------------------------------------
 	-- colors and icons
@@ -29,13 +29,13 @@ Skada:RegisterModule("Deaths", function(L, P, _, _, M)
 	local YELLOW_COLOR = YELLOW_FONT_COLOR
 	local PURPLE_COLOR = {r = 0.69, g = 0.38, b = 1}
 	local BLUE_COLOR = {r = 0.176, g = 0.318, b = 1}
-	local icon_mode = [[Interface\Icons\Ability_Rogue_FeignDeath]]
-	local icon_death = [[Interface\Icons\Spell_Shadow_Soulleech_1]]
+	local icon_mode = [[Interface\ICONS\Ability_Rogue_FeignDeath]]
+	local icon_death = [[Interface\ICONS\Spell_Shadow_Soulleech_1]]
 
 	-- returns a color table by its key
 	local function get_color(key)
-		if P.usecustomcolors and P.customcolors and P.customcolors["deathlog_" .. key] then
-			return P.customcolors["deathlog_" .. key]
+		if P.usecustomcolors and P.customcolors and P.customcolors[format("deathlog_%s", key)] then
+			return P.customcolors[format("deathlog_%s", key)]
 		elseif key == "orange" then
 			return ORANGE_COLOR
 		elseif key == "yellow" then
@@ -301,7 +301,13 @@ Skada:RegisterModule("Deaths", function(L, P, _, _, M)
 			dead[t.dstName] = true
 			Skada:DispatchSets(log_death, t.dstName, t.dstGUID, t.dstFlags)
 		end
-		if t.__temp then t = del(t) end
+		if death_timers and t.dstGUID and death_timers[t.dstGUID] then
+			Skada:CancelTimer(death_timers[t.dstGUID], true)
+			death_timers[t.dstGUID] = nil
+			if not next(death_timers) then
+				death_timers = del(death_timers)
+			end
+		end
 	end
 
 	local function sor_applied(t)
@@ -310,8 +316,9 @@ Skada:RegisterModule("Deaths", function(L, P, _, _, M)
 			args.dstGUID = t.dstGUID
 			args.dstName = t.dstName
 			args.dstFlags = t.dstFlags
-			args.__temp = true
-			Skada:ScheduleTimer(unit_died, 0.01, args)
+
+			death_timers = death_timers or new()
+			death_timers[t.dstGUID] = Skada:ScheduleTimer(unit_died, 0.01, args)
 		end
 	end
 
@@ -413,7 +420,7 @@ Skada:RegisterModule("Deaths", function(L, P, _, _, M)
 			win.datakey = id
 		end
 
-		win.title = uformat(L["%s's death log"], win.actorname)
+		win.title = uformat(L["%s's death log"], classfmt(win.actorclass, win.actorname))
 	end
 
 	do
@@ -422,7 +429,7 @@ Skada:RegisterModule("Deaths", function(L, P, _, _, M)
 		end
 
 		function mode_deathlog:Update(win, set)
-			win.title = uformat(L["%s's death log"], win.actorname)
+			win.title = uformat(L["%s's death log"], classfmt(win.actorclass, win.actorname))
 
 			local actor = win.datakey and Skada:FindActor(set, win.actorname, win.actorid)
 			local deathlog = actor and actor.deathlog and actor.deathlog[win.datakey]
@@ -502,13 +509,13 @@ Skada:RegisterModule("Deaths", function(L, P, _, _, M)
 							change = format("%s %s", log.rem and "-" or "+", L["debuff"])
 							color = get_color("purple")
 						elseif change > 0 then
-							change = "+" .. Skada:FormatNumber(change)
+							change = format("+%s", Skada:FormatNumber(change))
 							color = get_color("green")
 						elseif change == 0 and (log.res or log.blo or log.abs) then
-							change = "+" .. Skada:FormatNumber(log.res or log.blo or log.abs)
+							change = format("+%s", Skada:FormatNumber(log.res or log.blo or log.abs))
 							color = get_color("orange")
 						elseif log.ovh then
-							change = "+" .. Skada:FormatNumber(log.ovh)
+							change = format("+%s", Skada:FormatNumber(log.ovh))
 							color = get_color("yellow")
 						elseif log.cri then
 							change = format("%s (%s)", Skada:FormatNumber(change), L["Crit"])
@@ -527,19 +534,19 @@ Skada:RegisterModule("Deaths", function(L, P, _, _, M)
 							local extra = new()
 
 							if log.ovh and log.ovh > 0 then
-								extra[#extra + 1] = "O:" .. Skada:FormatNumber(log.ovh)
+								extra[#extra + 1] = format("O:%s", Skada:FormatNumber(log.ovh))
 							end
 							if log.ovk and log.ovk > 0 then
-								extra[#extra + 1] = "O:" .. Skada:FormatNumber(log.ovk)
+								extra[#extra + 1] = format("O:%s", Skada:FormatNumber(log.ovk))
 							end
 							if log.res and log.res > 0 then
-								extra[#extra + 1] = "R:" .. Skada:FormatNumber(log.res)
+								extra[#extra + 1] = format("R:%s", Skada:FormatNumber(log.res))
 							end
 							if log.blo and log.blo > 0 then
-								extra[#extra + 1] = "B:" .. Skada:FormatNumber(log.blo)
+								extra[#extra + 1] = format("B:%s", Skada:FormatNumber(log.blo))
 							end
 							if log.abs and log.abs > 0 then
-								extra[#extra + 1] = "A:" .. Skada:FormatNumber(log.abs)
+								extra[#extra + 1] = format("A:%s", Skada:FormatNumber(log.abs))
 							end
 
 							if next(extra) then
@@ -562,13 +569,13 @@ Skada:RegisterModule("Deaths", function(L, P, _, _, M)
 		end
 	end
 
-	function mode_actor:Enter(win, id, label)
-		win.actorid, win.actorname = id, label
-		win.title = format(L["%s's deaths"], label)
+	function mode_actor:Enter(win, id, label, class)
+		win.actorid, win.actorname, win.actorclass = id, label, class
+		win.title = format(L["%s's deaths"], classfmt(class, label))
 	end
 
 	function mode_actor:Update(win, set)
-		win.title = uformat(L["%s's deaths"], win.actorname)
+		win.title = uformat(L["%s's deaths"], classfmt(win.actorclass, win.actorname))
 		if not set or not win.actorid then return end
 
 		local actor = set:GetActor(win.actorname, win.actorid)
@@ -714,7 +721,7 @@ Skada:RegisterModule("Deaths", function(L, P, _, _, M)
 	function mode:GetSetSummary(set, win)
 		if not set then return end
 		local deaths = set:GetTotal(win and win.class, nil, "death") or 0
-		return Skada._Time or GetTime(), deaths
+		return set.endtime or Skada._time or time(), deaths
 	end
 
 	function mode:AddToTooltip(set, tooltip)
@@ -907,6 +914,9 @@ Skada:RegisterModule("Deaths", function(L, P, _, _, M)
 		end
 	end
 
+	local announce_fmt1 = "%s > %s (%s) %s"
+	local announce_fmt2 = format("%s: %%s > %%s (%%s) %%s", folder)
+
 	function mode:Announce(logs, actorname)
 		-- announce only if:
 		-- 	1. we have a valid deathlog.
@@ -930,7 +940,7 @@ Skada:RegisterModule("Deaths", function(L, P, _, _, M)
 
 		-- prepare the output.
 		local output = format(
-			(channel == "SELF") and "%s > %s (%s) %s" or "Skada: %s > %s (%s) %s",
+			(channel == "SELF") and announce_fmt1 or announce_fmt2,
 			log.src or L["Unknown"], -- source name
 			actorname or L["Unknown"], -- actor name
 			log.id and spellnames[abs(log.id)] or L["Unknown"], -- spell name
@@ -979,7 +989,7 @@ Skada:RegisterModule("Deaths", function(L, P, _, _, M)
 							image = icon_mode,
 							imageWidth = 18,
 							imageHeight = 18,
-							imageCoords = {0.05, 0.95, 0.05, 0.95},
+							imageCoords = Skada.cropTable,
 							width = "full",
 							order = 0
 						},
@@ -1078,24 +1088,24 @@ Skada:RegisterModule("Deaths", function(L, P, _, _, M)
 			M.deathlogthreshold = M.deathlogthreshold or 1000
 			M.deathchannel = M.deathchannel or "AUTO"
 
-			Skada.options.args.modules.args.deathlog = get_options()
+			O.modules.args.deathlog = get_options()
 
 			-- add colors to tweaks
-			local color_opt = Skada.options.args.tweaks.args.advanced.args.colors
+			local color_opt = O.tweaks.args.advanced.args.colors
 			if not color_opt then return end
 			color_opt.args.deathlog = {
 				type = "group",
 				name = L["Death log"],
 				order = 50,
-				hidden = Skada.options.args.tweaks.args.advanced.args.colors.args.custom.disabled,
-				disabled = Skada.options.args.tweaks.args.advanced.args.colors.args.custom.disabled,
+				hidden = O.tweaks.args.advanced.args.colors.args.custom.disabled,
+				disabled = O.tweaks.args.advanced.args.colors.args.custom.disabled,
 				get = function(i)
 					local color = get_color(i[#i])
 					return color.r, color.g, color.b
 				end,
 				set = function(i, r, g, b)
 					P.customcolors = P.customcolors or {}
-					local key = "deathlog_" .. i[#i]
+					local key = format("deathlog_%s", i[#i])
 					P.customcolors[key] = P.customcolors[key] or {}
 					P.customcolors[key].r = r
 					P.customcolors[key].g = g

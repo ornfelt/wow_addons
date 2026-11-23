@@ -1,6 +1,6 @@
 local _, Skada = ...
 local Private = Skada.Private
-Skada:RegisterModule("Sunder Counter", function(L, P, _, C, M)
+Skada:RegisterModule("Sunder Counter", function(L, P, _, C, M, O)
 	local mode = Skada:NewModule("Sunder Counter")
 	local mode_target = mode:NewModule("Target List")
 	local mode_target_source = mode_target:NewModule("Source List")
@@ -9,19 +9,21 @@ Skada:RegisterModule("Sunder Counter", function(L, P, _, C, M)
 
 	local pairs, format, GetTime, uformat = pairs, string.format, GetTime, Private.uformat
 	local new, del, clear = Private.newTable, Private.delTable, Private.clearTable
-	local GetSpellLink = Private.SpellLink or GetSpellLink
+	local SpellLink = Private.SpellLink or GetSpellLink
+	local classfmt = Skada.classcolors.format
 	local spellnames = Skada.spellnames
 
 	local sunder_targets -- holds sunder targets details for announcement
+	local sunder_timers -- holds scheduled sunder drop timers
 	local active_sunders = {} -- holds sunder targets to consider refreshes
 	local spell_sunder, spell_devastate, sunder_link
 	local last_srcGUID, last_srcName, last_srcFlags
 	local mode_cols = nil
 
-	local function format_valuetext(d, columns, total, metadata, subview)
+	local function format_valuetext(d, total, metadata, subview)
 		d.valuetext = Skada:FormatValueCols(
-			columns.Count and Skada:FormatNumber(d.value),
-			columns[subview and "sPercent" or "Percent"] and Skada:FormatPercent(d.value, total)
+			mode_cols.Count and Skada:FormatNumber(d.value),
+			mode_cols[subview and "sPercent" or "Percent"] and Skada:FormatPercent(d.value, total)
 		)
 
 		if metadata and d.value > metadata.maxvalue then
@@ -44,14 +46,22 @@ Skada:RegisterModule("Sunder Counter", function(L, P, _, C, M)
 	end
 
 	local function sunder_dropped(dstGUID)
-		if dstGUID and sunder_targets and sunder_targets[dstGUID] then
+		if not dstGUID then return end
+
+		-- announce drop...
+		if sunder_targets and sunder_targets[dstGUID] then
 			local dstName = sunder_targets[dstGUID].name
 			sunder_targets[dstGUID] = del(sunder_targets[dstGUID])
+			mode:Announce(uformat(L["%s dropped from %s!"], sunder_link or spell_sunder, dstName))
+		end
 
-			if not M.sunderannounce then
-				return
-			elseif not M.sunderbossonly or (M.sunderbossonly and Skada:IsBoss(dstGUID, true)) then
-				mode:Announce(uformat(L["%s dropped from %s!"], sunder_link or spell_sunder, dstName))
+		-- cancel drop timer...
+		if sunder_timers and sunder_timers[dstGUID] then
+			Skada:CancelTimer(sunder_timers[dstGUID], true)
+			sunder_timers[dstGUID] = nil
+
+			if not next(sunder_timers) then
+				sunder_timers = del(sunder_timers)
 			end
 		end
 	end
@@ -61,29 +71,31 @@ Skada:RegisterModule("Sunder Counter", function(L, P, _, C, M)
 
 		-- sunder removed!
 		if t.event == "SPELL_AURA_REMOVED" then
-			Skada:ScheduleTimer(sunder_dropped, 0.1, t.dstGUID)
+			sunder_timers = sunder_timers or new()
+			sunder_timers[t.dstGUID] = Skada:ScheduleTimer(sunder_dropped, 0.1, t.dstGUID)
 			return
 		end
 
 		-- sunder refreshed
-		if t.event == "SPELL_AURA_REFRESH" and active_sunders[t.dstGUID] and active_sunders[t.dstGUID] > GetTime() then
-			active_sunders[t.dstGUID] = GetTime() + M.sunderdelay -- useless refresh
+		local curtime = Skada._Time or GetTime()
+		if t.event == "SPELL_AURA_REFRESH" and active_sunders[t.dstGUID] and active_sunders[t.dstGUID] > curtime then
+			active_sunders[t.dstGUID] = curtime + M.sunderdelay -- useless refresh
 			return
 		else
-			active_sunders[t.dstGUID] = GetTime() + M.sunderdelay
+			active_sunders[t.dstGUID] = curtime + M.sunderdelay
 		end
 
 		Skada:DispatchSets(log_sunder, last_srcName, last_srcGUID, last_srcFlags, t.dstName)
 
 		-- announce disabled or only for bosses
-		if not M.sunderannounce or (M.sunderbossonly and not Skada:IsBoss(t.dstGUID, true)) then return end
+		if not M.sunderannounce or (M.sunderbossonly and not t:DestIsBoss()) then return end
 
 		local tar = sunder_targets and sunder_targets[t.dstGUID]
 		if not tar then
 			tar = new()
 			tar.name = t.dstName
 			tar.count = 1
-			tar.time = GetTime()
+			tar.time = curtime
 			sunder_targets = sunder_targets or {}
 			sunder_targets[t.dstGUID] = tar
 		elseif not tar.full then
@@ -94,7 +106,7 @@ Skada:RegisterModule("Sunder Counter", function(L, P, _, C, M)
 					tar.count,
 					sunder_link or spell_sunder,
 					t.dstName,
-					format("%.1f", GetTime() - tar.time)
+					format("%.1f", curtime - tar.time)
 				))
 				tar.full = true
 			end
@@ -110,7 +122,7 @@ Skada:RegisterModule("Sunder Counter", function(L, P, _, C, M)
 	end
 
 	local function unit_died(t)
-		if M.sunderannounce and t.dstGUID and sunder_targets and sunder_targets[t.dstGUID] then
+		if sunder_targets and t.dstGUID and sunder_targets[t.dstGUID] then
 			sunder_targets[t.dstGUID] = del(sunder_targets[t.dstGUID])
 		end
 	end
@@ -123,17 +135,17 @@ Skada:RegisterModule("Sunder Counter", function(L, P, _, C, M)
 			spell_devastate = spellnames[47498]
 		end
 		if not sunder_link then
-			sunder_link = GetSpellLink(47467)
+			sunder_link = SpellLink(47467)
 		end
 	end
 
-	function mode_target_source:Enter(win, id, label)
-		win.targetid, win.targetname = id, label
-		win.title = format(L["%s's <%s> sources"], label, spell_sunder)
+	function mode_target_source:Enter(win, id, label, class)
+		win.targetid, win.targetname, win.targetclass = id, label, class
+		win.title = format(L["%s's sources"], classfmt(class, label))
 	end
 
 	function mode_target_source:Update(win, set)
-		win.title = uformat(L["%s's <%s> sources"], win.targetname, spell_sunder)
+		win.title = uformat(L["%s's sources"], classfmt(win.targetclass, win.targetname))
 		if not win.targetname then return end
 
 		local sources, total = get_actor_sunder_sources(set, win.targetname)
@@ -149,18 +161,18 @@ Skada:RegisterModule("Sunder Counter", function(L, P, _, C, M)
 
 			local d = win:actor(nr, source, source.enemy, sourcename)
 			d.value = source.count
-			format_valuetext(d, mode_cols, total, win.metadata, true)
+			format_valuetext(d, total, win.metadata, true)
 		end
 	end
 
-	function mode_target:Enter(win, id, label)
-		win.actorid, win.actorname = id, label
-		win.title = format(L["%s's <%s> targets"], label, spell_sunder)
+	function mode_target:Enter(win, id, label, class)
+		win.actorid, win.actorname, win.actorclass = id, label, class
+		win.title = format(L["%s's targets"], classfmt(class, label))
 	end
 
 	function mode_target:Update(win, set)
 		double_check_sunder()
-		win.title = uformat(L["%s's <%s> targets"], win.actorname, spell_sunder)
+		win.title = uformat(L["%s's targets"], classfmt(win.actorclass, win.actorname))
 		if not set or not win.actorname then return end
 
 		local targets, total, actor = get_actor_sunder_targets(set, win.actorname, win.actorid)
@@ -176,7 +188,7 @@ Skada:RegisterModule("Sunder Counter", function(L, P, _, C, M)
 
 			local d = win:actor(nr, target, target.enemy, targetname)
 			d.value = target.count
-			format_valuetext(d, mode_cols, total, win.metadata, true)
+			format_valuetext(d, total, win.metadata, true)
 		end
 	end
 
@@ -200,13 +212,18 @@ Skada:RegisterModule("Sunder Counter", function(L, P, _, C, M)
 
 				local d = win:actor(nr, actor, actor.enemy, actorname)
 				d.value = actor.sunder
-				format_valuetext(d, mode_cols, total, win.metadata)
+				format_valuetext(d, total, win.metadata)
 			end
 		end
 	end
 
+	function mode_target:GetSetSummary(set, win)
+		local actor = set and win and set:GetActor(win.actorname, win.actorid)
+		return actor and actor.sunder
+	end
+
 	function mode:GetSetSummary(set)
-		return set and set.sunder or 0
+		return set and set.sunder
 	end
 
 	function mode:AddToTooltip(set, tooltip)
@@ -222,7 +239,7 @@ Skada:RegisterModule("Sunder Counter", function(L, P, _, C, M)
 			showspots = true,
 			click1 = mode_target,
 			columns = {Count = true, Percent = false, sPercent = false},
-			icon = [[Interface\Icons\ability_warrior_sunder]]
+			icon = [[Interface\ICONS\ability_warrior_sunder]]
 		}
 
 		mode_cols = self.metadata.columns
@@ -278,7 +295,7 @@ Skada:RegisterModule("Sunder Counter", function(L, P, _, C, M)
 		M.sunderchannel = M.sunderchannel or "SAY"
 		M.sunderdelay = M.sunderdelay or 20
 
-		Skada.options.args.modules.args.sundercounter = {
+		O.modules.args.sundercounter = {
 			type = "group",
 			name = self.localeName,
 			desc = format(L["Options for %s."], self.localeName),
@@ -287,10 +304,10 @@ Skada:RegisterModule("Sunder Counter", function(L, P, _, C, M)
 					type = "description",
 					name = self.localeName,
 					fontSize = "large",
-					image = [[Interface\Icons\ability_warrior_sunder]],
+					image = [[Interface\ICONS\ability_warrior_sunder]],
 					imageWidth = 18,
 					imageHeight = 18,
-					imageCoords = {0.05, 0.95, 0.05, 0.95},
+					imageCoords = Skada.cropTable,
 					width = "full",
 					order = 0
 				},

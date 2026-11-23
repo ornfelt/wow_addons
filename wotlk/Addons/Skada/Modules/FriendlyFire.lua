@@ -5,20 +5,21 @@ Skada:RegisterModule("Friendly Fire", function(L, P, _, C)
 	local mode_target = mode:NewModule("Target List")
 	local mode_spell = mode:NewModule("Spell List")
 	local mode_spell_target = mode_spell:NewModule("Target List")
-	local ignored_spells = Skada.ignored_spells.damage -- Edit Skada\Core\Tables.lua
-	local passive_spells = Skada.ignored_spells.time -- Edit Skada\Core\Tables.lua
 	local get_actor_friendfire_targets = nil
 	local get_spell_friendfire_targets = nil
+	local mode_cols = nil
 
 	local pairs, wipe, format, uformat = pairs, wipe, string.format, Private.uformat
 	local new, del, clear = Private.newTable, Private.delTable, Private.clearTable
-	local mode_cols = nil
+	local classfmt = Skada.classcolors.format
+	local ignored_spells = Skada.ignored_spells.damage -- Edit Skada\Core\Tables.lua
+	local passive_spells = Skada.ignored_spells.time -- Edit Skada\Core\Tables.lua
 
-	local function format_valuetext(d, columns, total, dps, metadata, subview)
+	local function format_valuetext(d, total, dps, metadata, subview)
 		d.valuetext = Skada:FormatValueCols(
-			columns.Damage and Skada:FormatNumber(d.value),
-			columns[subview and "sDPS" or "DPS"] and dps and Skada:FormatNumber(dps),
-			columns[subview and "sPercent" or "Percent"] and Skada:FormatPercent(d.value, total)
+			mode_cols.Damage and Skada:FormatNumber(d.value),
+			mode_cols[subview and "sDPS" or "DPS"] and dps and Skada:FormatNumber(dps),
+			mode_cols[subview and "sPercent" or "Percent"] and Skada:FormatPercent(d.value, total)
 		)
 
 		if metadata and d.value > metadata.maxvalue then
@@ -78,13 +79,13 @@ Skada:RegisterModule("Friendly Fire", function(L, P, _, C)
 		end
 	end
 
-	function mode_target:Enter(win, id, label)
-		win.actorid, win.actorname = id, label
-		win.title = format(L["%s's targets"], label)
+	function mode_target:Enter(win, id, label, class)
+		win.actorid, win.actorname, win.actorclass = id, label, class
+		win.title = format(L["%s's targets"], classfmt(class, label))
 	end
 
 	function mode_target:Update(win, set)
-		win.title = uformat(L["%s's targets"], win.actorname)
+		win.title = uformat(L["%s's targets"], classfmt(win.actorclass, win.actorname))
 
 		local targets, total, actor = get_actor_friendfire_targets(set, win.actorname, win.actorid)
 		if not targets or not actor or total == 0 then
@@ -101,17 +102,17 @@ Skada:RegisterModule("Friendly Fire", function(L, P, _, C)
 
 			local d = win:actor(nr, target, target.enemy, targetname)
 			d.value = target.amount
-			format_valuetext(d, mode_cols, total, actortime and (d.value / actortime), win.metadata, true)
+			format_valuetext(d, total, actortime and (d.value / actortime), win.metadata, true)
 		end
 	end
 
-	function mode_spell:Enter(win, id, label)
-		win.actorid, win.actorname = id, label
-		win.title = L["actor damage"](label)
+	function mode_spell:Enter(win, id, label, class)
+		win.actorid, win.actorname, win.actorclass = id, label, class
+		win.title = format(L["%s's spells"], classfmt(class, label))
 	end
 
 	function mode_spell:Update(win, set)
-		win.title = L["actor damage"](win.actorname or L["Unknown"])
+		win.title = uformat(L["%s's spells"], classfmt(win.actorclass, win.actorname))
 
 		local actor = set and set:GetActor(win.actorname, win.actorid)
 		local total = actor and actor.friendfire
@@ -131,17 +132,17 @@ Skada:RegisterModule("Friendly Fire", function(L, P, _, C)
 
 			local d = win:spell(nr, spellid, true)
 			d.value = spell.amount
-			format_valuetext(d, mode_cols, total, actortime and (d.value / actortime), win.metadata, true)
+			format_valuetext(d, total, actortime and (d.value / actortime), win.metadata, true)
 		end
 	end
 
 	function mode_spell_target:Enter(win, id, label)
 		win.spellid, win.spellname = id, label
-		win.title = uformat(L["%s's <%s> damage"], win.actorname, label)
+		win.title = uformat(L["%s's <%s> targets"], classfmt(win.actorclass, win.actorname), label)
 	end
 
 	function mode_spell_target:Update(win, set)
-		win.title = uformat(L["%s's <%s> damage"], win.actorname, win.spellname)
+		win.title = uformat(L["%s's <%s> targets"], classfmt(win.actorclass, win.actorname), win.spellname)
 		if not win.spellid then return end
 
 		local targets, total, actor = get_spell_friendfire_targets(set, win.actorname, win.actorid, win.spellid)
@@ -159,7 +160,7 @@ Skada:RegisterModule("Friendly Fire", function(L, P, _, C)
 
 			local d = win:actor(nr, target, target.enemy, targetname)
 			d.value = target.amount
-			format_valuetext(d, mode_cols, total, actortime and (d.value / actortime), win.metadata, true)
+			format_valuetext(d, total, actortime and (d.value / actortime), win.metadata, true)
 		end
 	end
 
@@ -182,17 +183,30 @@ Skada:RegisterModule("Friendly Fire", function(L, P, _, C)
 
 				local d = win:actor(nr, actor, actor.enemy, actorname)
 				d.value = actor.friendfire
-				format_valuetext(d, mode_cols, total, mode_cols.DPS and (d.value / actor:GetTime(set)), win.metadata)
+				format_valuetext(d, total, mode_cols.DPS and (d.value / actor:GetTime(set)), win.metadata)
 			end
 		end
 	end
+
+	function mode_target:GetSetSummary(set, win)
+		local actor = set and win and set:GetActor(win.actorname, win.actorid)
+		local value = actor and actor.friendfire
+		if not value or value == 0 then return end
+
+		local valuetext = Skada:FormatValueCols(
+			mode_cols.Damage and Skada:FormatNumber(value),
+			mode_cols.sDPS and Skada:FormatNumber(value / actor:GetTime())
+		)
+		return value, valuetext
+	end
+	mode_spell.GetSetSummary = mode_target.GetSetSummary
 
 	function mode:GetSetSummary(set, win)
 		if not set then return end
 		local value = set:GetTotal(win and win.class, nil, "friendfire") or 0
 		local valuetext = Skada:FormatValueCols(
-			self.metadata.columns.Damage and Skada:FormatNumber(value),
-			self.metadata.columns.DPS and Skada:FormatNumber(value / set:GetTime())
+			mode_cols.Damage and Skada:FormatNumber(value),
+			mode_cols.DPS and Skada:FormatNumber(value / set:GetTime())
 		)
 		return value, valuetext
 	end
@@ -205,7 +219,7 @@ Skada:RegisterModule("Friendly Fire", function(L, P, _, C)
 			click1 = mode_spell,
 			click2 = mode_target,
 			columns = {Damage = true, DPS = false, Percent = true, sDPS = false, sPercent = true},
-			icon = [[Interface\Icons\inv_gizmo_supersappercharge]]
+			icon = [[Interface\ICONS\inv_gizmo_supersappercharge]]
 		}
 
 		mode_cols = self.metadata.columns

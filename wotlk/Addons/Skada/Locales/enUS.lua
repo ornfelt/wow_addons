@@ -1,4 +1,4 @@
-local L = LibStub("AceLocale-3.0"):NewLocale(..., "enUS", true, true)
+local L = LibStub("AceLocale-3.0"):NewLocale(..., "enUS", true)
 if not L then return end
 
 L["A damage meter."] = true
@@ -103,6 +103,54 @@ L["Unknown"] = _G.UNKNOWN
 L["Other"] = _G.OTHER
 L["Category"] = _G.CATEGORY
 L["Categories"] = _G.CATEGORIES
+-- talent, role & specs
+L["Talents"] = _G.TALENTS or "Talents"
+L["Role"] = _G.ROLE or "Role"
+L["DAMAGER"] = _G.DAMAGER or "Damager"
+L["TANK"] = _G.TANK or "Tank"
+L["HEALER"] = _G.HEALER or "Healer"
+L["Specialization"] = true
+L["SPEC_62"] = "Arcane"
+L["SPEC_63"] = "Fire"
+L["SPEC_64"] = "Frost"
+L["SPEC_65"] = "Holy"
+L["SPEC_66"] = "Protection"
+L["SPEC_70"] = "Retribution"
+L["SPEC_71"] = "Arms"
+L["SPEC_72"] = "Fury"
+L["SPEC_73"] = "Protection"
+L["SPEC_102"] = "Balance"
+L["SPEC_103"] = "Feral"
+L["SPEC_104"] = "Guardian"
+L["SPEC_105"] = "Restoration"
+L["SPEC_250"] = "Blood"
+L["SPEC_251"] = "Frost"
+L["SPEC_252"] = "Unholy"
+L["SPEC_253"] = "Beast Mastery"
+L["SPEC_254"] = "Marksmanship"
+L["SPEC_255"] = "Survival"
+L["SPEC_256"] = "Discipline"
+L["SPEC_257"] = "Holy"
+L["SPEC_258"] = "Shadow"
+L["SPEC_259"] = "Assassination"
+L["SPEC_260"] = "Combat"
+L["SPEC_261"] = "Subtlety"
+L["SPEC_262"] = "Elemental"
+L["SPEC_263"] = "Enhancement"
+L["SPEC_264"] = "Restoration"
+L["SPEC_265"] = "Affliction"
+L["SPEC_266"] = "Demonology"
+L["SPEC_267"] = "Destruction"
+-- segment info
+L["Type"] = _G.TYPE
+L["Arena"] = _G.ARENA
+L["Battleground"] = _G.BATTLEGROUND
+L["Group"] = _G.GROUP
+L["Dungeon"] = _G.LFG_TYPE_DUNGEON
+L["Raid"] = _G.LFG_TYPE_RAID
+L["Zone"] = _G.ZONE
+L["Start"] = true
+L["End"] = true
 -- windows section:
 L["Window"] = true
 L["Windows"] = true
@@ -116,6 +164,8 @@ L["Enter the name for the new window."] = true
 L["Delete Window"] = true
 L["Choose the window to be deleted."] = true
 L["Are you sure you want to delete this window?"] = true
+L["Delete All Windows"] = true
+L["Are you sure you want to delete all windows?"] = true
 L["Rename Window"] = true
 L["Enter the name for the window."] = true
 L["Test Mode"] = true
@@ -152,9 +202,10 @@ L["The font size of %s."] = true
 L["Font Outline"] = true
 L["Sets the font outline."] = true
 L["Outline"] = true
-L["Thick outline"] = true
 L["Monochrome"] = true
-L["Outlined monochrome"] = true
+L["Thick Outline"] = true
+L["Outline & Monochrome"] = true
+L["Thick Outline & Monochrome"] = true
 L["Bar Texture"] = true
 L["The texture used by all bars."] = true
 L["Spacing"] = true
@@ -194,6 +245,8 @@ L["Animate bar changes smoothly rather than immediately."] = true
 -- title bar
 L["Title Bar"] = true
 L["Enables the title bar."] = true
+L["Swap Position"] = true
+L["When enabled, the title bar will be moved to the opposite side of its current position."] = true
 L["Include set"] = true
 L["Include set name in title bar"] = true
 L["Encounter Timer"] = true
@@ -256,9 +309,9 @@ L["Fixed bar width"] = true
 L["opt_fixedbarwidth_desc"] = "If checked, bar width is fixed. Otherwise, bar width depends on the text width."
 L["Class Colors"] = _G.CLASS_COLORS or "Class Colors"
 L["Use class colors for %s."] = true
-L["opt_isusingclasscolors_desc"] = "Class colors:\n\124cFFF58CBAKader\124r - 5.71M (21.7K)\n\nWithout:\nKader - 5.71M (21.7K)"
+L["opt_isusingclasscolors_desc"] = "With: %s - 5.71M (21.7K)\nWithout: %s - 5.71M (21.7K)"
 L["Put values on new line."] = true
-L["opt_isonnewline_desc"] = "New line:\nKader\n5.71M (21.7K)\n\nDivider:\nKader - 5.71M (21.7K)"
+L["opt_isonnewline_desc"] = "New line:\n%1$s\n5.71M (21.7K)\n\nDivider:\n%1$s - 5.71M (21.7K)"
 L["Use ElvUI skin if avaliable."] = true
 L["opt_isusingelvuiskin_desc"] = "Check this to use ElvUI skin instead.\nDefault: checked"
 L["Use solid background."] = true
@@ -348,8 +401,8 @@ L["opt_feed_desc"] = "Choose which data feed to show in the DataBroker view. Thi
 L["Time Measure"] = true
 L["Activity Time"] = true
 L["Effective Time"] = true
-L["opt_timemesure_desc"] = [=[|cFFFFFF00Activity|r: the timer of each raid member is put on hold if their activity is ceased and back again to count when resumed, common way of measuring DPS and HPS.
-|cFFFFFF00Effective|r: used on rankings, this method uses the elapsed combat time to measure the DPS and HPS of all raid members.]=]
+L["opt_timemesure_desc"] = [=[|cffffff00Activity|r: the timer of each raid member is put on hold if their activity is ceased and back again to count when resumed, common way of measuring DPS and HPS.
+|cffffff00Effective|r: used on rankings, this method uses the elapsed combat time to measure the DPS and HPS of all raid members.]=]
 L["Number set duplicates"] = true
 L["Append a count to set names with duplicate mob names."] = true
 L["Set Format"] = true
@@ -401,6 +454,7 @@ L["This change requires a UI reload. Are you sure?"] = true
 L["Theme"] = true
 L["Themes"] = true
 L["Manage Themes"] = true
+L["All Windows"] = true
 L["Apply Theme"] = true
 L["Apply"] = _G.APPLY
 L["Theme applied!"] = true
@@ -438,8 +492,10 @@ L["Delete Segment"] = true
 L["Keep Segment"] = true
 L["Toggle Windows"] = true
 L["Show/Hide Windows"] = true
-L["Start New Segment"] = true
-L["Start New Phase"] = true
+L["New Segment"] = true
+L["Starts a new segment."] = true
+L["New Phase"] = true
+L["Starts a new phase."] = true
 L["Select All"] = true
 L["Deselect All"] = true
 L["Next"] = _G.NEXT
@@ -448,13 +504,18 @@ L["Previous"] = _G.PREVIOUS
 L["Configure"] = true
 L["Open Config"] = true
 L["btn_config_desc"] = "Opens the configuration window."
-L["btn_reset_desc"] = "Resets all fight data except those marked as kept."
+L["btn_reset_desc"] = [[Resets all fight data except those marked as kept.
+|cff00ff00Shift-LMB|r: Delete segment.]]
 L["Segment"] = true
-L["btn_segment_desc"] = "Jump to a specific segment.\n\124cff00ff00Shift-LMB\124r for \124cffffbb00next\124r segment.\n\124cff00ff00Shift-RMB\124r for \124cffffbb00previous\124r segment.\n\124cff00ff00Middle-Click\124r for \124cffffbb00current\124r segment."
+L["btn_segment_desc"] = [[Jump to a specific segment.
+|cff00ff00Shift-LMB|r for |cffffbb00next|r segment.
+|cff00ff00Shift-RMB|r for |cffffbb00previous|r segment.
+|cff00ff00Middle-Click|r for |cffffbb00current|r segment.]]
 L["Mode"] = true
 L["Jump to a specific mode."] = true
 L["Report"] = true
-L["btn_report_desc"] = "Opens a dialog that lets you report your data to others in various ways.\n\124cff00ff00Shift-Click\124r to Quick Report."
+L["btn_report_desc"] = [[Opens a dialog that lets you report your data to others in various ways.
+|cff00ff00Shift-Click|r to Quick Report.]]
 L["Stop"] = "Stop/Resume"
 L["btn_stop_desc"] = "Stops or resumes the current segment. Useful for discounting data after a wipe. Can also be set to automatically stop in the settings."
 L["Segment Stopped."] = true
@@ -544,9 +605,6 @@ L["High Threat"] = _G.COMBAT_THREAT_INCREASE_1
 L["Healing"] = true
 L["Healing Done"] = true
 L["Healing Taken"] = true
-L["%s's healing"] = true
-L["%s's healed targets"] = true
-L["actor heal spells"] = function(n1, n2) return ((not n2 or n1 == n2) and "%s's healing spells" or "%s's healing on %s"):format(n1, n2) end
 L["HPS"] = true
 L["sHPS"] = "HPS (subviews)"
 L["Healing: Personal HPS"] = true
@@ -555,28 +613,19 @@ L["Healing: Raid HPS"] = true
 L["Total Healing"] = true
 L["Overheal"] = true
 L["Overhealing"] = true
-L["%s's overheal targets"] = true
-L["actor overheal spells"] = function(n1, n2) return ((not n2 or n1 == n2) and "%s's overheal spells" or "%s's overhealing on %s"):format(n1, n2) end
 L["Absorbs"] = true
 L["Target List"] = true
 L["Spell List"] = true
-L["%s's absorbed targets"] = true
-L["actor absorb spells"] = function(n1, n2) return ((not n2 or n1 == n2) and "%s's absorb spells" or "%s's absorbs on %s"):format(n1, n2) end
 L["APS"] = true
 L["sAPS"] = "APS (subviews)"
 L["Absorbs and Healing"] = true
-L["%s's absorbed and healed targets"] = true
-L["actor absorb and heal spells"] = function(n1, n2) return ((not n2 or n1 == n2) and "%s's absorb and healing spells" or "%s's absorbs and healing on %s"):format(n1, n2) end
-L["%s's heal sources"] = true
 L["Healing Done By Spell"] = true
 L["Source List"] = true
 -- Auras Module --
 L["Uptime"] = true
 L["Buffs and Debuffs"] = true
 L["Buffs"] = true
-L["%s's buffs"] = true
 L["Debuffs"] = true
-L["actor debuffs"] = function(n1, n2) return ((not n2 or n1 == n2) and "%s's debuffs" or "%s's debuffs on %s"):format(n1, n2) end
 L["%s's <%s> targets"] = true
 L["%s's <%s> sources"] = true
 L["Sunder Counter"] = true
@@ -588,9 +637,6 @@ L["Crowd Control"] = true
 L["CC Done"] = true
 L["CC Taken"] = true
 L["CC Breaks"] = true
-L["%s's control spells"] = true
-L["%s's control targets"] = true
-L["%s's control sources"] = true
 L["Ignore Main Tanks"] = true
 L["%s on %s removed by %s"] = true
 L["%s on %s removed by %s's %s"] = true
@@ -608,8 +654,6 @@ L["Damage"] = true
 L["Spell Details"] = true
 L["Damage Done"] = true
 L["Pet Damage"] = _G.SHOW_PET_MELEE_DAMAGE or "Pet Damage"
-L["actor damage"] = function(n1, n2) return ((not n2 or n1 == n2) and "%s's damage" or "%s's damage on %s"):format(n1, n2) end
-L["%s's <%s> damage"] = true
 L["Useful Damage"] = true
 L["Useful damage on %s"] = true
 L["Damage Done By Spell"] = true
@@ -621,9 +665,14 @@ L["RDPS"] = true
 L["Damage: Raid DPS"] = true
 L["Absorbed Damage"] = true
 L["Enable this if you want the damage absorbed to be included in the damage done."] = true
+L["Damage Done By School"] = true
+-- killing blows module
+L["Killing Blows"] = _G.KILLING_BLOWS or "Killing Blows"
+L["Only PvP Kills"] = true
+L["When enabled, only kills against enemy players count."] = true
+L["Announce killing blows after combat ends. Only works for boss fights."] = true
 -- damage taken module
 L["Damage Taken"] = true
-L["Damage taken by %s"] = true
 L["Damage Taken By Spell"] = true
 L["%s's targets"] = true
 L["DTPS"] = true
@@ -631,11 +680,8 @@ L["sDTPS"] = "DTPS (subviews)"
 -- enemy damage done module
 L["Enemies"] = true
 L["Enemy Damage Done"] = true
-L["Damage done per player"] = true
-L["Damage from %s"] = true
 -- enemy damage taken module
 L["Enemy Damage Taken"] = true
-L["%s's damage sources"] = true
 L["%s below %s%%"] = true
 L["%s - %s%% to %s%%"] = true
 L["Phase %s"] = true
@@ -643,6 +689,7 @@ L["%s - Phase %s"] = true
 L["%s - Phase 1"] = true
 L["%s - Phase 2"] = true
 L["%s - Phase 3"] = true
+L["%s (Main Boss)"] = true
 L["\124cffffbb00%s\124r - \124cff00ff00Phase %s\124r started."] = true
 L["\124cffffbb00%s\124r - \124cff00ff00Phase %s\124r stopped."] = true
 L["\124cffffbb00%s\124r - \124cff00ff00Phase %s\124r resumed."] = true
@@ -651,7 +698,7 @@ L["Enemy Healing Done"] = true
 -- avoidance and mitigation module
 L["Avoidance & Mitigation"] = true
 L["More Details"] = true
-L["%s's damage breakdown"] = true
+L["%s's details"] = true
 -- friendly fire module
 L["Friendly Fire"] = true
 -- useful damage targets
@@ -692,10 +739,8 @@ L["Activity per Target"] = true
 L["%s's activity"] = true
 -- dispels module lines --
 L["Dispels"] = _G.DISPELS
-L["Dispel spells"] = true
-L["%s's dispel spells"] = true
+L["Dispel Spells"] = true
 L["%s's dispelled spells"] = true
-L["%s's dispelled targets"] = true
 -- failbot module lines --
 L["Fails"] = true
 L["%s's fails"] = true
@@ -703,30 +748,21 @@ L["Report Fails"] = true
 L["Reports the group fails at the end of combat if there are any."] = true
 -- interrupts module lines --
 L["Interrupts"] = _G.INTERRUPTS
-L["Interrupt spells"] = true
-L["%s's interrupt spells"] = true
+L["Interrupt Spells"] = true
 L["%s's interrupted spells"] = true
-L["%s's interrupted targets"] = true
 L["%s interrupted!"] = true
 -- Power gained module --
 L["Resources"] = true
-L["Mana"] = _G.MANA
-L["Rage"] = _G.RAGE
-L["Energy"] = _G.ENERGY
-L["Runic Power"] = _G.RUNIC_POWER
-L["Power gained: Mana"] = true
-L["Power gained: Rage"] = true
-L["Power gained: Energy"] = true
-L["Power gained: Runic Power"] = true
-L["%s's gained %s"] = true
+L["Mana Restored"] = true
+L["Rage Generated"] = true
+L["Energy Generated"] = true
+L["Runic Power Generated"] = true
 -- Parry module lines --
 L["Parry-Haste"] = true
-L["%s's parry targets"] = true
-L["%s's parry targets"] = true
 L["%s parried %s (%s)"] = true
 -- Potions module lines --
 L["Potions"] = true
-L["%s's used potions"] = true
+L["%s's potions"] = true
 L["Pre-potion"] = true
 L["pre-potion: %s"] = true
 L["Prints pre-potion after the end of the combat."] = true
@@ -734,7 +770,6 @@ L["Prints pre-potion after the end of the combat."] = true
 L["Healthstones"] = true
 -- resurrect module lines --
 L["Resurrects"] = true
-L["%s's resurrect targets"] = true
 -- nickname module lines --
 L["Nickname"] = true
 L["Name"] = _G.NAME
@@ -753,8 +788,6 @@ L["Clear Cache"] = true
 L["Are you sure you want clear cached nicknames?"] = true
 -- overkill module lines --
 L["Overkill"] = true
-L["%s's overkill spells"] = true
-L["%s's overkill targets"] = true
 -- tweaks module lines --
 L["Improvement"] = true
 L["Tweaks"] = true
@@ -812,7 +845,11 @@ L["Comparison"] = true
 L["%s vs %s: %s"] = true
 L["%s vs %s: Spells"] = true
 L["%s vs %s: Targets"] = true
-L["%s vs %s: Damage on %s"] = true
+-- spellcast module
+L["Casts"] = true
+L["%s's spells"] = true
+L["%s's spells on %s"] = true
+L["Spells on %s"] = true
 -- about
 L["Author"] = true
 L["Credits"] = true

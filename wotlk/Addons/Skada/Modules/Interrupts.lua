@@ -1,10 +1,10 @@
 local _, Skada = ...
 local Private = Skada.Private
-Skada:RegisterModule("Interrupts", function(L, P, _, C, M)
+Skada:RegisterModule("Interrupts", function(L, P, _, C, M, O)
 	local mode = Skada:NewModule("Interrupts")
 	local mode_extraspell = mode:NewModule("Spell List")
 	local mode_target = mode:NewModule("Target List")
-	local mode_spell = mode:NewModule("Interrupt spells")
+	local mode_spell = mode:NewModule("Interrupt Spells")
 	local ignored_spells = Skada.ignored_spells.interrupt -- Edit Skada\Core\Tables.lua
 	local get_actor_interrupted_spells = nil
 	local get_actor_interrupt_targets = nil
@@ -12,13 +12,14 @@ Skada:RegisterModule("Interrupts", function(L, P, _, C, M)
 	-- cache frequently used globals
 	local pairs, format, uformat = pairs, string.format, Private.uformat
 	local new, clear = Private.newTable, Private.clearTable
-	local GetSpellLink = Private.SpellLink or GetSpellLink
+	local SpellLink = Private.SpellLink or GetSpellLink
+	local classfmt = Skada.classcolors.format
 	local mode_cols = nil
 
-	local function format_valuetext(d, columns, total, metadata, subview)
+	local function format_valuetext(d, total, metadata, subview)
 		d.valuetext = Skada:FormatValueCols(
-			columns.Count and d.value,
-			columns[subview and "sPercent" or "Percent"] and Skada:FormatPercent(d.value, total)
+			mode_cols.Count and d.value,
+			mode_cols[subview and "sPercent" or "Percent"] and Skada:FormatPercent(d.value, total)
 		)
 
 		if metadata and d.value > metadata.maxvalue then
@@ -82,18 +83,18 @@ Skada:RegisterModule("Interrupts", function(L, P, _, C, M)
 
 		local spelllink = t.extraspellname or data.dstName
 		if P.reportlinks then
-			spelllink = GetSpellLink(t.extraspellid or t.extraspellname) or spelllink
+			spelllink = SpellLink(t.extraspellid or t.extraspellname) or spelllink
 		end
 		Skada:SendChat(format(L["%s interrupted!"], spelllink), M.interruptchannel or "SAY", "preset")
 	end
 
-	function mode_extraspell:Enter(win, id, label)
-		win.actorid, win.actorname = id, label
-		win.title = format(L["%s's interrupted spells"], label)
+	function mode_extraspell:Enter(win, id, label, class)
+		win.actorid, win.actorname, win.actorclass = id, label, class
+		win.title = format(L["%s's interrupted spells"], classfmt(class, label))
 	end
 
 	function mode_extraspell:Update(win, set)
-		win.title = uformat(L["%s's interrupted spells"], win.actorname)
+		win.title = uformat(L["%s's interrupted spells"], classfmt(win.actorclass, win.actorname))
 		if not set or not win.actorname then return end
 
 		local spells, total, actor = get_actor_interrupted_spells(set, win.actorname, win.actorid)
@@ -109,17 +110,17 @@ Skada:RegisterModule("Interrupts", function(L, P, _, C, M)
 
 			local d = win:spell(nr, spellid)
 			d.value = count
-			format_valuetext(d, mode_cols, total, win.metadata, true)
+			format_valuetext(d, total, win.metadata, true)
 		end
 	end
 
-	function mode_target:Enter(win, id, label)
-		win.actorid, win.actorname = id, label
-		win.title = format(L["%s's interrupted targets"], label)
+	function mode_target:Enter(win, id, label, class)
+		win.actorid, win.actorname, win.actorclass = id, label, class
+		win.title = format(L["%s's targets"], classfmt(class, label))
 	end
 
 	function mode_target:Update(win, set)
-		win.title = uformat(L["%s's interrupted targets"], win.actorname)
+		win.title = uformat(L["%s's targets"], classfmt(win.actorclass, win.actorname))
 		if not set or not win.actorname then return end
 
 		local targets, total, actor = get_actor_interrupt_targets(set, win.actorname, win.actorid)
@@ -135,17 +136,17 @@ Skada:RegisterModule("Interrupts", function(L, P, _, C, M)
 
 			local d = win:actor(nr, target, target.enemy, targetname)
 			d.value = target.count
-			format_valuetext(d, mode_cols, total, win.metadata, true)
+			format_valuetext(d, total, win.metadata, true)
 		end
 	end
 
-	function mode_spell:Enter(win, id, label)
-		win.actorid, win.actorname = id, label
-		win.title = format(L["%s's interrupt spells"], label)
+	function mode_spell:Enter(win, id, label, class)
+		win.actorid, win.actorname, win.actorclass = id, label, class
+		win.title = format(L["%s's spells"], classfmt(class, label))
 	end
 
 	function mode_spell:Update(win, set)
-		win.title = uformat(L["%s's interrupt spells"], win.actorname)
+		win.title = uformat(L["%s's spells"], classfmt(win.actorclass, win.actorname))
 		if not set or not win.actorname then return end
 
 		local actor = set:GetActor(win.actorname, win.actorid)
@@ -164,7 +165,7 @@ Skada:RegisterModule("Interrupts", function(L, P, _, C, M)
 
 			local d = win:spell(nr, spellid)
 			d.value = spell.count
-			format_valuetext(d, mode_cols, total, win.metadata, true)
+			format_valuetext(d, total, win.metadata, true)
 		end
 	end
 
@@ -187,7 +188,7 @@ Skada:RegisterModule("Interrupts", function(L, P, _, C, M)
 
 				local d = win:actor(nr, actor, actor.enemy, actorname)
 				d.value = actor.interrupt
-				format_valuetext(d, mode_cols, total, win.metadata)
+				format_valuetext(d, total, win.metadata)
 			end
 		end
 	end
@@ -206,7 +207,7 @@ Skada:RegisterModule("Interrupts", function(L, P, _, C, M)
 			click2 = mode_target,
 			click3 = mode_spell,
 			columns = {Count = true, Percent = true, sPercent = true},
-			icon = [[Interface\Icons\ability_kick]]
+			icon = [[Interface\ICONS\ability_kick]]
 		}
 
 		mode_cols = self.metadata.columns
@@ -233,7 +234,7 @@ Skada:RegisterModule("Interrupts", function(L, P, _, C, M)
 	function mode:OnInitialize()
 		M.interruptchannel = M.interruptchannel or  "SAY"
 
-		Skada.options.args.modules.args.interrupts = {
+		O.modules.args.interrupts = {
 			type = "group",
 			name = self.localeName,
 			desc = format(L["Options for %s."], self.localeName),
@@ -242,10 +243,10 @@ Skada:RegisterModule("Interrupts", function(L, P, _, C, M)
 					type = "description",
 					name = self.localeName,
 					fontSize = "large",
-					image = [[Interface\Icons\ability_kick]],
+					image = [[Interface\ICONS\ability_kick]],
 					imageWidth = 18,
 					imageHeight = 18,
-					imageCoords = {0.05, 0.95, 0.05, 0.95},
+					imageCoords = Skada.cropTable,
 					width = "full",
 					order = 0
 				},

@@ -108,6 +108,22 @@ _G.ChatEdit_GetActiveWindow = _G.ChatEdit_GetActiveWindow or function()
 	if editBox and editBox:IsShown() then return editBox end
 end
 
+-- dropdown menus: 2.4.3 calls a menu's initialize as initialize(level, menuList), 3.x as
+-- initialize(frame, level); Skada's menus (Core/Menus.lua) open through this, which hands their
+-- initialize the frame first. Blizzard's ToggleDropDownMenu itself is left as it is.
+local adaptedInits = setmetatable({}, {__mode = "k"})
+function SkadaToggleDropDownMenu(level, value, menu, anchor, x, y, menuList)
+	local init = menu and menu.initialize
+	if init and not adaptedInits[init] then
+		local adapted = function(lvl)
+			return init(menu, lvl or UIDROPDOWNMENU_MENU_LEVEL)
+		end
+		adaptedInits[adapted] = true
+		menu.initialize = adapted
+	end
+	return ToggleDropDownMenu(level, value, menu, anchor, x, y, menuList)
+end
+
 -------------------------------------------------------------------------------
 -- tables and constants
 

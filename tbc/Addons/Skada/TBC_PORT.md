@@ -15,6 +15,7 @@ Install / update the client copy with `tbc/sync_addon.ps1` (or `.sh`; env var `w
 | `Compat.xml` (new) | `OptionsListButtonTemplate` (3.x template, used by AceGUI's TreeGroup in the options window). |
 | `Core/Functions.lua` | The combat log argument lists (no overkill in damage events, no overheal / absorbed in heal events). The overheal is estimated from the target's missing health (2.4.3 sends the heal event before the health update). Aura events have no caster in 2.4.3: it is taken from the group's last cast of that spell on that unit, or from when the aura was applied. Missed events have no amount: a fully absorbed / blocked / resisted hit is estimated from the attacker's landed hits with that spell. The combat start buff scan takes spell ids and casters from those auras (2.4.3's `UnitBuff` has neither). |
 | `Core/Core.lua` | No vehicle events. `PLAYER_REGEN_DISABLED` also starts the combat on a tentative segment (2.4.3 can fire it after the pull's combat log event, which dropped slow solo fights). |
+| `Core/Menus.lua` | Skada's dropdown menus open through `SkadaToggleDropDownMenu` (Compat.lua): 2.4.3 calls a menu's `initialize(level, menuList)`, 3.x `initialize(frame, level)`, so every menu opened empty. Blizzard's own `ToggleDropDownMenu` is left alone (other addons share it). |
 | `Modules/Tweaks.lua` | 2.4.3's chat filter signature (`filter(msg)` with the `event` / `arg2` globals). Fury of Frostmourne name fallback. |
 | `Modules/Healthstone.lua` | Master Healthstone as the name to match (Fel Healthstone is 3.x). |
 | `Locales/enUS.lua` | Fallbacks for global strings 2.4.3 lacks (`MINIMUM`, `MAXIMUM`, `CRIT_ABBR`, `APPLY`, `ENEMY`, ...). |
@@ -36,3 +37,8 @@ Install / update the client copy with `tbc/sync_addon.ps1` (or `.sh`; env var `w
 Load without Lua errors; damage, damage taken, healing (with the overheal estimate checked against
 `UnitHealth`), absorbs (Ice Barrier), buffs, activity, tooltips, segments, the total segment kept over
 a reload, the options window (tree, tabs, sliders). Not tested in a group, raid, battleground or arena.
+
+Again on 2026-11-23 (later): an error sweep with screenshots (every mode and its sub mode on a segment
+and the total, the menus and a submenu, choosing a segment from the menu, the reset popup and its
+Cancel, the report window, all 31 options pages, reloads) and five real fights - 0 Lua errors, no
+error dialog. It found the empty menus above.

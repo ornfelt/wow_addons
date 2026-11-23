@@ -13,7 +13,7 @@ local CreateFrame = CreateFrame
 local UIDropDownMenu_CreateInfo = UIDropDownMenu_CreateInfo
 local UIDropDownMenu_AddButton = UIDropDownMenu_AddButton
 local CloseDropDownMenus = CloseDropDownMenus
-local ToggleDropDownMenu = ToggleDropDownMenu
+local ToggleDropDownMenu = SkadaToggleDropDownMenu -- TBC: 2.4.3 calls initialize(level), see Compat.lua
 local IsShiftKeyDown = IsShiftKeyDown
 local del = Private.delTable
 local _

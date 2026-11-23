@@ -336,9 +336,21 @@ function env.collectgarbage(opt)
 	return native_collectgarbage()
 end
 
-shim("geterrorhandler", function()
-	return G._ERRORMESSAGE or G.message
-end)
+-- Skada's errors never open the client's error dialog: each distinct error is printed once to the
+-- chat (red) and kept in SkadaEnv.SkadaErrors. Used by the libraries' safecalls (events, timers,
+-- callbacks: geterrorhandler) and by the frame scripts below; other addons' errors are untouched.
+local ERROR_PREFIX = "|cffff4040Skada error:|r "
+local reportedErrors = {}
+env.SkadaErrors = {}
+local function skada_error(msg)
+	msg = tostring(msg)
+	if reportedErrors[msg] then return end
+	reportedErrors[msg] = true
+	tinsert(env.SkadaErrors, msg)
+	if G.DEFAULT_CHAT_FRAME then G.DEFAULT_CHAT_FRAME:AddMessage(ERROR_PREFIX .. msg) end
+end
+env.SkadaError = skada_error
+env.geterrorhandler = function() return skada_error end
 
 -- hooksecurefunc([table,] name, hook): the hook runs after the original, with its arguments
 shim("hooksecurefunc", function(t, name, hook)
@@ -371,11 +383,13 @@ local nativeSetScript, nativeGetScript = {}, {}
 local function adapter(script, fn)
 	if script == "OnEvent" then
 		return function()
-			return fn(this, event, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9)
+			local ok, err = pcall(fn, this, event, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9)
+			if not ok then skada_error(err) end
 		end
 	end
 	return function()
-		return fn(this, arg1, arg2, arg3, arg4, arg5)
+		local ok, err = pcall(fn, this, arg1, arg2, arg3, arg4, arg5)
+		if not ok then skada_error(err) end
 	end
 end
 
@@ -654,6 +668,26 @@ function env.UIDropDownMenu_AddButton(info, level)
 		info.func, info.SkadaAdapter = adapted, adapted
 	end
 	return native_AddButton(info, level)
+end
+
+-- dropdown initialize functions: 1.12 calls initialize(level), 2.x initialize(frame, level)
+local function adapt_initialize(frame, init)
+	if not init or init == frame.SkadaInitAdapter then return init end
+	local adapted = function(level)
+		return init(frame, level or G.UIDROPDOWNMENU_MENU_LEVEL)
+	end
+	frame.SkadaInitAdapter = adapted
+	return adapted
+end
+local native_ToggleDropDownMenu, native_UIDropDownMenu_Initialize = ToggleDropDownMenu, UIDropDownMenu_Initialize
+function env.ToggleDropDownMenu(level, value, frame, anchor, x, y)
+	if frame and frame.initialize then
+		frame.initialize = adapt_initialize(frame, frame.initialize)
+	end
+	return native_ToggleDropDownMenu(level, value, frame, anchor, x, y)
+end
+function env.UIDropDownMenu_Initialize(frame, init, displayMode, level)
+	return native_UIDropDownMenu_Initialize(frame, adapt_initialize(frame, init), displayMode, level)
 end
 
 -- StaticPopup (1.12 calls OnAccept(data, data2), OnShow(data) ... without the dialog, 2.x passes it first)

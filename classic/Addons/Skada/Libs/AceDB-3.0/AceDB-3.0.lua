@@ -258,7 +258,8 @@ local realmKey = GetRealmName()
 local charKey = UnitName("player") .. " - " .. realmKey
 local _, classKey = UnitClass("player")
 local _, raceKey = UnitRace("player")
-local factionKey = UnitFactionGroup("player")
+-- no faction group (a GM on vmangos after .gm on, my_wow/c/wow once at a load): nil broke the concatenation below
+local factionKey = UnitFactionGroup("player") or "Neutral"
 local factionrealmKey = factionKey .. " - " .. realmKey
 -- Actual database initialization function
 local function initdb(sv, defaults, defaultProfile, olddb, parent)

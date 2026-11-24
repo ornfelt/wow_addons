@@ -951,6 +951,169 @@ do
 		end
 	end
 
+	-- A window with no saved position (x and y nil: never moved by hand) sits in the bottom
+	-- right corner of the screen, beside the action bars and the other FrameXML frames there
+	-- instead of over them. It is placed again once the world is entered (the bars are laid out
+	-- by then), so it follows the character's bar layout until it is moved. Lua 5.0 safe (the
+	-- classic port runs this file too).
+	local CORNER_GAP = 4 -- UIParent units between the window and the screen edge or a frame
+	local CORNER_MAX_MOVES = 32 -- steps around frames before giving up
+	local CORNER_DELAY = 1 -- seconds after PLAYER_ENTERING_WORLD, when the bars are laid out
+	local CORNER_FRAMES = { -- frames the window keeps clear of (the ones the client has)
+		"MainMenuBar", "MainMenuBarLeftEndCap", "MainMenuBarRightEndCap",
+		"MultiBarBottomLeft", "MultiBarBottomRight", "MultiBarRight", "MultiBarLeft",
+		"PetActionBarFrame", "ShapeshiftBarFrame", "PossessBarFrame", "MultiCastActionBarFrame",
+		"VehicleMenuBar", "ReputationWatchBar", "MainMenuExpBar", "MainMenuBarMaxLevelBar",
+	}
+
+	-- UIParent's scale (cenilla's UIParent has no GetEffectiveScale: its own scale there)
+	local function UIScale()
+		if UIParent.GetEffectiveScale then return UIParent:GetEffectiveScale() end
+		return UIParent.GetScale and UIParent:GetScale() or 1
+	end
+
+	-- a frame's rect in UIParent units: left, right, top, bottom (nil before it is laid out)
+	local function UIRect(f)
+		local l, r, t, b = f:GetLeft(), f:GetRight(), f:GetTop(), f:GetBottom()
+		if not (l and r and t and b) then return end
+		-- a texture (the main bar's end caps) has no scale of its own on 2.4.3: its frame's
+		local scaled = f.GetEffectiveScale and f or (f.GetParent and f:GetParent())
+		if not (scaled and scaled.GetEffectiveScale) then return end
+		local s = scaled:GetEffectiveScale() / UIScale()
+		return l * s, r * s, t * s, b * s
+	end
+
+	-- the window with the visible frames it holds (title bar, background, border)
+	local function WindowRect(f)
+		local l, r, t, b = UIRect(f)
+		if not l then return end
+		local children = {f:GetChildren()}
+		local i = 1
+		while children[i] do
+			local c = children[i]
+			if c:IsShown() then
+				local cl, cr, ct, cb = UIRect(c)
+				if cl then
+					if cl < l then l = cl end
+					if cr > r then r = cr end
+					if ct > t then t = ct end
+					if cb < b then b = cb end
+				end
+			end
+			i = i + 1
+		end
+		return l, r, t, b
+	end
+
+	local function AddRect(rects, n, o, f)
+		if o and o ~= f and o.IsVisible and o:IsVisible() then
+			local l, r, t, b = UIRect(o)
+			if l then
+				n = n + 1
+				rects[n] = {l, r, t, b}
+			end
+		end
+		return n
+	end
+
+	-- puts f in the bottom right corner clear of the FrameXML frames and of the frames in
+	-- `others` (a list). Returns its centre offset from the screen centre in UIParent units, as
+	-- SavePosition stores it, or nil when f is not laid out yet.
+	function Private.PlaceInCorner(f, others)
+		local l, r, t, b = WindowRect(f)
+		if not l then return end
+		local w, h = r - l, t - b
+		local rects, n = {}, 0
+		for i = 1, 64 do
+			if not CORNER_FRAMES[i] then break end
+			n = AddRect(rects, n, getglobal(CORNER_FRAMES[i]), f)
+		end
+		if others then
+			local i = 1
+			while others[i] do
+				n = AddRect(rects, n, others[i], f)
+				i = i + 1
+			end
+		end
+
+		-- from the corner, step the shorter way around each frame in the way: left past a bar
+		-- on the right edge, up over one along the bottom
+		-- the screen in UIParent units: GetScreenWidth, not UIParent:GetWidth (1.12 gives the unscaled
+		-- 1365 x 768 there, the frames' rects are in the scaled units)
+		local screenw, screenh = GetScreenWidth(), GetScreenHeight()
+		local right, bottom = screenw - CORNER_GAP, CORNER_GAP
+		for _ = 1, CORNER_MAX_MOVES do
+			local moved = false
+			for i = 1, n do
+				local o = rects[i]
+				if right - w < o[2] and right > o[1] and bottom < o[3] and bottom + h > o[4] then
+					if right - (o[1] - CORNER_GAP) < (o[3] + CORNER_GAP) - bottom then
+						right = o[1] - CORNER_GAP
+					else
+						bottom = o[3] + CORNER_GAP
+					end
+					moved = true
+				end
+			end
+			if not moved then break end
+		end
+
+		local s = f:GetEffectiveScale() / UIScale()
+		local fx, fy = f:GetCenter()
+		local x = fx * s + (right - r) - screenw * 0.5
+		local y = fy * s + (bottom - b) - screenh * 0.5
+		f:ClearAllPoints()
+		f:SetPoint("CENTER", UIParent, "CENTER", x / s, y / s)
+		return x, y
+	end
+
+	-- the windows without a saved position, in the order they were restored
+	local pending, npending = {}, 0
+
+	local function CornerPending(f, db)
+		local others, nothers, known = {}, 0, false
+		for i = 1, npending do
+			local p = pending[i]
+			if p[1] == f then
+				p[2] = db
+				known = true
+			elseif p[2].x == nil and p[2].y == nil then
+				nothers = nothers + 1
+				others[nothers] = p[1]
+			end
+		end
+		if not known then
+			npending = npending + 1
+			pending[npending] = {f, db}
+		end
+		-- never in the way of the window being made: an error here only leaves it where it is
+		pcall(Private.PlaceInCorner, f, others)
+	end
+
+	local corner = CreateFrame("Frame")
+	corner:Hide()
+	corner:RegisterEvent("PLAYER_ENTERING_WORLD")
+	corner:SetScript("OnEvent", function(self)
+		self = self or corner
+		self.wait = CORNER_DELAY
+		self:Show()
+	end)
+	corner:SetScript("OnUpdate", function(self, elapsed)
+		self = self or corner
+		self.wait = self.wait - (elapsed or arg1 or 0)
+		if self.wait > 0 then return end
+		self:Hide()
+		local placed, nplaced = {}, 0
+		for i = 1, npending do
+			local p = pending[i]
+			if p[2].x == nil and p[2].y == nil then
+				pcall(Private.PlaceInCorner, p[1], placed)
+				nplaced = nplaced + 1
+				placed[nplaced] = p[1]
+			end
+		end
+	end)
+
 	function Private.RestorePosition(f, db)
 		if f and f.SetPoint and db then
 			local scale = f:GetEffectiveScale()
@@ -961,7 +1124,28 @@ do
 			f:ClearAllPoints()
 			f:SetPoint("CENTER", UIParent, "CENTER", x, y)
 			f:SetScale(db.scale or 1)
+			if db.x == nil and db.y == nil then
+				CornerPending(f, db)
+			end
 		end
+	end
+
+	-- every window back to the default corner (wow_char_setup / wow_autoplay call this);
+	-- returns how many windows were placed
+	function ns:PlaceWindowsInCorner()
+		local count = 0
+		local i = 1
+		while ns.windows and ns.windows[i] do
+			local win = ns.windows[i]
+			local f = win.bargroup or win.frame
+			if f and win.db then
+				win.db.x, win.db.y = nil, nil
+				Private.RestorePosition(f, win.db)
+				count = count + 1
+			end
+			i = i + 1
+		end
+		return count
 	end
 end
 

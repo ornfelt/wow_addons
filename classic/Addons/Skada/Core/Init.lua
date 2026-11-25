@@ -956,7 +956,9 @@ do
 	-- instead of over them. It is placed again once the world is entered (the bars are laid out
 	-- by then), so it follows the character's bar layout until it is moved. Lua 5.0 safe (the
 	-- classic port runs this file too).
-	local CORNER_GAP = 4 -- UIParent units between the window and the screen edge or a frame
+	-- UIParent units between the window and a frame or the screen edge: the same on every side, so the
+	-- window is as far from the right-side bars as from the bottom-right bar (the user, 2026-11-25)
+	local CORNER_GAP = 12
 	local CORNER_MAX_MOVES = 32 -- steps around frames before giving up
 	local CORNER_DELAY = 1 -- seconds after PLAYER_ENTERING_WORLD, when the bars are laid out
 	local CORNER_FRAMES = { -- frames the window keeps clear of (the ones the client has)
@@ -965,6 +967,9 @@ do
 		"PetActionBarFrame", "ShapeshiftBarFrame", "PossessBarFrame", "MultiCastActionBarFrame",
 		"VehicleMenuBar", "ReputationWatchBar", "MainMenuExpBar", "MainMenuBarMaxLevelBar",
 	}
+	-- textures whose box is mostly empty: the part of their height (from the bottom) the art fills -
+	-- the main bar's gryphons, 72 of 128 measured on 2.4.3, a little more kept clear
+	local CORNER_ART = {MainMenuBarLeftEndCap = 0.6, MainMenuBarRightEndCap = 0.6}
 
 	-- UIParent's scale (cenilla's UIParent has no GetEffectiveScale: its own scale there)
 	local function UIScale()
@@ -1005,10 +1010,11 @@ do
 		return l, r, t, b
 	end
 
-	local function AddRect(rects, n, o, f)
+	local function AddRect(rects, n, o, f, art)
 		if o and o ~= f and o.IsVisible and o:IsVisible() then
 			local l, r, t, b = UIRect(o)
 			if l then
+				if art then t = b + (t - b) * art end
 				n = n + 1
 				rects[n] = {l, r, t, b}
 			end
@@ -1026,7 +1032,7 @@ do
 		local rects, n = {}, 0
 		for i = 1, 64 do
 			if not CORNER_FRAMES[i] then break end
-			n = AddRect(rects, n, getglobal(CORNER_FRAMES[i]), f)
+			n = AddRect(rects, n, getglobal(CORNER_FRAMES[i]), f, CORNER_ART[CORNER_FRAMES[i]])
 		end
 		if others then
 			local i = 1
